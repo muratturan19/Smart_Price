@@ -4,8 +4,29 @@ import pdfplumber
 import re
 import io
 import os
+import sys
+from pathlib import Path
 
 from price_parser import clean_price, find_columns_in_excel
+
+
+def resource_path(relative: str) -> str:
+    """Return absolute path to resource, works for PyInstaller bundles."""
+    base_path = getattr(sys, '_MEIPASS', Path(__file__).parent)
+    return str(Path(base_path) / relative)
+
+
+DATA_FILE = "master_dataset.xlsx"
+
+
+def get_master_dataset_path() -> str:
+    """Locate master dataset either next to the executable or inside bundle."""
+    if os.path.exists(DATA_FILE):
+        return DATA_FILE
+    bundled = resource_path(DATA_FILE)
+    if os.path.exists(bundled):
+        return bundled
+    return DATA_FILE
 
 
 def extract_from_excel_file(file: io.BytesIO) -> pd.DataFrame:
@@ -122,10 +143,11 @@ def upload_page():
 
 def search_page():
     st.header("Master Veride Ara")
-    if not os.path.exists("master_dataset.xlsx"):
+    data_path = get_master_dataset_path()
+    if not os.path.exists(data_path):
         st.info("Önce dosya yükleyip master veriyi oluşturmalısınız.")
         return
-    master_df = pd.read_excel("master_dataset.xlsx")
+    master_df = pd.read_excel(data_path)
     query = st.text_input("Malzeme kodu veya adı")
     if query:
         results = master_df[master_df["Malzeme_Adi"].str.contains(query, case=False, na=False)]
@@ -146,4 +168,6 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    from streamlit.web import cli as stcli
+    sys.argv = ["streamlit", "run", __file__]
+    sys.exit(stcli.main())
