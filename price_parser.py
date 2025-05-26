@@ -17,7 +17,19 @@ POSSIBLE_PRICE_HEADERS = [
 ]
 
 def clean_price(price_str):
-    """Fiyat string'ini temizleyip float'a çevirir."""
+    """Convert a raw price string to a ``float`` value.
+
+    Parameters
+    ----------
+    price_str : str or Any
+        String representation of the price. Currency symbols and thousand
+        separators are allowed.
+
+    Returns
+    -------
+    float or None
+        Parsed price as a ``float`` if successful, otherwise ``None``.
+    """
     if price_str is None:
         return None
     price_str = str(price_str).strip()
@@ -37,7 +49,19 @@ def clean_price(price_str):
         return None
 
 def find_columns_in_excel(df):
-    """DataFrame'de ürün adı ve fiyat sütunlarını bulmaya çalışır."""
+    """Locate product name and price columns within an Excel ``DataFrame``.
+
+    Parameters
+    ----------
+    df : pandas.DataFrame
+        Loaded Excel sheet.
+
+    Returns
+    -------
+    tuple
+        ``(product_col, price_col)`` representing the column names if found,
+        otherwise ``None`` for missing columns.
+    """
     product_col, price_col = None, None
     df_columns_lower = [str(col).lower() for col in df.columns]
 
@@ -55,10 +79,22 @@ def find_columns_in_excel(df):
 # --- Veri Çıkarma Fonksiyonları ---
 
 def extract_from_excel(filepath):
-    """Excel dosyasından malzeme adı ve fiyat bilgilerini çıkarır."""
+    """Extract product names and prices from an Excel workbook.
+
+    Parameters
+    ----------
+    filepath : str
+        Path to the Excel file on disk.
+
+    Returns
+    -------
+    pandas.DataFrame
+        DataFrame containing ``Malzeme_Adi`` and ``Fiyat`` columns. Returns an
+        empty ``DataFrame`` if nothing could be parsed.
+    """
     all_data = []
     try:
-        # Birden fazla sayfa olabileceği için tüm sayfaları deneyelim
+        # Try every sheet as workbooks may contain multiple pages
         xls = pd.ExcelFile(filepath)
         for sheet_name in xls.sheet_names:
             try:
@@ -68,12 +104,12 @@ def extract_from_excel(filepath):
 
                 product_col, price_col = find_columns_in_excel(df)
                 
-                # Sütunlar bulunamadıysa kullanıcıdan isteyelim
+                # Ask the user for column names if automatic detection fails
                 if not product_col:
                     product_col_name_or_idx = simpledialog.askstring("Eksik Bilgi", 
-                        f"{filepath} - '{sheet_name}' sayfasında\n"
-                        f"MALZEME ADI/KODU sütununun tam adını veya\n"
-                        f"indeksini (0'dan başlayarak, örn: A için 0, B için 1) girin:",
+                        f"{filepath} - '{sheet_name}' page\n"
+                        f"Enter the exact PRODUCT NAME/CODE column name or\n"
+                        f"its index (0-based, e.g. 0 for A, 1 for B):",
                         initialvalue=df.columns[0] if len(df.columns) > 0 else "0" )
                     if not product_col_name_or_idx: return pd.DataFrame() # Kullanıcı iptal etti
                     try: product_col = df.columns[int(product_col_name_or_idx)]
@@ -83,9 +119,8 @@ def extract_from_excel(filepath):
 
                 if not price_col:
                     price_col_name_or_idx = simpledialog.askstring("Eksik Bilgi",
-                        f"{filepath} - '{sheet_name}' sayfasında\n"
-                        f"FİYAT sütununun tam adını veya\n"
-                        f"indeksini (0'dan başlayarak) girin:",
+                        f"{filepath} - '{sheet_name}' page\n"
+                        f"Enter the exact PRICE column name or its index (0-based):",
                         initialvalue=df.columns[1] if len(df.columns) > 1 else "1")
                     if not price_col_name_or_idx: return pd.DataFrame() # Kullanıcı iptal etti
                     try: price_col = df.columns[int(price_col_name_or_idx)]
@@ -94,10 +129,13 @@ def extract_from_excel(filepath):
 
 
                 if product_col not in df.columns or price_col not in df.columns:
-                    messagebox.showwarning("Sütun Bulunamadı", f"{filepath} - '{sheet_name}' sayfasında belirtilen sütunlar bulunamadı. Bu sayfa atlanıyor.")
+                    messagebox.showwarning(
+                        "Column Missing",
+                        f"{filepath} - '{sheet_name}' page does not contain the specified columns. Skipping this sheet."
+                    )
                     continue
 
-                # Veriyi çek
+                # Extract data from the detected columns
                 sheet_data = df[[product_col, price_col]].copy()
                 sheet_data.columns = ['Malzeme_Adi', 'Fiyat_Ham']
                 all_data.append(sheet_data)
@@ -117,24 +155,35 @@ def extract_from_excel(filepath):
         return pd.DataFrame()
 
 def extract_from_pdf(filepath):
-    """
-    PDF dosyasından malzeme adı ve fiyat bilgilerini çıkarmaya çalışır.
-    BU KISIM PDF'İN YAPISINA GÖRE ÖNEMLİ ÖLÇÜDE ÖZELLEŞTİRME GEREKTİREBİLİR.
+    """Extract product information from a PDF file.
+
+    Parameters
+    ----------
+    filepath : str
+        Path to the PDF document.
+
+    Returns
+    -------
+    pandas.DataFrame
+        DataFrame with ``Malzeme_Adi`` and ``Fiyat`` columns. The extraction
+        heuristics depend heavily on the PDF layout and may require
+        adjustments for different documents.
     """
     data = []
-    # --- PDF PARSING STRATEJİLERİ ---
-    # PDF'ler çok çeşitli olduğu için birden fazla strateji/regex gerekebilir.
-    # Örnek Regex'ler (bunları PDF yapınıza göre düzenlemeniz GEREKİR):
-    #     Desen 1: "ÜRÜN KODU/ADI ... FİYAT TL" (arada çok şey olabilir)
-    #         ^(.*?)\s+[.\s]*?([\d,\.]+)\s*(?:TL|TRY|EUR|USD|\$|€)\s*$
-    #     Desen 2: Satır başında ürün kodu/adı, satır sonunda fiyat
-    #         ^([A-Z0-9\s\-\/]+?)\s+.*\s+([\d,\.]+)\s*(?:TL|TRY)?$
-    #     Desen 3: Tablo benzeri yapılar için (çok genel, dikkatli olunmalı)
-    #         Bir satırda hem harf/rakam (ürün) hem de sayı (fiyat) arama
-    #         Bu çok fazla yanlış pozitif verebilir.
-    #
-    # KULLANICI TARAFINDAN TANIMLANABİLİR REGEX'LER ÖNEMLİ OLACAKTIR
-    # Şimdilik çok genel bir yaklaşım:
+    # --- PDF PARSING STRATEGIES ---
+    # PDFs can vary greatly in structure. Below we define a few regular
+    # expressions that attempt to capture common patterns. These may need to be
+    # customised for different documents:
+    #   Pattern 1: "PRODUCT CODE/NAME ... PRICE TL" with arbitrary text in
+    #              between.
+    #       ^(.*?)\s+[.\s]*?([\d,\.]+)\s*(?:TL|TRY|EUR|USD|\$|€)\s*$
+    #   Pattern 2: Product code/name at the beginning of the line and price at
+    #              the end.
+    #       ^([A-Z0-9\s\-\/]+?)\s+.*\s+([\d,\.]+)\s*(?:TL|TRY)?$
+    #   Pattern 3: A very generic table-like structure; may produce many false
+    #              positives.
+    #       search a line for any alphanumeric text followed by a number.
+    # Users may provide their own patterns depending on the PDF layout.
     
     # Regex: (Malzeme Adı/Kodu Grubu) ..... (Fiyat Grubu) [Para Birimi İsteğe Bağlı]
     # Bu regex'ler çok geneldir ve PDF'lerinize göre iyileştirilmesi gerekir.
@@ -160,26 +209,32 @@ def extract_from_pdf(filepath):
                     for table_num, table in enumerate(tables):
                         print(f"    Sayfa {i+1}, Tablo {table_num+1} deneniyor...")
                         if not table: continue
-                        # Tablodan sütunları anlamlandırmak çok zor.
-                        # Kullanıcıdan hangi sütunların ürün adı/fiyat olduğunu sormak gerekebilir.
-                        # Şimdilik basit bir varsayım: ilk metin sütunu ürün, son sayısal sütun fiyat.
-                        # Bu çok hatalı olabilir!
+                        # Interpreting table columns is tricky. Ideally the
+                        # user should specify which columns represent product
+                        # names and prices. As a naive assumption we take the
+                        # first textual column as the product and the last
+                        # numeric column as the price. This may easily fail.
                         try:
                             df_table = pd.DataFrame(table)
-                            # Baştaki boş None satırları atla (eğer varsa)
+                            # Drop completely empty rows if present
                             df_table.dropna(how='all', inplace=True)
-                            # İlk geçerli satırı başlık olarak almayı dene (eğer ilk satır başlık değilse sorun olur)
-                            # if df_table.iloc[0].notna().all(): # Eğer ilk satır doluysa başlık kabul et
+                            # Attempt to use the first non-empty row as a
+                            # header when appropriate.
+                            # if df_table.iloc[0].notna().all():
                             #     df_table.columns = df_table.iloc[0]
                             #     df_table = df_table[1:]
 
-                            # Çok basit bir tablo mantığı:
-                            # İlk sütun veya içinde 'kod'/'ad' geçen sütun ürün, son sütun veya içinde 'fiyat' geçen sütun fiyat
-                            # Bu kısım çok daha zeki olmalı veya kullanıcı girdisi almalı
+                            # Very naive table heuristic:
+                            # choose the first column (or the one containing
+                            # keywords such as 'code' or 'name') as the product
+                            # and the last column (or the one containing the
+                            # word 'price') as the price. A smarter
+                            # implementation or user input would be better.
                             product_col_idx = 0
-                            price_col_idx = -1 # Sondan birinci
+                            price_col_idx = -1  # last column by default
 
-                            # Deneme: Başlık varsa sütun bul
+                            # Try to detect columns based on headers when
+                            # available
                             if any(str(c).lower() in POSSIBLE_PRODUCT_NAME_HEADERS for c in df_table.columns):
                                 product_col_idx = [idx for idx, c in enumerate(df_table.columns) if str(c).lower() in POSSIBLE_PRODUCT_NAME_HEADERS][0]
                             if any(str(c).lower() in POSSIBLE_PRICE_HEADERS for c in df_table.columns):
@@ -189,7 +244,9 @@ def extract_from_pdf(filepath):
                                 product_name = str(row.iloc[product_col_idx]).strip() if len(row) > product_col_idx and row.iloc[product_col_idx] else None
                                 price_str = str(row.iloc[price_col_idx]).strip() if len(row) > abs(price_col_idx) and row.iloc[price_col_idx] else None
                                 
-                                if product_name and price_str and len(product_name) > 2: # Temel bir filtreleme
+                                # Basic sanity checks: require both fields and
+                                # a reasonable product name length
+                                if product_name and price_str and len(product_name) > 2:
                                     price = clean_price(price_str)
                                     if price is not None:
                                         data.append({'Malzeme_Adi': product_name, 'Fiyat': price})
@@ -245,6 +302,12 @@ def extract_from_pdf(filepath):
 
 # --- Ana İşlem ---
 def main():
+    """Entry point for the GUI based price extraction utility.
+
+    This function prompts the user to select Excel or PDF files, invokes the
+    appropriate extraction routines and finally saves the consolidated result
+    to an Excel file chosen by the user.
+    """
     root = tk.Tk()
     root.withdraw() # Ana tkinter penceresini göstermiyoruz
 
@@ -285,19 +348,19 @@ def main():
 
     master_df = pd.concat(all_extracted_data, ignore_index=True)
 
-    # Temel veri temizliği
+    # Basic data cleanup
     master_df.dropna(subset=['Malzeme_Adi', 'Fiyat'], inplace=True)
     master_df['Malzeme_Adi'] = master_df['Malzeme_Adi'].astype(str).str.strip().str.upper()
-    master_df = master_df[master_df['Malzeme_Adi'] != ''] # Boş malzeme adlarını sil
+    master_df = master_df[master_df['Malzeme_Adi'] != '']  # drop empty product names
     master_df['Fiyat'] = pd.to_numeric(master_df['Fiyat'], errors='coerce')
     master_df.dropna(subset=['Fiyat'], inplace=True)
 
-    # Mükerrer ürünler için: sonuncuyu tut (veya ilkini 'first', ya da ortalama al vs.)
+    # Remove duplicates; keep the last occurrence
     master_df.drop_duplicates(subset=['Malzeme_Adi'], keep='last', inplace=True)
-    # Fiyatı 0 olanları veya çok düşük olanları isteğe bağlı filtrele
+    # Optionally drop zero or near-zero prices
     master_df = master_df[master_df['Fiyat'] > 0.01] 
 
-    # Sıralama
+    # Sort for nicer output
     master_df.sort_values(by="Malzeme_Adi", inplace=True)
 
 
