@@ -55,7 +55,7 @@ def extract_from_pdf(
                 filepath.seek(0)
             except Exception:
                 pass
-            cm = pdfplumber.open(file=filepath)
+            cm = pdfplumber.open(filepath)
         with cm as pdf:
             for page in pdf.pages:
                 page_added = False

@@ -538,8 +538,8 @@ def test_extract_from_pdf_bytesio(monkeypatch):
 
     assert len(result) == 1
     assert result.iloc[0]["Fiyat"] == 55.0
-    assert calls.get("kwargs", {}).get("file") is buf
-    assert calls.get("args") == ()
+    assert calls.get("args") == (buf,)
+    assert calls.get("kwargs") == {}
 
 
 def test_merge_files_casts_to_string(monkeypatch):
