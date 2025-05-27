@@ -24,11 +24,14 @@ POSSIBLE_CODE_HEADERS = [
     'ürün numarası',
     'item no',
     'product no',
+    'malzeme adı',
+    'malzeme',
+    'ürün',
+    'product name',
+    'name',
 ]
 POSSIBLE_DESC_HEADERS = [
     'ürün adı',
-    'malzeme adı',
-    'product name',
     'item name',
     'description',
     'ürün açıklaması',
@@ -172,6 +175,8 @@ def extract_from_excel(
     combined["Fiyat"] = combined["Fiyat_Ham"].apply(normalize_price)
     if "Kisa_Kod" not in combined.columns:
         combined["Kisa_Kod"] = None
+    if "Malzeme_Kodu" not in combined.columns:
+        combined["Malzeme_Kodu"] = None
     combined.rename(columns={"Malzeme_Adi": "Descriptions"}, inplace=True)
     cols = [
         "Malzeme_Kodu",
