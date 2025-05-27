@@ -57,6 +57,7 @@ def test_extract_from_excel_basic(tmp_path):
     ]
     assert result.columns.tolist() == expected_cols
     assert result["Kisa_Kod"].isnull().all()
+    assert result["Malzeme_Kodu"].isnull().all()
 
 
 def test_extract_from_excel_xls(tmp_path):
