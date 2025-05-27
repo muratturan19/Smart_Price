@@ -7,6 +7,8 @@ from typing import IO, Any, Optional
 
 import pandas as pd
 import pdfplumber
+import json
+import time
 
 # Optional OCR dependencies are imported lazily within extract_from_pdf
 import re
@@ -44,10 +46,58 @@ def extract_from_pdf(
     """Extract product information from a PDF file."""
     data = []
 
-    def _llm_extract_from_image(_img: Any) -> list[dict]:
-        """Placeholder for optional LLM extraction step."""
+    def _llm_extract_from_image(text: str) -> list[dict]:
+        """Use GPT-3.5 to extract product names and prices from OCR text."""
         # pragma: no cover - not exercised in tests
-        return []
+        try:
+            from dotenv import load_dotenv  # type: ignore
+            load_dotenv()
+        except Exception:
+            pass
+
+        api_key = os.getenv("OPENAI_API_KEY")
+        if not api_key or not text:
+            return []
+
+        try:
+            import openai  # type: ignore
+        except Exception:
+            return []
+
+        openai.api_key = api_key
+
+        prompt = (
+            "Extract product names and prices from the text below "
+            "and return a JSON array of objects with 'name' and 'price' keys.\n"
+            f"Text:\n{text}"
+        )
+
+        try:
+            resp = openai.ChatCompletion.create(
+                model="gpt-3.5-turbo",
+                messages=[{"role": "user", "content": prompt}],
+                temperature=0.2,
+            )
+            time.sleep(0.5)
+            content = resp.choices[0].message.content
+            items = json.loads(content)
+        except Exception:
+            return []
+
+        results = []
+        for item in items:
+            name = str(item.get("name") or item.get("product") or "").strip()
+            price_raw = str(item.get("price", "")).strip()
+            val = normalize_price(price_raw)
+            if name and val is not None:
+                results.append(
+                    {
+                        "Malzeme_Adi": name,
+                        "Fiyat": val,
+                        "Para_Birimi": detect_currency(price_raw),
+                    }
+                )
+        return results
 
     if log:
         try:
@@ -180,8 +230,10 @@ def extract_from_pdf(
                         first_page=page.page_number,
                         last_page=page.page_number,
                     )
+                    llm_text = []
                     for img in images:
                         ocr_text = pytesseract.image_to_string(img)
+                        llm_text.append(ocr_text)
                         print(ocr_text)
                         for line in ocr_text.split("\n"):
                             line = line.strip()
@@ -216,7 +268,7 @@ def extract_from_pdf(
                             except Exception:
                                 pass
                         print("LLM faz\u0131")
-                        llm_data = _llm_extract_from_image(None)
+                        llm_data = _llm_extract_from_image("\n".join(llm_text))
                         for entry in llm_data:
                             entry.setdefault("Sayfa", page.page_number)
                             data.append(entry)
