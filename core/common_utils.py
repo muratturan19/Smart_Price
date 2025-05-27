@@ -2,7 +2,7 @@ import re
 from typing import Optional
 
 
-def normalize_price(price_str: Optional[str]) -> Optional[float]:
+def normalize_price(price_str: Optional[str], *, style: str = "eu") -> Optional[float]:
     """Convert a raw price string to a float value.
 
     Parameters
@@ -11,6 +11,10 @@ def normalize_price(price_str: Optional[str]) -> Optional[float]:
         String representation of the price. Currency symbols and thousand
         separators are allowed.
 
+    style : {'eu', 'en'}, optional
+        ``'eu'`` parses European style numbers like ``1.234,56`` while ``'en'``
+        handles English style ``1,234.56``. Defaults to ``'eu'``.
+
     Returns
     -------
     float or None
@@ -18,13 +22,27 @@ def normalize_price(price_str: Optional[str]) -> Optional[float]:
     """
     if price_str is None:
         return None
+    if style not in {"eu", "en"}:
+        raise ValueError("style must be 'eu' or 'en'")
+
     price_str = str(price_str).strip()
-    price_str = re.sub(r"[^\d,\.]", "", price_str)
-    if "," in price_str and "." in price_str:
-        if price_str.rfind(".") < price_str.rfind(","):
-            price_str = price_str.replace(".", "").replace(",", ".")
-    elif "," in price_str:
-        price_str = price_str.replace(",", ".")
+    price_str = re.sub(r"[^\d,\.]+", "", price_str)
+
+    if style == "eu":
+        if "," in price_str and "." in price_str:
+            if price_str.rfind(".") < price_str.rfind(","):
+                price_str = price_str.replace(".", "").replace(",", ".")
+        elif "," in price_str:
+            price_str = price_str.replace(",", ".")
+    else:  # English style
+        if "," in price_str and "." in price_str:
+            if price_str.rfind(",") < price_str.rfind("."):
+                price_str = price_str.replace(",", "")
+            else:
+                price_str = price_str.replace(".", "").replace(",", ".")
+        elif "," in price_str:
+            price_str = price_str.replace(",", "")
+
     try:
         return float(price_str)
     except ValueError:

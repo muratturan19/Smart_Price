@@ -29,3 +29,9 @@ The script bundles everything inside the `data` directory so that any price
 lists placed there (for example an initial `master_dataset.xlsx`) are available
 once the executable is launched. The resulting binary will appear in the
 `dist` folder.
+
+### Price normalization
+
+The `normalize_price` helper converts textual prices into numeric values. By
+default it assumes European formatting (e.g. `1.234,56`). Pass
+`style="en"` to handle English formatted numbers such as `1,234.56`.
