@@ -41,6 +41,7 @@ _RAW_CODE_HEADERS = [
     'ürün',
     'product name',
     'name',
+    'tip',
 ]
 _RAW_DESC_HEADERS = [
     'item name',
