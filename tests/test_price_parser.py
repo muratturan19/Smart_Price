@@ -113,3 +113,41 @@ def test_extract_from_excel_brand_filename_param():
 
     result = extract_from_excel(buf, filename="BrandX_prices.xlsx")
     assert result.iloc[0]["Marka"] == "BrandX"
+
+
+def test_extract_from_excel_short_code(tmp_path):
+    if not HAS_PANDAS:
+        pytest.skip("pandas not installed")
+    pytest.importorskip("openpyxl")
+    import pandas as pd
+
+    df = pd.DataFrame({
+        "Ürün Kodu": ["123"],
+        "Kısa Kod": ["A1"],
+        "Ürün Adı": ["Elma"],
+        "Fiyat": ["1.000,50"],
+    })
+    file = tmp_path / "short.xlsx"
+    df.to_excel(file, index=False)
+
+    result = extract_from_excel(str(file))
+    assert result.iloc[0]["Kisa_Kod"] == "A1"
+
+
+def test_extract_from_excel_short_code_english_header(tmp_path):
+    if not HAS_PANDAS:
+        pytest.skip("pandas not installed")
+    pytest.importorskip("openpyxl")
+    import pandas as pd
+
+    df = pd.DataFrame({
+        "Product Code": ["001"],
+        "Short Code": ["BB"],
+        "Product Name": ["Pear"],
+        "Price": ["2.500,75"],
+    })
+    file = tmp_path / "short_en.xlsx"
+    df.to_excel(file, index=False)
+
+    result = extract_from_excel(str(file))
+    assert result.iloc[0]["Kisa_Kod"] == "BB"
