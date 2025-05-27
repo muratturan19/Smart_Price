@@ -58,6 +58,22 @@ def test_extract_from_excel_basic(tmp_path):
     assert result["Kisa_Kod"].isnull().all()
 
 
+def test_extract_from_excel_xls(tmp_path):
+    if not HAS_PANDAS:
+        pytest.skip("pandas not installed")
+    pytest.importorskip("xlrd")
+    pytest.importorskip("xlwt")
+    import pandas as pd
+
+    df = pd.DataFrame({"Ürün Adı": ["Elma"], "Fiyat": ["1.000,50"]})
+    file = tmp_path / "sample.xls"
+    df.to_excel(file, index=False)
+
+    result = extract_from_excel(str(file))
+    assert len(result) == 1
+    assert result.iloc[0]["Fiyat"] == 1000.50
+
+
 def test_extract_from_excel_bytesio():
     if not HAS_PANDAS:
         pytest.skip("pandas not installed")
