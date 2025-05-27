@@ -23,10 +23,8 @@ if 'tkinter' not in sys.modules:
     tk_stub.messagebox = types.SimpleNamespace()
     sys.modules['tkinter'] = tk_stub
 
-import price_parser
-
-clean_price = price_parser.clean_price
-extract_from_excel = price_parser.extract_from_excel
+from core.common_utils import normalize_price
+from core.extract_excel import extract_from_excel
 
 
 
@@ -46,12 +44,12 @@ def test_extract_from_excel_basic(tmp_path):
     assert result.iloc[0]["Fiyat"] == 1000.50
     assert result.iloc[1]["Fiyat"] == 2500.75
 
-def test_clean_price_various_formats():
-    assert clean_price("1.234,56") == 1234.56
-    assert clean_price("1,234.56") is None
-    assert clean_price("1.234.567,89") == 1234567.89
-    assert clean_price("1234,56") == 1234.56
-    assert clean_price("$1,234.56") is None
-    assert clean_price("1 234,56") == 1234.56
-    assert clean_price("not a number") is None
-    assert clean_price(None) is None
+def test_normalize_price_various_formats():
+    assert normalize_price("1.234,56") == 1234.56
+    assert normalize_price("1,234.56") is None
+    assert normalize_price("1.234.567,89") == 1234567.89
+    assert normalize_price("1234,56") == 1234.56
+    assert normalize_price("$1,234.56") is None
+    assert normalize_price("1 234,56") == 1234.56
+    assert normalize_price("not a number") is None
+    assert normalize_price(None) is None
