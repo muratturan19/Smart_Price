@@ -158,3 +158,43 @@ def split_code_description(text: str) -> tuple[Optional[str], str]:
         return m.group(1).strip(), m.group(2).strip()
     return None, text
 
+
+def gpt_clean_text(text: str) -> str:
+    """Return the first JSON block found in ``text``.
+
+    The function strips common Markdown code fences and then attempts to
+    locate the first JSON object or array in the remaining string. If a
+    JSON snippet is found, the substring corresponding to that snippet is
+    returned; otherwise the original ``text`` is returned unchanged.
+    """
+
+    import json
+
+    if not text:
+        return ""
+
+    text = str(text)
+
+    fence = re.search(r"```(?:json)?\s*(.*?)\s*```", text, re.DOTALL | re.IGNORECASE)
+    if fence:
+        text = fence.group(1)
+
+    first_obj = text.find("{")
+    first_arr = text.find("[")
+    if first_obj == -1 and first_arr == -1:
+        return text.strip()
+
+    if first_obj == -1 or (0 <= first_arr < first_obj):
+        start = first_arr
+    else:
+        start = first_obj
+
+    substring = text[start:]
+
+    decoder = json.JSONDecoder()
+    try:
+        _, end = decoder.raw_decode(substring)
+        return substring[:end]
+    except Exception:
+        return substring.strip()
+
