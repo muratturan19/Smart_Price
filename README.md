@@ -24,6 +24,13 @@ Windows users can download the Poppler and Tesseract binaries and ensure that
 `pdftoppm.exe` and `tesseract.exe` are available in the `PATH`. Both utilities
 must be discoverable on your system PATH for the OCR phase to succeed.
 
+### Optional LLM assistance
+
+If OCR results are hard to parse the tool can employ GPT-3.5 to interpret the
+text. Set an `OPENAI_API_KEY` environment variable or provide a `.env` file with
+the key. The model is queried with a temperature of `0.2` and a small delay is
+added between requests to respect API rate limits.
+
 ### Building a Windows executable
 
 You can package the Streamlit interface into a single Windows executable using

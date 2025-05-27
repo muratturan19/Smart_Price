@@ -17,6 +17,8 @@ dependencies = [
     "xlrd",
     "pdf2image",
     "pytesseract",
+    "openai",
+    "python-dotenv",
 ]
 
 [tool.setuptools]
