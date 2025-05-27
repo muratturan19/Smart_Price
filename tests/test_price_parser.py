@@ -26,6 +26,7 @@ if 'tkinter' not in sys.modules:
 from core.common_utils import normalize_price
 from core.common_utils import detect_brand
 from core.extract_excel import extract_from_excel
+from core.extract_pdf import extract_from_pdf
 
 
 
@@ -151,3 +152,55 @@ def test_extract_from_excel_short_code_english_header(tmp_path):
 
     result = extract_from_excel(str(file))
     assert result.iloc[0]["Kisa_Kod"] == "BB"
+
+
+def test_extract_from_excel_default_currency(tmp_path):
+    if not HAS_PANDAS:
+        pytest.skip("pandas not installed")
+    pytest.importorskip("openpyxl")
+    import pandas as pd
+
+    df = pd.DataFrame({"Ürün Adı": ["Elma"], "Fiyat": ["100"]})
+    file = tmp_path / "nocur.xlsx"
+    df.to_excel(file, index=False)
+
+    result = extract_from_excel(str(file))
+    assert result.iloc[0]["Para_Birimi"] == "TL"
+    assert result.iloc[0]["Fiyat"] == 100.0
+
+
+def test_extract_from_pdf_default_currency(monkeypatch):
+    if not HAS_PANDAS:
+        pytest.skip("pandas not installed")
+    class FakePage:
+        page_number = 1
+
+        def extract_text(self):
+            return "ItemA    100"
+
+        def extract_tables(self):
+            return []
+
+    class FakePDF:
+        def __enter__(self):
+            return self
+
+        def __exit__(self, exc_type, exc, tb):
+            pass
+
+        @property
+        def pages(self):
+            return [FakePage()]
+
+    def fake_open(_path):
+        return FakePDF()
+
+    import sys
+
+    pdfplumber_mod = sys.modules.get("pdfplumber")
+    monkeypatch.setattr(pdfplumber_mod, "open", fake_open, raising=False)
+
+    result = extract_from_pdf("dummy.pdf")
+    assert len(result) == 1
+    assert result.iloc[0]["Para_Birimi"] == "TL"
+    assert result.iloc[0]["Fiyat"] == 100.0

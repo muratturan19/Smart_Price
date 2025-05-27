@@ -104,6 +104,8 @@ def extract_from_pdf(
     df = pd.DataFrame(data)
     df["Malzeme_Kodu"] = df["Malzeme_Adi"].str.extract(r"^([A-Z0-9\-/]{3,})")
     df["Malzeme_Adi"] = df["Malzeme_Adi"].str.replace(r"^[A-Z0-9\-/]{3,}\s+", "", regex=True)
+    # Default to Turkish Lira if currency could not be determined
+    df["Para_Birimi"] = df["Para_Birimi"].fillna("TL")
     df["Kaynak_Dosya"] = _basename(filepath, filename)
     df["Yil"] = None
     brand_from_file = detect_brand(_basename(filepath, filename))
