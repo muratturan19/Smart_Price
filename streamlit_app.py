@@ -97,6 +97,10 @@ def merge_files(
     master.drop_duplicates(subset=["Descriptions"], keep="last", inplace=True)
     master = master[master["Fiyat"] > 0.01]
     master.sort_values(by="Descriptions", inplace=True)
+    if "Kisa_Kod" in master.columns:
+        master["Kisa_Kod"] = master["Kisa_Kod"].astype(str)
+    if "Malzeme_Kodu" in master.columns:
+        master["Malzeme_Kodu"] = master["Malzeme_Kodu"].astype(str)
     return master
 
 

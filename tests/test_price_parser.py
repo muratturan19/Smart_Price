@@ -26,12 +26,19 @@ if 'pdf2image' not in sys.modules:
     sys.modules['pdf2image'] = types.ModuleType('pdf2image')
 if 'pytesseract' not in sys.modules:
     sys.modules['pytesseract'] = types.ModuleType('pytesseract')
+if 'streamlit' not in sys.modules:
+    sys.modules['streamlit'] = types.ModuleType('streamlit')
 
 from core.common_utils import normalize_price
 from core.common_utils import detect_brand
 from core.common_utils import split_code_description
 from core.extract_excel import extract_from_excel
 from core.extract_pdf import extract_from_pdf
+
+if HAS_PANDAS:
+    import streamlit_app
+else:
+    streamlit_app = None
 
 
 
@@ -533,3 +540,35 @@ def test_extract_from_pdf_bytesio(monkeypatch):
     assert result.iloc[0]["Fiyat"] == 55.0
     assert calls.get("kwargs", {}).get("file") is buf
     assert calls.get("args") == ()
+
+
+def test_merge_files_casts_to_string(monkeypatch):
+    if not HAS_PANDAS:
+        pytest.skip("pandas not installed")
+    import pandas as pd
+
+    df = pd.DataFrame(
+        {
+            "Malzeme_Kodu": [1, 2],
+            "Descriptions": ["A", "B"],
+            "Kisa_Kod": [10, None],
+            "Fiyat": [5, 6],
+            "Para_Birimi": ["TL", "TL"],
+            "Marka": [None, None],
+            "Kaynak_Dosya": ["f.xlsx", "f.xlsx"],
+        }
+    )
+
+    monkeypatch.setattr(streamlit_app, "extract_from_excel_file", lambda *a, **k: df.copy())
+
+    class FakeUpload:
+        def __init__(self, name):
+            self.name = name
+
+        def read(self):
+            return b"data"
+
+    result = streamlit_app.merge_files([FakeUpload("f.xlsx")])
+
+    assert all(isinstance(v, str) for v in result["Kisa_Kod"])
+    assert all(isinstance(v, str) for v in result["Malzeme_Kodu"])
