@@ -28,14 +28,18 @@ def get_master_dataset_path() -> str:
     return DATA_FILE
 
 
-def extract_from_excel_file(file: io.BytesIO) -> pd.DataFrame:
+def extract_from_excel_file(
+    file: io.BytesIO, *, file_name: str | None = None
+) -> pd.DataFrame:
     """Wrapper around :func:`core.extract_excel.extract_from_excel`."""
-    return extract_from_excel(file)
+    return extract_from_excel(file, filename=file_name)
 
 
-def extract_from_pdf_file(file: io.BytesIO) -> pd.DataFrame:
+def extract_from_pdf_file(
+    file: io.BytesIO, *, file_name: str | None = None
+) -> pd.DataFrame:
     """Wrapper around :func:`core.extract_pdf.extract_from_pdf`."""
-    return extract_from_pdf(file)
+    return extract_from_pdf(file, filename=file_name)
 
 
 def merge_files(uploaded_files):
@@ -44,9 +48,9 @@ def merge_files(uploaded_files):
         name = up_file.name.lower()
         bytes_data = io.BytesIO(up_file.read())
         if name.endswith((".xlsx", ".xls")):
-            df = extract_from_excel_file(bytes_data)
+            df = extract_from_excel_file(bytes_data, file_name=up_file.name)
         elif name.endswith(".pdf"):
-            df = extract_from_pdf_file(bytes_data)
+            df = extract_from_pdf_file(bytes_data, file_name=up_file.name)
         else:
             continue
         if not df.empty:

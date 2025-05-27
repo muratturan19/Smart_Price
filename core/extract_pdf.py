@@ -1,6 +1,8 @@
 from __future__ import annotations
 
 import os
+from typing import IO, Any, Optional
+
 import pandas as pd
 import pdfplumber
 import re
@@ -15,7 +17,21 @@ _patterns = [
 ]
 
 
-def extract_from_pdf(filepath: str) -> pd.DataFrame:
+def _basename(fp: Any, filename: Optional[str] = None) -> str:
+    """Return best-effort basename for a file path or buffer."""
+    if filename:
+        return os.path.basename(filename)
+    if isinstance(fp, (str, bytes, os.PathLike)):
+        return os.path.basename(fp)
+    name = getattr(fp, "name", None)
+    if isinstance(name, str):
+        return os.path.basename(name)
+    return ""
+
+
+def extract_from_pdf(
+    filepath: str | IO[bytes], *, filename: str | None = None
+) -> pd.DataFrame:
     """Extract product information from a PDF file."""
     data = []
     try:
@@ -88,7 +104,7 @@ def extract_from_pdf(filepath: str) -> pd.DataFrame:
     df = pd.DataFrame(data)
     df["Malzeme_Kodu"] = df["Malzeme_Adi"].str.extract(r"^([A-Z0-9\-/]{3,})")
     df["Malzeme_Adi"] = df["Malzeme_Adi"].str.replace(r"^[A-Z0-9\-/]{3,}\s+", "", regex=True)
-    df["Kaynak_Dosya"] = os.path.basename(filepath)
+    df["Kaynak_Dosya"] = _basename(filepath, filename)
     df["Yil"] = None
     df["Marka"] = df["Malzeme_Adi"].apply(detect_brand)
     df["Kategori"] = None

@@ -44,6 +44,25 @@ def test_extract_from_excel_basic(tmp_path):
     assert result.iloc[0]["Fiyat"] == 1000.50
     assert result.iloc[1]["Fiyat"] == 2500.75
 
+
+def test_extract_from_excel_bytesio():
+    if not HAS_PANDAS:
+        pytest.skip("pandas not installed")
+    pytest.importorskip("openpyxl")
+    import pandas as pd
+    import io
+
+    data = {"Ürün Adı": ["Elma", "Armut"], "Fiyat": ["1.000,50", "2.500,75"]}
+    df = pd.DataFrame(data)
+    buffer = io.BytesIO()
+    df.to_excel(buffer, index=False)
+    buffer.seek(0)
+
+    result = extract_from_excel(buffer, filename="sample.xlsx")
+    assert len(result) == 2
+    assert result.iloc[0]["Fiyat"] == 1000.50
+    assert result.iloc[1]["Fiyat"] == 2500.75
+
 def test_normalize_price_various_formats():
     assert normalize_price("1.234,56") == 1234.56
     assert normalize_price("1,234.56", style="en") == 1234.56
