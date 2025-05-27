@@ -35,6 +35,11 @@ The `normalize_price` helper converts textual prices into numeric values. By
 default it assumes European formatting (e.g. `1.234,56`). Pass
 `style="en"` to handle English formatted numbers such as `1,234.56`.
 
+### Code and description extraction
+
+Product entries may contain material codes alongside descriptions in various formats. The parser recognises patterns such as `CODE / Description`, `Description / CODE`, `Description (CODE)` and `(CODE) Description` before falling back to a simple prefix-based split.
+
+
 ### CLI usage
 
 Extract prices from files on the command line and save the merged result using the provided console script:
