@@ -47,6 +47,15 @@ def extract_from_pdf(
     """Extract product information from a PDF file."""
     data = []
 
+    def notify(message: str) -> None:
+        if log:
+            try:
+                log(message)
+            except Exception:
+                pass
+        else:
+            print(message)
+
     def _llm_extract_from_image(text: str) -> list[dict]:
         """Use GPT-3.5 to extract product names and prices from OCR text."""
         # pragma: no cover - not exercised in tests
@@ -85,7 +94,7 @@ def extract_from_pdf(
                 cleaned = gpt_clean_text(content)
                 items = json.loads(cleaned)
             except json.JSONDecodeError:
-                print(f"LLM returned invalid JSON: {content!r}")
+                notify(f"LLM returned invalid JSON: {content!r}")
                 return []
         except Exception:
             return []
@@ -105,12 +114,7 @@ def extract_from_pdf(
                 )
         return results
 
-    if log:
-        try:
-            log("1. faz")
-        except Exception:
-            pass
-    print("1. faz")
+    notify("1. faz")
     tmp_for_ocr: str | None = None
     try:
         if isinstance(filepath, (str, bytes, os.PathLike)):
@@ -225,12 +229,7 @@ def extract_from_pdf(
                         import pytesseract  # type: ignore
                     except Exception:
                         continue
-                    if log:
-                        try:
-                            log("OCR faz\u0131")
-                        except Exception:
-                            pass
-                    print("OCR faz\u0131")
+                    notify("OCR faz\u0131")
                     images = convert_from_path(
                         path_for_ocr,
                         first_page=page.page_number,
@@ -240,7 +239,7 @@ def extract_from_pdf(
                     for img in images:
                         ocr_text = pytesseract.image_to_string(img)
                         llm_text.append(ocr_text)
-                        print(ocr_text)
+                        notify(ocr_text)
                         for line in ocr_text.split("\n"):
                             line = line.strip()
                             if len(line) < 5:
@@ -268,18 +267,13 @@ def extract_from_pdf(
                                         )
                                         page_added = True
                     if not page_added:
-                        if log:
-                            try:
-                                log("LLM faz\u0131")
-                            except Exception:
-                                pass
-                        print("LLM faz\u0131")
+                        notify("LLM faz\u0131")
                         llm_data = _llm_extract_from_image("\n".join(llm_text))
                         for entry in llm_data:
                             entry.setdefault("Sayfa", page.page_number)
                             data.append(entry)
     except Exception as exc:
-        print(f"PDF error for {filepath}: {exc}")
+        notify(f"PDF error for {filepath}: {exc}")
         return pd.DataFrame()
     finally:
         if tmp_for_ocr:
