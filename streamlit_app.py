@@ -37,10 +37,13 @@ def extract_from_excel_file(
 
 
 def extract_from_pdf_file(
-    file: io.BytesIO, *, file_name: str | None = None
+    file: io.BytesIO,
+    *,
+    file_name: str | None = None,
+    status_log: Optional[Callable[[str], None]] = None,
 ) -> pd.DataFrame:
     """Wrapper around :func:`core.extract_pdf.extract_from_pdf`."""
-    return extract_from_pdf(file, filename=file_name)
+    return extract_from_pdf(file, filename=file_name, log=status_log)
 
 
 def merge_files(
@@ -65,7 +68,9 @@ def merge_files(
             if name.endswith((".xlsx", ".xls")):
                 df = extract_from_excel_file(bytes_data, file_name=up_file.name)
             elif name.endswith(".pdf"):
-                df = extract_from_pdf_file(bytes_data, file_name=up_file.name)
+                df = extract_from_pdf_file(
+                    bytes_data, file_name=up_file.name, status_log=update_status
+                )
         except Exception:
             df = pd.DataFrame()
 

@@ -1,6 +1,8 @@
 from __future__ import annotations
 
 import os
+import io
+import tempfile
 from typing import IO, Any, Optional
 
 import pandas as pd
@@ -37,7 +39,7 @@ def _basename(fp: Any, filename: Optional[str] = None) -> str:
 
 
 def extract_from_pdf(
-    filepath: str | IO[bytes], *, filename: str | None = None
+    filepath: str | IO[bytes], *, filename: str | None = None, log: Any | None = None
 ) -> pd.DataFrame:
     """Extract product information from a PDF file."""
     data = []
@@ -47,15 +49,29 @@ def extract_from_pdf(
         # pragma: no cover - not exercised in tests
         return []
 
+    if log:
+        try:
+            log("1. faz")
+        except Exception:
+            pass
+    print("1. faz")
+    tmp_for_ocr: str | None = None
     try:
         if isinstance(filepath, (str, bytes, os.PathLike)):
             cm = pdfplumber.open(filepath)
+            path_for_ocr = filepath
         else:
             try:
                 filepath.seek(0)
             except Exception:
                 pass
-            cm = pdfplumber.open(filepath)
+            pdf_bytes = filepath.read()
+            cm = pdfplumber.open(io.BytesIO(pdf_bytes))
+            tmp = tempfile.NamedTemporaryFile(delete=False, suffix=".pdf")
+            tmp.write(pdf_bytes)
+            tmp.close()
+            tmp_for_ocr = tmp.name
+            path_for_ocr = tmp_for_ocr
         with cm as pdf:
             for page in pdf.pages:
                 page_added = False
@@ -153,13 +169,20 @@ def extract_from_pdf(
                         import pytesseract  # type: ignore
                     except Exception:
                         continue
+                    if log:
+                        try:
+                            log("OCR faz\u0131")
+                        except Exception:
+                            pass
+                    print("OCR faz\u0131")
                     images = convert_from_path(
-                        filepath,
+                        path_for_ocr,
                         first_page=page.page_number,
                         last_page=page.page_number,
                     )
                     for img in images:
                         ocr_text = pytesseract.image_to_string(img)
+                        print(ocr_text)
                         for line in ocr_text.split("\n"):
                             line = line.strip()
                             if len(line) < 5:
@@ -187,6 +210,12 @@ def extract_from_pdf(
                                         )
                                         page_added = True
                     if not page_added:
+                        if log:
+                            try:
+                                log("LLM faz\u0131")
+                            except Exception:
+                                pass
+                        print("LLM faz\u0131")
                         llm_data = _llm_extract_from_image(None)
                         for entry in llm_data:
                             entry.setdefault("Sayfa", page.page_number)
@@ -194,6 +223,12 @@ def extract_from_pdf(
     except Exception as exc:
         print(f"PDF error for {filepath}: {exc}")
         return pd.DataFrame()
+    finally:
+        if tmp_for_ocr:
+            try:
+                os.remove(tmp_for_ocr)
+            except Exception:
+                pass
     if not data:
         return pd.DataFrame()
     df = pd.DataFrame(data)
