@@ -46,10 +46,15 @@ def test_extract_from_excel_basic(tmp_path):
 
 def test_normalize_price_various_formats():
     assert normalize_price("1.234,56") == 1234.56
-    assert normalize_price("1,234.56") is None
+    assert normalize_price("1,234.56", style="en") == 1234.56
     assert normalize_price("1.234.567,89") == 1234567.89
     assert normalize_price("1234,56") == 1234.56
-    assert normalize_price("$1,234.56") is None
+    assert normalize_price("$1,234.56", style="en") == 1234.56
     assert normalize_price("1 234,56") == 1234.56
     assert normalize_price("not a number") is None
     assert normalize_price(None) is None
+
+def test_normalize_price_english_only():
+    assert normalize_price("1,234.56", style="en") == 1234.56
+    # default EU style should not interpret English numbers
+    assert normalize_price("1,234.56") is None
