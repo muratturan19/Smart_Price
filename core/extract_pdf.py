@@ -17,6 +17,7 @@ from .common_utils import (
     detect_currency,
     detect_brand,
     split_code_description,
+    gpt_clean_text,
 )
 from .extract_excel import POSSIBLE_PRICE_HEADERS, POSSIBLE_PRODUCT_NAME_HEADERS
 
@@ -80,7 +81,12 @@ def extract_from_pdf(
             )
             time.sleep(0.5)
             content = resp.choices[0].message.content
-            items = json.loads(content)
+            try:
+                cleaned = gpt_clean_text(content)
+                items = json.loads(cleaned)
+            except json.JSONDecodeError:
+                print(f"LLM returned invalid JSON: {content!r}")
+                return []
         except Exception:
             return []
 

@@ -32,6 +32,7 @@ if 'streamlit' not in sys.modules:
 from core.common_utils import normalize_price
 from core.common_utils import detect_brand
 from core.common_utils import split_code_description
+from core.common_utils import gpt_clean_text
 from core.extract_excel import extract_from_excel
 from core.extract_pdf import extract_from_pdf
 
@@ -305,6 +306,16 @@ def test_detect_brand_from_filename_multi_word():
 )
 def test_split_code_description(text, expected):
     assert split_code_description(text) == expected
+
+
+def test_gpt_clean_text_extracts_first_json():
+    sample = "Result:```json\n[{\"a\":1}]```and more"
+    assert gpt_clean_text(sample) == '[{"a":1}]'
+
+
+def test_gpt_clean_text_object():
+    txt = "prefix {\"b\":2} suffix {\"c\":3}"
+    assert gpt_clean_text(txt) == '{"b":2}'
 
 
 def test_extract_from_excel_brand_from_filename(tmp_path):
