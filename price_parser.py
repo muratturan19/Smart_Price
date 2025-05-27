@@ -9,8 +9,21 @@ from tkinter import filedialog, simpledialog, messagebox
 
 # Malzeme adı/kodu için arayabileceğimiz yaygın sütun başlıkları (Excel için)
 POSSIBLE_PRODUCT_NAME_HEADERS = [
-    'ürün adı', 'malzeme adı', 'ürün kodu', 'malzeme kodu', 'kod', 'product name', 'product code', 'material code', 'item name', 'description'
+    'ürün adı', 'malzeme adı', 'ürün kodu', 'malzeme kodu', 'kod',
+    'product name', 'product code', 'material code', 'item name', 'description'
 ]
+# Malzeme kodu için kullanabileceğimiz başlıklar
+POSSIBLE_CODE_HEADERS = [
+    'malzeme kodu', 'ürün kodu', 'kod', 'product code', 'material code',
+    'item code', 'code'
+]
+# Açıklama için kullanılabilecek başlıklar
+POSSIBLE_DESCRIPTION_HEADERS = [
+    'malzeme adı', 'ürün adı', 'açıklama', 'description', 'product name',
+    'item name'
+]
+# Para birimi için
+POSSIBLE_CURRENCY_HEADERS = ['para birimi', 'currency']
 # Fiyat için arayabileceğimiz yaygın sütun başlıkları (Excel için)
 POSSIBLE_PRICE_HEADERS = [
     'fiyat', 'birim fiyat', 'liste fiyatı', 'price', 'unit price', 'list price', 'tutar'
@@ -49,7 +62,7 @@ def clean_price(price_str):
         return None
 
 def find_columns_in_excel(df):
-    """Locate product name and price columns within an Excel ``DataFrame``.
+    """Locate common columns within an Excel ``DataFrame``.
 
     Parameters
     ----------
@@ -59,27 +72,38 @@ def find_columns_in_excel(df):
     Returns
     -------
     tuple
-        ``(product_col, price_col)`` representing the column names if found,
-        otherwise ``None`` for missing columns.
+        ``(code_col, desc_col, price_col, currency_col)`` representing the
+        column names if found, otherwise ``None`` for missing columns.
     """
-    product_col, price_col = None, None
+    code_col = desc_col = price_col = currency_col = None
     df_columns_lower = [str(col).lower() for col in df.columns]
 
-    for header in POSSIBLE_PRODUCT_NAME_HEADERS:
+    for header in POSSIBLE_CODE_HEADERS:
         if header in df_columns_lower:
-            product_col = df.columns[df_columns_lower.index(header)]
+            code_col = df.columns[df_columns_lower.index(header)]
             break
-    
+
+    for header in POSSIBLE_DESCRIPTION_HEADERS:
+        if header in df_columns_lower:
+            desc_col = df.columns[df_columns_lower.index(header)]
+            break
+
     for header in POSSIBLE_PRICE_HEADERS:
         if header in df_columns_lower:
             price_col = df.columns[df_columns_lower.index(header)]
             break
-    return product_col, price_col
+
+    for header in POSSIBLE_CURRENCY_HEADERS:
+        if header in df_columns_lower:
+            currency_col = df.columns[df_columns_lower.index(header)]
+            break
+
+    return code_col, desc_col, price_col, currency_col
 
 # --- Veri Çıkarma Fonksiyonları ---
 
 def extract_from_excel(filepath):
-    """Extract product names and prices from an Excel workbook.
+    """Extract product information from an Excel workbook.
 
     Parameters
     ----------
@@ -89,12 +113,14 @@ def extract_from_excel(filepath):
     Returns
     -------
     pandas.DataFrame
-        DataFrame containing ``Malzeme_Adi`` and ``Fiyat`` columns. Returns an
-        empty ``DataFrame`` if nothing could be parsed.
+        DataFrame in a unified format with ``material_code``, ``description``,
+        ``price`` and auxiliary information. Returns an empty ``DataFrame`` if
+        nothing could be parsed.
     """
     all_data = []
+    year_match = re.search(r'(20\d{2})', os.path.basename(filepath))
+    year = year_match.group(1) if year_match else None
     try:
-        # Try every sheet as workbooks may contain multiple pages
         xls = pd.ExcelFile(filepath)
         for sheet_name in xls.sheet_names:
             try:
@@ -102,202 +128,102 @@ def extract_from_excel(filepath):
                 if df.empty:
                     continue
 
-                product_col, price_col = find_columns_in_excel(df)
-                
-                # Ask the user for column names if automatic detection fails
-                if not product_col:
-                    product_col_name_or_idx = simpledialog.askstring("Eksik Bilgi", 
-                        f"{filepath} - '{sheet_name}' page\n"
-                        f"Enter the exact PRODUCT NAME/CODE column name or\n"
-                        f"its index (0-based, e.g. 0 for A, 1 for B):",
-                        initialvalue=df.columns[0] if len(df.columns) > 0 else "0" )
-                    if not product_col_name_or_idx: return pd.DataFrame() # Kullanıcı iptal etti
-                    try: product_col = df.columns[int(product_col_name_or_idx)]
-                    except ValueError: product_col = product_col_name_or_idx
-                    except IndexError: product_col = product_col_name_or_idx
-
-
-                if not price_col:
-                    price_col_name_or_idx = simpledialog.askstring("Eksik Bilgi",
-                        f"{filepath} - '{sheet_name}' page\n"
-                        f"Enter the exact PRICE column name or its index (0-based):",
-                        initialvalue=df.columns[1] if len(df.columns) > 1 else "1")
-                    if not price_col_name_or_idx: return pd.DataFrame() # Kullanıcı iptal etti
-                    try: price_col = df.columns[int(price_col_name_or_idx)]
-                    except ValueError: price_col = price_col_name_or_idx
-                    except IndexError: price_col = price_col_name_or_idx
-
-
-                if product_col not in df.columns or price_col not in df.columns:
-                    messagebox.showwarning(
-                        "Column Missing",
-                        f"{filepath} - '{sheet_name}' page does not contain the specified columns. Skipping this sheet."
-                    )
+                code_col, desc_col, price_col, currency_col = find_columns_in_excel(df)
+                if not any([code_col, desc_col, price_col]):
                     continue
 
-                # Extract data from the detected columns
-                sheet_data = df[[product_col, price_col]].copy()
-                sheet_data.columns = ['Malzeme_Adi', 'Fiyat_Ham']
-                all_data.append(sheet_data)
+                sheet = pd.DataFrame()
+                if code_col:
+                    sheet['material_code'] = df[code_col]
+                elif desc_col:
+                    sheet['material_code'] = df[desc_col]
+                else:
+                    sheet['material_code'] = None
+
+                if desc_col:
+                    sheet['description'] = df[desc_col]
+                elif code_col:
+                    sheet['description'] = df[code_col]
+                else:
+                    sheet['description'] = None
+
+                if price_col:
+                    sheet['price'] = df[price_col].apply(clean_price)
+                else:
+                    sheet['price'] = None
+
+                if currency_col:
+                    sheet['price_currency'] = df[currency_col]
+                else:
+                    sheet['price_currency'] = '€'
+
+                sheet['source_file'] = os.path.basename(filepath)
+                sheet['source_page'] = sheet_name
+                sheet['year'] = year
+
+                all_data.append(sheet)
 
             except Exception as e_sheet:
                 print(f"Excel sayfası ({filepath} - {sheet_name}) işlenirken hata: {e_sheet}")
-        
+
         if not all_data:
-            return pd.DataFrame()
-        
+            return pd.DataFrame(columns=['material_code','description','price','price_currency','source_file','source_page','year'])
+
         combined_df = pd.concat(all_data, ignore_index=True)
-        combined_df['Fiyat'] = combined_df['Fiyat_Ham'].apply(clean_price)
-        return combined_df[['Malzeme_Adi', 'Fiyat']].dropna()
+        if 'price' in combined_df.columns:
+            combined_df = combined_df.dropna(subset=['price'])
+        combined_df['price_currency'].fillna('€', inplace=True)
+        return combined_df[['material_code','description','price','price_currency','source_file','source_page','year']]
 
     except Exception as e:
         print(f"Excel dosyası ({filepath}) işlenirken hata: {e}")
-        return pd.DataFrame()
+        return pd.DataFrame(columns=['material_code','description','price','price_currency','source_file','source_page','year'])
 
 def extract_from_pdf(filepath):
     """Extract product information from a PDF file.
 
-    Parameters
-    ----------
-    filepath : str
-        Path to the PDF document.
-
-    Returns
-    -------
-    pandas.DataFrame
-        DataFrame with ``Malzeme_Adi`` and ``Fiyat`` columns. The extraction
-        heuristics depend heavily on the PDF layout and may require
-        adjustments for different documents.
+    The returned DataFrame is normalised to have the columns
+    ``material_code``, ``description``, ``price``, ``price_currency``,
+    ``source_file``, ``source_page`` and ``year``.
     """
-    data = []
-    # --- PDF PARSING STRATEGIES ---
-    # PDFs can vary greatly in structure. Below we define a few regular
-    # expressions that attempt to capture common patterns. These may need to be
-    # customised for different documents:
-    #   Pattern 1: "PRODUCT CODE/NAME ... PRICE TL" with arbitrary text in
-    #              between.
-    #       ^(.*?)\s+[.\s]*?([\d,\.]+)\s*(?:TL|TRY|EUR|USD|\$|€)\s*$
-    #   Pattern 2: Product code/name at the beginning of the line and price at
-    #              the end.
-    #       ^([A-Z0-9\s\-\/]+?)\s+.*\s+([\d,\.]+)\s*(?:TL|TRY)?$
-    #   Pattern 3: A very generic table-like structure; may produce many false
-    #              positives.
-    #       search a line for any alphanumeric text followed by a number.
-    # Users may provide their own patterns depending on the PDF layout.
-    
-    # Regex: (Malzeme Adı/Kodu Grubu) ..... (Fiyat Grubu) [Para Birimi İsteğe Bağlı]
-    # Bu regex'ler çok geneldir ve PDF'lerinize göre iyileştirilmesi gerekir.
-    # Grup 1: Malzeme Adı/Kodu (agresif olmayan, boşluktan sonraki sayısal kısma kadar)
-    # Grup 2: Fiyat (sayısal, virgül veya nokta içerebilir)
-    patterns = [
-        re.compile(r'^(.*?)\s{2,}([\d\.,]+)\s*(?:TL|TRY|EUR|USD|\$|€)?$', re.MULTILINE | re.IGNORECASE), # Genellikle iki veya daha fazla boşlukla ayrılmış
-        re.compile(r'([A-Z0-9\-\s/]{5,50})\s+([\d\.,]+)\s*(?:TL|TRY|EUR|USD|\$|€)?', re.IGNORECASE), # Belirli uzunlukta bir ürün adı/kodu ve fiyat
-        re.compile(r'Item Code:\s*(.*?)\s*Price:\s*([\d\.,]+)', re.IGNORECASE),
-        re.compile(r'Ürün No:\s*(.*?)\s*Birim Fiyat:\s*([\d\.,]+)', re.IGNORECASE),
-    ]
+    rows = []
+    year_match = re.search(r'(20\d{2})', os.path.basename(filepath))
+    year = year_match.group(1) if year_match else None
+
+    line_pattern = re.compile(
+        r'^(.*?)\s{2,}([\d\.,]+)\s*(TL|TRY|EUR|USD|\$|€)?$', re.IGNORECASE)
 
     try:
         with pdfplumber.open(filepath) as pdf:
-            for i, page in enumerate(pdf.pages):
-                print(f"  PDF Sayfası {i+1} işleniyor...")
-                text = page.extract_text()
-                
-                if not text: # Resim tabanlı olabilir, OCR gerekir (bu scriptte yok)
-                    print(f"    Sayfa {i+1} metin içermiyor veya çıkarılamadı (Resim olabilir).")
-                    # Gelişmiş: Tabloları çıkarmayı dene
-                    tables = page.extract_tables()
-                    for table_num, table in enumerate(tables):
-                        print(f"    Sayfa {i+1}, Tablo {table_num+1} deneniyor...")
-                        if not table: continue
-                        # Interpreting table columns is tricky. Ideally the
-                        # user should specify which columns represent product
-                        # names and prices. As a naive assumption we take the
-                        # first textual column as the product and the last
-                        # numeric column as the price. This may easily fail.
-                        try:
-                            df_table = pd.DataFrame(table)
-                            # Drop completely empty rows if present
-                            df_table.dropna(how='all', inplace=True)
-                            # Attempt to use the first non-empty row as a
-                            # header when appropriate.
-                            # if df_table.iloc[0].notna().all():
-                            #     df_table.columns = df_table.iloc[0]
-                            #     df_table = df_table[1:]
-
-                            # Very naive table heuristic:
-                            # choose the first column (or the one containing
-                            # keywords such as 'code' or 'name') as the product
-                            # and the last column (or the one containing the
-                            # word 'price') as the price. A smarter
-                            # implementation or user input would be better.
-                            product_col_idx = 0
-                            price_col_idx = -1  # last column by default
-
-                            # Try to detect columns based on headers when
-                            # available
-                            if any(str(c).lower() in POSSIBLE_PRODUCT_NAME_HEADERS for c in df_table.columns):
-                                product_col_idx = [idx for idx, c in enumerate(df_table.columns) if str(c).lower() in POSSIBLE_PRODUCT_NAME_HEADERS][0]
-                            if any(str(c).lower() in POSSIBLE_PRICE_HEADERS for c in df_table.columns):
-                                price_col_idx = [idx for idx, c in enumerate(df_table.columns) if str(c).lower() in POSSIBLE_PRICE_HEADERS][0]
-
-                            for _, row in df_table.iterrows():
-                                product_name = str(row.iloc[product_col_idx]).strip() if len(row) > product_col_idx and row.iloc[product_col_idx] else None
-                                price_str = str(row.iloc[price_col_idx]).strip() if len(row) > abs(price_col_idx) and row.iloc[price_col_idx] else None
-                                
-                                # Basic sanity checks: require both fields and
-                                # a reasonable product name length
-                                if product_name and price_str and len(product_name) > 2:
-                                    price = clean_price(price_str)
-                                    if price is not None:
-                                        data.append({'Malzeme_Adi': product_name, 'Fiyat': price})
-                                        print(f"      Tablodan bulundu: {product_name} - {price}")
-                        except Exception as e_table:
-                            print(f"      Tablo işleme hatası: {e_table}")
-                    continue # Şimdilik tablodan sonra metin aramayı geç
-
-
-                # Metin tabanlı arama
-                lines = text.split('\n')
-                found_on_page = False
-                for line_num, line in enumerate(lines):
+            for page_idx, page in enumerate(pdf.pages, start=1):
+                text = page.extract_text() or ''
+                for line in text.split('\n'):
                     line = line.strip()
-                    if len(line) < 5: continue # Çok kısa satırları atla
+                    m = line_pattern.match(line)
+                    if not m:
+                        continue
 
-                    for pattern_idx, pattern in enumerate(patterns):
-                        matches = pattern.findall(line)
-                        if not matches and pattern_idx == 0 and len(line.split()) > 1: # İlk regex için özel: tüm satırı dene
-                             match_obj = pattern.match(line)
-                             if match_obj:
-                                 matches = [match_obj.groups()]
+                    name = re.sub(r'\s{2,}', ' ', m.group(1)).strip()
+                    price = clean_price(m.group(2))
+                    currency = m.group(3) if m.group(3) else '€'
 
-                        for match in matches:
-                            # Regex'e göre match bir tuple olabilir (grup1, grup2)
-                            if len(match) == 2:
-                                product_name = str(match[0]).strip()
-                                price_str = str(match[1]).strip()
-                                
-                                # Temizlik
-                                product_name = re.sub(r'\s{2,}', ' ', product_name) # Fazla boşlukları tek boşluğa indir
-                                if not product_name or len(product_name) < 3: # Çok kısa ürün adlarını atla
-                                    continue
+                    if not name or price is None:
+                        continue
 
-                                price = clean_price(price_str)
-                                if price is not None:
-                                    data.append({'Malzeme_Adi': product_name, 'Fiyat': price})
-                                    found_on_page = True
-                                    print(f"    Regex {pattern_idx+1} ile bulundu: {product_name} - {price}")
-                                    # break # Bir satırda bir eşleşme yeterli olabilir, sonraki satıra geç
-                    # if found_on_page: break # Eğer bu satırda bulunduysa sonraki satır pattern'lerini deneme
-
-                if not found_on_page:
-                     print(f"    Sayfa {i+1} için metinden bilinen desenlerle eşleşme bulunamadı. Bu sayfa daha detaylı analiz gerektirebilir.")
-
-
+                    rows.append({
+                        'material_code': name,
+                        'description': name,
+                        'price': price,
+                        'price_currency': currency,
+                        'source_file': os.path.basename(filepath),
+                        'source_page': page_idx,
+                        'year': year
+                    })
     except Exception as e:
-        messagebox.showerror("PDF Hatası", f"PDF dosyası ({filepath}) işlenirken genel hata: {e}")
         print(f"PDF dosyası ({filepath}) işlenirken genel hata: {e}")
-    
-    return pd.DataFrame(data)
+        return pd.DataFrame(columns=['material_code','description','price','price_currency','source_file','source_page','year'])
+
+    return pd.DataFrame(rows, columns=['material_code','description','price','price_currency','source_file','source_page','year'])
 
 
 # --- Ana İşlem ---
