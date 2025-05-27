@@ -22,6 +22,10 @@ if 'tkinter' not in sys.modules:
     tk_stub.simpledialog = types.SimpleNamespace()
     tk_stub.messagebox = types.SimpleNamespace()
     sys.modules['tkinter'] = tk_stub
+if 'pdf2image' not in sys.modules:
+    sys.modules['pdf2image'] = types.ModuleType('pdf2image')
+if 'pytesseract' not in sys.modules:
+    sys.modules['pytesseract'] = types.ModuleType('pytesseract')
 
 from core.common_utils import normalize_price
 from core.common_utils import detect_brand
@@ -57,6 +61,105 @@ def test_extract_from_excel_basic(tmp_path):
         "Kaynak_Dosya",
     ]
     assert result.columns.tolist() == expected_cols
+
+
+def test_extract_from_pdf_ocr_fallback(monkeypatch):
+    if not HAS_PANDAS:
+        pytest.skip("pandas not installed")
+
+    class FakePage:
+        page_number = 1
+
+        def extract_text(self):
+            return ""
+
+        def extract_tables(self):
+            return []
+
+    class FakePDF:
+        def __enter__(self):
+            return self
+
+        def __exit__(self, exc_type, exc, tb):
+            pass
+
+        @property
+        def pages(self):
+            return [FakePage()]
+
+    def fake_open(_path):
+        return FakePDF()
+
+    def fake_convert_from_path(path, first_page, last_page):
+        class Img:
+            pass
+
+        return [Img()]
+
+    def fake_ocr(_img):
+        return "ItemZ    55"
+
+    import sys
+
+    pdfplumber_mod = sys.modules.get("pdfplumber")
+    pdf2image_mod = sys.modules.get("pdf2image")
+    pytesseract_mod = sys.modules.get("pytesseract")
+    monkeypatch.setattr(pdfplumber_mod, "open", fake_open, raising=False)
+    monkeypatch.setattr(pdf2image_mod, "convert_from_path", fake_convert_from_path, raising=False)
+    monkeypatch.setattr(pytesseract_mod, "image_to_string", fake_ocr, raising=False)
+
+    result = extract_from_pdf("dummy.pdf")
+    assert len(result) == 1
+    assert result.iloc[0]["Fiyat"] == 55.0
+
+
+def test_extract_from_pdf_ocr_no_data(monkeypatch):
+    if not HAS_PANDAS:
+        pytest.skip("pandas not installed")
+
+    class FakePage:
+        page_number = 1
+
+        def extract_text(self):
+            return ""
+
+        def extract_tables(self):
+            return []
+
+    class FakePDF:
+        def __enter__(self):
+            return self
+
+        def __exit__(self, exc_type, exc, tb):
+            pass
+
+        @property
+        def pages(self):
+            return [FakePage()]
+
+    def fake_open(_path):
+        return FakePDF()
+
+    def fake_convert_from_path(path, first_page, last_page):
+        class Img:
+            pass
+
+        return [Img()]
+
+    def fake_ocr(_img):
+        return ""
+
+    import sys
+
+    pdfplumber_mod = sys.modules.get("pdfplumber")
+    pdf2image_mod = sys.modules.get("pdf2image")
+    pytesseract_mod = sys.modules.get("pytesseract")
+    monkeypatch.setattr(pdfplumber_mod, "open", fake_open, raising=False)
+    monkeypatch.setattr(pdf2image_mod, "convert_from_path", fake_convert_from_path, raising=False)
+    monkeypatch.setattr(pytesseract_mod, "image_to_string", fake_ocr, raising=False)
+
+    result = extract_from_pdf("dummy.pdf")
+    assert result.empty
     assert result["Kisa_Kod"].isnull().all()
     assert result["Malzeme_Kodu"].isnull().all()
 
