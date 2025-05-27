@@ -45,6 +45,17 @@ def test_extract_from_excel_basic(tmp_path):
     assert len(result) == 2
     assert result.iloc[0]["Fiyat"] == 1000.50
     assert result.iloc[1]["Fiyat"] == 2500.75
+    expected_cols = [
+        "Malzeme_Kodu",
+        "Descriptions",
+        "Kisa_Kod",
+        "Fiyat",
+        "Para_Birimi",
+        "Marka",
+        "Kaynak_Dosya",
+    ]
+    assert result.columns.tolist() == expected_cols
+    assert result["Kisa_Kod"].isnull().all()
 
 
 def test_extract_from_excel_bytesio():
@@ -64,6 +75,16 @@ def test_extract_from_excel_bytesio():
     assert len(result) == 2
     assert result.iloc[0]["Fiyat"] == 1000.50
     assert result.iloc[1]["Fiyat"] == 2500.75
+    expected_cols = [
+        "Malzeme_Kodu",
+        "Descriptions",
+        "Kisa_Kod",
+        "Fiyat",
+        "Para_Birimi",
+        "Marka",
+        "Kaynak_Dosya",
+    ]
+    assert result.columns.tolist() == expected_cols
 
 def test_normalize_price_various_formats():
     assert normalize_price("1.234,56") == 1234.56
@@ -204,3 +225,13 @@ def test_extract_from_pdf_default_currency(monkeypatch):
     assert len(result) == 1
     assert result.iloc[0]["Para_Birimi"] == "TL"
     assert result.iloc[0]["Fiyat"] == 100.0
+    expected_cols = [
+        "Malzeme_Kodu",
+        "Descriptions",
+        "Kisa_Kod",
+        "Fiyat",
+        "Para_Birimi",
+        "Marka",
+        "Kaynak_Dosya",
+    ]
+    assert result.columns.tolist() == expected_cols

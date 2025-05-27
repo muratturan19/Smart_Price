@@ -114,15 +114,16 @@ def extract_from_pdf(
     else:
         df["Marka"] = df["Malzeme_Adi"].apply(detect_brand)
     df["Kategori"] = None
+    if "Kisa_Kod" not in df.columns:
+        df["Kisa_Kod"] = None
+    df.rename(columns={"Malzeme_Adi": "Descriptions"}, inplace=True)
     cols = [
         "Malzeme_Kodu",
-        "Malzeme_Adi",
+        "Descriptions",
+        "Kisa_Kod",
         "Fiyat",
         "Para_Birimi",
-        "Kaynak_Dosya",
-        "Sayfa",
-        "Yil",
         "Marka",
-        "Kategori",
+        "Kaynak_Dosya",
     ]
-    return df[cols].dropna(subset=["Malzeme_Adi", "Fiyat"])
+    return df[cols].dropna(subset=["Descriptions", "Fiyat"])

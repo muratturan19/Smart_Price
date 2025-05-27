@@ -57,17 +57,17 @@ def merge_files(uploaded_files):
             extracted.append(df)
 
     if not extracted:
-        return pd.DataFrame(columns=["Malzeme_Adi", "Fiyat"])
+        return pd.DataFrame(columns=["Descriptions", "Fiyat"])
 
     master = pd.concat(extracted, ignore_index=True)
-    master.dropna(subset=["Malzeme_Adi", "Fiyat"], inplace=True)
-    master["Malzeme_Adi"] = master["Malzeme_Adi"].astype(str).str.strip().str.upper()
-    master = master[master["Malzeme_Adi"] != ""]
+    master.dropna(subset=["Descriptions", "Fiyat"], inplace=True)
+    master["Descriptions"] = master["Descriptions"].astype(str).str.strip().str.upper()
+    master = master[master["Descriptions"] != ""]
     master["Fiyat"] = pd.to_numeric(master["Fiyat"], errors="coerce")
     master.dropna(subset=["Fiyat"], inplace=True)
-    master.drop_duplicates(subset=["Malzeme_Adi"], keep="last", inplace=True)
+    master.drop_duplicates(subset=["Descriptions"], keep="last", inplace=True)
     master = master[master["Fiyat"] > 0.01]
-    master.sort_values(by="Malzeme_Adi", inplace=True)
+    master.sort_values(by="Descriptions", inplace=True)
     return master
 
 
@@ -97,7 +97,7 @@ def search_page():
     master_df = pd.read_excel(data_path)
     query = st.text_input("Malzeme kodu veya adı")
     if query:
-        results = master_df[master_df["Malzeme_Adi"].str.contains(query, case=False, na=False)]
+        results = master_df[master_df["Descriptions"].str.contains(query, case=False, na=False)]
         st.write(results)
 
 

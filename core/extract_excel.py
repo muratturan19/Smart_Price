@@ -168,16 +168,14 @@ def extract_from_excel(
     combined["Fiyat"] = combined["Fiyat_Ham"].apply(normalize_price)
     if "Kisa_Kod" not in combined.columns:
         combined["Kisa_Kod"] = None
+    combined.rename(columns={"Malzeme_Adi": "Descriptions"}, inplace=True)
     cols = [
         "Malzeme_Kodu",
+        "Descriptions",
         "Kisa_Kod",
-        "Malzeme_Adi",
         "Fiyat",
         "Para_Birimi",
-        "Kaynak_Dosya",
-        "Sayfa",
-        "Yil",
         "Marka",
-        "Kategori",
+        "Kaynak_Dosya",
     ]
-    return combined[cols].dropna(subset=["Malzeme_Adi", "Fiyat"])
+    return combined[cols].dropna(subset=["Descriptions", "Fiyat"])
