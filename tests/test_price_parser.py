@@ -24,6 +24,7 @@ if 'tkinter' not in sys.modules:
     sys.modules['tkinter'] = tk_stub
 
 from core.common_utils import normalize_price
+from core.common_utils import detect_brand
 from core.extract_excel import extract_from_excel
 
 
@@ -77,3 +78,38 @@ def test_normalize_price_english_only():
     assert normalize_price("1,234.56", style="en") == 1234.56
     # default EU style should not interpret English numbers
     assert normalize_price("1,234.56") is None
+
+
+def test_detect_brand_from_filename():
+    assert detect_brand("Acme_prices.xlsx") == "Acme"
+    assert detect_brand("/path/to/BrandB-2021.pdf") == "BrandB"
+
+
+def test_extract_from_excel_brand_from_filename(tmp_path):
+    if not HAS_PANDAS:
+        pytest.skip("pandas not installed")
+    pytest.importorskip("openpyxl")
+    import pandas as pd
+
+    df = pd.DataFrame({"Ürün Adı": ["Elma"], "Fiyat": ["1.000,50"]})
+    file = tmp_path / "Acme_list.xlsx"
+    df.to_excel(file, index=False)
+
+    result = extract_from_excel(str(file))
+    assert result.iloc[0]["Marka"] == "Acme"
+
+
+def test_extract_from_excel_brand_filename_param():
+    if not HAS_PANDAS:
+        pytest.skip("pandas not installed")
+    pytest.importorskip("openpyxl")
+    import pandas as pd
+    import io
+
+    df = pd.DataFrame({"Ürün Adı": ["Elma"], "Fiyat": ["1.000,50"]})
+    buf = io.BytesIO()
+    df.to_excel(buf, index=False)
+    buf.seek(0)
+
+    result = extract_from_excel(buf, filename="BrandX_prices.xlsx")
+    assert result.iloc[0]["Marka"] == "BrandX"

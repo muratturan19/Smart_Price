@@ -111,11 +111,15 @@ def extract_from_excel(
                 if "Para_Birimi" not in sheet_data.columns:
                     sheet_data["Para_Birimi"] = sheet_data["Fiyat_Ham"].astype(str).apply(detect_currency)
                 sheet_data["Kaynak_Dosya"] = _basename(filepath, filename)
+                brand_from_file = detect_brand(_basename(filepath, filename))
                 year_match = None
                 if price_col:
                     year_match = re.search(r"(\d{4})", str(price_col))
                 sheet_data["Yil"] = int(year_match.group(1)) if year_match else None
-                sheet_data["Marka"] = sheet_data["Malzeme_Adi"].astype(str).apply(detect_brand)
+                if brand_from_file:
+                    sheet_data["Marka"] = brand_from_file
+                else:
+                    sheet_data["Marka"] = sheet_data["Malzeme_Adi"].astype(str).apply(detect_brand)
                 sheet_data["Kategori"] = None
                 sheet_data["Sayfa"] = sheet
                 all_data.append(sheet_data)

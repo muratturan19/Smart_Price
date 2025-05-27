@@ -1,3 +1,4 @@
+import os
 import re
 from typing import Optional
 
@@ -78,20 +79,31 @@ def select_latest_year_column(df, pattern: str = r"(\d{4})") -> Optional[str]:
     return max(year_cols, key=year_cols.get)
 
 
-def detect_brand(description: str) -> Optional[str]:
-    """Very naive brand detection placeholder.
+def detect_brand(text: str) -> Optional[str]:
+    """Try to infer brand name from a file name.
+
+    The function is intentionally simple. If ``text`` looks like a file
+    path, the first textual token in the base name (without extension) is
+    returned. Otherwise ``None`` is yielded.
 
     Parameters
     ----------
-    description : str
-        Product description to analyse.
+    text : str
+        File path or name that potentially encodes the brand name.
 
     Returns
     -------
     str or None
-        Detected brand name if any. Currently this implementation only returns
-        ``None`` and exists as a hook for future improvements.
+        Detected brand name if any, otherwise ``None``.
     """
-    if not description:
+    if not text:
         return None
+
+    base = os.path.basename(str(text))
+    match = re.search(r"\.([A-Za-z0-9]{2,4})$", base)
+    if match:
+        base = os.path.splitext(base)[0]
+        for token in re.split(r"[\s_-]+", base):
+            if re.search(r"[A-Za-z]", token):
+                return token
     return None
