@@ -49,8 +49,8 @@ def main() -> None:
         print("No data extracted from given files.")
         return
     master = pd.concat(all_extracted, ignore_index=True)
-    master.drop_duplicates(subset=["Malzeme_Kodu", "Malzeme_Adi"], keep="last", inplace=True)
-    master.sort_values(by="Malzeme_Adi", inplace=True)
+    master.drop_duplicates(subset=["Malzeme_Kodu", "Descriptions"], keep="last", inplace=True)
+    master.sort_values(by="Descriptions", inplace=True)
     master.to_excel(args.output, index=False)
     print(f"Saved {len(master)} records to {args.output}")
 
@@ -72,7 +72,7 @@ def main() -> None:
         master.rename(
             columns={
                 "Malzeme_Kodu": "material_code",
-                "Malzeme_Adi": "description",
+                "Descriptions": "description",
                 "Fiyat": "price",
                 "Para_Birimi": "price_currency",
                 "Kaynak_Dosya": "source_file",
