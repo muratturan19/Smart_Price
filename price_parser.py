@@ -34,14 +34,32 @@ def main() -> None:
         print("No data extracted from given files.")
         return
     master = pd.concat(all_extracted, ignore_index=True)
-    master.dropna(subset=['Malzeme_Adi', 'Fiyat'], inplace=True)
-    master['Malzeme_Adi'] = master['Malzeme_Adi'].astype(str).str.strip().str.upper()
-    master = master[master['Malzeme_Adi'] != '']
-    master['Fiyat'] = pd.to_numeric(master['Fiyat'], errors='coerce')
-    master.dropna(subset=['Fiyat'], inplace=True)
-    master.drop_duplicates(subset=['Malzeme_Adi'], keep='last', inplace=True)
-    master = master[master['Fiyat'] > 0.01]
-    master.sort_values(by='Malzeme_Adi', inplace=True)
+    # Basic cleanup using the new column names
+    required_cols = ['description', 'price']
+    missing = [col for col in required_cols if col not in master.columns]
+    if missing:
+        raise ValueError(f"Missing expected columns: {', '.join(missing)}")
+
+    master.dropna(subset=['description', 'price'], inplace=True)
+    master['description'] = (
+        master['description']
+        .astype(str)
+        .str.strip()
+        .str.upper()
+    )
+    master = master[master['description'] != '']
+
+    master['price'] = pd.to_numeric(master['price'], errors='coerce')
+    master.dropna(subset=['price'], inplace=True)
+    master = master[master['price'] > 0.01]
+
+    if 'material_code' in master.columns:
+        dedup_cols = ['material_code', 'description']
+    else:
+        dedup_cols = ['description']
+    master.drop_duplicates(subset=dedup_cols, keep='last', inplace=True)
+
+    master.sort_values(by='description', inplace=True)
     master.to_excel(args.output, index=False)
     print(f"Saved {len(master)} records to {args.output}")
 
