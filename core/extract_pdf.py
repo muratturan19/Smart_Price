@@ -44,14 +44,40 @@ def extract_from_pdf(
                         if not table:
                             continue
                         try:
-                            df_table = pd.DataFrame(table)
-                            df_table.dropna(how='all', inplace=True)
+                            header_row = None
+                            if table and any(
+                                str(c or "").strip().lower() in POSSIBLE_PRODUCT_NAME_HEADERS
+                                or str(c or "").strip().lower() in POSSIBLE_PRICE_HEADERS
+                                for c in table[0]
+                            ):
+                                header_row = [str(c or "").strip() for c in table[0]]
+                                df_table = pd.DataFrame(table[1:], columns=header_row)
+                            else:
+                                df_table = pd.DataFrame(table)
+
+                            df_table.dropna(how="all", inplace=True)
+
                             product_idx = 0
                             price_idx = -1
-                            if any(str(c).lower() in POSSIBLE_PRODUCT_NAME_HEADERS for c in df_table.columns):
-                                product_idx = [i for i,c in enumerate(df_table.columns) if str(c).lower() in POSSIBLE_PRODUCT_NAME_HEADERS][0]
-                            if any(str(c).lower() in POSSIBLE_PRICE_HEADERS for c in df_table.columns):
-                                price_idx = [i for i,c in enumerate(df_table.columns) if str(c).lower() in POSSIBLE_PRICE_HEADERS][0]
+                            if any(
+                                str(c).lower() in POSSIBLE_PRODUCT_NAME_HEADERS
+                                for c in df_table.columns
+                            ):
+                                product_idx = [
+                                    i
+                                    for i, c in enumerate(df_table.columns)
+                                    if str(c).lower() in POSSIBLE_PRODUCT_NAME_HEADERS
+                                ][0]
+                            if any(
+                                str(c).lower() in POSSIBLE_PRICE_HEADERS
+                                for c in df_table.columns
+                            ):
+                                price_idx = [
+                                    i
+                                    for i, c in enumerate(df_table.columns)
+                                    if str(c).lower() in POSSIBLE_PRICE_HEADERS
+                                ][0]
+
                             for _, row in df_table.iterrows():
                                 if len(row) <= max(product_idx, abs(price_idx)):
                                     continue
