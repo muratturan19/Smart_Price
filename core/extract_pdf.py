@@ -106,7 +106,11 @@ def extract_from_pdf(
     df["Malzeme_Adi"] = df["Malzeme_Adi"].str.replace(r"^[A-Z0-9\-/]{3,}\s+", "", regex=True)
     df["Kaynak_Dosya"] = _basename(filepath, filename)
     df["Yil"] = None
-    df["Marka"] = df["Malzeme_Adi"].apply(detect_brand)
+    brand_from_file = detect_brand(_basename(filepath, filename))
+    if brand_from_file:
+        df["Marka"] = brand_from_file
+    else:
+        df["Marka"] = df["Malzeme_Adi"].apply(detect_brand)
     df["Kategori"] = None
     cols = [
         "Malzeme_Kodu",
