@@ -487,3 +487,49 @@ def test_extract_from_pdf_table_headers(monkeypatch):
         "Kaynak_Dosya",
     ]
     assert result.columns.tolist() == expected_cols
+
+
+def test_extract_from_pdf_bytesio(monkeypatch):
+    if not HAS_PANDAS:
+        pytest.skip("pandas not installed")
+    import io
+
+    class FakePage:
+        page_number = 1
+
+        def extract_text(self):
+            return "ItemZ    55"
+
+        def extract_tables(self):
+            return []
+
+    class FakePDF:
+        def __enter__(self):
+            return self
+
+        def __exit__(self, exc_type, exc, tb):
+            pass
+
+        @property
+        def pages(self):
+            return [FakePage()]
+
+    calls = {}
+
+    def fake_open(*args, **kwargs):
+        calls["args"] = args
+        calls["kwargs"] = kwargs
+        return FakePDF()
+
+    import sys
+
+    pdfplumber_mod = sys.modules.get("pdfplumber")
+    monkeypatch.setattr(pdfplumber_mod, "open", fake_open, raising=False)
+
+    buf = io.BytesIO(b"pdf")
+    result = extract_from_pdf(buf, filename="dummy.pdf")
+
+    assert len(result) == 1
+    assert result.iloc[0]["Fiyat"] == 55.0
+    assert calls.get("kwargs", {}).get("file") is buf
+    assert calls.get("args") == ()
