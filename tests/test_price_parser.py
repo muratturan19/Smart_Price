@@ -203,6 +203,21 @@ def test_extract_from_excel_code_only(tmp_path):
     assert result["Descriptions"].tolist() == ["C1", "D2"]
 
 
+def test_extract_from_excel_tip_header(tmp_path):
+    if not HAS_PANDAS:
+        pytest.skip("pandas not installed")
+    pytest.importorskip("openpyxl")
+    import pandas as pd
+
+    df = pd.DataFrame({"TİP": ["C1", "D2"], "Fiyat": ["10", "20"]})
+    file = tmp_path / "tip.xlsx"
+    df.to_excel(file, index=False)
+
+    result = extract_from_excel(str(file))
+    assert result["Malzeme_Kodu"].tolist() == ["C1", "D2"]
+    assert result["Descriptions"].tolist() == ["C1", "D2"]
+
+
 def test_extract_from_excel_bytesio():
     if not HAS_PANDAS:
         pytest.skip("pandas not installed")
