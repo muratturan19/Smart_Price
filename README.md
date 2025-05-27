@@ -12,6 +12,18 @@ pip install .
 
 `tkinter` must also be available. It is typically included with many Python distributions but may require a separate installation on some systems.
 
+PDF lists that cannot be read directly fall back to OCR. This requires the
+`pdftoppm` utility from **Poppler** and **Tesseract** itself. On Debian based
+Linux systems install them with:
+
+```bash
+sudo apt-get install poppler-utils tesseract-ocr
+```
+
+Windows users can download the Poppler and Tesseract binaries and ensure that
+`pdftoppm.exe` and `tesseract.exe` are available in the `PATH`. Both utilities
+must be discoverable on your system PATH for the OCR phase to succeed.
+
 ### Building a Windows executable
 
 You can package the Streamlit interface into a single Windows executable using
