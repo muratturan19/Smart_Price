@@ -48,7 +48,15 @@ def extract_from_pdf(
         return []
 
     try:
-        with pdfplumber.open(filepath) as pdf:
+        if isinstance(filepath, (str, bytes, os.PathLike)):
+            cm = pdfplumber.open(filepath)
+        else:
+            try:
+                filepath.seek(0)
+            except Exception:
+                pass
+            cm = pdfplumber.open(file=filepath)
+        with cm as pdf:
             for page in pdf.pages:
                 page_added = False
                 text = page.extract_text() or ""
