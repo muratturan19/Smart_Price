@@ -1,8 +1,15 @@
 from __future__ import annotations
 
+import os
+import re
 import pandas as pd
 from typing import Tuple, Optional
-from .common_utils import normalize_price, select_latest_year_column
+from .common_utils import (
+    normalize_price,
+    select_latest_year_column,
+    detect_currency,
+    detect_brand,
+)
 
 # Possible column headers for product names/codes and prices
 POSSIBLE_CODE_HEADERS = [
@@ -56,7 +63,7 @@ def find_columns_in_excel(
 
 
 def extract_from_excel(filepath: str) -> pd.DataFrame:
-    """Extract product names and prices from an Excel file."""
+    """Extract product information from an Excel file."""
     all_data = []
     try:
         xls = pd.ExcelFile(filepath)
@@ -77,17 +84,25 @@ def extract_from_excel(filepath: str) -> pd.DataFrame:
                 sheet_data = df[cols].copy()
                 mapping = {}
                 if code_col and code_col in df.columns:
-                    mapping[code_col] = 'Malzeme_Kodu'
+                    mapping[code_col] = "Malzeme_Kodu"
                 if desc_col and desc_col in df.columns:
-                    mapping[desc_col] = 'Malzeme_Adi'
-                elif code_col and code_col in df.columns and 'Malzeme_Adi' not in mapping.values():
-                    mapping[code_col] = 'Malzeme_Adi'
-                mapping[price_col] = 'Fiyat_Ham'
+                    mapping[desc_col] = "Malzeme_Adi"
+                elif code_col and code_col in df.columns and "Malzeme_Adi" not in mapping.values():
+                    mapping[code_col] = "Malzeme_Adi"
+                mapping[price_col] = "Fiyat_Ham"
                 if currency_col and currency_col in df.columns:
-                    mapping[currency_col] = 'Para_Birimi'
+                    mapping[currency_col] = "Para_Birimi"
                 sheet_data.rename(columns=mapping, inplace=True)
-                if 'Para_Birimi' not in sheet_data.columns:
-                    sheet_data['Para_Birimi'] = '€'
+                if "Para_Birimi" not in sheet_data.columns:
+                    sheet_data["Para_Birimi"] = sheet_data["Fiyat_Ham"].astype(str).apply(detect_currency)
+                sheet_data["Kaynak_Dosya"] = os.path.basename(filepath)
+                year_match = None
+                if price_col:
+                    year_match = re.search(r"(\d{4})", str(price_col))
+                sheet_data["Yil"] = int(year_match.group(1)) if year_match else None
+                sheet_data["Marka"] = sheet_data["Malzeme_Adi"].astype(str).apply(detect_brand)
+                sheet_data["Kategori"] = None
+                sheet_data["Sayfa"] = sheet
                 all_data.append(sheet_data)
     except Exception as exc:
         print(f"Excel error for {filepath}: {exc}")
@@ -95,5 +110,16 @@ def extract_from_excel(filepath: str) -> pd.DataFrame:
     if not all_data:
         return pd.DataFrame()
     combined = pd.concat(all_data, ignore_index=True)
-    combined['Fiyat'] = combined['Fiyat_Ham'].apply(normalize_price)
-    return combined[['Malzeme_Adi', 'Fiyat']].dropna()
+    combined["Fiyat"] = combined["Fiyat_Ham"].apply(normalize_price)
+    cols = [
+        "Malzeme_Kodu",
+        "Malzeme_Adi",
+        "Fiyat",
+        "Para_Birimi",
+        "Kaynak_Dosya",
+        "Sayfa",
+        "Yil",
+        "Marka",
+        "Kategori",
+    ]
+    return combined[cols].dropna(subset=["Malzeme_Adi", "Fiyat"])
