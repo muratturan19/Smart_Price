@@ -4,6 +4,7 @@ import io
 import os
 import sys
 from pathlib import Path
+from typing import Callable, Optional
 
 from core.extract_excel import extract_from_excel
 from core.extract_pdf import extract_from_pdf
@@ -42,22 +43,50 @@ def extract_from_pdf_file(
     return extract_from_pdf(file, filename=file_name)
 
 
-def merge_files(uploaded_files):
+def merge_files(
+    uploaded_files,
+    *,
+    update_status: Optional[Callable[[str], None]] = None,
+    update_progress: Optional[Callable[[float], None]] = None,
+):
+    """Extract and merge uploaded files with optional progress callbacks."""
     extracted = []
-    for up_file in uploaded_files:
+    total = len(uploaded_files)
+    for idx, up_file in enumerate(uploaded_files, start=1):
+        if update_status:
+            update_status(f"{up_file.name} okunuyor")
+        if update_progress:
+            update_progress((idx - 1) / total)
+
         name = up_file.name.lower()
         bytes_data = io.BytesIO(up_file.read())
-        if name.endswith((".xlsx", ".xls")):
-            df = extract_from_excel_file(bytes_data, file_name=up_file.name)
-        elif name.endswith(".pdf"):
-            df = extract_from_pdf_file(bytes_data, file_name=up_file.name)
+        df = pd.DataFrame()
+        try:
+            if name.endswith((".xlsx", ".xls")):
+                df = extract_from_excel_file(bytes_data, file_name=up_file.name)
+            elif name.endswith(".pdf"):
+                df = extract_from_pdf_file(bytes_data, file_name=up_file.name)
+        except Exception:
+            df = pd.DataFrame()
+
+        if df.empty:
+            if update_status:
+                update_status("veri çıkarılamadı")
         else:
-            continue
-        if not df.empty:
             extracted.append(df)
+            if update_status:
+                update_status(f"{len(df)} kayıt bulundu")
+
+        if update_progress:
+            update_progress(idx / total)
 
     if not extracted:
         return pd.DataFrame(columns=["Descriptions", "Fiyat"])
+
+    if update_progress:
+        update_progress(1.0)
+    if update_status:
+        update_status("Tamamlandı")
 
     master = pd.concat(extracted, ignore_index=True)
     master.dropna(subset=["Descriptions", "Fiyat"], inplace=True)
@@ -77,7 +106,13 @@ def upload_page():
     if not files:
         return
     if st.button("Dosyaları İşle"):
-        df = merge_files(files)
+        status = st.empty()
+        progress_bar = st.progress(0.0)
+        df = merge_files(
+            files,
+            update_status=status.write,
+            update_progress=lambda v: progress_bar.progress(v),
+        )
         if df.empty:
             st.warning("Dosyalardan veri çıkarılamadı.")
             return
