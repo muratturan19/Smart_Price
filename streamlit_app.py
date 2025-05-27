@@ -110,7 +110,12 @@ def main():
     page()
 
 
-if __name__ == "__main__":
+def cli() -> None:
+    """Entry point to launch the Streamlit application."""
     from streamlit.web import cli as stcli
     sys.argv = ["streamlit", "run", __file__]
     sys.exit(stcli.main())
+
+
+if __name__ == "__main__":
+    cli()

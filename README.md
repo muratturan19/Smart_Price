@@ -2,14 +2,13 @@
 
 Akıllı Fiyat Asistanı
 
-## Requirements
+## Installation
 
-This project relies on a few Python packages:
+The required Python packages are listed in `pyproject.toml`. Install them together with this project using `pip`:
 
-- `pandas`
-- `pdfplumber`
-
-Make sure these are installed, for example using `pip install pandas pdfplumber`.
+```bash
+pip install .
+```
 
 `tkinter` must also be available. It is typically included with many Python distributions but may require a separate installation on some systems.
 
@@ -38,10 +37,10 @@ default it assumes European formatting (e.g. `1.234,56`). Pass
 
 ### CLI usage
 
-Extract prices from files on the command line and save the merged result:
+Extract prices from files on the command line and save the merged result using the provided console script:
 
 ```bash
-python price_parser.py data/list.xlsx another.pdf -o merged_prices.xlsx
+smart-price-parser data/list.xlsx another.pdf -o merged_prices.xlsx
 ```
 
 ### Running the Streamlit interface
@@ -49,7 +48,7 @@ python price_parser.py data/list.xlsx another.pdf -o merged_prices.xlsx
 Launch the web UI locally with:
 
 ```bash
-streamlit run streamlit_app.py
+smart-price-app
 ```
 
 From the interface you can upload Excel/PDF price lists and search the
