@@ -111,9 +111,13 @@ def extract_from_excel(
     """Extract product information from an Excel file."""
     all_data = []
     try:
-        xls = pd.ExcelFile(filepath)
+        ext = os.path.splitext(filename or _basename(filepath))[1].lower()
+        engine = "openpyxl"
+        if ext == ".xls":
+            engine = "xlrd"
+        xls = pd.ExcelFile(filepath, engine=engine)
         for sheet in xls.sheet_names:
-            df = pd.read_excel(xls, sheet_name=sheet)
+            df = pd.read_excel(xls, sheet_name=sheet, engine=engine)
             if df.empty:
                 continue
             code_col, short_col, desc_col, price_col, currency_col = find_columns_in_excel(df)
