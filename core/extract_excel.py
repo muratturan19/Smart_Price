@@ -161,8 +161,12 @@ def extract_from_excel(
                     mapping[short_col] = "Kisa_Kod"
                 if desc_col and desc_col in df.columns:
                     mapping[desc_col] = "Malzeme_Adi"
-                elif code_col and code_col in df.columns and "Malzeme_Adi" not in mapping.values():
-                    mapping[code_col] = "Malzeme_Adi"
+                else:
+                    # If no dedicated description column exists, duplicate the
+                    # code column rather than renaming it so both fields are
+                    # populated.
+                    if code_col and code_col in df.columns:
+                        sheet_data["Malzeme_Adi"] = df[code_col]
                 mapping[price_col] = "Fiyat_Ham"
                 if currency_col and currency_col in df.columns:
                     mapping[currency_col] = "Para_Birimi"
