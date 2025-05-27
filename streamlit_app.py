@@ -7,7 +7,8 @@ import os
 import sys
 from pathlib import Path
 
-from price_parser import clean_price, find_columns_in_excel
+from core.common_utils import normalize_price
+from core.extract_excel import find_columns_in_excel
 
 
 def resource_path(relative: str) -> str:
@@ -51,7 +52,7 @@ def extract_from_excel_file(file: io.BytesIO) -> pd.DataFrame:
         return pd.DataFrame(columns=["Malzeme_Adi", "Fiyat"])
 
     combined = pd.concat(all_data, ignore_index=True)
-    combined["Fiyat"] = combined["Fiyat_Ham"].apply(clean_price)
+    combined["Fiyat"] = combined["Fiyat_Ham"].apply(normalize_price)
     return combined[["Malzeme_Adi", "Fiyat"]].dropna()
 
 
@@ -86,7 +87,7 @@ def extract_from_pdf_file(file: io.BytesIO) -> pd.DataFrame:
                             if len(match) != 2:
                                 continue
                             product_name = re.sub(r"\s{2,}", " ", match[0].strip())
-                            price = clean_price(match[1])
+                            price = normalize_price(match[1])
                             if product_name and price is not None:
                                 data.append({"Malzeme_Adi": product_name, "Fiyat": price})
     except Exception as exc:
