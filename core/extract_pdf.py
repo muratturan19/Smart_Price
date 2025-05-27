@@ -1,9 +1,10 @@
 from __future__ import annotations
 
+import os
 import pandas as pd
 import pdfplumber
 import re
-from .common_utils import normalize_price
+from .common_utils import normalize_price, detect_currency, detect_brand
 from .extract_excel import POSSIBLE_PRICE_HEADERS, POSSIBLE_PRODUCT_NAME_HEADERS
 
 _patterns = [
@@ -39,11 +40,18 @@ def extract_from_pdf(filepath: str) -> pd.DataFrame:
                                 if len(row) <= max(product_idx, abs(price_idx)):
                                     continue
                                 product = str(row.iloc[product_idx]).strip()
-                                price = str(row.iloc[price_idx]).strip()
-                                if product and price:
-                                    val = normalize_price(price)
+                                price_raw = str(row.iloc[price_idx]).strip()
+                                if product and price_raw:
+                                    val = normalize_price(price_raw)
                                     if val is not None:
-                                        data.append({'Malzeme_Adi': product, 'Fiyat': val})
+                                        data.append(
+                                            {
+                                                "Malzeme_Adi": product,
+                                                "Fiyat": val,
+                                                "Para_Birimi": detect_currency(price_raw),
+                                                "Sayfa": page.page_number,
+                                            }
+                                        )
                         except Exception:
                             continue
                     continue
@@ -61,10 +69,38 @@ def extract_from_pdf(filepath: str) -> pd.DataFrame:
                             if len(match) != 2:
                                 continue
                             product_name = re.sub(r"\s{2,}", " ", match[0].strip())
-                            price = normalize_price(match[1])
+                            price_raw = match[1]
+                            price = normalize_price(price_raw)
                             if product_name and price is not None:
-                                data.append({'Malzeme_Adi': product_name, 'Fiyat': price})
+                                data.append(
+                                    {
+                                        "Malzeme_Adi": product_name,
+                                        "Fiyat": price,
+                                        "Para_Birimi": detect_currency(price_raw),
+                                        "Sayfa": page.page_number,
+                                    }
+                                )
     except Exception as exc:
         print(f"PDF error for {filepath}: {exc}")
         return pd.DataFrame()
-    return pd.DataFrame(data)
+    if not data:
+        return pd.DataFrame()
+    df = pd.DataFrame(data)
+    df["Malzeme_Kodu"] = df["Malzeme_Adi"].str.extract(r"^([A-Z0-9\-/]{3,})")
+    df["Malzeme_Adi"] = df["Malzeme_Adi"].str.replace(r"^[A-Z0-9\-/]{3,}\s+", "", regex=True)
+    df["Kaynak_Dosya"] = os.path.basename(filepath)
+    df["Yil"] = None
+    df["Marka"] = df["Malzeme_Adi"].apply(detect_brand)
+    df["Kategori"] = None
+    cols = [
+        "Malzeme_Kodu",
+        "Malzeme_Adi",
+        "Fiyat",
+        "Para_Birimi",
+        "Kaynak_Dosya",
+        "Sayfa",
+        "Yil",
+        "Marka",
+        "Kategori",
+    ]
+    return df[cols].dropna(subset=["Malzeme_Adi", "Fiyat"])

@@ -76,3 +76,22 @@ def select_latest_year_column(df, pattern: str = r"(\d{4})") -> Optional[str]:
     if not year_cols:
         return None
     return max(year_cols, key=year_cols.get)
+
+
+def detect_brand(description: str) -> Optional[str]:
+    """Very naive brand detection placeholder.
+
+    Parameters
+    ----------
+    description : str
+        Product description to analyse.
+
+    Returns
+    -------
+    str or None
+        Detected brand name if any. Currently this implementation only returns
+        ``None`` and exists as a hook for future improvements.
+    """
+    if not description:
+        return None
+    return None
