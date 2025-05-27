@@ -51,8 +51,8 @@ def extract_from_pdf(
         if log:
             try:
                 log(message)
-            except Exception:
-                pass
+            except Exception as exc:  # pragma: no cover - log callback errors
+                print(f"log callback failed: {exc}")
         else:
             print(message)
 
@@ -62,8 +62,8 @@ def extract_from_pdf(
         try:
             from dotenv import load_dotenv  # type: ignore
             load_dotenv()
-        except Exception:
-            pass
+        except Exception as exc:  # pragma: no cover - optional dep missing
+            notify(f"dotenv load failed: {exc}")
 
         api_key = os.getenv("OPENAI_API_KEY")
         if not api_key or not text:
@@ -71,7 +71,8 @@ def extract_from_pdf(
 
         try:
             import openai  # type: ignore
-        except Exception:
+        except Exception as exc:  # pragma: no cover - optional dep missing
+            notify(f"openai import failed: {exc}")
             return []
 
         openai.api_key = api_key
@@ -96,7 +97,8 @@ def extract_from_pdf(
             except json.JSONDecodeError:
                 notify(f"LLM returned invalid JSON: {content!r}")
                 return []
-        except Exception:
+        except Exception as exc:
+            notify(f"openai request failed: {exc}")
             return []
 
         results = []
@@ -123,8 +125,8 @@ def extract_from_pdf(
         else:
             try:
                 filepath.seek(0)
-            except Exception:
-                pass
+            except Exception as exc:
+                notify(f"seek failed: {exc}")
             pdf_bytes = filepath.read()
             cm = pdfplumber.open(io.BytesIO(pdf_bytes))
             tmp = tempfile.NamedTemporaryFile(delete=False, suffix=".pdf")
@@ -220,14 +222,16 @@ def extract_from_pdf(
                                         }
                                     )
                                     page_added = True
-                    except Exception:
+                    except Exception as exc:
+                        notify(f"table parse error: {exc}")
                         continue
 
                 if not page_added:
                     try:
                         from pdf2image import convert_from_path  # type: ignore
                         import pytesseract  # type: ignore
-                    except Exception:
+                    except Exception as exc:
+                        notify(f"OCR libraries unavailable: {exc}")
                         continue
                     notify("OCR faz\u0131")
                     images = convert_from_path(
@@ -279,8 +283,8 @@ def extract_from_pdf(
         if tmp_for_ocr:
             try:
                 os.remove(tmp_for_ocr)
-            except Exception:
-                pass
+            except Exception as exc:
+                notify(f"temp file cleanup failed: {exc}")
     if not data:
         return pd.DataFrame()
     df = pd.DataFrame(data)
