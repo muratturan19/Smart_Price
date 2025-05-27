@@ -35,3 +35,22 @@ once the executable is launched. The resulting binary will appear in the
 The `normalize_price` helper converts textual prices into numeric values. By
 default it assumes European formatting (e.g. `1.234,56`). Pass
 `style="en"` to handle English formatted numbers such as `1,234.56`.
+
+### CLI usage
+
+Extract prices from files on the command line and save the merged result:
+
+```bash
+python price_parser.py data/list.xlsx another.pdf -o merged_prices.xlsx
+```
+
+### Running the Streamlit interface
+
+Launch the web UI locally with:
+
+```bash
+streamlit run streamlit_app.py
+```
+
+From the interface you can upload Excel/PDF price lists and search the
+resulting master dataset.

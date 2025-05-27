@@ -12,6 +12,9 @@ POSSIBLE_CODE_HEADERS = [
 POSSIBLE_DESC_HEADERS = [
     'ürün adı', 'malzeme adı', 'product name', 'item name', 'description'
 ]
+
+# Combined list used by the PDF extractor
+POSSIBLE_PRODUCT_NAME_HEADERS = POSSIBLE_CODE_HEADERS + POSSIBLE_DESC_HEADERS
 POSSIBLE_PRICE_HEADERS = [
     'fiyat', 'birim fiyat', 'liste fiyatı', 'price', 'unit price', 'list price',
     'tutar'

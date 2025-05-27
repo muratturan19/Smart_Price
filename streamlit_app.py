@@ -1,14 +1,12 @@
 import streamlit as st
 import pandas as pd
-import pdfplumber
-import re
 import io
 import os
 import sys
 from pathlib import Path
 
-from core.common_utils import normalize_price
-from core.extract_excel import find_columns_in_excel
+from core.extract_excel import extract_from_excel
+from core.extract_pdf import extract_from_pdf
 
 
 def resource_path(relative: str) -> str:
@@ -31,89 +29,13 @@ def get_master_dataset_path() -> str:
 
 
 def extract_from_excel_file(file: io.BytesIO) -> pd.DataFrame:
-    """Extract product name/code and price from an uploaded Excel file."""
-    all_data = []
-    try:
-        xls = pd.ExcelFile(file)
-        for sheet_name in xls.sheet_names:
-            df = pd.read_excel(xls, sheet_name=sheet_name)
-            if df.empty:
-                continue
-            code_col, desc_col, price_col, currency_col = find_columns_in_excel(df)
-            if (desc_col or code_col) and price_col:
-                cols = []
-                if code_col:
-                    cols.append(code_col)
-                if desc_col:
-                    cols.append(desc_col)
-                cols.append(price_col)
-                if currency_col:
-                    cols.append(currency_col)
-                sheet_data = df[cols].copy()
-                mapping = {}
-                if code_col:
-                    mapping[code_col] = "Malzeme_Kodu"
-                if desc_col:
-                    mapping[desc_col] = "Malzeme_Adi"
-                elif code_col:
-                    mapping[code_col] = "Malzeme_Adi"
-                mapping[price_col] = "Fiyat_Ham"
-                if currency_col:
-                    mapping[currency_col] = "Para_Birimi"
-                sheet_data.rename(columns=mapping, inplace=True)
-                if "Para_Birimi" not in sheet_data.columns:
-                    sheet_data["Para_Birimi"] = "€"
-                all_data.append(sheet_data)
-    except Exception as exc:
-        st.error(f"Excel dosyası işlenirken hata: {exc}")
-        return pd.DataFrame(columns=["Malzeme_Adi", "Fiyat"])
-
-    if not all_data:
-        return pd.DataFrame(columns=["Malzeme_Adi", "Fiyat"])
-
-    combined = pd.concat(all_data, ignore_index=True)
-    combined["Fiyat"] = combined["Fiyat_Ham"].apply(normalize_price)
-    return combined[["Malzeme_Adi", "Fiyat"]].dropna()
-
-
-_patterns = [
-    re.compile(r"^(.*?)\s{2,}([\d\.,]+)\s*(?:TL|TRY|EUR|USD|\$|€)?$", re.MULTILINE | re.IGNORECASE),
-    re.compile(r"([A-Z0-9\-\s/]{5,50})\s+([\d\.,]+)\s*(?:TL|TRY|EUR|USD|\$|€)?", re.IGNORECASE),
-    re.compile(r"Item Code:\s*(.*?)\s*Price:\s*([\d\.,]+)", re.IGNORECASE),
-    re.compile(r"Ürün No:\s*(.*?)\s*Birim Fiyat:\s*([\d\.,]+)", re.IGNORECASE),
-]
+    """Wrapper around :func:`core.extract_excel.extract_from_excel`."""
+    return extract_from_excel(file)
 
 
 def extract_from_pdf_file(file: io.BytesIO) -> pd.DataFrame:
-    """Extract product name/code and price from an uploaded PDF file."""
-    data = []
-    try:
-        with pdfplumber.open(file) as pdf:
-            for page in pdf.pages:
-                text = page.extract_text()
-                if not text:
-                    continue
-                for line in text.split("\n"):
-                    line = line.strip()
-                    if len(line) < 5:
-                        continue
-                    for pattern in _patterns:
-                        matches = pattern.findall(line)
-                        if not matches:
-                            match_obj = pattern.match(line)
-                            if match_obj:
-                                matches = [match_obj.groups()]
-                        for match in matches:
-                            if len(match) != 2:
-                                continue
-                            product_name = re.sub(r"\s{2,}", " ", match[0].strip())
-                            price = normalize_price(match[1])
-                            if product_name and price is not None:
-                                data.append({"Malzeme_Adi": product_name, "Fiyat": price})
-    except Exception as exc:
-        st.error(f"PDF dosyası işlenirken hata: {exc}")
-        return pd.DataFrame(columns=["Malzeme_Adi", "Fiyat"])
-    return pd.DataFrame(data)
+    """Wrapper around :func:`core.extract_pdf.extract_from_pdf`."""
+    return extract_from_pdf(file)
 
 
 def merge_files(uploaded_files):
