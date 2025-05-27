@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import os
 import re
+import unicodedata
 from typing import Tuple, Optional, IO, Any
 
 import pandas as pd
@@ -12,9 +13,19 @@ from .common_utils import (
     detect_brand,
 )
 
+
+def _norm_header(text: str) -> str:
+    """Normalize a header string for fuzzy matching."""
+    text = str(text).replace("_", " ")
+    text = unicodedata.normalize("NFKD", text)
+    text = text.encode("ascii", "ignore").decode("ascii")
+    text = re.sub(r"\s+", " ", text.lower()).strip()
+    return text
+
 # Possible column headers for product names/codes and prices
-POSSIBLE_CODE_HEADERS = [
+_RAW_CODE_HEADERS = [
     'ürün kodu',
+    'urun kodu',
     'malzeme kodu',
     'kod',
     'product code',
@@ -31,31 +42,38 @@ POSSIBLE_CODE_HEADERS = [
     'product name',
     'name',
 ]
-POSSIBLE_DESC_HEADERS = [
+_RAW_DESC_HEADERS = [
     'item name',
     'description',
     'ürün açıklaması',
     'açıklama',
 ]
 
+POSSIBLE_CODE_HEADERS = [_norm_header(h) for h in _RAW_CODE_HEADERS]
+POSSIBLE_DESC_HEADERS = [_norm_header(h) for h in _RAW_DESC_HEADERS]
+
 # Short code headers
-POSSIBLE_SHORT_HEADERS = [
+_RAW_SHORT_HEADERS = [
     'kısa kod',
     'kisa kod',
     'short code',
     'shortcode',
     'kısa ürün kodu',
 ]
+POSSIBLE_SHORT_HEADERS = [_norm_header(h) for h in _RAW_SHORT_HEADERS]
 
 # Combined list used by the PDF extractor
 POSSIBLE_PRODUCT_NAME_HEADERS = (
     POSSIBLE_CODE_HEADERS + POSSIBLE_SHORT_HEADERS + POSSIBLE_DESC_HEADERS
 )
-POSSIBLE_PRICE_HEADERS = [
+_RAW_PRICE_HEADERS = [
     'fiyat', 'birim fiyat', 'liste fiyatı', 'price', 'unit price', 'list price',
     'tutar'
 ]
-POSSIBLE_CURRENCY_HEADERS = ['para birimi', 'currency']
+_RAW_CURRENCY_HEADERS = ['para birimi', 'currency']
+
+POSSIBLE_PRICE_HEADERS = [_norm_header(h) for h in _RAW_PRICE_HEADERS]
+POSSIBLE_CURRENCY_HEADERS = [_norm_header(h) for h in _RAW_CURRENCY_HEADERS]
 
 
 def find_columns_in_excel(
@@ -63,34 +81,34 @@ def find_columns_in_excel(
 ) -> Tuple[Optional[str], Optional[str], Optional[str], Optional[str], Optional[str]]:
     """Try to detect product code, short code, description, price and currency columns."""
     code_col = short_col = desc_col = price_col = currency_col = None
-    lower_cols = [str(c).lower() for c in df.columns]
+    norm_cols = [_norm_header(c) for c in df.columns]
 
     for header in POSSIBLE_CODE_HEADERS:
-        if header in lower_cols:
-            code_col = df.columns[lower_cols.index(header)]
+        if header in norm_cols:
+            code_col = df.columns[norm_cols.index(header)]
             break
 
     for header in POSSIBLE_SHORT_HEADERS:
-        if header in lower_cols:
-            short_col = df.columns[lower_cols.index(header)]
+        if header in norm_cols:
+            short_col = df.columns[norm_cols.index(header)]
             break
 
     for header in POSSIBLE_DESC_HEADERS:
-        if header in lower_cols:
-            desc_col = df.columns[lower_cols.index(header)]
+        if header in norm_cols:
+            desc_col = df.columns[norm_cols.index(header)]
             break
 
     for header in POSSIBLE_PRICE_HEADERS:
-        if header in lower_cols:
-            price_col = df.columns[lower_cols.index(header)]
+        if header in norm_cols:
+            price_col = df.columns[norm_cols.index(header)]
             break
 
     if not price_col:
         price_col = select_latest_year_column(df)
 
     for header in POSSIBLE_CURRENCY_HEADERS:
-        if header in lower_cols:
-            currency_col = df.columns[lower_cols.index(header)]
+        if header in norm_cols:
+            currency_col = df.columns[norm_cols.index(header)]
             break
 
     return code_col, short_col, desc_col, price_col, currency_col

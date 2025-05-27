@@ -107,6 +107,25 @@ def test_extract_from_excel_bytesio():
     ]
     assert result.columns.tolist() == expected_cols
 
+
+def test_extract_from_excel_header_normalization(tmp_path):
+    if not HAS_PANDAS:
+        pytest.skip("pandas not installed")
+    pytest.importorskip("openpyxl")
+    import pandas as pd
+
+    df = pd.DataFrame({
+        "urun_kodu": ["001"],
+        "Ürün_Adı": ["Elma"],
+        "Fiyat": ["1.000,50"],
+    })
+    file = tmp_path / "underscores.xlsx"
+    df.to_excel(file, index=False)
+
+    result = extract_from_excel(str(file))
+    assert result.iloc[0]["Malzeme_Kodu"] == "001"
+    assert result["Descriptions"].tolist() == ["Elma"]
+
 def test_normalize_price_various_formats():
     assert normalize_price("1.234,56") == 1234.56
     assert normalize_price("1,234.56", style="en") == 1234.56
