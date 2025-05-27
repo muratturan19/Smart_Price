@@ -14,15 +14,40 @@ from .common_utils import (
 
 # Possible column headers for product names/codes and prices
 POSSIBLE_CODE_HEADERS = [
-    'ürün kodu', 'malzeme kodu', 'kod', 'product code',
-    'material code', 'item code', 'code'
+    'ürün kodu',
+    'malzeme kodu',
+    'kod',
+    'product code',
+    'material code',
+    'item code',
+    'code',
+    'ürün numarası',
+    'item no',
+    'product no',
 ]
 POSSIBLE_DESC_HEADERS = [
-    'ürün adı', 'malzeme adı', 'product name', 'item name', 'description'
+    'ürün adı',
+    'malzeme adı',
+    'product name',
+    'item name',
+    'description',
+    'ürün açıklaması',
+    'açıklama',
+]
+
+# Short code headers
+POSSIBLE_SHORT_HEADERS = [
+    'kısa kod',
+    'kisa kod',
+    'short code',
+    'shortcode',
+    'kısa ürün kodu',
 ]
 
 # Combined list used by the PDF extractor
-POSSIBLE_PRODUCT_NAME_HEADERS = POSSIBLE_CODE_HEADERS + POSSIBLE_DESC_HEADERS
+POSSIBLE_PRODUCT_NAME_HEADERS = (
+    POSSIBLE_CODE_HEADERS + POSSIBLE_SHORT_HEADERS + POSSIBLE_DESC_HEADERS
+)
 POSSIBLE_PRICE_HEADERS = [
     'fiyat', 'birim fiyat', 'liste fiyatı', 'price', 'unit price', 'list price',
     'tutar'
@@ -32,14 +57,19 @@ POSSIBLE_CURRENCY_HEADERS = ['para birimi', 'currency']
 
 def find_columns_in_excel(
     df: pd.DataFrame,
-) -> Tuple[Optional[str], Optional[str], Optional[str], Optional[str]]:
-    """Try to detect product code, description, price and currency columns."""
-    code_col = desc_col = price_col = currency_col = None
+) -> Tuple[Optional[str], Optional[str], Optional[str], Optional[str], Optional[str]]:
+    """Try to detect product code, short code, description, price and currency columns."""
+    code_col = short_col = desc_col = price_col = currency_col = None
     lower_cols = [str(c).lower() for c in df.columns]
 
     for header in POSSIBLE_CODE_HEADERS:
         if header in lower_cols:
             code_col = df.columns[lower_cols.index(header)]
+            break
+
+    for header in POSSIBLE_SHORT_HEADERS:
+        if header in lower_cols:
+            short_col = df.columns[lower_cols.index(header)]
             break
 
     for header in POSSIBLE_DESC_HEADERS:
@@ -60,7 +90,7 @@ def find_columns_in_excel(
             currency_col = df.columns[lower_cols.index(header)]
             break
 
-    return code_col, desc_col, price_col, currency_col
+    return code_col, short_col, desc_col, price_col, currency_col
 
 
 def _basename(fp: Any, filename: Optional[str] = None) -> str:
@@ -86,11 +116,13 @@ def extract_from_excel(
             df = pd.read_excel(xls, sheet_name=sheet)
             if df.empty:
                 continue
-            code_col, desc_col, price_col, currency_col = find_columns_in_excel(df)
+            code_col, short_col, desc_col, price_col, currency_col = find_columns_in_excel(df)
             if (desc_col or code_col) and price_col and price_col in df.columns:
                 cols = []
                 if code_col and code_col in df.columns:
                     cols.append(code_col)
+                if short_col and short_col in df.columns:
+                    cols.append(short_col)
                 if desc_col and desc_col in df.columns:
                     cols.append(desc_col)
                 cols.append(price_col)
@@ -100,6 +132,8 @@ def extract_from_excel(
                 mapping = {}
                 if code_col and code_col in df.columns:
                     mapping[code_col] = "Malzeme_Kodu"
+                if short_col and short_col in df.columns:
+                    mapping[short_col] = "Kisa_Kod"
                 if desc_col and desc_col in df.columns:
                     mapping[desc_col] = "Malzeme_Adi"
                 elif code_col and code_col in df.columns and "Malzeme_Adi" not in mapping.values():
@@ -130,8 +164,11 @@ def extract_from_excel(
         return pd.DataFrame()
     combined = pd.concat(all_data, ignore_index=True)
     combined["Fiyat"] = combined["Fiyat_Ham"].apply(normalize_price)
+    if "Kisa_Kod" not in combined.columns:
+        combined["Kisa_Kod"] = None
     cols = [
         "Malzeme_Kodu",
+        "Kisa_Kod",
         "Malzeme_Adi",
         "Fiyat",
         "Para_Birimi",
