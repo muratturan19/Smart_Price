@@ -235,3 +235,57 @@ def test_extract_from_pdf_default_currency(monkeypatch):
         "Kaynak_Dosya",
     ]
     assert result.columns.tolist() == expected_cols
+
+
+def test_extract_from_pdf_table_headers(monkeypatch):
+    if not HAS_PANDAS:
+        pytest.skip("pandas not installed")
+
+    table = [
+        ["Ürün Adı", "Fiyat"],
+        ["Elma", "1.000,50"],
+        ["Armut", "2.500,75"],
+    ]
+
+    class FakePage:
+        page_number = 1
+
+        def extract_text(self):
+            return ""
+
+        def extract_tables(self):
+            return [table]
+
+    class FakePDF:
+        def __enter__(self):
+            return self
+
+        def __exit__(self, exc_type, exc, tb):
+            pass
+
+        @property
+        def pages(self):
+            return [FakePage()]
+
+    def fake_open(_path):
+        return FakePDF()
+
+    import sys
+
+    pdfplumber_mod = sys.modules.get("pdfplumber")
+    monkeypatch.setattr(pdfplumber_mod, "open", fake_open, raising=False)
+
+    result = extract_from_pdf("dummy.pdf")
+    assert len(result) == 2
+    assert result.iloc[0]["Fiyat"] == 1000.50
+    assert result.iloc[1]["Fiyat"] == 2500.75
+    expected_cols = [
+        "Malzeme_Kodu",
+        "Descriptions",
+        "Kisa_Kod",
+        "Fiyat",
+        "Para_Birimi",
+        "Marka",
+        "Kaynak_Dosya",
+    ]
+    assert result.columns.tolist() == expected_cols
