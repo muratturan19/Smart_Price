@@ -103,7 +103,19 @@ def detect_brand(text: str) -> Optional[str]:
     match = re.search(r"\.([A-Za-z0-9]{2,4})$", base)
     if match:
         base = os.path.splitext(base)[0]
-        for token in re.split(r"[\s_-]+", base):
-            if re.search(r"[A-Za-z]", token):
-                return token
+        tokens = re.split(r"[\s_-]+", base)
+        brand_parts = []
+        for token in tokens:
+            if not token:
+                continue
+            if not brand_parts:
+                if re.search(r"[A-Za-z]", token):
+                    brand_parts.append(token)
+                continue
+            if re.match(r"[A-Z].*", token) or token.isupper():
+                brand_parts.append(token)
+            else:
+                break
+        if brand_parts:
+            return " ".join(brand_parts)
     return None

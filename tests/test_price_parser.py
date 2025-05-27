@@ -107,6 +107,11 @@ def test_detect_brand_from_filename():
     assert detect_brand("/path/to/BrandB-2021.pdf") == "BrandB"
 
 
+def test_detect_brand_from_filename_multi_word():
+    assert detect_brand("Omega Motor_list.xlsx") == "Omega Motor"
+    assert detect_brand("ACME_Corp-2023.pdf") == "ACME Corp"
+
+
 def test_extract_from_excel_brand_from_filename(tmp_path):
     if not HAS_PANDAS:
         pytest.skip("pandas not installed")
@@ -135,6 +140,20 @@ def test_extract_from_excel_brand_filename_param():
 
     result = extract_from_excel(buf, filename="BrandX_prices.xlsx")
     assert result.iloc[0]["Marka"] == "BrandX"
+
+
+def test_extract_from_excel_brand_from_filename_multiword(tmp_path):
+    if not HAS_PANDAS:
+        pytest.skip("pandas not installed")
+    pytest.importorskip("openpyxl")
+    import pandas as pd
+
+    df = pd.DataFrame({"Ürün Adı": ["Elma"], "Fiyat": ["1.000,50"]})
+    file = tmp_path / "Omega Motor_list.xlsx"
+    df.to_excel(file, index=False)
+
+    result = extract_from_excel(str(file))
+    assert result.iloc[0]["Marka"] == "Omega Motor"
 
 
 def test_extract_from_excel_short_code(tmp_path):
