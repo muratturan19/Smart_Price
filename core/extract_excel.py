@@ -2,8 +2,9 @@ from __future__ import annotations
 
 import os
 import re
+from typing import Tuple, Optional, IO, Any
+
 import pandas as pd
-from typing import Tuple, Optional
 from .common_utils import (
     normalize_price,
     select_latest_year_column,
@@ -62,7 +63,21 @@ def find_columns_in_excel(
     return code_col, desc_col, price_col, currency_col
 
 
-def extract_from_excel(filepath: str) -> pd.DataFrame:
+def _basename(fp: Any, filename: Optional[str] = None) -> str:
+    """Return best-effort basename for a file path or buffer."""
+    if filename:
+        return os.path.basename(filename)
+    if isinstance(fp, (str, bytes, os.PathLike)):
+        return os.path.basename(fp)
+    name = getattr(fp, "name", None)
+    if isinstance(name, str):
+        return os.path.basename(name)
+    return ""
+
+
+def extract_from_excel(
+    filepath: str | IO[bytes], *, filename: str | None = None
+) -> pd.DataFrame:
     """Extract product information from an Excel file."""
     all_data = []
     try:
@@ -95,7 +110,7 @@ def extract_from_excel(filepath: str) -> pd.DataFrame:
                 sheet_data.rename(columns=mapping, inplace=True)
                 if "Para_Birimi" not in sheet_data.columns:
                     sheet_data["Para_Birimi"] = sheet_data["Fiyat_Ham"].astype(str).apply(detect_currency)
-                sheet_data["Kaynak_Dosya"] = os.path.basename(filepath)
+                sheet_data["Kaynak_Dosya"] = _basename(filepath, filename)
                 year_match = None
                 if price_col:
                     year_match = re.search(r"(\d{4})", str(price_col))
