@@ -119,3 +119,42 @@ def detect_brand(text: str) -> Optional[str]:
         if brand_parts:
             return " ".join(brand_parts)
     return None
+
+
+CODE_DESC_PATTERNS = [
+    re.compile(r"^\((?P<code>[A-Z0-9\-/]{3,})\)\s*(?P<desc>.+)$"),
+    re.compile(r"^(?P<desc>.+?)\s*\((?P<code>[A-Z0-9\-/]{3,})\)$"),
+    re.compile(r"^(?P<code>[A-Z0-9\-/]{3,})\s*/\s*(?P<desc>.+)$"),
+    re.compile(r"^(?P<desc>.+?)\s*/\s*(?P<code>[A-Z0-9\-/]{3,})$"),
+]
+
+def split_code_description(text: str) -> tuple[Optional[str], str]:
+    """Split a product text into code and description parts.
+
+    The helper tries multiple patterns to recognise formats such as
+    ``CODE / Description`` or ``Description (CODE)`` before falling
+    back to a simple prefix-based extraction.
+
+    Parameters
+    ----------
+    text : str
+        Raw product text possibly containing a product code.
+
+    Returns
+    -------
+    tuple
+        ``(code, description)`` where ``code`` may be ``None`` if no code
+        could be detected.
+    """
+    if not text:
+        return None, ""
+    text = str(text).strip()
+    for pat in CODE_DESC_PATTERNS:
+        m = pat.match(text)
+        if m:
+            return m.group("code").strip(), m.group("desc").strip()
+    m = re.match(r"^([A-Z0-9\-/]{3,})\s+(.*)$", text)
+    if m:
+        return m.group(1).strip(), m.group(2).strip()
+    return None, text
+

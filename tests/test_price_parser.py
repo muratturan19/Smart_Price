@@ -25,6 +25,7 @@ if 'tkinter' not in sys.modules:
 
 from core.common_utils import normalize_price
 from core.common_utils import detect_brand
+from core.common_utils import split_code_description
 from core.extract_excel import extract_from_excel
 from core.extract_pdf import extract_from_pdf
 
@@ -126,6 +127,21 @@ def test_detect_brand_from_filename():
 def test_detect_brand_from_filename_multi_word():
     assert detect_brand("Omega Motor_list.xlsx") == "Omega Motor"
     assert detect_brand("ACME_Corp-2023.pdf") == "ACME Corp"
+
+
+@pytest.mark.parametrize(
+    "text,expected",
+    [
+        ("ABC123 Product", ("ABC123", "Product")),
+        ("ABC123 / Product", ("ABC123", "Product")),
+        ("Product / ABC123", ("ABC123", "Product")),
+        ("Product (ABC123)", ("ABC123", "Product")),
+        ("(ABC123) Product", ("ABC123", "Product")),
+        ("Just Product", (None, "Just Product")),
+    ],
+)
+def test_split_code_description(text, expected):
+    assert split_code_description(text) == expected
 
 
 def test_extract_from_excel_brand_from_filename(tmp_path):

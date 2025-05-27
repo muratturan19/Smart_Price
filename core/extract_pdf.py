@@ -6,7 +6,12 @@ from typing import IO, Any, Optional
 import pandas as pd
 import pdfplumber
 import re
-from .common_utils import normalize_price, detect_currency, detect_brand
+from .common_utils import (
+    normalize_price,
+    detect_currency,
+    detect_brand,
+    split_code_description,
+)
 from .extract_excel import POSSIBLE_PRICE_HEADERS, POSSIBLE_PRODUCT_NAME_HEADERS
 
 _patterns = [
@@ -128,8 +133,10 @@ def extract_from_pdf(
     if not data:
         return pd.DataFrame()
     df = pd.DataFrame(data)
-    df["Malzeme_Kodu"] = df["Malzeme_Adi"].str.extract(r"^([A-Z0-9\-/]{3,})")
-    df["Malzeme_Adi"] = df["Malzeme_Adi"].str.replace(r"^[A-Z0-9\-/]{3,}\s+", "", regex=True)
+    if not df.empty:
+        codes, descs = zip(*df["Malzeme_Adi"].map(split_code_description))
+        df["Malzeme_Kodu"] = list(codes)
+        df["Malzeme_Adi"] = list(descs)
     # Default to Turkish Lira if currency could not be determined
     df["Para_Birimi"] = df["Para_Birimi"].fillna("TL")
     df["Kaynak_Dosya"] = _basename(filepath, filename)
