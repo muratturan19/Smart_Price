@@ -39,10 +39,30 @@ def extract_from_excel_file(file: io.BytesIO) -> pd.DataFrame:
             df = pd.read_excel(xls, sheet_name=sheet_name)
             if df.empty:
                 continue
-            product_col, price_col = find_columns_in_excel(df)
-            if product_col and price_col:
-                sheet_data = df[[product_col, price_col]].copy()
-                sheet_data.columns = ["Malzeme_Adi", "Fiyat_Ham"]
+            code_col, desc_col, price_col, currency_col = find_columns_in_excel(df)
+            if (desc_col or code_col) and price_col:
+                cols = []
+                if code_col:
+                    cols.append(code_col)
+                if desc_col:
+                    cols.append(desc_col)
+                cols.append(price_col)
+                if currency_col:
+                    cols.append(currency_col)
+                sheet_data = df[cols].copy()
+                mapping = {}
+                if code_col:
+                    mapping[code_col] = "Malzeme_Kodu"
+                if desc_col:
+                    mapping[desc_col] = "Malzeme_Adi"
+                elif code_col:
+                    mapping[code_col] = "Malzeme_Adi"
+                mapping[price_col] = "Fiyat_Ham"
+                if currency_col:
+                    mapping[currency_col] = "Para_Birimi"
+                sheet_data.rename(columns=mapping, inplace=True)
+                if "Para_Birimi" not in sheet_data.columns:
+                    sheet_data["Para_Birimi"] = "€"
                 all_data.append(sheet_data)
     except Exception as exc:
         st.error(f"Excel dosyası işlenirken hata: {exc}")
