@@ -16,6 +16,10 @@ dependencies = [
     "openpyxl",
 ]
 
+[tool.setuptools]
+packages = ["core"]
+py-modules = ["price_parser", "streamlit_app"]
+
 [project.scripts]
 smart-price-parser = "price_parser:main"
 smart-price-app = "streamlit_app:cli"
