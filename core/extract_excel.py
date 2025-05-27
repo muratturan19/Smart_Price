@@ -24,6 +24,7 @@ POSSIBLE_CODE_HEADERS = [
     'ürün numarası',
     'item no',
     'product no',
+    'ürün adı',
     'malzeme adı',
     'malzeme',
     'ürün',
@@ -31,7 +32,6 @@ POSSIBLE_CODE_HEADERS = [
     'name',
 ]
 POSSIBLE_DESC_HEADERS = [
-    'ürün adı',
     'item name',
     'description',
     'ürün açıklaması',

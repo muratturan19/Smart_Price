@@ -46,6 +46,7 @@ def test_extract_from_excel_basic(tmp_path):
     assert len(result) == 2
     assert result.iloc[0]["Fiyat"] == 1000.50
     assert result.iloc[1]["Fiyat"] == 2500.75
+    assert result["Descriptions"].tolist() == ["Elma", "Armut"]
     expected_cols = [
         "Malzeme_Kodu",
         "Descriptions",
@@ -74,6 +75,7 @@ def test_extract_from_excel_xls(tmp_path):
     result = extract_from_excel(str(file))
     assert len(result) == 1
     assert result.iloc[0]["Fiyat"] == 1000.50
+    assert result["Descriptions"].tolist() == ["Elma"]
 
 
 def test_extract_from_excel_bytesio():
@@ -93,6 +95,7 @@ def test_extract_from_excel_bytesio():
     assert len(result) == 2
     assert result.iloc[0]["Fiyat"] == 1000.50
     assert result.iloc[1]["Fiyat"] == 2500.75
+    assert result["Descriptions"].tolist() == ["Elma", "Armut"]
     expected_cols = [
         "Malzeme_Kodu",
         "Descriptions",
@@ -157,6 +160,7 @@ def test_extract_from_excel_brand_from_filename(tmp_path):
 
     result = extract_from_excel(str(file))
     assert result.iloc[0]["Marka"] == "Acme"
+    assert result["Descriptions"].tolist() == ["Elma"]
 
 
 def test_extract_from_excel_brand_filename_param():
@@ -173,6 +177,7 @@ def test_extract_from_excel_brand_filename_param():
 
     result = extract_from_excel(buf, filename="BrandX_prices.xlsx")
     assert result.iloc[0]["Marka"] == "BrandX"
+    assert result["Descriptions"].tolist() == ["Elma"]
 
 
 def test_extract_from_excel_brand_from_filename_multiword(tmp_path):
@@ -187,6 +192,7 @@ def test_extract_from_excel_brand_from_filename_multiword(tmp_path):
 
     result = extract_from_excel(str(file))
     assert result.iloc[0]["Marka"] == "Omega Motor"
+    assert result["Descriptions"].tolist() == ["Elma"]
 
 
 def test_extract_from_excel_short_code(tmp_path):
@@ -206,6 +212,7 @@ def test_extract_from_excel_short_code(tmp_path):
 
     result = extract_from_excel(str(file))
     assert result.iloc[0]["Kisa_Kod"] == "A1"
+    assert result["Descriptions"].tolist() == ["Elma"]
 
 
 def test_extract_from_excel_short_code_english_header(tmp_path):
@@ -225,6 +232,7 @@ def test_extract_from_excel_short_code_english_header(tmp_path):
 
     result = extract_from_excel(str(file))
     assert result.iloc[0]["Kisa_Kod"] == "BB"
+    assert result["Descriptions"].tolist() == ["Pear"]
 
 
 def test_extract_from_excel_default_currency(tmp_path):
@@ -240,6 +248,7 @@ def test_extract_from_excel_default_currency(tmp_path):
     result = extract_from_excel(str(file))
     assert result.iloc[0]["Para_Birimi"] == "TL"
     assert result.iloc[0]["Fiyat"] == 100.0
+    assert result["Descriptions"].tolist() == ["Elma"]
 
 
 def test_extract_from_pdf_default_currency(monkeypatch):
