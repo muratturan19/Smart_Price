@@ -59,7 +59,7 @@ def extract_from_pdf(
                 logger.error("log callback failed: %s", exc)
 
     def _llm_extract_from_image(text: str) -> list[dict]:
-        """Use GPT-3.5 to extract product names and prices from OCR text."""
+        """Use a language model to extract product names and prices from OCR text."""
         # pragma: no cover - not exercised in tests
         notify("LLM extraction started")
         try:
@@ -82,6 +82,8 @@ def extract_from_pdf(
 
         client = openai.OpenAI(api_key=api_key)  # type: ignore[attr-defined]
 
+        model_name = os.getenv("OPENAI_MODEL", "gpt-3.5-turbo")
+
         prompt = (
             "Extract product names and prices from the text below "
             "and return a JSON array of objects with 'name' and 'price' keys.\n"
@@ -90,7 +92,7 @@ def extract_from_pdf(
 
         try:
             resp = client.chat.completions.create(
-                model="gpt-3.5-turbo",
+                model=model_name,
                 messages=[{"role": "user", "content": prompt}],
                 temperature=0.2,
             )
