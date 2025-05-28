@@ -23,11 +23,16 @@ from .common_utils import (
     split_code_description,
     gpt_clean_text,
 )
-from .extract_excel import POSSIBLE_PRICE_HEADERS, POSSIBLE_PRODUCT_NAME_HEADERS
+from .extract_excel import (
+    POSSIBLE_PRICE_HEADERS,
+    POSSIBLE_PRODUCT_NAME_HEADERS,
+    POSSIBLE_CODE_HEADERS,
+)
 from . import ocr_llm_fallback
 
 MIN_CODE_RATIO = 0.70
 MIN_ROWS_PARSER = 500
+CODE_RE = re.compile(r'^([A-ZÇĞİÖŞÜ0-9][A-ZÇĞİÖŞÜ0-9\-/]{1,})', re.I)
 
 logger = logging.getLogger("smart_price")
 
@@ -278,17 +283,31 @@ def extract_from_pdf(
                         for _, row in df_table.iterrows():
                             if len(row) <= max(product_idx, abs(price_idx)):
                                 continue
+                            first = (row[0] or "").strip()
+                            code = CODE_RE.match(first)
+                            if code and not header_match(first, POSSIBLE_CODE_HEADERS):
+                                code_val = code.group(1)
+                            else:
+                                code_val = None
+
                             product = str(row.iloc[product_idx]).strip()
                             price_raw = str(row.iloc[price_idx]).strip()
                             if product and price_raw:
-                                val = normalize_price(price_raw)
-                                if val is not None:
+                                price = normalize_price(price_raw)
+                                if pd.isna(code_val) or pd.isna(price):
+                                    logger.warning(
+                                        "Empty field p%s: %s",
+                                        page.page_number,
+                                        str(row)[:80],
+                                    )
+                                if price is not None:
                                     data.append(
                                         {
                                             "Malzeme_Adi": product,
-                                            "Fiyat": val,
+                                            "Fiyat": price,
                                             "Para_Birimi": detect_currency(price_raw),
                                             "Sayfa": page.page_number,
+                                            "Malzeme_Kodu": code_val,
                                         }
                                     )
                     except Exception as exc:
@@ -327,8 +346,11 @@ def extract_from_pdf(
     df = pd.DataFrame(data)
     if not df.empty:
         codes, descs = zip(*df["Malzeme_Adi"].map(split_code_description))
-        df["Malzeme_Kodu"] = list(codes)
         df["Malzeme_Adi"] = list(descs)
+        if "Malzeme_Kodu" in df.columns:
+            df["Malzeme_Kodu"] = df["Malzeme_Kodu"].fillna(pd.Series(codes))
+        else:
+            df["Malzeme_Kodu"] = list(codes)
 
     code_filled = df["Malzeme_Kodu"].notna().sum()
     rows_extracted = len(df)
