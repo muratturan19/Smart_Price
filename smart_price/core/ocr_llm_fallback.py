@@ -94,7 +94,7 @@ def parse(pdf_path: str, page_range: Iterable[int] | range | None = None) -> pd.
             with open(tmp_path, "rb") as f:
                 image_bytes = f.read()
             img_base64 = base64.b64encode(image_bytes).decode()
-            resp = openai.ChatCompletion.create(
+            resp = openai.chat.completions.create(
                 model=model_name,
                 messages=[
                     {
