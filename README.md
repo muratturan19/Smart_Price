@@ -78,3 +78,9 @@ smart-price-app
 From the interface you can upload Excel/PDF price lists and search the
 resulting master dataset. The merged data is written to `master_dataset.xlsx`
 in the directory from which you launch the app.
+
+### Logging
+
+Both the CLI and Streamlit interface log their actions to `smart_price.log` in
+the project directory. The file is created automatically alongside console
+output whenever you run the tools.

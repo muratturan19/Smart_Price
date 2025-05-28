@@ -6,12 +6,15 @@ import unicodedata
 from typing import Tuple, Optional, IO, Any
 
 import pandas as pd
+import logging
 from .common_utils import (
     normalize_price,
     select_latest_year_column,
     detect_currency,
     detect_brand,
 )
+
+logger = logging.getLogger("smart_price")
 
 
 def _norm_header(text: str) -> str:
@@ -190,7 +193,7 @@ def extract_from_excel(
                 sheet_data["Sayfa"] = sheet
                 all_data.append(sheet_data)
     except Exception as exc:
-        print(f"Excel error for {filepath}: {exc}")
+        logger.error("Excel error for %s: %s", filepath, exc)
         return pd.DataFrame()
     if not all_data:
         return pd.DataFrame()

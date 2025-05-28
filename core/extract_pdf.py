@@ -4,6 +4,7 @@ import os
 import io
 import tempfile
 from typing import IO, Any, Optional
+import logging
 
 import pandas as pd
 import pdfplumber
@@ -20,6 +21,8 @@ from .common_utils import (
     gpt_clean_text,
 )
 from .extract_excel import POSSIBLE_PRICE_HEADERS, POSSIBLE_PRODUCT_NAME_HEADERS
+
+logger = logging.getLogger("smart_price")
 
 _patterns = [
     re.compile(r"^(.*?)\s{2,}([\d\.,]+)\s*(?:TL|TRY|EUR|USD|\$|€)?$", re.MULTILINE | re.IGNORECASE),
@@ -48,13 +51,12 @@ def extract_from_pdf(
     data = []
 
     def notify(message: str) -> None:
+        logger.info(message)
         if log:
             try:
                 log(message)
             except Exception as exc:  # pragma: no cover - log callback errors
-                print(f"log callback failed: {exc}")
-        else:
-            print(message)
+                logger.error("log callback failed: %s", exc)
 
     def _llm_extract_from_image(text: str) -> list[dict]:
         """Use GPT-3.5 to extract product names and prices from OCR text."""
