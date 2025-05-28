@@ -85,10 +85,15 @@ def extract_from_pdf(
         model_name = os.getenv("OPENAI_MODEL", "gpt-3.5-turbo")
 
         prompt = (
-            "Parse the following price list text and return only a JSON array "
-            "of objects with 'name' and 'price' keys.\n"
-            f"Text:\n{text}"
+            "Aşağıda bir fiyat listesi metni var. Bu metinden sadece ürün adı ve fiyat bilgilerini içeren "
+            "bir JSON dizisi üret. Her öğe şu anahtarları içermeli:\n"
+            "- 'Malzeme_Adı': Ürünün adı veya açıklaması\n"
+            "- 'Fiyat': Sayısal fiyat değeri\n"
+            "- 'Para_Birimi': Fiyatın para birimi (örn: TL, USD)\n"
+            "Lütfen sadece geçerli ürünleri al ve gereksiz satırları atla. Sadece geçerli JSON döndür.\n"
+            f\"Metin:\\n{text}\"
         )
+
 
         try:
             resp = client.chat.completions.create(
