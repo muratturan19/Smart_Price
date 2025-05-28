@@ -1,8 +1,10 @@
 import os
 import sys
+
+# Ensure repo root is on path for package imports
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
-from smart_price import extract_pdf
+from tests.helpers import extract_pdf
 
 
 def test_esmaksn_pdf_threshold():
