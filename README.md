@@ -94,6 +94,18 @@ information. When active the log includes the chosen LLM model, a short excerpt
 of the OCR text, the constructed prompt length and the raw response returned by
 the OpenAI API.
 
+#### Debug information
+
+When debug mode is enabled the log also records extra details to help trace each
+step:
+
+- the name of the processed file
+- a timestamp for every event
+- page numbers for OCR operations
+- an excerpt of the recognised text
+- a snippet of the prompt sent to the LLM
+- and the first items parsed from the response.
+
 ## Troubleshooting
 
 If the second stage (OCR followed by the language model) fails to produce any
