@@ -83,6 +83,8 @@ def extract_from_pdf(
         client = openai.OpenAI(api_key=api_key)  # type: ignore[attr-defined]
 
         model_name = os.getenv("OPENAI_MODEL", "gpt-3.5-turbo")
+        excerpt = text[:200].replace("\n", " ")
+        logger.debug("Using model %s on text excerpt: %r", model_name, excerpt)
 
         prompt = f"""
             Aşağıda bir fiyat listesi metni var. Bu metinden sadece ürün adı ve fiyat bilgilerini içeren
@@ -98,6 +100,8 @@ def extract_from_pdf(
             {text}
             """
 
+        logger.debug("LLM prompt length: %d", len(prompt))
+
 
         try:
             resp = client.chat.completions.create(
@@ -107,6 +111,7 @@ def extract_from_pdf(
             )
             time.sleep(0.5)
             content = resp.choices[0].message.content
+            logger.debug("LLM raw response: %r", content.strip()[:200])
             try:
                 cleaned = gpt_clean_text(content)
                 items = json.loads(cleaned)
