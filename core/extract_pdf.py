@@ -22,6 +22,10 @@ from .common_utils import (
     gpt_clean_text,
 )
 from .extract_excel import POSSIBLE_PRICE_HEADERS, POSSIBLE_PRODUCT_NAME_HEADERS
+from . import ocr_llm_fallback
+
+MIN_CODE_RATIO = 0.70
+MIN_ROWS_PARSER = 500
 
 logger = logging.getLogger("smart_price")
 
@@ -158,6 +162,13 @@ def extract_from_pdf(
 
     notify("1. faz")
     tmp_for_ocr: str | None = None
+    def cleanup() -> None:
+        if tmp_for_ocr:
+            try:
+                os.remove(tmp_for_ocr)
+            except Exception as exc:
+                notify(f"temp file cleanup failed: {exc}")
+    page_range = None
     try:
         if isinstance(filepath, (str, bytes, os.PathLike)):
             cm = pdfplumber.open(filepath)
@@ -175,6 +186,7 @@ def extract_from_pdf(
             tmp_for_ocr = tmp.name
             path_for_ocr = tmp_for_ocr
         with cm as pdf:
+            page_range = range(1, len(pdf.pages) + 1)
             for page in pdf.pages:
                 text = page.extract_text() or ""
                 notify(
@@ -293,20 +305,26 @@ def extract_from_pdf(
     except Exception as exc:
         notify(f"PDF error for {filepath}: {exc}")
         logger.exception("PDF error for %s", filepath)
+        cleanup()
         return pd.DataFrame()
-    finally:
-        if tmp_for_ocr:
-            try:
-                os.remove(tmp_for_ocr)
-            except Exception as exc:
-                notify(f"temp file cleanup failed: {exc}")
     if not data:
+        cleanup()
         return pd.DataFrame()
     df = pd.DataFrame(data)
     if not df.empty:
         codes, descs = zip(*df["Malzeme_Adi"].map(split_code_description))
         df["Malzeme_Kodu"] = list(codes)
         df["Malzeme_Adi"] = list(descs)
+
+    code_filled = df["Malzeme_Kodu"].notna().sum()
+    rows_extracted = len(df)
+    if rows_extracted < MIN_ROWS_PARSER or (
+        rows_extracted and code_filled / rows_extracted < MIN_CODE_RATIO
+    ):
+        logger.warning("Low-quality Phase-1 parse \u2192 switching to OCR+LLM")
+        result = ocr_llm_fallback.parse(path_for_ocr, page_range)
+        cleanup()
+        return result
     # Default to Turkish Lira if currency could not be determined
     df["Para_Birimi"] = df["Para_Birimi"].fillna("TL")
     df["Kaynak_Dosya"] = _basename(filepath, filename)
@@ -331,4 +349,5 @@ def extract_from_pdf(
     ]
     result_df = df[cols].dropna(subset=["Descriptions", "Fiyat"])
     notify(f"Finished {src} with {len(result_df)} items")
+    cleanup()
     return result_df
