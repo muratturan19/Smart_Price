@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import logging
 import io
 import os
 import sys
@@ -8,6 +9,9 @@ from typing import Callable, Optional
 
 from core.extract_excel import extract_from_excel
 from core.extract_pdf import extract_from_pdf
+from core.logger import init_logging
+
+logger = logging.getLogger("smart_price")
 
 
 def resource_path(relative: str) -> str:
@@ -157,6 +161,7 @@ PAGES = {
 
 
 def main():
+    init_logging()
     st.sidebar.title("Smart Price")
     choice = st.sidebar.radio("Seçim", list(PAGES.keys()))
     page = PAGES[choice]
@@ -165,6 +170,7 @@ def main():
 
 def cli() -> None:
     """Entry point to launch the Streamlit application."""
+    init_logging()
     from streamlit.web import cli as stcli
     sys.argv = ["streamlit", "run", __file__]
     sys.exit(stcli.main())

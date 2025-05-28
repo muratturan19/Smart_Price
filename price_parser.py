@@ -2,7 +2,12 @@ import argparse
 import csv
 import os
 import sqlite3
+import logging
 import pandas as pd
+
+from core.logger import init_logging
+
+logger = logging.getLogger("smart_price")
 
 from core.extract_excel import extract_from_excel
 from core.extract_pdf import extract_from_pdf
@@ -18,6 +23,7 @@ def parse_args() -> argparse.Namespace:
 
 
 def main() -> None:
+    init_logging()
     args = parse_args()
     os.makedirs(os.path.dirname(args.output), exist_ok=True)
     os.makedirs(os.path.dirname(args.db), exist_ok=True)
@@ -33,26 +39,26 @@ def main() -> None:
             elif ext == '.pdf':
                 df = extract_from_pdf(path)
             else:
-                print(f"Skipping unsupported file: {name}")
+                logger.info("Skipping unsupported file: %s", name)
                 continue
             row_count = len(df)
             if row_count:
-                print(f"{name}: {row_count} records")
+                logger.info("%s: %d records", name, row_count)
                 all_extracted.append(df)
             else:
-                print(f"{name}: no data found")
+                logger.info("%s: no data found", name)
             log_rows.append({'file': name, 'format': ext.lstrip('.'), 'rows': row_count, 'error': ''})
         except Exception as exc:  # pragma: no cover - unexpected errors
-            print(f"Error processing {name}: {exc}")
+            logger.error("Error processing %s: %s", name, exc)
             log_rows.append({'file': name, 'format': ext.lstrip('.'), 'rows': 0, 'error': str(exc)})
     if not all_extracted:
-        print("No data extracted from given files.")
+        logger.info("No data extracted from given files.")
         return
     master = pd.concat(all_extracted, ignore_index=True)
     master.drop_duplicates(subset=["Malzeme_Kodu", "Descriptions"], keep="last", inplace=True)
     master.sort_values(by="Descriptions", inplace=True)
     master.to_excel(args.output, index=False)
-    print(f"Saved {len(master)} records to {args.output}")
+    logger.info("Saved %d records to %s", len(master), args.output)
 
     conn = sqlite3.connect(args.db)
     with conn:
@@ -85,13 +91,13 @@ def main() -> None:
         )
         master.to_sql("prices", conn, if_exists="replace", index=False)
     conn.close()
-    print(f"Database written to {args.db}")
+    logger.info("Database written to %s", args.db)
 
     with open(args.log, 'w', newline='', encoding='utf-8') as f:
         writer = csv.DictWriter(f, fieldnames=['file', 'format', 'rows', 'error'])
         writer.writeheader()
         writer.writerows(log_rows)
-    print(f"Source log written to {args.log}")
+    logger.info("Source log written to %s", args.log)
 
 
 if __name__ == '__main__':
