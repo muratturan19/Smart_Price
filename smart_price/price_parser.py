@@ -5,6 +5,10 @@ import sqlite3
 import logging
 import pandas as pd
 import pytesseract
+from dotenv import load_dotenv
+
+project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".env"))
+load_dotenv(dotenv_path=project_root)
 
 from smart_price.core.extract_excel import extract_from_excel
 from smart_price.core.extract_pdf import extract_from_pdf
