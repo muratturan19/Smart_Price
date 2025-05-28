@@ -105,6 +105,7 @@ def extract_from_pdf(
             """
 
         logger.debug("LLM prompt length: %d", len(prompt))
+        logger.debug("LLM prompt excerpt: %r", prompt[:200])
 
 
         try:
@@ -119,6 +120,7 @@ def extract_from_pdf(
             try:
                 cleaned = gpt_clean_text(content)
                 items = json.loads(cleaned)
+                logger.debug("First parsed items: %r", items[:2])
                 if not items:
                     excerpt = text[:100].replace("\n", " ")
                     notify(
@@ -277,6 +279,7 @@ def extract_from_pdf(
                 notify("OCR faz\u0131 başladı")
                 images = convert_from_path(path_for_ocr)
                 ocr_text = "\n".join(pytesseract.image_to_string(img) for img in images)
+                logger.debug("OCR text excerpt: %r", ocr_text[:200])
                 llm_data = _llm_extract_from_image(ocr_text)
                 if llm_data:
                     notify(f"LLM parsed {len(llm_data)} items")
