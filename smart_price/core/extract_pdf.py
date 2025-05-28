@@ -13,6 +13,12 @@ import pandas as pd
 import pdfplumber
 import json
 import time
+from dotenv import load_dotenv
+
+try:
+    load_dotenv("../..")
+except TypeError:  # pragma: no cover - allow stub without args
+    load_dotenv()
 
 # Optional OCR dependencies are imported lazily within extract_from_pdf
 import re
@@ -97,12 +103,8 @@ def extract_from_pdf(
         """Use a language model to extract product names and prices from OCR text."""
         # pragma: no cover - not exercised in tests
         notify("LLM fazı başladı")
-        try:
-            from dotenv import load_dotenv  # type: ignore
-            load_dotenv()
-        except Exception as exc:  # pragma: no cover - optional dep missing
-            notify(f"dotenv load failed: {exc}")
-
+        # Environment already loaded at module import time
+        pass
         api_key = os.getenv("OPENAI_API_KEY")
         if not api_key or not text:
             notify("LLM returned no data")
