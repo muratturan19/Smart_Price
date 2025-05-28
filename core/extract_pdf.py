@@ -273,9 +273,14 @@ def extract_from_pdf(
                     if not page_added:
                         notify("LLM faz\u0131")
                         llm_data = _llm_extract_from_image("\n".join(llm_text))
-                        for entry in llm_data:
-                            entry.setdefault("Sayfa", page.page_number)
-                            data.append(entry)
+                        count = len(llm_data)
+                        if count:
+                            notify(f"LLM parsed {count} items")
+                            for entry in llm_data:
+                                entry.setdefault("Sayfa", page.page_number)
+                                data.append(entry)
+                        else:
+                            notify("LLM returned no data")
     except Exception as exc:
         notify(f"PDF error for {filepath}: {exc}")
         return pd.DataFrame()
