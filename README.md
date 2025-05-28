@@ -96,7 +96,8 @@ Set the environment variable `SMART_PRICE_DEBUG=1` (or pass
 `level=logging.DEBUG` when calling `init_logging`) to enable verbose debug
 information. When active the log includes the chosen LLM model, a short excerpt
 of the OCR text, the constructed prompt length and the raw response returned by
-the OpenAI API.
+the OpenAI API. OCR text for each page and every LLM prompt/response are also
+written to a folder.
 
 #### Debug information
 
@@ -109,6 +110,8 @@ step:
 - an excerpt of the recognised text
 - a snippet of the prompt sent to the LLM
 - and the first items parsed from the response.
+- per-page debug files stored under `output_debug` (set
+  `SMART_PRICE_DEBUG_DIR` to change the folder)
 
 ## Troubleshooting
 

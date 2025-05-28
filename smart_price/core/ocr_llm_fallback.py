@@ -14,6 +14,7 @@ except TypeError:  # pragma: no cover - allow stub without args
 import pandas as pd
 
 from .common_utils import gpt_clean_text
+from .debug_utils import save_debug
 
 logger = logging.getLogger("smart_price")
 
@@ -62,6 +63,7 @@ def parse(pdf_path: str, page_range: Iterable[int] | range | None = None) -> pd.
             logger.debug("OCR page %d length %d", idx, len(text))
             if text:
                 ocr_text_parts.append(text)
+                save_debug("ocr_text", idx, text)
         except Exception as exc:  # pragma: no cover - OCR errors
             logger.error("OCR failed on page %d: %s", idx, exc)
 
@@ -74,6 +76,7 @@ def parse(pdf_path: str, page_range: Iterable[int] | range | None = None) -> pd.
         "Extract JSON [{code, price, descr}] from the text below. "
         "Return only valid JSON.\n\n" + ocr_text
     )
+    save_debug("llm_prompt", 1, prompt)
 
     api_key = os.getenv("OPENAI_API_KEY")
     if api_key:
@@ -94,6 +97,7 @@ def parse(pdf_path: str, page_range: Iterable[int] | range | None = None) -> pd.
             temperature=0,
         )
         content = resp.choices[0].message.content
+        save_debug("llm_response", 1, content)
     except Exception as exc:  # pragma: no cover - request errors
         logger.error("OpenAI request failed: %s", exc)
         return pd.DataFrame()
