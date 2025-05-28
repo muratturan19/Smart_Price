@@ -85,8 +85,8 @@ def extract_from_pdf(
         model_name = os.getenv("OPENAI_MODEL", "gpt-3.5-turbo")
 
         prompt = (
-            "Extract product names and prices from the text below "
-            "and return a JSON array of objects with 'name' and 'price' keys.\n"
+            "Parse the following price list text and return only a JSON array "
+            "of objects with 'name' and 'price' keys.\n"
             f"Text:\n{text}"
         )
 
