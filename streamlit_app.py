@@ -115,9 +115,14 @@ def merge_files(
 
 def upload_page():
     st.header("Fiyat Dosyalarını Yükle")
-    files = st.file_uploader("Excel veya PDF dosyalarını seçin", type=["xlsx", "xls", "pdf"], accept_multiple_files=True)
+    files = st.file_uploader(
+        "Excel veya PDF dosyalarını seçin",
+        type=["xlsx", "xls", "pdf"],
+        accept_multiple_files=True,
+    )
     if not files:
         return
+
     if st.button("Dosyaları İşle"):
         status = st.empty()
         progress_bar = st.progress(0.0)
@@ -129,16 +134,23 @@ def upload_page():
         if df.empty:
             st.warning("Dosyalardan veri çıkarılamadı.")
             return
+
+        st.session_state["processed_df"] = df
         st.success(f"{len(df)} kayıt bulundu")
         st.dataframe(df)
-        if st.button("Master Veriyi Kaydet"):
-            data_path = os.path.abspath(get_master_dataset_path())
-            try:
-                df.to_excel(data_path, index=False)
-            except Exception as exc:  # pragma: no cover - UI feedback only
-                st.error(f"Kaydetme hatası: {exc}")
-            else:
-                st.success(f"{data_path} konumuna kaydedildi")
+
+    if st.button("Master Veriyi Kaydet"):
+        df = st.session_state.get("processed_df")
+        if df is None or df.empty:
+            st.error("Kaydedilecek veri yok.")
+            return
+        data_path = os.path.abspath(get_master_dataset_path())
+        try:
+            df.to_excel(data_path, index=False)
+        except Exception as exc:  # pragma: no cover - UI feedback only
+            st.error(f"Kaydetme hatası: {exc}")
+        else:
+            st.success(f"{data_path} konumuna kaydedildi")
 
 
 def search_page():
