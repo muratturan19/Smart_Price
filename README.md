@@ -75,6 +75,10 @@ Launch the web UI locally with:
 ```bash
 smart-price-app
 ```
+Alternatively run the included launcher script from the repository root:
+```bash
+python run_app.py
+```
 
 From the interface you can upload Excel/PDF price lists and search the
 resulting master dataset. The merged data is written to `master_dataset.xlsx`
