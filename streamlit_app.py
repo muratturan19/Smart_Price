@@ -128,13 +128,13 @@ def upload_page():
         st.success(f"{len(df)} kayıt bulundu")
         st.dataframe(df)
         if st.button("Master Veriyi Kaydet"):
-            data_path = get_master_dataset_path()
+            data_path = os.path.abspath(get_master_dataset_path())
             try:
                 df.to_excel(data_path, index=False)
             except Exception as exc:  # pragma: no cover - UI feedback only
                 st.error(f"Kaydetme hatası: {exc}")
             else:
-                st.success(f"{os.path.basename(data_path)} kaydedildi")
+                st.success(f"{data_path} konumuna kaydedildi")
 
 
 def search_page():
