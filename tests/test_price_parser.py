@@ -29,6 +29,15 @@ if 'pytesseract' not in sys.modules:
     sys.modules['pytesseract'] = types.ModuleType('pytesseract')
 if 'streamlit' not in sys.modules:
     sys.modules['streamlit'] = types.ModuleType('streamlit')
+if 'PIL' not in sys.modules:
+    pil_stub = types.ModuleType('PIL')
+    image_stub = types.ModuleType('PIL.Image')
+    class FakeImg:
+        pass
+    image_stub.Image = FakeImg
+    pil_stub.Image = image_stub
+    sys.modules['PIL'] = pil_stub
+    sys.modules['PIL.Image'] = image_stub
 
 from smart_price.core.common_utils import normalize_price
 from smart_price.core.common_utils import detect_brand
@@ -72,7 +81,7 @@ def test_extract_from_excel_basic(tmp_path):
     assert result.columns.tolist() == expected_cols
 
 
-def test_extract_from_pdf_ocr_fallback(monkeypatch):
+def test_extract_from_pdf_llm_fallback(monkeypatch):
     if not HAS_PANDAS:
         pytest.skip("pandas not installed")
 
@@ -99,53 +108,29 @@ def test_extract_from_pdf_ocr_fallback(monkeypatch):
     def fake_open(_path):
         return FakePDF()
 
-    ocr_calls = []
-
-    def fake_convert_from_path(path, *args, **kwargs):
-        class Img:
-            pass
-
-        return [Img()]
-
-    def fake_ocr(_img):
-        ocr_calls.append(_img)
-        return "ItemZ    55"
-
     import sys
 
     pdfplumber_mod = sys.modules.get("pdfplumber")
-    pdf2image_mod = sys.modules.get("pdf2image")
-    pytesseract_mod = sys.modules.get("pytesseract")
     monkeypatch.setattr(pdfplumber_mod, "open", fake_open, raising=False)
-    monkeypatch.setattr(pdf2image_mod, "convert_from_path", fake_convert_from_path, raising=False)
-    monkeypatch.setattr(pytesseract_mod, "image_to_string", fake_ocr, raising=False)
-
-    class DummyResp:
-        def __init__(self, content):
-            self.choices = [types.SimpleNamespace(message=types.SimpleNamespace(content=content))]
 
     llm_calls = []
 
-    def create(**_kwargs):
-        llm_calls.append(_kwargs)
-        return DummyResp('[{"name":"ItemZ","price":"55"}]')
+    def fake_parse(path, page_range=None):
+        llm_calls.append({"path": path, "page_range": page_range})
+        import pandas as pd
+        return pd.DataFrame({"Malzeme_Kodu": ["X"], "Descriptions": ["ItemZ"], "Fiyat": [55.0]})
 
-    client_stub = types.SimpleNamespace(chat=types.SimpleNamespace(completions=types.SimpleNamespace(create=create)))
-    openai_stub = types.SimpleNamespace(OpenAI=lambda **_kwargs: client_stub)
-
-    monkeypatch.setitem(sys.modules, "openai", openai_stub)
-    monkeypatch.setenv("OPENAI_API_KEY", "x")
-    monkeypatch.setattr(time, "sleep", lambda *_: None)
+    import smart_price.core.extract_pdf as pdf_mod
+    monkeypatch.setattr(pdf_mod.ocr_llm_fallback, "parse", fake_parse)
 
     result = extract_from_pdf("dummy.pdf")
     assert len(result) == 1
     assert result.iloc[0]["Fiyat"] == 55.0
     assert result.iloc[0]["Descriptions"] == "ItemZ"
-    assert len(ocr_calls) == 1
     assert len(llm_calls) == 1
 
 
-def test_extract_from_pdf_ocr_no_data(monkeypatch):
+def test_extract_from_pdf_llm_no_data(monkeypatch):
     if not HAS_PANDAS:
         pytest.skip("pandas not installed")
 
@@ -172,33 +157,19 @@ def test_extract_from_pdf_ocr_no_data(monkeypatch):
     def fake_open(_path):
         return FakePDF()
 
-    ocr_calls = []
-
-    def fake_convert_from_path(path, *args, **kwargs):
-        class Img:
-            pass
-
-        return [Img()]
-
-    def fake_ocr(_img):
-        ocr_calls.append(_img)
-        return ""
-
     import sys
 
     pdfplumber_mod = sys.modules.get("pdfplumber")
-    pdf2image_mod = sys.modules.get("pdf2image")
-    pytesseract_mod = sys.modules.get("pytesseract")
     monkeypatch.setattr(pdfplumber_mod, "open", fake_open, raising=False)
-    monkeypatch.setattr(pdf2image_mod, "convert_from_path", fake_convert_from_path, raising=False)
-    monkeypatch.setattr(pytesseract_mod, "image_to_string", fake_ocr, raising=False)
+
+    import smart_price.core.extract_pdf as pdf_mod
+    monkeypatch.setattr(pdf_mod.ocr_llm_fallback, "parse", lambda *_args, **_kw: pd.DataFrame())
 
     result = extract_from_pdf("dummy.pdf")
     assert result.empty
-    assert len(ocr_calls) == 1
 
 
-def test_extract_from_pdf_force_ocr(monkeypatch):
+def test_extract_from_pdf_force_llm(monkeypatch):
     if not HAS_PANDAS:
         pytest.skip("pandas not installed")
 
@@ -239,7 +210,7 @@ def test_extract_from_pdf_force_ocr(monkeypatch):
     import smart_price.core.extract_pdf as pdf_mod
     monkeypatch.setattr(pdf_mod.ocr_llm_fallback, "parse", fake_parse)
 
-    df = extract_from_pdf("dummy.pdf", force_ocr=True)
+    df = extract_from_pdf("dummy.pdf", force_llm=True)
 
     assert not df.empty
     assert called.get('path') == "dummy.pdf"
@@ -675,7 +646,7 @@ def test_merge_files_casts_to_string(monkeypatch):
     assert all(isinstance(v, str) for v in result["Malzeme_Kodu"])
 
 
-def test_merge_files_passes_force_ocr(monkeypatch):
+def test_merge_files_passes_force_llm(monkeypatch):
     if not HAS_PANDAS:
         pytest.skip("pandas not installed")
     import pandas as pd
@@ -707,10 +678,60 @@ def test_merge_files_passes_force_ocr(monkeypatch):
         def read(self):
             return b"data"
 
-    result = streamlit_app.merge_files([FakeUpload("f.pdf")], force_ocr=True)
+    result = streamlit_app.merge_files([FakeUpload("f.pdf")], force_llm=True)
 
-    assert received.get("force_ocr") is True
+    assert received.get("force_llm") is True
     assert not result.empty
+
+
+def test_llm_debug_files(monkeypatch, tmp_path):
+    if not HAS_PANDAS:
+        pytest.skip("pandas not installed")
+
+    class FakePage:
+        page_number = 1
+
+        def extract_text(self):
+            return ""
+
+        def extract_tables(self):
+            return []
+
+    class FakePDF:
+        def __enter__(self):
+            return self
+
+        def __exit__(self, exc_type, exc, tb):
+            pass
+
+        @property
+        def pages(self):
+            return [FakePage()]
+
+    def fake_open(_path):
+        return FakePDF()
+
+    import sys
+
+    pdfplumber_mod = sys.modules.get("pdfplumber")
+    monkeypatch.setattr(pdfplumber_mod, "open", fake_open, raising=False)
+
+    import pandas as pd
+    import smart_price.core.extract_pdf as pdf_mod
+
+    def fake_parse(path, page_range=None):
+        return pd.DataFrame({"Malzeme_Kodu": ["X"], "Descriptions": ["A"], "Fiyat": [1.0]})
+
+    monkeypatch.setattr(pdf_mod.ocr_llm_fallback, "parse", fake_parse)
+
+    monkeypatch.setenv("SMART_PRICE_DEBUG", "1")
+    monkeypatch.setenv("SMART_PRICE_DEBUG_DIR", str(tmp_path))
+
+    df = extract_from_pdf("dummy.pdf")
+
+    assert not df.empty
+    assert any(p.suffix == ".png" for p in tmp_path.iterdir())
+    assert any(p.name.startswith("llm_response") for p in tmp_path.iterdir())
 
 
 def test_extract_from_pdf_llm_sets_page_added(monkeypatch):
@@ -756,30 +777,18 @@ def test_extract_from_pdf_llm_sets_page_added(monkeypatch):
     import time
 
     pdfplumber_mod = sys.modules.get("pdfplumber")
-    pdf2image_mod = sys.modules.get("pdf2image")
-    pytesseract_mod = sys.modules.get("pytesseract")
     monkeypatch.setattr(pdfplumber_mod, "open", fake_open, raising=False)
-    monkeypatch.setattr(pdf2image_mod, "convert_from_path", fake_convert_from_path, raising=False)
-    monkeypatch.setattr(pytesseract_mod, "image_to_string", fake_ocr, raising=False)
+    import smart_price.core.extract_pdf as pdf_mod
 
-    class DummyResp:
-        def __init__(self, content):
-            self.choices = [types.SimpleNamespace(message=types.SimpleNamespace(content=content))]
+    def fake_parse(path, page_range=None):
+        llm_calls.append({"path": path, "page_range": page_range})
+        import pandas as pd
+        return pd.DataFrame({"Descriptions": ["X"], "Fiyat": [5.0]})
 
-    def create(**_kwargs):
-        llm_calls.append(_kwargs)
-        return DummyResp('[{"name":"Foo","price":"5"}]')
-
-    client_stub = types.SimpleNamespace(chat=types.SimpleNamespace(completions=types.SimpleNamespace(create=create)))
-    openai_stub = types.SimpleNamespace(OpenAI=lambda **_kwargs: client_stub)
-    monkeypatch.setitem(sys.modules, "openai", openai_stub)
-    monkeypatch.setenv("OPENAI_API_KEY", "x")
-    monkeypatch.setattr(time, "sleep", lambda *_: None)
+    monkeypatch.setattr(pdf_mod.ocr_llm_fallback, "parse", fake_parse)
 
     logs = []
     df = extract_from_pdf("dummy.pdf", log=logs.append)
 
     assert not df.empty
     assert len(llm_calls) == 1
-    assert any("OCR faz\u0131 başladı" in m for m in logs)
-    assert any("LLM faz\u0131 başladı" in m for m in logs)

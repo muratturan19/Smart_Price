@@ -13,8 +13,13 @@ except TypeError:  # pragma: no cover - allow stub without args
 
 import pandas as pd
 
-from .common_utils import gpt_clean_text
-from .debug_utils import save_debug
+import tempfile
+from pathlib import Path
+
+from PIL import Image  # type: ignore
+
+from .common_utils import gpt_clean_text, normalize_price, detect_currency
+from .debug_utils import save_debug, save_debug_image
 
 logger = logging.getLogger("smart_price")
 
@@ -35,13 +40,12 @@ def _range_bounds(pages: Sequence[int] | range | None) -> tuple[int | None, int 
 
 
 def parse(pdf_path: str, page_range: Iterable[int] | range | None = None) -> pd.DataFrame:
-    """Parse ``pdf_path`` using OCR followed by an LLM."""
+    """Parse ``pdf_path`` using GPT-4o vision."""
 
     try:
         from pdf2image import convert_from_path  # type: ignore
-        import pytesseract  # type: ignore
     except Exception as exc:  # pragma: no cover - optional deps missing
-        logger.error("OCR dependencies unavailable: %s", exc)
+        logger.error("pdf2image unavailable: %s", exc)
         return pd.DataFrame()
 
     try:
@@ -56,28 +60,6 @@ def parse(pdf_path: str, page_range: Iterable[int] | range | None = None) -> pd.
         logger.error("pdf2image failed for %s: %s", pdf_path, exc)
         return pd.DataFrame()
 
-    ocr_text_parts = []
-    for idx, img in enumerate(images, start=1):
-        try:
-            text = pytesseract.image_to_string(img, lang="tur")
-            logger.debug("OCR page %d length %d", idx, len(text))
-            if text:
-                ocr_text_parts.append(text)
-                save_debug("ocr_text", idx, text)
-        except Exception as exc:  # pragma: no cover - OCR errors
-            logger.error("OCR failed on page %d: %s", idx, exc)
-
-    ocr_text = "\n".join(ocr_text_parts).strip()
-    if not ocr_text:
-        logger.info("No OCR text produced from %s", pdf_path)
-        return pd.DataFrame()
-
-    prompt = (
-        "Extract JSON [{code, price, descr}] from the text below. "
-        "Return only valid JSON.\n\n" + ocr_text
-    )
-    save_debug("llm_prompt", 1, prompt)
-
     api_key = os.getenv("OPENAI_API_KEY")
     if api_key:
         os.environ.setdefault("OPENAI_API_KEY", api_key)
@@ -89,40 +71,67 @@ def parse(pdf_path: str, page_range: Iterable[int] | range | None = None) -> pd.
         return pd.DataFrame()
 
     client = OpenAI(api_key=api_key)
+    model_name = os.getenv("OPENAI_MODEL", "gpt-4o")
 
-    try:
-        resp = client.chat.completions.create(
-            model="gpt-4o-mini",
-            messages=[{"role": "user", "content": prompt}],
-            temperature=0,
-        )
-        content = resp.choices[0].message.content
-        save_debug("llm_response", 1, content)
-    except Exception as exc:  # pragma: no cover - request errors
-        logger.error("OpenAI request failed: %s", exc)
-        return pd.DataFrame()
-
-    try:
-        cleaned = gpt_clean_text(content)
-        items = json.loads(cleaned)
-    except Exception as exc:  # pragma: no cover - JSON errors
-        logger.error("LLM JSON parse failed: %s", exc)
-        return pd.DataFrame()
+    prompt = (
+        "Aşağıdaki fiyat listesi sayfasındaki tablodan 'Malzeme Kodu', "
+        "'Açıklama', 'Fiyat', 'Birim' ve 'Kutu Adedi' alanlarını içeren bir "
+        "JSON dizisi üret. Sadece geçerli JSON döndür."
+    )
 
     rows = []
-    for item in items if isinstance(items, list) else [items]:
-        descr = item.get("descr")
-        price = item.get("price")
-        if descr is None or price is None:
+    for idx, img in enumerate(images, start=1):
+        img_path = save_debug_image("page_image", idx, img)
+        tmp_path = img_path
+        if tmp_path is None:
+            tmp = tempfile.NamedTemporaryFile(delete=False, suffix=".png")
+            img.save(tmp.name, format="PNG")
+            tmp.close()
+            tmp_path = Path(tmp.name)
+        try:
+            resp = client.chat.completions.create(
+                model=model_name,
+                messages=[
+                    {
+                        "role": "user",
+                        "content": [
+                            {"type": "text", "text": prompt},
+                            {
+                                "type": "image_url",
+                                "image_url": {"url": f"file://{tmp_path}"},
+                            },
+                        ],
+                    }
+                ],
+                temperature=0,
+            )
+            content = resp.choices[0].message.content
+            save_debug("llm_response", idx, content or "")
+        except Exception as exc:  # pragma: no cover - request errors
+            logger.error("OpenAI request failed on page %d: %s", idx, exc)
             continue
-        rows.append(
-            {
-                "Malzeme_Kodu": item.get("code"),
-                "Descriptions": descr,
-                "Fiyat": price,
-                "Para_Birimi": item.get("currency"),
-            }
-        )
+
+        try:
+            cleaned = gpt_clean_text(content)
+            items = json.loads(cleaned)
+        except Exception as exc:  # pragma: no cover - JSON errors
+            logger.error("LLM JSON parse failed on page %d: %s", idx, exc)
+            continue
+
+        items = items if isinstance(items, list) else [items]
+        for item in items:
+            descr = item.get("Açıklama")
+            price_raw = str(item.get("Fiyat", "")).strip()
+            rows.append(
+                {
+                    "Malzeme_Kodu": item.get("Malzeme Kodu"),
+                    "Descriptions": descr,
+                    "Fiyat": normalize_price(price_raw),
+                    "Birim": item.get("Birim"),
+                    "Kutu_Adedi": item.get("Kutu Adedi"),
+                    "Para_Birimi": detect_currency(price_raw),
+                }
+            )
 
     return pd.DataFrame(rows)
 

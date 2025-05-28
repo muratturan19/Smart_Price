@@ -24,6 +24,15 @@ if 'pdf2image' not in sys.modules:
     sys.modules['pdf2image'] = types.ModuleType('pdf2image')
 if 'pytesseract' not in sys.modules:
     sys.modules['pytesseract'] = types.ModuleType('pytesseract')
+if 'PIL' not in sys.modules:
+    pil_stub = types.ModuleType('PIL')
+    image_stub = types.ModuleType('PIL.Image')
+    class FakeImg:  # pragma: no cover - simple stub
+        pass
+    image_stub.Image = FakeImg
+    pil_stub.Image = image_stub
+    sys.modules['PIL'] = pil_stub
+    sys.modules['PIL.Image'] = image_stub
 if 'streamlit' not in sys.modules:
     sys.modules['streamlit'] = types.ModuleType('streamlit')
 if 'dotenv' not in sys.modules:
