@@ -99,16 +99,16 @@ def test_extract_from_pdf_ocr_fallback(monkeypatch):
     def fake_open(_path):
         return FakePDF()
 
-    calls = {}
+    ocr_calls = []
 
     def fake_convert_from_path(path, *args, **kwargs):
-        calls['kwargs'] = kwargs
         class Img:
             pass
 
         return [Img()]
 
     def fake_ocr(_img):
+        ocr_calls.append(_img)
         return "ItemZ    55"
 
     import sys
@@ -124,7 +124,10 @@ def test_extract_from_pdf_ocr_fallback(monkeypatch):
         def __init__(self, content):
             self.choices = [types.SimpleNamespace(message=types.SimpleNamespace(content=content))]
 
+    llm_calls = []
+
     def create(**_kwargs):
+        llm_calls.append(_kwargs)
         return DummyResp('[{"name":"ItemZ","price":"55"}]')
 
     client_stub = types.SimpleNamespace(chat=types.SimpleNamespace(completions=types.SimpleNamespace(create=create)))
@@ -137,7 +140,9 @@ def test_extract_from_pdf_ocr_fallback(monkeypatch):
     result = extract_from_pdf("dummy.pdf")
     assert len(result) == 1
     assert result.iloc[0]["Fiyat"] == 55.0
-    assert calls.get('kwargs') == {}
+    assert result.iloc[0]["Descriptions"] == "ItemZ"
+    assert len(ocr_calls) == 1
+    assert len(llm_calls) == 1
 
 
 def test_extract_from_pdf_ocr_no_data(monkeypatch):
@@ -167,16 +172,16 @@ def test_extract_from_pdf_ocr_no_data(monkeypatch):
     def fake_open(_path):
         return FakePDF()
 
-    calls = {}
+    ocr_calls = []
 
     def fake_convert_from_path(path, *args, **kwargs):
-        calls['kwargs'] = kwargs
         class Img:
             pass
 
         return [Img()]
 
     def fake_ocr(_img):
+        ocr_calls.append(_img)
         return ""
 
     import sys
@@ -190,9 +195,7 @@ def test_extract_from_pdf_ocr_no_data(monkeypatch):
 
     result = extract_from_pdf("dummy.pdf")
     assert result.empty
-    assert calls.get('kwargs') == {}
-    assert result["Kisa_Kod"].isnull().all()
-    assert result["Malzeme_Kodu"].isnull().all()
+    assert len(ocr_calls) == 1
 
 
 def test_extract_from_excel_xls(tmp_path):
@@ -623,7 +626,7 @@ def test_merge_files_casts_to_string(monkeypatch):
     assert all(isinstance(v, str) for v in result["Malzeme_Kodu"])
 
 
-def test_extract_from_pdf_llm_whole_document(monkeypatch):
+def test_extract_from_pdf_llm_sets_page_added(monkeypatch):
     if not HAS_PANDAS:
         pytest.skip("pandas not installed")
 
@@ -645,19 +648,18 @@ def test_extract_from_pdf_llm_whole_document(monkeypatch):
 
         @property
         def pages(self):
-            return [FakePage()]
+            return [FakePage(), FakePage()]
 
     def fake_open(_path):
         return FakePDF()
 
-    calls = {}
+    llm_calls = []
 
     def fake_convert_from_path(path, *args, **kwargs):
-        calls['kwargs'] = kwargs
         class Img:
             pass
 
-        return [Img()]
+        return [Img(), Img()]
 
     def fake_ocr(_img):
         return ""
@@ -678,6 +680,7 @@ def test_extract_from_pdf_llm_whole_document(monkeypatch):
             self.choices = [types.SimpleNamespace(message=types.SimpleNamespace(content=content))]
 
     def create(**_kwargs):
+        llm_calls.append(_kwargs)
         return DummyResp('[{"name":"Foo","price":"5"}]')
 
     client_stub = types.SimpleNamespace(chat=types.SimpleNamespace(completions=types.SimpleNamespace(create=create)))
@@ -689,6 +692,6 @@ def test_extract_from_pdf_llm_whole_document(monkeypatch):
     logs = []
     df = extract_from_pdf("dummy.pdf", log=logs.append)
 
-    assert len(df) == 1
-    assert calls.get('kwargs') == {}
+    assert not df.empty
+    assert len(llm_calls) == 1
     assert any("LLM faz\u0131" in m for m in logs)
