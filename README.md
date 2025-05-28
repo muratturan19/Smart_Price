@@ -88,6 +88,12 @@ captures detailed processing messages and is created automatically each time the
 tools run. Open this file with a text editor or use commands such as
 `tail -f smart_price.log` to inspect the output when troubleshooting.
 
+Set the environment variable `SMART_PRICE_DEBUG=1` (or pass
+`level=logging.DEBUG` when calling `init_logging`) to enable verbose debug
+information. When active the log includes the chosen LLM model, a short excerpt
+of the OCR text, the constructed prompt length and the raw response returned by
+the OpenAI API.
+
 ## Troubleshooting
 
 If the second stage (OCR followed by the language model) fails to produce any
@@ -100,3 +106,6 @@ no items parsed by gpt-3.5-turbo; OCR text excerpt: 'Example line from scan'
 ```
 
 This can help diagnose why the extraction failed.
+
+When debug logging is enabled the prompt length and raw response are also logged
+to help troubleshoot unexpected LLM behaviour.
