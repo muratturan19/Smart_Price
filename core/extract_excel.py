@@ -195,8 +195,8 @@ def extract_from_excel(
                 sheet_data["Kategori"] = None
                 sheet_data["Sayfa"] = sheet
                 all_data.append(sheet_data)
-    except Exception as exc:
-        logger.error("Excel error for %s: %s", filepath, exc)
+    except Exception:
+        logger.exception("Excel error for %s", filepath)
         return pd.DataFrame()
     if not all_data:
         return pd.DataFrame()
