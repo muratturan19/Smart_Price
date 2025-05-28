@@ -28,12 +28,8 @@ def _setup_openai(monkeypatch):
         return types.SimpleNamespace(
             choices=[types.SimpleNamespace(message=types.SimpleNamespace(content='[]'))]
         )
-    client_stub = types.SimpleNamespace(
-        chat=types.SimpleNamespace(
-            completions=types.SimpleNamespace(create=create)
-        )
-    )
-    openai_stub = types.SimpleNamespace(OpenAI=lambda **_kw: client_stub)
+    chat_stub = types.SimpleNamespace(create=create)
+    openai_stub = types.SimpleNamespace(ChatCompletion=chat_stub)
     monkeypatch.setitem(sys.modules, 'openai', openai_stub)
     monkeypatch.setenv('OPENAI_API_KEY', 'x')
 
@@ -82,7 +78,8 @@ def test_parse_sends_bytes_and_cleans_tmp(monkeypatch):
     if _pandas_stubbed:
         del sys.modules['pandas']
 
-    assert openai_calls.get('images')[0]['image'] == b'img'
-    assert not any('image_url' in c for msg in openai_calls['messages'] for c in msg['content'])
+    assert 'images' not in openai_calls
+    first_msg = openai_calls['messages'][0]
+    assert first_msg['content'][1]['image_url'].startswith('data:image/png;base64,')
     for path in temp_paths:
         assert not os.path.exists(path)

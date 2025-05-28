@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import base64
 import json
 import logging
 import os
@@ -65,12 +66,11 @@ def parse(pdf_path: str, page_range: Iterable[int] | range | None = None) -> pd.
         os.environ.setdefault("OPENAI_API_KEY", api_key)
 
     try:
-        from openai import OpenAI
+        import openai
     except Exception as exc:  # pragma: no cover - import errors
         logger.error("OpenAI import failed: %s", exc)
         return pd.DataFrame()
 
-    client = OpenAI(api_key=api_key)
     model_name = os.getenv("OPENAI_MODEL", "gpt-4o")
 
     prompt = (
@@ -93,15 +93,21 @@ def parse(pdf_path: str, page_range: Iterable[int] | range | None = None) -> pd.
         try:
             with open(tmp_path, "rb") as f:
                 image_bytes = f.read()
-            resp = client.chat.completions.create(
+            img_base64 = base64.b64encode(image_bytes).decode()
+            resp = openai.ChatCompletion.create(
                 model=model_name,
                 messages=[
                     {
                         "role": "user",
-                        "content": [{"type": "text", "text": prompt}],
+                        "content": [
+                            {"type": "text", "text": prompt},
+                            {
+                                "type": "image_url",
+                                "image_url": "data:image/png;base64," + img_base64,
+                            },
+                        ],
                     }
                 ],
-                images=[{"image": image_bytes}],
                 temperature=0,
             )
             content = resp.choices[0].message.content
