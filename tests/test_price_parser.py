@@ -586,11 +586,13 @@ def test_extract_from_pdf_bytesio(monkeypatch):
     monkeypatch.setattr(pdfplumber_mod, "open", fake_open, raising=False)
 
     buf = io.BytesIO(b"pdf")
-    result = extract_from_pdf(buf, filename="dummy.pdf")
+    logs = []
+    result = extract_from_pdf(buf, filename="dummy.pdf", log=logs.append)
 
     assert len(result) == 1
     assert result.iloc[0]["Fiyat"] == 55.0
     assert calls.get("args") == (buf,)
+    assert any("Phase 1 parsed" in m for m in logs)
     assert calls.get("kwargs") == {}
 
 

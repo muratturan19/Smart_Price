@@ -269,6 +269,9 @@ def extract_from_pdf(
                         notify(f"table parse error: {exc}")
                         continue
 
+        phase1_count = len(data)
+        if phase1_count:
+            notify(f"Phase 1 parsed {phase1_count} items; skipping OCR/LLM")
         if not data:
             try:
                 from pdf2image import convert_from_path  # type: ignore
@@ -326,4 +329,6 @@ def extract_from_pdf(
         "Marka",
         "Kaynak_Dosya",
     ]
-    return df[cols].dropna(subset=["Descriptions", "Fiyat"])
+    result_df = df[cols].dropna(subset=["Descriptions", "Fiyat"])
+    notify(f"Finished {src} with {len(result_df)} items")
+    return result_df
