@@ -7,6 +7,7 @@ from typing import Tuple, Optional, IO, Any
 
 import pandas as pd
 import logging
+from datetime import datetime
 from .common_utils import (
     normalize_price,
     select_latest_year_column,
@@ -134,6 +135,8 @@ def extract_from_excel(
     filepath: str | IO[bytes], *, filename: str | None = None
 ) -> pd.DataFrame:
     """Extract product information from an Excel file."""
+    src = _basename(filepath, filename)
+    logger.info(f"Processing {src} started at {datetime.now():%Y-%m-%d %H:%M:%S}")
     all_data = []
     try:
         ext = os.path.splitext(filename or _basename(filepath))[1].lower()

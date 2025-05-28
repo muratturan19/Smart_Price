@@ -5,6 +5,7 @@ import io
 import tempfile
 from typing import IO, Any, Optional
 import logging
+from datetime import datetime
 
 import pandas as pd
 import pdfplumber
@@ -57,6 +58,9 @@ def extract_from_pdf(
                 log(message)
             except Exception as exc:  # pragma: no cover - log callback errors
                 logger.error("log callback failed: %s", exc)
+
+    src = _basename(filepath, filename)
+    notify(f"Processing {src} started at {datetime.now():%Y-%m-%d %H:%M:%S}")
 
     def _llm_extract_from_image(text: str) -> list[dict]:
         """Use a language model to extract product names and prices from OCR text."""
