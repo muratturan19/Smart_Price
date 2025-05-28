@@ -40,9 +40,12 @@ _RAW_CODE_HEADERS = [
     "ürün tip",
     "product code",
     "part no",
+    "item name",
+    "item no",
+    "item number",
+    "item #",
 ]
 _RAW_DESC_HEADERS = [
-    "item name",
     "description",
     "ürün açıklaması",
     "açıklama",
