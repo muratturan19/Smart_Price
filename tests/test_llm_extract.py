@@ -141,6 +141,17 @@ def test_llm_custom_model(monkeypatch):
     assert captured == ['foo-model']
 
 
+def test_llm_empty_items_logs_excerpt(monkeypatch):
+    logs = []
+    func = _get_llm_func(logs.append)
+    _setup_openai(monkeypatch, '[]')
+    text = 'foo\nbar ' * 20
+    result = func(text)
+    assert result == []
+    assert any('no items parsed by' in msg for msg in logs)
+    assert 'gpt-3.5-turbo' in ''.join(logs)
+
+
 def test_llm_prompt_and_clean(monkeypatch):
     logs = []
     func = _get_llm_func(logs.append)

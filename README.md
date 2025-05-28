@@ -87,3 +87,15 @@ project directory (or whichever path is passed to `init_logging`). This log
 captures detailed processing messages and is created automatically each time the
 tools run. Open this file with a text editor or use commands such as
 `tail -f smart_price.log` to inspect the output when troubleshooting.
+
+## Troubleshooting
+
+When the OCR phase hands text to the language model but no items are parsed, the
+log records the model name and a short excerpt of the OCR text. Look for entries
+like:
+
+```
+no items parsed by gpt-3.5-turbo; OCR text excerpt: 'Example line from scan'
+```
+
+This can help diagnose why the extraction failed.

@@ -101,6 +101,12 @@ def extract_from_pdf(
             try:
                 cleaned = gpt_clean_text(content)
                 items = json.loads(cleaned)
+                if not items:
+                    excerpt = text[:100].replace("\n", " ")
+                    notify(
+                        f"no items parsed by {model_name}; OCR text excerpt: {excerpt!r}"
+                    )
+                    return []
             except json.JSONDecodeError:
                 notify(f"LLM returned invalid JSON: {content!r}")
                 notify("LLM returned no data")
