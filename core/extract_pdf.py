@@ -75,7 +75,7 @@ def extract_from_pdf(
             notify(f"openai import failed: {exc}")
             return []
 
-        openai.api_key = api_key
+        client = openai.OpenAI(api_key=api_key)  # type: ignore[attr-defined]
 
         prompt = (
             "Extract product names and prices from the text below "
@@ -84,7 +84,7 @@ def extract_from_pdf(
         )
 
         try:
-            resp = openai.ChatCompletion.create(
+            resp = client.chat.completions.create(
                 model="gpt-3.5-turbo",
                 messages=[{"role": "user", "content": prompt}],
                 temperature=0.2,

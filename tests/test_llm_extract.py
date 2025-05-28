@@ -65,12 +65,19 @@ class DummyResp:
 
 
 def _setup_openai(monkeypatch, content):
-    class Chat:
-        @staticmethod
-        def create(**kwargs):
-            return DummyResp(content)
+    def create(**_kwargs):
+        return DummyResp(content)
 
-    openai_stub = types.SimpleNamespace(ChatCompletion=Chat, api_key=None)
+    client_stub = types.SimpleNamespace(
+        chat=types.SimpleNamespace(
+            completions=types.SimpleNamespace(create=create)
+        )
+    )
+
+    def openai_constructor(**_kwargs):
+        return client_stub
+
+    openai_stub = types.SimpleNamespace(OpenAI=openai_constructor)
     monkeypatch.setitem(sys.modules, 'openai', openai_stub)
     monkeypatch.setenv('OPENAI_API_KEY', 'x')
     monkeypatch.setattr(time, 'sleep', lambda *_: None)
