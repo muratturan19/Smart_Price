@@ -28,33 +28,28 @@ def _norm_header(text: str) -> str:
 
 # Possible column headers for product names/codes and prices
 _RAW_CODE_HEADERS = [
-    'ürün kodu',
-    'urun kodu',
-    'malzeme kodu',
-    'kod',
-    'product code',
-    'material code',
-    'item code',
-    'code',
-    'ürün numarası',
-    'item no',
-    'product no',
-    'ürün adı',
-    'malzeme adı',
-    'malzeme',
-    'ürün',
-    'product name',
-    'name',
-    'tip',
+    "ürün kodu",
+    "urun kodu",
+    "malzeme kodu",
+    "stok kodu",
+    "kod",
+    "tip",
+    "ref no",
+    "ref.",
+    "ürün ref",
+    "ürün tip",
+    "product code",
+    "part no",
 ]
 _RAW_DESC_HEADERS = [
-    'item name',
-    'description',
-    'ürün açıklaması',
-    'açıklama',
+    "item name",
+    "description",
+    "ürün açıklaması",
+    "açıklama",
 ]
 
-POSSIBLE_CODE_HEADERS = [_norm_header(h) for h in _RAW_CODE_HEADERS]
+POSSIBLE_CODE_HEADERS = set(_RAW_CODE_HEADERS)
+_NORMALIZED_CODE_HEADERS = [_norm_header(h) for h in POSSIBLE_CODE_HEADERS]
 POSSIBLE_DESC_HEADERS = [_norm_header(h) for h in _RAW_DESC_HEADERS]
 
 # Short code headers
@@ -69,7 +64,7 @@ POSSIBLE_SHORT_HEADERS = [_norm_header(h) for h in _RAW_SHORT_HEADERS]
 
 # Combined list used by the PDF extractor
 POSSIBLE_PRODUCT_NAME_HEADERS = (
-    POSSIBLE_CODE_HEADERS + POSSIBLE_SHORT_HEADERS + POSSIBLE_DESC_HEADERS
+    list(_NORMALIZED_CODE_HEADERS) + POSSIBLE_SHORT_HEADERS + POSSIBLE_DESC_HEADERS
 )
 _RAW_PRICE_HEADERS = [
     'fiyat', 'birim fiyat', 'liste fiyatı', 'price', 'unit price', 'list price',
@@ -88,7 +83,7 @@ def find_columns_in_excel(
     code_col = short_col = desc_col = price_col = currency_col = None
     norm_cols = [_norm_header(c) for c in df.columns]
 
-    for header in POSSIBLE_CODE_HEADERS:
+    for header in _NORMALIZED_CODE_HEADERS:
         if header in norm_cols:
             code_col = df.columns[norm_cols.index(header)]
             break
