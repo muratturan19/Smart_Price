@@ -289,6 +289,7 @@ def extract_from_pdf(
                     notify("LLM returned no data")
     except Exception as exc:
         notify(f"PDF error for {filepath}: {exc}")
+        logger.exception("PDF error for %s", filepath)
         return pd.DataFrame()
     finally:
         if tmp_for_ocr:
