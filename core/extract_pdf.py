@@ -61,6 +61,7 @@ def extract_from_pdf(
     def _llm_extract_from_image(text: str) -> list[dict]:
         """Use GPT-3.5 to extract product names and prices from OCR text."""
         # pragma: no cover - not exercised in tests
+        notify("LLM extraction started")
         try:
             from dotenv import load_dotenv  # type: ignore
             load_dotenv()
@@ -69,12 +70,14 @@ def extract_from_pdf(
 
         api_key = os.getenv("OPENAI_API_KEY")
         if not api_key or not text:
+            notify("LLM returned no data")
             return []
 
         try:
             import openai  # type: ignore
         except Exception as exc:  # pragma: no cover - optional dep missing
             notify(f"openai import failed: {exc}")
+            notify("LLM returned no data")
             return []
 
         client = openai.OpenAI(api_key=api_key)  # type: ignore[attr-defined]
@@ -98,9 +101,11 @@ def extract_from_pdf(
                 items = json.loads(cleaned)
             except json.JSONDecodeError:
                 notify(f"LLM returned invalid JSON: {content!r}")
+                notify("LLM returned no data")
                 return []
         except Exception as exc:
             notify(f"openai request failed: {exc}")
+            notify("LLM returned no data")
             return []
 
         results = []
@@ -116,6 +121,11 @@ def extract_from_pdf(
                         "Para_Birimi": detect_currency(price_raw),
                     }
                 )
+        count = len(results)
+        if count:
+            notify(f"LLM parsed {count} items")
+        else:
+            notify("LLM returned no data")
         return results
 
     notify("1. faz")
