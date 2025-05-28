@@ -598,3 +598,95 @@ def test_merge_files_casts_to_string(monkeypatch):
 
     assert all(isinstance(v, str) for v in result["Kisa_Kod"])
     assert all(isinstance(v, str) for v in result["Malzeme_Kodu"])
+
+
+def test_extract_from_pdf_llm_sets_page_added(monkeypatch):
+    if not HAS_PANDAS:
+        pytest.skip("pandas not installed")
+
+    class FakePage:
+        page_number = 1
+
+        def extract_text(self):
+            return ""
+
+        def extract_tables(self):
+            return []
+
+    class FakePDF:
+        def __enter__(self):
+            return self
+
+        def __exit__(self, exc_type, exc, tb):
+            pass
+
+        @property
+        def pages(self):
+            return [FakePage()]
+
+    def fake_open(_path):
+        return FakePDF()
+
+    def fake_convert_from_path(path, first_page, last_page):
+        class Img:
+            pass
+
+        return [Img()]
+
+    def fake_ocr(_img):
+        return ""
+
+    import sys
+    import types
+    import time
+    import inspect
+
+    pdfplumber_mod = sys.modules.get("pdfplumber")
+    pdf2image_mod = sys.modules.get("pdf2image")
+    pytesseract_mod = sys.modules.get("pytesseract")
+    monkeypatch.setattr(pdfplumber_mod, "open", fake_open, raising=False)
+    monkeypatch.setattr(pdf2image_mod, "convert_from_path", fake_convert_from_path, raising=False)
+    monkeypatch.setattr(pytesseract_mod, "image_to_string", fake_ocr, raising=False)
+
+    class DummyResp:
+        def __init__(self, content):
+            self.choices = [types.SimpleNamespace(message=types.SimpleNamespace(content=content))]
+
+    def create(**_kwargs):
+        return DummyResp('[{"name":"Foo","price":"5"}]')
+
+    client_stub = types.SimpleNamespace(
+        chat=types.SimpleNamespace(completions=types.SimpleNamespace(create=create))
+    )
+
+    openai_stub = types.SimpleNamespace(OpenAI=lambda **_kwargs: client_stub)
+    monkeypatch.setitem(sys.modules, "openai", openai_stub)
+    monkeypatch.setenv("OPENAI_API_KEY", "x")
+    monkeypatch.setattr(time, "sleep", lambda *_: None)
+
+    logs = []
+    import core.extract_pdf as m
+
+    src, start = inspect.getsourcelines(m.extract_from_pdf)
+    assign_line = None
+    for i, line in enumerate(src, start):
+        if "page_added = bool(llm_data)" in line:
+            assign_line = i + 1
+            break
+    assert assign_line is not None
+
+    captured = []
+
+    def tracer(frame, event, arg):
+        if frame.f_code is m.extract_from_pdf.__code__ and event == "line" and frame.f_lineno == assign_line:
+            captured.append(frame.f_locals.get("page_added"))
+        return tracer
+
+    sys.settrace(tracer)
+    try:
+        df = m.extract_from_pdf("dummy.pdf", log=logs.append)
+    finally:
+        sys.settrace(None)
+
+    assert len(df) == 1
+    assert captured and captured[-1] is True
