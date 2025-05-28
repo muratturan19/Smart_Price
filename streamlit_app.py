@@ -8,7 +8,7 @@ from pathlib import Path
 from typing import Callable, Optional
 
 from core.extract_excel import extract_from_excel
-from core.extract_pdf import extract_from_pdf
+from core.extract_pdf import extract_from_pdf, MIN_CODE_RATIO
 from core.logger import init_logging
 
 logger = logging.getLogger("smart_price")
@@ -45,9 +45,10 @@ def extract_from_pdf_file(
     *,
     file_name: str | None = None,
     status_log: Optional[Callable[[str], None]] = None,
+    force_ocr: bool = False,
 ) -> pd.DataFrame:
     """Wrapper around :func:`core.extract_pdf.extract_from_pdf`."""
-    return extract_from_pdf(file, filename=file_name, log=status_log)
+    return extract_from_pdf(file, filename=file_name, log=status_log, force_ocr=force_ocr)
 
 
 def merge_files(
@@ -55,6 +56,7 @@ def merge_files(
     *,
     update_status: Optional[Callable[[str], None]] = None,
     update_progress: Optional[Callable[[float], None]] = None,
+    force_ocr: bool = False,
 ):
     """Extract and merge uploaded files with optional progress callbacks."""
     extracted = []
@@ -73,7 +75,10 @@ def merge_files(
                 df = extract_from_excel_file(bytes_data, file_name=up_file.name)
             elif name.endswith(".pdf"):
                 df = extract_from_pdf_file(
-                    bytes_data, file_name=up_file.name, status_log=update_status
+                    bytes_data,
+                    file_name=up_file.name,
+                    status_log=update_status,
+                    force_ocr=force_ocr,
                 )
         except Exception:
             df = pd.DataFrame()
@@ -120,6 +125,7 @@ def upload_page():
         type=["xlsx", "xls", "pdf"],
         accept_multiple_files=True,
     )
+    force_ocr = st.checkbox("Force OCR/LLM")
     if not files:
         return
 
@@ -130,6 +136,7 @@ def upload_page():
             files,
             update_status=status.write,
             update_progress=lambda v: progress_bar.progress(v),
+            force_ocr=force_ocr,
         )
         if df.empty:
             st.warning("Dosyalardan veri çıkarılamadı.")
@@ -137,6 +144,11 @@ def upload_page():
 
         st.session_state["processed_df"] = df
         st.success(f"{len(df)} kayıt bulundu")
+        st.metric("Rows", len(df))
+        coverage = df['Malzeme_Kodu'].notna().mean()
+        st.metric("Code filled %", f"{coverage:.1%}")
+        if coverage < MIN_CODE_RATIO:
+            st.error("Low code coverage – OCR/LLM suggested")
         st.dataframe(df)
 
     if st.button("Master Veriyi Kaydet"):
