@@ -34,7 +34,7 @@ if 'dotenv' not in sys.modules:
     dotenv_stub.load_dotenv = lambda: None
     sys.modules['dotenv'] = dotenv_stub
 
-from core.extract_pdf import extract_from_pdf
+from smart_price.core.extract_pdf import extract_from_pdf
 
 if _pandas_stubbed:
     del sys.modules['pandas']
@@ -164,7 +164,7 @@ def test_llm_prompt_and_clean(monkeypatch):
         cleaned.append(text)
         return text
 
-    import core.extract_pdf as ep
+    import smart_price.core.extract_pdf as ep
     monkeypatch.setattr(ep, 'gpt_clean_text', fake_clean)
 
     result = func('sample')
