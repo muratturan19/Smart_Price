@@ -12,8 +12,8 @@ pip install .
 
 `tkinter` must also be available. It is typically included with many Python distributions but may require a separate installation on some systems.
 
-PDF lists that cannot be read directly fall back to OCR. This requires the
-`pdftoppm` utility from **Poppler** and **Tesseract** itself. On Debian based
+PDF files are processed in two stages. First the parser attempts to read text directly using **pdfplumber**. If no products are found the entire document is converted to images with `pdftoppm` and recognised by **Tesseract**. The resulting text is then interpreted by a language model.
+Both `pdftoppm` from **Poppler** and **Tesseract** itself must therefore be installed. On Debian based
 Linux systems install them with:
 
 ```bash
@@ -24,13 +24,13 @@ Windows users can download the Poppler and Tesseract binaries and ensure that
 `pdftoppm.exe` and `tesseract.exe` are available in the `PATH`. Both utilities
 must be discoverable on your system PATH for the OCR phase to succeed.
 
-### Optional LLM assistance
+### LLM assistance
 
-If OCR results are hard to parse the tool can employ GPT-3.5 to interpret the
-text. Set an `OPENAI_API_KEY` environment variable or provide a `.env` file with
-the key. Optionally set `OPENAI_MODEL` to override the default `gpt-3.5-turbo`
-model. The model is queried with a temperature of `0.2` and a small delay is
-added between requests to respect API rate limits.
+After OCR the recognised text is sent to GPT-3.5 for interpretation. Provide an
+`OPENAI_API_KEY` environment variable or a `.env` file containing the key to
+enable this step. Optionally set `OPENAI_MODEL` to override the default
+`gpt-3.5-turbo` model. The model is queried with a temperature of `0.2` and a
+small delay is added between requests to respect API rate limits.
 
 ### Building a Windows executable
 
@@ -90,8 +90,9 @@ tools run. Open this file with a text editor or use commands such as
 
 ## Troubleshooting
 
-When the OCR phase hands text to the language model but no items are parsed, the
-log records the model name and a short excerpt of the OCR text. Look for entries
+If the second stage (OCR followed by the language model) fails to produce any
+items, the log records the model name and a short excerpt of the recognised text.
+Look for entries
 like:
 
 ```

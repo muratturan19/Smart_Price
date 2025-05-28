@@ -694,4 +694,5 @@ def test_extract_from_pdf_llm_sets_page_added(monkeypatch):
 
     assert not df.empty
     assert len(llm_calls) == 1
-    assert any("LLM faz\u0131" in m for m in logs)
+    assert any("OCR faz\u0131 başladı" in m for m in logs)
+    assert any("LLM faz\u0131 başladı" in m for m in logs)

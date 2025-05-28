@@ -61,7 +61,7 @@ def extract_from_pdf(
     def _llm_extract_from_image(text: str) -> list[dict]:
         """Use a language model to extract product names and prices from OCR text."""
         # pragma: no cover - not exercised in tests
-        notify("LLM extraction started")
+        notify("LLM fazı başladı")
         try:
             from dotenv import load_dotenv  # type: ignore
             load_dotenv()
@@ -259,9 +259,9 @@ def extract_from_pdf(
             except Exception as exc:
                 notify(f"OCR libraries unavailable: {exc}")
             else:
+                notify("OCR faz\u0131 başladı")
                 images = convert_from_path(path_for_ocr)
                 ocr_text = "\n".join(pytesseract.image_to_string(img) for img in images)
-                notify("LLM faz\u0131")
                 llm_data = _llm_extract_from_image(ocr_text)
                 if llm_data:
                     notify(f"LLM parsed {len(llm_data)} items")
