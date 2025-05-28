@@ -76,4 +76,5 @@ smart-price-app
 ```
 
 From the interface you can upload Excel/PDF price lists and search the
-resulting master dataset.
+resulting master dataset. The merged data is written to `master_dataset.xlsx`
+in the directory from which you launch the app.
