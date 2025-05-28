@@ -17,7 +17,7 @@ dependencies = [
     "xlrd",
     "pdf2image",
     "pytesseract",
-    "openai",
+    "openai>=1.0",
     "python-dotenv",
 ]
 
