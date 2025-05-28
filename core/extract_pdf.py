@@ -175,6 +175,9 @@ def extract_from_pdf(
         with cm as pdf:
             for page in pdf.pages:
                 text = page.extract_text() or ""
+                notify(
+                    f"Page {page.page_number} read with {len(text.splitlines())} lines"
+                )
                 if text:
                     for line in text.split("\n"):
                         line = line.strip()
@@ -200,6 +203,9 @@ def extract_from_pdf(
                                             "Para_Birimi": detect_currency(price_raw),
                                             "Sayfa": page.page_number,
                                         }
+                                    )
+                                    notify(
+                                        f"Matched on page {page.page_number}: {line[:100]}"
                                     )
 
                 tables = page.extract_tables()
