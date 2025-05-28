@@ -6,6 +6,8 @@ import logging
 import pandas as pd
 import pytesseract
 
+from smart_price.core.extract_excel import extract_from_excel
+from smart_price.core.extract_pdf import extract_from_pdf
 from smart_price.core.logger import init_logging
 
 logger = logging.getLogger("smart_price")
@@ -31,8 +33,6 @@ def _configure_tesseract() -> None:
     except Exception as exc:  # pragma: no cover - unexpected errors
         logger.error("Tesseract language query failed: %s", exc)
 
-from smart_price.core.extract_excel import extract_from_excel
-from smart_price.core.extract_pdf import extract_from_pdf
 
 
 def parse_args() -> argparse.Namespace:

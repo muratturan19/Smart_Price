@@ -2,13 +2,10 @@ import os
 import sys
 import types
 import inspect
-import pytest
+from types import FunctionType
 import time
 
-# Ensure repo root is on path
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
-
-# Provide minimal stubs for optional deps
+# Provide minimal stubs for optional deps before importing project code
 _pandas_stubbed = False
 try:  # pragma: no cover - pandas may not be installed
     import pandas as pd  # noqa: F401
@@ -34,7 +31,11 @@ if 'dotenv' not in sys.modules:
     dotenv_stub.load_dotenv = lambda: None
     sys.modules['dotenv'] = dotenv_stub
 
-from smart_price.core.extract_pdf import extract_from_pdf
+# Ensure repo root is on path for project imports
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
+import smart_price.core.extract_pdf as ep  # noqa: E402
+from smart_price.core.extract_pdf import extract_from_pdf  # noqa: E402
 
 if _pandas_stubbed:
     del sys.modules['pandas']
@@ -54,9 +55,13 @@ def _get_llm_func(log_func):
             return value
         return inner.__closure__[0]
 
-    from types import FunctionType
-    return FunctionType(code_obj, extract_from_pdf.__globals__,
-                        '_llm_extract_from_image', None, (make_cell(log_func),))
+    return FunctionType(
+        code_obj,
+        extract_from_pdf.__globals__,
+        '_llm_extract_from_image',
+        None,
+        (make_cell(log_func),),
+    )
 
 
 class DummyResp:
@@ -164,7 +169,6 @@ def test_llm_prompt_and_clean(monkeypatch):
         cleaned.append(text)
         return text
 
-    import smart_price.core.extract_pdf as ep
     monkeypatch.setattr(ep, 'gpt_clean_text', fake_clean)
 
     result = func('sample')
