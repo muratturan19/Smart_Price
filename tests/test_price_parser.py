@@ -198,6 +198,53 @@ def test_extract_from_pdf_ocr_no_data(monkeypatch):
     assert len(ocr_calls) == 1
 
 
+def test_extract_from_pdf_force_ocr(monkeypatch):
+    if not HAS_PANDAS:
+        pytest.skip("pandas not installed")
+
+    class FakePage:
+        page_number = 1
+
+        def extract_text(self):
+            return "ItemA 10"
+
+        def extract_tables(self):
+            return []
+
+    class FakePDF:
+        def __enter__(self):
+            return self
+
+        def __exit__(self, exc_type, exc, tb):
+            pass
+
+        @property
+        def pages(self):
+            return [FakePage()]
+
+    def fake_open(_path):
+        return FakePDF()
+
+    called = {}
+
+    def fake_parse(path, page_range=None):
+        called['path'] = path
+        import pandas as pd
+        return pd.DataFrame({"Descriptions": ["A"], "Fiyat": [1.0]})
+
+    import sys
+
+    pdfplumber_mod = sys.modules.get("pdfplumber")
+    monkeypatch.setattr(pdfplumber_mod, "open", fake_open, raising=False)
+    import core.extract_pdf as pdf_mod
+    monkeypatch.setattr(pdf_mod.ocr_llm_fallback, "parse", fake_parse)
+
+    df = extract_from_pdf("dummy.pdf", force_ocr=True)
+
+    assert not df.empty
+    assert called.get('path') == "dummy.pdf"
+
+
 def test_extract_from_excel_xls(tmp_path):
     if not HAS_PANDAS:
         pytest.skip("pandas not installed")
@@ -626,6 +673,44 @@ def test_merge_files_casts_to_string(monkeypatch):
 
     assert all(isinstance(v, str) for v in result["Kisa_Kod"])
     assert all(isinstance(v, str) for v in result["Malzeme_Kodu"])
+
+
+def test_merge_files_passes_force_ocr(monkeypatch):
+    if not HAS_PANDAS:
+        pytest.skip("pandas not installed")
+    import pandas as pd
+
+    df = pd.DataFrame(
+        {
+            "Malzeme_Kodu": ["C1"],
+            "Descriptions": ["A"],
+            "Kisa_Kod": [None],
+            "Fiyat": [5],
+            "Para_Birimi": ["TL"],
+            "Marka": [None],
+            "Kaynak_Dosya": ["f.pdf"],
+        }
+    )
+
+    received = {}
+
+    def fake_pdf(*_args, **kwargs):
+        received.update(kwargs)
+        return df.copy()
+
+    monkeypatch.setattr(streamlit_app, "extract_from_pdf_file", fake_pdf)
+
+    class FakeUpload:
+        def __init__(self, name):
+            self.name = name
+
+        def read(self):
+            return b"data"
+
+    result = streamlit_app.merge_files([FakeUpload("f.pdf")], force_ocr=True)
+
+    assert received.get("force_ocr") is True
+    assert not result.empty
 
 
 def test_extract_from_pdf_llm_sets_page_added(monkeypatch):

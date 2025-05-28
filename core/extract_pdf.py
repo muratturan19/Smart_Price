@@ -69,7 +69,10 @@ def _basename(fp: Any, filename: Optional[str] = None) -> str:
 
 
 def extract_from_pdf(
-    filepath: str | IO[bytes], *, filename: str | None = None, log: Any | None = None
+    filepath: str | IO[bytes], *,
+    filename: str | None = None,
+    log: Any | None = None,
+    force_ocr: bool = False,
 ) -> pd.DataFrame:
     """Extract product information from a PDF file."""
     data = []
@@ -206,6 +209,11 @@ def extract_from_pdf(
             path_for_ocr = tmp_for_ocr
         with cm as pdf:
             page_range = range(1, len(pdf.pages) + 1)
+            if force_ocr:
+                notify("Force OCR/LLM enabled")
+                result = ocr_llm_fallback.parse(path_for_ocr, page_range)
+                cleanup()
+                return result
             for page in pdf.pages:
                 text = page.extract_text() or ""
                 notify(
