@@ -281,6 +281,7 @@ def extract_from_pdf(
                                 data.append(entry)
                         else:
                             notify("LLM returned no data")
+                        page_added = bool(llm_data)
     except Exception as exc:
         notify(f"PDF error for {filepath}: {exc}")
         return pd.DataFrame()
