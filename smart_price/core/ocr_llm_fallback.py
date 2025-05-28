@@ -74,15 +74,14 @@ def parse(pdf_path: str, page_range: Iterable[int] | range | None = None) -> pd.
         os.environ.setdefault("OPENAI_API_KEY", api_key)
 
     try:
-        import openai  # type: ignore
-        resp = openai.ChatCompletion.create(
-            model="gpt-4o-mini",
-            messages=[{"role": "user", "content": prompt}],
-            temperature=0,
-        )
-        content = resp["choices"][0]["message"]["content"]
-    except AttributeError:  # pragma: no cover - openai>=1.0
-        client = openai.OpenAI(api_key=api_key)  # type: ignore[attr-defined]
+        from openai import OpenAI
+    except Exception as exc:  # pragma: no cover - import errors
+        logger.error("OpenAI import failed: %s", exc)
+        return pd.DataFrame()
+
+    client = OpenAI(api_key=api_key)
+
+    try:
         resp = client.chat.completions.create(
             model="gpt-4o-mini",
             messages=[{"role": "user", "content": prompt}],

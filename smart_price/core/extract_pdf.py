@@ -109,13 +109,13 @@ def extract_from_pdf(
             return []
 
         try:
-            import openai  # type: ignore
+            from openai import OpenAI
         except Exception as exc:  # pragma: no cover - optional dep missing
             notify(f"openai import failed: {exc}")
             notify("LLM returned no data")
             return []
 
-        client = openai.OpenAI(api_key=api_key)  # type: ignore[attr-defined]
+        client = OpenAI(api_key=api_key)
 
         model_name = os.getenv("OPENAI_MODEL", "gpt-3.5-turbo")
         excerpt = text[:200].replace("\n", " ")
