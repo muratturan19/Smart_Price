@@ -94,7 +94,8 @@ def test_llm_extract_valid_json(monkeypatch):
         'Fiyat': 10.0,
         'Para_Birimi': 'TRY'
     }]
-    assert logs == []
+    assert logs[0].startswith("LLM extraction started")
+    assert logs[-1] == "LLM parsed 1 items"
 
 
 def test_llm_extract_extra_text(monkeypatch):
@@ -108,7 +109,8 @@ def test_llm_extract_extra_text(monkeypatch):
         'Fiyat': 5.0,
         'Para_Birimi': 'USD'
     }]
-    assert logs == []
+    assert logs[0].startswith("LLM extraction started")
+    assert logs[-1] == "LLM parsed 1 items"
 
 
 def test_llm_extract_invalid_json(monkeypatch):
@@ -118,4 +120,6 @@ def test_llm_extract_invalid_json(monkeypatch):
     result = func('ignored')
     assert result == []
     assert any('invalid JSON' in msg for msg in logs)
+    assert logs[0].startswith("LLM extraction started")
+    assert logs[-1] == "LLM returned no data"
 
