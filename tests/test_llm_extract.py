@@ -64,10 +64,14 @@ class DummyResp:
         self.choices = [types.SimpleNamespace(message=types.SimpleNamespace(content=content))]
 
 
-def _setup_openai(monkeypatch, content, captured_model=None):
+def _setup_openai(monkeypatch, content, captured_model=None, captured_prompt=None):
     def create(**_kwargs):
         if captured_model is not None:
             captured_model.append(_kwargs.get('model'))
+        if captured_prompt is not None:
+            msgs = _kwargs.get('messages') or []
+            if msgs:
+                captured_prompt.append(msgs[0].get('content'))
         return DummyResp(content)
 
     client_stub = types.SimpleNamespace(
@@ -135,4 +139,29 @@ def test_llm_custom_model(monkeypatch):
     result = func('ignored')
     assert result == []
     assert captured == ['foo-model']
+
+
+def test_llm_prompt_and_clean(monkeypatch):
+    logs = []
+    func = _get_llm_func(logs.append)
+    captured_prompt = []
+    _setup_openai(monkeypatch, '[{"name":"A","price":"4"}]', captured_prompt=captured_prompt)
+
+    cleaned = []
+
+    def fake_clean(text):
+        cleaned.append(text)
+        return text
+
+    import core.extract_pdf as ep
+    monkeypatch.setattr(ep, 'gpt_clean_text', fake_clean)
+
+    result = func('sample')
+    assert cleaned == ['[{"name":"A","price":"4"}]']
+    assert 'return only' in captured_prompt[0]
+    assert result == [{
+        'Malzeme_Adi': 'A',
+        'Fiyat': 4.0,
+        'Para_Birimi': None
+    }]
 
