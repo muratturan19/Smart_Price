@@ -4,6 +4,7 @@ import logging
 import io
 import os
 import sys
+import pytesseract
 from pathlib import Path
 from typing import Callable, Optional
 
@@ -12,6 +13,28 @@ from smart_price.core.extract_pdf import extract_from_pdf, MIN_CODE_RATIO
 from smart_price.core.logger import init_logging
 
 logger = logging.getLogger("smart_price")
+
+
+def _configure_tesseract() -> None:
+    """Configure pytesseract paths and log available languages."""
+    os.environ["TESSDATA_PREFIX"] = r"D:\\Program Files\\Tesseract-OCR"
+    pytesseract.pytesseract.tesseract_cmd = (
+        r"D:\\Program Files\\Tesseract-OCR\\tesseract.exe"
+    )
+    try:
+        langs = (
+            pytesseract.get_languages(config="")
+            if hasattr(pytesseract, "get_languages")
+            else []
+        )
+        logger.info("Available Tesseract languages: %s", langs)
+        if "tur" not in langs:
+            logger.error(
+                "Tesseract language model 'tur' not found. "
+                "Please install or copy the model into the tessdata folder."
+            )
+    except Exception as exc:  # pragma: no cover - unexpected errors
+        logger.error("Tesseract language query failed: %s", exc)
 
 
 def resource_path(relative: str) -> str:
@@ -186,6 +209,7 @@ PAGES = {
 
 def main():
     init_logging()
+    _configure_tesseract()
     st.sidebar.title("Smart Price")
     choice = st.sidebar.radio("Seçim", list(PAGES.keys()))
     page = PAGES[choice]
@@ -195,6 +219,7 @@ def main():
 def cli() -> None:
     """Entry point to launch the Streamlit application."""
     init_logging()
+    _configure_tesseract()
     from streamlit.web import cli as stcli
     sys.argv = ["streamlit", "run", __file__]
     sys.exit(stcli.main())
