@@ -1,8 +1,13 @@
+import os
+from dotenv import load_dotenv
+
+project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".env"))
+load_dotenv(dotenv_path=project_root)
+
 import streamlit as st
 import pandas as pd
 import logging
 import io
-import os
 import sys
 import pytesseract
 from pathlib import Path
