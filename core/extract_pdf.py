@@ -3,9 +3,11 @@ from __future__ import annotations
 import os
 import io
 import tempfile
-from typing import IO, Any, Optional
+from typing import IO, Any, Optional, Sequence
 import logging
 from datetime import datetime
+import difflib
+import unicodedata
 
 import pandas as pd
 import pdfplumber
@@ -28,6 +30,18 @@ MIN_CODE_RATIO = 0.70
 MIN_ROWS_PARSER = 500
 
 logger = logging.getLogger("smart_price")
+
+def _norm(s: Any) -> str:
+    """Normalize ``s`` for fuzzy header matching."""
+    return unicodedata.normalize("NFKD", str(s)).lower()
+
+
+def header_match(cell: Any, candidates: Sequence[str]) -> bool:
+    """Return True if ``cell`` fuzzily matches any of ``candidates``."""
+    norm_candidates = [_norm(c) for c in candidates]
+    return bool(
+        difflib.get_close_matches(_norm(cell), norm_candidates, cutoff=0.75)
+    )
 
 _patterns = [
     re.compile(r"^(.*?)\s{2,}([\d\.,]+)\s*(?:TL|TRY|EUR|USD|\$|€)?$", re.MULTILINE | re.IGNORECASE),
@@ -229,8 +243,8 @@ def extract_from_pdf(
                     try:
                         header_row = None
                         if table and any(
-                            str(c or "").strip().lower() in POSSIBLE_PRODUCT_NAME_HEADERS
-                            or str(c or "").strip().lower() in POSSIBLE_PRICE_HEADERS
+                            header_match(c, POSSIBLE_PRODUCT_NAME_HEADERS)
+                            or header_match(c, POSSIBLE_PRICE_HEADERS)
                             for c in table[0]
                         ):
                             header_row = [str(c or "").strip() for c in table[0]]
@@ -243,22 +257,22 @@ def extract_from_pdf(
                         product_idx = 0
                         price_idx = -1
                         if any(
-                            str(c).lower() in POSSIBLE_PRODUCT_NAME_HEADERS
+                            header_match(c, POSSIBLE_PRODUCT_NAME_HEADERS)
                             for c in df_table.columns
                         ):
                             product_idx = [
                                 i
                                 for i, c in enumerate(df_table.columns)
-                                if str(c).lower() in POSSIBLE_PRODUCT_NAME_HEADERS
+                                if header_match(c, POSSIBLE_PRODUCT_NAME_HEADERS)
                             ][0]
                         if any(
-                            str(c).lower() in POSSIBLE_PRICE_HEADERS
+                            header_match(c, POSSIBLE_PRICE_HEADERS)
                             for c in df_table.columns
                         ):
                             price_idx = [
                                 i
                                 for i, c in enumerate(df_table.columns)
-                                if str(c).lower() in POSSIBLE_PRICE_HEADERS
+                                if header_match(c, POSSIBLE_PRICE_HEADERS)
                             ][0]
 
                         for _, row in df_table.iterrows():
