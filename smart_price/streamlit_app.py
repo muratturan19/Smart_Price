@@ -17,7 +17,7 @@ logger = logging.getLogger("smart_price")
 
 def _configure_tesseract() -> None:
     """Configure pytesseract paths and log available languages."""
-    os.environ["TESSDATA_PREFIX"] = r"D:\\Program Files\\Tesseract-OCR"
+    os.environ["TESSDATA_PREFIX"] = r"D:\\Program Files\\Tesseract-OCR\\tessdata"
     pytesseract.pytesseract.tesseract_cmd = (
         r"D:\\Program Files\\Tesseract-OCR\\tesseract.exe"
     )
