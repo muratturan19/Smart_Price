@@ -30,15 +30,15 @@ if 'pytesseract' not in sys.modules:
 if 'streamlit' not in sys.modules:
     sys.modules['streamlit'] = types.ModuleType('streamlit')
 
-from core.common_utils import normalize_price
-from core.common_utils import detect_brand
-from core.common_utils import split_code_description
-from core.common_utils import gpt_clean_text
-from core.extract_excel import extract_from_excel
-from core.extract_pdf import extract_from_pdf
+from smart_price.core.common_utils import normalize_price
+from smart_price.core.common_utils import detect_brand
+from smart_price.core.common_utils import split_code_description
+from smart_price.core.common_utils import gpt_clean_text
+from smart_price.core.extract_excel import extract_from_excel
+from smart_price.core.extract_pdf import extract_from_pdf
 
 if HAS_PANDAS:
-    import streamlit_app
+    from smart_price import streamlit_app
 else:
     streamlit_app = None
 
@@ -236,7 +236,7 @@ def test_extract_from_pdf_force_ocr(monkeypatch):
 
     pdfplumber_mod = sys.modules.get("pdfplumber")
     monkeypatch.setattr(pdfplumber_mod, "open", fake_open, raising=False)
-    import core.extract_pdf as pdf_mod
+    import smart_price.core.extract_pdf as pdf_mod
     monkeypatch.setattr(pdf_mod.ocr_llm_fallback, "parse", fake_parse)
 
     df = extract_from_pdf("dummy.pdf", force_ocr=True)

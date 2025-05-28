@@ -21,10 +21,10 @@ dependencies = [
     "python-dotenv",
 ]
 
-[tool.setuptools]
-packages = ["core"]
-py-modules = ["price_parser", "streamlit_app"]
+[tool.setuptools.packages.find]
+where = ["smart_price"]
+
 
 [project.scripts]
-smart-price-parser = "price_parser:main"
-smart-price-app = "streamlit_app:cli"
+smart-price-parser = "smart_price.price_parser:main"
+smart-price-app = "smart_price.streamlit_app:cli"

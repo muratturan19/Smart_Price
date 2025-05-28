@@ -7,9 +7,9 @@ import sys
 from pathlib import Path
 from typing import Callable, Optional
 
-from core.extract_excel import extract_from_excel
-from core.extract_pdf import extract_from_pdf, MIN_CODE_RATIO
-from core.logger import init_logging
+from smart_price.core.extract_excel import extract_from_excel
+from smart_price.core.extract_pdf import extract_from_pdf, MIN_CODE_RATIO
+from smart_price.core.logger import init_logging
 
 logger = logging.getLogger("smart_price")
 
@@ -36,7 +36,7 @@ def get_master_dataset_path() -> str:
 def extract_from_excel_file(
     file: io.BytesIO, *, file_name: str | None = None
 ) -> pd.DataFrame:
-    """Wrapper around :func:`core.extract_excel.extract_from_excel`."""
+    """Wrapper around :func:`smart_price.core.extract_excel.extract_from_excel`."""
     return extract_from_excel(file, filename=file_name)
 
 
@@ -47,7 +47,7 @@ def extract_from_pdf_file(
     status_log: Optional[Callable[[str], None]] = None,
     force_ocr: bool = False,
 ) -> pd.DataFrame:
-    """Wrapper around :func:`core.extract_pdf.extract_from_pdf`."""
+    """Wrapper around :func:`smart_price.core.extract_pdf.extract_from_pdf`."""
     return extract_from_pdf(file, filename=file_name, log=status_log, force_ocr=force_ocr)
 
 

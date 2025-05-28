@@ -5,12 +5,12 @@ import sqlite3
 import logging
 import pandas as pd
 
-from core.logger import init_logging
+from smart_price.core.logger import init_logging
 
 logger = logging.getLogger("smart_price")
 
-from core.extract_excel import extract_from_excel
-from core.extract_pdf import extract_from_pdf
+from smart_price.core.extract_excel import extract_from_excel
+from smart_price.core.extract_pdf import extract_from_pdf
 
 
 def parse_args() -> argparse.Namespace:
