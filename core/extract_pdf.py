@@ -26,8 +26,8 @@ from .common_utils import (
 from .extract_excel import (
     POSSIBLE_PRICE_HEADERS,
     POSSIBLE_PRODUCT_NAME_HEADERS,
-    POSSIBLE_CODE_HEADERS,
 )
+from .extract_excel import POSSIBLE_CODE_HEADERS
 from . import ocr_llm_fallback
 
 MIN_CODE_RATIO = 0.70
