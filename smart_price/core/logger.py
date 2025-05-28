@@ -1,6 +1,10 @@
 import logging
 import os
 from pathlib import Path
+from dotenv import load_dotenv
+
+project_root = Path(__file__).resolve().parent.parent / ".env"
+load_dotenv(dotenv_path=project_root)
 
 
 def init_logging(log_path: str = "smart_price.log", *, level: int | str | None = None) -> logging.Logger:
