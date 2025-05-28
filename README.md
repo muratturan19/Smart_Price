@@ -28,7 +28,8 @@ must be discoverable on your system PATH for the OCR phase to succeed.
 
 If OCR results are hard to parse the tool can employ GPT-3.5 to interpret the
 text. Set an `OPENAI_API_KEY` environment variable or provide a `.env` file with
-the key. The model is queried with a temperature of `0.2` and a small delay is
+the key. Optionally set `OPENAI_MODEL` to override the default `gpt-3.5-turbo`
+model. The model is queried with a temperature of `0.2` and a small delay is
 added between requests to respect API rate limits.
 
 ### Building a Windows executable

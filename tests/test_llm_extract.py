@@ -64,8 +64,10 @@ class DummyResp:
         self.choices = [types.SimpleNamespace(message=types.SimpleNamespace(content=content))]
 
 
-def _setup_openai(monkeypatch, content):
+def _setup_openai(monkeypatch, content, captured_model=None):
     def create(**_kwargs):
+        if captured_model is not None:
+            captured_model.append(_kwargs.get('model'))
         return DummyResp(content)
 
     client_stub = types.SimpleNamespace(
@@ -122,4 +124,15 @@ def test_llm_extract_invalid_json(monkeypatch):
     assert any('invalid JSON' in msg for msg in logs)
     assert logs[0].startswith("LLM extraction started")
     assert logs[-1] == "LLM returned no data"
+
+
+def test_llm_custom_model(monkeypatch):
+    logs = []
+    func = _get_llm_func(logs.append)
+    captured = []
+    _setup_openai(monkeypatch, '[]', captured)
+    monkeypatch.setenv('OPENAI_MODEL', 'foo-model')
+    result = func('ignored')
+    assert result == []
+    assert captured == ['foo-model']
 
