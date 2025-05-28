@@ -83,26 +83,25 @@ def parse(pdf_path: str, page_range: Iterable[int] | range | None = None) -> pd.
     for idx, img in enumerate(images, start=1):
         img_path = save_debug_image("page_image", idx, img)
         tmp_path = img_path
+        created_tmp = False
         if tmp_path is None:
             tmp = tempfile.NamedTemporaryFile(delete=False, suffix=".png")
             img.save(tmp.name, format="PNG")
             tmp.close()
             tmp_path = Path(tmp.name)
+            created_tmp = True
         try:
+            with open(tmp_path, "rb") as f:
+                image_bytes = f.read()
             resp = client.chat.completions.create(
                 model=model_name,
                 messages=[
                     {
                         "role": "user",
-                        "content": [
-                            {"type": "text", "text": prompt},
-                            {
-                                "type": "image_url",
-                                "image_url": {"url": f"file://{tmp_path}"},
-                            },
-                        ],
+                        "content": [{"type": "text", "text": prompt}],
                     }
                 ],
+                images=[{"image": image_bytes}],
                 temperature=0,
             )
             content = resp.choices[0].message.content
@@ -110,6 +109,12 @@ def parse(pdf_path: str, page_range: Iterable[int] | range | None = None) -> pd.
         except Exception as exc:  # pragma: no cover - request errors
             logger.error("OpenAI request failed on page %d: %s", idx, exc)
             continue
+        finally:
+            if created_tmp:
+                try:
+                    os.remove(tmp_path)
+                except Exception as exc:  # pragma: no cover - cleanup errors
+                    logger.debug("temp file cleanup failed: %s", exc)
 
         try:
             cleaned = gpt_clean_text(content)
