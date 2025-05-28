@@ -81,6 +81,8 @@ in the directory from which you launch the app.
 
 ### Logging
 
-Both the CLI and Streamlit interface log their actions to `smart_price.log` in
-the project directory. The file is created automatically alongside console
-output whenever you run the tools.
+Both the CLI and the Streamlit interface create a `smart_price.log` file in the
+project directory (or whichever path is passed to `init_logging`). This log
+captures detailed processing messages and is created automatically each time the
+tools run. Open this file with a text editor or use commands such as
+`tail -f smart_price.log` to inspect the output when troubleshooting.
