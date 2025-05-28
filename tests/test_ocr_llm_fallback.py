@@ -28,8 +28,8 @@ def _setup_openai(monkeypatch):
         return types.SimpleNamespace(
             choices=[types.SimpleNamespace(message=types.SimpleNamespace(content='[]'))]
         )
-    chat_stub = types.SimpleNamespace(create=create)
-    openai_stub = types.SimpleNamespace(ChatCompletion=chat_stub)
+    chat_stub = types.SimpleNamespace(completions=types.SimpleNamespace(create=create))
+    openai_stub = types.SimpleNamespace(chat=chat_stub)
     monkeypatch.setitem(sys.modules, 'openai', openai_stub)
     monkeypatch.setenv('OPENAI_API_KEY', 'x')
 
