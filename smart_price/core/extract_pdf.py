@@ -35,6 +35,7 @@ from .extract_excel import (
 )
 from .extract_excel import POSSIBLE_CODE_HEADERS
 from . import ocr_llm_fallback
+from .debug_utils import save_debug
 
 MIN_CODE_RATIO = 0.70
 MIN_ROWS_PARSER = 500
@@ -104,7 +105,6 @@ def extract_from_pdf(
         # pragma: no cover - not exercised in tests
         notify("LLM fazı başladı")
         # Environment already loaded at module import time
-        pass
         api_key = os.getenv("OPENAI_API_KEY")
         if not api_key or not text:
             notify("LLM returned no data")
@@ -137,6 +137,8 @@ def extract_from_pdf(
             {text}
             """
 
+        save_debug("llm_prompt", 1, prompt)
+
         logger.debug("LLM prompt length: %d", len(prompt))
         logger.debug("LLM prompt excerpt: %r", prompt[:200])
 
@@ -149,6 +151,7 @@ def extract_from_pdf(
             )
             time.sleep(0.5)
             content = resp.choices[0].message.content
+            save_debug("llm_response", 1, content)
             logger.debug("LLM raw response: %r", content.strip()[:200])
             try:
                 cleaned = gpt_clean_text(content)
@@ -369,7 +372,12 @@ def extract_from_pdf(
             else:
                 notify("OCR faz\u0131 başladı")
                 images = convert_from_path(path_for_ocr)
-                ocr_text = "\n".join(pytesseract.image_to_string(img) for img in images)
+                ocr_parts = []
+                for idx, img in enumerate(images, start=1):
+                    text = pytesseract.image_to_string(img)
+                    ocr_parts.append(text)
+                    save_debug("ocr_text", idx, text)
+                ocr_text = "\n".join(ocr_parts)
                 logger.debug("OCR text excerpt: %r", ocr_text[:200])
                 llm_data = _llm_extract_from_image(ocr_text)
                 if llm_data:
