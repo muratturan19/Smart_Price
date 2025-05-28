@@ -80,6 +80,6 @@ def test_parse_sends_bytes_and_cleans_tmp(monkeypatch):
 
     assert 'images' not in openai_calls
     first_msg = openai_calls['messages'][0]
-    assert first_msg['content'][1]['image_url'].startswith('data:image/png;base64,')
+    assert first_msg['content'][1]['image_url']['url'].startswith('data:image/png;base64,')
     for path in temp_paths:
         assert not os.path.exists(path)

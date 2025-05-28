@@ -103,7 +103,7 @@ def parse(pdf_path: str, page_range: Iterable[int] | range | None = None) -> pd.
                             {"type": "text", "text": prompt},
                             {
                                 "type": "image_url",
-                                "image_url": "data:image/png;base64," + img_base64,
+                                "image_url": {"url": "data:image/png;base64," + img_base64},
                             },
                         ],
                     }
