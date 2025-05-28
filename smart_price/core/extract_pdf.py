@@ -84,7 +84,7 @@ def extract_from_pdf(
     filepath: str | IO[bytes], *,
     filename: str | None = None,
     log: Any | None = None,
-    force_ocr: bool = False,
+    force_llm: bool = False,
 ) -> pd.DataFrame:
     """Extract product information from a PDF file."""
     data = []
@@ -193,18 +193,18 @@ def extract_from_pdf(
         return results
 
     notify("1. faz")
-    tmp_for_ocr: str | None = None
+    tmp_for_llm: str | None = None
     def cleanup() -> None:
-        if tmp_for_ocr:
+        if tmp_for_llm:
             try:
-                os.remove(tmp_for_ocr)
+                os.remove(tmp_for_llm)
             except Exception as exc:
                 notify(f"temp file cleanup failed: {exc}")
     page_range = None
     try:
         if isinstance(filepath, (str, bytes, os.PathLike)):
             cm = pdfplumber.open(filepath)
-            path_for_ocr = filepath
+            path_for_llm = filepath
         else:
             try:
                 filepath.seek(0)
@@ -215,13 +215,13 @@ def extract_from_pdf(
             tmp = tempfile.NamedTemporaryFile(delete=False, suffix=".pdf")
             tmp.write(pdf_bytes)
             tmp.close()
-            tmp_for_ocr = tmp.name
-            path_for_ocr = tmp_for_ocr
+            tmp_for_llm = tmp.name
+            path_for_llm = tmp_for_llm
         with cm as pdf:
             page_range = range(1, len(pdf.pages) + 1)
-            if force_ocr:
-                notify("Force OCR/LLM enabled")
-                result = ocr_llm_fallback.parse(path_for_ocr, page_range)
+            if force_llm:
+                notify("Force LLM (Vision) enabled")
+                result = ocr_llm_fallback.parse(path_for_llm, page_range)
                 cleanup()
                 return result
             for page in pdf.pages:
@@ -362,38 +362,16 @@ def extract_from_pdf(
 
         phase1_count = len(data)
         if phase1_count:
-            notify(f"Phase 1 parsed {phase1_count} items; skipping OCR/LLM")
-        if not data:
-            try:
-                from pdf2image import convert_from_path  # type: ignore
-                import pytesseract  # type: ignore
-            except Exception as exc:
-                notify(f"OCR libraries unavailable: {exc}")
-            else:
-                notify("OCR faz\u0131 başladı")
-                images = convert_from_path(path_for_ocr)
-                ocr_parts = []
-                for idx, img in enumerate(images, start=1):
-                    text = pytesseract.image_to_string(img)
-                    ocr_parts.append(text)
-                    save_debug("ocr_text", idx, text)
-                ocr_text = "\n".join(ocr_parts)
-                logger.debug("OCR text excerpt: %r", ocr_text[:200])
-                llm_data = _llm_extract_from_image(ocr_text)
-                if llm_data:
-                    notify(f"LLM parsed {len(llm_data)} items")
-                    for entry in llm_data:
-                        data.append(entry)
-                else:
-                    notify("LLM returned no data")
+            notify(f"Phase 1 parsed {phase1_count} items; skipping LLM")
     except Exception as exc:
         notify(f"PDF error for {filepath}: {exc}")
         logger.exception("PDF error for %s", filepath)
         cleanup()
         return pd.DataFrame()
     if not data:
+        result = ocr_llm_fallback.parse(path_for_llm, page_range)
         cleanup()
-        return pd.DataFrame()
+        return result
     df = pd.DataFrame(data)
     if not df.empty:
         codes, descs = zip(*df["Malzeme_Adi"].map(split_code_description))
@@ -408,8 +386,8 @@ def extract_from_pdf(
     if rows_extracted < MIN_ROWS_PARSER or (
         rows_extracted and code_filled / rows_extracted < MIN_CODE_RATIO
     ):
-        logger.warning("Low-quality Phase-1 parse \u2192 switching to OCR+LLM")
-        result = ocr_llm_fallback.parse(path_for_ocr, page_range)
+        logger.warning("Low-quality Phase-1 parse \u2192 switching to LLM vision")
+        result = ocr_llm_fallback.parse(path_for_llm, page_range)
         cleanup()
         return result
     # Default to Turkish Lira if currency could not be determined

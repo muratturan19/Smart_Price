@@ -12,25 +12,15 @@ pip install .
 
 `tkinter` must also be available. It is typically included with many Python distributions but may require a separate installation on some systems.
 
-PDF files are processed in two stages. First the parser attempts to read text directly using **pdfplumber**. If no products are found the entire document is converted to images with `pdftoppm` and recognised by **Tesseract**. The resulting text is then interpreted by a language model.
-Both `pdftoppm` from **Poppler** and **Tesseract** itself must therefore be installed. On Debian based
-Linux systems install them with:
-
-```bash
-sudo apt-get install poppler-utils tesseract-ocr
-```
-
-Windows users can download the Poppler and Tesseract binaries and ensure that
-`pdftoppm.exe` and `tesseract.exe` are available in the `PATH`. Both utilities
-must be discoverable on your system PATH for the OCR phase to succeed.
+PDF files are processed in two stages. First the parser attempts to read text directly using **pdfplumber**. If no products are found each page image is generated with **pdf2image** and sent directly to GPT‑4o Vision with a Turkish prompt. The model returns structured JSON describing the rows.
 
 ### LLM assistance
 
-After OCR the recognised text is sent to GPT-3.5 for interpretation. Provide an
+When page images are sent to the LLM they are accompanied by the Turkish prompt
+"Malzeme Kodu, Açıklama, Fiyat, Birim ve Kutu Adedi". Provide an
 `OPENAI_API_KEY` environment variable or a `.env` file containing the key to
 enable this step. Optionally set `OPENAI_MODEL` to override the default
-`gpt-3.5-turbo` model. The model is queried with a temperature of `0.2` and a
-small delay is added between requests to respect API rate limits.
+`gpt-4o` model. The Vision API is queried with a temperature of `0`.
 
 ### Building a Windows executable
 
@@ -94,10 +84,9 @@ tools run. Open this file with a text editor or use commands such as
 
 Set the environment variable `SMART_PRICE_DEBUG=1` (or pass
 `level=logging.DEBUG` when calling `init_logging`) to enable verbose debug
-information. When active the log includes the chosen LLM model, a short excerpt
-of the OCR text, the constructed prompt length and the raw response returned by
-the OpenAI API. OCR text for each page and every LLM prompt/response are also
-written to a folder.
+information. When active the log includes the chosen LLM model, the constructed
+prompt length and the raw response returned by the OpenAI API. Per-page images
+and JSON responses are saved to a folder.
 
 #### Debug information
 
@@ -106,8 +95,7 @@ step:
 
 - the name of the processed file
 - a timestamp for every event
-- page numbers for OCR operations
-- an excerpt of the recognised text
+- page numbers for processed pages
 - a snippet of the prompt sent to the LLM
 - and the first items parsed from the response.
 - per-page debug files stored under `output_debug` (set
@@ -115,16 +103,8 @@ step:
 
 ## Troubleshooting
 
-If the second stage (OCR followed by the language model) fails to produce any
-items, the log records the model name and a short excerpt of the recognised text.
-Look for entries
-like:
-
-```
-no items parsed by gpt-3.5-turbo; OCR text excerpt: 'Example line from scan'
-```
-
-This can help diagnose why the extraction failed.
+If the vision stage fails to produce any items, the log records the model name
+and an excerpt of the prompt. This can help diagnose why the extraction failed.
 
 When debug logging is enabled the prompt length and raw response are also logged
 to help troubleshoot unexpected LLM behaviour.
