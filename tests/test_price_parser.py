@@ -2,6 +2,7 @@ import os
 import sys
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 import types
+import time
 import pytest
 
 # Try to import pandas to see if available
@@ -98,7 +99,10 @@ def test_extract_from_pdf_ocr_fallback(monkeypatch):
     def fake_open(_path):
         return FakePDF()
 
-    def fake_convert_from_path(path, first_page, last_page):
+    calls = {}
+
+    def fake_convert_from_path(path, *args, **kwargs):
+        calls['kwargs'] = kwargs
         class Img:
             pass
 
@@ -116,9 +120,24 @@ def test_extract_from_pdf_ocr_fallback(monkeypatch):
     monkeypatch.setattr(pdf2image_mod, "convert_from_path", fake_convert_from_path, raising=False)
     monkeypatch.setattr(pytesseract_mod, "image_to_string", fake_ocr, raising=False)
 
+    class DummyResp:
+        def __init__(self, content):
+            self.choices = [types.SimpleNamespace(message=types.SimpleNamespace(content=content))]
+
+    def create(**_kwargs):
+        return DummyResp('[{"name":"ItemZ","price":"55"}]')
+
+    client_stub = types.SimpleNamespace(chat=types.SimpleNamespace(completions=types.SimpleNamespace(create=create)))
+    openai_stub = types.SimpleNamespace(OpenAI=lambda **_kwargs: client_stub)
+
+    monkeypatch.setitem(sys.modules, "openai", openai_stub)
+    monkeypatch.setenv("OPENAI_API_KEY", "x")
+    monkeypatch.setattr(time, "sleep", lambda *_: None)
+
     result = extract_from_pdf("dummy.pdf")
     assert len(result) == 1
     assert result.iloc[0]["Fiyat"] == 55.0
+    assert calls.get('kwargs') == {}
 
 
 def test_extract_from_pdf_ocr_no_data(monkeypatch):
@@ -148,7 +167,10 @@ def test_extract_from_pdf_ocr_no_data(monkeypatch):
     def fake_open(_path):
         return FakePDF()
 
-    def fake_convert_from_path(path, first_page, last_page):
+    calls = {}
+
+    def fake_convert_from_path(path, *args, **kwargs):
+        calls['kwargs'] = kwargs
         class Img:
             pass
 
@@ -168,6 +190,7 @@ def test_extract_from_pdf_ocr_no_data(monkeypatch):
 
     result = extract_from_pdf("dummy.pdf")
     assert result.empty
+    assert calls.get('kwargs') == {}
     assert result["Kisa_Kod"].isnull().all()
     assert result["Malzeme_Kodu"].isnull().all()
 
@@ -600,7 +623,7 @@ def test_merge_files_casts_to_string(monkeypatch):
     assert all(isinstance(v, str) for v in result["Malzeme_Kodu"])
 
 
-def test_extract_from_pdf_llm_sets_page_added(monkeypatch):
+def test_extract_from_pdf_llm_whole_document(monkeypatch):
     if not HAS_PANDAS:
         pytest.skip("pandas not installed")
 
@@ -627,7 +650,10 @@ def test_extract_from_pdf_llm_sets_page_added(monkeypatch):
     def fake_open(_path):
         return FakePDF()
 
-    def fake_convert_from_path(path, first_page, last_page):
+    calls = {}
+
+    def fake_convert_from_path(path, *args, **kwargs):
+        calls['kwargs'] = kwargs
         class Img:
             pass
 
@@ -639,7 +665,6 @@ def test_extract_from_pdf_llm_sets_page_added(monkeypatch):
     import sys
     import types
     import time
-    import inspect
 
     pdfplumber_mod = sys.modules.get("pdfplumber")
     pdf2image_mod = sys.modules.get("pdf2image")
@@ -655,38 +680,15 @@ def test_extract_from_pdf_llm_sets_page_added(monkeypatch):
     def create(**_kwargs):
         return DummyResp('[{"name":"Foo","price":"5"}]')
 
-    client_stub = types.SimpleNamespace(
-        chat=types.SimpleNamespace(completions=types.SimpleNamespace(create=create))
-    )
-
+    client_stub = types.SimpleNamespace(chat=types.SimpleNamespace(completions=types.SimpleNamespace(create=create)))
     openai_stub = types.SimpleNamespace(OpenAI=lambda **_kwargs: client_stub)
     monkeypatch.setitem(sys.modules, "openai", openai_stub)
     monkeypatch.setenv("OPENAI_API_KEY", "x")
     monkeypatch.setattr(time, "sleep", lambda *_: None)
 
     logs = []
-    import core.extract_pdf as m
-
-    src, start = inspect.getsourcelines(m.extract_from_pdf)
-    assign_line = None
-    for i, line in enumerate(src, start):
-        if "page_added = bool(llm_data)" in line:
-            assign_line = i + 1
-            break
-    assert assign_line is not None
-
-    captured = []
-
-    def tracer(frame, event, arg):
-        if frame.f_code is m.extract_from_pdf.__code__ and event == "line" and frame.f_lineno == assign_line:
-            captured.append(frame.f_locals.get("page_added"))
-        return tracer
-
-    sys.settrace(tracer)
-    try:
-        df = m.extract_from_pdf("dummy.pdf", log=logs.append)
-    finally:
-        sys.settrace(None)
+    df = extract_from_pdf("dummy.pdf", log=logs.append)
 
     assert len(df) == 1
-    assert captured and captured[-1] is True
+    assert calls.get('kwargs') == {}
+    assert any("LLM faz\u0131" in m for m in logs)

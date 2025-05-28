@@ -92,6 +92,7 @@ def extract_from_pdf(
             - 'Para_Birimi': Fiyatın para birimi (örn: TL, USD)
             
             Lütfen sadece geçerli ürünleri al ve gereksiz satırları atla. Sadece geçerli JSON döndür.
+            return only valid JSON.
             
             Metin:
             {text}
@@ -164,7 +165,6 @@ def extract_from_pdf(
             path_for_ocr = tmp_for_ocr
         with cm as pdf:
             for page in pdf.pages:
-                page_added = False
                 text = page.extract_text() or ""
                 if text:
                     for line in text.split("\n"):
@@ -192,7 +192,6 @@ def extract_from_pdf(
                                             "Sayfa": page.page_number,
                                         }
                                     )
-                                    page_added = True
 
                 tables = page.extract_tables()
                 for table in tables:
@@ -249,67 +248,27 @@ def extract_from_pdf(
                                             "Sayfa": page.page_number,
                                         }
                                     )
-                                    page_added = True
                     except Exception as exc:
                         notify(f"table parse error: {exc}")
                         continue
 
-                if not page_added:
-                    try:
-                        from pdf2image import convert_from_path  # type: ignore
-                        import pytesseract  # type: ignore
-                    except Exception as exc:
-                        notify(f"OCR libraries unavailable: {exc}")
-                        continue
-                    notify("OCR faz\u0131")
-                    images = convert_from_path(
-                        path_for_ocr,
-                        first_page=page.page_number,
-                        last_page=page.page_number,
-                    )
-                    llm_text = []
-                    for img in images:
-                        ocr_text = pytesseract.image_to_string(img)
-                        llm_text.append(ocr_text)
-                        notify(ocr_text)
-                        for line in ocr_text.split("\n"):
-                            line = line.strip()
-                            if len(line) < 5:
-                                continue
-                            for pattern in _patterns:
-                                matches = pattern.findall(line)
-                                if not matches:
-                                    m = pattern.match(line)
-                                    if m:
-                                        matches = [m.groups()]
-                                for match in matches:
-                                    if len(match) != 2:
-                                        continue
-                                    product_name = re.sub(r"\s{2,}", " ", match[0].strip())
-                                    price_raw = match[1]
-                                    price = normalize_price(price_raw)
-                                    if product_name and price is not None:
-                                        data.append(
-                                            {
-                                                "Malzeme_Adi": product_name,
-                                                "Fiyat": price,
-                                                "Para_Birimi": detect_currency(price_raw),
-                                                "Sayfa": page.page_number,
-                                            }
-                                        )
-                                        page_added = True
-                    if not page_added:
-                        notify("LLM faz\u0131")
-                        llm_data = _llm_extract_from_image("\n".join(llm_text))
-                        count = len(llm_data)
-                        if count:
-                            notify(f"LLM parsed {count} items")
-                            for entry in llm_data:
-                                entry.setdefault("Sayfa", page.page_number)
-                                data.append(entry)
-                        else:
-                            notify("LLM returned no data")
-                        page_added = bool(llm_data)
+        if not data:
+            try:
+                from pdf2image import convert_from_path  # type: ignore
+                import pytesseract  # type: ignore
+            except Exception as exc:
+                notify(f"OCR libraries unavailable: {exc}")
+            else:
+                images = convert_from_path(path_for_ocr)
+                ocr_text = "\n".join(pytesseract.image_to_string(img) for img in images)
+                notify("LLM faz\u0131")
+                llm_data = _llm_extract_from_image(ocr_text)
+                if llm_data:
+                    notify(f"LLM parsed {len(llm_data)} items")
+                    for entry in llm_data:
+                        data.append(entry)
+                else:
+                    notify("LLM returned no data")
     except Exception as exc:
         notify(f"PDF error for {filepath}: {exc}")
         return pd.DataFrame()
