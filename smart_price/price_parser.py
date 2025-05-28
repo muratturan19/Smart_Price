@@ -4,10 +4,32 @@ import os
 import sqlite3
 import logging
 import pandas as pd
+import pytesseract
 
 from smart_price.core.logger import init_logging
 
 logger = logging.getLogger("smart_price")
+
+def _configure_tesseract() -> None:
+    """Configure pytesseract paths and log available languages."""
+    os.environ["TESSDATA_PREFIX"] = r"D:\\Program Files\\Tesseract-OCR"
+    pytesseract.pytesseract.tesseract_cmd = (
+        r"D:\\Program Files\\Tesseract-OCR\\tesseract.exe"
+    )
+    try:
+        langs = (
+            pytesseract.get_languages(config="")
+            if hasattr(pytesseract, "get_languages")
+            else []
+        )
+        logger.info("Available Tesseract languages: %s", langs)
+        if "tur" not in langs:
+            logger.error(
+                "Tesseract language model 'tur' not found. "
+                "Please install or copy the model into the tessdata folder."
+            )
+    except Exception as exc:  # pragma: no cover - unexpected errors
+        logger.error("Tesseract language query failed: %s", exc)
 
 from smart_price.core.extract_excel import extract_from_excel
 from smart_price.core.extract_pdf import extract_from_pdf
@@ -24,6 +46,7 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> None:
     init_logging()
+    _configure_tesseract()
     args = parse_args()
     os.makedirs(os.path.dirname(args.output), exist_ok=True)
     os.makedirs(os.path.dirname(args.db), exist_ok=True)
