@@ -41,12 +41,17 @@ def _norm(s: Any) -> str:
     return unicodedata.normalize("NFKD", str(s)).lower()
 
 
-def header_match(cell: Any, candidates: Sequence[str]) -> bool:
+def header_match(
+    cell: Any, candidates: Sequence[str], *, match_type: str | None = None
+) -> bool:
     """Return True if ``cell`` fuzzily matches any of ``candidates``."""
     norm_candidates = [_norm(c) for c in candidates]
-    return bool(
-        difflib.get_close_matches(_norm(cell), norm_candidates, cutoff=0.75)
-    )
+    if difflib.get_close_matches(_norm(cell), norm_candidates, cutoff=0.75):
+        logger.info(
+            "header_match", extra={"header": cell, "match_type": match_type}
+        )
+        return True
+    return False
 
 _patterns = [
     re.compile(r"^(.*?)\s{2,}([\d\.,]+)\s*(?:TL|TRY|EUR|USD|\$|€)?$", re.MULTILINE | re.IGNORECASE),
@@ -256,8 +261,16 @@ def extract_from_pdf(
                     try:
                         header_row = None
                         if table and any(
-                            header_match(c, POSSIBLE_PRODUCT_NAME_HEADERS)
-                            or header_match(c, POSSIBLE_PRICE_HEADERS)
+                            header_match(
+                                c,
+                                POSSIBLE_PRODUCT_NAME_HEADERS,
+                                match_type="DESC",
+                            )
+                            or header_match(
+                                c,
+                                POSSIBLE_PRICE_HEADERS,
+                                match_type="PRICE",
+                            )
                             for c in table[0]
                         ):
                             header_row = [str(c or "").strip() for c in table[0]]
@@ -270,22 +283,38 @@ def extract_from_pdf(
                         product_idx = 0
                         price_idx = -1
                         if any(
-                            header_match(c, POSSIBLE_PRODUCT_NAME_HEADERS)
+                            header_match(
+                                c,
+                                POSSIBLE_PRODUCT_NAME_HEADERS,
+                                match_type="DESC",
+                            )
                             for c in df_table.columns
                         ):
                             product_idx = [
                                 i
                                 for i, c in enumerate(df_table.columns)
-                                if header_match(c, POSSIBLE_PRODUCT_NAME_HEADERS)
+                                if header_match(
+                                    c,
+                                    POSSIBLE_PRODUCT_NAME_HEADERS,
+                                    match_type="DESC",
+                                )
                             ][0]
                         if any(
-                            header_match(c, POSSIBLE_PRICE_HEADERS)
+                            header_match(
+                                c,
+                                POSSIBLE_PRICE_HEADERS,
+                                match_type="PRICE",
+                            )
                             for c in df_table.columns
                         ):
                             price_idx = [
                                 i
                                 for i, c in enumerate(df_table.columns)
-                                if header_match(c, POSSIBLE_PRICE_HEADERS)
+                                if header_match(
+                                    c,
+                                    POSSIBLE_PRICE_HEADERS,
+                                    match_type="PRICE",
+                                )
                             ][0]
 
                         for _, row in df_table.iterrows():
@@ -293,7 +322,11 @@ def extract_from_pdf(
                                 continue
                             first = (row[0] or "").strip()
                             code = CODE_RE.match(first)
-                            if code and not header_match(first, POSSIBLE_CODE_HEADERS):
+                            if code and not header_match(
+                                first,
+                                POSSIBLE_CODE_HEADERS,
+                                match_type="CODE",
+                            ):
                                 code_val = code.group(1)
                             else:
                                 code_val = None
