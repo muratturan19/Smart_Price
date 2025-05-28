@@ -4,6 +4,12 @@ import json
 import logging
 import os
 from typing import Iterable, Sequence
+from dotenv import load_dotenv
+
+try:
+    load_dotenv("../..")
+except TypeError:  # pragma: no cover - allow stub without args
+    load_dotenv()
 
 import pandas as pd
 
