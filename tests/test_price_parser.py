@@ -2,7 +2,6 @@ import os
 import sys
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 import types
-import time
 import pytest
 
 # Try to import pandas to see if available
@@ -778,8 +777,6 @@ def test_extract_from_pdf_llm_sets_page_added(monkeypatch):
         return ""
 
     import sys
-    import types
-    import time
 
     pdfplumber_mod = sys.modules.get("pdfplumber")
     monkeypatch.setattr(pdfplumber_mod, "open", fake_open, raising=False)
