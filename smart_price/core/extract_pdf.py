@@ -103,6 +103,7 @@ def extract_from_pdf(
     output_stem = Path(src).stem
     set_output_subdir(output_stem)
     notify(f"Processing {src} started at {datetime.now():%Y-%m-%d %H:%M:%S}")
+    total_start = time.time()
 
     def _llm_extract_from_image(text: str) -> list[dict]:
         """Use a language model to extract product names and prices from OCR text."""
@@ -148,10 +149,14 @@ def extract_from_pdf(
 
 
         try:
+            start_llm = time.time()
             resp = client.chat.completions.create(
                 model=model_name,
                 messages=[{"role": "user", "content": prompt}],
                 temperature=0.2,
+            )
+            logger.info(
+                "OpenAI request took %.2fs", time.time() - start_llm
             )
             time.sleep(0.5)
             content = resp.choices[0].message.content
@@ -231,6 +236,10 @@ def extract_from_pdf(
                     path_for_llm,
                     page_range,
                     output_name=output_stem if tmp_for_llm else None,
+                )
+                duration = time.time() - total_start
+                notify(
+                    f"Finished {src} via LLM with {len(result)} rows in {duration:.2f}s"
                 )
                 cleanup()
                 return result
@@ -398,6 +407,8 @@ def extract_from_pdf(
     except Exception as exc:
         notify(f"PDF error for {filepath}: {exc}")
         logger.exception("PDF error for %s", filepath)
+        duration = time.time() - total_start
+        notify(f"Failed {src} after {duration:.2f}s")
         cleanup()
         return pd.DataFrame()
     if not data:
@@ -405,6 +416,10 @@ def extract_from_pdf(
             path_for_llm,
             page_range,
             output_name=output_stem if tmp_for_llm else None,
+        )
+        duration = time.time() - total_start
+        notify(
+            f"Finished {src} via LLM with {len(result)} rows in {duration:.2f}s"
         )
         cleanup()
         return result
@@ -427,6 +442,10 @@ def extract_from_pdf(
             path_for_llm,
             page_range,
             output_name=output_stem if tmp_for_llm else None,
+        )
+        duration = time.time() - total_start
+        notify(
+            f"Finished {src} via LLM with {len(result)} rows in {duration:.2f}s"
         )
         cleanup()
         return result
@@ -462,7 +481,8 @@ def extract_from_pdf(
         "Record_Code",
     ]
     result_df = df[cols].dropna(subset=["Descriptions", "Fiyat"])
-    notify(f"Finished {src} with {len(result_df)} items")
+    duration = time.time() - total_start
+    notify(f"Finished {src} with {len(result_df)} items in {duration:.2f}s")
     try:
         result_df.page_summary = page_summary
     except Exception:  # pragma: no cover - non DataFrame stubs

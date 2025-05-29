@@ -6,7 +6,7 @@ import os
 import time
 import threading
 from concurrent.futures import ThreadPoolExecutor
-from typing import Iterable, Sequence
+from typing import Iterable, Sequence, TYPE_CHECKING
 from dotenv import load_dotenv
 
 try:
@@ -27,6 +27,9 @@ from .common_utils import (
     safe_json_parse,
 )
 from .debug_utils import save_debug, save_debug_image, set_output_subdir
+
+if TYPE_CHECKING:  # pragma: no cover - type hints only
+    from PIL import Image  # noqa: F401
 
 logger = logging.getLogger("smart_price")
 
@@ -69,6 +72,7 @@ def parse(
         output_name = Path(pdf_path).stem
 
     set_output_subdir(output_name)
+    total_start = time.time()
 
     try:
         from pdf2image import convert_from_path  # type: ignore
@@ -83,7 +87,13 @@ def parse(
             kwargs["first_page"] = first
         if last is not None:
             kwargs["last_page"] = last
+        start_convert = time.time()
         images = convert_from_path(pdf_path, **kwargs)
+        logger.info(
+            "pdf2image.convert_from_path took %.2fs for %d pages",
+            time.time() - start_convert,
+            len(images),
+        )
     except Exception as exc:  # pragma: no cover - conversion errors
         logger.error("pdf2image failed for %s: %s", pdf_path, exc)
         return pd.DataFrame()
@@ -112,7 +122,7 @@ def parse(
     lock = threading.Lock()
     running = 0
 
-    def process_page(args: tuple[int, "PIL.Image.Image"]):
+    def process_page(args: tuple[int, "Image.Image"]):
         nonlocal running
         idx, img = args
         start = time.time()
@@ -137,6 +147,7 @@ def parse(
             with open(tmp_path, "rb") as f:
                 image_bytes = f.read()
             img_base64 = base64.b64encode(image_bytes).decode()
+            api_start = time.time()
             resp = openai.chat.completions.create(
                 model=model_name,
                 messages=[
@@ -152,6 +163,9 @@ def parse(
                     }
                 ],
                 temperature=0,
+            )
+            logger.info(
+                "OpenAI request for page %d took %.2fs", idx, time.time() - api_start
             )
             content = resp.choices[0].message.content
             save_debug("llm_response", idx, content or "")
@@ -234,6 +248,8 @@ def parse(
         df.page_summary = page_summary
     except Exception:  # pragma: no cover - non DataFrame stubs
         pass
+    total_dur = time.time() - total_start
+    logger.info("Finished %s with %d rows in %.2fs", pdf_path, len(df), total_dur)
     set_output_subdir(None)
     return df
 
