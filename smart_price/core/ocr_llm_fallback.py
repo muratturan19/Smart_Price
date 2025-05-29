@@ -25,7 +25,7 @@ from .common_utils import (
     detect_currency,
     safe_json_parse,
 )
-from .debug_utils import save_debug, save_debug_image
+from .debug_utils import save_debug, save_debug_image, set_output_subdir
 
 logger = logging.getLogger("smart_price")
 
@@ -47,6 +47,8 @@ def _range_bounds(pages: Sequence[int] | range | None) -> tuple[int | None, int 
 
 def parse(pdf_path: str, page_range: Iterable[int] | range | None = None) -> pd.DataFrame:
     """Parse ``pdf_path`` using GPT-4o vision."""
+
+    set_output_subdir(Path(pdf_path).stem)
 
     try:
         from pdf2image import convert_from_path  # type: ignore
@@ -153,6 +155,7 @@ def parse(pdf_path: str, page_range: Iterable[int] | range | None = None) -> pd.
                     "Birim": item.get("Birim"),
                     "Kutu_Adedi": item.get("Kutu Adedi"),
                     "Para_Birimi": detect_currency(price_raw),
+                    "Sayfa": idx,
                 }
             )
 
@@ -169,9 +172,19 @@ def parse(pdf_path: str, page_range: Iterable[int] | range | None = None) -> pd.
         )
 
     df = pd.DataFrame(rows)
+    if hasattr(df, "empty") and not df.empty:
+        base = Path(pdf_path).stem
+        df["Record_Code"] = (
+            base
+            + "|"
+            + df["Sayfa"].astype(str)
+            + "|"
+            + (df.groupby("Sayfa").cumcount() + 1).astype(str)
+        )
     try:
         df.page_summary = page_summary
     except Exception:  # pragma: no cover - non DataFrame stubs
         pass
+    set_output_subdir(None)
     return df
 

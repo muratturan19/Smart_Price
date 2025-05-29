@@ -7,24 +7,26 @@ from PIL import Image  # type: ignore
 
 logger = logging.getLogger("smart_price")
 
+_subdir: Optional[str] = None
 
-def _debug_enabled() -> bool:
-    return bool(os.getenv("SMART_PRICE_DEBUG"))
+
+def set_output_subdir(name: Optional[str]) -> None:
+    """Set the folder name under ``LLM_Output_db`` used for new files."""
+    global _subdir
+    _subdir = name
 
 
 def _debug_dir() -> Path:
-    path = Path(os.getenv("SMART_PRICE_DEBUG_DIR", "output_debug"))
-    if _debug_enabled():
-        try:
-            path.mkdir(parents=True, exist_ok=True)
-        except Exception as exc:  # pragma: no cover - optional debug failures
-            logger.debug("debug dir creation failed: %s", exc)
+    root = Path(os.getenv("SMART_PRICE_DEBUG_DIR", "LLM_Output_db"))
+    path = root / _subdir if _subdir else root
+    try:
+        path.mkdir(parents=True, exist_ok=True)
+    except Exception as exc:  # pragma: no cover - optional debug failures
+        logger.debug("debug dir creation failed: %s", exc)
     return path
 
 
 def save_debug(prefix: str, page: int, content: str) -> None:
-    if not _debug_enabled():
-        return
     dir_path = _debug_dir()
     file_path = dir_path / f"{prefix}_page_{page:02d}.txt"
     try:
@@ -35,7 +37,7 @@ def save_debug(prefix: str, page: int, content: str) -> None:
 
 
 def save_debug_image(prefix: str, page: int, image: Image.Image) -> Optional[Path]:
-    """Save ``image`` under the debug directory if debugging is enabled.
+    """Save ``image`` under the debug directory.
 
     Parameters
     ----------
@@ -49,11 +51,8 @@ def save_debug_image(prefix: str, page: int, image: Image.Image) -> Optional[Pat
     Returns
     -------
     pathlib.Path or None
-        Path of the saved image if debugging is on, otherwise ``None``.
+        Path of the saved image if it could be written, otherwise ``None``.
     """
-    if not _debug_enabled():
-        return None
-
     dir_path = _debug_dir()
     file_path = dir_path / f"{prefix}_page_{page:02d}.png"
     try:

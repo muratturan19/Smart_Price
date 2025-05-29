@@ -77,6 +77,7 @@ def test_extract_from_excel_basic(tmp_path):
         "Para_Birimi",
         "Marka",
         "Kaynak_Dosya",
+        "Record_Code",
     ]
     assert result.columns.tolist() == expected_cols
 
@@ -289,6 +290,7 @@ def test_extract_from_excel_bytesio():
         "Para_Birimi",
         "Marka",
         "Kaynak_Dosya",
+        "Record_Code",
     ]
     assert result.columns.tolist() == expected_cols
 
@@ -508,6 +510,7 @@ def test_extract_from_pdf_default_currency(monkeypatch):
         "Para_Birimi",
         "Marka",
         "Kaynak_Dosya",
+        "Record_Code",
     ]
     assert result.columns.tolist() == expected_cols
 
@@ -562,6 +565,7 @@ def test_extract_from_pdf_table_headers(monkeypatch):
         "Para_Birimi",
         "Marka",
         "Kaynak_Dosya",
+        "Record_Code",
     ]
     assert result.columns.tolist() == expected_cols
 
@@ -724,14 +728,15 @@ def test_llm_debug_files(monkeypatch, tmp_path):
 
     monkeypatch.setattr(pdf_mod.ocr_llm_fallback, "parse", fake_parse)
 
-    monkeypatch.setenv("SMART_PRICE_DEBUG", "1")
     monkeypatch.setenv("SMART_PRICE_DEBUG_DIR", str(tmp_path))
 
     df = extract_from_pdf("dummy.pdf")
 
+    folder = tmp_path / "dummy"
+
     assert not df.empty
-    assert any(p.suffix == ".png" for p in tmp_path.iterdir())
-    assert any(p.name.startswith("llm_response") for p in tmp_path.iterdir())
+    assert any(p.suffix == ".png" for p in folder.iterdir())
+    assert any(p.name.startswith("llm_response") for p in folder.iterdir())
 
 
 def test_extract_from_pdf_llm_sets_page_added(monkeypatch):
