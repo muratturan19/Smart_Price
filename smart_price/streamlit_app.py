@@ -10,6 +10,7 @@ import logging
 import io
 import sys
 import pytesseract
+import shutil
 from pathlib import Path
 from typing import Callable, Optional
 
@@ -146,8 +147,45 @@ def merge_files(
     return master
 
 
+def save_master_dataset(df: pd.DataFrame, mode: str = "Yeni fiyat listesi") -> str:
+    """Save ``df`` into the master dataset file handling update logic."""
+    data_path = os.path.abspath(get_master_dataset_path())
+    existing = pd.DataFrame()
+    if os.path.exists(data_path):
+        try:
+            existing = pd.read_excel(data_path)
+        except Exception as exc:  # pragma: no cover - read failures
+            logger.error("Failed to read master dataset: %s", exc)
+            existing = pd.DataFrame()
+
+    if mode == "Güncelleme" and not existing.empty:
+        for col in ("Marka", "Yil", "Kaynak_Dosya"):
+            if col in df.columns and col in existing.columns:
+                values = df[col].dropna().unique()
+                if len(values):
+                    existing = existing[~existing[col].isin(values)]
+
+        if "Kaynak_Dosya" in df.columns:
+            for src in df["Kaynak_Dosya"].dropna().unique():
+                folder = Path(os.getenv("SMART_PRICE_DEBUG_DIR", "LLM_Output_db")) / Path(src).stem
+                if folder.exists():
+                    try:
+                        shutil.rmtree(folder)
+                    except Exception as exc:  # pragma: no cover - cleanup failures
+                        logger.debug("LLM output cleanup failed for %s: %s", folder, exc)
+
+    merged = pd.concat([existing, df], ignore_index=True)
+    merged.to_excel(data_path, index=False)
+    return data_path
+
+
 def upload_page():
     st.header("Fiyat Dosyalarını Yükle")
+    st.radio(
+        "İşlem türü",
+        ["Yeni fiyat listesi", "Güncelleme"],
+        key="upload_mode",
+    )
     files = st.file_uploader(
         "Excel veya PDF dosyalarını seçin",
         type=["xlsx", "xls", "pdf"],
@@ -184,9 +222,8 @@ def upload_page():
         if df is None or df.empty:
             st.error("Kaydedilecek veri yok.")
             return
-        data_path = os.path.abspath(get_master_dataset_path())
         try:
-            df.to_excel(data_path, index=False)
+            data_path = save_master_dataset(df, mode=st.session_state.get("upload_mode", "Yeni fiyat listesi"))
         except Exception as exc:  # pragma: no cover - UI feedback only
             st.error(f"Kaydetme hatası: {exc}")
         else:
