@@ -72,6 +72,12 @@ Alternatively run the included launcher script from the repository root:
 python run_app.py
 ```
 
+The upload page now includes an **İşlem türü** radio button. Choose
+**Güncelleme** to overwrite existing data for the same brand, year and
+month. When this mode is used the matching rows are removed from the master
+dataset and any old debug files for those sources are deleted before the new
+records are saved.
+
 From the interface you can upload Excel/PDF price lists and search the
 resulting master dataset. The merged data is written to `master_dataset.xlsx`
 in the directory from which you launch the app.
