@@ -3,6 +3,9 @@ from __future__ import annotations
 import base64
 import logging
 import os
+import time
+import threading
+from concurrent.futures import ThreadPoolExecutor
 from typing import Iterable, Sequence
 from dotenv import load_dotenv
 
@@ -103,10 +106,22 @@ def parse(
         "JSON dizisi üret. Sadece geçerli JSON döndür."
     )
 
-    rows = []
+    rows: list[dict[str, object]] = []
     page_summary: list[dict[str, object]] = []
-    for idx, img in enumerate(images, start=1):
-        start_len = len(rows)
+
+    lock = threading.Lock()
+    running = 0
+
+    def process_page(args: tuple[int, "PIL.Image.Image"]):
+        nonlocal running
+        idx, img = args
+        start = time.time()
+        with lock:
+            running += 1
+            current = running
+        logger.info("LLM request start page %d (running=%d)", idx, current)
+
+        page_rows: list[dict[str, object]] = []
         status = "success"
         note = None
         img_path = save_debug_image("page_image", idx, img)
@@ -164,7 +179,7 @@ def parse(
         for item in items:
             descr = item.get("Açıklama")
             price_raw = str(item.get("Fiyat", "")).strip()
-            rows.append(
+            page_rows.append(
                 {
                     "Malzeme_Kodu": item.get("Malzeme Kodu"),
                     "Descriptions": descr,
@@ -176,17 +191,34 @@ def parse(
                 }
             )
 
-        added = len(rows) - start_len
+        added = len(page_rows)
         if status == "success" and added == 0:
             status = "empty"
-        page_summary.append(
-            {
-                "page_number": idx,
-                "rows": added,
-                "status": status,
-                "note": note,
-            }
+
+        summary = {
+            "page_number": idx,
+            "rows": added,
+            "status": status,
+            "note": note,
+        }
+        dur = time.time() - start
+        with lock:
+            running -= 1
+            current = running
+        logger.info(
+            "LLM request end page %d (running=%d, %.2fs)", idx, current, dur
         )
+        return idx, page_rows, summary
+
+    workers = int(os.getenv("SMART_PRICE_LLM_WORKERS", "5"))
+    with ThreadPoolExecutor(max_workers=workers) as ex:
+        futures = [ex.submit(process_page, (i, img)) for i, img in enumerate(images, start=1)]
+        results = [f.result() for f in futures]
+
+    results.sort(key=lambda r: r[0])
+    for _idx, rows_out, summary in results:
+        rows.extend(rows_out)
+        page_summary.append(summary)
 
     df = pd.DataFrame(rows)
     if hasattr(df, "empty") and not df.empty:

@@ -2,6 +2,8 @@
 import os
 import sys
 import types
+import time
+import threading
 
 # Provide minimal stubs for optional deps before importing project code
 if 'PIL' not in sys.modules:
@@ -83,3 +85,54 @@ def test_parse_sends_bytes_and_cleans_tmp(monkeypatch):
     assert first_msg['content'][1]['image_url']['url'].startswith('data:image/png;base64,')
     for path in temp_paths:
         assert not os.path.exists(path)
+
+
+def test_parse_parallel_execution(monkeypatch):
+    def fake_convert(_path, **_kwargs):
+        return [FakeImage(), FakeImage(), FakeImage()]
+
+    pdf2image_stub = types.SimpleNamespace(convert_from_path=fake_convert)
+    monkeypatch.setitem(sys.modules, 'pdf2image', pdf2image_stub)
+
+    lock = threading.Lock()
+    running = 0
+    concurrency = []
+
+    def create(**_kwargs):
+        nonlocal running
+        with lock:
+            running += 1
+            concurrency.append(running)
+        time.sleep(0.01)
+        with lock:
+            running -= 1
+        return types.SimpleNamespace(
+            choices=[types.SimpleNamespace(message=types.SimpleNamespace(content='[]'))]
+        )
+
+    chat_stub = types.SimpleNamespace(completions=types.SimpleNamespace(create=create))
+    openai_stub = types.SimpleNamespace(chat=chat_stub)
+    monkeypatch.setitem(sys.modules, 'openai', openai_stub)
+    monkeypatch.setenv('OPENAI_API_KEY', 'x')
+
+    _pandas_stubbed = False
+    try:
+        import pandas as pd  # noqa: F401
+    except ModuleNotFoundError:
+        pd = types.ModuleType('pandas')
+        sys.modules['pandas'] = pd
+        _pandas_stubbed = True
+    if not hasattr(pd, 'DataFrame'):
+        pd.DataFrame = lambda *args, **kwargs: args[0]
+        _pandas_stubbed = True
+
+    import importlib
+    import smart_price.core.ocr_llm_fallback as mod
+    importlib.reload(mod)
+
+    mod.parse('dummy.pdf')
+
+    if _pandas_stubbed:
+        del sys.modules['pandas']
+
+    assert max(concurrency) > 1
