@@ -22,11 +22,26 @@ logger = logging.getLogger("smart_price")
 
 
 def _configure_tesseract() -> None:
-    """Configure pytesseract paths and log available languages."""
-    os.environ["TESSDATA_PREFIX"] = r"D:\\Program Files\\Tesseract-OCR\\tessdata"
-    pytesseract.pytesseract.tesseract_cmd = (
-        r"D:\\Program Files\\Tesseract-OCR\\tesseract.exe"
-    )
+    """Configure pytesseract paths and log available languages.
+
+    ``shutil.which`` is used to locate ``tesseract``.  If ``TESSDATA_PREFIX`` is
+    already defined the value is left untouched.  Default Windows paths are only
+    applied when detection fails.
+    """
+    cmd = shutil.which("tesseract")
+    if cmd:
+        pytesseract.pytesseract.tesseract_cmd = cmd
+        if "TESSDATA_PREFIX" not in os.environ:
+            guess = os.path.join(os.path.dirname(cmd), "tessdata")
+            if os.path.isdir(guess):
+                os.environ["TESSDATA_PREFIX"] = guess
+    else:  # Fallback for Windows bundles/tests
+        os.environ.setdefault(
+            "TESSDATA_PREFIX", r"D:\\Program Files\\Tesseract-OCR\\tessdata"
+        )
+        pytesseract.pytesseract.tesseract_cmd = (
+            r"D:\\Program Files\\Tesseract-OCR\\tesseract.exe"
+        )
     try:
         langs = (
             pytesseract.get_languages(config="")
