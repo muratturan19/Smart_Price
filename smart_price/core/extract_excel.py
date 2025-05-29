@@ -32,6 +32,7 @@ _RAW_CODE_HEADERS = [
     "ürün kodu",
     "urun kodu",
     "malzeme kodu",
+    "malzeme",
     "stok kodu",
     "kod",
     "tip",
