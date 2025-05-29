@@ -198,3 +198,45 @@ def gpt_clean_text(text: str) -> str:
     except Exception:
         return substring.strip()
 
+
+def safe_json_parse(text: str):
+    """Best-effort JSON parser.
+
+    Attempts ``json.loads`` first and then tries common fixes such as
+    replacing single quotes with double quotes or quoting bare keys.  As a
+    last resort ``ast.literal_eval`` is used.  ``None`` is returned if all
+    attempts fail.
+    """
+
+    import json
+    import ast
+
+    if not text:
+        return None
+
+    try:
+        return json.loads(text)
+    except Exception:
+        pass
+
+    text_sq = text.replace("'", '"')
+    try:
+        return json.loads(text_sq)
+    except Exception:
+        pass
+
+    try:
+        text_keys = re.sub(
+            r"(?<=\{|,)\s*([A-Za-z_][\w\s-]*?)\s*:",
+            lambda m: f'"{m.group(1)}":',
+            text_sq,
+        )
+        return json.loads(text_keys)
+    except Exception:
+        pass
+
+    try:
+        return ast.literal_eval(text)
+    except Exception:
+        return None
+
