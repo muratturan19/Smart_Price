@@ -87,34 +87,58 @@ def find_columns_in_excel(
     """Try to detect product code, short code, description, price and currency columns."""
     code_col = short_col = desc_col = price_col = currency_col = None
     norm_cols = [_norm_header(c) for c in df.columns]
+    used_cols: set[str] = set()
+    details: dict[str, tuple[str, str]] = {}
 
     for header in _NORMALIZED_CODE_HEADERS:
         if header in norm_cols:
             code_col = df.columns[norm_cols.index(header)]
+            used_cols.add(code_col)
+            details["code"] = (header, code_col)
             break
 
     for header in POSSIBLE_SHORT_HEADERS:
         if header in norm_cols:
             short_col = df.columns[norm_cols.index(header)]
+            used_cols.add(short_col)
+            details["short"] = (header, short_col)
             break
 
     for header in POSSIBLE_DESC_HEADERS:
         if header in norm_cols:
             desc_col = df.columns[norm_cols.index(header)]
+            used_cols.add(desc_col)
+            details["description"] = (header, desc_col)
             break
 
     for header in POSSIBLE_PRICE_HEADERS:
         if header in norm_cols:
             price_col = df.columns[norm_cols.index(header)]
+            used_cols.add(price_col)
+            details["price"] = (header, price_col)
             break
 
     if not price_col:
         price_col = select_latest_year_column(df)
+        if price_col:
+            used_cols.add(price_col)
+            details["price"] = ("latest_year", price_col)
 
     for header in POSSIBLE_CURRENCY_HEADERS:
         if header in norm_cols:
             currency_col = df.columns[norm_cols.index(header)]
+            used_cols.add(currency_col)
+            details["currency"] = (header, currency_col)
             break
+
+    unmatched = [c for c in df.columns if c not in used_cols]
+    if details:
+        mapped = {
+            key: {"header": val[0], "column": val[1]} for key, val in details.items()
+        }
+    else:
+        mapped = {}
+    logger.info("excel column mapping %s unmatched %s", mapped, unmatched)
 
     return code_col, short_col, desc_col, price_col, currency_col
 
