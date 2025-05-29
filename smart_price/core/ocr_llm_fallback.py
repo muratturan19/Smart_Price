@@ -235,6 +235,11 @@ def parse(
         page_summary.append(summary)
 
     df = pd.DataFrame(rows)
+    if hasattr(df, "columns") and "Kutu_Adedi" in getattr(df, "columns", []):
+        try:
+            df["Kutu_Adedi"] = df["Kutu_Adedi"].astype("string")
+        except Exception:  # pragma: no cover - DataFrame stub
+            pass
     if hasattr(df, "empty") and not df.empty:
         base = Path(pdf_path).stem
         df["Record_Code"] = (
@@ -244,10 +249,8 @@ def parse(
             + "|"
             + (df.groupby("Sayfa").cumcount() + 1).astype(str)
         )
-    try:
-        df.page_summary = page_summary
-    except Exception:  # pragma: no cover - non DataFrame stubs
-        pass
+    if hasattr(df, "__dict__"):
+        object.__setattr__(df, "page_summary", page_summary)
     total_dur = time.time() - total_start
     logger.info("Finished %s with %d rows in %.2fs", pdf_path, len(df), total_dur)
     set_output_subdir(None)

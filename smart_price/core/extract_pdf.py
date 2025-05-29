@@ -483,10 +483,8 @@ def extract_from_pdf(
     result_df = df[cols].dropna(subset=["Descriptions", "Fiyat"])
     duration = time.time() - total_start
     notify(f"Finished {src} with {len(result_df)} items in {duration:.2f}s")
-    try:
-        result_df.page_summary = page_summary
-    except Exception:  # pragma: no cover - non DataFrame stubs
-        pass
+    if hasattr(result_df, "__dict__"):
+        object.__setattr__(result_df, "page_summary", page_summary)
     cleanup()
     set_output_subdir(None)
     return result_df
