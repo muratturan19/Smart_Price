@@ -12,6 +12,8 @@ pip install .
 
 `tkinter` must also be available. It is typically included with many Python distributions but may require a separate installation on some systems.
 
+The tools attempt to locate the `tesseract` executable automatically using `shutil.which`. If `TESSDATA_PREFIX` is already defined it is respected, otherwise the location of the bundled language files is guessed from the executable path. When `tesseract` cannot be found a Windows default of `D:\Program Files\Tesseract-OCR` is used.
+
 PDF files are processed in two stages. First the parser attempts to read text directly using **pdfplumber**. If no products are found each page image is generated with **pdf2image** and sent directly to GPT‑4o Vision with a Turkish prompt. The model returns structured JSON describing the rows.
 
 ### LLM assistance

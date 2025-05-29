@@ -5,6 +5,7 @@ import sqlite3
 import logging
 import pandas as pd
 import pytesseract
+import shutil
 from dotenv import load_dotenv
 
 project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".env"))
@@ -17,11 +18,27 @@ from smart_price.core.logger import init_logging
 logger = logging.getLogger("smart_price")
 
 def _configure_tesseract() -> None:
-    """Configure pytesseract paths and log available languages."""
-    os.environ["TESSDATA_PREFIX"] = r"D:\\Program Files\\Tesseract-OCR"
-    pytesseract.pytesseract.tesseract_cmd = (
-        r"D:\\Program Files\\Tesseract-OCR\\tesseract.exe"
-    )
+    """Configure pytesseract paths and log available languages.
+
+    ``pytesseract`` relies on ``tesseract`` being available on the system
+    ``PATH``.  If ``TESSDATA_PREFIX`` is already defined it is preserved.
+    ``shutil.which`` is used to locate ``tesseract``; the Windows fallback
+    paths are only applied when detection fails.
+    """
+    cmd = shutil.which("tesseract")
+    if cmd:
+        pytesseract.pytesseract.tesseract_cmd = cmd
+        if "TESSDATA_PREFIX" not in os.environ:
+            guessed = os.path.join(os.path.dirname(cmd), "tessdata")
+            if os.path.isdir(guessed):
+                os.environ["TESSDATA_PREFIX"] = guessed
+    else:  # Fallback for Windows bundles/tests
+        os.environ.setdefault(
+            "TESSDATA_PREFIX", r"D:\\Program Files\\Tesseract-OCR\\tessdata"
+        )
+        pytesseract.pytesseract.tesseract_cmd = (
+            r"D:\\Program Files\\Tesseract-OCR\\tesseract.exe"
+        )
     try:
         langs = (
             pytesseract.get_languages(config="")
