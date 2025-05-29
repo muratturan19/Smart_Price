@@ -28,6 +28,7 @@ from .common_utils import (
     detect_brand,
     split_code_description,
     gpt_clean_text,
+    safe_json_parse,
 )
 from .extract_excel import (
     POSSIBLE_PRICE_HEADERS,
@@ -156,7 +157,9 @@ def extract_from_pdf(
             logger.debug("LLM raw response: %r", content.strip()[:200])
             try:
                 cleaned = gpt_clean_text(content)
-                items = json.loads(cleaned)
+                items = safe_json_parse(cleaned)
+                if items is None:
+                    raise ValueError("parse failed")
                 logger.debug("First parsed items: %r", items[:2])
                 if not items:
                     excerpt = text[:100].replace("\n", " ")
@@ -164,7 +167,7 @@ def extract_from_pdf(
                         f"no items parsed by {model_name}; OCR text excerpt: {excerpt!r}"
                     )
                     return []
-            except json.JSONDecodeError:
+            except Exception:
                 notify(f"LLM returned invalid JSON: {content!r}")
                 notify("LLM returned no data")
                 return []

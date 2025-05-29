@@ -189,3 +189,16 @@ def test_llm_prompt_and_clean(monkeypatch):
         'Para_Birimi': None
     }]
 
+
+def test_llm_extract_mismatched_quotes(monkeypatch):
+    logs = []
+    func = _get_llm_func(logs.append)
+    content = "[{name:'Foo', price:'5 USD'}]"
+    _setup_openai(monkeypatch, content)
+    result = func('ignored')
+    assert result == [{
+        'Malzeme_Adi': 'Foo',
+        'Fiyat': 5.0,
+        'Para_Birimi': 'USD'
+    }]
+

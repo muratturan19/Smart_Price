@@ -19,7 +19,12 @@ from pathlib import Path
 
 from PIL import Image  # type: ignore
 
-from .common_utils import gpt_clean_text, normalize_price, detect_currency
+from .common_utils import (
+    gpt_clean_text,
+    normalize_price,
+    detect_currency,
+    safe_json_parse,
+)
 from .debug_utils import save_debug, save_debug_image
 
 logger = logging.getLogger("smart_price")
@@ -128,13 +133,12 @@ def parse(pdf_path: str, page_range: Iterable[int] | range | None = None) -> pd.
                 except Exception as exc:  # pragma: no cover - cleanup errors
                     logger.debug("temp file cleanup failed: %s", exc)
 
-        try:
-            cleaned = gpt_clean_text(content) if content else "[]"
-            items = json.loads(cleaned)
-        except Exception as exc:  # pragma: no cover - JSON errors
-            logger.error("LLM JSON parse failed on page %d: %s", idx, exc)
+        cleaned = gpt_clean_text(content) if content else "[]"
+        items = safe_json_parse(cleaned)
+        if items is None:
+            logger.error("LLM JSON parse failed on page %d", idx)
             status = "error"
-            note = str(exc)
+            note = "parse error"
             items = []
 
         items = items if isinstance(items, list) else [items]
