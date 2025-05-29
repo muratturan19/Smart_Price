@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 import base64
-import json
 import logging
 import os
 from typing import Iterable, Sequence
@@ -17,7 +16,6 @@ import pandas as pd
 import tempfile
 from pathlib import Path
 
-from PIL import Image  # type: ignore
 
 from .common_utils import (
     gpt_clean_text,

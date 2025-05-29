@@ -30,7 +30,6 @@ except ModuleNotFoundError:
 if HAS_PANDAS:
     from smart_price.core.extract_pdf import extract_from_pdf
     import smart_price.core.extract_pdf as pdf_mod
-    from smart_price.core import ocr_llm_fallback as fallback_mod
 else:
     extract_from_pdf = None
 

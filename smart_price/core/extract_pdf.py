@@ -11,7 +11,6 @@ import unicodedata
 
 import pandas as pd
 import pdfplumber
-import json
 import time
 from dotenv import load_dotenv
 
