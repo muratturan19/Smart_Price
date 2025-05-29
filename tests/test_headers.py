@@ -2,6 +2,7 @@ import os
 import sys
 import types
 import importlib
+import logging
 
 # Ensure repo root is on path
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
@@ -39,3 +40,14 @@ def test_malzeme_header_detected(monkeypatch):
     df = types.SimpleNamespace(columns=["MALZEME", "Fiyat"])
     code_col, short_col, desc_col, price_col, currency_col = ee.find_columns_in_excel(df)
     assert code_col == "MALZEME"
+
+
+def test_column_mapping_logged(monkeypatch, caplog):
+    ee = _import_module(monkeypatch)
+    df = types.SimpleNamespace(columns=["MALZEME", "Fiyat", "Other"])
+    with caplog.at_level(logging.INFO, logger="smart_price"):
+        ee.find_columns_in_excel(df)
+    messages = "\n".join(r.getMessage() for r in caplog.records)
+    assert "excel column mapping" in messages
+    assert "MALZEME" in messages
+    assert "Other" in messages
