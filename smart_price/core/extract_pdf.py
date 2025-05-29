@@ -100,7 +100,8 @@ def extract_from_pdf(
                 logger.error("log callback failed: %s", exc)
 
     src = _basename(filepath, filename)
-    set_output_subdir(Path(src).stem)
+    output_stem = Path(src).stem
+    set_output_subdir(output_stem)
     notify(f"Processing {src} started at {datetime.now():%Y-%m-%d %H:%M:%S}")
 
     def _llm_extract_from_image(text: str) -> list[dict]:
@@ -226,7 +227,11 @@ def extract_from_pdf(
             page_range = range(1, len(pdf.pages) + 1)
             if force_llm:
                 notify("Force LLM (Vision) enabled")
-                result = ocr_llm_fallback.parse(path_for_llm, page_range)
+                result = ocr_llm_fallback.parse(
+                    path_for_llm,
+                    page_range,
+                    output_name=output_stem if tmp_for_llm else None,
+                )
                 cleanup()
                 return result
             for page in pdf.pages:
@@ -396,7 +401,11 @@ def extract_from_pdf(
         cleanup()
         return pd.DataFrame()
     if not data:
-        result = ocr_llm_fallback.parse(path_for_llm, page_range)
+        result = ocr_llm_fallback.parse(
+            path_for_llm,
+            page_range,
+            output_name=output_stem if tmp_for_llm else None,
+        )
         cleanup()
         return result
     df = pd.DataFrame(data)
@@ -414,7 +423,11 @@ def extract_from_pdf(
         rows_extracted and code_filled / rows_extracted < MIN_CODE_RATIO
     ):
         logger.warning("Low-quality Phase-1 parse \u2192 switching to LLM vision")
-        result = ocr_llm_fallback.parse(path_for_llm, page_range)
+        result = ocr_llm_fallback.parse(
+            path_for_llm,
+            page_range,
+            output_name=output_stem if tmp_for_llm else None,
+        )
         cleanup()
         return result
     # Default to Turkish Lira if currency could not be determined
