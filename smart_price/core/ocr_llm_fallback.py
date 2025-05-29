@@ -43,10 +43,29 @@ def _range_bounds(pages: Sequence[int] | range | None) -> tuple[int | None, int 
     return start, end
 
 
-def parse(pdf_path: str, page_range: Iterable[int] | range | None = None) -> pd.DataFrame:
-    """Parse ``pdf_path`` using GPT-4o vision."""
+def parse(
+    pdf_path: str,
+    page_range: Iterable[int] | range | None = None,
+    *,
+    output_name: str | None = None,
+) -> pd.DataFrame:
+    """Parse ``pdf_path`` using GPT-4o vision.
 
-    set_output_subdir(Path(pdf_path).stem)
+    Parameters
+    ----------
+    pdf_path : str
+        Path to the PDF file to parse.
+    page_range : iterable of int or range, optional
+        Pages to include when converting the PDF to images.
+    output_name : str, optional
+        Name of the debug output directory under ``LLM_Output_db``.  Defaults
+        to ``Path(pdf_path).stem``.
+    """
+
+    if output_name is None:
+        output_name = Path(pdf_path).stem
+
+    set_output_subdir(output_name)
 
     try:
         from pdf2image import convert_from_path  # type: ignore
