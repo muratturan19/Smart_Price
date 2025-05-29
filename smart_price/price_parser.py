@@ -58,17 +58,26 @@ def _configure_tesseract() -> None:
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Extract prices from Excel and PDF files")
-    parser.add_argument('files', nargs='+', help='Input Excel or PDF files')
+    parser.add_argument('files', nargs='*', help='Input Excel or PDF files')
     parser.add_argument('-o', '--output', default=os.path.join('output', 'merged_prices.xlsx'), help='Output Excel file path')
     parser.add_argument('--db', default=os.path.join('output', 'fiyat_listesi.db'), help='Output SQLite DB path')
     parser.add_argument('--log', default=os.path.join('output', 'source_log.csv'), help='CSV log path')
+    parser.add_argument('--show-log', action='store_true', help='Display the most recent log and exit')
     return parser.parse_args()
 
 
 def main() -> None:
-    init_logging()
-    _configure_tesseract()
     args = parse_args()
+    init_logging()
+    if args.show_log:
+        log_file = os.path.join(os.getcwd(), "smart_price.log")
+        try:
+            with open(log_file, "r", encoding="utf-8") as f:
+                print(f.read())
+        except FileNotFoundError:
+            print(f"Log file not found: {log_file}")
+        return
+    _configure_tesseract()
     os.makedirs(os.path.dirname(args.output), exist_ok=True)
     os.makedirs(os.path.dirname(args.db), exist_ok=True)
     os.makedirs(os.path.dirname(args.log), exist_ok=True)
