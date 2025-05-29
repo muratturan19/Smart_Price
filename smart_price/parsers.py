@@ -76,6 +76,7 @@ def parse_df(df: pd.DataFrame) -> pd.DataFrame:
         result["Kisa_Kod"] = None
     if "Malzeme_Kodu" not in result.columns:
         result["Malzeme_Kodu"] = None
+    result["Record_Code"] = None
     result.rename(columns={"Malzeme_Adi": "Descriptions"}, inplace=True)
     cols_out = [
         "Malzeme_Kodu",
@@ -85,6 +86,7 @@ def parse_df(df: pd.DataFrame) -> pd.DataFrame:
         "Para_Birimi",
         "Marka",
         "Kaynak_Dosya",
+        "Record_Code",
     ]
     return result[cols_out].dropna(subset=["Descriptions", "Fiyat"])
 

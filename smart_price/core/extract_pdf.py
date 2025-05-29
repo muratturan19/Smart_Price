@@ -36,7 +36,8 @@ from .extract_excel import (
 )
 from .extract_excel import POSSIBLE_CODE_HEADERS
 from . import ocr_llm_fallback
-from .debug_utils import save_debug
+from pathlib import Path
+from .debug_utils import save_debug, set_output_subdir
 
 MIN_CODE_RATIO = 0.70
 MIN_ROWS_PARSER = 500
@@ -100,6 +101,7 @@ def extract_from_pdf(
                 logger.error("log callback failed: %s", exc)
 
     src = _basename(filepath, filename)
+    set_output_subdir(Path(src).stem)
     notify(f"Processing {src} started at {datetime.now():%Y-%m-%d %H:%M:%S}")
 
     def _llm_extract_from_image(text: str) -> list[dict]:
@@ -428,6 +430,14 @@ def extract_from_pdf(
     df["Kategori"] = None
     if "Kisa_Kod" not in df.columns:
         df["Kisa_Kod"] = None
+    base_name_no_ext = Path(_basename(filepath, filename)).stem
+    df["Record_Code"] = (
+        base_name_no_ext
+        + "|"
+        + df["Sayfa"].astype(str)
+        + "|"
+        + (df.groupby("Sayfa").cumcount() + 1).astype(str)
+    )
     df.rename(columns={"Malzeme_Adi": "Descriptions"}, inplace=True)
     cols = [
         "Malzeme_Kodu",
@@ -437,6 +447,7 @@ def extract_from_pdf(
         "Para_Birimi",
         "Marka",
         "Kaynak_Dosya",
+        "Record_Code",
     ]
     result_df = df[cols].dropna(subset=["Descriptions", "Fiyat"])
     notify(f"Finished {src} with {len(result_df)} items")
@@ -445,4 +456,5 @@ def extract_from_pdf(
     except Exception:  # pragma: no cover - non DataFrame stubs
         pass
     cleanup()
+    set_output_subdir(None)
     return result_df

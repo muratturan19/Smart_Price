@@ -8,6 +8,7 @@ from typing import Tuple, Optional, IO, Any
 import pandas as pd
 import logging
 from datetime import datetime
+from pathlib import Path
 from .common_utils import (
     normalize_price,
     select_latest_year_column,
@@ -204,6 +205,14 @@ def extract_from_excel(
         combined["Kisa_Kod"] = None
     if "Malzeme_Kodu" not in combined.columns:
         combined["Malzeme_Kodu"] = None
+    base_name_no_ext = Path(_basename(filepath, filename)).stem
+    combined["Record_Code"] = (
+        base_name_no_ext
+        + "|"
+        + combined["Sayfa"].astype(str)
+        + "|"
+        + (combined.groupby("Sayfa").cumcount() + 1).astype(str)
+    )
     combined.rename(columns={"Malzeme_Adi": "Descriptions"}, inplace=True)
     cols = [
         "Malzeme_Kodu",
@@ -213,5 +222,6 @@ def extract_from_excel(
         "Para_Birimi",
         "Marka",
         "Kaynak_Dosya",
+        "Record_Code",
     ]
     return combined[cols].dropna(subset=["Descriptions", "Fiyat"])

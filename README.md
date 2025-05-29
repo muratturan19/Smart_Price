@@ -82,29 +82,27 @@ captures detailed processing messages and is created automatically each time the
 tools run. Open this file with a text editor or use commands such as
 `tail -f smart_price.log` to inspect the output when troubleshooting.
 
-Set the environment variable `SMART_PRICE_DEBUG=1` (or pass
-`level=logging.DEBUG` when calling `init_logging`) to enable verbose debug
-information. When active the log includes the chosen LLM model, the constructed
-prompt length and the raw response returned by the OpenAI API. Per-page images
-and JSON responses are saved to a folder.
+Verbose details such as the chosen LLM model, prompt length and the raw
+response returned by the OpenAI API are logged automatically. Per page images
+and JSON responses are written to the `LLM_Output_db` directory under a
+subfolder matching the processed PDF name.
 
 #### Debug information
 
-When debug mode is enabled the log also records extra details to help trace each
-step:
+The log records extra details to help trace each step:
 
 - the name of the processed file
 - a timestamp for every event
 - page numbers for processed pages
 - a snippet of the prompt sent to the LLM
 - and the first items parsed from the response.
-- per-page debug files stored under `output_debug` (set
-  `SMART_PRICE_DEBUG_DIR` to change the folder)
+- per-page debug files stored under `LLM_Output_db/<PDF adı>` (set
+  `SMART_PRICE_DEBUG_DIR` to override the location)
 
 ## Troubleshooting
 
 If the vision stage fails to produce any items, the log records the model name
 and an excerpt of the prompt. This can help diagnose why the extraction failed.
 
-When debug logging is enabled the prompt length and raw response are also logged
-to help troubleshoot unexpected LLM behaviour.
+The prompt length and raw response are always logged to help troubleshoot
+unexpected LLM behaviour.
