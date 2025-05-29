@@ -32,3 +32,10 @@ def test_item_headers_only_in_code(monkeypatch):
     for h in normalized:
         assert h in code_normalized
         assert h not in ee.POSSIBLE_DESC_HEADERS
+
+
+def test_malzeme_header_detected(monkeypatch):
+    ee = _import_module(monkeypatch)
+    df = types.SimpleNamespace(columns=["MALZEME", "Fiyat"])
+    code_col, short_col, desc_col, price_col, currency_col = ee.find_columns_in_excel(df)
+    assert code_col == "MALZEME"
