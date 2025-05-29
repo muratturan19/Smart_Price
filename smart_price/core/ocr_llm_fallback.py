@@ -80,7 +80,11 @@ def parse(pdf_path: str, page_range: Iterable[int] | range | None = None) -> pd.
     )
 
     rows = []
+    page_summary: list[dict[str, object]] = []
     for idx, img in enumerate(images, start=1):
+        start_len = len(rows)
+        status = "success"
+        note = None
         img_path = save_debug_image("page_image", idx, img)
         tmp_path = img_path
         created_tmp = False
@@ -114,7 +118,9 @@ def parse(pdf_path: str, page_range: Iterable[int] | range | None = None) -> pd.
             save_debug("llm_response", idx, content or "")
         except Exception as exc:  # pragma: no cover - request errors
             logger.error("OpenAI request failed on page %d: %s", idx, exc)
-            continue
+            status = "error"
+            note = str(exc)
+            content = None
         finally:
             if created_tmp:
                 try:
@@ -123,11 +129,13 @@ def parse(pdf_path: str, page_range: Iterable[int] | range | None = None) -> pd.
                     logger.debug("temp file cleanup failed: %s", exc)
 
         try:
-            cleaned = gpt_clean_text(content)
+            cleaned = gpt_clean_text(content) if content else "[]"
             items = json.loads(cleaned)
         except Exception as exc:  # pragma: no cover - JSON errors
             logger.error("LLM JSON parse failed on page %d: %s", idx, exc)
-            continue
+            status = "error"
+            note = str(exc)
+            items = []
 
         items = items if isinstance(items, list) else [items]
         for item in items:
@@ -144,5 +152,22 @@ def parse(pdf_path: str, page_range: Iterable[int] | range | None = None) -> pd.
                 }
             )
 
-    return pd.DataFrame(rows)
+        added = len(rows) - start_len
+        if status == "success" and added == 0:
+            status = "empty"
+        page_summary.append(
+            {
+                "page_number": idx,
+                "rows": added,
+                "status": status,
+                "note": note,
+            }
+        )
+
+    df = pd.DataFrame(rows)
+    try:
+        df.page_summary = page_summary
+    except Exception:  # pragma: no cover - non DataFrame stubs
+        pass
+    return df
 
