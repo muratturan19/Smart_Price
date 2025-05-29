@@ -88,6 +88,7 @@ def extract_from_pdf(
 ) -> pd.DataFrame:
     """Extract product information from a PDF file."""
     data = []
+    page_summary: list[dict[str, object]] = []
 
     def notify(message: str) -> None:
         logger.info(message)
@@ -225,140 +226,162 @@ def extract_from_pdf(
                 cleanup()
                 return result
             for page in pdf.pages:
-                text = page.extract_text() or ""
-                notify(
-                    f"Page {page.page_number} read with {len(text.splitlines())} lines"
-                )
-                if text:
-                    for line in text.split("\n"):
-                        line = line.strip()
-                        if len(line) < 5:
+                start_len = len(data)
+                status = "success"
+                note = None
+                try:
+                    text = page.extract_text() or ""
+                    notify(
+                        f"Page {page.page_number} read with {len(text.splitlines())} lines"
+                    )
+                    if text:
+                        for line in text.split("\n"):
+                            line = line.strip()
+                            if len(line) < 5:
+                                continue
+                            for pattern in _patterns:
+                                matches = pattern.findall(line)
+                                if not matches:
+                                    m = pattern.match(line)
+                                    if m:
+                                        matches = [m.groups()]
+                                for match in matches:
+                                    if len(match) != 2:
+                                        continue
+                                    product_name = re.sub(r"\s{2,}", " ", match[0].strip())
+                                    price_raw = match[1]
+                                    price = normalize_price(price_raw)
+                                    if product_name and price is not None:
+                                        data.append(
+                                            {
+                                                "Malzeme_Adi": product_name,
+                                                "Fiyat": price,
+                                                "Para_Birimi": detect_currency(price_raw),
+                                                "Sayfa": page.page_number,
+                                            }
+                                        )
+                                        notify(
+                                            f"Matched on page {page.page_number}: {line[:100]}"
+                                        )
+
+                    tables = page.extract_tables()
+                    for table in tables:
+                        if not table:
                             continue
-                        for pattern in _patterns:
-                            matches = pattern.findall(line)
-                            if not matches:
-                                m = pattern.match(line)
-                                if m:
-                                    matches = [m.groups()]
-                            for match in matches:
-                                if len(match) != 2:
-                                    continue
-                                product_name = re.sub(r"\s{2,}", " ", match[0].strip())
-                                price_raw = match[1]
-                                price = normalize_price(price_raw)
-                                if product_name and price is not None:
-                                    data.append(
-                                        {
-                                            "Malzeme_Adi": product_name,
-                                            "Fiyat": price,
-                                            "Para_Birimi": detect_currency(price_raw),
-                                            "Sayfa": page.page_number,
-                                        }
-                                    )
-                                    notify(
-                                        f"Matched on page {page.page_number}: {line[:100]}"
-                                    )
-
-                tables = page.extract_tables()
-                for table in tables:
-                    if not table:
-                        continue
-                    try:
-                        header_row = None
-                        if table and any(
-                            header_match(
-                                c,
-                                POSSIBLE_PRODUCT_NAME_HEADERS,
-                                match_type="DESC",
-                            )
-                            or header_match(
-                                c,
-                                POSSIBLE_PRICE_HEADERS,
-                                match_type="PRICE",
-                            )
-                            for c in table[0]
-                        ):
-                            header_row = [str(c or "").strip() for c in table[0]]
-                            df_table = pd.DataFrame(table[1:], columns=header_row)
-                        else:
-                            df_table = pd.DataFrame(table)
-
-                        df_table.dropna(how="all", inplace=True)
-
-                        product_idx = 0
-                        price_idx = -1
-                        if any(
-                            header_match(
-                                c,
-                                POSSIBLE_PRODUCT_NAME_HEADERS,
-                                match_type="DESC",
-                            )
-                            for c in df_table.columns
-                        ):
-                            product_idx = [
-                                i
-                                for i, c in enumerate(df_table.columns)
-                                if header_match(
+                        try:
+                            header_row = None
+                            if table and any(
+                                header_match(
                                     c,
                                     POSSIBLE_PRODUCT_NAME_HEADERS,
                                     match_type="DESC",
                                 )
-                            ][0]
-                        if any(
-                            header_match(
-                                c,
-                                POSSIBLE_PRICE_HEADERS,
-                                match_type="PRICE",
-                            )
-                            for c in df_table.columns
-                        ):
-                            price_idx = [
-                                i
-                                for i, c in enumerate(df_table.columns)
-                                if header_match(
+                                or header_match(
                                     c,
                                     POSSIBLE_PRICE_HEADERS,
                                     match_type="PRICE",
                                 )
-                            ][0]
-
-                        for _, row in df_table.iterrows():
-                            if len(row) <= max(product_idx, abs(price_idx)):
-                                continue
-                            first = (row[0] or "").strip()
-                            code = CODE_RE.match(first)
-                            if code and not header_match(
-                                first,
-                                POSSIBLE_CODE_HEADERS,
-                                match_type="CODE",
+                                for c in table[0]
                             ):
-                                code_val = code.group(1)
+                                header_row = [str(c or "").strip() for c in table[0]]
+                                df_table = pd.DataFrame(table[1:], columns=header_row)
                             else:
-                                code_val = None
+                                df_table = pd.DataFrame(table)
 
-                            product = str(row.iloc[product_idx]).strip()
-                            price_raw = str(row.iloc[price_idx]).strip()
-                            if product and price_raw:
-                                price = normalize_price(price_raw)
-                                if pd.isna(code_val) or pd.isna(price):
-                                    logger.warning(
-                                        "Empty field p%s: %s",
-                                        page.page_number,
-                                        str(row)[:80],
+                            df_table.dropna(how="all", inplace=True)
+
+                            product_idx = 0
+                            price_idx = -1
+                            if any(
+                                header_match(
+                                    c,
+                                    POSSIBLE_PRODUCT_NAME_HEADERS,
+                                    match_type="DESC",
+                                )
+                                for c in df_table.columns
+                            ):
+                                product_idx = [
+                                    i
+                                    for i, c in enumerate(df_table.columns)
+                                    if header_match(
+                                        c,
+                                        POSSIBLE_PRODUCT_NAME_HEADERS,
+                                        match_type="DESC",
                                     )
-                                if price is not None:
-                                    data.append(
-                                        {
-                                            "Malzeme_Adi": product,
-                                            "Fiyat": price,
-                                            "Para_Birimi": detect_currency(price_raw),
-                                            "Sayfa": page.page_number,
-                                            "Malzeme_Kodu": code_val,
-                                        }
+                                ][0]
+                            if any(
+                                header_match(
+                                    c,
+                                    POSSIBLE_PRICE_HEADERS,
+                                    match_type="PRICE",
+                                )
+                                for c in df_table.columns
+                            ):
+                                price_idx = [
+                                    i
+                                    for i, c in enumerate(df_table.columns)
+                                    if header_match(
+                                        c,
+                                        POSSIBLE_PRICE_HEADERS,
+                                        match_type="PRICE",
                                     )
-                    except Exception as exc:
-                        notify(f"table parse error: {exc}")
-                        continue
+                                ][0]
+
+                            for _, row in df_table.iterrows():
+                                if len(row) <= max(product_idx, abs(price_idx)):
+                                    continue
+                                first = (row[0] or "").strip()
+                                code = CODE_RE.match(first)
+                                if code and not header_match(
+                                    first,
+                                    POSSIBLE_CODE_HEADERS,
+                                    match_type="CODE",
+                                ):
+                                    code_val = code.group(1)
+                                else:
+                                    code_val = None
+
+                                product = str(row.iloc[product_idx]).strip()
+                                price_raw = str(row.iloc[price_idx]).strip()
+                                if product and price_raw:
+                                    price = normalize_price(price_raw)
+                                    if pd.isna(code_val) or pd.isna(price):
+                                        logger.warning(
+                                            "Empty field p%s: %s",
+                                            page.page_number,
+                                            str(row)[:80],
+                                        )
+                                    if price is not None:
+                                        data.append(
+                                            {
+                                                "Malzeme_Adi": product,
+                                                "Fiyat": price,
+                                                "Para_Birimi": detect_currency(price_raw),
+                                                "Sayfa": page.page_number,
+                                                "Malzeme_Kodu": code_val,
+                                            }
+                                        )
+                        except Exception as exc:
+                            notify(f"table parse error: {exc}")
+                            status = "error"
+                            note = str(exc)
+                            continue
+                except Exception as exc:
+                    notify(f"page {page.page_number} error: {exc}")
+                    status = "error"
+                    note = str(exc)
+
+                count = len(data) - start_len
+                if status == "success" and count == 0:
+                    status = "empty"
+                page_summary.append(
+                    {
+                        "page_number": page.page_number,
+                        "rows": count,
+                        "status": status,
+                        "note": note,
+                    }
+                )
 
         phase1_count = len(data)
         if phase1_count:
@@ -414,5 +437,9 @@ def extract_from_pdf(
     ]
     result_df = df[cols].dropna(subset=["Descriptions", "Fiyat"])
     notify(f"Finished {src} with {len(result_df)} items")
+    try:
+        result_df.page_summary = page_summary
+    except Exception:  # pragma: no cover - non DataFrame stubs
+        pass
     cleanup()
     return result_df
