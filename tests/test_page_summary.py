@@ -78,7 +78,7 @@ def test_ocr_llm_fallback_summary(monkeypatch):
     monkeypatch.setitem(sys.modules, "pdf2image", types.SimpleNamespace(convert_from_path=fake_convert))
 
     contents = [
-        '[{"Malzeme Kodu":"A","Açıklama":"X","Fiyat":"1"}]',
+        '[{"Malzeme_Kodu":"A","Açıklama":"X","Fiyat":"1"}]',
         '[]'
     ]
     def create(**kwargs):
