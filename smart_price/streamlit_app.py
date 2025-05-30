@@ -152,7 +152,7 @@ def merge_files(
     master = master[master["Descriptions"] != ""]
     master["Fiyat"] = pd.to_numeric(master["Fiyat"], errors="coerce")
     master.dropna(subset=["Fiyat"], inplace=True)
-    master.drop_duplicates(subset=["Descriptions"], keep="last", inplace=True)
+    master.drop_duplicates(subset=["Malzeme_Kodu", "Descriptions"], keep="last", inplace=True)
     master = master[master["Fiyat"] > 0.01]
     master.sort_values(by="Descriptions", inplace=True)
     if "Kisa_Kod" in master.columns:
