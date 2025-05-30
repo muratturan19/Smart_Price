@@ -687,6 +687,51 @@ def test_merge_files_passes_force_llm(monkeypatch):
     assert not result.empty
 
 
+def test_merge_files_dedup_by_code_and_price(monkeypatch):
+    if not HAS_PANDAS:
+        pytest.skip("pandas not installed")
+    import pandas as pd
+
+    df_map = {
+        "f1.xlsx": pd.DataFrame({
+            "Malzeme_Kodu": ["X"],
+            "Descriptions": ["Item"],
+            "Fiyat": [1.0],
+            "Kaynak_Dosya": ["f1.xlsx"],
+        }),
+        "f2.xlsx": pd.DataFrame({
+            "Malzeme_Kodu": ["X"],
+            "Descriptions": ["Item"],
+            "Fiyat": [1.0],
+            "Kaynak_Dosya": ["f2.xlsx"],
+        }),
+        "f3.xlsx": pd.DataFrame({
+            "Malzeme_Kodu": ["X"],
+            "Descriptions": ["Item"],
+            "Fiyat": [2.0],
+            "Kaynak_Dosya": ["f3.xlsx"],
+        }),
+    }
+
+    def fake_extract(_file, *, file_name=None):
+        return df_map[file_name].copy()
+
+    monkeypatch.setattr(streamlit_app, "extract_from_excel_file", fake_extract)
+
+    class FakeUpload:
+        def __init__(self, name):
+            self.name = name
+
+        def read(self):
+            return b"data"
+
+    uploads = [FakeUpload(name) for name in df_map]
+    result = streamlit_app.merge_files(uploads)
+
+    assert len(result) == 2
+    assert set(result["Fiyat"]) == {1.0, 2.0}
+
+
 def test_llm_debug_files(monkeypatch, tmp_path):
     if not HAS_PANDAS:
         pytest.skip("pandas not installed")
