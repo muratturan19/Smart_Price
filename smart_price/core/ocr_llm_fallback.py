@@ -166,8 +166,7 @@ def parse(
     Ürün Kodu	Plastik	Yedek Tek Dişli	DK Takım
     DK24	45	80	205
     Doğru Extraction Çıktısı:
-    json
-    KopyalaDüzenle
+
     [
       {
         "Malzeme_Kodu": "DK24 - Plastik",
