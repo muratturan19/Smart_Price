@@ -153,8 +153,41 @@ def parse(
     çıkarılacak.
 
     Malzeme_Kodu veya Fiyat boş olan satır atılacak.
+    
+    4. Eğer bir ürün kodunun bulunduğu satırda, sağında birden fazla fiyat sütunu varsa:
+    Her fiyat sütununun başlığını ürün kodunun sonuna “-” ile ekleyip,
+    ortaya çıkan bu yeni ifadeyi (ör. “DK24 - Plastik”) Malzeme_Kodu olarak kaydet.
+    Fiyatı ilgili değeriyle birlikte yaz.
+    Diğer alanlar yoksa boş bırak, açıklama alanını kullanma.
 
-    4. Çıktı Formatı
+    Örnek:
+
+    Tablo:
+    Ürün Kodu	Plastik	Yedek Tek Dişli	DK Takım
+    DK24	45	80	205
+    Doğru Extraction Çıktısı:
+    json
+    KopyalaDüzenle
+    [
+      {
+        "Malzeme_Kodu": "DK24 - Plastik",
+        "Fiyat": "45",
+        "Para_Birimi": "TL"
+      },
+      {
+        "Malzeme_Kodu": "DK24 - Yedek Tek Dişli",
+        "Fiyat": "80",
+        "Para_Birimi": "TL"
+      },
+      {
+        "Malzeme_Kodu": "DK24 - DK Takım",
+        "Fiyat": "205",
+        "Para_Birimi": "TL"
+      }
+    ]
+
+
+    5. Çıktı Formatı
     Her veri satırı (varsa):
 
     Malzeme_Kodu
@@ -169,19 +202,19 @@ def parse(
 
     Çıktı: JSON listesi
 
-    5. Dinamik ve Dili Bağımsız
+    6. Dinamik ve Dili Bağımsız
     Başlıklar Türkçe, İngilizce, farklı varyasyonlarla gelebilir.
 
     Senin görevin başlığı tanımak ve doğru alanlara atamak.
 
-    6. Yanlışlar ve Yasaklar
+    7. Yanlışlar ve Yasaklar
     Tablo başlığı, sayfa açıklamaları, dipnotlar ürün verisi olarak alınmayacak.
 
     Sadece ürün satırları dönecek.
 
     Bir satırda birden fazla ürün varsa, her biri için ayrı satır üretilecek.
 
-    7. Örnek
+    8. Örnek
     [
       {
         "Malzeme_Kodu": "JKS19",
