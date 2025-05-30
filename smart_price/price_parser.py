@@ -108,7 +108,7 @@ def main() -> None:
         logger.info("No data extracted from given files.")
         return
     master = pd.concat(all_extracted, ignore_index=True)
-    master.drop_duplicates(subset=["Malzeme_Kodu", "Descriptions"], keep="last", inplace=True)
+    master.drop_duplicates(subset=["Malzeme_Kodu", "Fiyat"], keep="last", inplace=True)
     master.sort_values(by="Descriptions", inplace=True)
     master.to_excel(args.output, index=False)
     logger.info("Saved %d records to %s", len(master), args.output)
