@@ -163,7 +163,7 @@ def test_llm_empty_items_logs_excerpt(monkeypatch):
     result = func(text)
     assert result == []
     assert any('no items parsed by' in msg for msg in logs)
-    assert 'gpt-3.5-turbo' in ''.join(logs)
+    assert 'gpt-4o' in ''.join(logs)
 
 
 def test_llm_prompt_and_clean(monkeypatch):
@@ -182,7 +182,7 @@ def test_llm_prompt_and_clean(monkeypatch):
 
     result = func('sample')
     assert cleaned == ['[{"name":"A","price":"4"}]']
-    assert 'return only' in captured_prompt[0]
+    assert 'Malzeme_Kodu - Fiyat çıkarma asistanısın' in captured_prompt[0]
     assert result == [{
         'Malzeme_Adi': 'A',
         'Fiyat': 4.0,
