@@ -312,16 +312,21 @@ def parse(
 
         items = items if isinstance(items, list) else [items]
         for item in items:
+            code = item.get("Malzeme_Kodu") or item.get("Malzeme Kodu")
             descr = item.get("Açıklama")
             price_raw = str(item.get("Fiyat", "")).strip()
+            kutu_adedi = item.get("Kutu_Adedi") or item.get("Kutu Adedi")
+            para_birimi = item.get("Para_Birimi") or item.get("Para Birimi")
+            if para_birimi is None:
+                para_birimi = detect_currency(price_raw)
             page_rows.append(
                 {
-                    "Malzeme_Kodu": item.get("Malzeme Kodu"),
+                    "Malzeme_Kodu": code,
                     "Descriptions": descr,
                     "Fiyat": normalize_price(price_raw),
                     "Birim": item.get("Birim"),
-                    "Kutu_Adedi": item.get("Kutu Adedi"),
-                    "Para_Birimi": detect_currency(price_raw),
+                    "Kutu_Adedi": kutu_adedi,
+                    "Para_Birimi": para_birimi,
                     "Sayfa": idx,
                 }
             )
