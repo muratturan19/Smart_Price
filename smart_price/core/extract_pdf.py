@@ -124,23 +124,137 @@ def extract_from_pdf(
 
         client = OpenAI(api_key=api_key)
 
-        model_name = os.getenv("OPENAI_MODEL", "gpt-3.5-turbo")
+        model_name = os.getenv("OPENAI_MODEL", "gpt-4o")
         excerpt = text[:200].replace("\n", " ")
         logger.debug("Using model %s on text excerpt: %r", model_name, excerpt)
 
-        prompt = f"""
-            Aşağıda bir fiyat listesi metni var. Bu metinden sadece ürün adı ve fiyat bilgilerini içeren
-            bir JSON dizisi üret. Her öğe şu anahtarları içermeli:
-            - 'Malzeme_Adı': Ürünün adı veya açıklaması
-            - 'Fiyat': Sayısal fiyat değeri
-            - 'Para_Birimi': Fiyatın para birimi (örn: TL, USD)
-            
-            Lütfen sadece geçerli ürünleri al ve gereksiz satırları atla. Sadece geçerli JSON döndür.
-            return only valid JSON.
-            
-            Metin:
-            {text}
-            """
+        prompt = """
+        Sen bir Malzeme_Kodu - Fiyat çıkarma asistanısın ve görevin karmaşık yapılı,
+        farklı ifadelerler yazılmış pdf dosyalarından Malzeme_Kodu - Fiyat ve varsa
+        diğer bilgileri çıkarmak. PDF dosyası sana sayfa sayfa image olarak
+        verilecek. Birçok pdf çıktısı tek dosyada toplanacağından çıkarımlar aynı
+        başlıklarla yapılmalı.
+
+        Aşağıda detaylı çalışma talimatların var:
+
+        1. Başlık Kümeleri (RAW_HEADERS)
+        Malzeme_Kodu (RAW_CODE_HEADERS):
+        Ürün, ürün adı, ürün kodu, kod, malzeme, malzeme kodu, part no, part code,
+        item code, code, stock code, vs.
+
+        Açıklama (RAW_DESC_HEADERS):
+        Açıklama, tip, tanım, description
+
+        Fiyat (RAW_PRICE_HEADERS):
+        Fiyat, birim fiyat, price, tl, amount, tutar, unit price, vs.
+
+        Ek Sütunlar:
+        Adet, quantity, birim, para birimi, marka, kutu adedi...
+
+        2. Extraction Kuralları
+        Tabloda RAW_CODE_HEADERS ile eşleşen başlık altındaki tüm satırları veri
+        olarak işle.
+
+        Her satırda Malzeme_Kodu ve Fiyat zorunlu; diğer alanlar varsa al, yoksa boş
+        bırak.
+
+        Ek bilgiler (Açıklama, Adet, Para Birimi vs.) mevcutsa çek, yoksa hata olarak
+        sayma.
+
+        Para birimi görünmüyorsa, varsayılan TL olarak ekle.
+
+        3. Extraction Sırasında
+        Tablo başlığı, alt başlıklar veya sayfa açıklamaları kesinlikle veri olarak
+        alınmayacak.
+
+        Sadece RAW_HEADERS ile eşleşen sütunların altındaki gerçek ürün satırları
+        çıkarılacak.
+
+        Malzeme_Kodu veya Fiyat boş olan satır atılacak.
+        
+        4. Eğer bir ürün kodunun bulunduğu satırda, sağında birden fazla fiyat sütunu varsa:
+        Her fiyat sütununun başlığını ürün kodunun sonuna “-” ile ekleyip,
+        ortaya çıkan bu yeni ifadeyi (ör. “DK24 - Plastik”) Malzeme_Kodu olarak kaydet.
+        Fiyatı ilgili değeriyle birlikte yaz.
+        Diğer alanlar yoksa boş bırak, açıklama alanını kullanma.
+
+        Örnek:
+
+        Tablo:
+        Ürün Kodu	Plastik	Yedek Tek Dişli	DK Takım
+        DK24	45	80	205
+        Doğru Extraction Çıktısı:
+        json
+        KopyalaDüzenle
+        [
+          {
+            "Malzeme_Kodu": "DK24 - Plastik",
+            "Fiyat": "45",
+            "Para_Birimi": "TL"
+          },
+          {
+            "Malzeme_Kodu": "DK24 - Yedek Tek Dişli",
+            "Fiyat": "80",
+            "Para_Birimi": "TL"
+          },
+          {
+            "Malzeme_Kodu": "DK24 - DK Takım",
+            "Fiyat": "205",
+            "Para_Birimi": "TL"
+          }
+        ]
+
+
+        5. Çıktı Formatı
+        Her veri satırı (varsa):
+
+        Malzeme_Kodu
+        Açıklama
+        Fiyat
+        Adet
+        Birim
+        Para_Birimi
+        Marka
+        Kutu_Adedi
+        ... (tabloya göre diğer ek alanlar)
+
+        Çıktı: JSON listesi
+
+        6. Dinamik ve Dili Bağımsız
+        Başlıklar Türkçe, İngilizce, farklı varyasyonlarla gelebilir.
+
+        Senin görevin başlığı tanımak ve doğru alanlara atamak.
+
+        7. Yanlışlar ve Yasaklar
+        Tablo başlığı, sayfa açıklamaları, dipnotlar ürün verisi olarak alınmayacak.
+
+        Sadece ürün satırları dönecek.
+
+        Bir satırda birden fazla ürün varsa, her biri için ayrı satır üretilecek.
+
+        8. Örnek
+        [
+          {
+            "Malzeme_Kodu": "JKS19",
+            "Açıklama": "Jawtex Plastik",
+            "Fiyat": "90,00",
+            "Adet": "50",
+            "Birim": "Adet",
+            "Para_Birimi": "TL"
+          }
+        ]
+        Ek örnek:
+        Tabloda: Ürün Kodu: Ax2234, Description: Çap 12 O ring, Price: 12, Adet: 50
+        Çıktı:
+        Malzeme_Kodu: Ax2234, Açıklama: Çap 12 O ring, Fiyat: 12₺, Adet: 50
+
+        Kısa Samimi Versiyonu:
+        Belirttiğim başlıklar ve eşanlamlılar (RAW_HEADERS) ile eşleşen tablo
+        sütunlarının altındaki tüm veri satırlarını, ilgili alanlarla birlikte
+        eksiksiz döndür.
+        Tablo başlıkları, alt başlıklar ve sayfa üzerindeki genel açıklamalar asla
+        veri satırı olarak alınmasın.
+        """
 
         save_debug("llm_prompt", 1, prompt)
 
