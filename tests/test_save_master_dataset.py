@@ -1,6 +1,7 @@
 import os
 import sys
 import types
+import sqlite3
 from pathlib import Path
 import pytest
 
@@ -46,6 +47,7 @@ def test_save_master_new(tmp_path, monkeypatch):
     monkeypatch.chdir(tmp_path)
     monkeypatch.setattr(streamlit_app.config, "MASTER_EXCEL_PATH", tmp_path / "master_dataset.xlsx")
     monkeypatch.setattr(streamlit_app.config, "MASTER_DB_PATH", tmp_path / "master.db")
+    monkeypatch.setattr(streamlit_app, "upload_folder", lambda *_a, **_k: None)
     df = pd.DataFrame({
         'Malzeme_Kodu': ['A1'],
         'Descriptions': ['Item'],
@@ -56,8 +58,12 @@ def test_save_master_new(tmp_path, monkeypatch):
 
     path = streamlit_app.save_master_dataset(df, mode="Yeni fiyat listesi")
     saved = pd.read_excel(path)
+    assert path == str(streamlit_app.config.MASTER_EXCEL_PATH)
     assert Path(path) == tmp_path / "master_dataset.xlsx"
-    assert (tmp_path / "master.db").exists()
+    assert streamlit_app.config.MASTER_DB_PATH.exists()
+    with sqlite3.connect(streamlit_app.config.MASTER_DB_PATH) as conn:
+        rows = conn.execute("SELECT material_code, description, price, brand FROM prices").fetchall()
+    assert rows == [("A1", "Item", 1.0, "BrandA")]
     assert len(saved) == 1
     assert saved.iloc[0]['Malzeme_Kodu'] == 'A1'
 
@@ -70,6 +76,7 @@ def test_save_master_update(tmp_path, monkeypatch):
     monkeypatch.chdir(tmp_path)
     monkeypatch.setattr(streamlit_app.config, "MASTER_EXCEL_PATH", tmp_path / "master_dataset.xlsx")
     monkeypatch.setattr(streamlit_app.config, "MASTER_DB_PATH", tmp_path / "master.db")
+    monkeypatch.setattr(streamlit_app, "upload_folder", lambda *_a, **_k: None)
     master = pd.DataFrame({
         'Malzeme_Kodu': ['X1', 'Y1'],
         'Descriptions': ['Old', 'Keep'],
@@ -94,8 +101,12 @@ def test_save_master_update(tmp_path, monkeypatch):
 
     path = streamlit_app.save_master_dataset(new, mode="Güncelleme")
     result = pd.read_excel(path)
+    assert path == str(streamlit_app.config.MASTER_EXCEL_PATH)
     assert Path(path) == tmp_path / "master_dataset.xlsx"
-    assert (tmp_path / "master.db").exists()
+    assert streamlit_app.config.MASTER_DB_PATH.exists()
+    with sqlite3.connect(streamlit_app.config.MASTER_DB_PATH) as conn:
+        rows = conn.execute("SELECT material_code, description FROM prices ORDER BY material_code").fetchall()
+    assert rows == [("Y1", "Keep"), ("Z1", "New")]
     assert len(result) == 2
     assert 'old.xlsx' not in result[result['Descriptions'] == 'Old']['Kaynak_Dosya'].values
     assert not old_dir.exists()
