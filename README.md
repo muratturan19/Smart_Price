@@ -85,8 +85,9 @@ dataset and any old debug files for those sources are deleted before the new
 records are saved.
 
 From the interface you can upload Excel/PDF price lists and search the
-resulting master dataset. The merged data is written to `master_dataset.xlsx`
-in the directory from which you launch the app.
+resulting master dataset. When you save the merged data it writes both
+`Master data base/master_dataset.xlsx` and `Master data base/master.db`
+relative to the directory from which you launch the app.
 
 ### Logging
 
@@ -112,9 +113,10 @@ The log records extra details to help trace each step:
 - and the first items parsed from the response.
 - per-page debug files stored under `LLM Images/<PDF adı>` (set
   `SMART_PRICE_DEBUG_DIR` to override the location)
-- set `GITHUB_REPO` and `GITHUB_TOKEN` to automatically push each debug
-  directory to the given repository under `LLM Images/` (optionally specify
-  `GITHUB_BRANCH`)
+ - set `GITHUB_REPO` and `GITHUB_TOKEN` to automatically push each debug
+   directory and the files under `Master data base/` (including
+   `master_dataset.xlsx` and `master.db`) to the configured repository
+   under their respective folders (optionally specify `GITHUB_BRANCH`)
 
 ## Troubleshooting
 
