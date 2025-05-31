@@ -108,6 +108,9 @@ The log records extra details to help trace each step:
 - and the first items parsed from the response.
 - per-page debug files stored under `LLM_Output_db/<PDF adı>` (set
   `SMART_PRICE_DEBUG_DIR` to override the location)
+- set `GITHUB_REPO` and `GITHUB_TOKEN` to automatically push each debug
+  directory to the given repository under `LLM_Output_db/` (optionally specify
+  `GITHUB_BRANCH`)
 
 ## Troubleshooting
 
