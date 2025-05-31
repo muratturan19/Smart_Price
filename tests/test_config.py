@@ -19,7 +19,17 @@ def test_defaults(monkeypatch):
     dotenv_stub.load_dotenv = lambda *_a, **_k: None
     dotenv_stub.find_dotenv = lambda *_a, **_k: ''
     monkeypatch.setitem(sys.modules, 'dotenv', dotenv_stub)
-    for name in ("MASTER_DB_PATH", "IMAGE_DIR", "SALES_APP_DIR", "PRICE_APP_DIR", "DEBUG_DIR"):
+    for name in (
+        "MASTER_DB_PATH",
+        "IMAGE_DIR",
+        "SALES_APP_DIR",
+        "PRICE_APP_DIR",
+        "DEBUG_DIR",
+        "OUTPUT_DIR",
+        "OUTPUT_EXCEL",
+        "OUTPUT_DB",
+        "OUTPUT_LOG",
+    ):
         monkeypatch.delenv(name, raising=False)
     importlib.reload(cfg)
     root = Path(__file__).resolve().parent.parent
@@ -28,6 +38,10 @@ def test_defaults(monkeypatch):
     assert cfg.SALES_APP_DIR == root / "sales_app"
     assert cfg.PRICE_APP_DIR == root / "smart_price"
     assert cfg.DEBUG_DIR == root / "LLM_Output_db"
+    assert cfg.OUTPUT_DIR == root / "output"
+    assert cfg.OUTPUT_EXCEL == root / "output" / "merged_prices.xlsx"
+    assert cfg.OUTPUT_DB == root / "output" / "fiyat_listesi.db"
+    assert cfg.OUTPUT_LOG == root / "output" / "source_log.csv"
 
 
 def test_env_and_config_overrides(tmp_path, monkeypatch):
@@ -43,6 +57,10 @@ def test_env_and_config_overrides(tmp_path, monkeypatch):
     monkeypatch.setenv("IMAGE_DIR", str(tmp_path / "img_env"))
     monkeypatch.setenv("SALES_APP_DIR", str(tmp_path / "sales"))
     monkeypatch.setenv("PRICE_APP_DIR", str(tmp_path / "price"))
+    monkeypatch.setenv("OUTPUT_DIR", str(tmp_path / "out"))
+    monkeypatch.setenv("OUTPUT_EXCEL", str(tmp_path / "out" / "m.xlsx"))
+    monkeypatch.setenv("OUTPUT_DB", str(tmp_path / "out" / "db.sqlite"))
+    monkeypatch.setenv("OUTPUT_LOG", str(tmp_path / "out" / "log.csv"))
     importlib.reload(cfg)
     cfg.load_config()
     assert cfg.MASTER_DB_PATH == tmp_path / "db.sqlite"
@@ -50,3 +68,7 @@ def test_env_and_config_overrides(tmp_path, monkeypatch):
     assert cfg.SALES_APP_DIR == tmp_path / "sales"
     assert cfg.PRICE_APP_DIR == tmp_path / "price"
     assert cfg.DEBUG_DIR == tmp_path / "dbg"
+    assert cfg.OUTPUT_DIR == tmp_path / "out"
+    assert cfg.OUTPUT_EXCEL == tmp_path / "out" / "m.xlsx"
+    assert cfg.OUTPUT_DB == tmp_path / "out" / "db.sqlite"
+    assert cfg.OUTPUT_LOG == tmp_path / "out" / "log.csv"

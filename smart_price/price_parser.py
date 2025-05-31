@@ -8,6 +8,8 @@ import pytesseract
 import shutil
 from dotenv import load_dotenv
 
+from smart_price import config
+
 project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".env"))
 load_dotenv(dotenv_path=project_root)
 
@@ -57,12 +59,31 @@ def _configure_tesseract() -> None:
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Extract prices from Excel and PDF files")
-    parser.add_argument('files', nargs='*', help='Input Excel or PDF files')
-    parser.add_argument('-o', '--output', default=os.path.join('output', 'merged_prices.xlsx'), help='Output Excel file path')
-    parser.add_argument('--db', default=os.path.join('output', 'fiyat_listesi.db'), help='Output SQLite DB path')
-    parser.add_argument('--log', default=os.path.join('output', 'source_log.csv'), help='CSV log path')
-    parser.add_argument('--show-log', action='store_true', help='Display the most recent log and exit')
+    parser = argparse.ArgumentParser(
+        description="Extract prices from Excel and PDF files"
+    )
+    parser.add_argument("files", nargs="*", help="Input Excel or PDF files")
+    parser.add_argument(
+        "-o",
+        "--output",
+        default=str(config.OUTPUT_EXCEL),
+        help="Output Excel file path",
+    )
+    parser.add_argument(
+        "--db",
+        default=str(config.OUTPUT_DB),
+        help="Output SQLite DB path",
+    )
+    parser.add_argument(
+        "--log",
+        default=str(config.OUTPUT_LOG),
+        help="CSV log path",
+    )
+    parser.add_argument(
+        "--show-log",
+        action="store_true",
+        help="Display the most recent log and exit",
+    )
     return parser.parse_args()
 
 
