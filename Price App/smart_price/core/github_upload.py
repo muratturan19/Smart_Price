@@ -28,7 +28,7 @@ def _api_request(method: str, url: str, token: str, data: dict | None = None) ->
         raise
 
 
-def upload_folder(path: Path, *, remote_prefix: str = "LLM_Output_db") -> None:
+def upload_folder(path: Path, *, remote_prefix: str = "LLM_Output_db") -> bool:
     """Upload ``path`` to a GitHub repository.
 
     Parameters
@@ -45,8 +45,8 @@ def upload_folder(path: Path, *, remote_prefix: str = "LLM_Output_db") -> None:
     token = os.getenv("GITHUB_TOKEN")
     branch = os.getenv("GITHUB_BRANCH", "main")
     if not repo or not token:
-        logger.debug("GitHub repo or token not configured")
-        return
+        logger.info("GitHub repo or token not configured; skipping upload")
+        return False
 
     for file_path in path.rglob("*"):
         if not file_path.is_file():
@@ -67,4 +67,5 @@ def upload_folder(path: Path, *, remote_prefix: str = "LLM_Output_db") -> None:
             _api_request("PUT", url, token, data)
         except Exception:
             continue
+    return True
 
