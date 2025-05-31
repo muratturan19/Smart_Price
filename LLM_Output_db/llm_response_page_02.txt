@@ -1,0 +1,3 @@
+Görseldeki içerik bir ürün kataloğunun içindekiler sayfasını gösteriyor. Bu sayfada ürün kategorileri ve sayfa numaraları yer alıyor. Ancak, belirttiğiniz gibi Malzeme_Kodu ve Fiyat bilgileri içeren bir tablo bulunmuyor. Bu nedenle, bu sayfadan herhangi bir Malzeme_Kodu - Fiyat bilgisi çıkarılamaz.
+
+Eğer başka sayfalarda ürün kodları ve fiyat bilgileri içeren tablolar varsa, o sayfaların görsellerini paylaşarak yardımcı olabilirim.
