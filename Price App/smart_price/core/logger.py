@@ -2,25 +2,28 @@ import logging
 import os
 from pathlib import Path
 from dotenv import load_dotenv
+from smart_price import config
 
 project_root = Path(__file__).resolve().parent.parent / ".env"
 load_dotenv(dotenv_path=project_root)
 
 
-def init_logging(log_path: str = "smart_price.log", *, level: int | str | None = None) -> logging.Logger:
+def init_logging(log_path: str | os.PathLike[str] | None = None, *, level: int | str | None = None) -> logging.Logger:
     """Initialize application logging.
 
     Parameters
     ----------
-    log_path : str, optional
-        File name of the log. It will be created in the project root.
+    log_path : str or Path, optional
+        Path of the log file. If omitted, :data:`config.LOG_PATH` is used.
     Returns
     -------
     logging.Logger
         Configured logger instance.
     """
     root = Path(__file__).resolve().parent.parent
-    log_file = root / log_path
+    log_file = Path(log_path or config.LOG_PATH)
+    if not log_file.is_absolute():
+        log_file = root / log_file
     log_file.parent.mkdir(parents=True, exist_ok=True)
 
     logger = logging.getLogger("smart_price")
