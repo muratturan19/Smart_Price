@@ -37,12 +37,8 @@ def _configure_tesseract() -> None:
             if os.path.isdir(guess):
                 os.environ["TESSDATA_PREFIX"] = guess
     else:  # Fallback for Windows bundles/tests
-        os.environ.setdefault(
-            "TESSDATA_PREFIX", r"D:\\Program Files\\Tesseract-OCR\\tessdata"
-        )
-        pytesseract.pytesseract.tesseract_cmd = (
-            r"D:\\Program Files\\Tesseract-OCR\\tesseract.exe"
-        )
+        os.environ.setdefault("TESSDATA_PREFIX", str(config.TESSDATA_PREFIX))
+        pytesseract.pytesseract.tesseract_cmd = str(config.TESSERACT_CMD)
     try:
         langs = (
             pytesseract.get_languages(config="")

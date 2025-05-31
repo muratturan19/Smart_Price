@@ -19,6 +19,8 @@ _DEFAULT_OUTPUT_DIR = _REPO_ROOT / "output"
 _DEFAULT_OUTPUT_EXCEL = _DEFAULT_OUTPUT_DIR / "merged_prices.xlsx"
 _DEFAULT_OUTPUT_DB = _DEFAULT_OUTPUT_DIR / "fiyat_listesi.db"
 _DEFAULT_OUTPUT_LOG = _DEFAULT_OUTPUT_DIR / "source_log.csv"
+_DEFAULT_TESSERACT_CMD = Path(r"D:\\Program Files\\Tesseract-OCR\\tesseract.exe")
+_DEFAULT_TESSDATA_PREFIX = Path(r"D:\\Program Files\\Tesseract-OCR\\tessdata")
 
 # Public configuration variables (will be initialised by ``load_config``)
 MASTER_DB_PATH: Path = _DEFAULT_MASTER_DB_PATH
@@ -30,6 +32,8 @@ OUTPUT_DIR: Path = _DEFAULT_OUTPUT_DIR
 OUTPUT_EXCEL: Path = _DEFAULT_OUTPUT_EXCEL
 OUTPUT_DB: Path = _DEFAULT_OUTPUT_DB
 OUTPUT_LOG: Path = _DEFAULT_OUTPUT_LOG
+TESSERACT_CMD: Path = _DEFAULT_TESSERACT_CMD
+TESSDATA_PREFIX: Path = _DEFAULT_TESSDATA_PREFIX
 
 __all__ = [
     "MASTER_DB_PATH",
@@ -41,6 +45,8 @@ __all__ = [
     "OUTPUT_EXCEL",
     "OUTPUT_DB",
     "OUTPUT_LOG",
+    "TESSERACT_CMD",
+    "TESSDATA_PREFIX",
     "load_config",
 ]
 
@@ -62,7 +68,7 @@ def load_config() -> None:
     def _get(name: str, default: Path) -> Path:
         return Path(os.getenv(name, config.get(name, str(default))))
 
-    global MASTER_DB_PATH, IMAGE_DIR, SALES_APP_DIR, PRICE_APP_DIR, DEBUG_DIR, OUTPUT_DIR, OUTPUT_EXCEL, OUTPUT_DB, OUTPUT_LOG
+    global MASTER_DB_PATH, IMAGE_DIR, SALES_APP_DIR, PRICE_APP_DIR, DEBUG_DIR, OUTPUT_DIR, OUTPUT_EXCEL, OUTPUT_DB, OUTPUT_LOG, TESSERACT_CMD, TESSDATA_PREFIX
 
     MASTER_DB_PATH = _get("MASTER_DB_PATH", _DEFAULT_MASTER_DB_PATH)
     IMAGE_DIR = _get("IMAGE_DIR", _DEFAULT_IMAGE_DIR)
@@ -74,6 +80,8 @@ def load_config() -> None:
     OUTPUT_EXCEL = _get("OUTPUT_EXCEL", OUTPUT_DIR / "merged_prices.xlsx")
     OUTPUT_DB = _get("OUTPUT_DB", OUTPUT_DIR / "fiyat_listesi.db")
     OUTPUT_LOG = _get("OUTPUT_LOG", OUTPUT_DIR / "source_log.csv")
+    TESSERACT_CMD = _get("TESSERACT_CMD", _DEFAULT_TESSERACT_CMD)
+    TESSDATA_PREFIX = _get("TESSDATA_PREFIX", _DEFAULT_TESSDATA_PREFIX)
 
 
 # Initialise configuration on import
