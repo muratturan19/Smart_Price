@@ -3,7 +3,8 @@
 This Streamlit app provides sales staff with an easy interface to search the latest
 pricing information. The app fetches the master dataset directly from GitHub on
 startup so that users always work with the most up to date data. The dataset is
-stored in a SQLite database (`master.db`).
+downloaded as `master.db` from the configured repository and stored locally in a
+SQLite database.
 
 Run locally with:
 
