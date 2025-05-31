@@ -1,0 +1,152 @@
+```json
+[
+  {
+    "Malzeme_Kodu": "160 KY H90 D97 - 50 Ø",
+    "Fiyat": "510,00 ₺",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "300 KY H146 D225 - 50 Ø",
+    "Fiyat": "2.800,00 ₺",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "300 KY H150 D225 - 50 Ø",
+    "Fiyat": "2.800,00 ₺",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "300 KY H180 D235 - 50 Ø",
+    "Fiyat": "4.000,00 ₺",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "350 KY H187 D210 - 50 Ø",
+    "Fiyat": "3.000,00 ₺",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "400 KY H180 D240 - 50 Ø",
+    "Fiyat": "4.000,00 ₺",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "450 KY H230 D240 - 50 Ø",
+    "Fiyat": "4.900,00 ₺",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "450 KY H275 D240 - 50 Ø",
+    "Fiyat": "5.000,00 ₺",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "550 KY H230 D240 - 50 Ø",
+    "Fiyat": "6.000,00 ₺",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "550 KY H265 D360 - 50 Ø",
+    "Fiyat": "8.500,00 ₺",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "550 KY H290 D240 - 50 Ø",
+    "Fiyat": "7.500,00 ₺",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "660 KY H260 D360 - 50 Ø",
+    "Fiyat": "20.000,00 ₺",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "250 KYF H125 D180 - 50 Ø",
+    "Fiyat": "1.280,00 ₺",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "250 KYF H150 D135 - 50 Ø",
+    "Fiyat": "1.400,00 ₺",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "350 KYF H187 D270 - 50 Ø",
+    "Fiyat": "3.500,00 ₺",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "450 KYF H230 D350 - 50 Ø",
+    "Fiyat": "6.250,00 ₺",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "450 KYF H275 D350 - 50 Ø",
+    "Fiyat": "7.500,00 ₺",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "550 KYF H230 D350 - 50 Ø",
+    "Fiyat": "8.500,00 ₺",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "550 KYF H290 D350 - 50 Ø",
+    "Fiyat": "9.250,00 ₺",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "KUF-38",
+    "Fiyat": "2.200,00 ₺",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "KC 160",
+    "Açıklama": "160 mm KAMPANA CONTASI",
+    "Fiyat": "120,00 ₺",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "KC 200",
+    "Açıklama": "200 mm KAMPANA CONTASI",
+    "Fiyat": "150,00 ₺",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "KC 250",
+    "Açıklama": "250 mm KAMPANA CONTASI",
+    "Fiyat": "175,00 ₺",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "KC 300",
+    "Açıklama": "300 mm KAMPANA CONTASI",
+    "Fiyat": "200,00 ₺",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "KC 350",
+    "Açıklama": "350 mm KAMPANA CONTASI",
+    "Fiyat": "250,00 ₺",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "KC 400",
+    "Açıklama": "400 mm KAMPANA CONTASI",
+    "Fiyat": "300,00 ₺",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "KC 450",
+    "Açıklama": "450 mm KAMPANA CONTASI",
+    "Fiyat": "350,00 ₺",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "KC 550",
+    "Açıklama": "550 mm KAMPANA CONTASI",
+    "Fiyat": "450,00 ₺",
+    "Para_Birimi": "TL"
+  }
+]
+```
