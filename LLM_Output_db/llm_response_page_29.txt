@@ -1,0 +1,173 @@
+Verilen görseldeki tabloya göre, "Ürün Kodu" ve "Fiyat" başlıkları altında yer alan verileri çıkartarak JSON formatında sunuyorum. Fiyat bilgisi "Fiyat Alınız" olarak belirtilmiş, bu nedenle fiyat kısmını boş bırakıyorum ve varsayılan para birimi olarak "TL" ekliyorum.
+
+```json
+[
+  {
+    "Malzeme_Kodu": "KFC250-038",
+    "Fiyat": "",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "KFC250-012",
+    "Fiyat": "",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "KFC250-034",
+    "Fiyat": "",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "KFC250-100",
+    "Fiyat": "",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "KFC250-114",
+    "Fiyat": "",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "KFC250-116",
+    "Fiyat": "",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "KFC250-200",
+    "Fiyat": "",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "KFC250-312",
+    "Fiyat": "",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "KFC250-300",
+    "Fiyat": "",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "KFC250-314",
+    "Fiyat": "",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "KFC250-400",
+    "Fiyat": "",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "KFC250-500",
+    "Fiyat": "",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "KFC400-038",
+    "Fiyat": "",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "KFC400-012",
+    "Fiyat": "",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "KFC400-034",
+    "Fiyat": "",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "KFC400-114",
+    "Fiyat": "",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "KFC400-116",
+    "Fiyat": "",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "KFC400-200",
+    "Fiyat": "",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "KFC400-212",
+    "Fiyat": "",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "KFC400-300",
+    "Fiyat": "",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "KFC400-312",
+    "Fiyat": "",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "KFC400-400",
+    "Fiyat": "",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAER 3000/3001",
+    "Fiyat": "",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAER 3003/3004",
+    "Fiyat": "",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAER 3005/3006",
+    "Fiyat": "",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAER 3007/3008",
+    "Fiyat": "",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAER 6002/6001",
+    "Fiyat": "",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAER 6003/6002",
+    "Fiyat": "",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAER 6004/6003",
+    "Fiyat": "",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAER 6005/6004",
+    "Fiyat": "",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAER 6006/6005",
+    "Fiyat": "",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAER 6007/6006",
+    "Fiyat": "",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAER 6008/6007",
+    "Fiyat": "",
+    "Para_Birimi": "TL"
+  }
+]
+```
+
+Bu JSON çıktısı, görseldeki tabloda yer alan ürün kodlarını ve fiyat bilgilerini içermektedir. Fiyat bilgisi "Fiyat Alınız" olarak belirtildiği için fiyat kısmı boş bırakılmıştır.
