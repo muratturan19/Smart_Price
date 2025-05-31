@@ -27,6 +27,7 @@ from .common_utils import (
     safe_json_parse,
 )
 from .debug_utils import save_debug, save_debug_image, set_output_subdir
+from .github_upload import upload_folder
 
 if TYPE_CHECKING:  # pragma: no cover - type hints only
     from PIL import Image  # noqa: F401
@@ -386,6 +387,8 @@ def parse(
         object.__setattr__(df, "page_summary", page_summary)
     total_dur = time.time() - total_start
     logger.info("Finished %s with %d rows in %.2fs", pdf_path, len(df), total_dur)
+    debug_dir = Path(os.getenv("SMART_PRICE_DEBUG_DIR", "LLM_Output_db")) / output_name
     set_output_subdir(None)
+    upload_folder(debug_dir)
     return df
 

@@ -37,6 +37,7 @@ from .extract_excel import POSSIBLE_CODE_HEADERS
 from . import ocr_llm_fallback
 from pathlib import Path
 from .debug_utils import save_debug, set_output_subdir
+from .github_upload import upload_folder
 
 MIN_CODE_RATIO = 0.70
 MIN_ROWS_PARSER = 500
@@ -642,5 +643,7 @@ def extract_from_pdf(
     if hasattr(result_df, "__dict__"):
         object.__setattr__(result_df, "page_summary", page_summary)
     cleanup()
+    debug_dir = Path(os.getenv("SMART_PRICE_DEBUG_DIR", "LLM_Output_db")) / output_stem
     set_output_subdir(None)
+    upload_folder(debug_dir)
     return result_df
