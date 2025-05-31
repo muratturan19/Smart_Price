@@ -11,6 +11,7 @@ _REPO_ROOT = Path(__file__).resolve().parents[2]
 
 # Default locations matching the repository layout
 _DEFAULT_MASTER_DB_PATH = _REPO_ROOT / "Master data base" / "master.db"
+_DEFAULT_MASTER_EXCEL_PATH = _REPO_ROOT / "Master data base" / "master_dataset.xlsx"
 _DEFAULT_IMAGE_DIR = _REPO_ROOT / "images"
 _DEFAULT_SALES_APP_DIR = _REPO_ROOT / "Sales App" / "sales_app"
 _DEFAULT_PRICE_APP_DIR = _REPO_ROOT / "Price App" / "smart_price"
@@ -29,6 +30,7 @@ _DEFAULT_BASE_REPO_URL = (
 )
 
 # Public configuration variables (will be initialised by ``load_config``)
+MASTER_EXCEL_PATH: Path = _DEFAULT_MASTER_EXCEL_PATH
 MASTER_DB_PATH: Path = _DEFAULT_MASTER_DB_PATH
 IMAGE_DIR: Path = _DEFAULT_IMAGE_DIR
 SALES_APP_DIR: Path = _DEFAULT_SALES_APP_DIR
@@ -46,6 +48,7 @@ DEFAULT_DB_URL: str = f"{BASE_REPO_URL}/master.db"
 DEFAULT_IMAGE_BASE_URL: str = BASE_REPO_URL
 
 __all__ = [
+    "MASTER_EXCEL_PATH",
     "MASTER_DB_PATH",
     "IMAGE_DIR",
     "SALES_APP_DIR",
@@ -85,8 +88,9 @@ def load_config() -> None:
     def _get_str(name: str, default: str) -> str:
         return os.getenv(name, config.get(name, default))
 
-    global MASTER_DB_PATH, IMAGE_DIR, SALES_APP_DIR, PRICE_APP_DIR, DEBUG_DIR, OUTPUT_DIR, OUTPUT_EXCEL, OUTPUT_DB, OUTPUT_LOG, LOG_PATH, TESSERACT_CMD, TESSDATA_PREFIX, BASE_REPO_URL, DEFAULT_DB_URL, DEFAULT_IMAGE_BASE_URL
+    global MASTER_EXCEL_PATH, MASTER_DB_PATH, IMAGE_DIR, SALES_APP_DIR, PRICE_APP_DIR, DEBUG_DIR, OUTPUT_DIR, OUTPUT_EXCEL, OUTPUT_DB, OUTPUT_LOG, LOG_PATH, TESSERACT_CMD, TESSDATA_PREFIX, BASE_REPO_URL, DEFAULT_DB_URL, DEFAULT_IMAGE_BASE_URL
 
+    MASTER_EXCEL_PATH = _get("MASTER_EXCEL_PATH", _DEFAULT_MASTER_EXCEL_PATH)
     MASTER_DB_PATH = _get("MASTER_DB_PATH", _DEFAULT_MASTER_DB_PATH)
     IMAGE_DIR = _get("IMAGE_DIR", _DEFAULT_IMAGE_DIR)
     SALES_APP_DIR = _get("SALES_APP_DIR", _DEFAULT_SALES_APP_DIR)

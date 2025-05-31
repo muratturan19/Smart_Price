@@ -20,6 +20,7 @@ def test_defaults(monkeypatch):
     dotenv_stub.find_dotenv = lambda *_a, **_k: ''
     monkeypatch.setitem(sys.modules, 'dotenv', dotenv_stub)
     for name in (
+        "MASTER_EXCEL_PATH",
         "MASTER_DB_PATH",
         "IMAGE_DIR",
         "SALES_APP_DIR",
@@ -35,6 +36,7 @@ def test_defaults(monkeypatch):
         monkeypatch.delenv(name, raising=False)
     importlib.reload(cfg)
     root = Path(__file__).resolve().parent.parent
+    assert cfg.MASTER_EXCEL_PATH == root / "Master data base" / "master_dataset.xlsx"
     assert cfg.MASTER_DB_PATH == root / "Master data base" / "master.db"
     assert cfg.IMAGE_DIR == root / "images"
     assert cfg.SALES_APP_DIR == root / "Sales App" / "sales_app"
@@ -58,6 +60,7 @@ def test_env_and_config_overrides(tmp_path, monkeypatch):
     config_path = tmp_path / "config.json"
     config_path.write_text('{"IMAGE_DIR": "imx"}')
     monkeypatch.setattr(cfg, "_REPO_ROOT", tmp_path)
+    monkeypatch.setenv("MASTER_EXCEL_PATH", str(tmp_path / "master.xlsx"))
     monkeypatch.setenv("MASTER_DB_PATH", str(tmp_path / "db.sqlite"))
     monkeypatch.setenv("DEBUG_DIR", str(tmp_path / "dbg"))
     monkeypatch.setenv("IMAGE_DIR", str(tmp_path / "img_env"))
@@ -71,6 +74,7 @@ def test_env_and_config_overrides(tmp_path, monkeypatch):
     monkeypatch.setenv("BASE_REPO_URL", "http://example.com/repo")
     importlib.reload(cfg)
     cfg.load_config()
+    assert cfg.MASTER_EXCEL_PATH == tmp_path / "master.xlsx"
     assert cfg.MASTER_DB_PATH == tmp_path / "db.sqlite"
     assert cfg.IMAGE_DIR == tmp_path / "img_env"
     assert cfg.SALES_APP_DIR == tmp_path / "sales"
