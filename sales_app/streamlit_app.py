@@ -2,6 +2,8 @@
 import io
 import os
 import logging
+import sqlite3
+import tempfile
 
 import pandas as pd
 import requests
@@ -9,23 +11,32 @@ import streamlit as st
 
 logger = logging.getLogger("sales_app")
 
-DEFAULT_DATA_URL = (
-    "https://raw.githubusercontent.com/USERNAME/Smart_Price/master/master_dataset.xlsx"
+DEFAULT_DB_URL = (
+    "https://raw.githubusercontent.com/USERNAME/Smart_Price/master/master.db"
+)
+DEFAULT_IMAGE_BASE_URL = (
+    "https://raw.githubusercontent.com/USERNAME/Smart_Price/master"
 )
 
 
 def _load_dataset(url: str) -> pd.DataFrame:
-    """Download the Excel master dataset from ``url``."""
+    """Download the SQLite master dataset from ``url``."""
     logger.info("Fetching master data from %s", url)
     resp = requests.get(url)
     resp.raise_for_status()
-    return pd.read_excel(io.BytesIO(resp.content))
+    with tempfile.NamedTemporaryFile(suffix=".db") as tmp:
+        tmp.write(resp.content)
+        tmp.flush()
+        conn = sqlite3.connect(tmp.name)
+        df = pd.read_sql("SELECT * FROM prices", conn)
+        conn.close()
+    return df
 
 
 @st.cache_data(show_spinner=True)
 def get_master_dataset() -> pd.DataFrame:
     """Return the master dataset downloaded from GitHub."""
-    url = os.getenv("MASTER_DATA_URL", DEFAULT_DATA_URL)
+    url = os.getenv("MASTER_DB_URL", DEFAULT_DB_URL)
     try:
         df = _load_dataset(url)
     except Exception as exc:
@@ -55,6 +66,38 @@ def search_page(df: pd.DataFrame) -> None:
 
     st.write(f"{len(filtered)} kayıt bulundu")
     st.dataframe(filtered)
+
+    if not filtered.empty:
+        def _fmt(idx: int) -> str:
+            row = filtered.loc[idx]
+            return f"{row['Descriptions']} ({row['Malzeme_Kodu']})"
+
+        selected = st.selectbox(
+            "Ürün seç",
+            filtered.index,
+            format_func=_fmt,
+        )
+        record_code = filtered.loc[selected].get("Record_Code")
+        if isinstance(record_code, str) and "|" in record_code:
+            parts = record_code.split("|")
+            if len(parts) >= 2:
+                folder = parts[0]
+                try:
+                    page_num = int(parts[1])
+                except ValueError:
+                    page_num = None
+                if page_num is not None:
+                    base = os.getenv("IMAGE_BASE_URL", DEFAULT_IMAGE_BASE_URL)
+                    img_url = (
+                        f"{base}/LLM_Output_db/{folder}/"
+                        f"page_image_page_{page_num:02d}.png"
+                    )
+                    try:
+                        resp = requests.get(img_url)
+                        resp.raise_for_status()
+                        st.image(resp.content)
+                    except Exception as exc:
+                        st.error(f"Resim yüklenemedi: {exc}")
 
 
 def main() -> None:
