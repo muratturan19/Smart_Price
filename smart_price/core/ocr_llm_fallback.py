@@ -360,7 +360,14 @@ def parse(
         rows.extend(rows_out)
         page_summary.append(summary)
 
+    logger.debug(
+        "[%s] LLM Vision output: %d rows extracted from PDF",
+        pdf_path,
+        len(rows),
+    )
+
     df = pd.DataFrame(rows)
+    logger.debug("[%s] DataFrame oluşturuldu: %d satır", pdf_path, len(df))
     if hasattr(df, "columns") and "Kutu_Adedi" in getattr(df, "columns", []):
         try:
             df["Kutu_Adedi"] = df["Kutu_Adedi"].astype("string")

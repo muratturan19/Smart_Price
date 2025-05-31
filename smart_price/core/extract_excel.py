@@ -225,6 +225,7 @@ def extract_from_excel(
     if not all_data:
         return pd.DataFrame()
     combined = pd.concat(all_data, ignore_index=True)
+    logger.debug("[%s] DataFrame oluşturuldu: %d satır", src, len(combined))
     combined["Fiyat"] = combined["Fiyat_Ham"].apply(normalize_price)
     if "Kisa_Kod" not in combined.columns:
         combined["Kisa_Kod"] = None
@@ -249,4 +250,22 @@ def extract_from_excel(
         "Kaynak_Dosya",
         "Record_Code",
     ]
-    return combined[cols].dropna(subset=["Descriptions", "Fiyat"])
+    tmp_df = combined[cols].copy()
+    before_df = tmp_df.copy()
+    drop_mask = tmp_df[["Descriptions", "Fiyat"]].isna().any(axis=1)
+    dropped_preview = tmp_df[drop_mask].head().to_dict(orient="records")
+    tmp_df.dropna(subset=["Descriptions", "Fiyat"], inplace=True)
+    logger.debug(
+        "[%s] Filter sonrası: %d satır (drop edilen: %d satır)",
+        src,
+        len(tmp_df),
+        len(before_df) - len(tmp_df),
+    )
+    if len(before_df) != len(tmp_df):
+        logger.debug("[%s] Drop nedeni: subset=['Descriptions', 'Fiyat']", src)
+        logger.debug(
+            "[%s] Drop edilen ilk 5 satır: %s",
+            src,
+            dropped_preview,
+        )
+    return tmp_df
