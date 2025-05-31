@@ -839,3 +839,80 @@ def test_extract_from_pdf_llm_sets_page_added(monkeypatch):
 
     assert not df.empty
     assert len(llm_calls) == 1
+
+
+@pytest.mark.skipif(not HAS_PANDAS, reason="pandas not installed")
+def test_price_parser_db_schema(monkeypatch, tmp_path):
+    import pandas as pd
+    import sqlite3
+    import argparse
+    from smart_price import price_parser
+
+    sample_df = pd.DataFrame(
+        {
+            "Malzeme_Kodu": ["A1"],
+            "Descriptions": ["Item"],
+            "Fiyat": [10.0],
+            "Birim": ["ADET"],
+            "Kutu_Adedi": ["5"],
+            "Para_Birimi": ["TL"],
+            "Kaynak_Dosya": ["src.xlsx"],
+            "Sayfa": [1],
+            "Record_Code": ["R1"],
+            "Yil": [2024],
+            "Marka": ["Brand"],
+            "Kategori": ["Cat"],
+        }
+    )
+
+    monkeypatch.setattr(price_parser, "extract_from_excel", lambda *_args, **_kw: sample_df.copy())
+    monkeypatch.setattr(price_parser, "_configure_tesseract", lambda: None)
+    monkeypatch.setattr(pd.DataFrame, "to_excel", lambda *a, **k: None)
+
+    args = argparse.Namespace(
+        files=[str(tmp_path / "src.xlsx")],
+        output=str(tmp_path / "out.xlsx"),
+        db=str(tmp_path / "out.db"),
+        log=str(tmp_path / "out.csv"),
+        show_log=False,
+    )
+    monkeypatch.setattr(price_parser, "parse_args", lambda: args)
+
+    price_parser.main()
+
+    conn = sqlite3.connect(args.db)
+    cur = conn.cursor()
+    cur.execute("PRAGMA table_info(prices)")
+    cols = [r[1] for r in cur.fetchall()]
+    assert cols == [
+        "material_code",
+        "description",
+        "price",
+        "unit",
+        "box_count",
+        "price_currency",
+        "source_file",
+        "source_page",
+        "record_code",
+        "year",
+        "brand",
+        "category",
+    ]
+    cur.execute("SELECT * FROM prices")
+    row = cur.fetchone()
+    assert row == (
+        "A1",
+        "Item",
+        10.0,
+        "ADET",
+        "5",
+        "TL",
+        "src.xlsx",
+        1,
+        "R1",
+        2024,
+        "Brand",
+        "Cat",
+    )
+    conn.close()
+
