@@ -75,7 +75,7 @@ def test_save_master_update(tmp_path, monkeypatch):
     })
     master.to_excel(streamlit_app.get_master_dataset_path(), index=False)
 
-    old_dir = tmp_path / 'LLM_Output_db' / 'old'
+    old_dir = tmp_path / 'LLM Images' / 'old'
     old_dir.mkdir(parents=True)
 
     new = pd.DataFrame({

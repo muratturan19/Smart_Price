@@ -22,7 +22,7 @@ dependencies = [
 ]
 
 [tool.setuptools.packages.find]
-where = ["smart_price"]
+where = ["Price App", "Sales App"]
 
 
 [project.scripts]

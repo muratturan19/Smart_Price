@@ -34,11 +34,11 @@ def test_defaults(monkeypatch):
         monkeypatch.delenv(name, raising=False)
     importlib.reload(cfg)
     root = Path(__file__).resolve().parent.parent
-    assert cfg.MASTER_DB_PATH == root / "master.db"
+    assert cfg.MASTER_DB_PATH == root / "Master data base" / "master.db"
     assert cfg.IMAGE_DIR == root / "images"
-    assert cfg.SALES_APP_DIR == root / "sales_app"
-    assert cfg.PRICE_APP_DIR == root / "smart_price"
-    assert cfg.DEBUG_DIR == root / "LLM_Output_db"
+    assert cfg.SALES_APP_DIR == root / "Sales App" / "sales_app"
+    assert cfg.PRICE_APP_DIR == root / "Price App" / "smart_price"
+    assert cfg.DEBUG_DIR == root / "LLM Images"
     assert cfg.OUTPUT_DIR == root / "output"
     assert cfg.OUTPUT_EXCEL == root / "output" / "merged_prices.xlsx"
     assert cfg.OUTPUT_DB == root / "output" / "fiyat_listesi.db"
