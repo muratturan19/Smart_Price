@@ -62,6 +62,10 @@ Extract prices from files on the command line and save the merged result using t
 smart-price-parser data/list.xlsx another.pdf -o merged_prices.xlsx
 ```
 
+The parser writes its results to `output/` by default. Set `OUTPUT_DIR` to
+change this location or specify `OUTPUT_EXCEL`, `OUTPUT_DB` and `OUTPUT_LOG`
+to override each individual path.
+
 ### Running the Streamlit interface
 
 Launch the web UI locally with:
