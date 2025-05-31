@@ -87,7 +87,9 @@ records are saved.
 From the interface you can upload Excel/PDF price lists and search the
 resulting master dataset. When you save the merged data it writes both
 `Master data base/master_dataset.xlsx` and `Master data base/master.db`
-relative to the directory from which you launch the app.
+relative to the directory from which you launch the app. The success
+message shows the full paths of these files and notes whether a GitHub
+upload was attempted.
 
 ### Logging
 
@@ -116,7 +118,8 @@ The log records extra details to help trace each step:
  - set `GITHUB_REPO` and `GITHUB_TOKEN` to automatically push each debug
    directory and the files under `Master data base/` (including
    `master_dataset.xlsx` and `master.db`) to the configured repository
-   under their respective folders (optionally specify `GITHUB_BRANCH`)
+   under their respective folders (optionally specify `GITHUB_BRANCH`).
+   If these variables are not set the upload is skipped gracefully.
 
 ## Troubleshooting
 

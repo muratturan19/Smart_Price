@@ -47,7 +47,7 @@ def test_save_master_new(tmp_path, monkeypatch):
     monkeypatch.chdir(tmp_path)
     monkeypatch.setattr(streamlit_app.config, "MASTER_EXCEL_PATH", tmp_path / "master_dataset.xlsx")
     monkeypatch.setattr(streamlit_app.config, "MASTER_DB_PATH", tmp_path / "master.db")
-    monkeypatch.setattr(streamlit_app, "upload_folder", lambda *_a, **_k: None)
+    monkeypatch.setattr(streamlit_app, "upload_folder", lambda *_a, **_k: False)
     df = pd.DataFrame({
         'Malzeme_Kodu': ['A1'],
         'Descriptions': ['Item'],
@@ -56,10 +56,14 @@ def test_save_master_new(tmp_path, monkeypatch):
         'Marka': ['BrandA']
     })
 
-    path = streamlit_app.save_master_dataset(df, mode="Yeni fiyat listesi")
-    saved = pd.read_excel(path)
-    assert path == str(streamlit_app.config.MASTER_EXCEL_PATH)
-    assert Path(path) == tmp_path / "master_dataset.xlsx"
+    excel_path, db_path, uploaded = streamlit_app.save_master_dataset(
+        df, mode="Yeni fiyat listesi"
+    )
+    saved = pd.read_excel(excel_path)
+    assert not uploaded
+    assert excel_path == str(streamlit_app.config.MASTER_EXCEL_PATH)
+    assert db_path == str(streamlit_app.config.MASTER_DB_PATH)
+    assert Path(excel_path) == tmp_path / "master_dataset.xlsx"
     assert streamlit_app.config.MASTER_DB_PATH.exists()
     with sqlite3.connect(streamlit_app.config.MASTER_DB_PATH) as conn:
         rows = conn.execute("SELECT material_code, description, price, brand FROM prices").fetchall()
@@ -76,7 +80,7 @@ def test_save_master_update(tmp_path, monkeypatch):
     monkeypatch.chdir(tmp_path)
     monkeypatch.setattr(streamlit_app.config, "MASTER_EXCEL_PATH", tmp_path / "master_dataset.xlsx")
     monkeypatch.setattr(streamlit_app.config, "MASTER_DB_PATH", tmp_path / "master.db")
-    monkeypatch.setattr(streamlit_app, "upload_folder", lambda *_a, **_k: None)
+    monkeypatch.setattr(streamlit_app, "upload_folder", lambda *_a, **_k: False)
     master = pd.DataFrame({
         'Malzeme_Kodu': ['X1', 'Y1'],
         'Descriptions': ['Old', 'Keep'],
@@ -99,10 +103,14 @@ def test_save_master_update(tmp_path, monkeypatch):
         'Yil': [2024]
     })
 
-    path = streamlit_app.save_master_dataset(new, mode="Güncelleme")
-    result = pd.read_excel(path)
-    assert path == str(streamlit_app.config.MASTER_EXCEL_PATH)
-    assert Path(path) == tmp_path / "master_dataset.xlsx"
+    excel_path, db_path, uploaded = streamlit_app.save_master_dataset(
+        new, mode="Güncelleme"
+    )
+    result = pd.read_excel(excel_path)
+    assert not uploaded
+    assert excel_path == str(streamlit_app.config.MASTER_EXCEL_PATH)
+    assert db_path == str(streamlit_app.config.MASTER_DB_PATH)
+    assert Path(excel_path) == tmp_path / "master_dataset.xlsx"
     assert streamlit_app.config.MASTER_DB_PATH.exists()
     with sqlite3.connect(streamlit_app.config.MASTER_DB_PATH) as conn:
         rows = conn.execute("SELECT material_code, description FROM prices ORDER BY material_code").fetchall()
