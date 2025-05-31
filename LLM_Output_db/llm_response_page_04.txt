@@ -1,0 +1,274 @@
+```json
+[
+  {
+    "Malzeme_Kodu": "JKS19 - JAWTEX SARI PLASTİK",
+    "Fiyat": "90,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "JKS19 - İŞLENMİŞ JAWTEX TEK ÇELİK DİŞLİ",
+    "Fiyat": "450,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "JKS19 - İŞLENMİŞ JAWTEX ÇELİK TAKIM",
+    "Fiyat": "990,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "JKS28 - JAWTEX SARI PLASTİK",
+    "Fiyat": "110,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "JKS28 - İŞLENMİŞ JAWTEX TEK ÇELİK DİŞLİ",
+    "Fiyat": "630,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "JKS28 - İŞLENMİŞ JAWTEX ÇELİK TAKIM",
+    "Fiyat": "1.370,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "JKS38 - JAWTEX SARI PLASTİK",
+    "Fiyat": "180,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "JKS38 - İŞLENMİŞ JAWTEX TEK ÇELİK DİŞLİ",
+    "Fiyat": "1.150,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "JKS38 - İŞLENMİŞ JAWTEX ÇELİK TAKIM",
+    "Fiyat": "2.480,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "JKS42 - JAWTEX SARI PLASTİK",
+    "Fiyat": "260,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "JKS42 - İŞLENMİŞ JAWTEX TEK ÇELİK DİŞLİ",
+    "Fiyat": "1.450,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "JKS42 - İŞLENMİŞ JAWTEX ÇELİK TAKIM",
+    "Fiyat": "3.160,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "JKS48 - JAWTEX SARI PLASTİK",
+    "Fiyat": "380,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "JKS48 - İŞLENMİŞ JAWTEX TEK ÇELİK DİŞLİ",
+    "Fiyat": "2.300,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "JKS48 - İŞLENMİŞ JAWTEX ÇELİK TAKIM",
+    "Fiyat": "4.980,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "JKS55 - JAWTEX SARI PLASTİK",
+    "Fiyat": "460,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "JKS55 - İŞLENMİŞ JAWTEX TEK ÇELİK DİŞLİ",
+    "Fiyat": "3.600,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "JKS55 - İŞLENMİŞ JAWTEX ÇELİK TAKIM",
+    "Fiyat": "7.660,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "JKS65 - JAWTEX SARI PLASTİK",
+    "Fiyat": "640,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "JKS65 - İŞLENMİŞ JAWTEX TEK ÇELİK DİŞLİ",
+    "Fiyat": "4.250,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "JKS65 - İŞLENMİŞ JAWTEX ÇELİK TAKIM",
+    "Fiyat": "9.140,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "JKS75 - JAWTEX SARI PLASTİK",
+    "Fiyat": "1.300,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "JKS75 - İŞLENMİŞ JAWTEX TEK ÇELİK DİŞLİ",
+    "Fiyat": "8.000,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "JKS75 - İŞLENMİŞ JAWTEX ÇELİK TAKIM",
+    "Fiyat": "17.300,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "JKS90 - JAWTEX SARI PLASTİK",
+    "Fiyat": "1.600,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "JKS90 - İŞLENMİŞ JAWTEX TEK ÇELİK DİŞLİ",
+    "Fiyat": "10.000,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "JKS90 - İŞLENMİŞ JAWTEX ÇELİK TAKIM",
+    "Fiyat": "21.600,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "UJKS19 - JAWTEX SARI PLASTİK",
+    "Fiyat": "90,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "UJKS19 - İŞLENMİŞ UZUN JAWTEX TEK ÇELİK DİŞLİ",
+    "Fiyat": "650,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "UJKS19 - İŞLENMİŞ UZUN JAWTEX KOMPLE TAKIM",
+    "Fiyat": "1.390,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "UJKS28 - JAWTEX SARI PLASTİK",
+    "Fiyat": "110,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "UJKS28 - İŞLENMİŞ UZUN JAWTEX TEK ÇELİK DİŞLİ",
+    "Fiyat": "795,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "UJKS28 - İŞLENMİŞ UZUN JAWTEX KOMPLE TAKIM",
+    "Fiyat": "1.700,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "UJKS38 - JAWTEX SARI PLASTİK",
+    "Fiyat": "180,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "UJKS38 - İŞLENMİŞ UZUN JAWTEX TEK ÇELİK DİŞLİ",
+    "Fiyat": "1.300,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "UJKS38 - İŞLENMİŞ UZUN JAWTEX KOMPLE TAKIM",
+    "Fiyat": "2.480,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "UJKS42 - JAWTEX SARI PLASTİK",
+    "Fiyat": "260,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "UJKS42 - İŞLENMİŞ UZUN JAWTEX TEK ÇELİK DİŞLİ",
+    "Fiyat": "1.650,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "UJKS42 - İŞLENMİŞ UZUN JAWTEX KOMPLE TAKIM",
+    "Fiyat": "3.560,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "UJKS48 - JAWTEX SARI PLASTİK",
+    "Fiyat": "380,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "UJKS48 - İŞLENMİŞ UZUN JAWTEX TEK ÇELİK DİŞLİ",
+    "Fiyat": "2.750,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "UJKS48 - İŞLENMİŞ UZUN JAWTEX KOMPLE TAKIM",
+    "Fiyat": "5.880,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "UJKS55 - JAWTEX SARI PLASTİK",
+    "Fiyat": "460,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "UJKS55 - İŞLENMİŞ UZUN JAWTEX TEK ÇELİK DİŞLİ",
+    "Fiyat": "4.300,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "UJKS55 - İŞLENMİŞ UZUN JAWTEX KOMPLE TAKIM",
+    "Fiyat": "9.060,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "UJKS65 - JAWTEX SARI PLASTİK",
+    "Fiyat": "640,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "UJKS65 - İŞLENMİŞ UZUN JAWTEX TEK ÇELİK DİŞLİ",
+    "Fiyat": "4.900,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "UJKS65 - İŞLENMİŞ UZUN JAWTEX KOMPLE TAKIM",
+    "Fiyat": "10.540,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "UJKS75 - JAWTEX SARI PLASTİK",
+    "Fiyat": "1.300,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "UJKS75 - İŞLENMİŞ UZUN JAWTEX TEK ÇELİK DİŞLİ",
+    "Fiyat": "9.250,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "UJKS75 - İŞLENMİŞ UZUN JAWTEX KOMPLE TAKIM",
+    "Fiyat": "19.800,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "UJKS90 - JAWTEX SARI PLASTİK",
+    "Fiyat": "1.600,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "UJKS90 - İŞLENMİŞ UZUN JAWTEX TEK ÇELİK DİŞLİ",
+    "Fiyat": "12.500,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "UJKS90 - İŞLENMİŞ UZUN JAWTEX KOMPLE TAKIM",
+    "Fiyat": "26.600,00",
+    "Para_Birimi": "TL"
+  }
+]
+```
