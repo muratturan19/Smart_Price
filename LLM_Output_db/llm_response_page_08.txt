@@ -1,0 +1,199 @@
+```json
+[
+  {
+    "Malzeme_Kodu": "9 FREZE - DK24 F.",
+    "Fiyat": "300,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "9 FREZE - DK28 F.",
+    "Fiyat": "375,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "9 FREZE - DK32 F.",
+    "Fiyat": "385,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "9 FREZE - DK38 F.",
+    "Fiyat": "430,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "9 FREZE - DK42 F.",
+    "Fiyat": "450,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "9 FREZE - DK48 F.",
+    "Fiyat": "690,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "9 FREZE - DK55 F.",
+    "Fiyat": "950,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "9 FREZE - DK60 F.",
+    "Fiyat": "1.300,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "8 FREZE - DK24 F.",
+    "Fiyat": "300,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "8 FREZE - DK28 F.",
+    "Fiyat": "375,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "8 FREZE - DK32 F.",
+    "Fiyat": "385,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "8 FREZE - DK38 F.",
+    "Fiyat": "430,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "8 FREZE - DK42 F.",
+    "Fiyat": "450,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "8 FREZE - DK48 F.",
+    "Fiyat": "690,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "8 FREZE - DK55 F.",
+    "Fiyat": "950,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "8 FREZE - DK60 F.",
+    "Fiyat": "1.270,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "HDP30-13 FREZE - DK24 F.",
+    "Fiyat": "275,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "HDP30-13 FREZE - DK28 F.",
+    "Fiyat": "350,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "HDP30-13 FREZE - DK32 F.",
+    "Fiyat": "360,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "HDP30-13 FREZE - DK38 F.",
+    "Fiyat": "390,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "HDP30-13 FREZE - DK42 F.",
+    "Fiyat": "410,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "HDP30-13 FREZE - DK48 F.",
+    "Fiyat": "670,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "HDP30-13 FREZE - DK55 F.",
+    "Fiyat": "920,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "HDP30-13 FREZE - DK60 F.",
+    "Fiyat": "1.270,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "LVPR30-13 FREZE - DK24 F.",
+    "Fiyat": "275,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "LVPR30-13 FREZE - DK28 F.",
+    "Fiyat": "350,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "LVPR30-13 FREZE - DK32 F.",
+    "Fiyat": "360,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "LVPR30-13 FREZE - DK38 F.",
+    "Fiyat": "390,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "LVPR30-13 FREZE - DK42 F.",
+    "Fiyat": "410,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "LVPR30-13 FREZE - DK48 F.",
+    "Fiyat": "670,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "LVPR30-13 FREZE - DK55 F.",
+    "Fiyat": "920,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "LVPR30-13 FREZE - DK60 F.",
+    "Fiyat": "1.270,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "HICSS-14 FREZE - DK28 F.",
+    "Fiyat": "380,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "HICSS-14 FREZE - DK32 F.",
+    "Fiyat": "390,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "HICSS-14 FREZE - DK38 F.",
+    "Fiyat": "410,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "HICSS-14 FREZE - DK42 F.",
+    "Fiyat": "440,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "HICSS-14 FREZE - DK48 F.",
+    "Fiyat": "650,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "HICSS-14 FREZE - DK55 F.",
+    "Fiyat": "950,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "HICSS-14 FREZE - DK60 F.",
+    "Fiyat": "1.270,00",
+    "Para_Birimi": "TL"
+  }
+]
+```
