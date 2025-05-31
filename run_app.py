@@ -1,11 +1,16 @@
 import os
 import sys
 import pathlib
-from dotenv import load_dotenv
+try:
+    from dotenv import load_dotenv, find_dotenv
+except ImportError:  # pragma: no cover - support missing find_dotenv
+    from dotenv import load_dotenv
+
+    def find_dotenv() -> str:
+        return ""
 from streamlit.web import cli as stcli
 
-project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), ".env"))
-load_dotenv(dotenv_path=project_root)
+load_dotenv(dotenv_path=find_dotenv())
 
 if __name__ == "__main__":
     pkg_root = pathlib.Path(__file__).parent

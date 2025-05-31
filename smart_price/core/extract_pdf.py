@@ -12,12 +12,18 @@ import unicodedata
 import pandas as pd
 import pdfplumber
 import time
-from dotenv import load_dotenv
+try:
+    from dotenv import load_dotenv, find_dotenv
+except ImportError:  # pragma: no cover - support missing find_dotenv
+    from dotenv import load_dotenv
+
+    def find_dotenv() -> str:
+        return ""
 
 try:
-    load_dotenv("../..")
+    load_dotenv(dotenv_path=find_dotenv())
 except TypeError:  # pragma: no cover - allow stub without args
-    load_dotenv()
+    load_dotenv(dotenv_path=find_dotenv())
 
 # Optional OCR dependencies are imported lazily within extract_from_pdf
 import re

@@ -7,12 +7,18 @@ import time
 import threading
 from concurrent.futures import ThreadPoolExecutor
 from typing import Iterable, Sequence, TYPE_CHECKING
-from dotenv import load_dotenv
+try:
+    from dotenv import load_dotenv, find_dotenv
+except ImportError:  # pragma: no cover - support missing find_dotenv
+    from dotenv import load_dotenv
+
+    def find_dotenv() -> str:
+        return ""
 
 try:
-    load_dotenv("../..")
+    load_dotenv(dotenv_path=find_dotenv())
 except TypeError:  # pragma: no cover - allow stub without args
-    load_dotenv()
+    load_dotenv(dotenv_path=find_dotenv())
 
 import pandas as pd
 
