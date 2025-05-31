@@ -120,9 +120,12 @@ def main() -> None:
             material_code TEXT,
             description TEXT,
             price REAL,
+            unit TEXT,
+            box_count TEXT,
             price_currency TEXT,
             source_file TEXT,
             source_page INTEGER,
+            record_code TEXT,
             year INTEGER,
             brand TEXT,
             category TEXT
@@ -133,15 +136,50 @@ def main() -> None:
                 "Malzeme_Kodu": "material_code",
                 "Descriptions": "description",
                 "Fiyat": "price",
+                "Birim": "unit",
+                "Kutu_Adedi": "box_count",
                 "Para_Birimi": "price_currency",
                 "Kaynak_Dosya": "source_file",
                 "Sayfa": "source_page",
+                "Record_Code": "record_code",
                 "Yil": "year",
                 "Marka": "brand",
                 "Kategori": "category",
             },
             inplace=True,
         )
+        for col in [
+            "material_code",
+            "description",
+            "price",
+            "unit",
+            "box_count",
+            "price_currency",
+            "source_file",
+            "source_page",
+            "record_code",
+            "year",
+            "brand",
+            "category",
+        ]:
+            if col not in master.columns:
+                master[col] = None
+        master = master[
+            [
+                "material_code",
+                "description",
+                "price",
+                "unit",
+                "box_count",
+                "price_currency",
+                "source_file",
+                "source_page",
+                "record_code",
+                "year",
+                "brand",
+                "category",
+            ]
+        ]
         master.to_sql("prices", conn, if_exists="replace", index=False)
     conn.close()
     logger.info("Database written to %s", args.db)
