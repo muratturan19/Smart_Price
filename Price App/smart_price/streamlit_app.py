@@ -264,7 +264,7 @@ def save_master_dataset(df: pd.DataFrame, mode: str = "Yeni fiyat listesi") -> s
         db_df.to_sql("prices", conn, if_exists="replace", index=False)
     conn.close()
 
-    upload_folder(Path(excel_path).parent)
+    upload_folder(Path(config.MASTER_EXCEL_PATH).parent, remote_prefix="Master data base")
 
     return excel_path
 
