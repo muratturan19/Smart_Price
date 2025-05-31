@@ -16,6 +16,7 @@ from typing import Callable, Optional
 
 from smart_price.core.extract_excel import extract_from_excel
 from smart_price.core.extract_pdf import extract_from_pdf, MIN_CODE_RATIO
+from smart_price import config
 from smart_price.core.logger import init_logging
 
 logger = logging.getLogger("smart_price")
@@ -64,17 +65,9 @@ def resource_path(relative: str) -> str:
     return str(Path(base_path) / relative)
 
 
-DATA_FILE = "master_dataset.xlsx"
-
-
 def get_master_dataset_path() -> str:
-    """Locate master dataset either next to the executable or inside bundle."""
-    if os.path.exists(DATA_FILE):
-        return DATA_FILE
-    bundled = resource_path(DATA_FILE)
-    if os.path.exists(bundled):
-        return bundled
-    return DATA_FILE
+    """Return the configured master dataset path."""
+    return str(config.MASTER_DB_PATH)
 
 
 def extract_from_excel_file(
@@ -172,7 +165,7 @@ def merge_files(
 
 def save_master_dataset(df: pd.DataFrame, mode: str = "Yeni fiyat listesi") -> str:
     """Save ``df`` into the master dataset file handling update logic."""
-    data_path = os.path.abspath(get_master_dataset_path())
+    data_path = os.path.abspath(str(config.MASTER_DB_PATH))
     existing = pd.DataFrame()
     if os.path.exists(data_path):
         try:
