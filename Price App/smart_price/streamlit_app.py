@@ -11,6 +11,7 @@ import io
 import sys
 import pytesseract
 import shutil
+import sqlite3
 from pathlib import Path
 from typing import Callable, Optional
 
@@ -18,6 +19,7 @@ from smart_price.core.extract_excel import extract_from_excel
 from smart_price.core.extract_pdf import extract_from_pdf, MIN_CODE_RATIO
 from smart_price import config
 from smart_price.core.logger import init_logging
+from smart_price.core.github_upload import upload_folder
 
 logger = logging.getLogger("smart_price")
 
@@ -63,7 +65,7 @@ def resource_path(relative: str) -> str:
 
 def get_master_dataset_path() -> str:
     """Return the configured master dataset path."""
-    return str(config.MASTER_DB_PATH)
+    return str(config.MASTER_EXCEL_PATH)
 
 
 def extract_from_excel_file(
@@ -161,11 +163,13 @@ def merge_files(
 
 def save_master_dataset(df: pd.DataFrame, mode: str = "Yeni fiyat listesi") -> str:
     """Save ``df`` into the master dataset file handling update logic."""
-    data_path = os.path.abspath(str(config.MASTER_DB_PATH))
+    excel_path = os.path.abspath(str(config.MASTER_EXCEL_PATH))
+    db_path = os.path.abspath(str(config.MASTER_DB_PATH))
+    os.makedirs(os.path.dirname(excel_path), exist_ok=True)
     existing = pd.DataFrame()
-    if os.path.exists(data_path):
+    if os.path.exists(excel_path):
         try:
-            existing = pd.read_excel(data_path)
+            existing = pd.read_excel(excel_path)
         except Exception as exc:  # pragma: no cover - read failures
             logger.error("Failed to read master dataset: %s", exc)
             existing = pd.DataFrame()
@@ -187,8 +191,82 @@ def save_master_dataset(df: pd.DataFrame, mode: str = "Yeni fiyat listesi") -> s
                         logger.debug("LLM output cleanup failed for %s: %s", folder, exc)
 
     merged = pd.concat([existing, df], ignore_index=True)
-    merged.to_excel(data_path, index=False)
-    return data_path
+    merged.to_excel(excel_path, index=False)
+
+    conn = sqlite3.connect(db_path)
+    with conn:
+        conn.execute(
+            """CREATE TABLE IF NOT EXISTS prices (
+            material_code TEXT,
+            description TEXT,
+            price REAL,
+            unit TEXT,
+            box_count TEXT,
+            price_currency TEXT,
+            source_file TEXT,
+            source_page INTEGER,
+            record_code TEXT,
+            year INTEGER,
+            brand TEXT,
+            category TEXT
+            )"""
+        )
+        db_df = merged.copy()
+        db_df.rename(
+            columns={
+                "Malzeme_Kodu": "material_code",
+                "Descriptions": "description",
+                "Fiyat": "price",
+                "Birim": "unit",
+                "Kutu_Adedi": "box_count",
+                "Para_Birimi": "price_currency",
+                "Kaynak_Dosya": "source_file",
+                "Sayfa": "source_page",
+                "Record_Code": "record_code",
+                "Yil": "year",
+                "Marka": "brand",
+                "Kategori": "category",
+            },
+            inplace=True,
+        )
+        for col in [
+            "material_code",
+            "description",
+            "price",
+            "unit",
+            "box_count",
+            "price_currency",
+            "source_file",
+            "source_page",
+            "record_code",
+            "year",
+            "brand",
+            "category",
+        ]:
+            if col not in db_df.columns:
+                db_df[col] = None
+        db_df = db_df[
+            [
+                "material_code",
+                "description",
+                "price",
+                "unit",
+                "box_count",
+                "price_currency",
+                "source_file",
+                "source_page",
+                "record_code",
+                "year",
+                "brand",
+                "category",
+            ]
+        ]
+        db_df.to_sql("prices", conn, if_exists="replace", index=False)
+    conn.close()
+
+    upload_folder(Path(excel_path).parent)
+
+    return excel_path
 
 
 def upload_page():

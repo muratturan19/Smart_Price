@@ -1,6 +1,7 @@
 import os
 import sys
 import types
+from pathlib import Path
 import pytest
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
@@ -43,7 +44,8 @@ def test_save_master_new(tmp_path, monkeypatch):
     import pandas as pd
 
     monkeypatch.chdir(tmp_path)
-    monkeypatch.setattr(streamlit_app.config, "MASTER_DB_PATH", tmp_path / "master_dataset.xlsx")
+    monkeypatch.setattr(streamlit_app.config, "MASTER_EXCEL_PATH", tmp_path / "master_dataset.xlsx")
+    monkeypatch.setattr(streamlit_app.config, "MASTER_DB_PATH", tmp_path / "master.db")
     df = pd.DataFrame({
         'Malzeme_Kodu': ['A1'],
         'Descriptions': ['Item'],
@@ -54,6 +56,8 @@ def test_save_master_new(tmp_path, monkeypatch):
 
     path = streamlit_app.save_master_dataset(df, mode="Yeni fiyat listesi")
     saved = pd.read_excel(path)
+    assert Path(path) == tmp_path / "master_dataset.xlsx"
+    assert (tmp_path / "master.db").exists()
     assert len(saved) == 1
     assert saved.iloc[0]['Malzeme_Kodu'] == 'A1'
 
@@ -64,7 +68,8 @@ def test_save_master_update(tmp_path, monkeypatch):
     import pandas as pd
 
     monkeypatch.chdir(tmp_path)
-    monkeypatch.setattr(streamlit_app.config, "MASTER_DB_PATH", tmp_path / "master_dataset.xlsx")
+    monkeypatch.setattr(streamlit_app.config, "MASTER_EXCEL_PATH", tmp_path / "master_dataset.xlsx")
+    monkeypatch.setattr(streamlit_app.config, "MASTER_DB_PATH", tmp_path / "master.db")
     master = pd.DataFrame({
         'Malzeme_Kodu': ['X1', 'Y1'],
         'Descriptions': ['Old', 'Keep'],
@@ -89,6 +94,8 @@ def test_save_master_update(tmp_path, monkeypatch):
 
     path = streamlit_app.save_master_dataset(new, mode="Güncelleme")
     result = pd.read_excel(path)
+    assert Path(path) == tmp_path / "master_dataset.xlsx"
+    assert (tmp_path / "master.db").exists()
     assert len(result) == 2
     assert 'old.xlsx' not in result[result['Descriptions'] == 'Old']['Kaynak_Dosya'].values
     assert not old_dir.exists()
