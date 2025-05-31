@@ -1,0 +1,114 @@
+```json
+[
+  {
+    "Malzeme_Kodu": "YK65 01 - Takım Fiyatı",
+    "Fiyat": "380,00 ₺",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "YK65 02 - Lastik Fiyatı",
+    "Fiyat": "75,00 ₺",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "YK80 01 - Takım Fiyatı",
+    "Fiyat": "485,00 ₺",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "YK80 02 - Lastik Fiyatı",
+    "Fiyat": "87,00 ₺",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "YK95 01 - Takım Fiyatı",
+    "Fiyat": "655,00 ₺",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "YK95 02 - Lastik Fiyatı",
+    "Fiyat": "105,00 ₺",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "YK110 01 - Takım Fiyatı",
+    "Fiyat": "890,00 ₺",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "YK110 02 - Lastik Fiyatı",
+    "Fiyat": "140,00 ₺",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "YK125 01 - Takım Fiyatı",
+    "Fiyat": "1.330,00 ₺",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "YK125 02 - Lastik Fiyatı",
+    "Fiyat": "175,00 ₺",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "YK140 01 - Takım Fiyatı",
+    "Fiyat": "1.410,00 ₺",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "YK140 02 - Lastik Fiyatı",
+    "Fiyat": "255,00 ₺",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "YK160 01 - Takım Fiyatı",
+    "Fiyat": "2.360,00 ₺",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "YK160 02 - Lastik Fiyatı",
+    "Fiyat": "380,00 ₺",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "YK180 01 - Takım Fiyatı",
+    "Fiyat": "2.950,00 ₺",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "YK180 02 - Lastik Fiyatı",
+    "Fiyat": "415,00 ₺",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "YK200 01 - Takım Fiyatı",
+    "Fiyat": "3.400,00 ₺",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "YK200 02 - Lastik Fiyatı",
+    "Fiyat": "505,00 ₺",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "YK225 01 - Takım Fiyatı",
+    "Fiyat": "4.900,00 ₺",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "YK225 02 - Lastik Fiyatı",
+    "Fiyat": "675,00 ₺",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "YK250 01 - Takım Fiyatı",
+    "Fiyat": "5.750,00 ₺",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "YK250 02 - Lastik Fiyatı",
+    "Fiyat": "775,00 ₺",
+    "Para_Birimi": "TL"
+  }
+]
+```
