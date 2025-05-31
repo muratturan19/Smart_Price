@@ -147,13 +147,66 @@ def merge_files(
         update_status("Tamamlandı")
 
     master = pd.concat(extracted, ignore_index=True)
+    logger.debug("[merge] Raw merged rows: %d", len(master))
+    drop_mask = master[["Descriptions", "Fiyat"]].isna().any(axis=1)
+    dropped_preview = master[drop_mask].head().to_dict(orient="records")
+    before_len = len(master)
     master.dropna(subset=["Descriptions", "Fiyat"], inplace=True)
+    logger.debug(
+        "[merge] Filter sonrası: %d satır (drop edilen: %d satır)",
+        len(master),
+        before_len - len(master),
+    )
+    if before_len != len(master):
+        logger.debug("[merge] Drop nedeni: subset=['Descriptions', 'Fiyat']")
+        logger.debug("[merge] Drop edilen ilk 5 satır: %s", dropped_preview)
     master["Descriptions"] = master["Descriptions"].astype(str).str.strip().str.upper()
+    before_len = len(master)
+    empty_preview = master[master["Descriptions"] == ""].head().to_dict(orient="records")
     master = master[master["Descriptions"] != ""]
+    if before_len != len(master):
+        logger.debug(
+            "[merge] Filter sonrası: %d satır (drop edilen: %d satır)",
+            len(master),
+            before_len - len(master),
+        )
+        logger.debug("[merge] Drop nedeni: boş Description")
+        logger.debug("[merge] Drop edilen ilk 5 satır: %s", empty_preview)
     master["Fiyat"] = pd.to_numeric(master["Fiyat"], errors="coerce")
+    before_len = len(master)
+    fiyat_na_preview = master[master["Fiyat"].isna()].head().to_dict(orient="records")
     master.dropna(subset=["Fiyat"], inplace=True)
+    if before_len != len(master):
+        logger.debug(
+            "[merge] Filter sonrası: %d satır (drop edilen: %d satır)",
+            len(master),
+            before_len - len(master),
+        )
+        logger.debug("[merge] Drop nedeni: Fiyat NaN")
+        logger.debug("[merge] Drop edilen ilk 5 satır: %s", fiyat_na_preview)
+    before_len = len(master)
+    dup_mask = master.duplicated(subset=["Malzeme_Kodu", "Fiyat"], keep="last")
+    dup_preview = master[dup_mask].head().to_dict(orient="records")
     master.drop_duplicates(subset=["Malzeme_Kodu", "Fiyat"], keep="last", inplace=True)
+    logger.debug("[merge] Deduplication: subset=['Malzeme_Kodu', 'Fiyat']")
+    if before_len != len(master):
+        logger.debug(
+            "[merge] Filter sonrası: %d satır (drop edilen: %d satır)",
+            len(master),
+            before_len - len(master),
+        )
+        logger.debug("[merge] Drop edilen ilk 5 satır: %s", dup_preview)
+    before_len = len(master)
+    low_price_preview = master[master["Fiyat"] <= 0.01].head().to_dict(orient="records")
     master = master[master["Fiyat"] > 0.01]
+    if before_len != len(master):
+        logger.debug(
+            "[merge] Filter sonrası: %d satır (drop edilen: %d satır)",
+            len(master),
+            before_len - len(master),
+        )
+        logger.debug("[merge] Drop nedeni: Fiyat > 0.01")
+        logger.debug("[merge] Drop edilen ilk 5 satır: %s", low_price_preview)
     master.sort_values(by="Descriptions", inplace=True)
     if "Kisa_Kod" in master.columns:
         master["Kisa_Kod"] = master["Kisa_Kod"].astype(str)

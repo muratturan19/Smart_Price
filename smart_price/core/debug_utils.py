@@ -60,3 +60,29 @@ def save_debug_image(prefix: str, page: int, image: Image.Image) -> Optional[Pat
     except Exception as exc:  # pragma: no cover - debug file failures
         logger.debug("debug image write failed for %s: %s", file_path, exc)
     return file_path
+
+
+def log_row_change(
+    file: str,
+    step: str,
+    before_df,
+    after_df,
+    *,
+    reason: str,
+) -> None:
+    """Log row counts before and after a transformation."""
+    before = len(before_df)
+    after = len(after_df)
+    dropped = before - after
+    logger.debug(
+        f"[{file}] {step} sonrası: {after} satır (drop edilen: {dropped} satır)"
+    )
+    logger.debug(f"[{file}] Drop nedeni: {reason}")
+    if dropped > 0:
+        try:
+            diff = before_df.loc[~before_df.index.isin(after_df.index)]
+            logger.debug(
+                f"[{file}] Drop edilen ilk 5 satır: {diff.head().to_dict(orient='records')}"
+            )
+        except Exception as exc:
+            logger.debug(f"[{file}] Dropped rows logging failed: {exc}")

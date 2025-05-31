@@ -350,6 +350,13 @@ def extract_from_pdf(
                     page_range,
                     output_name=output_stem if tmp_for_llm else None,
                 )
+                logger.debug("[%s] Extraction method: Forced LLM", src)
+                logger.debug(
+                    "[%s] LLM Vision output: %d rows extracted from PDF",
+                    src,
+                    len(result),
+                )
+                logger.debug("[%s] DataFrame oluşturuldu: %d satır", src, len(result))
                 duration = time.time() - total_start
                 notify(
                     f"Finished {src} via LLM with {len(result)} rows in {duration:.2f}s"
@@ -530,6 +537,15 @@ def extract_from_pdf(
             page_range,
             output_name=output_stem if tmp_for_llm else None,
         )
+        logger.debug(
+            "[%s] Extraction method: LLM Vision", src
+        )
+        logger.debug(
+            "[%s] LLM Vision output: %d rows extracted from PDF",
+            src,
+            len(result),
+        )
+        logger.debug("[%s] DataFrame oluşturuldu: %d satır", src, len(result))
         duration = time.time() - total_start
         notify(
             f"Finished {src} via LLM with {len(result)} rows in {duration:.2f}s"
@@ -537,6 +553,8 @@ def extract_from_pdf(
         cleanup()
         return result
     df = pd.DataFrame(data)
+    logger.debug("[%s] Extraction method: Phase-1", src)
+    logger.debug("[%s] DataFrame oluşturuldu: %d satır", src, len(df))
     if not df.empty:
         codes, descs = zip(*df["Malzeme_Adi"].map(split_code_description))
         df["Malzeme_Adi"] = list(descs)
@@ -556,6 +574,13 @@ def extract_from_pdf(
             page_range,
             output_name=output_stem if tmp_for_llm else None,
         )
+        logger.debug("[%s] Extraction method: LLM Vision", src)
+        logger.debug(
+            "[%s] LLM Vision output: %d rows extracted from PDF",
+            src,
+            len(result),
+        )
+        logger.debug("[%s] DataFrame oluşturuldu: %d satır", src, len(result))
         duration = time.time() - total_start
         notify(
             f"Finished {src} via LLM with {len(result)} rows in {duration:.2f}s"
@@ -593,7 +618,25 @@ def extract_from_pdf(
         "Kaynak_Dosya",
         "Record_Code",
     ]
-    result_df = df[cols].dropna(subset=["Descriptions", "Fiyat"])
+    tmp_df = df[cols].copy()
+    before_df = tmp_df.copy()
+    drop_mask = tmp_df[["Descriptions", "Fiyat"]].isna().any(axis=1)
+    dropped_preview = tmp_df[drop_mask].head().to_dict(orient="records")
+    tmp_df.dropna(subset=["Descriptions", "Fiyat"], inplace=True)
+    logger.debug(
+        "[%s] Filter sonrası: %d satır (drop edilen: %d satır)",
+        src,
+        len(tmp_df),
+        len(before_df) - len(tmp_df),
+    )
+    if len(before_df) != len(tmp_df):
+        logger.debug("[%s] Drop nedeni: subset=['Descriptions', 'Fiyat']", src)
+        logger.debug(
+            "[%s] Drop edilen ilk 5 satır: %s",
+            src,
+            dropped_preview,
+        )
+    result_df = tmp_df
     duration = time.time() - total_start
     notify(f"Finished {src} with {len(result_df)} items in {duration:.2f}s")
     if hasattr(result_df, "__dict__"):
