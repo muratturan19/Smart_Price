@@ -43,6 +43,7 @@ def test_save_master_new(tmp_path, monkeypatch):
     import pandas as pd
 
     monkeypatch.chdir(tmp_path)
+    monkeypatch.setattr(streamlit_app.config, "MASTER_DB_PATH", tmp_path / "master_dataset.xlsx")
     df = pd.DataFrame({
         'Malzeme_Kodu': ['A1'],
         'Descriptions': ['Item'],
@@ -63,6 +64,7 @@ def test_save_master_update(tmp_path, monkeypatch):
     import pandas as pd
 
     monkeypatch.chdir(tmp_path)
+    monkeypatch.setattr(streamlit_app.config, "MASTER_DB_PATH", tmp_path / "master_dataset.xlsx")
     master = pd.DataFrame({
         'Malzeme_Kodu': ['X1', 'Y1'],
         'Descriptions': ['Old', 'Keep'],
