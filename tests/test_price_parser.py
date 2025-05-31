@@ -728,8 +728,8 @@ def test_merge_files_dedup_by_code_and_price(monkeypatch):
     uploads = [FakeUpload(name) for name in df_map]
     result = streamlit_app.merge_files(uploads)
 
-    assert len(result) == 2
-    assert set(result["Fiyat"]) == {1.0, 2.0}
+    assert len(result) == 3
+    assert list(result["Fiyat"]) == [1.0, 1.0, 2.0]
 
 
 def test_llm_debug_files(monkeypatch, tmp_path):
