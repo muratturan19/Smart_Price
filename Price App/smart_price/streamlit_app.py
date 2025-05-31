@@ -262,7 +262,7 @@ PAGES = {
 
 
 def main():
-    init_logging()
+    init_logging(config.LOG_PATH)
     _configure_tesseract()
     st.sidebar.title("Smart Price")
     choice = st.sidebar.radio("Seçim", list(PAGES.keys()))
@@ -272,7 +272,7 @@ def main():
 
 def cli() -> None:
     """Entry point to launch the Streamlit application."""
-    init_logging()
+    init_logging(config.LOG_PATH)
     _configure_tesseract()
     from streamlit.web import cli as stcli
     sys.argv = ["streamlit", "run", __file__]

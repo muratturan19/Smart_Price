@@ -85,7 +85,7 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> None:
     args = parse_args()
-    init_logging()
+    init_logging(config.LOG_PATH)
     if args.show_log:
         log_file = os.path.join(os.getcwd(), "smart_price.log")
         try:
