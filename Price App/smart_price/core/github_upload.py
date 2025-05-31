@@ -28,8 +28,15 @@ def _api_request(method: str, url: str, token: str, data: dict | None = None) ->
         raise
 
 
-def upload_folder(path: Path) -> None:
-    """Upload ``path`` to a GitHub repository under ``LLM_Output_db``.
+def upload_folder(path: Path, *, remote_prefix: str = "LLM_Output_db") -> None:
+    """Upload ``path`` to a GitHub repository.
+
+    Parameters
+    ----------
+    path : :class:`~pathlib.Path`
+        Local directory to upload.
+    remote_prefix : str, optional
+        Directory name created in the repository, by default ``"LLM_Output_db"``.
 
     Requires ``GITHUB_REPO`` and ``GITHUB_TOKEN`` environment variables. Set
     ``GITHUB_BRANCH`` to push to a branch other than ``main``.
@@ -44,7 +51,7 @@ def upload_folder(path: Path) -> None:
     for file_path in path.rglob("*"):
         if not file_path.is_file():
             continue
-        repo_path = Path("LLM_Output_db") / file_path.relative_to(path)
+        repo_path = Path(remote_prefix) / file_path.relative_to(path)
         url = f"https://api.github.com/repos/{repo}/contents/{repo_path.as_posix()}"
         with open(file_path, "rb") as fh:
             content = base64.b64encode(fh.read()).decode("ascii")
