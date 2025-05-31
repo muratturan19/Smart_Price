@@ -9,14 +9,9 @@ import pandas as pd
 import requests
 import streamlit as st
 
-logger = logging.getLogger("sales_app")
+from smart_price.config import DEFAULT_DB_URL, DEFAULT_IMAGE_BASE_URL
 
-DEFAULT_DB_URL = (
-    "https://raw.githubusercontent.com/USERNAME/Smart_Price/master/master.db"
-)
-DEFAULT_IMAGE_BASE_URL = (
-    "https://raw.githubusercontent.com/USERNAME/Smart_Price/master"
-)
+logger = logging.getLogger("sales_app")
 
 
 def _load_dataset(url: str) -> pd.DataFrame:

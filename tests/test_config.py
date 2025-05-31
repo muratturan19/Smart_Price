@@ -29,6 +29,7 @@ def test_defaults(monkeypatch):
         "OUTPUT_EXCEL",
         "OUTPUT_DB",
         "OUTPUT_LOG",
+        "BASE_REPO_URL",
     ):
         monkeypatch.delenv(name, raising=False)
     importlib.reload(cfg)
@@ -42,6 +43,9 @@ def test_defaults(monkeypatch):
     assert cfg.OUTPUT_EXCEL == root / "output" / "merged_prices.xlsx"
     assert cfg.OUTPUT_DB == root / "output" / "fiyat_listesi.db"
     assert cfg.OUTPUT_LOG == root / "output" / "source_log.csv"
+    assert cfg.BASE_REPO_URL.endswith("Smart_Price/master")
+    assert cfg.DEFAULT_DB_URL == f"{cfg.BASE_REPO_URL}/master.db"
+    assert cfg.DEFAULT_IMAGE_BASE_URL == cfg.BASE_REPO_URL
 
 
 def test_env_and_config_overrides(tmp_path, monkeypatch):
@@ -61,6 +65,7 @@ def test_env_and_config_overrides(tmp_path, monkeypatch):
     monkeypatch.setenv("OUTPUT_EXCEL", str(tmp_path / "out" / "m.xlsx"))
     monkeypatch.setenv("OUTPUT_DB", str(tmp_path / "out" / "db.sqlite"))
     monkeypatch.setenv("OUTPUT_LOG", str(tmp_path / "out" / "log.csv"))
+    monkeypatch.setenv("BASE_REPO_URL", "http://example.com/repo")
     importlib.reload(cfg)
     cfg.load_config()
     assert cfg.MASTER_DB_PATH == tmp_path / "db.sqlite"
@@ -72,3 +77,6 @@ def test_env_and_config_overrides(tmp_path, monkeypatch):
     assert cfg.OUTPUT_EXCEL == tmp_path / "out" / "m.xlsx"
     assert cfg.OUTPUT_DB == tmp_path / "out" / "db.sqlite"
     assert cfg.OUTPUT_LOG == tmp_path / "out" / "log.csv"
+    assert cfg.BASE_REPO_URL == "http://example.com/repo"
+    assert cfg.DEFAULT_DB_URL == "http://example.com/repo/master.db"
+    assert cfg.DEFAULT_IMAGE_BASE_URL == "http://example.com/repo"

@@ -22,6 +22,11 @@ _DEFAULT_OUTPUT_LOG = _DEFAULT_OUTPUT_DIR / "source_log.csv"
 _DEFAULT_TESSERACT_CMD = Path(r"D:\\Program Files\\Tesseract-OCR\\tesseract.exe")
 _DEFAULT_TESSDATA_PREFIX = Path(r"D:\\Program Files\\Tesseract-OCR\\tessdata")
 
+# Default remote repository for the public demo data
+_DEFAULT_BASE_REPO_URL = (
+    "https://raw.githubusercontent.com/USERNAME/Smart_Price/master"
+)
+
 # Public configuration variables (will be initialised by ``load_config``)
 MASTER_DB_PATH: Path = _DEFAULT_MASTER_DB_PATH
 IMAGE_DIR: Path = _DEFAULT_IMAGE_DIR
@@ -34,6 +39,9 @@ OUTPUT_DB: Path = _DEFAULT_OUTPUT_DB
 OUTPUT_LOG: Path = _DEFAULT_OUTPUT_LOG
 TESSERACT_CMD: Path = _DEFAULT_TESSERACT_CMD
 TESSDATA_PREFIX: Path = _DEFAULT_TESSDATA_PREFIX
+BASE_REPO_URL: str = _DEFAULT_BASE_REPO_URL
+DEFAULT_DB_URL: str = f"{BASE_REPO_URL}/master.db"
+DEFAULT_IMAGE_BASE_URL: str = BASE_REPO_URL
 
 __all__ = [
     "MASTER_DB_PATH",
@@ -47,6 +55,9 @@ __all__ = [
     "OUTPUT_LOG",
     "TESSERACT_CMD",
     "TESSDATA_PREFIX",
+    "BASE_REPO_URL",
+    "DEFAULT_DB_URL",
+    "DEFAULT_IMAGE_BASE_URL",
     "load_config",
 ]
 
@@ -68,7 +79,10 @@ def load_config() -> None:
     def _get(name: str, default: Path) -> Path:
         return Path(os.getenv(name, config.get(name, str(default))))
 
-    global MASTER_DB_PATH, IMAGE_DIR, SALES_APP_DIR, PRICE_APP_DIR, DEBUG_DIR, OUTPUT_DIR, OUTPUT_EXCEL, OUTPUT_DB, OUTPUT_LOG, TESSERACT_CMD, TESSDATA_PREFIX
+    def _get_str(name: str, default: str) -> str:
+        return os.getenv(name, config.get(name, default))
+
+    global MASTER_DB_PATH, IMAGE_DIR, SALES_APP_DIR, PRICE_APP_DIR, DEBUG_DIR, OUTPUT_DIR, OUTPUT_EXCEL, OUTPUT_DB, OUTPUT_LOG, TESSERACT_CMD, TESSDATA_PREFIX, BASE_REPO_URL, DEFAULT_DB_URL, DEFAULT_IMAGE_BASE_URL
 
     MASTER_DB_PATH = _get("MASTER_DB_PATH", _DEFAULT_MASTER_DB_PATH)
     IMAGE_DIR = _get("IMAGE_DIR", _DEFAULT_IMAGE_DIR)
@@ -82,6 +96,10 @@ def load_config() -> None:
     OUTPUT_LOG = _get("OUTPUT_LOG", OUTPUT_DIR / "source_log.csv")
     TESSERACT_CMD = _get("TESSERACT_CMD", _DEFAULT_TESSERACT_CMD)
     TESSDATA_PREFIX = _get("TESSDATA_PREFIX", _DEFAULT_TESSDATA_PREFIX)
+
+    BASE_REPO_URL = _get_str("BASE_REPO_URL", _DEFAULT_BASE_REPO_URL)
+    DEFAULT_DB_URL = f"{BASE_REPO_URL}/master.db"
+    DEFAULT_IMAGE_BASE_URL = BASE_REPO_URL
 
 
 # Initialise configuration on import
