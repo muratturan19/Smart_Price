@@ -1,0 +1,289 @@
+```json
+[
+  {
+    "Malzeme_Kodu": "EB 20-25",
+    "Fiyat": "125,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "EB 32",
+    "Fiyat": "110,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "EB 40",
+    "Fiyat": "150,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "EB 50",
+    "Fiyat": "170,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "EB 63",
+    "Fiyat": "210,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "EB 80",
+    "Fiyat": "340,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "EB 100",
+    "Fiyat": "520,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "EB 125",
+    "Fiyat": "780,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "EB 160",
+    "Fiyat": "1.700,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "EB 200",
+    "Fiyat": "2.250,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "YB 32",
+    "Fiyat": "110,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "YB 40",
+    "Fiyat": "120,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "YB 50",
+    "Fiyat": "150,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "YB 63",
+    "Fiyat": "170,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "YB 80",
+    "Fiyat": "300,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "YB 100",
+    "Fiyat": "330,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "YB 125",
+    "Fiyat": "700,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "YB 160",
+    "Fiyat": "1.500,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "YB 200",
+    "Fiyat": "1.700,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "EYB 32",
+    "Fiyat": "220,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "EYB 40",
+    "Fiyat": "260,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "EYB 50",
+    "Fiyat": "320,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "EYB 63",
+    "Fiyat": "370,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "EYB 80",
+    "Fiyat": "625,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "EYB 100",
+    "Fiyat": "845,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "EYB 125",
+    "Fiyat": "1.460,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "EYB 160",
+    "Fiyat": "3.200,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "EYB 200",
+    "Fiyat": "3.950,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "FB 32",
+    "Fiyat": "110,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "FB 40",
+    "Fiyat": "125,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "FB 50",
+    "Fiyat": "160,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "FB 63",
+    "Fiyat": "170,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "FB 80",
+    "Fiyat": "400,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "FB 100",
+    "Fiyat": "600,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "FB 125",
+    "Fiyat": "850,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "FB 160",
+    "Fiyat": "1.700,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "FB 200",
+    "Fiyat": "2.350,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "AB 20-25",
+    "Fiyat": "70,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "AB 32",
+    "Fiyat": "90,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "AB 40",
+    "Fiyat": "100,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "AB 50",
+    "Fiyat": "130,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "AB 63",
+    "Fiyat": "150,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "AB 80",
+    "Fiyat": "220,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "AB 100",
+    "Fiyat": "270,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "AB 125",
+    "Fiyat": "600,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "AB 160",
+    "Fiyat": "950,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "AB 200",
+    "Fiyat": "1.500,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "AB 250",
+    "Fiyat": "3.600,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "EBX 32",
+    "Fiyat": "150,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "EBX 40",
+    "Fiyat": "200,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "EBX 50",
+    "Fiyat": "230,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "EBX 63",
+    "Fiyat": "300,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "EBX 80",
+    "Fiyat": "500,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "EBX 100",
+    "Fiyat": "700,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "EBX 125",
+    "Fiyat": "1.000,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "EBW 63 16 mm PIM",
+    "Fiyat": "420,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "EBW 63 18 mm PIM",
+    "Fiyat": "450,00",
+    "Para_Birimi": "TL"
+  }
+]
+```
