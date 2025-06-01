@@ -1,5 +1,3 @@
-Aşağıda belirtilen tablo verilerine göre JSON formatında çıktı oluşturulmuştur:
-
 ```json
 [
   {
@@ -18,7 +16,7 @@ Aşağıda belirtilen tablo verilerine göre JSON formatında çıktı oluşturu
     "Malzeme_Kodu": "RK-1819-MWN",
     "Fiyat": "55,00",
     "Para_Birimi": "TL",
-    "Kutu_Adedi": "30"
+    "Kutu_Adedi": "40"
   },
   {
     "Malzeme_Kodu": "RK-2216-MWN",
@@ -72,7 +70,7 @@ Aşağıda belirtilen tablo verilerine göre JSON formatında çıktı oluşturu
     "Malzeme_Kodu": "RK-3333-WWBN",
     "Fiyat": "203,29",
     "Para_Birimi": "TL",
-    "Kutu_Adedi": "20"
+    "Kutu_Adedi": "30"
   },
   {
     "Malzeme_Kodu": "RK-4141-WWBN",
@@ -106,7 +104,7 @@ Aşağıda belirtilen tablo verilerine göre JSON formatında çıktı oluşturu
   },
   {
     "Malzeme_Kodu": "RK-1915-WMN-L",
-    "Fiyat": "39,18",
+    "Fiyat": "38,83",
     "Para_Birimi": "TL",
     "Kutu_Adedi": "30"
   },
@@ -148,7 +146,7 @@ Aşağıda belirtilen tablo verilerine göre JSON formatında çıktı oluşturu
   },
   {
     "Malzeme_Kodu": "RK-2215-WMN-S",
-    "Fiyat": "45,49",
+    "Fiyat": "45,29",
     "Para_Birimi": "TL",
     "Kutu_Adedi": "30"
   },
@@ -162,19 +160,19 @@ Aşağıda belirtilen tablo verilerine göre JSON formatında çıktı oluşturu
     "Malzeme_Kodu": "RK-2727-WMN-S",
     "Fiyat": "105,00",
     "Para_Birimi": "TL",
-    "Kutu_Adedi": "25"
+    "Kutu_Adedi": "30"
   },
   {
-    "Malzeme_Kodu": "RK-3330-WMN-S",
+    "Malzeme_Kodu": "RK-3230-WMN-S",
     "Fiyat": "111,28",
     "Para_Birimi": "TL",
     "Kutu_Adedi": "20"
   },
   {
-    "Malzeme_Kodu": "RK-3730-WMN-S",
+    "Malzeme_Kodu": "RK-3735-WMN-S",
     "Fiyat": "179,83",
     "Para_Birimi": "TL",
-    "Kutu_Adedi": "20"
+    "Kutu_Adedi": "10"
   },
   {
     "Malzeme_Kodu": "RK-4130-WMN-S",
@@ -256,5 +254,3 @@ Aşağıda belirtilen tablo verilerine göre JSON formatında çıktı oluşturu
   }
 ]
 ```
-
-Bu JSON çıktısı, tabloda belirtilen ürün kodları ve fiyatları içermektedir. Her bir ürün için "Malzeme_Kodu", "Fiyat", "Para_Birimi" ve "Kutu_Adedi" bilgileri yer almaktadır. Para birimi varsayılan olarak "TL" olarak eklenmiştir.
