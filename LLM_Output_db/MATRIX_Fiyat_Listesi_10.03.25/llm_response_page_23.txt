@@ -1,0 +1,123 @@
+Görseldeki tabloyu inceledikten sonra aşağıdaki gibi bir JSON çıktısı oluşturabilirim:
+
+```json
+[
+  {
+    "Malzeme_Kodu": "M X 8 9 5 0 0 C 2 X",
+    "Fiyat": "428,40",
+    "Para_Birimi": "EUR"
+  },
+  {
+    "Malzeme_Kodu": "M X 8 9 5 0 0 C 2 X",
+    "Fiyat": "428,40",
+    "Para_Birimi": "EUR"
+  },
+  {
+    "Malzeme_Kodu": "M X 8 9 5 0 0 C 2 X",
+    "Fiyat": "475,00",
+    "Para_Birimi": "EUR"
+  },
+  {
+    "Malzeme_Kodu": "M X 8 9 5 0 0 C 2 X",
+    "Fiyat": "475,00",
+    "Para_Birimi": "EUR"
+  },
+  {
+    "Malzeme_Kodu": "M X 8 9 5 0 0 C 2 X",
+    "Fiyat": "500,40",
+    "Para_Birimi": "EUR"
+  },
+  {
+    "Malzeme_Kodu": "M X 8 9 5 0 0 C 2 X",
+    "Fiyat": "500,40",
+    "Para_Birimi": "EUR"
+  },
+  {
+    "Malzeme_Kodu": "M X 8 9 5 0 0 C 2 X",
+    "Fiyat": "530,00",
+    "Para_Birimi": "EUR"
+  },
+  {
+    "Malzeme_Kodu": "M X 8 9 5 0 0 C 2 X",
+    "Fiyat": "530,00",
+    "Para_Birimi": "EUR"
+  },
+  {
+    "Malzeme_Kodu": "M X 8 9 5 0 0 C 2 X",
+    "Fiyat": "436,80",
+    "Para_Birimi": "EUR"
+  },
+  {
+    "Malzeme_Kodu": "M X 8 9 5 0 0 C 2 X",
+    "Fiyat": "436,80",
+    "Para_Birimi": "EUR"
+  },
+  {
+    "Malzeme_Kodu": "M X 8 9 5 0 0 C 2 X",
+    "Fiyat": "487,60",
+    "Para_Birimi": "EUR"
+  },
+  {
+    "Malzeme_Kodu": "M X 8 9 5 0 0 C 2 X",
+    "Fiyat": "487,60",
+    "Para_Birimi": "EUR"
+  },
+  {
+    "Malzeme_Kodu": "M X 8 9 5 0 0 C 2 X",
+    "Fiyat": "455,80",
+    "Para_Birimi": "EUR"
+  },
+  {
+    "Malzeme_Kodu": "M X 8 9 5 0 0 C 2 X",
+    "Fiyat": "455,80",
+    "Para_Birimi": "EUR"
+  },
+  {
+    "Malzeme_Kodu": "O X 8 9 5 0 0 C 2 X",
+    "Fiyat": "455,80",
+    "Para_Birimi": "EUR"
+  },
+  {
+    "Malzeme_Kodu": "O X 8 9 5 0 0 C 2 X",
+    "Fiyat": "455,80",
+    "Para_Birimi": "EUR"
+  },
+  {
+    "Malzeme_Kodu": "H",
+    "Fiyat": "44,00",
+    "Para_Birimi": "EUR"
+  },
+  {
+    "Malzeme_Kodu": "D",
+    "Fiyat": "44,00",
+    "Para_Birimi": "EUR"
+  },
+  {
+    "Malzeme_Kodu": "J",
+    "Fiyat": "44,00",
+    "Para_Birimi": "EUR"
+  },
+  {
+    "Malzeme_Kodu": "S",
+    "Fiyat": "38,00",
+    "Para_Birimi": "EUR"
+  },
+  {
+    "Malzeme_Kodu": "X",
+    "Fiyat": "51,00",
+    "Para_Birimi": "EUR"
+  },
+  {
+    "Malzeme_Kodu": "P",
+    "Fiyat": "25,60",
+    "Para_Birimi": "EUR"
+  },
+  {
+    "Malzeme_Kodu": "R",
+    "Fiyat": "68,00",
+    "Para_Birimi": "EUR"
+  }
+]
+```
+
+Bu JSON çıktısı, tabloda yer alan ürün kodları ve fiyatları içermektedir. Para birimi belirtilmediği için varsayılan olarak "EUR" kullanılmıştır.
