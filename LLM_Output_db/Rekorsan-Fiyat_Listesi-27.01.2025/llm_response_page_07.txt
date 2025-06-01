@@ -3,128 +3,107 @@
   {
     "Malzeme_Kodu": "RK-0510-RSD",
     "Fiyat": "36,75",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "50"
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-0513-RSD",
     "Fiyat": "38,42",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "50"
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-0610-RSD",
     "Fiyat": "37,00",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "50"
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-0613-RSD",
     "Fiyat": "35,20",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "50"
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-0617-RSD",
-    "Fiyat": "32,79",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "25"
+    "Fiyat": "52,79",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-0621-RSD",
     "Fiyat": "67,21",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "25"
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-0813-RSD",
     "Fiyat": "38,94",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "50"
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-0817-RSD",
-    "Fiyat": "49,29",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "25"
+    "Fiyat": "45,89",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-0821-RSD",
-    "Fiyat": "65,86",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "25"
+    "Fiyat": "68,46",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-1017-RSD",
-    "Fiyat": "83,46",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "25"
+    "Fiyat": "83,86",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-1021-RSD",
     "Fiyat": "62,93",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "30"
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-1317-RSD",
     "Fiyat": "51,63",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "30"
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-1321-RSD",
     "Fiyat": "58,33",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "50"
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-1325-RD",
     "Fiyat": "86,86",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "15"
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-1326-RSD",
     "Fiyat": "103,66",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "15"
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-1621-RSD",
-    "Fiyat": "67,21",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "25"
+    "Fiyat": "67,92",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-1623-RSD",
     "Fiyat": "79,17",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "40"
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-1636-RSD",
     "Fiyat": "102,30",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "10"
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-1638-RSD",
     "Fiyat": "208,71",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "25"
+    "Para_Birimi": "TL"
   },
   {
-    "Malzeme_Kodu": "RK-1921-RSD",
-    "Fiyat": "71,81",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "15"
+    "Malzeme_Kodu": "RK-1923-RSD",
+    "Fiyat": "91,15",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-1933-RSD",
-    "Fiyat": "300,17",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "10"
+    "Fiyat": "107,81",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-2533-RSD",
@@ -133,7 +112,7 @@
   },
   {
     "Malzeme_Kodu": "RK-2534-RSD",
-    "Fiyat": "506,96",
+    "Fiyat": "209,25",
     "Para_Birimi": "TL"
   },
   {
@@ -164,118 +143,91 @@
   {
     "Malzeme_Kodu": "RK-0510-RS45",
     "Fiyat": "54,29",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "30"
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-0513-RS45",
     "Fiyat": "59,10",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "25"
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-0610-RS45",
     "Fiyat": "53,80",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "25"
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-0613-RS45",
     "Fiyat": "53,20",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "25"
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-0617-RS45",
     "Fiyat": "74,22",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "25"
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-0621-RS45",
     "Fiyat": "87,26",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "25"
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-0813-RS45",
     "Fiyat": "51,59",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "30"
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-0817-RS45",
     "Fiyat": "69,69",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "25"
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-0821-RS45",
     "Fiyat": "91,53",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "25"
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-1017-RS45",
     "Fiyat": "87,84",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "20"
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-1021-RS45",
     "Fiyat": "87,84",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "20"
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-1317-RS45",
-    "Fiyat": "75,43",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "20"
+    "Fiyat": "73,20",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-1321-RS45",
     "Fiyat": "82,19",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "30"
+    "Para_Birimi": "TL"
   },
   {
-    "Malzeme_Kodu": "RK-1621-RS45",
-    "Fiyat": "74,43",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "15"
+    "Malzeme_Kodu": "RK-1623-RS45",
+    "Fiyat": "186,85",
+    "Para_Birimi": "TL"
   },
   {
-    "Malzeme_Kodu": "RK-1626-RS45",
-    "Fiyat": "186,86",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "15"
-  },
-  {
-    "Malzeme_Kodu": "RK-1633-RS45",
+    "Malzeme_Kodu": "RK-1624-RS45",
     "Fiyat": "181,89",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "10"
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-1933-RS45",
     "Fiyat": "300,17",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "10"
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-2533-RS45",
-    "Fiyat": "506,96",
+    "Fiyat": "506,09",
     "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-3242-RS45",
     "Fiyat": "599,13",
-    "Para_Birimi": "TL"
-  },
-  {
-    "Malzeme_Kodu": "RK-3848-RS45",
-    "Fiyat": "966,13",
     "Para_Birimi": "TL"
   },
   {
@@ -296,101 +248,66 @@
   {
     "Malzeme_Kodu": "RK-0510-NE",
     "Fiyat": "52,51",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "50"
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-0513-NE",
     "Fiyat": "32,99",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "50"
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-0610-NE",
-    "Fiyat": "52,51",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "50"
+    "Fiyat": "29,94",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-0613-NE",
-    "Fiyat": "32,99",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "50"
+    "Fiyat": "42,81",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-0617-NE",
-    "Fiyat": "42,81",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "50"
-  },
-  {
-    "Malzeme_Kodu": "RK-0621-NE",
-    "Fiyat": "49,01",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "50"
+    "Fiyat": "47,31",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-0813-NE",
-    "Fiyat": "32,99",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "50"
-  },
-  {
-    "Malzeme_Kodu": "RK-0817-NE",
-    "Fiyat": "42,81",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "50"
+    "Fiyat": "28,39",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-0821-NE",
     "Fiyat": "49,07",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "30"
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-1017-NE",
-    "Fiyat": "77,34",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "30"
+    "Fiyat": "37,74",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-1021-NE",
-    "Fiyat": "77,34",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "30"
-  },
-  {
-    "Malzeme_Kodu": "RK-1317-NE",
-    "Fiyat": "47,43",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "30"
+    "Fiyat": "77,39",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-1321-NE",
+    "Fiyat": "47,43",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1325-NE",
     "Fiyat": "104,38",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "30"
+    "Para_Birimi": "TL"
   },
   {
-    "Malzeme_Kodu": "RK-1921-NE",
-    "Fiyat": "83,01",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "30"
-  },
-  {
-    "Malzeme_Kodu": "RK-1926-NE",
-    "Fiyat": "85,35",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "30"
+    "Malzeme_Kodu": "RK-1923-NE",
+    "Fiyat": "83,05",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-3242-NE",
     "Fiyat": "269,34",
-    "Para_Birimi": "TL"
-  },
-  {
-    "Malzeme_Kodu": "RK-3848-NE",
-    "Fiyat": "435,90",
     "Para_Birimi": "TL"
   },
   {
@@ -401,118 +318,91 @@
   {
     "Malzeme_Kodu": "RK-0510-RS90",
     "Fiyat": "54,29",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "30"
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-0513-RS90",
     "Fiyat": "59,10",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "25"
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-0610-RS90",
     "Fiyat": "53,80",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "25"
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-0613-RS90",
     "Fiyat": "53,20",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "25"
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-0617-RS90",
     "Fiyat": "74,22",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "25"
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-0621-RS90",
     "Fiyat": "87,26",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "25"
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-0813-RS90",
     "Fiyat": "51,59",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "30"
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-0817-RS90",
     "Fiyat": "69,69",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "25"
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-0821-RS90",
     "Fiyat": "91,53",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "25"
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-1017-RS90",
     "Fiyat": "87,84",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "20"
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-1021-RS90",
     "Fiyat": "87,84",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "20"
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-1317-RS90",
-    "Fiyat": "75,43",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "20"
+    "Fiyat": "73,20",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-1321-RS90",
     "Fiyat": "82,19",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "30"
+    "Para_Birimi": "TL"
   },
   {
-    "Malzeme_Kodu": "RK-1621-RS90",
-    "Fiyat": "74,43",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "15"
+    "Malzeme_Kodu": "RK-1623-RS90",
+    "Fiyat": "186,85",
+    "Para_Birimi": "TL"
   },
   {
-    "Malzeme_Kodu": "RK-1626-RS90",
-    "Fiyat": "186,86",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "15"
-  },
-  {
-    "Malzeme_Kodu": "RK-1633-RS90",
+    "Malzeme_Kodu": "RK-1624-RS90",
     "Fiyat": "181,89",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "10"
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-1933-RS90",
     "Fiyat": "300,17",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "10"
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-2533-RS90",
-    "Fiyat": "506,96",
+    "Fiyat": "506,09",
     "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-3242-RS90",
     "Fiyat": "599,13",
-    "Para_Birimi": "TL"
-  },
-  {
-    "Malzeme_Kodu": "RK-3848-RS90",
-    "Fiyat": "966,13",
     "Para_Birimi": "TL"
   },
   {
