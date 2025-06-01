@@ -1,0 +1,374 @@
+```json
+[
+    {
+        "Malzeme_Kodu": "014 - POMPA 1",
+        "Fiyat": "$2,594.78",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "003 - POMPA 2",
+        "Fiyat": "$2,594.78",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "017 - POMPA 1",
+        "Fiyat": "$2,594.78",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "005 - POMPA 2",
+        "Fiyat": "$2,594.78",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "020 - POMPA 1",
+        "Fiyat": "$2,594.78",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "006 - POMPA 2",
+        "Fiyat": "$2,594.78",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "022 - POMPA 1",
+        "Fiyat": "$2,594.78",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "008 - POMPA 2",
+        "Fiyat": "$2,594.78",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "024 - POMPA 1",
+        "Fiyat": "$2,594.78",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "010 - POMPA 2",
+        "Fiyat": "$2,594.78",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "028 - POMPA 1",
+        "Fiyat": "$2,594.78",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "012 - POMPA 2",
+        "Fiyat": "$2,594.78",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "031 - POMPA 1",
+        "Fiyat": "$2,594.78",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "014 - POMPA 2",
+        "Fiyat": "$2,594.78",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "035 - POMPA 1",
+        "Fiyat": "$2,594.78",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "015 - POMPA 2",
+        "Fiyat": "$2,594.78",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "038 - POMPA 1",
+        "Fiyat": "$2,594.78",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "017 - POMPA 2",
+        "Fiyat": "$2,594.78",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "042 - POMPA 1",
+        "Fiyat": "$2,594.78",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "020 - POMPA 2",
+        "Fiyat": "$2,594.78",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "045 - POMPA 1",
+        "Fiyat": "$2,594.78",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "022 - POMPA 2",
+        "Fiyat": "$2,594.78",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "050 - POMPA 1",
+        "Fiyat": "$2,594.78",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "025 - POMPA 2",
+        "Fiyat": "$2,594.78",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "002 - POMPA 1",
+        "Fiyat": "$2,594.78",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "002 - POMPA 2",
+        "Fiyat": "$2,594.78",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "003 - POMPA 1",
+        "Fiyat": "$2,594.78",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "003 - POMPA 2",
+        "Fiyat": "$2,594.78",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "004 - POMPA 1",
+        "Fiyat": "$2,594.78",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "004 - POMPA 2",
+        "Fiyat": "$2,594.78",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "005 - POMPA 1",
+        "Fiyat": "$2,594.78",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "005 - POMPA 2",
+        "Fiyat": "$2,594.78",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "006 - POMPA 1",
+        "Fiyat": "$2,594.78",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "006 - POMPA 2",
+        "Fiyat": "$2,594.78",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "007 - POMPA 1",
+        "Fiyat": "$2,594.78",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "007 - POMPA 2",
+        "Fiyat": "$2,594.78",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "008 - POMPA 1",
+        "Fiyat": "$2,594.78",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "008 - POMPA 2",
+        "Fiyat": "$2,594.78",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "009 - POMPA 1",
+        "Fiyat": "$2,594.78",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "009 - POMPA 2",
+        "Fiyat": "$2,594.78",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "010 - POMPA 1",
+        "Fiyat": "$2,594.78",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "010 - POMPA 2",
+        "Fiyat": "$2,594.78",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "011 - POMPA 1",
+        "Fiyat": "$2,594.78",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "011 - POMPA 2",
+        "Fiyat": "$2,594.78",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "012 - POMPA 1",
+        "Fiyat": "$2,594.78",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "012 - POMPA 2",
+        "Fiyat": "$2,594.78",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "014 - POMPA 1",
+        "Fiyat": "$2,594.78",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "014 - POMPA 2",
+        "Fiyat": "$2,594.78",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "015 - POMPA 1",
+        "Fiyat": "$2,594.78",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "015 - POMPA 2",
+        "Fiyat": "$2,594.78",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "014 - POMPA 1",
+        "Fiyat": "$5,417.08",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "014 - POMPA 2",
+        "Fiyat": "$5,417.08",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "017 - POMPA 1",
+        "Fiyat": "$5,417.08",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "017 - POMPA 2",
+        "Fiyat": "$5,417.08",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "020 - POMPA 1",
+        "Fiyat": "$5,417.08",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "020 - POMPA 2",
+        "Fiyat": "$5,417.08",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "022 - POMPA 1",
+        "Fiyat": "$5,417.08",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "022 - POMPA 2",
+        "Fiyat": "$5,417.08",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "024 - POMPA 1",
+        "Fiyat": "$5,417.08",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "024 - POMPA 2",
+        "Fiyat": "$5,417.08",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "028 - POMPA 1",
+        "Fiyat": "$5,417.08",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "028 - POMPA 2",
+        "Fiyat": "$5,417.08",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "031 - POMPA 1",
+        "Fiyat": "$5,417.08",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "031 - POMPA 2",
+        "Fiyat": "$5,417.08",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "035 - POMPA 1",
+        "Fiyat": "$5,417.08",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "035 - POMPA 2",
+        "Fiyat": "$5,417.08",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "038 - POMPA 1",
+        "Fiyat": "$5,417.08",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "038 - POMPA 2",
+        "Fiyat": "$5,417.08",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "042 - POMPA 1",
+        "Fiyat": "$5,417.08",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "042 - POMPA 2",
+        "Fiyat": "$5,417.08",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "045 - POMPA 1",
+        "Fiyat": "$5,417.08",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "045 - POMPA 2",
+        "Fiyat": "$5,417.08",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "050 - POMPA 1",
+        "Fiyat": "$5,417.08",
+        "Para_Birimi": "USD"
+    },
+    {
+        "Malzeme_Kodu": "050 - POMPA 2",
+        "Fiyat": "$5,417.08",
+        "Para_Birimi": "USD"
+    }
+]
+```
