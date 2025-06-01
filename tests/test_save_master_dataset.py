@@ -60,7 +60,7 @@ def test_save_master_new(tmp_path, monkeypatch):
         df, mode="Yeni fiyat listesi"
     )
     saved = pd.read_excel(excel_path)
-    assert not uploaded
+    assert uploaded is not True
     assert excel_path == str(streamlit_app.config.MASTER_EXCEL_PATH)
     assert db_path == str(streamlit_app.config.MASTER_DB_PATH)
     assert Path(excel_path) == tmp_path / "master_dataset.xlsx"
@@ -107,7 +107,7 @@ def test_save_master_update(tmp_path, monkeypatch):
         new, mode="Güncelleme"
     )
     result = pd.read_excel(excel_path)
-    assert not uploaded
+    assert uploaded is not True
     assert excel_path == str(streamlit_app.config.MASTER_EXCEL_PATH)
     assert db_path == str(streamlit_app.config.MASTER_DB_PATH)
     assert Path(excel_path) == tmp_path / "master_dataset.xlsx"

@@ -51,6 +51,7 @@ def upload_folder(path: Path, *, remote_prefix: str | None = None) -> bool:
         logger.info("GitHub repo or token not configured; skipping upload")
         return False
 
+    success = True
     for file_path in path.rglob("*"):
         if not file_path.is_file():
             continue
@@ -61,14 +62,16 @@ def upload_folder(path: Path, *, remote_prefix: str | None = None) -> bool:
         try:
             resp = _api_request("GET", f"{url}?ref={branch}", token)
             sha = resp.get("sha")
-        except Exception:
+        except Exception as exc:  # pragma: no cover - network errors
+            logger.error("Failed to fetch existing file %s: %s", repo_path, exc)
             sha = None
         data = {"message": f"Add {repo_path}", "content": content, "branch": branch}
         if sha:
             data["sha"] = sha
         try:
             _api_request("PUT", url, token, data)
-        except Exception:
-            continue
-    return True
+        except Exception as exc:  # pragma: no cover - network errors
+            logger.error("Failed to upload %s: %s", repo_path, exc)
+            success = False
+    return success
 
