@@ -56,7 +56,10 @@ def big_alert(message: str, *, level: str = "info", icon: str | None = None) -> 
     else:
         icon_b64 = icons.ICONS.get(level, icons.INFO_ICON_B64)
 
-    theme = st.get_option("theme") or {}
+    try:
+        theme = st.get_option("theme") or {}
+    except RuntimeError:
+        theme = {}
     text_colour = theme.get("textColor", "#262730")
     bg_colour = theme.get("secondaryBackgroundColor", "#F0F2F6")
 
@@ -427,7 +430,10 @@ def search_page():
     if query:
         results = master_df[master_df["Descriptions"].str.contains(query, case=False, na=False)]
         if not results.empty:
-            theme = st.get_option("theme") or {}
+            try:
+                theme = st.get_option("theme") or {}
+            except RuntimeError:
+                theme = {}
             header_colour = theme.get("primaryColor", "#002060")
             text_colour = theme.get("textColor", "#262730")
 
