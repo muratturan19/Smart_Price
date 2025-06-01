@@ -1,0 +1,269 @@
+```json
+[
+  {
+    "Malzeme_Kodu": "RK-133007-FLD",
+    "Fiyat": "181,83",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-133807-FLD",
+    "Fiyat": "181,83",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-163807-FLD",
+    "Fiyat": "178,08",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-193807-FLD",
+    "Fiyat": "187,45",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-194808-FLD",
+    "Fiyat": "243,69",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-253807-FLD",
+    "Fiyat": "224,94",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-254108-FLD",
+    "Fiyat": "318,67",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-254408-FLD",
+    "Fiyat": "374,90",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-253508-FLD",
+    "Fiyat": "374,90",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-324408-FLD",
+    "Fiyat": "374,90",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-325108-FLD",
+    "Fiyat": "374,90",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-326008-FLD",
+    "Fiyat": "412,39",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-326008-FLD",
+    "Fiyat": "487,37",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-507110-FLD",
+    "Fiyat": "815,41",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-641010-FLD",
+    "Fiyat": "1010,35",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1021410-FLD",
+    "Fiyat": "1846,38",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-10212710-FLD",
+    "Fiyat": "2811,75",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-133007-FL45",
+    "Fiyat": "204,17",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-133807-FL45",
+    "Fiyat": "246,57",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-163807-FL45",
+    "Fiyat": "255,45",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-193807-FL45",
+    "Fiyat": "287,70",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-194808-FL45",
+    "Fiyat": "287,70",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-253807-FL45",
+    "Fiyat": "312,39",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-254108-FL45",
+    "Fiyat": "374,90",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-254408-FL45",
+    "Fiyat": "374,90",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-253508-FL45",
+    "Fiyat": "487,37",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-324408-FL45",
+    "Fiyat": "599,84",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-325108-FL45",
+    "Fiyat": "562,35",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-326008-FL45",
+    "Fiyat": "656,08",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-386008-FL45",
+    "Fiyat": "749,80",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-507110-FL45",
+    "Fiyat": "1651,91",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-641010-FL45",
+    "Fiyat": "2303,29",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-7610110-FL45",
+    "Fiyat": "2619,62",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1021410-FL45",
+    "Fiyat": "4323,07",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-10212710-FL45",
+    "Fiyat": "4463,66",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-133007-FL90",
+    "Fiyat": "204,17",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-133807-FL90",
+    "Fiyat": "246,57",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-163807-FL90",
+    "Fiyat": "255,45",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-193807-FL90",
+    "Fiyat": "287,70",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-194808-FL90",
+    "Fiyat": "287,70",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-253807-FL90",
+    "Fiyat": "312,39",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-254108-FL90",
+    "Fiyat": "374,90",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-254408-FL90",
+    "Fiyat": "374,90",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-253508-FL90",
+    "Fiyat": "487,37",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-324408-FL90",
+    "Fiyat": "599,84",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-325108-FL90",
+    "Fiyat": "562,35",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-326008-FL90",
+    "Fiyat": "656,08",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-386008-FL90",
+    "Fiyat": "749,80",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-507110-FL90",
+    "Fiyat": "1651,91",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-641010-FL90",
+    "Fiyat": "2303,29",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-7610110-FL90",
+    "Fiyat": "2619,62",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1021410-FL90",
+    "Fiyat": "4323,07",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-10212710-FL90",
+    "Fiyat": "4463,66",
+    "Para_Birimi": "TL"
+  }
+]
+```
