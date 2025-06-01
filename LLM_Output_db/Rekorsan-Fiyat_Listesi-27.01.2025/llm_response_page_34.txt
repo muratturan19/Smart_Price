@@ -1,3 +1,5 @@
+İşte istenen formatta çıkarılan veriler:
+
 ```json
 [
   {
@@ -163,7 +165,7 @@
     "Kutu_Adedi": "10"
   },
   {
-    "Malzeme_Kodu": "RK-3333-WOKD",
+    "Malzeme_Kodu": "RK-3337-WOKD",
     "Fiyat": "449,88",
     "Para_Birimi": "TL",
     "Kutu_Adedi": "10"
@@ -235,7 +237,7 @@
     "Kutu_Adedi": "10"
   },
   {
-    "Malzeme_Kodu": "RK-3333-WOKD45",
+    "Malzeme_Kodu": "RK-3337-WOKD45",
     "Fiyat": "584,84",
     "Para_Birimi": "TL",
     "Kutu_Adedi": "10"
