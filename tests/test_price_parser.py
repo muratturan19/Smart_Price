@@ -169,7 +169,7 @@ def test_extract_from_pdf_llm_no_data(monkeypatch):
     assert result.empty
 
 
-def test_extract_from_pdf_force_llm(monkeypatch):
+def test_extract_from_pdf_llm_only(monkeypatch):
     if not HAS_PANDAS:
         pytest.skip("pandas not installed")
 
@@ -210,7 +210,7 @@ def test_extract_from_pdf_force_llm(monkeypatch):
     import smart_price.core.extract_pdf as pdf_mod
     monkeypatch.setattr(pdf_mod.ocr_llm_fallback, "parse", fake_parse)
 
-    df = extract_from_pdf("dummy.pdf", force_llm=True)
+    df = extract_from_pdf("dummy.pdf")
 
     assert not df.empty
     assert called.get('path') == "dummy.pdf"
@@ -649,7 +649,7 @@ def test_merge_files_casts_to_string(monkeypatch):
     assert all(isinstance(v, str) for v in result["Malzeme_Kodu"])
 
 
-def test_merge_files_passes_force_llm(monkeypatch):
+def test_merge_files_pdf_called(monkeypatch):
     if not HAS_PANDAS:
         pytest.skip("pandas not installed")
     import pandas as pd
@@ -681,9 +681,9 @@ def test_merge_files_passes_force_llm(monkeypatch):
         def read(self):
             return b"data"
 
-    result = streamlit_app.merge_files([FakeUpload("f.pdf")], force_llm=True)
+    result = streamlit_app.merge_files([FakeUpload("f.pdf")])
 
-    assert received.get("force_llm") is True
+    assert received.get("file_name") == "f.pdf"
     assert not result.empty
 
 
