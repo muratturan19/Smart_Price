@@ -40,7 +40,7 @@
     "Malzeme_Kodu": "RK-2110-RMKD-L",
     "Fiyat": "234,31",
     "Para_Birimi": "TL",
-    "Kutu_Adedi": "20"
+    "Kutu_Adedi": "25"
   },
   {
     "Malzeme_Kodu": "RK-2115-RMKD-L",
@@ -73,8 +73,14 @@
     "Kutu_Adedi": "5"
   },
   {
-    "Malzeme_Kodu": "RK-4842-RMKD-L",
+    "Malzeme_Kodu": "RK-4242-RMKD-L",
     "Fiyat": "881,02",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "5"
+  },
+  {
+    "Malzeme_Kodu": "RK-4842-RMKD-L",
+    "Fiyat": "801,02",
     "Para_Birimi": "TL",
     "Kutu_Adedi": "5"
   },
@@ -88,7 +94,7 @@
     "Malzeme_Kodu": "RK-1313-RRKD",
     "Fiyat": "144,18",
     "Para_Birimi": "TL",
-    "Kutu_Adedi": "25"
+    "Kutu_Adedi": "20"
   },
   {
     "Malzeme_Kodu": "RK-1717-RRKD",
@@ -127,6 +133,90 @@
     "Kutu_Adedi": "5"
   },
   {
+    "Malzeme_Kodu": "RK-1710-RMKD-S",
+    "Fiyat": "168,38",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-1712-RMKD-S",
+    "Fiyat": "168,38",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-2112-RMKD-S",
+    "Fiyat": "204,87",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-2116-RMKD-S",
+    "Fiyat": "195,50",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-2120-RMKD-S",
+    "Fiyat": "283,90",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "20"
+  },
+  {
+    "Malzeme_Kodu": "RK-2616-RMKD-S",
+    "Fiyat": "294,20",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "20"
+  },
+  {
+    "Malzeme_Kodu": "RK-2620-RMKD-S",
+    "Fiyat": "294,20",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "20"
+  },
+  {
+    "Malzeme_Kodu": "RK-2625-RMKD-S",
+    "Fiyat": "346,31",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "10"
+  },
+  {
+    "Malzeme_Kodu": "RK-3320-RMKD-S",
+    "Fiyat": "368,04",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "10"
+  },
+  {
+    "Malzeme_Kodu": "RK-3325-RMKD-S",
+    "Fiyat": "377,43",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "10"
+  },
+  {
+    "Malzeme_Kodu": "RK-3330-RMKD-S",
+    "Fiyat": "479,85",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "6"
+  },
+  {
+    "Malzeme_Kodu": "RK-4240-RMKD-S",
+    "Fiyat": "560,45",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "5"
+  },
+  {
+    "Malzeme_Kodu": "RK-4238-RMKD-S",
+    "Fiyat": "881,02",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "5"
+  },
+  {
+    "Malzeme_Kodu": "RK-4848-RMKD-S",
+    "Fiyat": "789,57",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "5"
+  },
+  {
     "Malzeme_Kodu": "RK-1010-RRKD45",
     "Fiyat": "180,42",
     "Para_Birimi": "TL",
@@ -136,7 +226,7 @@
     "Malzeme_Kodu": "RK-1313-RRKD45",
     "Fiyat": "187,43",
     "Para_Birimi": "TL",
-    "Kutu_Adedi": "25"
+    "Kutu_Adedi": "20"
   },
   {
     "Malzeme_Kodu": "RK-1717-RRKD45",
