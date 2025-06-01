@@ -42,7 +42,7 @@ from .extract_excel import (
 from . import ocr_llm_fallback
 from pathlib import Path
 from .debug_utils import save_debug, set_output_subdir
-from .github_upload import upload_folder
+from .github_upload import upload_folder, _sanitize_repo_path
 
 MIN_CODE_RATIO = 0.70
 MIN_ROWS_PARSER = 500
@@ -105,6 +105,7 @@ def extract_from_pdf(
 
     src = _basename(filepath, filename)
     output_stem = Path(src).stem
+    sanitized_base = _sanitize_repo_path(output_stem)
     set_output_subdir(output_stem)
     notify(f"Processing {src} started at {datetime.now():%Y-%m-%d %H:%M:%S}")
     total_start = time.time()
@@ -379,11 +380,14 @@ def extract_from_pdf(
         result["Kisa_Kod"] = None
     base_name_no_ext = Path(_basename(filepath, filename)).stem
     result["Record_Code"] = (
-        base_name_no_ext
+        sanitized_base
         + "|"
         + result["Sayfa"].astype(str)
         + "|"
         + (result.groupby("Sayfa").cumcount() + 1).astype(str)
+    )
+    result["Image_Path"] = result["Sayfa"].apply(
+        lambda page_num: f"LLM_Output_db/{sanitized_base}/page_image_page_{int(page_num):02d}.png"
     )
     cols = [
         "Malzeme_Kodu",
@@ -395,6 +399,7 @@ def extract_from_pdf(
         "Kaynak_Dosya",
         "Sayfa",
         "Record_Code",
+        "Image_Path",
     ]
     result_df = result[cols].copy()
     duration = time.time() - total_start
