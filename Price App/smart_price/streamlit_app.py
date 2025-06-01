@@ -26,16 +26,15 @@ logger = logging.getLogger("smart_price")
 
 
 def big_alert(message: str, *, level: str = "info") -> None:
-    """Show a large coloured alert box in Streamlit."""
-    style = "font-size:20px;font-weight:bold;"
-    color_styles = {
-        "success": "background-color:#dff0d8;color:#3c763d;",
-        "error": "background-color:#f2dede;color:#a94442;",
-        "warning": "background-color:#fcf8e3;color:#8a6d3b;",
-        "info": "background-color:#d9edf7;color:#31708f;",
+    """Show an alert box styled using the active theme."""
+    mapping = {
+        "success": st.success,
+        "error": st.error,
+        "warning": st.warning,
+        "info": st.info,
     }
-    css = color_styles.get(level, color_styles["info"]) + style
-    st.markdown(f"<div style='{css}padding:0.5em;border-radius:0.5em;'>{message}</div>", unsafe_allow_html=True)
+    func: Callable[[str], None] = mapping.get(level, st.info)
+    func(f"**{message}**")
 
 
 def _img_to_base64(path: Path) -> str:
