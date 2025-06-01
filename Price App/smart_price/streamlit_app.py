@@ -500,11 +500,15 @@ def main():
     _configure_tesseract()
     st.set_page_config(layout="wide")
 
+    root_dir = Path(__file__).resolve().parents[2]
+    left_logo_b64 = img_to_base64(root_dir / "logo" / "dp_logo.png")
+    right_logo_b64 = img_to_base64(root_dir / "logo" / "delta_logo_150p.png")
+
     header_html = f"""
         <header class='app-header'>
-            <img src='{config.BASE_REPO_URL}/logo/dp_logo.png' class='header-logo left'>
+            <img src='data:image/png;base64,{left_logo_b64}' class='header-logo left'>
             <h1 class='header-title'>Smart Price</h1>
-            <img src='{config.BASE_REPO_URL}/logo/delta_logo_150p.png' class='header-logo right'>
+            <img src='data:image/png;base64,{right_logo_b64}' class='header-logo right'>
         </header>
         <style>
             .app-header {{
