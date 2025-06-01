@@ -14,6 +14,7 @@ import shutil
 import sqlite3
 from pathlib import Path
 from typing import Callable, Optional
+import base64
 
 from smart_price.core.extract_excel import extract_from_excel
 from smart_price.core.extract_pdf import extract_from_pdf, MIN_CODE_RATIO
@@ -35,6 +36,12 @@ def big_alert(message: str, *, level: str = "info") -> None:
     }
     css = color_styles.get(level, color_styles["info"]) + style
     st.markdown(f"<div style='{css}padding:0.5em;border-radius:0.5em;'>{message}</div>", unsafe_allow_html=True)
+
+
+def _img_to_base64(path: Path) -> str:
+    """Return base64 string for the image at ``path``."""
+    with open(path, "rb") as img_file:
+        return base64.b64encode(img_file.read()).decode("utf-8")
 
 
 def _configure_tesseract() -> None:
@@ -417,6 +424,31 @@ PAGES = {
 def main():
     init_logging(config.LOG_PATH)
     _configure_tesseract()
+    st.set_page_config(layout="wide")
+
+    root_dir = Path(__file__).resolve().parents[2]
+    sidebar_logo = root_dir / "logo" / "sadece dp şeffaf.PNG"
+    st.sidebar.image(str(sidebar_logo), use_column_width=True)
+
+    top_logo = root_dir / "logo" / "delta logo -150p.png"
+    encoded = _img_to_base64(top_logo)
+    st.markdown(
+        f"""
+        <style>
+            .top-right-logo {{
+                position: fixed;
+                top: 10px;
+                right: 10px;
+                width: 15vw;
+                max-width: 150px;
+                z-index: 1000;
+            }}
+        </style>
+        <img class="top-right-logo" src="data:image/png;base64,{encoded}" />
+        """,
+        unsafe_allow_html=True,
+    )
+
     st.sidebar.title("Smart Price")
     choice = st.sidebar.radio("Seçim", list(PAGES.keys()))
     page = PAGES[choice]
