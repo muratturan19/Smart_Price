@@ -27,7 +27,7 @@
   },
   {
     "Malzeme_Kodu": "RK-326314-KFLD",
-    "Fiyat": "601,33",
+    "Fiyat": "501,33",
     "Para_Birimi": "TL"
   },
   {
