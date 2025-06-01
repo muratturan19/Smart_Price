@@ -1,0 +1,104 @@
+```json
+[
+  {
+    "Malzeme_Kodu": "JC-DPS-NS",
+    "Fiyat": "401,73",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "JC-P5",
+    "Fiyat": "175,29",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "MJCS-02A",
+    "Fiyat": "164,64",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "MJCS-02B",
+    "Fiyat": "164,64",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "MJCS-02P",
+    "Fiyat": "164,64",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "MJCS-02W",
+    "Fiyat": "317,33",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "MJCS-02WL",
+    "Fiyat": "317,33",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "MJCS-02WLL",
+    "Fiyat": "317,33",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "MJCS-03A",
+    "Fiyat": "195,02",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "MJCS-03B",
+    "Fiyat": "195,02",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "MJCS-03P",
+    "Fiyat": "195,02",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "MJCS-02A-SC",
+    "Fiyat": "178,14",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "MJCS-02B-SC",
+    "Fiyat": "178,14",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "MJCS-02P-SC",
+    "Fiyat": "178,14",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "MJCS-02AL-SC",
+    "Fiyat": "178,14",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "MJCS-02BL-SC",
+    "Fiyat": "178,14",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "MJCS-02PL-SC",
+    "Fiyat": "178,14",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "MJCS-02ALL-SC",
+    "Fiyat": "178,14",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "MJCS-02BLL-SC",
+    "Fiyat": "178,14",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "MJCS-02PLL-SC",
+    "Fiyat": "178,14",
+    "Para_Birimi": "USD"
+  }
+]
+```
