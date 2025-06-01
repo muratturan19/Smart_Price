@@ -62,19 +62,13 @@
   },
   {
     "Malzeme_Kodu": "RK-2122-RWKD",
-    "Fiyat": "206,05",
+    "Fiyat": "206,20",
     "Para_Birimi": "TL",
     "Kutu_Adedi": "25"
   },
   {
     "Malzeme_Kodu": "RK-2127-RWKD",
     "Fiyat": "262,43",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "20"
-  },
-  {
-    "Malzeme_Kodu": "RK-2622-RWKD",
-    "Fiyat": "299,92",
     "Para_Birimi": "TL",
     "Kutu_Adedi": "20"
   },
@@ -169,12 +163,6 @@
     "Kutu_Adedi": "20"
   },
   {
-    "Malzeme_Kodu": "RK-2622-RWKD45",
-    "Fiyat": "389,90",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "20"
-  },
-  {
     "Malzeme_Kodu": "RK-2627-RWKD45",
     "Fiyat": "389,90",
     "Para_Birimi": "TL",
@@ -247,16 +235,16 @@
     "Kutu_Adedi": "25"
   },
   {
-    "Malzeme_Kodu": "RK-2625-ROKD",
+    "Malzeme_Kodu": "RK-2605-ROKD",
     "Fiyat": "328,04",
     "Para_Birimi": "TL",
-    "Kutu_Adedi": "15"
+    "Kutu_Adedi": "10"
   },
   {
     "Malzeme_Kodu": "RK-2630-ROKD",
     "Fiyat": "328,04",
     "Para_Birimi": "TL",
-    "Kutu_Adedi": "15"
+    "Kutu_Adedi": "10"
   },
   {
     "Malzeme_Kodu": "RK-3330-ROKD",
@@ -325,16 +313,16 @@
     "Kutu_Adedi": "25"
   },
   {
-    "Malzeme_Kodu": "RK-2625-ROKD45",
+    "Malzeme_Kodu": "RK-2605-ROKD45",
     "Fiyat": "426,45",
     "Para_Birimi": "TL",
-    "Kutu_Adedi": "15"
+    "Kutu_Adedi": "10"
   },
   {
     "Malzeme_Kodu": "RK-2630-ROKD45",
     "Fiyat": "426,45",
     "Para_Birimi": "TL",
-    "Kutu_Adedi": "15"
+    "Kutu_Adedi": "10"
   },
   {
     "Malzeme_Kodu": "RK-3330-ROKD45",
