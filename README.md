@@ -91,6 +91,13 @@ font = "sans serif"
 
 Modify these values if you wish to adjust the colour scheme or font.
 
+The floating logo displayed in the top right corner of both Streamlit
+applications can also be customised.  Set ``LOGO_TOP`` and ``LOGO_RIGHT`` in
+``config.json`` or as environment variables to control its position.  Adjust
+``LOGO_OPACITY`` to change how transparent the overlay appears.  Use the
+``tooltip`` argument of ``smart_price.ui_utils.logo_overlay`` to set a hover
+hint or hyperlink.
+
 The upload page now includes an **İşlem türü** radio button. Choose
 **Güncelleme** to overwrite existing data for the same brand, year and
 month. When this mode is used the matching rows are removed from the master
