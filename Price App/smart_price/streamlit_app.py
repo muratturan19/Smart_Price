@@ -17,7 +17,6 @@ from typing import Callable, Optional
 import base64
 
 from smart_price import icons
-from smart_price.ui_utils import img_to_base64, logo_overlay
 
 from smart_price.core.extract_excel import extract_from_excel
 from smart_price.core.extract_pdf import extract_from_pdf, MIN_CODE_RATIO
@@ -477,18 +476,41 @@ def main():
     _configure_tesseract()
     st.set_page_config(layout="wide")
 
-    root_dir = Path(__file__).resolve().parents[2]
-    sidebar_logo = root_dir / "logo" / "dp şeffaf logo.PNG"
-    sidebar_logo_b64 = img_to_base64(sidebar_logo)
-    st.sidebar.markdown(
-        f"<img src='data:image/png;base64,{sidebar_logo_b64}' "
-        "style='display:block;margin:20px auto 10px;"
-        "width:clamp(60px,8vw,85px);' />",
-        unsafe_allow_html=True,
-    )
-
-    top_logo = root_dir / "logo" / "delta logo -150p.png"
-    logo_overlay(top_logo, tooltip="Delta Proje")
+    header_html = f"""
+        <header class='app-header'>
+            <img src='{config.BASE_REPO_URL}/logo/dp_logo.png' class='header-logo left'>
+            <h1 class='header-title'>Smart Price</h1>
+            <img src='{config.BASE_REPO_URL}/logo/delta%20logo%20-150p.png' class='header-logo right'>
+        </header>
+        <style>
+            .app-header {{
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0.5rem 1rem;
+                background: #fff;
+                border-bottom: 1px solid #ccc;
+            }}
+            .header-title {{
+                margin: 0;
+                font-size: clamp(1.5rem, 2.5vw, 2.2rem);
+                font-weight: 600;
+            }}
+            .header-logo {{
+                height: 40px;
+            }}
+            .left {{
+                position: absolute;
+                left: 1rem;
+            }}
+            .right {{
+                position: absolute;
+                right: 1rem;
+            }}
+        </style>
+    """
+    st.markdown(header_html, unsafe_allow_html=True)
 
     st.sidebar.title("Smart Price")
 
