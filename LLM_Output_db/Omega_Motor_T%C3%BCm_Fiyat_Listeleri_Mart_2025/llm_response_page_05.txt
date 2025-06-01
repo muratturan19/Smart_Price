@@ -1,5 +1,3 @@
-Aşağıda belirtilen tablo verilerine göre çıkarım yapılmıştır:
-
 ```json
 [
   {
