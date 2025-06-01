@@ -1,0 +1,214 @@
+```json
+[
+  {
+    "Malzeme_Kodu": "DVQ20-06",
+    "Fiyat": "644,63",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "DVQ20-08",
+    "Fiyat": "644,63",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "DVQ20-11",
+    "Fiyat": "644,63",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "DVQ20-14",
+    "Fiyat": "644,63",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "DVQ20-17",
+    "Fiyat": "644,63",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "DVQ20-19",
+    "Fiyat": "644,63",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "DVQ20-23",
+    "Fiyat": "644,63",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "DVQ20-26",
+    "Fiyat": "644,63",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "DVQ20-32",
+    "Fiyat": "644,63",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "DVQ20-34",
+    "Fiyat": "644,63",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "DVQ20-38",
+    "Fiyat": "644,63",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "DVQ20-44",
+    "Fiyat": "644,63",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "DVQ25-18",
+    "Fiyat": "758,39",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "DVQ25-22",
+    "Fiyat": "758,39",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "DVQ25-26",
+    "Fiyat": "758,39",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "DVQ25-32",
+    "Fiyat": "758,39",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "DVQ25-38",
+    "Fiyat": "758,39",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "DVQ25-43",
+    "Fiyat": "758,39",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "DVQ25-47",
+    "Fiyat": "758,39",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "DVQ25-52",
+    "Fiyat": "758,39",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "DVQ25-60",
+    "Fiyat": "758,39",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "DVQ25-65",
+    "Fiyat": "758,39",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "DVQ25-75",
+    "Fiyat": "758,39",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "VQ15-06",
+    "Fiyat": "587,75",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "VQ15-08",
+    "Fiyat": "587,75",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "VQ15-11",
+    "Fiyat": "587,75",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "VQ15-14",
+    "Fiyat": "587,75",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "VQ15-17",
+    "Fiyat": "587,75",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "VQ15-19",
+    "Fiyat": "587,75",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "VQ15-23",
+    "Fiyat": "587,75",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "VQ15-26",
+    "Fiyat": "587,75",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "VQ15-31",
+    "Fiyat": "587,75",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "VQ15-38",
+    "Fiyat": "587,75",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "VQ35-60",
+    "Fiyat": "1.365,10",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "VQ35-66",
+    "Fiyat": "1.365,10",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "VQ35-76",
+    "Fiyat": "1.365,10",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "VQ35-82",
+    "Fiyat": "1.365,10",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "VQ35-88",
+    "Fiyat": "1.365,10",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "VQ35-94",
+    "Fiyat": "1.365,10",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "VQ35-108",
+    "Fiyat": "1.365,10",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "VQ35-116",
+    "Fiyat": "1.365,10",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "VQ35-125",
+    "Fiyat": "1.365,10",
+    "Para_Birimi": "USD"
+  }
+]
+```
