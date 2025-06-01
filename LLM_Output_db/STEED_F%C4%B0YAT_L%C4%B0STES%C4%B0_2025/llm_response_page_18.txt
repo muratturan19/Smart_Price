@@ -1,0 +1,229 @@
+```json
+[
+  {
+    "Malzeme_Kodu": "LR2A-XDN",
+    "Fiyat": "101.62",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "LR2A-XFN",
+    "Fiyat": "101.62",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "LR2A-XGN",
+    "Fiyat": "101.62",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "LR3A-XDN",
+    "Fiyat": "132.02",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "LR3A-XFN",
+    "Fiyat": "132.02",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "LR3A-XGN",
+    "Fiyat": "132.02",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "LR6A-XDN",
+    "Fiyat": "228.00",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "LR6A-XFN",
+    "Fiyat": "228.00",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "LR6A-XGN",
+    "Fiyat": "228.00",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "LR8A-XDN",
+    "Fiyat": "FİYAT SORUNUZ",
+    "Para_Birimi": ""
+  },
+  {
+    "Malzeme_Kodu": "LR8A-XFN",
+    "Fiyat": "FİYAT SORUNUZ",
+    "Para_Birimi": ""
+  },
+  {
+    "Malzeme_Kodu": "LR8A-XGN",
+    "Fiyat": "FİYAT SORUNUZ",
+    "Para_Birimi": ""
+  },
+  {
+    "Malzeme_Kodu": "LR2C-XDN",
+    "Fiyat": "101.62",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "LR2C-XFN",
+    "Fiyat": "101.62",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "LR2C-XGN",
+    "Fiyat": "101.62",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "LR3C-XDN",
+    "Fiyat": "132.02",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "LR3C-XFN",
+    "Fiyat": "132.02",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "LR3C-XGN",
+    "Fiyat": "132.02",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "LR6C-XDN",
+    "Fiyat": "243.20",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "LR6C-XFN",
+    "Fiyat": "243.20",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "LR6C-XGN",
+    "Fiyat": "243.20",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "LR8C-XDN",
+    "Fiyat": "FİYAT SORUNUZ",
+    "Para_Birimi": ""
+  },
+  {
+    "Malzeme_Kodu": "LR8C-XFN",
+    "Fiyat": "FİYAT SORUNUZ",
+    "Para_Birimi": ""
+  },
+  {
+    "Malzeme_Kodu": "LR8C-XGN",
+    "Fiyat": "FİYAT SORUNUZ",
+    "Para_Birimi": ""
+  },
+  {
+    "Malzeme_Kodu": "FQ2A-XAN",
+    "Fiyat": "102.74",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "FQ2A-XBN",
+    "Fiyat": "102.74",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "FQ3A-XAN",
+    "Fiyat": "FİYAT SORUNUZ",
+    "Para_Birimi": ""
+  },
+  {
+    "Malzeme_Kodu": "FQ3A-XBN",
+    "Fiyat": "FİYAT SORUNUZ",
+    "Para_Birimi": ""
+  },
+  {
+    "Malzeme_Kodu": "FQ6A-XAN",
+    "Fiyat": "FİYAT SORUNUZ",
+    "Para_Birimi": ""
+  },
+  {
+    "Malzeme_Kodu": "FQ6A-XBN",
+    "Fiyat": "FİYAT SORUNUZ",
+    "Para_Birimi": ""
+  },
+  {
+    "Malzeme_Kodu": "FQ8A-XAN",
+    "Fiyat": "FİYAT SORUNUZ",
+    "Para_Birimi": ""
+  },
+  {
+    "Malzeme_Kodu": "FQ8A-XBN",
+    "Fiyat": "FİYAT SORUNUZ",
+    "Para_Birimi": ""
+  },
+  {
+    "Malzeme_Kodu": "QZC2-T21A-LAN",
+    "Fiyat": "528.35",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "QZC2-T21A-LBN",
+    "Fiyat": "528.35",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "QZC2-T21A-LCN",
+    "Fiyat": "528.35",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "QZC2-T21A-LDN",
+    "Fiyat": "528.35",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "FL2A-T13A-XDN",
+    "Fiyat": "129.08",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "FL6A-T16A-XAN",
+    "Fiyat": "206.53",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "FL6A-T16A-XBN",
+    "Fiyat": "206.53",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "FL6A-T16A-XCN",
+    "Fiyat": "206.53",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "FL6A-T16A-XDN",
+    "Fiyat": "206.53",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "FL8A-T18A-XAN",
+    "Fiyat": "309.79",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "FL8A-T18A-XBN",
+    "Fiyat": "309.79",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "FL8A-T18A-XCN",
+    "Fiyat": "309.79",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "FL8A-T18A-XDN",
+    "Fiyat": "309.79",
+    "Para_Birimi": "$"
+  }
+]
+```
