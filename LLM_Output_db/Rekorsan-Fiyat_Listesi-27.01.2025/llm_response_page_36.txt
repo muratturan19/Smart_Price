@@ -2,344 +2,382 @@
 [
   {
     "Malzeme_Kodu": "RK-0606-MTD-L",
+    "Açıklama": "",
     "Fiyat": "108,01",
+    "Adet": "",
+    "Birim": "",
     "Para_Birimi": "TL",
+    "Marka": "",
     "Kutu_Adedi": "30"
   },
   {
     "Malzeme_Kodu": "RK-0808-MTD-L",
+    "Açıklama": "",
     "Fiyat": "105,00",
+    "Adet": "",
+    "Birim": "",
     "Para_Birimi": "TL",
+    "Marka": "",
     "Kutu_Adedi": "25"
   },
   {
     "Malzeme_Kodu": "RK-1010-MTD-L",
+    "Açıklama": "",
     "Fiyat": "110,79",
+    "Adet": "",
+    "Birim": "",
     "Para_Birimi": "TL",
+    "Marka": "",
     "Kutu_Adedi": "25"
   },
   {
     "Malzeme_Kodu": "RK-1212-MTD-L",
+    "Açıklama": "",
     "Fiyat": "113,85",
+    "Adet": "",
+    "Birim": "",
     "Para_Birimi": "TL",
+    "Marka": "",
     "Kutu_Adedi": "30"
   },
   {
     "Malzeme_Kodu": "RK-1515-MTD-L",
+    "Açıklama": "",
     "Fiyat": "146,07",
+    "Adet": "",
+    "Birim": "",
     "Para_Birimi": "TL",
+    "Marka": "",
     "Kutu_Adedi": "30"
   },
   {
     "Malzeme_Kodu": "RK-1818-MTD-L",
+    "Açıklama": "",
     "Fiyat": "190,61",
+    "Adet": "",
+    "Birim": "",
     "Para_Birimi": "TL",
+    "Marka": "",
     "Kutu_Adedi": "25"
   },
   {
     "Malzeme_Kodu": "RK-2222-MTD-L",
+    "Açıklama": "",
     "Fiyat": "224,56",
+    "Adet": "",
+    "Birim": "",
     "Para_Birimi": "TL",
+    "Marka": "",
     "Kutu_Adedi": "20"
   },
   {
     "Malzeme_Kodu": "RK-2828-MTD-L",
+    "Açıklama": "",
     "Fiyat": "351,27",
+    "Adet": "",
+    "Birim": "",
     "Para_Birimi": "TL",
+    "Marka": "",
     "Kutu_Adedi": "10"
   },
   {
     "Malzeme_Kodu": "RK-3535-MTD-L",
+    "Açıklama": "",
     "Fiyat": "485,83",
+    "Adet": "",
+    "Birim": "",
     "Para_Birimi": "TL",
+    "Marka": "",
     "Kutu_Adedi": "8"
   },
   {
     "Malzeme_Kodu": "RK-4242-MTD-L",
+    "Açıklama": "",
     "Fiyat": "653,49",
+    "Adet": "",
+    "Birim": "",
     "Para_Birimi": "TL",
+    "Marka": "",
     "Kutu_Adedi": "4"
   },
   {
     "Malzeme_Kodu": "RK-0606-MTD-S",
+    "Açıklama": "",
     "Fiyat": "136,54",
+    "Adet": "",
+    "Birim": "",
     "Para_Birimi": "TL",
+    "Marka": "",
     "Kutu_Adedi": "30"
   },
   {
     "Malzeme_Kodu": "RK-0808-MTD-S",
+    "Açıklama": "",
     "Fiyat": "140,61",
+    "Adet": "",
+    "Birim": "",
     "Para_Birimi": "TL",
+    "Marka": "",
     "Kutu_Adedi": "25"
   },
   {
     "Malzeme_Kodu": "RK-1010-MTD-S",
+    "Açıklama": "",
     "Fiyat": "139,10",
+    "Adet": "",
+    "Birim": "",
     "Para_Birimi": "TL",
+    "Marka": "",
     "Kutu_Adedi": "25"
   },
   {
     "Malzeme_Kodu": "RK-1212-MTD-S",
+    "Açıklama": "",
     "Fiyat": "145,68",
+    "Adet": "",
+    "Birim": "",
     "Para_Birimi": "TL",
-    "Kutu_Adedi": "25"
+    "Marka": "",
+    "Kutu_Adedi": "30"
   },
   {
     "Malzeme_Kodu": "RK-1616-MTD-S",
+    "Açıklama": "",
     "Fiyat": "164,45",
+    "Adet": "",
+    "Birim": "",
     "Para_Birimi": "TL",
+    "Marka": "",
     "Kutu_Adedi": "25"
   },
   {
     "Malzeme_Kodu": "RK-2020-MTD-S",
+    "Açıklama": "",
     "Fiyat": "219,82",
+    "Adet": "",
+    "Birim": "",
     "Para_Birimi": "TL",
+    "Marka": "",
     "Kutu_Adedi": "30"
   },
   {
     "Malzeme_Kodu": "RK-2525-MTD-S",
+    "Açıklama": "",
     "Fiyat": "364,48",
+    "Adet": "",
+    "Birim": "",
     "Para_Birimi": "TL",
+    "Marka": "",
     "Kutu_Adedi": "8"
   },
   {
     "Malzeme_Kodu": "RK-3030-MTD-S",
+    "Açıklama": "",
     "Fiyat": "508,20",
+    "Adet": "",
+    "Birim": "",
     "Para_Birimi": "TL",
-    "Kutu_Adedi": "8"
-  },
-  {
-    "Malzeme_Kodu": "RK-3838-MTD-S",
-    "Fiyat": "687,36",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "4"
-  },
-  {
-    "Malzeme_Kodu": "RK-0606-MYT-L",
-    "Fiyat": "133,26",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "25"
-  },
-  {
-    "Malzeme_Kodu": "RK-0808-MYT-L",
-    "Fiyat": "132,99",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "25"
-  },
-  {
-    "Malzeme_Kodu": "RK-1010-MYT-L",
-    "Fiyat": "132,25",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "30"
-  },
-  {
-    "Malzeme_Kodu": "RK-1212-MYT-L",
-    "Fiyat": "140,30",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "30"
-  },
-  {
-    "Malzeme_Kodu": "RK-1515-MYT-L",
-    "Fiyat": "181,30",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "30"
-  },
-  {
-    "Malzeme_Kodu": "RK-1818-MYT-L",
-    "Fiyat": "223,28",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "20"
-  },
-  {
-    "Malzeme_Kodu": "RK-2222-MYT-L",
-    "Fiyat": "264,50",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "15"
-  },
-  {
-    "Malzeme_Kodu": "RK-2828-MYT-L",
-    "Fiyat": "401,09",
-    "Para_Birimi": "TL",
+    "Marka": "",
     "Kutu_Adedi": "10"
   },
   {
-    "Malzeme_Kodu": "RK-3535-MYT-L",
-    "Fiyat": "561,80",
+    "Malzeme_Kodu": "RK-3838-MTD-S",
+    "Açıklama": "",
+    "Fiyat": "687,36",
+    "Adet": "",
+    "Birim": "",
     "Para_Birimi": "TL",
-    "Kutu_Adedi": "6"
-  },
-  {
-    "Malzeme_Kodu": "RK-4242-MYT-L",
-    "Fiyat": "801,70",
-    "Para_Birimi": "TL",
+    "Marka": "",
     "Kutu_Adedi": "4"
   },
   {
-    "Malzeme_Kodu": "RK-0606-MYT-S",
-    "Fiyat": "162,10",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "25"
-  },
-  {
-    "Malzeme_Kodu": "RK-0808-MYT-S",
-    "Fiyat": "165,42",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "25"
-  },
-  {
-    "Malzeme_Kodu": "RK-1010-MYT-S",
-    "Fiyat": "173,55",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "25"
-  },
-  {
-    "Malzeme_Kodu": "RK-1212-MYT-S",
-    "Fiyat": "179,48",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "25"
-  },
-  {
-    "Malzeme_Kodu": "RK-1616-MYT-S",
-    "Fiyat": "207,00",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "25"
-  },
-  {
-    "Malzeme_Kodu": "RK-2020-MYT-S",
-    "Fiyat": "282,65",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "15"
-  },
-  {
-    "Malzeme_Kodu": "RK-2525-MYT-S",
-    "Fiyat": "410,81",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "8"
-  },
-  {
-    "Malzeme_Kodu": "RK-3030-MYT-S",
-    "Fiyat": "603,76",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "6"
-  },
-  {
-    "Malzeme_Kodu": "RK-3838-MYT-S",
-    "Fiyat": "852,44",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "3"
-  },
-  {
     "Malzeme_Kodu": "RK-0606-MOT-L",
+    "Açıklama": "",
     "Fiyat": "133,26",
+    "Adet": "",
+    "Birim": "",
     "Para_Birimi": "TL",
+    "Marka": "",
     "Kutu_Adedi": "25"
   },
   {
     "Malzeme_Kodu": "RK-0808-MOT-L",
+    "Açıklama": "",
     "Fiyat": "132,99",
+    "Adet": "",
+    "Birim": "",
     "Para_Birimi": "TL",
+    "Marka": "",
     "Kutu_Adedi": "25"
   },
   {
     "Malzeme_Kodu": "RK-1010-MOT-L",
+    "Açıklama": "",
     "Fiyat": "132,25",
+    "Adet": "",
+    "Birim": "",
     "Para_Birimi": "TL",
+    "Marka": "",
     "Kutu_Adedi": "30"
   },
   {
     "Malzeme_Kodu": "RK-1212-MOT-L",
+    "Açıklama": "",
     "Fiyat": "140,30",
+    "Adet": "",
+    "Birim": "",
     "Para_Birimi": "TL",
+    "Marka": "",
     "Kutu_Adedi": "30"
   },
   {
     "Malzeme_Kodu": "RK-1515-MOT-L",
+    "Açıklama": "",
     "Fiyat": "181,30",
+    "Adet": "",
+    "Birim": "",
     "Para_Birimi": "TL",
+    "Marka": "",
     "Kutu_Adedi": "30"
   },
   {
     "Malzeme_Kodu": "RK-1818-MOT-L",
+    "Açıklama": "",
     "Fiyat": "223,28",
+    "Adet": "",
+    "Birim": "",
     "Para_Birimi": "TL",
-    "Kutu_Adedi": "20"
+    "Marka": "",
+    "Kutu_Adedi": "25"
   },
   {
     "Malzeme_Kodu": "RK-2222-MOT-L",
+    "Açıklama": "",
     "Fiyat": "264,50",
+    "Adet": "",
+    "Birim": "",
     "Para_Birimi": "TL",
+    "Marka": "",
     "Kutu_Adedi": "15"
   },
   {
     "Malzeme_Kodu": "RK-2828-MOT-L",
+    "Açıklama": "",
     "Fiyat": "401,09",
+    "Adet": "",
+    "Birim": "",
     "Para_Birimi": "TL",
+    "Marka": "",
     "Kutu_Adedi": "10"
   },
   {
     "Malzeme_Kodu": "RK-3535-MOT-L",
+    "Açıklama": "",
     "Fiyat": "561,80",
+    "Adet": "",
+    "Birim": "",
     "Para_Birimi": "TL",
+    "Marka": "",
     "Kutu_Adedi": "6"
   },
   {
     "Malzeme_Kodu": "RK-4242-MOT-L",
+    "Açıklama": "",
     "Fiyat": "801,70",
+    "Adet": "",
+    "Birim": "",
     "Para_Birimi": "TL",
+    "Marka": "",
     "Kutu_Adedi": "4"
   },
   {
     "Malzeme_Kodu": "RK-0606-MOT-S",
+    "Açıklama": "",
     "Fiyat": "162,10",
+    "Adet": "",
+    "Birim": "",
     "Para_Birimi": "TL",
+    "Marka": "",
     "Kutu_Adedi": "25"
   },
   {
     "Malzeme_Kodu": "RK-0808-MOT-S",
+    "Açıklama": "",
     "Fiyat": "165,42",
+    "Adet": "",
+    "Birim": "",
     "Para_Birimi": "TL",
+    "Marka": "",
     "Kutu_Adedi": "25"
   },
   {
     "Malzeme_Kodu": "RK-1010-MOT-S",
+    "Açıklama": "",
     "Fiyat": "173,55",
+    "Adet": "",
+    "Birim": "",
     "Para_Birimi": "TL",
+    "Marka": "",
     "Kutu_Adedi": "25"
   },
   {
     "Malzeme_Kodu": "RK-1212-MOT-S",
+    "Açıklama": "",
     "Fiyat": "179,48",
+    "Adet": "",
+    "Birim": "",
     "Para_Birimi": "TL",
+    "Marka": "",
     "Kutu_Adedi": "25"
   },
   {
     "Malzeme_Kodu": "RK-1616-MOT-S",
+    "Açıklama": "",
     "Fiyat": "207,00",
+    "Adet": "",
+    "Birim": "",
     "Para_Birimi": "TL",
+    "Marka": "",
     "Kutu_Adedi": "25"
   },
   {
     "Malzeme_Kodu": "RK-2020-MOT-S",
+    "Açıklama": "",
     "Fiyat": "282,65",
+    "Adet": "",
+    "Birim": "",
     "Para_Birimi": "TL",
+    "Marka": "",
     "Kutu_Adedi": "15"
   },
   {
     "Malzeme_Kodu": "RK-2525-MOT-S",
+    "Açıklama": "",
     "Fiyat": "410,81",
+    "Adet": "",
+    "Birim": "",
     "Para_Birimi": "TL",
+    "Marka": "",
     "Kutu_Adedi": "8"
   },
   {
     "Malzeme_Kodu": "RK-3030-MOT-S",
+    "Açıklama": "",
     "Fiyat": "603,76",
+    "Adet": "",
+    "Birim": "",
     "Para_Birimi": "TL",
+    "Marka": "",
     "Kutu_Adedi": "6"
   },
   {
     "Malzeme_Kodu": "RK-3838-MOT-S",
+    "Açıklama": "",
     "Fiyat": "852,44",
+    "Adet": "",
+    "Birim": "",
     "Para_Birimi": "TL",
+    "Marka": "",
     "Kutu_Adedi": "3"
   }
 ]
