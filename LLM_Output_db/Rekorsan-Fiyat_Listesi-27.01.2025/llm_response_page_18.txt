@@ -3,362 +3,356 @@
   {
     "Malzeme_Kodu": "RK-1010-MAT",
     "Fiyat": "15,10",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "100"
+    "Kutu_Adedi": "100",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-1215-MAT",
     "Fiyat": "19,38",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "50"
+    "Kutu_Adedi": "50",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-1415-MAT",
     "Fiyat": "20,20",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "50"
+    "Kutu_Adedi": "50",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-1615-MAT",
     "Fiyat": "23,36",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "50"
+    "Kutu_Adedi": "50",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-1815-MAT",
     "Fiyat": "24,40",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "50"
+    "Kutu_Adedi": "50",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-2015-MAT",
     "Fiyat": "28,06",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "50"
+    "Kutu_Adedi": "50",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-2215-MAT",
     "Fiyat": "28,71",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "50"
+    "Kutu_Adedi": "50",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-2415-MAT",
     "Fiyat": "36,66",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "50"
+    "Kutu_Adedi": "50",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-2615-MAT",
     "Fiyat": "49,62",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "25"
+    "Kutu_Adedi": "25",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-1215-MKT",
     "Fiyat": "29,37",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "50"
+    "Kutu_Adedi": "50",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-1415-MKT",
     "Fiyat": "31,59",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "50"
+    "Kutu_Adedi": "50",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-1615-MKT",
     "Fiyat": "36,30",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "50"
+    "Kutu_Adedi": "50",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-1815-MKT",
     "Fiyat": "40,40",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "50"
+    "Kutu_Adedi": "50",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-2015-MKT",
     "Fiyat": "43,23",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "50"
+    "Kutu_Adedi": "50",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-2215-MKT",
     "Fiyat": "46,75",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "50"
+    "Kutu_Adedi": "50",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-2415-MKT",
     "Fiyat": "51,15",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "50"
+    "Kutu_Adedi": "50",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-2615-MKT",
     "Fiyat": "60,06",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "50"
+    "Kutu_Adedi": "50",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-3020-MKT",
     "Fiyat": "68,50",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "20"
+    "Kutu_Adedi": "20",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-1006-MET-LL",
     "Fiyat": "24,45",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "50"
+    "Kutu_Adedi": "50",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-1208-MET-LL",
     "Fiyat": "24,76",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "50"
+    "Kutu_Adedi": "50",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-1206-MET-LL",
     "Fiyat": "24,81",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "50"
+    "Kutu_Adedi": "50",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-1408-MET-LL",
     "Fiyat": "25,47",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "50"
+    "Kutu_Adedi": "50",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-1610-MET-LL",
-    "Fiyat": "25,57",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "50"
+    "Fiyat": "27,71",
+    "Kutu_Adedi": "50",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-1812-MET-LL",
     "Fiyat": "27,71",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "50"
+    "Kutu_Adedi": "50",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-2215-MET-LL",
-    "Fiyat": "29,71",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "50"
+    "Fiyat": "29,40",
+    "Kutu_Adedi": "50",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-2618-MET-LL",
     "Fiyat": "45,64",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "25"
+    "Kutu_Adedi": "25",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-3022-MET-LL",
     "Fiyat": "59,81",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "25"
+    "Kutu_Adedi": "25",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-3628-MET-LL",
     "Fiyat": "97,34",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "15"
+    "Kutu_Adedi": "15",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-4535-MET-LL",
     "Fiyat": "125,77",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "15"
+    "Kutu_Adedi": "15",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-5522-MET-LL",
     "Fiyat": "162,90",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "10"
+    "Kutu_Adedi": "10",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-1406-MET-S",
     "Fiyat": "29,40",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "50"
+    "Kutu_Adedi": "50",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-1608-MET-S",
     "Fiyat": "30,94",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "50"
+    "Kutu_Adedi": "50",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-1810-MET-S",
     "Fiyat": "31,96",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "50"
+    "Kutu_Adedi": "50",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-2012-MET-S",
     "Fiyat": "34,28",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "50"
+    "Kutu_Adedi": "50",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-2215-MET-S",
     "Fiyat": "47,86",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "50"
+    "Kutu_Adedi": "50",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-3020-MET-S",
     "Fiyat": "64,17",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "25"
+    "Kutu_Adedi": "25",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-3625-MET-S",
     "Fiyat": "107,59",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "15"
+    "Kutu_Adedi": "15",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-4230-MET-S",
     "Fiyat": "137,38",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "10"
+    "Kutu_Adedi": "10",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-5238-MET-S",
     "Fiyat": "185,03",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "10"
+    "Kutu_Adedi": "10",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-1006-MST-LL",
     "Fiyat": "32,64",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "50"
+    "Kutu_Adedi": "50",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-1208-MST-LL",
     "Fiyat": "32,64",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "50"
+    "Kutu_Adedi": "50",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-1206-MST-LL",
     "Fiyat": "32,64",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "50"
+    "Kutu_Adedi": "50",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-1408-MST-LL",
     "Fiyat": "33,39",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "50"
+    "Kutu_Adedi": "50",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-1610-MST-LL",
     "Fiyat": "33,39",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "50"
+    "Kutu_Adedi": "50",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-1812-MST-LL",
     "Fiyat": "33,46",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "50"
+    "Kutu_Adedi": "50",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-2215-MST-LL",
     "Fiyat": "35,64",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "50"
+    "Kutu_Adedi": "50",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-2618-MST-LL",
     "Fiyat": "65,40",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "25"
+    "Kutu_Adedi": "25",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-3022-MST-LL",
-    "Fiyat": "115,64",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "25"
+    "Fiyat": "155,64",
+    "Kutu_Adedi": "15",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-3628-MST-LL",
-    "Fiyat": "156,00",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "15"
+    "Fiyat": "311,96",
+    "Kutu_Adedi": "10",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-4535-MST-LL",
-    "Fiyat": "242,00",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "10"
-  },
-  {
-    "Malzeme_Kodu": "RK-5522-MST-LL",
     "Fiyat": "311,96",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "10"
+    "Kutu_Adedi": "10",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-1406-MST-S",
     "Fiyat": "35,31",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "50"
+    "Kutu_Adedi": "50",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-1608-MST-S",
     "Fiyat": "36,94",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "50"
+    "Kutu_Adedi": "50",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-1810-MST-S",
     "Fiyat": "38,46",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "50"
+    "Kutu_Adedi": "50",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-2012-MST-S",
     "Fiyat": "42,64",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "50"
+    "Kutu_Adedi": "50",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-2215-MST-S",
     "Fiyat": "53,40",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "50"
+    "Kutu_Adedi": "50",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-3020-MST-S",
     "Fiyat": "83,20",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "25"
+    "Kutu_Adedi": "25",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-3625-MST-S",
-    "Fiyat": "137,38",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "15"
+    "Fiyat": "242,02",
+    "Kutu_Adedi": "10",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-4230-MST-S",
-    "Fiyat": "242,00",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "10"
+    "Fiyat": "242,02",
+    "Kutu_Adedi": "10",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-5238-MST-S",
     "Fiyat": "337,61",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "10"
+    "Kutu_Adedi": "10",
+    "Para_Birimi": "TL"
   }
 ]
 ```
