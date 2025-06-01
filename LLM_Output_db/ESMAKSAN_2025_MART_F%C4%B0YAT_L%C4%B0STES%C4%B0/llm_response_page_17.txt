@@ -1,0 +1,129 @@
+```json
+[
+  {
+    "Malzeme_Kodu": "FK 3001M",
+    "Fiyat": "160,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "FK 3002M",
+    "Fiyat": "180,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "FK 3003M",
+    "Fiyat": "210,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "FK 3004M",
+    "Fiyat": "250,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "FK 3005M",
+    "Fiyat": "320,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "FK 3006M",
+    "Fiyat": "480,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "FK 3007M",
+    "Fiyat": "700,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "FK 3008M",
+    "Fiyat": "1.100,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "FK 3009M",
+    "Fiyat": "1.400,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "FK 3010M",
+    "Fiyat": "2.400,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "FK 3011M",
+    "Fiyat": "2.800,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "FK 6001M",
+    "Fiyat": "320,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "FK 6002M",
+    "Fiyat": "500,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "FK 6003M",
+    "Fiyat": "580,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "FK 6004M",
+    "Fiyat": "720,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "FK 6005M",
+    "Fiyat": "1.000,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "FK 6006M",
+    "Fiyat": "2.000,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "FK 6007M",
+    "Fiyat": "5.500,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "FK 6008M",
+    "Fiyat": "7.000,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "FK 9001M",
+    "Fiyat": "400,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "FK 9002M",
+    "Fiyat": "500,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "FK 9003M",
+    "Fiyat": "580,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "FK 9004M",
+    "Fiyat": "720,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "FK 9005M",
+    "Fiyat": "1.000,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "FK 9006M",
+    "Fiyat": "2.250,00",
+    "Para_Birimi": "TL"
+  }
+]
+```
