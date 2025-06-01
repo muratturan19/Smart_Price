@@ -26,7 +26,7 @@
     "Para_Birimi": "TL"
   },
   {
-    "Malzeme_Kodu": "RK-326314-KFLD",
+    "Malzeme_Kodu": "RK-323614-KFLD",
     "Fiyat": "501,33",
     "Para_Birimi": "TL"
   },
@@ -61,7 +61,7 @@
     "Para_Birimi": "TL"
   },
   {
-    "Malzeme_Kodu": "RK-326314-KFL45",
+    "Malzeme_Kodu": "RK-323614-KFL45",
     "Fiyat": "802,14",
     "Para_Birimi": "TL"
   },
@@ -96,7 +96,7 @@
     "Para_Birimi": "TL"
   },
   {
-    "Malzeme_Kodu": "RK-326314-KFL90",
+    "Malzeme_Kodu": "RK-323614-KFL90",
     "Fiyat": "802,14",
     "Para_Birimi": "TL"
   },
