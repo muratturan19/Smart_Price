@@ -1,0 +1,109 @@
+```json
+[
+  {
+    "Malzeme_Kodu": "RK-194110-KFLD",
+    "Fiyat": "261,57",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-254814-KFLD",
+    "Fiyat": "305,16",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-25414-KFLD",
+    "Fiyat": "326,95",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-323418-KFLD",
+    "Fiyat": "435,95",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-325414-KFLD",
+    "Fiyat": "435,95",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-326314-KFLD",
+    "Fiyat": "601,33",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-336314-KFLD",
+    "Fiyat": "523,14",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-194110-KFL45",
+    "Fiyat": "418,52",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-254814-KFL45",
+    "Fiyat": "488,26",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-25414-KFL45",
+    "Fiyat": "523,14",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-323418-KFL45",
+    "Fiyat": "697,52",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-325414-KFL45",
+    "Fiyat": "697,52",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-326314-KFL45",
+    "Fiyat": "802,14",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-336314-KFL45",
+    "Fiyat": "871,91",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-194110-KFL90",
+    "Fiyat": "418,52",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-254814-KFL90",
+    "Fiyat": "488,26",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-25414-KFL90",
+    "Fiyat": "523,14",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-323418-KFL90",
+    "Fiyat": "697,52",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-325414-KFL90",
+    "Fiyat": "697,52",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-326314-KFL90",
+    "Fiyat": "802,14",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-336314-KFL90",
+    "Fiyat": "871,91",
+    "Para_Birimi": "TL"
+  }
+]
+```
