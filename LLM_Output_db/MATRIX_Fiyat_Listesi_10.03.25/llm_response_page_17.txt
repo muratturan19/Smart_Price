@@ -1,0 +1,19 @@
+```json
+[
+  {
+    "Malzeme_Kodu": "PX8619E4C2",
+    "Fiyat": "612,00",
+    "Para_Birimi": "EUR"
+  },
+  {
+    "Malzeme_Kodu": "QX8619E4C2",
+    "Fiyat": "804,00",
+    "Para_Birimi": "EUR"
+  },
+  {
+    "Malzeme_Kodu": "868.843B",
+    "Fiyat": "29,80",
+    "Para_Birimi": "EUR"
+  }
+]
+```
