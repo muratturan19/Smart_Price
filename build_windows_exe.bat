@@ -2,7 +2,8 @@
 REM Build standalone Windows executable for Streamlit app
 REM Requires pyinstaller to be installed: pip install pyinstaller
 
-set SCRIPT=Price App\smart_price\streamlit_app.py
+REM Entry script that launches Streamlit using stcli
+set SCRIPT=run_app.py
 set DATAFOLDER=data
 set LOGOFOLDER=logo
 
