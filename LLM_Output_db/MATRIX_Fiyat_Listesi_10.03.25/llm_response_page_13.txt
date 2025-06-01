@@ -1,0 +1,119 @@
+```json
+[
+    {
+        "Malzeme_Kodu": "H",
+        "Fiyat": "39,20",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "K",
+        "Fiyat": "40,80",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "868.871B",
+        "Fiyat": "18,40",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "868.875H",
+        "Fiyat": "19,80",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "868.876L",
+        "Fiyat": "21,20",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "868.880M",
+        "Fiyat": "27,20",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "868.851J",
+        "Fiyat": "34,00",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "869.916J",
+        "Fiyat": "38,20",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "868.854M",
+        "Fiyat": "40,40",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "868.883P",
+        "Fiyat": "46,80",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "868.855N",
+        "Fiyat": "48,80",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "869.917J",
+        "Fiyat": "55,20",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "869.908A",
+        "Fiyat": "59,40",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "868.884Q",
+        "Fiyat": "68,00",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "868.950F",
+        "Fiyat": "114,60",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "868.951F",
+        "Fiyat": "131,60",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "868.952G",
+        "Fiyat": "148,40",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "868.953H",
+        "Fiyat": "176,00",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "868.954I",
+        "Fiyat": "193,00",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "868.955J",
+        "Fiyat": "216,40",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "868.956K",
+        "Fiyat": "233,20",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "869.308X",
+        "Fiyat": "15,80",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "869.314E",
+        "Fiyat": "15,80",
+        "Para_Birimi": "EUR"
+    }
+]
+```
