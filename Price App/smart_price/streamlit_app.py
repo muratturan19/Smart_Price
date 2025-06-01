@@ -109,7 +109,7 @@ def _configure_tesseract() -> None:
 
 def resource_path(relative: str) -> str:
     """Return absolute path to resource, works for PyInstaller bundles."""
-    base_path = getattr(sys, '_MEIPASS', Path(__file__).parent)
+    base_path = getattr(sys, "_MEIPASS", Path(__file__).parent)
     return str(Path(base_path) / relative)
 
 
@@ -129,7 +129,7 @@ def extract_from_pdf_file(
     file: io.BytesIO,
     *,
     file_name: str | None = None,
-    status_log: Optional[Callable[[str], None]] = None,
+    status_log: Optional[Callable[[str, str], None]] = None,
 ) -> pd.DataFrame:
     """Wrapper around :func:`smart_price.core.extract_pdf.extract_from_pdf`."""
     return extract_from_pdf(file, filename=file_name, log=status_log)
@@ -138,7 +138,7 @@ def extract_from_pdf_file(
 def merge_files(
     uploaded_files,
     *,
-    update_status: Optional[Callable[[str], None]] = None,
+    update_status: Optional[Callable[[str, str], None]] = None,
     update_progress: Optional[Callable[[float], None]] = None,
 ):
     """Extract and merge uploaded files with optional progress callbacks."""
@@ -146,12 +146,14 @@ def merge_files(
     total = len(uploaded_files)
     for idx, up_file in enumerate(uploaded_files, start=1):
         if update_status:
-            update_status(f"{up_file.name} okunuyor")
+            update_status("Dosya y\u00fckleniyor, l\u00fctfen bekleyin...", "info")
         if update_progress:
             update_progress((idx - 1) / total)
 
         name = up_file.name.lower()
         bytes_data = io.BytesIO(up_file.read())
+        if update_status:
+            update_status("Veri ay\u0131klan\u0131yor...", "info")
         df = pd.DataFrame()
         try:
             if name.endswith((".xlsx", ".xls")):
@@ -167,11 +169,11 @@ def merge_files(
 
         if df.empty:
             if update_status:
-                update_status("veri çıkarılamadı")
+                update_status("veri çıkarılamadı", "warning")
         else:
             extracted.append(df)
             if update_status:
-                update_status(f"{len(df)} kayıt bulundu")
+                update_status(f"{len(df)} kayıt bulundu", "info")
 
         if update_progress:
             update_progress(idx / total)
@@ -181,8 +183,6 @@ def merge_files(
 
     if update_progress:
         update_progress(1.0)
-    if update_status:
-        update_status("Tamamlandı")
 
     master = pd.concat(extracted, ignore_index=True)
     logger.debug("[merge] Raw merged rows: %d", len(master))
@@ -205,6 +205,11 @@ def merge_files(
         master["Kisa_Kod"] = master["Kisa_Kod"].astype(str)
     if "Malzeme_Kodu" in master.columns:
         master["Malzeme_Kodu"] = master["Malzeme_Kodu"].astype(str)
+    if update_status:
+        update_status(
+            f"{len(master)} sat\u0131r ba\u015far\u0131yla bulundu, sonucu kaydetmek i\u00e7in butona bas\u0131n.",
+            "success",
+        )
     return master
 
 
@@ -237,12 +242,17 @@ def save_master_dataset(
 
         if "Kaynak_Dosya" in df.columns:
             for src in df["Kaynak_Dosya"].dropna().unique():
-                folder = Path(os.getenv("SMART_PRICE_DEBUG_DIR", "LLM_Output_db")) / Path(src).stem
+                folder = (
+                    Path(os.getenv("SMART_PRICE_DEBUG_DIR", "LLM_Output_db"))
+                    / Path(src).stem
+                )
                 if folder.exists():
                     try:
                         shutil.rmtree(folder)
                     except Exception as exc:  # pragma: no cover - cleanup failures
-                        logger.debug("LLM output cleanup failed for %s: %s", folder, exc)
+                        logger.debug(
+                            "LLM output cleanup failed for %s: %s", folder, exc
+                        )
 
     merged = pd.concat([existing, df], ignore_index=True)
     merged.to_excel(excel_path, index=False)
@@ -374,11 +384,20 @@ def upload_page():
     if st.button("Dosyaları İşle"):
         uploaded_list = ", ".join(f.name for f in files)
         with st.spinner("Dosyalar işleniyor..."):
-            status = st.empty()
+            status_box = st.empty()
             progress_bar = st.progress(0.0)
+
+            def show_status(msg: str, level: str = "info") -> None:
+                if level == "success":
+                    status_box.success(msg)
+                elif level == "warning":
+                    status_box.warning(msg)
+                else:
+                    status_box.info(msg)
+
             df = merge_files(
                 files,
-                update_status=status.write,
+                update_status=show_status,
                 update_progress=lambda v: progress_bar.progress(v),
             )
         st.info(f"Yüklenen dosyalar: {uploaded_list}")
@@ -387,15 +406,16 @@ def upload_page():
             return
 
         st.session_state["processed_df"] = df
-        big_alert(f"{len(df)} kayıt bulundu", level="success")
         st.metric("Rows", len(df))
-        coverage = df['Malzeme_Kodu'].notna().mean()
+        coverage = df["Malzeme_Kodu"].notna().mean()
         st.metric("Code filled %", f"{coverage:.1%}")
         if coverage < MIN_CODE_RATIO:
             big_alert("Low code coverage – OCR/LLM suggested", level="error")
         st.dataframe(df)
 
-    if st.button("Master Veriyi Kaydet"):
+    if st.session_state.get("processed_df") is not None and st.button(
+        "Master Veriyi Kaydet"
+    ):
         df = st.session_state.get("processed_df")
         if df is None or df.empty:
             big_alert("Kaydedilecek veri yok.", level="error")
@@ -428,7 +448,9 @@ def search_page():
     master_df = pd.read_excel(data_path)
     query = st.text_input("Malzeme kodu veya adı")
     if query:
-        results = master_df[master_df["Descriptions"].str.contains(query, case=False, na=False)]
+        results = master_df[
+            master_df["Descriptions"].str.contains(query, case=False, na=False)
+        ]
         if not results.empty:
             try:
                 theme = st.get_option("theme") or {}
@@ -532,6 +554,7 @@ def cli() -> None:
     init_logging(config.LOG_PATH)
     _configure_tesseract()
     from streamlit.web import cli as stcli
+
     sys.argv = ["streamlit", "run", __file__]
     sys.exit(stcli.main())
 

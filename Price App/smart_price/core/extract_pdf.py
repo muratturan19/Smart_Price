@@ -1,15 +1,15 @@
 from __future__ import annotations
 
 import os
-import io
 import tempfile
-from typing import IO, Any, Optional, Sequence
+from typing import IO, Any, Optional, Sequence, Callable
 import logging
 from datetime import datetime
 import difflib
 import unicodedata
 
 import pandas as pd
+
 try:
     from dotenv import load_dotenv, find_dotenv
 except ImportError:  # pragma: no cover - support missing find_dotenv
@@ -17,6 +17,7 @@ except ImportError:  # pragma: no cover - support missing find_dotenv
 
     def find_dotenv() -> str:
         return ""
+
 
 try:
     load_dotenv(dotenv_path=find_dotenv())
@@ -29,16 +30,10 @@ from .common_utils import (
     normalize_price,
     detect_currency,
     detect_brand,
-    split_code_description,
     gpt_clean_text,
     safe_json_parse,
 )
 import time
-from .extract_excel import (
-    POSSIBLE_PRICE_HEADERS,
-    POSSIBLE_PRODUCT_NAME_HEADERS,
-    POSSIBLE_CODE_HEADERS,
-)
 from . import ocr_llm_fallback
 from pathlib import Path
 from .debug_utils import save_debug, set_output_subdir
@@ -46,9 +41,10 @@ from .github_upload import upload_folder, _sanitize_repo_path
 
 MIN_CODE_RATIO = 0.70
 MIN_ROWS_PARSER = 500
-CODE_RE = re.compile(r'^([A-ZÇĞİÖŞÜ0-9][A-ZÇĞİÖŞÜ0-9\-/]{1,})', re.I)
+CODE_RE = re.compile(r"^([A-ZÇĞİÖŞÜ0-9][A-ZÇĞİÖŞÜ0-9\-/]{1,})", re.I)
 
 logger = logging.getLogger("smart_price")
+
 
 def _norm(s: Any) -> str:
     """Normalize ``s`` for fuzzy header matching."""
@@ -61,15 +57,19 @@ def header_match(
     """Return True if ``cell`` fuzzily matches any of ``candidates``."""
     norm_candidates = [_norm(c) for c in candidates]
     if difflib.get_close_matches(_norm(cell), norm_candidates, cutoff=0.75):
-        logger.info(
-            "header_match", extra={"header": cell, "match_type": match_type}
-        )
+        logger.info("header_match", extra={"header": cell, "match_type": match_type})
         return True
     return False
 
+
 _patterns = [
-    re.compile(r"^(.*?)\s{2,}([\d\.,]+)\s*(?:TL|TRY|EUR|USD|\$|€)?$", re.MULTILINE | re.IGNORECASE),
-    re.compile(r"([A-Z0-9\-\s/]{5,50})\s+([\d\.,]+)\s*(?:TL|TRY|EUR|USD|\$|€)?", re.IGNORECASE),
+    re.compile(
+        r"^(.*?)\s{2,}([\d\.,]+)\s*(?:TL|TRY|EUR|USD|\$|€)?$",
+        re.MULTILINE | re.IGNORECASE,
+    ),
+    re.compile(
+        r"([A-Z0-9\-\s/]{5,50})\s+([\d\.,]+)\s*(?:TL|TRY|EUR|USD|\$|€)?", re.IGNORECASE
+    ),
     re.compile(r"Item Code:\s*(.*?)\s*Price:\s*([\d\.,]+)", re.IGNORECASE),
     re.compile(r"Ürün No:\s*(.*?)\s*Birim Fiyat:\s*([\d\.,]+)", re.IGNORECASE),
 ]
@@ -88,18 +88,19 @@ def _basename(fp: Any, filename: Optional[str] = None) -> str:
 
 
 def extract_from_pdf(
-    filepath: str | IO[bytes], *,
+    filepath: str | IO[bytes],
+    *,
     filename: str | None = None,
-    log: Any | None = None,
+    log: Optional[Callable[[str, str], None]] = None,
 ) -> pd.DataFrame:
     """Extract product information from a PDF file."""
     page_summary: list[dict[str, object]] = []
 
-    def notify(message: str) -> None:
+    def notify(message: str, level: str = "info") -> None:
         logger.info(message)
         if log:
             try:
-                log(message)
+                log(message, level)
             except Exception as exc:  # pragma: no cover - log callback errors
                 logger.error("log callback failed: %s", exc)
 
@@ -265,7 +266,6 @@ def extract_from_pdf(
         logger.debug("LLM prompt length: %d", len(prompt))
         logger.debug("LLM prompt excerpt: %r", prompt[:200])
 
-
         try:
             start_llm = time.time()
             resp = client.chat.completions.create(
@@ -273,9 +273,7 @@ def extract_from_pdf(
                 messages=[{"role": "user", "content": prompt}],
                 temperature=0.2,
             )
-            logger.info(
-                "OpenAI request took %.2fs", time.time() - start_llm
-            )
+            logger.info("OpenAI request took %.2fs", time.time() - start_llm)
             time.sleep(0.5)
             content = resp.choices[0].message.content
             save_debug("llm_response", 1, content)
@@ -324,14 +322,14 @@ def extract_from_pdf(
         return results
 
     tmp_for_llm: str | None = None
-    
+
     def cleanup() -> None:
         if tmp_for_llm:
             try:
                 os.remove(tmp_for_llm)
             except Exception as exc:
                 notify(f"temp file cleanup failed: {exc}")
-    
+
     try:
         if isinstance(filepath, (str, bytes, os.PathLike)):
             path_for_llm = filepath
@@ -346,11 +344,13 @@ def extract_from_pdf(
             tmp.close()
             tmp_for_llm = tmp.name
             path_for_llm = tmp_for_llm
-    
+
+        notify("G\u00f6rseller olu\u015fturuluyor...")
         result = ocr_llm_fallback.parse(
             path_for_llm,
             output_name=output_stem if tmp_for_llm else None,
         )
+        notify("Sat\u0131rlar\u0131n g\u00f6rselleri haz\u0131rlan\u0131yor...")
         page_summary = getattr(result, "page_summary", [])
     except Exception as exc:
         notify(f"PDF error for {filepath}: {exc}")
@@ -359,16 +359,18 @@ def extract_from_pdf(
         notify(f"Failed {src} after {duration:.2f}s")
         cleanup()
         return pd.DataFrame()
-    
+
     if result.empty:
         cleanup()
         duration = time.time() - total_start
         notify(f"Finished {src} via LLM with 0 rows in {duration:.2f}s")
-        debug_dir = Path(os.getenv("SMART_PRICE_DEBUG_DIR", "LLM_Output_db")) / output_stem
+        debug_dir = (
+            Path(os.getenv("SMART_PRICE_DEBUG_DIR", "LLM_Output_db")) / output_stem
+        )
         set_output_subdir(None)
         upload_folder(debug_dir, remote_prefix=f"LLM_Output_db/{debug_dir.name}")
         return result
-    
+
     result["Para_Birimi"] = result["Para_Birimi"].fillna("TL")
     result["Kaynak_Dosya"] = _basename(filepath, filename)
     result["Yil"] = None
