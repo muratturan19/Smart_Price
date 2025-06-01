@@ -101,7 +101,7 @@ tools run. Open this file with a text editor or use commands such as
 
 Verbose details such as the chosen LLM model, prompt length and the raw
 response returned by the OpenAI API are logged automatically. Per page images
-and JSON responses are written to the `LLM Images` directory under a
+and JSON responses are written to the `LLM_Output_db` directory under a
 subfolder matching the processed PDF name.
 
 #### Debug information
@@ -113,7 +113,7 @@ The log records extra details to help trace each step:
 - page numbers for processed pages
 - a snippet of the prompt sent to the LLM
 - and the first items parsed from the response.
-- per-page debug files stored under `LLM Images/<PDF adı>` (set
+- per-page debug files stored under `LLM_Output_db/<PDF adı>` (set
   `SMART_PRICE_DEBUG_DIR` to override the location)
  - set `GITHUB_REPO` and `GITHUB_TOKEN` to automatically push each debug
    directory and the files under `Master data base/` (including
