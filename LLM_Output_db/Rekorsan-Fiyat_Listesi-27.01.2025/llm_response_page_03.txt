@@ -1,1 +1,0 @@
-Görselde bir içindekiler tablosu var ve bu tablo ürün kodları veya fiyat bilgileri içermiyor. Bu nedenle, belirtilen kurallara göre çıkarılacak bir veri bulunmuyor. Eğer başka sayfalar veya tablolar varsa, onları da inceleyebilirim.
