@@ -1,0 +1,379 @@
+```json
+[
+  {
+    "Malzeme_Kodu": "80 - AL.",
+    "Fiyat": "9,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "80 - B5",
+    "Fiyat": "13,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "80 - Klemens Kutusu ve Kapağı",
+    "Fiyat": "5,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "90 - AL.",
+    "Fiyat": "10,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "90 - B5",
+    "Fiyat": "15,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "100 - AL.",
+    "Fiyat": "13,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "100 - B5",
+    "Fiyat": "19,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "100 - B14, B14/2",
+    "Fiyat": "12,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "112 - AL.",
+    "Fiyat": "14,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "112 - B5",
+    "Fiyat": "21,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "112 - B14, B14/2",
+    "Fiyat": "14,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "132 - AL.",
+    "Fiyat": "21,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "132 - PİK",
+    "Fiyat": "33,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "132 - B5",
+    "Fiyat": "29,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "132 - B14, B14/2",
+    "Fiyat": "27,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "132 - Klemens Kutusu ve Kapağı",
+    "Fiyat": "7,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "160 - AL.",
+    "Fiyat": "24,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "160 - PİK",
+    "Fiyat": "36,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "160 - B5",
+    "Fiyat": "79,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "160 - B14, B14/2",
+    "Fiyat": "79,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "160 - Klemens Kutusu ve Kapağı",
+    "Fiyat": "8,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "180 - AL.",
+    "Fiyat": "28,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "180 - PİK",
+    "Fiyat": "41,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "180 - B5",
+    "Fiyat": "87,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "180 - Klemens Kutusu ve Kapağı",
+    "Fiyat": "19,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "200 - PİK",
+    "Fiyat": "54,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "200 - B5",
+    "Fiyat": "130,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "225 - PİK",
+    "Fiyat": "72,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "225 - B5",
+    "Fiyat": "159,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "250 - PİK",
+    "Fiyat": "114,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "250 - B5",
+    "Fiyat": "238,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "280 - PİK",
+    "Fiyat": "127,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "280 - B5",
+    "Fiyat": "283,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "280 - Klemens Kutusu ve Kapağı",
+    "Fiyat": "26,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "315/2P - PİK",
+    "Fiyat": "164,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "315/2P - B5",
+    "Fiyat": "519,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "315/4,6,8P - PİK",
+    "Fiyat": "174,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "355/2P - B5",
+    "Fiyat": "235,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "355/2P - Klemens Kutusu ve Kapağı",
+    "Fiyat": "86,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "355/4,6,8P - B5",
+    "Fiyat": "777,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "90 - Klemens",
+    "Fiyat": "4,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "90 - Pervane (Plastik)",
+    "Fiyat": "3,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "112 - Rulman Kapağı (İç/Dış)",
+    "Fiyat": "3,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "112 - Rulman Baskı Yayı",
+    "Fiyat": "3,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "132 - Klemens",
+    "Fiyat": "7,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "132 - Rulman Baskı Yayı",
+    "Fiyat": "4,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "132 - Pervane (Plastik)",
+    "Fiyat": "4,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "160 - Klemens",
+    "Fiyat": "12,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "160 - Pervane (Plastik)",
+    "Fiyat": "5,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "180 - Klemens",
+    "Fiyat": "15,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "180 - Pervane (Plastik)",
+    "Fiyat": "6,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "200 - Klemens",
+    "Fiyat": "18,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "225 - Klemens",
+    "Fiyat": "22,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "225 - Rulman Kapağı (İç/Dış)",
+    "Fiyat": "6,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "225 - Rulman Baskı Yayı",
+    "Fiyat": "4,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "225 - Pervane (Plastik)",
+    "Fiyat": "7,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "250 - Klemens",
+    "Fiyat": "29,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "250 - Rulman Kapağı (İç/Dış)",
+    "Fiyat": "17,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "250 - Rulman Baskı Yayı",
+    "Fiyat": "5,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "280 - Klemens",
+    "Fiyat": "33,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "280 - Rulman Kapağı (İç/Dış)",
+    "Fiyat": "19,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "280 - Rulman Baskı Yayı",
+    "Fiyat": "5,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "280 - Pervane (Plastik)",
+    "Fiyat": "9,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "315/2P - Klemens",
+    "Fiyat": "41,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "315/2P - Rulman Kapağı (İç/Dış)",
+    "Fiyat": "29,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "315/2P - Rulman Baskı Yayı",
+    "Fiyat": "6,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "315/2P - Pervane (Plastik)",
+    "Fiyat": "11,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "315/4,6,8P - Klemens",
+    "Fiyat": "79,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "315/4,6,8P - Rulman Kapağı (İç/Dış)",
+    "Fiyat": "29,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "315/4,6,8P - Rulman Baskı Yayı",
+    "Fiyat": "6,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "315/4,6,8P - Pervane (Plastik)",
+    "Fiyat": "13,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "355/2P - Klemens",
+    "Fiyat": "104,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "355/2P - Rulman Kapağı (İç/Dış)",
+    "Fiyat": "36,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "355/2P - Rulman Baskı Yayı",
+    "Fiyat": "8,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "355/2P - Pervane (Plastik)",
+    "Fiyat": "14,00",
+    "Para_Birimi": "TL"
+  }
+]
+```
