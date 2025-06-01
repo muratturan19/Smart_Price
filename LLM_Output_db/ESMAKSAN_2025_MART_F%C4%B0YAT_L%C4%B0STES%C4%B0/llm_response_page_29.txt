@@ -1,0 +1,174 @@
+```json
+[
+    {
+        "Malzeme_Kodu": "KFC250-038",
+        "Fiyat": "Fiyat Alınız",
+        "Para_Birimi": "TL"
+    },
+    {
+        "Malzeme_Kodu": "KFC250-012",
+        "Fiyat": "Fiyat Alınız",
+        "Para_Birimi": "TL"
+    },
+    {
+        "Malzeme_Kodu": "KFC250-034",
+        "Fiyat": "Fiyat Alınız",
+        "Para_Birimi": "TL"
+    },
+    {
+        "Malzeme_Kodu": "KFC250-100",
+        "Fiyat": "Fiyat Alınız",
+        "Para_Birimi": "TL"
+    },
+    {
+        "Malzeme_Kodu": "KFC250-114",
+        "Fiyat": "Fiyat Alınız",
+        "Para_Birimi": "TL"
+    },
+    {
+        "Malzeme_Kodu": "KFC250-116",
+        "Fiyat": "Fiyat Alınız",
+        "Para_Birimi": "TL"
+    },
+    {
+        "Malzeme_Kodu": "KFC250-200",
+        "Fiyat": "Fiyat Alınız",
+        "Para_Birimi": "TL"
+    },
+    {
+        "Malzeme_Kodu": "KFC250-212",
+        "Fiyat": "Fiyat Alınız",
+        "Para_Birimi": "TL"
+    },
+    {
+        "Malzeme_Kodu": "KFC250-300",
+        "Fiyat": "Fiyat Alınız",
+        "Para_Birimi": "TL"
+    },
+    {
+        "Malzeme_Kodu": "KFC250-312",
+        "Fiyat": "Fiyat Alınız",
+        "Para_Birimi": "TL"
+    },
+    {
+        "Malzeme_Kodu": "KFC250-400",
+        "Fiyat": "Fiyat Alınız",
+        "Para_Birimi": "TL"
+    },
+    {
+        "Malzeme_Kodu": "KFC250-500",
+        "Fiyat": "Fiyat Alınız",
+        "Para_Birimi": "TL"
+    },
+    {
+        "Malzeme_Kodu": "KFC400-038",
+        "Fiyat": "Fiyat Alınız",
+        "Para_Birimi": "TL"
+    },
+    {
+        "Malzeme_Kodu": "KFC400-012",
+        "Fiyat": "Fiyat Alınız",
+        "Para_Birimi": "TL"
+    },
+    {
+        "Malzeme_Kodu": "KFC400-034",
+        "Fiyat": "Fiyat Alınız",
+        "Para_Birimi": "TL"
+    },
+    {
+        "Malzeme_Kodu": "KFC400-114",
+        "Fiyat": "Fiyat Alınız",
+        "Para_Birimi": "TL"
+    },
+    {
+        "Malzeme_Kodu": "KFC400-116",
+        "Fiyat": "Fiyat Alınız",
+        "Para_Birimi": "TL"
+    },
+    {
+        "Malzeme_Kodu": "KFC400-200",
+        "Fiyat": "Fiyat Alınız",
+        "Para_Birimi": "TL"
+    },
+    {
+        "Malzeme_Kodu": "KFC400-212",
+        "Fiyat": "Fiyat Alınız",
+        "Para_Birimi": "TL"
+    },
+    {
+        "Malzeme_Kodu": "KFC400-300",
+        "Fiyat": "Fiyat Alınız",
+        "Para_Birimi": "TL"
+    },
+    {
+        "Malzeme_Kodu": "KFC400-312",
+        "Fiyat": "Fiyat Alınız",
+        "Para_Birimi": "TL"
+    },
+    {
+        "Malzeme_Kodu": "KFC400-400",
+        "Fiyat": "Fiyat Alınız",
+        "Para_Birimi": "TL"
+    },
+    {
+        "Malzeme_Kodu": "SAER 3003/3004",
+        "Fiyat": "Fiyat Alınız",
+        "Para_Birimi": "TL"
+    },
+    {
+        "Malzeme_Kodu": "SAER 3004/3005",
+        "Fiyat": "Fiyat Alınız",
+        "Para_Birimi": "TL"
+    },
+    {
+        "Malzeme_Kodu": "SAER 3005/3006",
+        "Fiyat": "Fiyat Alınız",
+        "Para_Birimi": "TL"
+    },
+    {
+        "Malzeme_Kodu": "SAER 3006/3007",
+        "Fiyat": "Fiyat Alınız",
+        "Para_Birimi": "TL"
+    },
+    {
+        "Malzeme_Kodu": "SAER 3007/3008",
+        "Fiyat": "Fiyat Alınız",
+        "Para_Birimi": "TL"
+    },
+    {
+        "Malzeme_Kodu": "SAER 6002/6001",
+        "Fiyat": "Fiyat Alınız",
+        "Para_Birimi": "TL"
+    },
+    {
+        "Malzeme_Kodu": "SAER 6003/6002",
+        "Fiyat": "Fiyat Alınız",
+        "Para_Birimi": "TL"
+    },
+    {
+        "Malzeme_Kodu": "SAER 6004/6003",
+        "Fiyat": "Fiyat Alınız",
+        "Para_Birimi": "TL"
+    },
+    {
+        "Malzeme_Kodu": "SAER 6005/6004",
+        "Fiyat": "Fiyat Alınız",
+        "Para_Birimi": "TL"
+    },
+    {
+        "Malzeme_Kodu": "SAER 6006/6005",
+        "Fiyat": "Fiyat Alınız",
+        "Para_Birimi": "TL"
+    },
+    {
+        "Malzeme_Kodu": "SAER 6007/6006",
+        "Fiyat": "Fiyat Alınız",
+        "Para_Birimi": "TL"
+    },
+    {
+        "Malzeme_Kodu": "SAER 6008/6007",
+        "Fiyat": "Fiyat Alınız",
+        "Para_Birimi": "TL"
+    }
+]
+```
