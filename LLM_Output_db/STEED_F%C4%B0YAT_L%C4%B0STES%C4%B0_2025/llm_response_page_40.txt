@@ -1,0 +1,219 @@
+```json
+[
+  {
+    "Malzeme_Kodu": "SR6ERM - 042",
+    "Fiyat": "2.868,34",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SR6ERM - 045",
+    "Fiyat": "2.868,34",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SR6ERM - 050",
+    "Fiyat": "2.868,34",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SR6ERM - 052",
+    "Fiyat": "2.868,34",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SR6ERM - 062",
+    "Fiyat": "2.868,34",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SR6ERM - 066",
+    "Fiyat": "2.868,34",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SR6ERM - 072",
+    "Fiyat": "2.868,34",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "ST6EDC - 042 - Pompa 1",
+    "Fiyat": "8.802,75",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "ST6EDC - 014 - Pompa 2",
+    "Fiyat": "8.802,75",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "ST6EDC - 005 - Pompa 3",
+    "Fiyat": "8.802,75",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "ST6EDC - 045 - Pompa 1",
+    "Fiyat": "8.802,75",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "ST6EDC - 017 - Pompa 2",
+    "Fiyat": "8.802,75",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "ST6EDC - 006 - Pompa 3",
+    "Fiyat": "8.802,75",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "ST6EDC - 050 - Pompa 1",
+    "Fiyat": "8.802,75",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "ST6EDC - 020 - Pompa 2",
+    "Fiyat": "8.802,75",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "ST6EDC - 008 - Pompa 3",
+    "Fiyat": "8.802,75",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "ST6EDC - 052 - Pompa 1",
+    "Fiyat": "8.802,75",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "ST6EDC - 024 - Pompa 2",
+    "Fiyat": "8.802,75",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "ST6EDC - 010 - Pompa 3",
+    "Fiyat": "8.802,75",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "ST6EDC - 057 - Pompa 1",
+    "Fiyat": "8.802,75",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "ST6EDC - 028 - Pompa 2",
+    "Fiyat": "8.802,75",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "ST6EDC - 012 - Pompa 3",
+    "Fiyat": "8.802,75",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "ST6EDC - 062 - Pompa 1",
+    "Fiyat": "8.802,75",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "ST6EDC - 031 - Pompa 2",
+    "Fiyat": "8.802,75",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "ST6EDC - 014 - Pompa 3",
+    "Fiyat": "8.802,75",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "ST6EDC - 066 - Pompa 1",
+    "Fiyat": "8.802,75",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "ST6EDC - 035 - Pompa 2",
+    "Fiyat": "8.802,75",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "ST6EDC - 017 - Pompa 3",
+    "Fiyat": "8.802,75",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "ST6EDC - 072 - Pompa 1",
+    "Fiyat": "8.802,75",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "ST6EDC - 038 - Pompa 2",
+    "Fiyat": "8.802,75",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "ST6EDC - 020 - Pompa 3",
+    "Fiyat": "8.802,75",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "ST6EDC - 085 - Pompa 1",
+    "Fiyat": "8.802,75",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "ST6EDC - 042 - Pompa 2",
+    "Fiyat": "8.802,75",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "ST6EDC - 022 - Pompa 3",
+    "Fiyat": "8.802,75",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "ST7EE - 042",
+    "Fiyat": "8.125,62",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "ST7EE - 045",
+    "Fiyat": "8.125,62",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "ST7EE - 050",
+    "Fiyat": "8.125,62",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "ST7EE - 052",
+    "Fiyat": "8.125,62",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "ST7EE - 057",
+    "Fiyat": "8.125,62",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "ST7EE - 062",
+    "Fiyat": "8.125,62",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "ST7EE - 066",
+    "Fiyat": "8.125,62",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "ST7EE - 072",
+    "Fiyat": "8.125,62",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "ST7EE - 085",
+    "Fiyat": "8.125,62",
+    "Para_Birimi": "TL"
+  }
+]
+```
