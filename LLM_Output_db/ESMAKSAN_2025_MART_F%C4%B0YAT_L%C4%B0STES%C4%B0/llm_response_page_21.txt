@@ -1,0 +1,114 @@
+```json
+[
+  {
+    "Malzeme_Kodu": "SAE 3001DO - O-RİNG",
+    "Fiyat": "200,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAE 3002DO - O-RİNG",
+    "Fiyat": "220,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAE 3003DO - O-RİNG",
+    "Fiyat": "300,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAE 3004DO - O-RİNG",
+    "Fiyat": "360,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAE 3005DO - O-RİNG",
+    "Fiyat": "420,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAE 3006DO - O-RİNG",
+    "Fiyat": "470,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAE 3007DO - O-RİNG",
+    "Fiyat": "800,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAE 3008DO - O-RİNG",
+    "Fiyat": "1.300,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAE 3009DO - O-RİNG",
+    "Fiyat": "1.400,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAE 3010DO - O-RİNG",
+    "Fiyat": "2.000,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAE 3011DO - O-RİNG",
+    "Fiyat": "2.500,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAE 3001D - O-RİNGSİZ",
+    "Fiyat": "240,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAE 3002D - O-RİNGSİZ",
+    "Fiyat": "270,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAE 3003D - O-RİNGSİZ",
+    "Fiyat": "350,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAE 3004D - O-RİNGSİZ",
+    "Fiyat": "410,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAE 3005D - O-RİNGSİZ",
+    "Fiyat": "480,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAE 3006D - O-RİNGSİZ",
+    "Fiyat": "550,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAE 3007D - O-RİNGSİZ",
+    "Fiyat": "870,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAE 3008D - O-RİNGSİZ",
+    "Fiyat": "1.400,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAE 3009D - O-RİNGSİZ",
+    "Fiyat": "1.500,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAE 3010D - O-RİNGSİZ",
+    "Fiyat": "2.100,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAE 3011D - O-RİNGSİZ",
+    "Fiyat": "2.600,00",
+    "Para_Birimi": "TL"
+  }
+]
+```
