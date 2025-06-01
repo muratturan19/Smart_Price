@@ -45,7 +45,7 @@
   {
     "Malzeme_Kodu": "RK-3333-WD",
     "Fiyat": "214,36",
-    "Kutu_Adedi": "10",
+    "Kutu_Adedi": "15",
     "Para_Birimi": "TL"
   },
   {
@@ -121,61 +121,61 @@
     "Para_Birimi": "TL"
   },
   {
-    "Malzeme_Kodu": "RK-1111-WWT",
+    "Malzeme_Kodu": "RK-1111-WTT",
     "Fiyat": "133,18",
     "Kutu_Adedi": "30",
     "Para_Birimi": "TL"
   },
   {
-    "Malzeme_Kodu": "RK-1212-WWT",
+    "Malzeme_Kodu": "RK-1212-WTT",
     "Fiyat": "135,15",
     "Kutu_Adedi": "30",
     "Para_Birimi": "TL"
   },
   {
-    "Malzeme_Kodu": "RK-1414-WWT",
+    "Malzeme_Kodu": "RK-1414-WTT",
     "Fiyat": "141,84",
     "Kutu_Adedi": "30",
     "Para_Birimi": "TL"
   },
   {
-    "Malzeme_Kodu": "RK-1616-WWT",
+    "Malzeme_Kodu": "RK-1616-WTT",
     "Fiyat": "143,36",
     "Kutu_Adedi": "25",
     "Para_Birimi": "TL"
   },
   {
-    "Malzeme_Kodu": "RK-1919-WWT",
+    "Malzeme_Kodu": "RK-1919-WTT",
     "Fiyat": "168,05",
     "Kutu_Adedi": "20",
     "Para_Birimi": "TL"
   },
   {
-    "Malzeme_Kodu": "RK-2222-WWT",
+    "Malzeme_Kodu": "RK-2222-WTT",
     "Fiyat": "212,34",
     "Kutu_Adedi": "20",
     "Para_Birimi": "TL"
   },
   {
-    "Malzeme_Kodu": "RK-2727-WWT",
+    "Malzeme_Kodu": "RK-2727-WTT",
     "Fiyat": "261,80",
     "Kutu_Adedi": "15",
     "Para_Birimi": "TL"
   },
   {
-    "Malzeme_Kodu": "RK-3333-WWT",
+    "Malzeme_Kodu": "RK-3333-WTT",
     "Fiyat": "432,98",
     "Kutu_Adedi": "10",
     "Para_Birimi": "TL"
   },
   {
-    "Malzeme_Kodu": "RK-4141-WWT",
+    "Malzeme_Kodu": "RK-4141-WTT",
     "Fiyat": "658,59",
     "Kutu_Adedi": "5",
     "Para_Birimi": "TL"
   },
   {
-    "Malzeme_Kodu": "RK-4747-WWT",
+    "Malzeme_Kodu": "RK-4747-WTT",
     "Fiyat": "908,75",
     "Kutu_Adedi": "3",
     "Para_Birimi": "TL"
