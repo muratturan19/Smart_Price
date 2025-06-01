@@ -196,7 +196,7 @@
     "Para_Birimi": "USD"
   },
   {
-    "Malzeme_Kodu": "3MGS 355LA4 - 4k-1500 d/dak.",
+    "Malzeme_Kodu": "3MGS 355MD4 - 4k-1500 d/dak.",
     "Fiyat": "23,261.00",
     "Para_Birimi": "USD"
   },
@@ -301,7 +301,17 @@
     "Para_Birimi": "USD"
   },
   {
-    "Malzeme_Kodu": "3MGS 250MK2 - 2k-3000 d/dak.",
+    "Malzeme_Kodu": "3MGS 355LB6 - 6k-1000 d/dak.",
+    "Fiyat": "3MGS 355LB6",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MGS 355LC6 - 6k-1000 d/dak.",
+    "Fiyat": "3MGS 355LC6",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MGS 250MK4 - 2k-3000 d/dak.",
     "Fiyat": "4,762.00",
     "Para_Birimi": "USD"
   },
