@@ -1,0 +1,334 @@
+```json
+[
+  {
+    "Malzeme_Kodu": "RK-1006-NMD-LL",
+    "Fiyat": "88,83",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "50"
+  },
+  {
+    "Malzeme_Kodu": "RK-1006-NMD-L",
+    "Fiyat": "88,83",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "50"
+  },
+  {
+    "Malzeme_Kodu": "RK-1008-NMD-L",
+    "Fiyat": "90,70",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "30"
+  },
+  {
+    "Malzeme_Kodu": "RK-1010-NMD-L",
+    "Fiyat": "95,88",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "30"
+  },
+  {
+    "Malzeme_Kodu": "RK-1306-NMD-L",
+    "Fiyat": "96,36",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "30"
+  },
+  {
+    "Malzeme_Kodu": "RK-1308-NMD-L",
+    "Fiyat": "96,36",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "30"
+  },
+  {
+    "Malzeme_Kodu": "RK-1310-NMD-L",
+    "Fiyat": "96,36",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "30"
+  },
+  {
+    "Malzeme_Kodu": "RK-1312-NMD-L",
+    "Fiyat": "99,54",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-1706-NMD-L",
+    "Fiyat": "99,54",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-1708-NMD-L",
+    "Fiyat": "99,54",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-1710-NMD-L",
+    "Fiyat": "99,54",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-1712-NMD-L",
+    "Fiyat": "99,54",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-2110-NMD-L",
+    "Fiyat": "111,10",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-2112-NMD-L",
+    "Fiyat": "111,10",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-2115-NMD-L",
+    "Fiyat": "111,10",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-2118-NMD-L",
+    "Fiyat": "138,94",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "20"
+  },
+  {
+    "Malzeme_Kodu": "RK-2622-NMD-L",
+    "Fiyat": "162,94",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-3328-NMD-L",
+    "Fiyat": "241,19",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "15"
+  },
+  {
+    "Malzeme_Kodu": "RK-4235-NMD-L",
+    "Fiyat": "401,58",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "10"
+  },
+  {
+    "Malzeme_Kodu": "RK-4842-NMD-L",
+    "Fiyat": "569,35",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "5"
+  },
+  {
+    "Malzeme_Kodu": "RK-1306-NMS-D",
+    "Fiyat": "96,36",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-1308-NMS-D",
+    "Fiyat": "96,36",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-1310-NMS-D",
+    "Fiyat": "99,54",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-1708-NMS-D",
+    "Fiyat": "99,54",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-1710-NMS-D",
+    "Fiyat": "99,54",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-1712-NMS-D",
+    "Fiyat": "111,93",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "30"
+  },
+  {
+    "Malzeme_Kodu": "RK-1716-NMS-D",
+    "Fiyat": "126,40",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "20"
+  },
+  {
+    "Malzeme_Kodu": "RK-2112-NMS-D",
+    "Fiyat": "111,10",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-2116-NMS-D",
+    "Fiyat": "116,08",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "20"
+  },
+  {
+    "Malzeme_Kodu": "RK-2616-NMS-D",
+    "Fiyat": "173,63",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-2620-NMS-D",
+    "Fiyat": "173,63",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-2625-NMS-D",
+    "Fiyat": "252,98",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "15"
+  },
+  {
+    "Malzeme_Kodu": "RK-3320-NMS-D",
+    "Fiyat": "253,56",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "15"
+  },
+  {
+    "Malzeme_Kodu": "RK-3325-NMS-D",
+    "Fiyat": "253,56",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "15"
+  },
+  {
+    "Malzeme_Kodu": "RK-3330-NMS-D",
+    "Fiyat": "331,87",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "10"
+  },
+  {
+    "Malzeme_Kodu": "RK-4230-NMS-D",
+    "Fiyat": "331,87",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "10"
+  },
+  {
+    "Malzeme_Kodu": "RK-4238-NMS-D",
+    "Fiyat": "539,36",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "5"
+  },
+  {
+    "Malzeme_Kodu": "RK-4838-NMS-D",
+    "Fiyat": "539,36",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "5"
+  },
+  {
+    "Malzeme_Kodu": "RK-1011-NWD",
+    "Fiyat": "88,94",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "50"
+  },
+  {
+    "Malzeme_Kodu": "RK-1311-NWD",
+    "Fiyat": "96,36",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "30"
+  },
+  {
+    "Malzeme_Kodu": "RK-1314-NWD",
+    "Fiyat": "108,29",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-1319-NWD",
+    "Fiyat": "111,93",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-1714-NWD",
+    "Fiyat": "90,17",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-1716-NWD",
+    "Fiyat": "99,54",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-1719-NWD",
+    "Fiyat": "111,93",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "30"
+  },
+  {
+    "Malzeme_Kodu": "RK-2114-NWD",
+    "Fiyat": "120,33",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "30"
+  },
+  {
+    "Malzeme_Kodu": "RK-2116-NWD",
+    "Fiyat": "123,28",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "30"
+  },
+  {
+    "Malzeme_Kodu": "RK-2119-NWD",
+    "Fiyat": "123,28",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "30"
+  },
+  {
+    "Malzeme_Kodu": "RK-2122-NWD",
+    "Fiyat": "125,45",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "20"
+  },
+  {
+    "Malzeme_Kodu": "RK-2127-NWD",
+    "Fiyat": "171,95",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "20"
+  },
+  {
+    "Malzeme_Kodu": "RK-2619-NWD",
+    "Fiyat": "173,63",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "20"
+  },
+  {
+    "Malzeme_Kodu": "RK-2622-NWD",
+    "Fiyat": "173,63",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "20"
+  },
+  {
+    "Malzeme_Kodu": "RK-2627-NWD",
+    "Fiyat": "173,63",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "20"
+  },
+  {
+    "Malzeme_Kodu": "RK-3327-NWD",
+    "Fiyat": "272,31",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "15"
+  },
+  {
+    "Malzeme_Kodu": "RK-3333-NWD",
+    "Fiyat": "272,31",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "15"
+  }
+]
+```
