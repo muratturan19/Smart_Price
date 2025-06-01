@@ -1,0 +1,214 @@
+```json
+[
+  {
+    "Malzeme_Kodu": "RK-1414-OD",
+    "Fiyat": "99,27",
+    "Kutu_Adedi": "30",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1717-OD",
+    "Fiyat": "107,55",
+    "Kutu_Adedi": "25",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-2121-OD",
+    "Fiyat": "118,68",
+    "Kutu_Adedi": "30",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-2525-OD",
+    "Fiyat": "179,49",
+    "Kutu_Adedi": "20",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-3030-OD",
+    "Fiyat": "212,82",
+    "Kutu_Adedi": "10",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-3737-OD",
+    "Fiyat": "298,71",
+    "Kutu_Adedi": "15",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-4343-OD",
+    "Fiyat": "400,48",
+    "Kutu_Adedi": "10",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1414-OTD",
+    "Fiyat": "121,04",
+    "Kutu_Adedi": "25",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1717-OTD",
+    "Fiyat": "129,64",
+    "Kutu_Adedi": "25",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-2121-OTD",
+    "Fiyat": "144,24",
+    "Kutu_Adedi": "25",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-2525-OTD",
+    "Fiyat": "220,41",
+    "Kutu_Adedi": "15",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-3030-OTD",
+    "Fiyat": "276,09",
+    "Kutu_Adedi": "20",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-3737-OTD",
+    "Fiyat": "402,73",
+    "Kutu_Adedi": "10",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-4343-OTD",
+    "Fiyat": "524,83",
+    "Kutu_Adedi": "6",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1414-OYT",
+    "Fiyat": "231,52",
+    "Kutu_Adedi": "30",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1717-OYT",
+    "Fiyat": "239,07",
+    "Kutu_Adedi": "25",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-2121-OYT",
+    "Fiyat": "262,40",
+    "Kutu_Adedi": "20",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-2525-OYT",
+    "Fiyat": "343,07",
+    "Kutu_Adedi": "20",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-3030-OYT",
+    "Fiyat": "387,64",
+    "Kutu_Adedi": "10",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-3737-OYT",
+    "Fiyat": "514,67",
+    "Kutu_Adedi": "8",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-4343-OYT",
+    "Fiyat": "637,68",
+    "Kutu_Adedi": "6",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1414-OOT",
+    "Fiyat": "231,52",
+    "Kutu_Adedi": "30",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1717-OOT",
+    "Fiyat": "239,07",
+    "Kutu_Adedi": "25",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-2121-OOT",
+    "Fiyat": "262,40",
+    "Kutu_Adedi": "20",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-2525-OOT",
+    "Fiyat": "343,07",
+    "Kutu_Adedi": "20",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-3030-OOT",
+    "Fiyat": "387,64",
+    "Kutu_Adedi": "10",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-3737-OOT",
+    "Fiyat": "514,67",
+    "Kutu_Adedi": "8",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-4343-OOT",
+    "Fiyat": "637,68",
+    "Kutu_Adedi": "6",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1414-OT",
+    "Fiyat": "208,69",
+    "Kutu_Adedi": "25",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1717-OT",
+    "Fiyat": "217,41",
+    "Kutu_Adedi": "30",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-2121-OT",
+    "Fiyat": "236,82",
+    "Kutu_Adedi": "25",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-2525-OT",
+    "Fiyat": "304,72",
+    "Kutu_Adedi": "10",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-3030-OT",
+    "Fiyat": "327,49",
+    "Kutu_Adedi": "15",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-3737-OT",
+    "Fiyat": "414,13",
+    "Kutu_Adedi": "10",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-4343-OT",
+    "Fiyat": "513,31",
+    "Kutu_Adedi": "6",
+    "Para_Birimi": "TL"
+  }
+]
+```
