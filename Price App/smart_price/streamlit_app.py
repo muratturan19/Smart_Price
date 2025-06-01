@@ -427,10 +427,12 @@ def main():
     st.set_page_config(layout="wide")
 
     root_dir = Path(__file__).resolve().parents[2]
-    sidebar_logo = root_dir / "logo" / "sadece dp şeffaf.PNG"
+    sidebar_logo = root_dir / "logo" / "dp şeffaf logo.PNG"
     sidebar_logo_b64 = _img_to_base64(sidebar_logo)
     st.sidebar.markdown(
-        f"<img src='data:image/png;base64,{sidebar_logo_b64}' style='width:60px;margin-bottom:10px;' />",
+        f"<img src='data:image/png;base64,{sidebar_logo_b64}' "
+        "style='display:block;margin:20px auto 10px;"
+        "width:clamp(60px,8vw,85px);' />",
         unsafe_allow_html=True,
     )
 
@@ -441,10 +443,12 @@ def main():
         <style>
             .top-right-logo {{
                 position: fixed;
-                top: 30px;
-                right: 40px;
-                width: 180px;
+                top: 15px;
+                right: 20px;
+                width: clamp(80px,12vw,150px);
+                opacity: 0.6;
                 z-index: 1000;
+                pointer-events: none;
             }}
         </style>
         <img class="top-right-logo" src="data:image/png;base64,{encoded}" />
