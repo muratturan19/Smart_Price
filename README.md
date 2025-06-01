@@ -121,6 +121,13 @@ The log records extra details to help trace each step:
    under their respective folders (optionally specify `GITHUB_BRANCH`).
    If these variables are not set the upload is skipped gracefully.
 
+### Resetting the dataset
+
+Use the **Database Sıfırla** page in the Streamlit interface to remove all
+local output and master files.  When GitHub credentials are configured the same
+folders (`LLM_Output_db` and `Master data base`) are cleared from the
+repository as well.
+
 ## Troubleshooting
 
 If the vision stage fails to produce any items, the log records the model name
