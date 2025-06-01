@@ -73,7 +73,7 @@
     "Kutu_Adedi": "-"
   },
   {
-    "Malzeme_Kodu": "RK-7610-ÇŞ",
+    "Malzeme_Kodu": "RK-76103-ÇŞ",
     "Fiyat": "467,67",
     "Para_Birimi": "TL",
     "Kutu_Adedi": "-"
