@@ -504,7 +504,7 @@ def main():
         <header class='app-header'>
             <img src='{config.BASE_REPO_URL}/logo/dp_logo.png' class='header-logo left'>
             <h1 class='header-title'>Smart Price</h1>
-            <img src='{config.BASE_REPO_URL}/logo/delta%20logo%20-150p.png' class='header-logo right'>
+            <img src='{config.BASE_REPO_URL}/logo/delta_logo_150p.png' class='header-logo right'>
         </header>
         <style>
             .app-header {{
