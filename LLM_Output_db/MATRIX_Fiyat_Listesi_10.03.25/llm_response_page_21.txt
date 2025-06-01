@@ -1,0 +1,89 @@
+```json
+[
+  {
+    "Malzeme_Kodu": "MX894102C2 - EUR",
+    "Fiyat": "320,20",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "MX894102C2 - EUR",
+    "Fiyat": "328,60",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "MX894102C2 - EUR",
+    "Fiyat": "328,60",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "MX894102C2 - EUR",
+    "Fiyat": "336,90",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "MX894102C2 - EUR",
+    "Fiyat": "341,40",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "NX894102C2 - EUR",
+    "Fiyat": "341,40",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "NX894102C2 - EUR",
+    "Fiyat": "381,60",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "NX894102C2 - EUR",
+    "Fiyat": "358,40",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "OX894102C2 - EUR",
+    "Fiyat": "400,80",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "H - EUR",
+    "Fiyat": "39,20",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "I - EUR",
+    "Fiyat": "31,40",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "J - EUR",
+    "Fiyat": "70,40",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "8 - EUR",
+    "Fiyat": "12,80",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "5 - EUR",
+    "Fiyat": "38,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "5 - EUR",
+    "Fiyat": "51,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "P - EUR",
+    "Fiyat": "25,60",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "R - EUR",
+    "Fiyat": "68,80",
+    "Para_Birimi": "TL"
+  }
+]
+```
