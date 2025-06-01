@@ -80,7 +80,7 @@
   },
   {
     "Malzeme_Kodu": "RK-3333-RTD",
-    "Fiyat": "345,00",
+    "Fiyat": "345,70",
     "Kutu_Adedi": "4",
     "Para_Birimi": "TL"
   },
@@ -92,7 +92,7 @@
   },
   {
     "Malzeme_Kodu": "RK-4848-RTD",
-    "Fiyat": "717,26",
+    "Fiyat": "1177,26",
     "Kutu_Adedi": "4",
     "Para_Birimi": "TL"
   },
@@ -116,8 +116,8 @@
   },
   {
     "Malzeme_Kodu": "RK-1717-RYT",
-    "Fiyat": "140,70",
-    "Kutu_Adedi": "25",
+    "Fiyat": "119,70",
+    "Kutu_Adedi": "30",
     "Para_Birimi": "TL"
   },
   {
@@ -164,8 +164,8 @@
   },
   {
     "Malzeme_Kodu": "RK-1717-ROT",
-    "Fiyat": "140,70",
-    "Kutu_Adedi": "25",
+    "Fiyat": "119,70",
+    "Kutu_Adedi": "30",
     "Para_Birimi": "TL"
   },
   {
@@ -230,7 +230,7 @@
   },
   {
     "Malzeme_Kodu": "RK-3333-RTE",
-    "Fiyat": "342,04",
+    "Fiyat": "346,05",
     "Kutu_Adedi": "5",
     "Para_Birimi": "TL"
   },
@@ -278,7 +278,7 @@
   },
   {
     "Malzeme_Kodu": "RK-3333-KD",
-    "Fiyat": "345,00",
+    "Fiyat": "345,70",
     "Kutu_Adedi": "5",
     "Para_Birimi": "TL"
   },
