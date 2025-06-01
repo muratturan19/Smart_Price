@@ -163,11 +163,12 @@ def merge_files(
 
 def save_master_dataset(
     df: pd.DataFrame, mode: str = "Yeni fiyat listesi"
-) -> tuple[str, str, bool]:
+) -> tuple[str, str, bool | str]:
     """Save ``df`` into the master dataset file handling update logic.
 
-    Returns a tuple of the Excel path, DB path and a flag indicating whether a
-    GitHub upload was attempted.
+    Returns a tuple of the Excel path, DB path and an upload result.  The third
+    value is ``True`` when the GitHub upload succeeds, otherwise a string with
+    the error information.
     """
     excel_path = os.path.abspath(str(config.MASTER_EXCEL_PATH))
     db_path = os.path.abspath(str(config.MASTER_DB_PATH))
@@ -270,12 +271,18 @@ def save_master_dataset(
         db_df.to_sql("prices", conn, if_exists="replace", index=False)
     conn.close()
 
-    upload_attempted = upload_folder(
+    upload_ok = upload_folder(
         Path(config.MASTER_EXCEL_PATH).parent,
         remote_prefix="Master data base",
     )
 
-    return excel_path, db_path, bool(upload_attempted)
+    if upload_ok:
+        upload_result: bool | str = True
+    else:
+        logger.error("Repository upload failed")
+        upload_result = "Upload başarısız"
+
+    return excel_path, db_path, upload_result
 
 
 def upload_page():
@@ -322,7 +329,7 @@ def upload_page():
             st.error("Kaydedilecek veri yok.")
             return
         try:
-            excel_path, db_path, attempted = save_master_dataset(
+            excel_path, db_path, upload_result = save_master_dataset(
                 df, mode=st.session_state.get("upload_mode", "Yeni fiyat listesi")
             )
         except Exception as exc:  # pragma: no cover - UI feedback only
@@ -331,10 +338,10 @@ def upload_page():
             st.success(
                 f"Veriler kaydedildi:\nExcel: {excel_path}\nDB: {db_path}"
             )
-            if attempted:
-                st.info("Repository upload attempted")
+            if upload_result is True:
+                st.success("Upload başarılı")
             else:
-                st.info("Repository upload skipped")
+                st.error(upload_result)
 
 
 def search_page():
