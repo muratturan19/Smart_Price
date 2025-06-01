@@ -16,7 +16,7 @@
     "Malzeme_Kodu": "RK-1819-MWN",
     "Fiyat": "55,00",
     "Para_Birimi": "TL",
-    "Kutu_Adedi": "40"
+    "Kutu_Adedi": "30"
   },
   {
     "Malzeme_Kodu": "RK-2216-MWN",
@@ -70,7 +70,7 @@
     "Malzeme_Kodu": "RK-3333-WWBN",
     "Fiyat": "203,29",
     "Para_Birimi": "TL",
-    "Kutu_Adedi": "30"
+    "Kutu_Adedi": "25"
   },
   {
     "Malzeme_Kodu": "RK-4141-WWBN",
@@ -124,13 +124,13 @@
     "Malzeme_Kodu": "RK-2218-WMN-L",
     "Fiyat": "61,71",
     "Para_Birimi": "TL",
-    "Kutu_Adedi": "25"
+    "Kutu_Adedi": "30"
   },
   {
     "Malzeme_Kodu": "RK-2715-WMN-L",
     "Fiyat": "106,91",
     "Para_Birimi": "TL",
-    "Kutu_Adedi": "20"
+    "Kutu_Adedi": "30"
   },
   {
     "Malzeme_Kodu": "RK-1410-WMN-S",
@@ -145,7 +145,7 @@
     "Kutu_Adedi": "30"
   },
   {
-    "Malzeme_Kodu": "RK-2215-WMN-S",
+    "Malzeme_Kodu": "RK-1915-WMN-S",
     "Fiyat": "45,29",
     "Para_Birimi": "TL",
     "Kutu_Adedi": "30"
@@ -157,19 +157,19 @@
     "Kutu_Adedi": "30"
   },
   {
-    "Malzeme_Kodu": "RK-2727-WMN-S",
-    "Fiyat": "105,00",
+    "Malzeme_Kodu": "RK-2219-WMN-S",
+    "Fiyat": "75,30",
     "Para_Birimi": "TL",
     "Kutu_Adedi": "30"
   },
   {
-    "Malzeme_Kodu": "RK-3230-WMN-S",
+    "Malzeme_Kodu": "RK-2727-WMN-S",
     "Fiyat": "111,28",
     "Para_Birimi": "TL",
     "Kutu_Adedi": "20"
   },
   {
-    "Malzeme_Kodu": "RK-3735-WMN-S",
+    "Malzeme_Kodu": "RK-3230-WMN-S",
     "Fiyat": "179,83",
     "Para_Birimi": "TL",
     "Kutu_Adedi": "10"
