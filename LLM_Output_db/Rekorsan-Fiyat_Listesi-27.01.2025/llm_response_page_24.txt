@@ -1,0 +1,346 @@
+```json
+[
+  {
+    "Malzeme_Kodu": "RK-1006-RMNP-LL",
+    "Fiyat": "23,31",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "50"
+  },
+  {
+    "Malzeme_Kodu": "RK-1006-RMNP-L",
+    "Fiyat": "21,52",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "50"
+  },
+  {
+    "Malzeme_Kodu": "RK-1008-RMNP-L",
+    "Fiyat": "23,31",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "50"
+  },
+  {
+    "Malzeme_Kodu": "RK-1010-RMNP-L",
+    "Fiyat": "28,69",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "50"
+  },
+  {
+    "Malzeme_Kodu": "RK-1306-RMNP-L",
+    "Fiyat": "24,21",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "50"
+  },
+  {
+    "Malzeme_Kodu": "RK-1308-RMNP-L",
+    "Fiyat": "24,21",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "50"
+  },
+  {
+    "Malzeme_Kodu": "RK-1310-RMNP-L",
+    "Fiyat": "26,69",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "50"
+  },
+  {
+    "Malzeme_Kodu": "RK-1312-RMNP-L",
+    "Fiyat": "26,00",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "30"
+  },
+  {
+    "Malzeme_Kodu": "RK-1706-RMNP-L",
+    "Fiyat": "32,27",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "30"
+  },
+  {
+    "Malzeme_Kodu": "RK-1708-RMNP-L",
+    "Fiyat": "32,27",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "30"
+  },
+  {
+    "Malzeme_Kodu": "RK-1710-RMNP-L",
+    "Fiyat": "34,07",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "30"
+  },
+  {
+    "Malzeme_Kodu": "RK-1712-RMNP-L",
+    "Fiyat": "50,20",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "30"
+  },
+  {
+    "Malzeme_Kodu": "RK-2106-RMNP-L",
+    "Fiyat": "30,48",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "50"
+  },
+  {
+    "Malzeme_Kodu": "RK-2108-RMNP-L",
+    "Fiyat": "50,20",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-2110-RMNP-L",
+    "Fiyat": "43,03",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "30"
+  },
+  {
+    "Malzeme_Kodu": "RK-2112-RMNP-L",
+    "Fiyat": "43,03",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "30"
+  },
+  {
+    "Malzeme_Kodu": "RK-2115-RMNP-L",
+    "Fiyat": "44,83",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "30"
+  },
+  {
+    "Malzeme_Kodu": "RK-2118-RMNP-L",
+    "Fiyat": "50,20",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-2122-RMNP-L",
+    "Fiyat": "68,13",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-2612-RMNP-L",
+    "Fiyat": "62,76",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "30"
+  },
+  {
+    "Malzeme_Kodu": "RK-2615-RMNP-L",
+    "Fiyat": "62,76",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "20"
+  },
+  {
+    "Malzeme_Kodu": "RK-2618-RMNP-L",
+    "Fiyat": "62,76",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "30"
+  },
+  {
+    "Malzeme_Kodu": "RK-2622-RMNP-L",
+    "Fiyat": "62,76",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "30"
+  },
+  {
+    "Malzeme_Kodu": "RK-2626-RMNP-L",
+    "Fiyat": "116,55",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "20"
+  },
+  {
+    "Malzeme_Kodu": "RK-3318-RMNP-L",
+    "Fiyat": "116,57",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "20"
+  },
+  {
+    "Malzeme_Kodu": "RK-3320-RMNP-L",
+    "Fiyat": "116,55",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "20"
+  },
+  {
+    "Malzeme_Kodu": "RK-3322-RMNP-L",
+    "Fiyat": "116,55",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "20"
+  },
+  {
+    "Malzeme_Kodu": "RK-3335-RMNP-L",
+    "Fiyat": "152,41",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "15"
+  },
+  {
+    "Malzeme_Kodu": "RK-3342-RMNP-L",
+    "Fiyat": "291,37",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "10"
+  },
+  {
+    "Malzeme_Kodu": "RK-4282-RMNP-L",
+    "Fiyat": "170,34",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "15"
+  },
+  {
+    "Malzeme_Kodu": "RK-4835-RMNP-L",
+    "Fiyat": "224,13",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "10"
+  },
+  {
+    "Malzeme_Kodu": "RK-1006-RMNP-S",
+    "Fiyat": "30,48",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "50"
+  },
+  {
+    "Malzeme_Kodu": "RK-1008-RMNP-S",
+    "Fiyat": "30,48",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "50"
+  },
+  {
+    "Malzeme_Kodu": "RK-1306-RMNP-S",
+    "Fiyat": "30,48",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "30"
+  },
+  {
+    "Malzeme_Kodu": "RK-1308-RMNP-S",
+    "Fiyat": "30,48",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "30"
+  },
+  {
+    "Malzeme_Kodu": "RK-1310-RMNP-S",
+    "Fiyat": "30,48",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "30"
+  },
+  {
+    "Malzeme_Kodu": "RK-1312-RMNP-S",
+    "Fiyat": "39,45",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-1708-RMNP-S",
+    "Fiyat": "39,45",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "30"
+  },
+  {
+    "Malzeme_Kodu": "RK-1710-RMNP-S",
+    "Fiyat": "39,45",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "30"
+  },
+  {
+    "Malzeme_Kodu": "RK-1712-RMNP-S",
+    "Fiyat": "50,20",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "30"
+  },
+  {
+    "Malzeme_Kodu": "RK-1716-RMNP-S",
+    "Fiyat": "50,20",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "30"
+  },
+  {
+    "Malzeme_Kodu": "RK-2106-RMNP-S",
+    "Fiyat": "66,34",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "30"
+  },
+  {
+    "Malzeme_Kodu": "RK-2110-RMNP-S",
+    "Fiyat": "107,58",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-2122-RMNP-S",
+    "Fiyat": "71,72",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "20"
+  },
+  {
+    "Malzeme_Kodu": "RK-2616-RMNP-S",
+    "Fiyat": "64,55",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "30"
+  },
+  {
+    "Malzeme_Kodu": "RK-2625-RMNP-S",
+    "Fiyat": "120,13",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "20"
+  },
+  {
+    "Malzeme_Kodu": "RK-2630-RMNP-S",
+    "Fiyat": "152,41",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "15"
+  },
+  {
+    "Malzeme_Kodu": "RK-3312-RMNP-S",
+    "Fiyat": "152,41",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-3316-RMNP-S",
+    "Fiyat": "120,13",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "20"
+  },
+  {
+    "Malzeme_Kodu": "RK-3320-RMNP-S",
+    "Fiyat": "120,13",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "20"
+  },
+  {
+    "Malzeme_Kodu": "RK-3330-RMNP-S",
+    "Fiyat": "152,41",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "15"
+  },
+  {
+    "Malzeme_Kodu": "RK-3338-RMNP-S",
+    "Fiyat": "385,20",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "10"
+  },
+  {
+    "Malzeme_Kodu": "RK-4220-RMNP-S",
+    "Fiyat": "179,30",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "10"
+  },
+  {
+    "Malzeme_Kodu": "RK-4230-RMNP-S",
+    "Fiyat": "179,30",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "10"
+  },
+  {
+    "Malzeme_Kodu": "RK-4238-RMNP-S",
+    "Fiyat": "224,13",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "6"
+  },
+  {
+    "Malzeme_Kodu": "RK-4835-RMNP-S",
+    "Fiyat": "224,13",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "6"
+  },
+  {
+    "Malzeme_Kodu": "RK-4838-RMNP-S",
+    "Fiyat": "224,13",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "6"
+  }
+]
+```
