@@ -7,7 +7,7 @@
     "Kutu_Adedi": "30"
   },
   {
-    "Malzeme_Kodu": "RK-1006-RMDD-L",
+    "Malzeme_Kodu": "RK-1006-RMDD-L-1",
     "Fiyat": "163,93",
     "Para_Birimi": "TL",
     "Kutu_Adedi": "30"
@@ -52,7 +52,7 @@
     "Malzeme_Kodu": "RK-1708-RMDD-L",
     "Fiyat": "211,73",
     "Para_Birimi": "TL",
-    "Kutu_Adedi": "20"
+    "Kutu_Adedi": "30"
   },
   {
     "Malzeme_Kodu": "RK-1710-RMDD-L",
@@ -67,14 +67,8 @@
     "Kutu_Adedi": "25"
   },
   {
-    "Malzeme_Kodu": "RK-2115-RMDD-L",
-    "Fiyat": "276,35",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "20"
-  },
-  {
-    "Malzeme_Kodu": "RK-2118-RMDD-L",
-    "Fiyat": "257,96",
+    "Malzeme_Kodu": "RK-1715-RMDD-L",
+    "Fiyat": "271,89",
     "Para_Birimi": "TL",
     "Kutu_Adedi": "20"
   },
@@ -85,22 +79,28 @@
     "Kutu_Adedi": "20"
   },
   {
+    "Malzeme_Kodu": "RK-2118-RMDD-L",
+    "Fiyat": "257,96",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "25"
+  },
+  {
     "Malzeme_Kodu": "RK-2115-RMDD-L",
     "Fiyat": "276,35",
     "Para_Birimi": "TL",
     "Kutu_Adedi": "20"
   },
   {
-    "Malzeme_Kodu": "RK-2118-RMDD-L",
+    "Malzeme_Kodu": "RK-2118-RMDD-L-1",
     "Fiyat": "257,96",
     "Para_Birimi": "TL",
-    "Kutu_Adedi": "20"
+    "Kutu_Adedi": "25"
   },
   {
-    "Malzeme_Kodu": "RK-2121-RMDD-L",
-    "Fiyat": "267,85",
+    "Malzeme_Kodu": "RK-2122-RMDD-L",
+    "Fiyat": "267,89",
     "Para_Birimi": "TL",
-    "Kutu_Adedi": "25"
+    "Kutu_Adedi": "20"
   },
   {
     "Malzeme_Kodu": "RK-2618-RMDD-L",
@@ -145,7 +145,7 @@
     "Kutu_Adedi": "25"
   },
   {
-    "Malzeme_Kodu": "RK-1710-RMDD-S",
+    "Malzeme_Kodu": "RK-1706-RMDD-S",
     "Fiyat": "224,85",
     "Para_Birimi": "TL",
     "Kutu_Adedi": "30"
