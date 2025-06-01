@@ -1,0 +1,244 @@
+```json
+[
+  {
+    "Malzeme_Kodu": "SX2A-LAN",
+    "Fiyat": "141,45",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "SX2A-LBN",
+    "Fiyat": "141,45",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "SX2A-LCN",
+    "Fiyat": "141,45",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "SX2A-LDN",
+    "Fiyat": "141,45",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "SX3A-LAN",
+    "Fiyat": "188,19",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "SX3A-LBN",
+    "Fiyat": "188,19",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "SX3A-LCN",
+    "Fiyat": "188,19",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "SX3A-LDN",
+    "Fiyat": "188,19",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "SX2A-KAN",
+    "Fiyat": "147,66",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "SX2A-KBN",
+    "Fiyat": "147,66",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "SX2A-KCN",
+    "Fiyat": "147,66",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "SX2A-KDN",
+    "Fiyat": "147,66",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "SX3A-KAN",
+    "Fiyat": "193,98",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "SX3A-KBN",
+    "Fiyat": "193,98",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "SX3A-KCN",
+    "Fiyat": "193,98",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "SX3A-KDN",
+    "Fiyat": "193,98",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "P2B2-LAN",
+    "Fiyat": "110,56",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "P2B2-LBN",
+    "Fiyat": "110,56",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "P2B2-LCN",
+    "Fiyat": "110,56",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "P2B2-LNN",
+    "Fiyat": "110,56",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "P3B3-LAN",
+    "Fiyat": "148,09",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "P3B3-LBN",
+    "Fiyat": "148,09",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "P3B3-LCN",
+    "Fiyat": "148,09",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "P3B3-LNN",
+    "Fiyat": "148,09",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "P6B6-LAN",
+    "Fiyat": "307,72",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "P6B6-LBN",
+    "Fiyat": "307,72",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "P6B6-LCN",
+    "Fiyat": "307,72",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "P6B6-LNN",
+    "Fiyat": "307,72",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "P8B8-LAN",
+    "Fiyat": "646,30",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "P8B8-LBN",
+    "Fiyat": "646,30",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "P8B8-LCN",
+    "Fiyat": "646,30",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "P8B8-LNN",
+    "Fiyat": "646,30",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "P2B2-KAN",
+    "Fiyat": "116,14",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "P2B2-KBN",
+    "Fiyat": "116,14",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "P2B2-KCN",
+    "Fiyat": "116,14",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "P2B2-KNN",
+    "Fiyat": "116,14",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "P3B3-KAN",
+    "Fiyat": "154,50",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "P3B3-KBN",
+    "Fiyat": "154,50",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "P3B3-KCN",
+    "Fiyat": "154,50",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "P3B3-KNN",
+    "Fiyat": "154,50",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "P6B6-KAN",
+    "Fiyat": "314,54",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "P6B6-KBN",
+    "Fiyat": "314,54",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "P6B6-KCN",
+    "Fiyat": "314,54",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "P6B6-KNN",
+    "Fiyat": "314,54",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "P8B8-KAN",
+    "Fiyat": "652,44",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "P8B8-KBN",
+    "Fiyat": "652,44",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "P8B8-KCN",
+    "Fiyat": "652,44",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "P8B8-KNN",
+    "Fiyat": "652,44",
+    "Para_Birimi": "$"
+  }
+]
+```
