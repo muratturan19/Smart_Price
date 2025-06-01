@@ -1,0 +1,302 @@
+Aşağıda, sağlanan görseldeki tabloya göre çıkarılan veriler bulunmaktadır:
+
+```json
+[
+  {
+    "Malzeme_Kodu": "RK-1010-NRD",
+    "Fiyat": "88,33",
+    "Kutu_Adedi": "25",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1313-NRD",
+    "Fiyat": "96,36",
+    "Kutu_Adedi": "30",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1717-NRD",
+    "Fiyat": "90,17",
+    "Kutu_Adedi": "25",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-2121-NRD",
+    "Fiyat": "111,10",
+    "Kutu_Adedi": "25",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-2626-NRD",
+    "Fiyat": "154,88",
+    "Kutu_Adedi": "20",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-3333-NRD",
+    "Fiyat": "324,82",
+    "Kutu_Adedi": "10",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-4242-NRD",
+    "Fiyat": "322,49",
+    "Kutu_Adedi": "10",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-4848-NRD",
+    "Fiyat": "539,36",
+    "Kutu_Adedi": "5",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1010-RTD",
+    "Fiyat": "106,26",
+    "Kutu_Adedi": "50",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1313-RTD",
+    "Fiyat": "114,37",
+    "Kutu_Adedi": "25",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1717-RTD",
+    "Fiyat": "112,94",
+    "Kutu_Adedi": "30",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-2121-RTD",
+    "Fiyat": "139,00",
+    "Kutu_Adedi": "25",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-2626-RTD",
+    "Fiyat": "199,04",
+    "Kutu_Adedi": "20",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-3333-RTD",
+    "Fiyat": "345,70",
+    "Kutu_Adedi": "10",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-4242-RTD",
+    "Fiyat": "460,71",
+    "Kutu_Adedi": "6",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-4848-RTD",
+    "Fiyat": "1177,26",
+    "Kutu_Adedi": "4",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-6060-RTD",
+    "Fiyat": "1315,34",
+    "Kutu_Adedi": "",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1010-RYT",
+    "Fiyat": "138,47",
+    "Kutu_Adedi": "25",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1313-RYT",
+    "Fiyat": "144,26",
+    "Kutu_Adedi": "20",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1717-RYT",
+    "Fiyat": "119,70",
+    "Kutu_Adedi": "15",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-2121-RYT",
+    "Fiyat": "185,48",
+    "Kutu_Adedi": "15",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-2626-RYT",
+    "Fiyat": "217,66",
+    "Kutu_Adedi": "10",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-3333-RYT",
+    "Fiyat": "396,39",
+    "Kutu_Adedi": "10",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-4242-RYT",
+    "Fiyat": "416,45",
+    "Kutu_Adedi": "5",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-4848-RYT",
+    "Fiyat": "809,22",
+    "Kutu_Adedi": "3",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1010-ROT",
+    "Fiyat": "138,47",
+    "Kutu_Adedi": "25",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1313-ROT",
+    "Fiyat": "144,26",
+    "Kutu_Adedi": "20",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1717-ROT",
+    "Fiyat": "119,70",
+    "Kutu_Adedi": "15",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-2121-ROT",
+    "Fiyat": "185,48",
+    "Kutu_Adedi": "15",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-2626-ROT",
+    "Fiyat": "217,66",
+    "Kutu_Adedi": "10",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-3333-ROT",
+    "Fiyat": "396,39",
+    "Kutu_Adedi": "10",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-4242-ROT",
+    "Fiyat": "416,45",
+    "Kutu_Adedi": "5",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-4848-ROT",
+    "Fiyat": "809,22",
+    "Kutu_Adedi": "3",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1010-RTE",
+    "Fiyat": "120,85",
+    "Kutu_Adedi": "30",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1313-RTE",
+    "Fiyat": "124,34",
+    "Kutu_Adedi": "25",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1717-RTE",
+    "Fiyat": "119,11",
+    "Kutu_Adedi": "30",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-2121-RTE",
+    "Fiyat": "155,76",
+    "Kutu_Adedi": "25",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-2626-RTE",
+    "Fiyat": "173,50",
+    "Kutu_Adedi": "20",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-3333-RTE",
+    "Fiyat": "324,82",
+    "Kutu_Adedi": "10",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-4242-RTE",
+    "Fiyat": "466,45",
+    "Kutu_Adedi": "6",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-4848-RTE",
+    "Fiyat": "640,70",
+    "Kutu_Adedi": "4",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1010-KD",
+    "Fiyat": "104,74",
+    "Kutu_Adedi": "30",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1313-KD",
+    "Fiyat": "99,94",
+    "Kutu_Adedi": "25",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1717-KD",
+    "Fiyat": "111,77",
+    "Kutu_Adedi": "30",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-2121-KD",
+    "Fiyat": "156,96",
+    "Kutu_Adedi": "25",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-2626-KD",
+    "Fiyat": "242,48",
+    "Kutu_Adedi": "20",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-3333-KD",
+    "Fiyat": "345,70",
+    "Kutu_Adedi": "10",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-4242-KD",
+    "Fiyat": "511,24",
+    "Kutu_Adedi": "6",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-4848-KD",
+    "Fiyat": "1030,98",
+    "Kutu_Adedi": "3",
+    "Para_Birimi": "TL"
+  }
+]
+```
+
+Bu veriler, görseldeki tablolardan çıkarılmıştır ve her bir ürün için "Malzeme_Kodu", "Fiyat", "Kutu_Adedi" ve varsayılan "Para_Birimi" bilgilerini içermektedir.
