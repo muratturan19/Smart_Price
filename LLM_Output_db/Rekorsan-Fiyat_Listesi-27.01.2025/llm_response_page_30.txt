@@ -1,0 +1,310 @@
+```json
+[
+  {
+    "Malzeme_Kodu": "RK-1011-NWN",
+    "Fiyat": "36,15",
+    "Kutu_Adedi": "50",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1311-NWN",
+    "Fiyat": "36,15",
+    "Kutu_Adedi": "50",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1312-NWN",
+    "Fiyat": "36,15",
+    "Kutu_Adedi": "50",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1314-NWN",
+    "Fiyat": "36,15",
+    "Kutu_Adedi": "50",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1316-NWN",
+    "Fiyat": "36,15",
+    "Kutu_Adedi": "50",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1319-NWN",
+    "Fiyat": "36,15",
+    "Kutu_Adedi": "30",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1714-NWN",
+    "Fiyat": "45,19",
+    "Kutu_Adedi": "30",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1716-NWN",
+    "Fiyat": "45,19",
+    "Kutu_Adedi": "30",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1719-NWN",
+    "Fiyat": "45,19",
+    "Kutu_Adedi": "25",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-2114-NWN",
+    "Fiyat": "67,76",
+    "Kutu_Adedi": "20",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-2116-NWN",
+    "Fiyat": "67,76",
+    "Kutu_Adedi": "20",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-2119-NWN",
+    "Fiyat": "67,76",
+    "Kutu_Adedi": "20",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-2122-NWN",
+    "Fiyat": "81,31",
+    "Kutu_Adedi": "30",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-2627-NWN",
+    "Fiyat": "81,31",
+    "Kutu_Adedi": "20",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-3333-NWN",
+    "Fiyat": "180,70",
+    "Kutu_Adedi": "20",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1006-NMNL",
+    "Fiyat": "31,61",
+    "Kutu_Adedi": "50",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1306-NMNL",
+    "Fiyat": "31,61",
+    "Kutu_Adedi": "50",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1308-NMNL",
+    "Fiyat": "33,89",
+    "Kutu_Adedi": "50",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1310-NMNL",
+    "Fiyat": "33,89",
+    "Kutu_Adedi": "50",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1312-NMNL",
+    "Fiyat": "40,66",
+    "Kutu_Adedi": "30",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1708-NMNL",
+    "Fiyat": "40,66",
+    "Kutu_Adedi": "30",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1710-NMNL",
+    "Fiyat": "40,66",
+    "Kutu_Adedi": "30",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1712-NMNL",
+    "Fiyat": "40,66",
+    "Kutu_Adedi": "30",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-2110-NMNL",
+    "Fiyat": "54,49",
+    "Kutu_Adedi": "30",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-2112-NMNL",
+    "Fiyat": "54,49",
+    "Kutu_Adedi": "30",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-2115-NMNL",
+    "Fiyat": "67,76",
+    "Kutu_Adedi": "30",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-2618-NMNL",
+    "Fiyat": "90,35",
+    "Kutu_Adedi": "30",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-2622-NMNL",
+    "Fiyat": "112,94",
+    "Kutu_Adedi": "30",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-3328-NMNL",
+    "Fiyat": "135,53",
+    "Kutu_Adedi": "20",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-4335-NMNL",
+    "Fiyat": "225,89",
+    "Kutu_Adedi": "15",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-4842-NMNL",
+    "Fiyat": "316,23",
+    "Kutu_Adedi": "6",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1306-NMNS",
+    "Fiyat": "45,19",
+    "Kutu_Adedi": "30",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1308-NMNS",
+    "Fiyat": "45,19",
+    "Kutu_Adedi": "30",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1710-NMNS",
+    "Fiyat": "54,21",
+    "Kutu_Adedi": "30",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1712-NMNS",
+    "Fiyat": "54,21",
+    "Kutu_Adedi": "30",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-2116-NMNS",
+    "Fiyat": "67,76",
+    "Kutu_Adedi": "50",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-2616-NMNS",
+    "Fiyat": "90,35",
+    "Kutu_Adedi": "30",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-2620-NMNS",
+    "Fiyat": "112,94",
+    "Kutu_Adedi": "30",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-3325-NMNS",
+    "Fiyat": "135,53",
+    "Kutu_Adedi": "20",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-4330-NMNS",
+    "Fiyat": "225,89",
+    "Kutu_Adedi": "10",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-4838-NMNS",
+    "Fiyat": "316,23",
+    "Kutu_Adedi": "6",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1313-RBBN",
+    "Fiyat": "52,97",
+    "Kutu_Adedi": "50",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1717-RBBN",
+    "Fiyat": "56,49",
+    "Kutu_Adedi": "25",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-2121-RBBN",
+    "Fiyat": "74,46",
+    "Kutu_Adedi": "30",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-2626-RBBN",
+    "Fiyat": "139,73",
+    "Kutu_Adedi": "20",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-3333-RBBN",
+    "Fiyat": "239,25",
+    "Kutu_Adedi": "20",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1313-RBBN",
+    "Fiyat": "58,33",
+    "Kutu_Adedi": "30",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1717-RBBN",
+    "Fiyat": "61,37",
+    "Kutu_Adedi": "30",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-2121-RBBN",
+    "Fiyat": "72,23",
+    "Kutu_Adedi": "30",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-2626-RBBN",
+    "Fiyat": "133,13",
+    "Kutu_Adedi": "20",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-3333-RBBN",
+    "Fiyat": "229,87",
+    "Kutu_Adedi": "20",
+    "Para_Birimi": "TL"
+  }
+]
+```
