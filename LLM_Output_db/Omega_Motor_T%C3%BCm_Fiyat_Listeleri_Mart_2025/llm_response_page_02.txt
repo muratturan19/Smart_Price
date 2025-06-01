@@ -1,0 +1,234 @@
+```json
+[
+  {
+    "Malzeme_Kodu": "3MGS 160MA2 - 2k-3000 d/dak.",
+    "Fiyat": "899,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MGS 160MB2 - 2k-3000 d/dak.",
+    "Fiyat": "1.008,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MGS 160LA2 - 2k-3000 d/dak.",
+    "Fiyat": "1.110,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MGS 180MA2 - 2k-3000 d/dak.",
+    "Fiyat": "1.427,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MGS 200LA2 - 2k-3000 d/dak.",
+    "Fiyat": "2.096,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MGS 200LB2 - 2k-3000 d/dak.",
+    "Fiyat": "2.260,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MGS 225MA2 - 2k-3000 d/dak.",
+    "Fiyat": "2.633,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MGS 250MA2 - 2k-3000 d/dak.",
+    "Fiyat": "3.667,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MGS 355MA2 - 2k-3000 d/dak.",
+    "Fiyat": "13.636,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MGS 355MB2 - 2k-3000 d/dak.",
+    "Fiyat": "15.356,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MGS 355MC2 - 2k-3000 d/dak.",
+    "Fiyat": "16.373,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MGS 355LA2 - 2k-3000 d/dak.",
+    "Fiyat": "18.524,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MGS 355LB2 - 2k-3000 d/dak.",
+    "Fiyat": "20.642,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MGS 355LC2 - 2k-3000 d/dak.",
+    "Fiyat": "23.018,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MGS 355LD2 - 2k-3000 d/dak.",
+    "Fiyat": "28.402,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MGS 160MA4 - 4k-1500 d/dak.",
+    "Fiyat": "1.006,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MGS 160LA4 - 4k-1500 d/dak.",
+    "Fiyat": "1.183,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MGS 180MA4 - 4k-1500 d/dak.",
+    "Fiyat": "1.366,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MGS 180LA4 - 4k-1500 d/dak.",
+    "Fiyat": "1.629,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MGS 200LA4 - 4k-1500 d/dak.",
+    "Fiyat": "2.021,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MGS 225SA4 - 4k-1500 d/dak.",
+    "Fiyat": "2.322,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MGS 225MA4 - 4k-1500 d/dak.",
+    "Fiyat": "2.502,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MGS 250MA4 - 4k-1500 d/dak.",
+    "Fiyat": "3.476,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MGS 355MA4 - 4k-1500 d/dak.",
+    "Fiyat": "13.797,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MGS 355MB4 - 4k-1500 d/dak.",
+    "Fiyat": "16.174,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MGS 355MC4 - 4k-1500 d/dak.",
+    "Fiyat": "17.349,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MGS 355LA4 - 4k-1500 d/dak.",
+    "Fiyat": "18.876,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MGS 355LB4 - 4k-1500 d/dak.",
+    "Fiyat": "23.990,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MGS 355LC4 - 4k-1500 d/dak.",
+    "Fiyat": "26.043,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MGS 355LD4 - 4k-1500 d/dak.",
+    "Fiyat": "28.882,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MGS 160MA6 - 6k-1000 d/dak.",
+    "Fiyat": "955,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MGS 160LA6 - 6k-1000 d/dak.",
+    "Fiyat": "1.140,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MGS 180LA6 - 6k-1000 d/dak.",
+    "Fiyat": "1.409,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MGS 200LA6 - 6k-1000 d/dak.",
+    "Fiyat": "1.718,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MGS 200LB6 - 6k-1000 d/dak.",
+    "Fiyat": "1.932,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MGS 225MA6 - 6k-1000 d/dak.",
+    "Fiyat": "2.497,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MGS 250MA6 - 6k-1000 d/dak.",
+    "Fiyat": "3.285,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MGS 280SA6 - 6k-1000 d/dak.",
+    "Fiyat": "4.157,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MGS 280MA6 - 6k-1000 d/dak.",
+    "Fiyat": "4.742,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MGS 160LK4 - 4k-1500 d/dak.",
+    "Fiyat": "1.292,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MGS 180LK4 - 4k-1500 d/dak.",
+    "Fiyat": "1.817,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MGS 200LK4 - 4k-1500 d/dak.",
+    "Fiyat": "2.198,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MGS 225MK4 - 4k-1500 d/dak.",
+    "Fiyat": "3.227,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MGS 250MK4 - 4k-1500 d/dak.",
+    "Fiyat": "3.831,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MGS 315LK4 - 2k-3000 d/dak.",
+    "Fiyat": "13.227,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MGS 225MK6 - 6k-1000 d/dak.",
+    "Fiyat": "3.124,00",
+    "Para_Birimi": "USD"
+  }
+]
+```
