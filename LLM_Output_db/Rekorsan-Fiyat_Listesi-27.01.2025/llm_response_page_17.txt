@@ -40,19 +40,19 @@
     "Malzeme_Kodu": "RK-2415-MKS",
     "Fiyat": "23,31",
     "Para_Birimi": "TL",
-    "Kutu_Adedi": "100"
+    "Kutu_Adedi": "50"
   },
   {
     "Malzeme_Kodu": "RK-2615-MKS",
     "Fiyat": "30,48",
     "Para_Birimi": "TL",
-    "Kutu_Adedi": "50"
+    "Kutu_Adedi": "30"
   },
   {
     "Malzeme_Kodu": "RK-3020-MKS",
     "Fiyat": "35,86",
     "Para_Birimi": "TL",
-    "Kutu_Adedi": "50"
+    "Kutu_Adedi": "30"
   },
   {
     "Malzeme_Kodu": "RK-3620-MKS",
@@ -62,15 +62,15 @@
   },
   {
     "Malzeme_Kodu": "RK-4220-MKS",
-    "Fiyat": "55,80",
+    "Fiyat": "57,80",
     "Para_Birimi": "TL",
-    "Kutu_Adedi": "30"
+    "Kutu_Adedi": "50"
   },
   {
     "Malzeme_Kodu": "RK-4520-MKS",
     "Fiyat": "80,69",
     "Para_Birimi": "TL",
-    "Kutu_Adedi": "50"
+    "Kutu_Adedi": "30"
   },
   {
     "Malzeme_Kodu": "RK-5220-MKS",
@@ -98,7 +98,7 @@
   },
   {
     "Malzeme_Kodu": "RK-2114-RKS",
-    "Fiyat": "22,29",
+    "Fiyat": "22,09",
     "Para_Birimi": "TL",
     "Kutu_Adedi": "100"
   },
@@ -146,7 +146,7 @@
   },
   {
     "Malzeme_Kodu": "RK-2114-RST",
-    "Fiyat": "50,84",
+    "Fiyat": "50,34",
     "Para_Birimi": "TL",
     "Kutu_Adedi": "25"
   },
@@ -184,19 +184,19 @@
     "Malzeme_Kodu": "RK-1319-RET",
     "Fiyat": "22,00",
     "Para_Birimi": "TL",
-    "Kutu_Adedi": "25"
+    "Kutu_Adedi": "50"
   },
   {
     "Malzeme_Kodu": "RK-1719-RET",
-    "Fiyat": "31,35",
+    "Fiyat": "35,86",
     "Para_Birimi": "TL",
-    "Kutu_Adedi": "25"
+    "Kutu_Adedi": "30"
   },
   {
     "Malzeme_Kodu": "RK-2114-RET",
     "Fiyat": "35,86",
     "Para_Birimi": "TL",
-    "Kutu_Adedi": "20"
+    "Kutu_Adedi": "30"
   },
   {
     "Malzeme_Kodu": "RK-2614-RET",
@@ -236,31 +236,25 @@
   },
   {
     "Malzeme_Kodu": "RK-1719-RAT",
-    "Fiyat": "20,97",
+    "Fiyat": "20,00",
     "Para_Birimi": "TL",
     "Kutu_Adedi": "50"
   },
   {
     "Malzeme_Kodu": "RK-2114-RAT",
-    "Fiyat": "27,39",
+    "Fiyat": "27,97",
     "Para_Birimi": "TL",
     "Kutu_Adedi": "30"
   },
   {
     "Malzeme_Kodu": "RK-2614-RAT",
-    "Fiyat": "32,90",
+    "Fiyat": "30,39",
     "Para_Birimi": "TL",
-    "Kutu_Adedi": "25"
+    "Kutu_Adedi": "30"
   },
   {
     "Malzeme_Kodu": "RK-3311-RAT",
-    "Fiyat": "49,95",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "20"
-  },
-  {
-    "Malzeme_Kodu": "RK-4211-RAT",
-    "Fiyat": "134,48",
+    "Fiyat": "39,45",
     "Para_Birimi": "TL",
     "Kutu_Adedi": "20"
   },
