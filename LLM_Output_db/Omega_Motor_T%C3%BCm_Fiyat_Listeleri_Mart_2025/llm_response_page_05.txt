@@ -1,0 +1,164 @@
+```json
+[
+  {
+    "Malzeme_Kodu": "80 - B5 Flanş",
+    "Fiyat": "102,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "80 - B14/1 Flanş",
+    "Fiyat": "59,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "80 - B14/2 Flanş",
+    "Fiyat": "59,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "90 - B5 Flanş",
+    "Fiyat": "111,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "90 - B14/1 Flanş",
+    "Fiyat": "71,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "90 - B14/2 Flanş",
+    "Fiyat": "71,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "100 - B5 Flanş",
+    "Fiyat": "166,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "100 - B14/1 Flanş",
+    "Fiyat": "90,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "100 - B14/2 Flanş",
+    "Fiyat": "90,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "112 - B5 Flanş",
+    "Fiyat": "154,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "112 - B14/1 Flanş",
+    "Fiyat": "102,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "112 - B14/2 Flanş",
+    "Fiyat": "102,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "132 - B5 Flanş",
+    "Fiyat": "241,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "132 - B14/1 Flanş",
+    "Fiyat": "241,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "132 - B14/2 Flanş",
+    "Fiyat": "210,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "80 - Ön Kapak",
+    "Fiyat": "59,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "80 - Arka Kapak",
+    "Fiyat": "59,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "90 - Ön Kapak",
+    "Fiyat": "71,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "90 - Arka Kapak",
+    "Fiyat": "71,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "100 - Ön Kapak",
+    "Fiyat": "90,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "100 - Arka Kapak",
+    "Fiyat": "90,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "112 - Ön Kapak",
+    "Fiyat": "102,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "112 - Arka Kapak",
+    "Fiyat": "102,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "132 - Ön Kapak",
+    "Fiyat": "241,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "132 - Arka Kapak",
+    "Fiyat": "241,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "90 - Klemens Kapağı",
+    "Fiyat": "257,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "132 - Klemens Kutusu ve Kapağı",
+    "Fiyat": "68,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "80-90S - Çift Takma Ayak",
+    "Fiyat": "155,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "90L - Çift Takma Ayak",
+    "Fiyat": "120,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "100-112 - Çift Takma Ayak",
+    "Fiyat": "172,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "132S - Çift Takma Ayak",
+    "Fiyat": "167,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "132M - Çift Takma Ayak",
+    "Fiyat": "225,00",
+    "Para_Birimi": "TL"
+  }
+]
+```
