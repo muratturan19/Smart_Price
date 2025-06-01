@@ -3,177 +3,282 @@
   {
     "Malzeme_Kodu": "RK-2536-KR",
     "Fiyat": "486,49",
-    "Para_Birimi": "TL"
+    "Para_Birimi": "TL",
+    "Hortum_Ölçüsü": "1\"",
+    "Somun_Ölçüsü": "M36",
+    "Kutu_Adedi": "-"
   },
   {
     "Malzeme_Kodu": "RK-2542-KR",
     "Fiyat": "579,15",
-    "Para_Birimi": "TL"
+    "Para_Birimi": "TL",
+    "Hortum_Ölçüsü": "1\"",
+    "Somun_Ölçüsü": "M42",
+    "Kutu_Adedi": "-"
   },
   {
-    "Malzeme_Kodu": "RK-2543-KR",
+    "Malzeme_Kodu": "RK-2552-KR",
     "Fiyat": "590,70",
-    "Para_Birimi": "TL"
+    "Para_Birimi": "TL",
+    "Hortum_Ölçüsü": "1\"",
+    "Somun_Ölçüsü": "M50",
+    "Kutu_Adedi": "-"
   },
   {
     "Malzeme_Kodu": "RK-2552-KR",
     "Fiyat": "681,84",
-    "Para_Birimi": "TL"
+    "Para_Birimi": "TL",
+    "Hortum_Ölçüsü": "1\"",
+    "Somun_Ölçüsü": "M52",
+    "Kutu_Adedi": "-"
   },
   {
     "Malzeme_Kodu": "RK-3242-KR",
     "Fiyat": "683,91",
-    "Para_Birimi": "TL"
+    "Para_Birimi": "TL",
+    "Hortum_Ölçüsü": "1\"1/4",
+    "Somun_Ölçüsü": "M42",
+    "Kutu_Adedi": "-"
   },
   {
     "Malzeme_Kodu": "RK-3245-KR",
     "Fiyat": "697,06",
-    "Para_Birimi": "TL"
+    "Para_Birimi": "TL",
+    "Hortum_Ölçüsü": "1\"1/4",
+    "Somun_Ölçüsü": "M45",
+    "Kutu_Adedi": "-"
   },
   {
-    "Malzeme_Kodu": "RK-3253-KR",
+    "Malzeme_Kodu": "RK-3252-KR",
     "Fiyat": "683,91",
-    "Para_Birimi": "TL"
+    "Para_Birimi": "TL",
+    "Hortum_Ölçüsü": "1\"1/4",
+    "Somun_Ölçüsü": "M52",
+    "Kutu_Adedi": "-"
   },
   {
     "Malzeme_Kodu": "RK-2533-KR",
     "Fiyat": "518,98",
-    "Para_Birimi": "TL"
+    "Para_Birimi": "TL",
+    "Hortum_Ölçüsü": "R1-11",
+    "Somun_Ölçüsü": "-",
+    "Kutu_Adedi": "-"
   },
   {
     "Malzeme_Kodu": "RK-2537-KR",
     "Fiyat": "529,28",
-    "Para_Birimi": "TL"
+    "Para_Birimi": "TL",
+    "Hortum_Ölçüsü": "1\"7/16-12 ORFS",
+    "Somun_Ölçüsü": "-",
+    "Kutu_Adedi": "-"
   },
   {
     "Malzeme_Kodu": "RK-3243-KR",
     "Fiyat": "648,42",
-    "Para_Birimi": "TL"
+    "Para_Birimi": "TL",
+    "Hortum_Ölçüsü": "1\"1/4 1\"11/16-12 ORFS",
+    "Somun_Ölçüsü": "-",
+    "Kutu_Adedi": "-"
   },
   {
     "Malzeme_Kodu": "RK-0212-TSR",
     "Fiyat": "54,91",
-    "Para_Birimi": "TL"
+    "Para_Birimi": "TL",
+    "Hortum_Ölçüsü": "DN2",
+    "Somun_Ölçüsü": "M12x1,5",
+    "Kutu_Adedi": "50"
   },
   {
     "Malzeme_Kodu": "RK-0214-TSR",
     "Fiyat": "56,91",
-    "Para_Birimi": "TL"
+    "Para_Birimi": "TL",
+    "Hortum_Ölçüsü": "DN2",
+    "Somun_Ölçüsü": "M14x1,5",
+    "Kutu_Adedi": "50"
   },
   {
     "Malzeme_Kodu": "RK-0216-TSR",
     "Fiyat": "59,84",
-    "Para_Birimi": "TL"
+    "Para_Birimi": "TL",
+    "Hortum_Ölçüsü": "DN2",
+    "Somun_Ölçüsü": "M16x1,5",
+    "Kutu_Adedi": "50"
   },
   {
     "Malzeme_Kodu": "RK-0218-TSR",
     "Fiyat": "77,79",
-    "Para_Birimi": "TL"
+    "Para_Birimi": "TL",
+    "Hortum_Ölçüsü": "DN2",
+    "Somun_Ölçüsü": "M18x1,5",
+    "Kutu_Adedi": "50"
   },
   {
     "Malzeme_Kodu": "RK-0411-TSR",
-    "Fiyat": "59,58",
-    "Para_Birimi": "TL"
+    "Fiyat": "95,28",
+    "Para_Birimi": "TL",
+    "Hortum_Ölçüsü": "DN4",
+    "Somun_Ölçüsü": "7/16 UNF",
+    "Kutu_Adedi": "50"
   },
   {
     "Malzeme_Kodu": "RK-0412-TSR",
     "Fiyat": "46,48",
-    "Para_Birimi": "TL"
+    "Para_Birimi": "TL",
+    "Hortum_Ölçüsü": "DN4",
+    "Somun_Ölçüsü": "M12",
+    "Kutu_Adedi": "50"
   },
   {
     "Malzeme_Kodu": "RK-0414-TSR",
-    "Fiyat": "52,02",
-    "Para_Birimi": "TL"
+    "Fiyat": "46,48",
+    "Para_Birimi": "TL",
+    "Hortum_Ölçüsü": "DN4",
+    "Somun_Ölçüsü": "M14",
+    "Kutu_Adedi": "50"
   },
   {
     "Malzeme_Kodu": "RK-0416-TSR",
     "Fiyat": "52,02",
-    "Para_Birimi": "TL"
+    "Para_Birimi": "TL",
+    "Hortum_Ölçüsü": "DN4",
+    "Somun_Ölçüsü": "M16",
+    "Kutu_Adedi": "50"
   },
   {
     "Malzeme_Kodu": "RK-0212-TSR90",
     "Fiyat": "215,16",
-    "Para_Birimi": "TL"
+    "Para_Birimi": "TL",
+    "Hortum_Ölçüsü": "DN2",
+    "Somun_Ölçüsü": "M12x1,5",
+    "Kutu_Adedi": "50"
   },
   {
     "Malzeme_Kodu": "RK-0214-TSR90",
     "Fiyat": "215,16",
-    "Para_Birimi": "TL"
+    "Para_Birimi": "TL",
+    "Hortum_Ölçüsü": "DN2",
+    "Somun_Ölçüsü": "M14x1,5",
+    "Kutu_Adedi": "50"
   },
   {
     "Malzeme_Kodu": "RK-0216-TSR90",
     "Fiyat": "215,16",
-    "Para_Birimi": "TL"
+    "Para_Birimi": "TL",
+    "Hortum_Ölçüsü": "DN2",
+    "Somun_Ölçüsü": "M16x1,5",
+    "Kutu_Adedi": "30"
   },
   {
-    "Malzeme_Kodu": "RK-0218-TSR90",
+    "Malzeme_Kodu": "RK-0216-TSR90",
     "Fiyat": "268,95",
-    "Para_Birimi": "TL"
+    "Para_Birimi": "TL",
+    "Hortum_Ölçüsü": "DN2",
+    "Somun_Ölçüsü": "M16x2",
+    "Kutu_Adedi": "30"
   },
   {
     "Malzeme_Kodu": "RK-0412-TSR90",
     "Fiyat": "143,44",
-    "Para_Birimi": "TL"
+    "Para_Birimi": "TL",
+    "Hortum_Ölçüsü": "DN4",
+    "Somun_Ölçüsü": "M12",
+    "Kutu_Adedi": "50"
   },
   {
     "Malzeme_Kodu": "RK-0414-TSR90",
     "Fiyat": "143,44",
-    "Para_Birimi": "TL"
+    "Para_Birimi": "TL",
+    "Hortum_Ölçüsü": "DN4",
+    "Somun_Ölçüsü": "M14",
+    "Kutu_Adedi": "50"
   },
   {
     "Malzeme_Kodu": "RK-0416-TSR90",
     "Fiyat": "143,44",
-    "Para_Birimi": "TL"
+    "Para_Birimi": "TL",
+    "Hortum_Ölçüsü": "DN4",
+    "Somun_Ölçüsü": "M16",
+    "Kutu_Adedi": "50"
   },
   {
     "Malzeme_Kodu": "RK-0206-TSB",
     "Fiyat": "48,41",
-    "Para_Birimi": "TL"
+    "Para_Birimi": "TL",
+    "Hortum_Ölçüsü": "DN2",
+    "Boru_Ölçüsü": "6",
+    "Kutu_Adedi": "-"
   },
   {
     "Malzeme_Kodu": "RK-0208-TSB",
     "Fiyat": "48,41",
-    "Para_Birimi": "TL"
+    "Para_Birimi": "TL",
+    "Hortum_Ölçüsü": "DN2",
+    "Boru_Ölçüsü": "8",
+    "Kutu_Adedi": "-"
   },
   {
     "Malzeme_Kodu": "RK-0210-TSB",
     "Fiyat": "48,41",
-    "Para_Birimi": "TL"
+    "Para_Birimi": "TL",
+    "Hortum_Ölçüsü": "DN2",
+    "Boru_Ölçüsü": "10",
+    "Kutu_Adedi": "-"
   },
   {
     "Malzeme_Kodu": "RK-0212-TSB",
     "Fiyat": "48,41",
-    "Para_Birimi": "TL"
+    "Para_Birimi": "TL",
+    "Hortum_Ölçüsü": "DN2",
+    "Boru_Ölçüsü": "12",
+    "Kutu_Adedi": "-"
   },
   {
     "Malzeme_Kodu": "RK-0406-TSB",
     "Fiyat": "39,45",
-    "Para_Birimi": "TL"
+    "Para_Birimi": "TL",
+    "Hortum_Ölçüsü": "DN4",
+    "Boru_Ölçüsü": "6",
+    "Kutu_Adedi": "-"
   },
   {
     "Malzeme_Kodu": "RK-0407-TSB",
     "Fiyat": "86,06",
-    "Para_Birimi": "TL"
+    "Para_Birimi": "TL",
+    "Hortum_Ölçüsü": "DN4",
+    "Boru_Ölçüsü": "6 (Vidalı)",
+    "Kutu_Adedi": "50"
   },
   {
     "Malzeme_Kodu": "RK-0406-TSB90",
     "Fiyat": "80,69",
-    "Para_Birimi": "TL"
+    "Para_Birimi": "TL",
+    "Hortum_Ölçüsü": "DN4",
+    "Boru_Ölçüsü": "6",
+    "Kutu_Adedi": "50"
   },
   {
     "Malzeme_Kodu": "RK-0407-TSB90",
     "Fiyat": "118,34",
-    "Para_Birimi": "TL"
+    "Para_Birimi": "TL",
+    "Hortum_Ölçüsü": "DN4",
+    "Boru_Ölçüsü": "6 (Vidalı)",
+    "Kutu_Adedi": "50"
   },
   {
     "Malzeme_Kodu": "RK-0213-TSR",
     "Fiyat": "71,50",
-    "Para_Birimi": "TL"
+    "Para_Birimi": "TL",
+    "Hortum_Ölçüsü": "DN2",
+    "Somun_Ölçüsü": "R1/4",
+    "Kutu_Adedi": "50"
   },
   {
     "Malzeme_Kodu": "RK-0217-TSR",
     "Fiyat": "62,70",
-    "Para_Birimi": "TL"
+    "Para_Birimi": "TL",
+    "Hortum_Ölçüsü": "DN2",
+    "Somun_Ölçüsü": "M16x2",
+    "Kutu_Adedi": "50"
   }
 ]
 ```
