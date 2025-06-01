@@ -16,6 +16,8 @@ from pathlib import Path
 from typing import Callable, Optional
 import base64
 
+from smart_price import icons
+
 from smart_price.core.extract_excel import extract_from_excel
 from smart_price.core.extract_pdf import extract_from_pdf, MIN_CODE_RATIO
 from smart_price import config
@@ -25,8 +27,21 @@ from smart_price.core.github_upload import upload_folder, delete_github_folder
 logger = logging.getLogger("smart_price")
 
 
-def big_alert(message: str, *, level: str = "info") -> None:
-    """Show an alert box styled using the active theme."""
+def big_alert(message: str, *, level: str = "info", icon: str | None = None) -> None:
+    """Show an alert box styled using the active theme.
+
+    Parameters
+    ----------
+    message:
+        Text to display.
+    level:
+        One of ``success``, ``error``, ``warning`` or ``info``.  Determines the
+        Streamlit feedback function and default icon.
+    icon:
+        Optional path to an image file.  When not provided, a default base64
+        encoded icon from :mod:`smart_price.icons` is used.
+    """
+
     mapping = {
         "success": st.success,
         "error": st.error,
@@ -34,7 +49,20 @@ def big_alert(message: str, *, level: str = "info") -> None:
         "info": st.info,
     }
     func: Callable[[str], None] = mapping.get(level, st.info)
-    func(f"**{message}**")
+
+    if icon:
+        with open(icon, "rb") as img_file:
+            icon_b64 = base64.b64encode(img_file.read()).decode("utf-8")
+    else:
+        icon_b64 = icons.ICONS.get(level, icons.INFO_ICON_B64)
+
+    html = (
+        f"<p style='display:flex;align-items:center;gap:0.5em;'>"
+        f"<img src='data:image/png;base64,{icon_b64}' "
+        f"style='width:1.3em;height:1.3em;'/>"
+        f"<strong>{message}</strong></p>"
+    )
+    func(html, unsafe_allow_html=True)
 
 
 def _img_to_base64(path: Path) -> str:
