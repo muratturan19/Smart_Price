@@ -1,0 +1,179 @@
+```json
+[
+  {
+    "Malzeme_Kodu": "PC08-30",
+    "Fiyat": "55,22",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "PC10-30",
+    "Fiyat": "62,04",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "PC10-32",
+    "Fiyat": "62,35",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "PC54-10-40",
+    "Fiyat": "89,96",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "PC54-10-80",
+    "Fiyat": "89,96",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "PC54-10-160",
+    "Fiyat": "89,96",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "MH-082-LAN",
+    "Fiyat": "48,39",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "MH-082-LBN",
+    "Fiyat": "48,39",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "MH-082-LCN",
+    "Fiyat": "48,39",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "MH-092-LAN",
+    "Fiyat": "FİYAT SORUNUZ",
+    "Para_Birimi": ""
+  },
+  {
+    "Malzeme_Kodu": "MH-092-LBN",
+    "Fiyat": "FİYAT SORUNUZ",
+    "Para_Birimi": ""
+  },
+  {
+    "Malzeme_Kodu": "MH-092-LCN",
+    "Fiyat": "FİYAT SORUNUZ",
+    "Para_Birimi": ""
+  },
+  {
+    "Malzeme_Kodu": "MH-102-LAN",
+    "Fiyat": "59,87",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "MH-102-LBN",
+    "Fiyat": "59,87",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "MH-102-LCN",
+    "Fiyat": "59,87",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "MH-122-LAN",
+    "Fiyat": "120,98",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "MH-122-LBN",
+    "Fiyat": "120,98",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "MH-122-LCN",
+    "Fiyat": "120,98",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "NV-082-LAN",
+    "Fiyat": "29,78",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "NV-102-LAN",
+    "Fiyat": "34,74",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "NV-122-LAN",
+    "Fiyat": "47,15",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "NV-162-LAN",
+    "Fiyat": "62,04",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "NC-082-LCN",
+    "Fiyat": "36,60",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "NC-102-LCN",
+    "Fiyat": "49,63",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "NC-122-LCN",
+    "Fiyat": "65,14",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "NC-162-LCN",
+    "Fiyat": "78,17",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "CP-104-XAN",
+    "Fiyat": "97,09",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "CP-104-XBN",
+    "Fiyat": "97,09",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "CP-104-XCN",
+    "Fiyat": "97,09",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "CP-124-XAN",
+    "Fiyat": "FİYAT SORUNUZ",
+    "Para_Birimi": ""
+  },
+  {
+    "Malzeme_Kodu": "CP-124-XBN",
+    "Fiyat": "FİYAT SORUNUZ",
+    "Para_Birimi": ""
+  },
+  {
+    "Malzeme_Kodu": "CP-124-XCN",
+    "Fiyat": "FİYAT SORUNUZ",
+    "Para_Birimi": ""
+  },
+  {
+    "Malzeme_Kodu": "CP-164-XAN",
+    "Fiyat": "FİYAT SORUNUZ",
+    "Para_Birimi": ""
+  },
+  {
+    "Malzeme_Kodu": "CP-164-XBN",
+    "Fiyat": "FİYAT SORUNUZ",
+    "Para_Birimi": ""
+  },
+  {
+    "Malzeme_Kodu": "CP-164-XCN",
+    "Fiyat": "FİYAT SORUNUZ",
+    "Para_Birimi": ""
+  }
+]
+```
