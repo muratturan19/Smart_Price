@@ -1,3 +1,0 @@
-Görseldeki sayfa bir içindekiler tablosu gibi görünüyor ve ürün kodları veya fiyat bilgileri içermiyor. Bu nedenle, bu sayfadan herhangi bir "Malzeme_Kodu - Fiyat" bilgisi çıkarılamaz. 
-
-Eğer başka sayfalar varsa ve bu sayfalarda ürün kodları ve fiyat bilgileri yer alıyorsa, o sayfalardan gerekli bilgileri çıkarabilirim. Başka bir sayfa varsa lütfen paylaşın.
