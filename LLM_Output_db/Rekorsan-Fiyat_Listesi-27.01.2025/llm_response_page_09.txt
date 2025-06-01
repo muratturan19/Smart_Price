@@ -62,21 +62,15 @@
   },
   {
     "Malzeme_Kodu": "RK-1930-OSD",
-    "Fiyat": "233,25",
+    "Fiyat": "239,80",
     "Para_Birimi": "TL",
     "Kutu_Adedi": "15"
   },
   {
-    "Malzeme_Kodu": "RK-1937-OSD",
-    "Fiyat": "263,85",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "10"
-  },
-  {
     "Malzeme_Kodu": "RK-2537-OSD",
-    "Fiyat": "379,80",
+    "Fiyat": "263,25",
     "Para_Birimi": "TL",
-    "Kutu_Adedi": "10"
+    "Kutu_Adedi": "15"
   },
   {
     "Malzeme_Kodu": "RK-2543-OSD",
@@ -158,7 +152,7 @@
   },
   {
     "Malzeme_Kodu": "RK-1937-OS45",
-    "Fiyat": "328,06",
+    "Fiyat": "328,26",
     "Para_Birimi": "TL",
     "Kutu_Adedi": "10"
   },
@@ -248,7 +242,7 @@
   },
   {
     "Malzeme_Kodu": "RK-1937-OS90",
-    "Fiyat": "328,06",
+    "Fiyat": "328,26",
     "Para_Birimi": "TL",
     "Kutu_Adedi": "10"
   },
@@ -338,15 +332,15 @@
   },
   {
     "Malzeme_Kodu": "RK-1937-OE",
-    "Fiyat": "328,06",
+    "Fiyat": "328,26",
     "Para_Birimi": "TL",
     "Kutu_Adedi": "10"
   },
   {
     "Malzeme_Kodu": "RK-2537-OE",
-    "Fiyat": "286,88",
+    "Fiyat": "372,86",
     "Para_Birimi": "TL",
-    "Kutu_Adedi": ""
+    "Kutu_Adedi": "10"
   },
   {
     "Malzeme_Kodu": "RK-2543-OE",
