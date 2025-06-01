@@ -1,1 +1,0 @@
-Görselde bir fiyat listesi kapağı var, ancak ürün bilgileri veya fiyatlar içermiyor. Ürün kodları ve fiyatlar gibi verileri çıkarmak için iç sayfalardaki tablo görüntülerine ihtiyacım var. Eğer başka sayfalar varsa, onları da paylaşabilirsin.
