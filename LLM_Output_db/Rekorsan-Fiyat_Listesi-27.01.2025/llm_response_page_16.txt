@@ -32,12 +32,7 @@
   },
   {
     "Malzeme_Kodu": "RK-0812-HT",
-    "Fiyat": "92,65",
-    "Para_Birimi": "TL"
-  },
-  {
-    "Malzeme_Kodu": "RK-0813-HT",
-    "Fiyat": "75,05",
+    "Fiyat": "104,26",
     "Para_Birimi": "TL"
   },
   {
@@ -46,23 +41,8 @@
     "Para_Birimi": "TL"
   },
   {
-    "Malzeme_Kodu": "RK-0816-HT",
-    "Fiyat": "104,26",
-    "Para_Birimi": "TL"
-  },
-  {
-    "Malzeme_Kodu": "RK-1014-HT",
-    "Fiyat": "83,40",
-    "Para_Birimi": "TL"
-  },
-  {
     "Malzeme_Kodu": "RK-1016-HT",
     "Fiyat": "95,91",
-    "Para_Birimi": "TL"
-  },
-  {
-    "Malzeme_Kodu": "RK-1017-HT",
-    "Fiyat": "137,62",
     "Para_Birimi": "TL"
   },
   {
@@ -116,8 +96,8 @@
     "Para_Birimi": "TL"
   },
   {
-    "Malzeme_Kodu": "RK-0614-HB",
-    "Fiyat": "52,14",
+    "Malzeme_Kodu": "RK-0810-HB",
+    "Fiyat": "60,48",
     "Para_Birimi": "TL"
   },
   {
@@ -177,12 +157,12 @@
   },
   {
     "Malzeme_Kodu": "RK-0614-HP",
-    "Fiyat": "52,14",
+    "Fiyat": "62,55",
     "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-0812-HP",
-    "Fiyat": "62,55",
+    "Fiyat": "52,14",
     "Para_Birimi": "TL"
   },
   {
