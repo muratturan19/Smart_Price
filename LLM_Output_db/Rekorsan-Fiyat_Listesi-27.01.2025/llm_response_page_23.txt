@@ -1,0 +1,244 @@
+```json
+[
+  {
+    "Malzeme_Kodu": "RK-0104-BS-LL",
+    "Fiyat": "0,23",
+    "Para_Birimi": "€",
+    "Kutu_Adedi": "100"
+  },
+  {
+    "Malzeme_Kodu": "RK-0106-BS-LL",
+    "Fiyat": "0,23",
+    "Para_Birimi": "€",
+    "Kutu_Adedi": "100"
+  },
+  {
+    "Malzeme_Kodu": "RK-0108-BS-LL",
+    "Fiyat": "0,23",
+    "Para_Birimi": "€",
+    "Kutu_Adedi": "100"
+  },
+  {
+    "Malzeme_Kodu": "RK-0106-BS-L",
+    "Fiyat": "0,21",
+    "Para_Birimi": "€",
+    "Kutu_Adedi": "100"
+  },
+  {
+    "Malzeme_Kodu": "RK-0108-BS-L",
+    "Fiyat": "0,24",
+    "Para_Birimi": "€",
+    "Kutu_Adedi": "100"
+  },
+  {
+    "Malzeme_Kodu": "RK-0110-BS-L",
+    "Fiyat": "0,29",
+    "Para_Birimi": "€",
+    "Kutu_Adedi": "100"
+  },
+  {
+    "Malzeme_Kodu": "RK-0112-BS-L",
+    "Fiyat": "0,31",
+    "Para_Birimi": "€",
+    "Kutu_Adedi": "100"
+  },
+  {
+    "Malzeme_Kodu": "RK-0115-BS-L",
+    "Fiyat": "0,45",
+    "Para_Birimi": "€",
+    "Kutu_Adedi": "100"
+  },
+  {
+    "Malzeme_Kodu": "RK-0118-BS-L",
+    "Fiyat": "0,80",
+    "Para_Birimi": "€",
+    "Kutu_Adedi": "100"
+  },
+  {
+    "Malzeme_Kodu": "RK-0122-BS-L",
+    "Fiyat": "0,89",
+    "Para_Birimi": "€",
+    "Kutu_Adedi": "50"
+  },
+  {
+    "Malzeme_Kodu": "RK-0128-BS-L",
+    "Fiyat": "1,38",
+    "Para_Birimi": "€",
+    "Kutu_Adedi": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-0135-BS-L",
+    "Fiyat": "1,73",
+    "Para_Birimi": "€",
+    "Kutu_Adedi": "20"
+  },
+  {
+    "Malzeme_Kodu": "RK-0142-BS-L",
+    "Fiyat": "3,46",
+    "Para_Birimi": "€",
+    "Kutu_Adedi": "15"
+  },
+  {
+    "Malzeme_Kodu": "RK-0206-BS-S",
+    "Fiyat": "0,32",
+    "Para_Birimi": "€",
+    "Kutu_Adedi": "-"
+  },
+  {
+    "Malzeme_Kodu": "RK-0208-BS-S",
+    "Fiyat": "0,36",
+    "Para_Birimi": "€",
+    "Kutu_Adedi": "-"
+  },
+  {
+    "Malzeme_Kodu": "RK-0210-BS-S",
+    "Fiyat": "0,40",
+    "Para_Birimi": "€",
+    "Kutu_Adedi": "-"
+  },
+  {
+    "Malzeme_Kodu": "RK-0212-BS-S",
+    "Fiyat": "0,41",
+    "Para_Birimi": "€",
+    "Kutu_Adedi": "1000"
+  },
+  {
+    "Malzeme_Kodu": "RK-0214-BS-S",
+    "Fiyat": "0,80",
+    "Para_Birimi": "€",
+    "Kutu_Adedi": "-"
+  },
+  {
+    "Malzeme_Kodu": "RK-0216-BS-S",
+    "Fiyat": "0,69",
+    "Para_Birimi": "€",
+    "Kutu_Adedi": "100"
+  },
+  {
+    "Malzeme_Kodu": "RK-0220-BS-S",
+    "Fiyat": "0,94",
+    "Para_Birimi": "€",
+    "Kutu_Adedi": "50"
+  },
+  {
+    "Malzeme_Kodu": "RK-0225-BS-S",
+    "Fiyat": "1,48",
+    "Para_Birimi": "€",
+    "Kutu_Adedi": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-0230-BS-S",
+    "Fiyat": "1,73",
+    "Para_Birimi": "€",
+    "Kutu_Adedi": "20"
+  },
+  {
+    "Malzeme_Kodu": "RK-0238-BS-S",
+    "Fiyat": "3,95",
+    "Para_Birimi": "€",
+    "Kutu_Adedi": "15"
+  },
+  {
+    "Malzeme_Kodu": "RK-0106-ÇY-LL",
+    "Fiyat": "0,23",
+    "Para_Birimi": "€",
+    "Kutu_Adedi": "-"
+  },
+  {
+    "Malzeme_Kodu": "RK-0108-ÇY-LL",
+    "Fiyat": "0,24",
+    "Para_Birimi": "€",
+    "Kutu_Adedi": "-"
+  },
+  {
+    "Malzeme_Kodu": "RK-0106-ÇY",
+    "Fiyat": "0,19",
+    "Para_Birimi": "€",
+    "Kutu_Adedi": "100"
+  },
+  {
+    "Malzeme_Kodu": "RK-0108-ÇY",
+    "Fiyat": "0,21",
+    "Para_Birimi": "€",
+    "Kutu_Adedi": "100"
+  },
+  {
+    "Malzeme_Kodu": "RK-0110-ÇY",
+    "Fiyat": "0,29",
+    "Para_Birimi": "€",
+    "Kutu_Adedi": "100"
+  },
+  {
+    "Malzeme_Kodu": "RK-0112-ÇY",
+    "Fiyat": "0,31",
+    "Para_Birimi": "€",
+    "Kutu_Adedi": "100"
+  },
+  {
+    "Malzeme_Kodu": "RK-0115-ÇY",
+    "Fiyat": "0,40",
+    "Para_Birimi": "€",
+    "Kutu_Adedi": "100"
+  },
+  {
+    "Malzeme_Kodu": "RK-0118-ÇY",
+    "Fiyat": "0,61",
+    "Para_Birimi": "€",
+    "Kutu_Adedi": "50"
+  },
+  {
+    "Malzeme_Kodu": "RK-0122-ÇY",
+    "Fiyat": "0,89",
+    "Para_Birimi": "€",
+    "Kutu_Adedi": "50"
+  },
+  {
+    "Malzeme_Kodu": "RK-0128-ÇY",
+    "Fiyat": "1,29",
+    "Para_Birimi": "€",
+    "Kutu_Adedi": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-0135-ÇY",
+    "Fiyat": "2,29",
+    "Para_Birimi": "€",
+    "Kutu_Adedi": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-0142-ÇY",
+    "Fiyat": "3,03",
+    "Para_Birimi": "€",
+    "Kutu_Adedi": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-0216-ÇY",
+    "Fiyat": "0,50",
+    "Para_Birimi": "€",
+    "Kutu_Adedi": "100"
+  },
+  {
+    "Malzeme_Kodu": "RK-0220-ÇY",
+    "Fiyat": "0,86",
+    "Para_Birimi": "€",
+    "Kutu_Adedi": "50"
+  },
+  {
+    "Malzeme_Kodu": "RK-0225-ÇY",
+    "Fiyat": "1,23",
+    "Para_Birimi": "€",
+    "Kutu_Adedi": "50"
+  },
+  {
+    "Malzeme_Kodu": "RK-0230-ÇY",
+    "Fiyat": "1,74",
+    "Para_Birimi": "€",
+    "Kutu_Adedi": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-0238-ÇY",
+    "Fiyat": "3,13",
+    "Para_Birimi": "€",
+    "Kutu_Adedi": "25"
+  }
+]
+```
