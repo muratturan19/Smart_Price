@@ -1,1 +1,0 @@
-Görselde bir bina ve şirket bilgileri yer alıyor. Malzeme kodu ve fiyat bilgisi içeren bir tablo görünmüyor. Eğer başka sayfalar varsa, onları da inceleyebilirim.
