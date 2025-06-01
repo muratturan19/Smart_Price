@@ -62,7 +62,7 @@
   },
   {
     "Malzeme_Kodu": "RK-4220-MKS",
-    "Fiyat": "57,80",
+    "Fiyat": "55,80",
     "Para_Birimi": "TL",
     "Kutu_Adedi": "30"
   },
@@ -146,7 +146,7 @@
   },
   {
     "Malzeme_Kodu": "RK-2114-RST",
-    "Fiyat": "50,34",
+    "Fiyat": "50,84",
     "Para_Birimi": "TL",
     "Kutu_Adedi": "25"
   },
@@ -184,19 +184,19 @@
     "Malzeme_Kodu": "RK-1319-RET",
     "Fiyat": "22,00",
     "Para_Birimi": "TL",
-    "Kutu_Adedi": "50"
+    "Kutu_Adedi": "25"
   },
   {
     "Malzeme_Kodu": "RK-1719-RET",
-    "Fiyat": "35,86",
+    "Fiyat": "31,35",
     "Para_Birimi": "TL",
-    "Kutu_Adedi": "30"
+    "Kutu_Adedi": "25"
   },
   {
     "Malzeme_Kodu": "RK-2114-RET",
     "Fiyat": "35,86",
     "Para_Birimi": "TL",
-    "Kutu_Adedi": "25"
+    "Kutu_Adedi": "20"
   },
   {
     "Malzeme_Kodu": "RK-2614-RET",
