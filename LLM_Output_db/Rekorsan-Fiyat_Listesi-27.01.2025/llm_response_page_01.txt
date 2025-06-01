@@ -1,1 +1,1 @@
-Bu sayfa bir kapak sayfası gibi görünüyor ve ürün bilgisi içermiyor. Ürün kodları ve fiyatlar gibi verileri çıkarmak için iç sayfalardaki tablo görüntülerine ihtiyacım var. Başka bir sayfa varsa, lütfen onu yükleyin.
+Görselde herhangi bir tablo veya metin içeriği bulunmuyor. Eğer başka sayfalar veya tablolar varsa, onları inceleyebilirim. Lütfen tablo içeren sayfaları yükleyin.
