@@ -501,9 +501,8 @@ def main():
     _configure_tesseract()
     st.set_page_config(layout="wide")
 
-    root_dir = Path(__file__).resolve().parents[2]
-    left_logo_b64 = img_to_base64(root_dir / "logo" / "dp_logo.png")
-    right_logo_b64 = img_to_base64(root_dir / "logo" / "delta_logo_150p.png")
+    left_logo_b64 = img_to_base64(Path(resource_path("logo/dp_logo.png")))
+    right_logo_b64 = img_to_base64(Path(resource_path("logo/delta_logo_150p.png")))
 
     header_html = f"""
         <header class='app-header'>

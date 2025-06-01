@@ -10,7 +10,14 @@ import requests
 import streamlit as st
 from pathlib import Path
 import base64
+import sys
 from smart_price.ui_utils import img_to_base64, logo_overlay
+
+
+def resource_path(relative: str) -> str:
+    """Return absolute path to resource, works for PyInstaller bundles."""
+    base_path = getattr(sys, "_MEIPASS", Path(__file__).parent)
+    return str(Path(base_path) / relative)
 
 from smart_price.config import DEFAULT_DB_URL, DEFAULT_IMAGE_BASE_URL
 
@@ -110,8 +117,7 @@ def search_page(df: pd.DataFrame) -> None:
 def main() -> None:
     st.set_page_config(layout="wide")
 
-    root_dir = Path(__file__).resolve().parents[2]
-    sidebar_logo = root_dir / "logo" / "dp_logo.png"
+    sidebar_logo = Path(resource_path("logo/dp_logo.png"))
     sidebar_logo_b64 = img_to_base64(sidebar_logo)
     st.sidebar.markdown(
         f"<img src='data:image/png;base64,{sidebar_logo_b64}' "
@@ -120,7 +126,7 @@ def main() -> None:
         unsafe_allow_html=True,
     )
 
-    top_logo = root_dir / "logo" / "delta_logo_150p.png"
+    top_logo = Path(resource_path("logo/delta_logo_150p.png"))
     logo_overlay(top_logo, tooltip="Delta Proje")
 
     st.sidebar.title("Smart Price Sales")
