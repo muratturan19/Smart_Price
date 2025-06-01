@@ -57,12 +57,18 @@ def big_alert(message: str, *, level: str = "info", icon: str | None = None) -> 
     else:
         icon_b64 = icons.ICONS.get(level, icons.INFO_ICON_B64)
 
-    html = (
-        f"<p style='display:flex;align-items:center;gap:0.5em;'>"
-        f"<img src='data:image/png;base64,{icon_b64}' "
-        f"style='width:1.3em;height:1.3em;'/>"
-        f"<strong>{message}</strong></p>"
-    )
+    theme = st.get_option("theme") or {}
+    text_colour = theme.get("textColor", "#262730")
+    bg_colour = theme.get("secondaryBackgroundColor", "#F0F2F6")
+
+    html = f"""
+        <div style='display:flex;align-items:center;gap:0.5em;padding:0.75em;"
+        f"background:{bg_colour};color:{text_colour};border-radius:0.5em;"
+        f"font-size:1.1rem;font-weight:600;'>
+            <img src='data:image/png;base64,{icon_b64}' style='width:1.5em;height:1.5em;' />
+            <span>{message}</span>
+        </div>
+    """
     func(html, unsafe_allow_html=True)
 
 
