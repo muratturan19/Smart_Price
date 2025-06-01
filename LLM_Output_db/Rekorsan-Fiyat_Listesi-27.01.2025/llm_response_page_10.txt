@@ -193,7 +193,7 @@
     "Kutu_Adedi": "50"
   },
   {
-    "Malzeme_Kodu": "RK-0808-HE",
+    "Malzeme_Kodu": "RK-0608-HE",
     "Fiyat": "34,75",
     "Para_Birimi": "TL",
     "Kutu_Adedi": "50"
@@ -213,8 +213,7 @@
   {
     "Malzeme_Kodu": "RK-1616-HE",
     "Fiyat": "86,88",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "30"
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-1919-HE",
