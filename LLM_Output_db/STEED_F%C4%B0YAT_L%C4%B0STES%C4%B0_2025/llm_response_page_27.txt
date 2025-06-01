@@ -1,0 +1,99 @@
+```json
+[
+  {
+    "Malzeme_Kodu": "CV08-20-N-05",
+    "Fiyat": "16,75",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "CV08-20-N-30",
+    "Fiyat": "16,75",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "CV08-20-N-50",
+    "Fiyat": "16,75",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "CV10-20-N-05",
+    "Fiyat": "23,27",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "CV10-20-N-30",
+    "Fiyat": "23,27",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "CV10-20-N-50",
+    "Fiyat": "23,27",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "CV10-20-N-100",
+    "Fiyat": "23,27",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "CV12-20-N-05",
+    "Fiyat": "35,67",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "CV12-20-N-50",
+    "Fiyat": "35,67",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "CV16-20-N-05",
+    "Fiyat": "52,42",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "CV16-20-N-50",
+    "Fiyat": "52,42",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "CV08-21-N",
+    "Fiyat": "26,68",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "CV10-21-N",
+    "Fiyat": "31,64",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "L504-B30-N",
+    "Fiyat": "21,71",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "L508-B30-N",
+    "Fiyat": "31,64",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "L510-B30-N",
+    "Fiyat": "38,15",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "MR10-31-N",
+    "Fiyat": "69,80",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "DC08-40-N-25",
+    "Fiyat": "101,13",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "DC10-40-N-25",
+    "Fiyat": "114,77",
+    "Para_Birimi": "USD"
+  }
+]
+```
