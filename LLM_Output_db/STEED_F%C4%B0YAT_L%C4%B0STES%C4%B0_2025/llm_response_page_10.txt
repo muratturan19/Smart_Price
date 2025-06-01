@@ -1,0 +1,244 @@
+```json
+[
+  {
+    "Malzeme_Kodu": "PR2B-KAN",
+    "Fiyat": "121,72",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "PR2B-KBN",
+    "Fiyat": "121,72",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "PR2B-KDN",
+    "Fiyat": "121,72",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "PR2B-KVN",
+    "Fiyat": "121,72",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "PR3B-KAN",
+    "Fiyat": "180,95",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "PR3B-KBN",
+    "Fiyat": "180,95",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "PR3B-KDN",
+    "Fiyat": "180,95",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "PR3B-KVN",
+    "Fiyat": "180,95",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "PR6B-KAN",
+    "Fiyat": "351,97",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "PR6B-KBN",
+    "Fiyat": "351,97",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "PR6B-KDN",
+    "Fiyat": "351,97",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "PR6B-KVN",
+    "Fiyat": "351,97",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "PR8B-KAN",
+    "Fiyat": "FİYAT SORUNUZ",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "PR8B-KBN",
+    "Fiyat": "FİYAT SORUNUZ",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "PR8B-KDN",
+    "Fiyat": "FİYAT SORUNUZ",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "PR8B-KVN",
+    "Fiyat": "FİYAT SORUNUZ",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "NF2C-L*N",
+    "Fiyat": "55,84",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "NF3C-L*N",
+    "Fiyat": "59,73",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "NF6C-L*N",
+    "Fiyat": "FİYAT SORUNUZ",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "NF8C-L*N",
+    "Fiyat": "FİYAT SORUNUZ",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "NF2C-K*N",
+    "Fiyat": "61,42",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "NF3C-K*N",
+    "Fiyat": "96,32",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "NF6C-K*N",
+    "Fiyat": "FİYAT SORUNUZ",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "NF8C-K*N",
+    "Fiyat": "FİYAT SORUNUZ",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "NF2D-LN",
+    "Fiyat": "55,84",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "NF3D-LN",
+    "Fiyat": "59,73",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "NF6D-LN",
+    "Fiyat": "169,99",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "NF8D-LN",
+    "Fiyat": "369,36",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "NF2D-KN",
+    "Fiyat": "61,42",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "NF3D-KN",
+    "Fiyat": "96,32",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "NF6D-KN",
+    "Fiyat": "176,50",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "NF8D-KN",
+    "Fiyat": "372,25",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "NC2B-LAN",
+    "Fiyat": "71,19",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "NC2B-LEN",
+    "Fiyat": "71,19",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "NC3B-LAN",
+    "Fiyat": "101,33",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "NC3B-LEN",
+    "Fiyat": "101,33",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "NC6B-LAN",
+    "Fiyat": "175,88",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "NC6B-LEN",
+    "Fiyat": "175,88",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "NC8B-LAN",
+    "Fiyat": "383,03",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "NC8B-LEN",
+    "Fiyat": "383,03",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "NC2B-KAN",
+    "Fiyat": "71,19",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "NC2B-KEN",
+    "Fiyat": "71,19",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "NC3B-KAN",
+    "Fiyat": "107,70",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "NC3B-KEN",
+    "Fiyat": "107,70",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "NC6B-KAN",
+    "Fiyat": "182,40",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "NC6B-KEN",
+    "Fiyat": "182,40",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "NC8B-KAN",
+    "Fiyat": "389,11",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "NC8B-KEN",
+    "Fiyat": "389,11",
+    "Para_Birimi": "TL"
+  }
+]
+```
