@@ -11,13 +11,13 @@ def _setup_streamlit(monkeypatch):
     captured = {}
     st_stub = types.ModuleType("streamlit")
 
-    def make(level):
+    def make(name):
         def func(msg, *, unsafe_allow_html=False):
-            captured[level] = (msg, unsafe_allow_html)
+            captured[name] = (msg, unsafe_allow_html)
         return func
 
-    for lvl in ("success", "error", "warning", "info"):
-        setattr(st_stub, lvl, make(lvl))
+    # Capture markdown calls used by ``big_alert``
+    st_stub.markdown = make("markdown")
 
     st_stub.get_option = lambda name: {}
 
@@ -57,8 +57,8 @@ def test_big_alert_default_icon(monkeypatch, tmp_path):
     from smart_price.streamlit_app import big_alert
 
     big_alert("Hello", level="success")
-    assert "success" in captured
-    msg, allow = captured["success"]
+    assert "markdown" in captured
+    msg, allow = captured["markdown"]
     assert icons.SUCCESS_ICON_B64 in msg
     assert "<div" in msg
     assert "Hello" in msg

@@ -42,13 +42,9 @@ def big_alert(message: str, *, level: str = "info", icon: str | None = None) -> 
         encoded icon from :mod:`smart_price.icons` is used.
     """
 
-    mapping = {
-        "success": st.success,
-        "error": st.error,
-        "warning": st.warning,
-        "info": st.info,
-    }
-    func: Callable[[str], None] = mapping.get(level, st.info)
+    # ``st.success`` and friends used to accept ``unsafe_allow_html`` but this
+    # parameter was removed in newer Streamlit versions.  To maintain the custom
+    # HTML formatting we always use ``st.markdown``.
 
     if icon:
         with open(icon, "rb") as img_file:
@@ -71,7 +67,7 @@ def big_alert(message: str, *, level: str = "info", icon: str | None = None) -> 
             <span>{message}</span>
         </div>
     """
-    func(html, unsafe_allow_html=True)
+    st.markdown(html, unsafe_allow_html=True)
 
 
 def _configure_tesseract() -> None:
