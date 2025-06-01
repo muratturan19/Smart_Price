@@ -651,5 +651,5 @@ def extract_from_pdf(
     cleanup()
     debug_dir = Path(os.getenv("SMART_PRICE_DEBUG_DIR", "LLM_Output_db")) / output_stem
     set_output_subdir(None)
-    upload_folder(debug_dir)
+    upload_folder(debug_dir, remote_prefix=f"LLM_Output_db/{debug_dir.name}")
     return result_df

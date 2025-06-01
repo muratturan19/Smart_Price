@@ -395,6 +395,6 @@ def parse(
     logger.info("Finished %s with %d rows in %.2fs", pdf_path, len(df), total_dur)
     debug_dir = Path(os.getenv("SMART_PRICE_DEBUG_DIR", "LLM_Output_db")) / output_name
     set_output_subdir(None)
-    upload_folder(debug_dir)
+    upload_folder(debug_dir, remote_prefix=f"LLM_Output_db/{debug_dir.name}")
     return df
 
