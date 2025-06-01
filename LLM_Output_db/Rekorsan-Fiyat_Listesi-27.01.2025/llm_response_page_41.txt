@@ -151,12 +151,6 @@
     "Para_Birimi": "TL"
   },
   {
-    "Malzeme_Kodu": "RK-1720-RMEOP",
-    "Fiyat": "258,05",
-    "Kutu_Adedi": "15",
-    "Para_Birimi": "TL"
-  },
-  {
     "Malzeme_Kodu": "RK-2125-RMEOP",
     "Fiyat": "358,98",
     "Kutu_Adedi": "10",
