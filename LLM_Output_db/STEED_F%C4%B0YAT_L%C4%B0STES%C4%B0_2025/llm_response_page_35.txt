@@ -1,0 +1,159 @@
+```json
+[
+  {
+    "Malzeme_Kodu": "ST6C, ST6CM - 003",
+    "Fiyat": "$847,77",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "ST6C, ST6CM - 005",
+    "Fiyat": "$847,77",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "ST6C, ST6CM - 006",
+    "Fiyat": "$847,77",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "ST6C, ST6CM - 008",
+    "Fiyat": "$847,77",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "ST6C, ST6CM - 010",
+    "Fiyat": "$847,77",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "ST6C, ST6CM - 012",
+    "Fiyat": "$847,77",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "ST6C, ST6CM - 014",
+    "Fiyat": "$847,77",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "ST6C, ST6CM - 017",
+    "Fiyat": "$847,77",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "ST6C, ST6CM - 020",
+    "Fiyat": "$847,77",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "ST6C, ST6CM - 022",
+    "Fiyat": "$847,77",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "ST6C, ST6CM - 025",
+    "Fiyat": "$847,77",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "ST6C, ST6CM - 028",
+    "Fiyat": "$847,77",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "ST6C, ST6CM - 031",
+    "Fiyat": "$847,77",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "ST6D, ST6DM - 014",
+    "Fiyat": "$1.692,84",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "ST6D, ST6DM - 017",
+    "Fiyat": "$1.692,84",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "ST6D, ST6DM - 020",
+    "Fiyat": "$1.692,84",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "ST6D, ST6DM - 024",
+    "Fiyat": "$1.692,84",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "ST6D, ST6DM - 028",
+    "Fiyat": "$1.692,84",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "ST6D, ST6DM - 031",
+    "Fiyat": "$1.692,84",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "ST6D, ST6DM - 035",
+    "Fiyat": "$1.692,84",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "ST6D, ST6DM - 038",
+    "Fiyat": "$1.692,84",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "ST6D, ST6DM - 042",
+    "Fiyat": "$1.692,84",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "ST6D, ST6DM - 045",
+    "Fiyat": "$1.692,84",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "ST6D, ST6DM - 050",
+    "Fiyat": "$1.692,84",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "ST6E, ST6EM - 042",
+    "Fiyat": "$2.640,83",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "ST6E, ST6EM - 045",
+    "Fiyat": "$2.640,83",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "ST6E, ST6EM - 050",
+    "Fiyat": "$2.640,83",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "ST6E, ST6EM - 052",
+    "Fiyat": "$2.640,83",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "ST6E, ST6EM - 062",
+    "Fiyat": "$2.640,83",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "ST6E, ST6EM - 066",
+    "Fiyat": "$2.640,83",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "ST6E, ST6EM - 072",
+    "Fiyat": "$2.640,83",
+    "Para_Birimi": "USD"
+  }
+]
+```
