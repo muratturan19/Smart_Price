@@ -24,6 +24,19 @@ from smart_price.core.github_upload import upload_folder, delete_github_folder
 logger = logging.getLogger("smart_price")
 
 
+def big_alert(message: str, *, level: str = "info") -> None:
+    """Show a large coloured alert box in Streamlit."""
+    style = "font-size:20px;font-weight:bold;"
+    if level == "success":
+        st.success(f"<p style='{style}'>{message}</p>", unsafe_allow_html=True)
+    elif level == "error":
+        st.error(f"<p style='{style}'>{message}</p>", unsafe_allow_html=True)
+    elif level == "warning":
+        st.warning(f"<p style='{style}'>{message}</p>", unsafe_allow_html=True)
+    else:
+        st.info(f"<p style='{style}'>{message}</p>", unsafe_allow_html=True)
+
+
 def _configure_tesseract() -> None:
     """Configure pytesseract paths and log available languages.
 
@@ -322,45 +335,51 @@ def upload_page():
         return
 
     if st.button("Dosyaları İşle"):
-        status = st.empty()
-        progress_bar = st.progress(0.0)
-        df = merge_files(
-            files,
-            update_status=status.write,
-            update_progress=lambda v: progress_bar.progress(v),
-        )
+        uploaded_list = ", ".join(f.name for f in files)
+        with st.spinner("Dosyalar işleniyor..."):
+            status = st.empty()
+            progress_bar = st.progress(0.0)
+            df = merge_files(
+                files,
+                update_status=status.write,
+                update_progress=lambda v: progress_bar.progress(v),
+            )
+        st.info(f"Yüklenen dosyalar: {uploaded_list}")
         if df.empty:
-            st.warning("Dosyalardan veri çıkarılamadı.")
+            big_alert("Dosyalardan veri çıkarılamadı.", level="warning")
             return
 
         st.session_state["processed_df"] = df
-        st.success(f"{len(df)} kayıt bulundu")
+        big_alert(f"{len(df)} kayıt bulundu", level="success")
         st.metric("Rows", len(df))
         coverage = df['Malzeme_Kodu'].notna().mean()
         st.metric("Code filled %", f"{coverage:.1%}")
         if coverage < MIN_CODE_RATIO:
-            st.error("Low code coverage – OCR/LLM suggested")
+            big_alert("Low code coverage – OCR/LLM suggested", level="error")
         st.dataframe(df)
 
     if st.button("Master Veriyi Kaydet"):
         df = st.session_state.get("processed_df")
         if df is None or df.empty:
-            st.error("Kaydedilecek veri yok.")
+            big_alert("Kaydedilecek veri yok.", level="error")
             return
         try:
-            excel_path, db_path, upload_result = save_master_dataset(
-                df, mode=st.session_state.get("upload_mode", "Yeni fiyat listesi")
-            )
+            with st.spinner("Kaydediliyor..."):
+                excel_path, db_path, upload_result = save_master_dataset(
+                    df,
+                    mode=st.session_state.get("upload_mode", "Yeni fiyat listesi"),
+                )
         except Exception as exc:  # pragma: no cover - UI feedback only
-            st.error(f"Kaydetme hatası: {exc}")
+            big_alert(f"Kaydetme hatası: {exc}", level="error")
         else:
-            st.success(
-                f"Veriler kaydedildi:\nExcel: {excel_path}\nDB: {db_path}"
+            big_alert(
+                f"Veriler kaydedildi:\nExcel: {excel_path}\nDB: {db_path}",
+                level="success",
             )
             if upload_result is True:
-                st.success("Upload başarılı")
+                big_alert("Upload başarılı", level="success")
             else:
-                st.error(upload_result)
+                big_alert(str(upload_result), level="error")
 
 
 def search_page():
@@ -380,11 +399,12 @@ def reset_page():
     st.header("Database Sıfırla")
     if st.button("Sıfırla"):
         try:
-            reset_database()
+            with st.spinner("Sıfırlanıyor..."):
+                reset_database()
         except Exception as exc:
-            st.error(f"Hata: {exc}")
+            big_alert(f"Hata: {exc}", level="error")
         else:
-            st.success("Veritabanı sıfırlandı")
+            big_alert("Veritabanı sıfırlandı", level="success")
 
 
 PAGES = {
