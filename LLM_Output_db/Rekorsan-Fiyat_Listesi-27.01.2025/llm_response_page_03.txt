@@ -1,3 +1,1 @@
-Görselde bir ürün kataloğu içindekiler sayfası yer alıyor. Bu sayfa, ürün kategorilerini ve sayfa numaralarını listeliyor. Ancak, belirttiğiniz gibi Malzeme_Kodu ve Fiyat bilgilerini içeren bir tablo bulunmuyor. 
-
-Eğer başka sayfalarda ürün bilgileri içeren tablolar varsa, o sayfaların görsellerini paylaşabilirsiniz. Böylece, istenen bilgileri çıkarmaya çalışabilirim.
+Görselde bir içindekiler sayfası var ve ürün kodları veya fiyat bilgileri içermiyor. Bu nedenle, belirtilen kurallara göre çıkarılacak bir veri bulunmuyor. Başka bir sayfa veya tablo varsa, onu inceleyebilirim.
