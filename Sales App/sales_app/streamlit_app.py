@@ -8,10 +8,18 @@ import tempfile
 import pandas as pd
 import requests
 import streamlit as st
+from pathlib import Path
+import base64
 
 from smart_price.config import DEFAULT_DB_URL, DEFAULT_IMAGE_BASE_URL
 
 logger = logging.getLogger("sales_app")
+
+
+def _img_to_base64(path: Path) -> str:
+    """Return base64 string for the image at ``path``."""
+    with open(path, "rb") as img_file:
+        return base64.b64encode(img_file.read()).decode("utf-8")
 
 
 def _load_dataset(url: str) -> pd.DataFrame:
@@ -103,6 +111,31 @@ def search_page(df: pd.DataFrame) -> None:
 
 
 def main() -> None:
+    st.set_page_config(layout="wide")
+
+    root_dir = Path(__file__).resolve().parents[2]
+    sidebar_logo = root_dir / "logo" / "sadece dp şeffaf.PNG"
+    st.sidebar.image(str(sidebar_logo), use_column_width=True)
+
+    top_logo = root_dir / "logo" / "delta logo -150p.png"
+    encoded = _img_to_base64(top_logo)
+    st.markdown(
+        f"""
+        <style>
+            .top-right-logo {{
+                position: fixed;
+                top: 10px;
+                right: 10px;
+                width: 15vw;
+                max-width: 150px;
+                z-index: 1000;
+            }}
+        </style>
+        <img class="top-right-logo" src="data:image/png;base64,{encoded}" />
+        """,
+        unsafe_allow_html=True,
+    )
+
     st.sidebar.title("Smart Price Sales")
     df = get_master_dataset()
     search_page(df)
