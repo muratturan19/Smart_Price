@@ -68,15 +68,9 @@
   },
   {
     "Malzeme_Kodu": "RK-1712-NMD-L",
-    "Fiyat": "111,93",
+    "Fiyat": "99,54",
     "Para_Birimi": "TL",
-    "Kutu_Adedi": "30"
-  },
-  {
-    "Malzeme_Kodu": "RK-1716-NMD-L",
-    "Fiyat": "126,40",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "20"
+    "Kutu_Adedi": "25"
   },
   {
     "Malzeme_Kodu": "RK-2110-NMD-L",
@@ -94,7 +88,7 @@
     "Malzeme_Kodu": "RK-2115-NMD-L",
     "Fiyat": "111,10",
     "Para_Birimi": "TL",
-    "Kutu_Adedi": "25"
+    "Kutu_Adedi": "20"
   },
   {
     "Malzeme_Kodu": "RK-2118-NMD-L",
@@ -106,7 +100,7 @@
     "Malzeme_Kodu": "RK-2622-NMD-L",
     "Fiyat": "162,94",
     "Para_Birimi": "TL",
-    "Kutu_Adedi": "25"
+    "Kutu_Adedi": "15"
   },
   {
     "Malzeme_Kodu": "RK-3328-NMD-L",
@@ -127,115 +121,115 @@
     "Kutu_Adedi": "5"
   },
   {
-    "Malzeme_Kodu": "RK-1306-NMS-D",
+    "Malzeme_Kodu": "RK-1306-NMS-L",
     "Fiyat": "96,36",
     "Para_Birimi": "TL",
     "Kutu_Adedi": "25"
   },
   {
-    "Malzeme_Kodu": "RK-1308-NMS-D",
+    "Malzeme_Kodu": "RK-1308-NMS-L",
     "Fiyat": "96,36",
     "Para_Birimi": "TL",
     "Kutu_Adedi": "25"
   },
   {
-    "Malzeme_Kodu": "RK-1310-NMS-D",
+    "Malzeme_Kodu": "RK-1310-NMS-L",
     "Fiyat": "99,54",
     "Para_Birimi": "TL",
     "Kutu_Adedi": "25"
   },
   {
-    "Malzeme_Kodu": "RK-1708-NMS-D",
+    "Malzeme_Kodu": "RK-1708-NMS-L",
     "Fiyat": "99,54",
     "Para_Birimi": "TL",
     "Kutu_Adedi": "25"
   },
   {
-    "Malzeme_Kodu": "RK-1710-NMS-D",
+    "Malzeme_Kodu": "RK-1710-NMS-L",
     "Fiyat": "99,54",
     "Para_Birimi": "TL",
     "Kutu_Adedi": "25"
   },
   {
-    "Malzeme_Kodu": "RK-1712-NMS-D",
+    "Malzeme_Kodu": "RK-1712-NMS-L",
     "Fiyat": "111,93",
     "Para_Birimi": "TL",
     "Kutu_Adedi": "30"
   },
   {
-    "Malzeme_Kodu": "RK-1716-NMS-D",
+    "Malzeme_Kodu": "RK-1716-NMS-L",
     "Fiyat": "126,40",
     "Para_Birimi": "TL",
     "Kutu_Adedi": "20"
   },
   {
-    "Malzeme_Kodu": "RK-2112-NMS-D",
+    "Malzeme_Kodu": "RK-2112-NMS-L",
     "Fiyat": "111,10",
     "Para_Birimi": "TL",
     "Kutu_Adedi": "25"
   },
   {
-    "Malzeme_Kodu": "RK-2116-NMS-D",
+    "Malzeme_Kodu": "RK-2116-NMS-L",
     "Fiyat": "116,08",
     "Para_Birimi": "TL",
     "Kutu_Adedi": "20"
   },
   {
-    "Malzeme_Kodu": "RK-2120-NMS-D",
+    "Malzeme_Kodu": "RK-2120-NMS-L",
     "Fiyat": "173,63",
     "Para_Birimi": "TL",
     "Kutu_Adedi": "25"
   },
   {
-    "Malzeme_Kodu": "RK-2616-NMS-D",
+    "Malzeme_Kodu": "RK-2616-NMS-L",
     "Fiyat": "173,63",
     "Para_Birimi": "TL",
     "Kutu_Adedi": "25"
   },
   {
-    "Malzeme_Kodu": "RK-2620-NMS-D",
+    "Malzeme_Kodu": "RK-2620-NMS-L",
     "Fiyat": "173,63",
     "Para_Birimi": "TL",
     "Kutu_Adedi": "25"
   },
   {
-    "Malzeme_Kodu": "RK-2625-NMS-D",
+    "Malzeme_Kodu": "RK-2625-NMS-L",
     "Fiyat": "252,98",
     "Para_Birimi": "TL",
     "Kutu_Adedi": "15"
   },
   {
-    "Malzeme_Kodu": "RK-3320-NMS-D",
+    "Malzeme_Kodu": "RK-3320-NMS-L",
     "Fiyat": "253,56",
     "Para_Birimi": "TL",
     "Kutu_Adedi": "15"
   },
   {
-    "Malzeme_Kodu": "RK-3325-NMS-D",
+    "Malzeme_Kodu": "RK-3325-NMS-L",
     "Fiyat": "253,56",
     "Para_Birimi": "TL",
     "Kutu_Adedi": "15"
   },
   {
-    "Malzeme_Kodu": "RK-3330-NMS-D",
+    "Malzeme_Kodu": "RK-3330-NMS-L",
     "Fiyat": "331,87",
     "Para_Birimi": "TL",
     "Kutu_Adedi": "10"
   },
   {
-    "Malzeme_Kodu": "RK-4230-NMS-D",
+    "Malzeme_Kodu": "RK-4230-NMS-L",
     "Fiyat": "331,87",
     "Para_Birimi": "TL",
     "Kutu_Adedi": "10"
   },
   {
-    "Malzeme_Kodu": "RK-4238-NMS-D",
+    "Malzeme_Kodu": "RK-4238-NMS-L",
     "Fiyat": "539,36",
     "Para_Birimi": "TL",
     "Kutu_Adedi": "5"
   },
   {
-    "Malzeme_Kodu": "RK-4838-NMS-D",
+    "Malzeme_Kodu": "RK-4838-NMS-L",
     "Fiyat": "539,36",
     "Para_Birimi": "TL",
     "Kutu_Adedi": "5"
