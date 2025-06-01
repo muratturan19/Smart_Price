@@ -1,5 +1,3 @@
-İşte istenen formatta çıkarılan veriler:
-
 ```json
 [
   {
@@ -108,7 +106,7 @@
     "Malzeme_Kodu": "RK-1417-WOKD",
     "Fiyat": "168,71",
     "Para_Birimi": "TL",
-    "Kutu_Adedi": "25"
+    "Kutu_Adedi": "20"
   },
   {
     "Malzeme_Kodu": "RK-1421-WOKD",
@@ -138,7 +136,7 @@
     "Malzeme_Kodu": "RK-2221-WOKD",
     "Fiyat": "234,31",
     "Para_Birimi": "TL",
-    "Kutu_Adedi": "20"
+    "Kutu_Adedi": "15"
   },
   {
     "Malzeme_Kodu": "RK-2225-WOKD",
@@ -165,7 +163,7 @@
     "Kutu_Adedi": "10"
   },
   {
-    "Malzeme_Kodu": "RK-3337-WOKD",
+    "Malzeme_Kodu": "RK-3333-WOKD",
     "Fiyat": "449,88",
     "Para_Birimi": "TL",
     "Kutu_Adedi": "10"
@@ -180,7 +178,7 @@
     "Malzeme_Kodu": "RK-1417-WOKD45",
     "Fiyat": "219,32",
     "Para_Birimi": "TL",
-    "Kutu_Adedi": "25"
+    "Kutu_Adedi": "20"
   },
   {
     "Malzeme_Kodu": "RK-1421-WOKD45",
@@ -210,7 +208,7 @@
     "Malzeme_Kodu": "RK-2221-WOKD45",
     "Fiyat": "304,61",
     "Para_Birimi": "TL",
-    "Kutu_Adedi": "20"
+    "Kutu_Adedi": "15"
   },
   {
     "Malzeme_Kodu": "RK-2225-WOKD45",
@@ -237,7 +235,7 @@
     "Kutu_Adedi": "10"
   },
   {
-    "Malzeme_Kodu": "RK-3337-WOKD45",
+    "Malzeme_Kodu": "RK-3333-WOKD45",
     "Fiyat": "584,84",
     "Para_Birimi": "TL",
     "Kutu_Adedi": "10"
