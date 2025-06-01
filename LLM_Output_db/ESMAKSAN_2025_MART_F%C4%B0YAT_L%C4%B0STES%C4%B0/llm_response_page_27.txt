@@ -1,0 +1,134 @@
+```json
+[
+  {
+    "Malzeme_Kodu": "SAE90° 3001D",
+    "Fiyat": "410,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAE90° 3002D",
+    "Fiyat": "460,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAE90° 3003D",
+    "Fiyat": "550,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAE90° 3004D",
+    "Fiyat": "650,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAE90° 3005D",
+    "Fiyat": "750,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAE90° 3006D",
+    "Fiyat": "1.200,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAE90° 3007D",
+    "Fiyat": "2.250,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAE90° 6001D",
+    "Fiyat": "480,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAE90° 6002D",
+    "Fiyat": "700,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAE90° 6003D",
+    "Fiyat": "750,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAE90° 6004D",
+    "Fiyat": "1.300,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAE90° 6005D",
+    "Fiyat": "1.500,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAE90° 6006D",
+    "Fiyat": "3.500,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAE90° 3001D",
+    "Fiyat": "550,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAE90° 3002D",
+    "Fiyat": "650,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAE90° 3003D",
+    "Fiyat": "930,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAE90° 3004D",
+    "Fiyat": "1.200,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAE90° 3005D",
+    "Fiyat": "1.500,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAE90° 3006D",
+    "Fiyat": "2.000,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAE90° 3007D",
+    "Fiyat": "2.600,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAE90° 6001D",
+    "Fiyat": "550,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAE90° 6002D",
+    "Fiyat": "650,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAE90° 6003D",
+    "Fiyat": "930,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAE90° 6004D",
+    "Fiyat": "1.200,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAE90° 6005D",
+    "Fiyat": "1.500,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAE90° 6006D",
+    "Fiyat": "2.600,00",
+    "Para_Birimi": "TL"
+  }
+]
+```
