@@ -1,0 +1,89 @@
+```json
+[
+  {
+    "Malzeme_Kodu": "SM4SC - 024",
+    "Fiyat": "$1,067.16",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "SM4SC - 027",
+    "Fiyat": "$1,067.16",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "SM4SC - 031",
+    "Fiyat": "$1,067.16",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "SM4SC - 043",
+    "Fiyat": "$1,067.16",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "SM4SC - 055",
+    "Fiyat": "$1,067.16",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "SM4SC - 067",
+    "Fiyat": "$1,067.16",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "SM4SC - 075",
+    "Fiyat": "$1,067.16",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "SM4SD - 062",
+    "Fiyat": "$2,554.15",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "SM4SD - 074",
+    "Fiyat": "$2,554.15",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "SM4SD - 088",
+    "Fiyat": "$2,554.15",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "SM4SD - 102",
+    "Fiyat": "$2,554.15",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "SM4SD - 113",
+    "Fiyat": "$2,554.15",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "SM4SD - 128",
+    "Fiyat": "$2,554.15",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "SM4SD - 138",
+    "Fiyat": "$2,554.15",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "SM4E - 153",
+    "Fiyat": "$3,198.78",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "SM4E - 185",
+    "Fiyat": "$3,198.78",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "SM4E - 214",
+    "Fiyat": "$3,198.78",
+    "Para_Birimi": "USD"
+  }
+]
+```
