@@ -61,7 +61,7 @@
     "Para_Birimi": "TL"
   },
   {
-    "Malzeme_Kodu": "RK-326314-FLD",
+    "Malzeme_Kodu": "RK-336314-FLD",
     "Fiyat": "506,12",
     "Para_Birimi": "TL"
   },
