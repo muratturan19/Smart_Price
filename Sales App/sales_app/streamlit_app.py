@@ -72,27 +72,34 @@ def search_page(df: pd.DataFrame) -> None:
             filtered.index,
             format_func=_fmt,
         )
-        record_code = filtered.loc[selected].get("Record_Code")
-        if isinstance(record_code, str) and "|" in record_code:
-            parts = record_code.split("|")
-            if len(parts) >= 2:
-                folder = parts[0]
-                try:
-                    page_num = int(parts[1])
-                except ValueError:
-                    page_num = None
-                if page_num is not None:
-                    base = os.getenv("IMAGE_BASE_URL", DEFAULT_IMAGE_BASE_URL)
-                    img_url = (
-                        f"{base}/LLM_Output_db/{folder}/"
-                        f"page_image_page_{page_num:02d}.png"
-                    )
+        row = filtered.loc[selected]
+        img_path = row.get("Image_Path") or row.get("image_path")
+        base = os.getenv("IMAGE_BASE_URL", DEFAULT_IMAGE_BASE_URL)
+        img_url = None
+        if isinstance(img_path, str) and img_path:
+            img_url = f"{base}/{img_path.lstrip('/')}"
+        else:
+            record_code = row.get("Record_Code") or row.get("record_code")
+            if isinstance(record_code, str) and "|" in record_code:
+                parts = record_code.split("|")
+                if len(parts) >= 2:
+                    folder = parts[0]
                     try:
-                        resp = requests.get(img_url)
-                        resp.raise_for_status()
-                        st.image(resp.content)
-                    except Exception as exc:
-                        st.error(f"Resim yüklenemedi: {exc}")
+                        page_num = int(parts[1])
+                    except ValueError:
+                        page_num = None
+                    if page_num is not None:
+                        img_url = (
+                            f"{base}/LLM_Output_db/{folder}/"
+                            f"page_image_page_{page_num:02d}.png"
+                        )
+        if img_url:
+            try:
+                resp = requests.get(img_url)
+                resp.raise_for_status()
+                st.image(resp.content)
+            except Exception as exc:
+                st.error(f"Resim yüklenemedi: {exc}")
 
 
 def main() -> None:
