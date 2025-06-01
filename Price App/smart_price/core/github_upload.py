@@ -28,7 +28,7 @@ def _api_request(method: str, url: str, token: str, data: dict | None = None) ->
         raise
 
 
-def upload_folder(path: Path, *, remote_prefix: str = "LLM_Output_db") -> bool:
+def upload_folder(path: Path, *, remote_prefix: str | None = None) -> bool:
     """Upload ``path`` to a GitHub repository.
 
     Parameters
@@ -36,7 +36,8 @@ def upload_folder(path: Path, *, remote_prefix: str = "LLM_Output_db") -> bool:
     path : :class:`~pathlib.Path`
         Local directory to upload.
     remote_prefix : str, optional
-        Directory name created in the repository, by default ``"LLM_Output_db"``.
+        Folder prefix for uploaded files.  When ``None`` (default), files are
+        placed under ``"LLM_Output_db/<path.name>"`` in the repository.
 
     Requires ``GITHUB_REPO`` and ``GITHUB_TOKEN`` environment variables. Set
     ``GITHUB_BRANCH`` to push to a branch other than ``main``.
@@ -44,6 +45,8 @@ def upload_folder(path: Path, *, remote_prefix: str = "LLM_Output_db") -> bool:
     repo = os.getenv("GITHUB_REPO")
     token = os.getenv("GITHUB_TOKEN")
     branch = os.getenv("GITHUB_BRANCH", "main")
+    if remote_prefix is None:
+        remote_prefix = f"LLM_Output_db/{path.name}"
     if not repo or not token:
         logger.info("GitHub repo or token not configured; skipping upload")
         return False
