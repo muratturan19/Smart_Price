@@ -41,7 +41,7 @@ def test_defaults(monkeypatch):
     assert cfg.IMAGE_DIR == root / "images"
     assert cfg.SALES_APP_DIR == root / "Sales App" / "sales_app"
     assert cfg.PRICE_APP_DIR == root / "Price App" / "smart_price"
-    assert cfg.DEBUG_DIR == root / "LLM Images"
+    assert cfg.DEBUG_DIR == root / "LLM_Output_db"
     assert cfg.OUTPUT_DIR == root / "output"
     assert cfg.OUTPUT_EXCEL == root / "output" / "merged_prices.xlsx"
     assert cfg.OUTPUT_DB == root / "output" / "fiyat_listesi.db"
