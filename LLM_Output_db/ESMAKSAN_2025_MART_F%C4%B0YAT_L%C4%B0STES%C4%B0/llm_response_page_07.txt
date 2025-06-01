@@ -1,0 +1,444 @@
+```json
+[
+  {
+    "Malzeme_Kodu": "DK14 - Plastik Fiyatı",
+    "Fiyat": "36,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "DK14 - Pompa Tarafı Yedek Tek Dişli",
+    "Fiyat": "180,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "DK14 - Motor Tarafı Yedek Tek Dişli",
+    "Fiyat": "180,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "DK14 - Pompa + Motor DK Takım",
+    "Fiyat": "396,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "DK24 - Plastik Fiyatı",
+    "Fiyat": "45,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "DK24 - Pompa Tarafı Yedek Tek Dişli",
+    "Fiyat": "175,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "DK24 - Motor Tarafı Yedek Tek Dişli",
+    "Fiyat": "175,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "DK24 - Pompa + Motor DK Takım",
+    "Fiyat": "395,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "DK28 - Plastik Fiyatı",
+    "Fiyat": "50,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "DK28 - Pompa Tarafı Yedek Tek Dişli",
+    "Fiyat": "200,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "DK28 - Motor Tarafı Yedek Tek Dişli",
+    "Fiyat": "200,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "DK28 - Pompa + Motor DK Takım",
+    "Fiyat": "495,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "DK32 - Plastik Fiyatı",
+    "Fiyat": "75,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "DK32 - Pompa Tarafı Yedek Tek Dişli",
+    "Fiyat": "230,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "DK32 - Motor Tarafı Yedek Tek Dişli",
+    "Fiyat": "230,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "DK32 - Pompa + Motor DK Takım",
+    "Fiyat": "535,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "DK42 - Plastik Fiyatı",
+    "Fiyat": "90,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "DK42 - Pompa Tarafı Yedek Tek Dişli",
+    "Fiyat": "275,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "DK42 - Motor Tarafı Yedek Tek Dişli",
+    "Fiyat": "275,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "DK42 - Pompa + Motor DK Takım",
+    "Fiyat": "650,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "DK48 - Plastik Fiyatı",
+    "Fiyat": "100,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "DK48 - Pompa Tarafı Yedek Tek Dişli",
+    "Fiyat": "300,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "DK48 - Motor Tarafı Yedek Tek Dişli",
+    "Fiyat": "300,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "DK48 - Pompa + Motor DK Takım",
+    "Fiyat": "710,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "DK55 - Plastik Fiyatı",
+    "Fiyat": "150,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "DK55 - Pompa Tarafı Yedek Tek Dişli",
+    "Fiyat": "500,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "DK55 - Motor Tarafı Yedek Tek Dişli",
+    "Fiyat": "500,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "DK55 - Pompa + Motor DK Takım",
+    "Fiyat": "1.260,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "DK60 - Plastik Fiyatı",
+    "Fiyat": "300,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "DK60 - Pompa Tarafı Yedek Tek Dişli",
+    "Fiyat": "1.150,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "DK60 - Motor Tarafı Yedek Tek Dişli",
+    "Fiyat": "1.150,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "DK60 - Pompa + Motor DK Takım",
+    "Fiyat": "2.600,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "DK60 675 - Plastik Fiyatı",
+    "Fiyat": "300,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "DK60 675 - Pompa Tarafı Yedek Tek Dişli",
+    "Fiyat": "1.300,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "DK60 675 - Motor Tarafı Yedek Tek Dişli",
+    "Fiyat": "1.300,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "DK60 675 - Pompa + Motor DK Takım",
+    "Fiyat": "2.900,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "UDK14 - Motor Tarafı Uzun Yedek Tek Dişli",
+    "Fiyat": "225,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "UDK14 - Pompa + Uzun Motor UDK Takım",
+    "Fiyat": "441,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "UDK24 - Motor Tarafı Uzun Yedek Tek Dişli",
+    "Fiyat": "200,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "UDK24 - Pompa + Uzun Motor UDK Takım",
+    "Fiyat": "420,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "UDK28 - Motor Tarafı Uzun Yedek Tek Dişli",
+    "Fiyat": "250,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "UDK28 - Pompa + Uzun Motor UDK Takım",
+    "Fiyat": "525,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "UDK32 - Motor Tarafı Uzun Yedek Tek Dişli",
+    "Fiyat": "270,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "UDK32 - Pompa + Uzun Motor UDK Takım",
+    "Fiyat": "575,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "UDK38 - Motor Tarafı Uzun Yedek Tek Dişli",
+    "Fiyat": "310,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "UDK38 - Pompa + Uzun Motor UDK Takım",
+    "Fiyat": "650,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "UDK42 - Motor Tarafı Uzun Yedek Tek Dişli",
+    "Fiyat": "335,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "UDK42 - Pompa + Uzun Motor UDK Takım",
+    "Fiyat": "710,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "UDK48 - Motor Tarafı Uzun Yedek Tek Dişli",
+    "Fiyat": "500,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "UDK48 - Pompa + Uzun Motor UDK Takım",
+    "Fiyat": "1.100,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "UDK55 - Motor Tarafı Uzun Yedek Tek Dişli",
+    "Fiyat": "550,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "UDK55 - Pompa + Uzun Motor UDK Takım",
+    "Fiyat": "1.200,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "UDK60 - Motor Tarafı Uzun Yedek Tek Dişli",
+    "Fiyat": "1.500,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "UDK60 - Pompa + Uzun Motor UDK Takım",
+    "Fiyat": "2.950,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "UDK60 675 - Motor Tarafı Uzun Yedek Tek Dişli",
+    "Fiyat": "1.650,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "UDK60 675 - Pompa + Uzun Motor UDK Takım",
+    "Fiyat": "3.250,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "DK28A - Plastik Fiyatı",
+    "Fiyat": "65,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "DK28A - Pompa Yedek DKA Tek Dişli",
+    "Fiyat": "300,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "DK28A - Standart Motor Yedek DKA Tek Dişli",
+    "Fiyat": "300,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "DK28A - İşlenmiş Standart DKA Takım",
+    "Fiyat": "665,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "DK42A - Plastik Fiyatı",
+    "Fiyat": "115,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "DK42A - Pompa Yedek DKA Tek Dişli",
+    "Fiyat": "350,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "DK42A - Standart Motor Yedek DKA Tek Dişli",
+    "Fiyat": "350,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "DK42A - İşlenmiş Standart DKA Takım",
+    "Fiyat": "715,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "DK55A - Plastik Fiyatı",
+    "Fiyat": "225,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "DK55A - Pompa Yedek DKA Tek Dişli",
+    "Fiyat": "900,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "DK55A - Standart Motor Yedek DKA Tek Dişli",
+    "Fiyat": "900,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "DK55A - İşlenmiş Standart DKA Takım",
+    "Fiyat": "2.025,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "UDK28A - Uzun Motor Yedek UDKA Tek Dişli",
+    "Fiyat": "255,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "UDK28A - Pompa + Uzun Motor UDKA Takım",
+    "Fiyat": "620,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "UDK42A - Uzun Motor Yedek UDKA Tek Dişli",
+    "Fiyat": "350,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "UDK42A - Pompa + Uzun Motor UDKA Takım",
+    "Fiyat": "765,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "UDK48A - Uzun Motor Yedek UDKA Tek Dişli",
+    "Fiyat": "700,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "UDK48A - Pompa + Uzun Motor UDKA Takım",
+    "Fiyat": "1.470,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "UDK55A - Uzun Motor Yedek UDKA Tek Dişli",
+    "Fiyat": "1.200,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "UDK55A - Pompa + Uzun Motor UDKA Takım",
+    "Fiyat": "2.325,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "DK32B - Plastik Fiyatı",
+    "Fiyat": "110,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "DK32B - Pompa Yedek DKA Tek Dişli",
+    "Fiyat": "300,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "DK32B - Standart Motor Yedek DKA Tek Dişli",
+    "Fiyat": "300,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "DK32B - İşlenmiş Standart DKA Takım",
+    "Fiyat": "710,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "UDK32B - Uzun Motor Yedek UDKA Tek Dişli",
+    "Fiyat": "350,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "UDK32B - Pompa + Uzun Motor UDKA Takım",
+    "Fiyat": "760,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "DK50B - Plastik Fiyatı",
+    "Fiyat": "300,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "DK50B - Pompa Yedek DKA Tek Dişli",
+    "Fiyat": "1.000,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "DK50B - Standart Motor Yedek DKA Tek Dişli",
+    "Fiyat": "1.000,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "DK50B - İşlenmiş Standart DKA Takım",
+    "Fiyat": "2.300,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "UDK50B - Uzun Motor Yedek UDKA Tek Dişli",
+    "Fiyat": "700,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "UDK50B - Pompa + Uzun Motor UDKA Takım",
+    "Fiyat": "1.500,00",
+    "Para_Birimi": "TL"
+  }
+]
+```
