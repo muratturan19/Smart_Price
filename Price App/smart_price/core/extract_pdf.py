@@ -303,6 +303,8 @@ def extract_from_pdf(
 
         results = []
         for item in items:
+            if not isinstance(item, dict):
+                continue
             name = str(item.get("name") or item.get("product") or "").strip()
             price_raw = str(item.get("price", "")).strip()
             val = normalize_price(price_raw)
