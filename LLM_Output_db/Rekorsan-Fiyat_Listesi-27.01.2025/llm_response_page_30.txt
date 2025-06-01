@@ -32,7 +32,7 @@
   },
   {
     "Malzeme_Kodu": "RK-1319-NWN",
-    "Fiyat": "36,15",
+    "Fiyat": "45,19",
     "Kutu_Adedi": "30",
     "Para_Birimi": "TL"
   },
@@ -45,7 +45,7 @@
   {
     "Malzeme_Kodu": "RK-1716-NWN",
     "Fiyat": "45,19",
-    "Kutu_Adedi": "30",
+    "Kutu_Adedi": "20",
     "Para_Birimi": "TL"
   },
   {
@@ -69,7 +69,7 @@
   {
     "Malzeme_Kodu": "RK-2119-NWN",
     "Fiyat": "67,76",
-    "Kutu_Adedi": "20",
+    "Kutu_Adedi": "30",
     "Para_Birimi": "TL"
   },
   {
@@ -140,13 +140,13 @@
   },
   {
     "Malzeme_Kodu": "RK-2110-NMNL",
-    "Fiyat": "54,49",
+    "Fiyat": "56,49",
     "Kutu_Adedi": "30",
     "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-2112-NMNL",
-    "Fiyat": "54,49",
+    "Fiyat": "56,49",
     "Kutu_Adedi": "30",
     "Para_Birimi": "TL"
   },
@@ -284,7 +284,7 @@
   },
   {
     "Malzeme_Kodu": "RK-1717-RBBN",
-    "Fiyat": "61,37",
+    "Fiyat": "61,73",
     "Kutu_Adedi": "30",
     "Para_Birimi": "TL"
   },
@@ -297,7 +297,7 @@
   {
     "Malzeme_Kodu": "RK-2626-RBBN",
     "Fiyat": "133,13",
-    "Kutu_Adedi": "20",
+    "Kutu_Adedi": "30",
     "Para_Birimi": "TL"
   },
   {
