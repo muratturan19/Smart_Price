@@ -1,0 +1,244 @@
+```json
+[
+  {
+    "Malzeme_Kodu": "RK-1111-WWKD",
+    "Fiyat": "168,71",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "30"
+  },
+  {
+    "Malzeme_Kodu": "RK-1212-WWKD",
+    "Fiyat": "168,71",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-1414-WWKD",
+    "Fiyat": "168,71",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-1616-WWKD",
+    "Fiyat": "187,45",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-1919-WWKD",
+    "Fiyat": "187,45",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "15"
+  },
+  {
+    "Malzeme_Kodu": "RK-2222-WWKD",
+    "Fiyat": "234,31",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "20"
+  },
+  {
+    "Malzeme_Kodu": "RK-2727-WWKD",
+    "Fiyat": "328,04",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "15"
+  },
+  {
+    "Malzeme_Kodu": "RK-3333-WWKD",
+    "Fiyat": "449,88",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "10"
+  },
+  {
+    "Malzeme_Kodu": "RK-1111-WWKD45",
+    "Fiyat": "219,32",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "30"
+  },
+  {
+    "Malzeme_Kodu": "RK-1212-WWKD45",
+    "Fiyat": "219,32",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-1414-WWKD45",
+    "Fiyat": "219,32",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-1616-WWKD45",
+    "Fiyat": "243,69",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-1919-WWKD45",
+    "Fiyat": "243,69",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "15"
+  },
+  {
+    "Malzeme_Kodu": "RK-2222-WWKD45",
+    "Fiyat": "304,61",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "20"
+  },
+  {
+    "Malzeme_Kodu": "RK-2727-WWKD45",
+    "Fiyat": "426,45",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "15"
+  },
+  {
+    "Malzeme_Kodu": "RK-3333-WWKD45",
+    "Fiyat": "584,84",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "10"
+  },
+  {
+    "Malzeme_Kodu": "RK-1414-WOKD",
+    "Fiyat": "168,71",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-1417-WOKD",
+    "Fiyat": "168,71",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-1421-WOKD",
+    "Fiyat": "187,45",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-1921-WOKD",
+    "Fiyat": "187,45",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "15"
+  },
+  {
+    "Malzeme_Kodu": "RK-1925-WOKD",
+    "Fiyat": "234,31",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "20"
+  },
+  {
+    "Malzeme_Kodu": "RK-2217-WOKD",
+    "Fiyat": "234,31",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "20"
+  },
+  {
+    "Malzeme_Kodu": "RK-2221-WOKD",
+    "Fiyat": "234,31",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "20"
+  },
+  {
+    "Malzeme_Kodu": "RK-2225-WOKD",
+    "Fiyat": "234,31",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "20"
+  },
+  {
+    "Malzeme_Kodu": "RK-2730-WOKD",
+    "Fiyat": "328,04",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "15"
+  },
+  {
+    "Malzeme_Kodu": "RK-2737-WOKD",
+    "Fiyat": "449,88",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "10"
+  },
+  {
+    "Malzeme_Kodu": "RK-3330-WOKD",
+    "Fiyat": "449,88",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "10"
+  },
+  {
+    "Malzeme_Kodu": "RK-3333-WOKD",
+    "Fiyat": "449,88",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "10"
+  },
+  {
+    "Malzeme_Kodu": "RK-1414-WOKD45",
+    "Fiyat": "219,32",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-1417-WOKD45",
+    "Fiyat": "219,32",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-1421-WOKD45",
+    "Fiyat": "243,69",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-1921-WOKD45",
+    "Fiyat": "243,69",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "15"
+  },
+  {
+    "Malzeme_Kodu": "RK-1925-WOKD45",
+    "Fiyat": "304,61",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "20"
+  },
+  {
+    "Malzeme_Kodu": "RK-2217-WOKD45",
+    "Fiyat": "304,61",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "20"
+  },
+  {
+    "Malzeme_Kodu": "RK-2221-WOKD45",
+    "Fiyat": "304,61",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "20"
+  },
+  {
+    "Malzeme_Kodu": "RK-2225-WOKD45",
+    "Fiyat": "304,61",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "20"
+  },
+  {
+    "Malzeme_Kodu": "RK-2730-WOKD45",
+    "Fiyat": "426,45",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "15"
+  },
+  {
+    "Malzeme_Kodu": "RK-2737-WOKD45",
+    "Fiyat": "584,84",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "10"
+  },
+  {
+    "Malzeme_Kodu": "RK-3330-WOKD45",
+    "Fiyat": "584,84",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "10"
+  },
+  {
+    "Malzeme_Kodu": "RK-3333-WOKD45",
+    "Fiyat": "584,84",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "10"
+  }
+]
+```
