@@ -1,0 +1,154 @@
+```json
+[
+  {
+    "Malzeme_Kodu": "KPV-8",
+    "Fiyat": "$847,77",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "KPV-12",
+    "Fiyat": "$847,77",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "KPV-16",
+    "Fiyat": "$847,77",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "KPV-20",
+    "Fiyat": "$847,77",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "KPV-23",
+    "Fiyat": "$847,77",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "KPV-25",
+    "Fiyat": "$1.706,38",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "KPV-32",
+    "Fiyat": "$1.706,38",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "KPV-36",
+    "Fiyat": "$1.706,38",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "KPVV-8-12-16-20-23",
+    "Fiyat": "$1.806,60",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "KPVV-25-32-36",
+    "Fiyat": "$3.613,19",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "KPVV-25-32-36/8-12-16-20-23",
+    "Fiyat": "$2.708,54",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "SHVQ20-4",
+    "Fiyat": "$1.430,11",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "SHVQ20-6",
+    "Fiyat": "$1.430,11",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "SHVQ20-8",
+    "Fiyat": "$1.430,11",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "SHVQ20-11",
+    "Fiyat": "$1.430,11",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "SHVQ20-14",
+    "Fiyat": "$1.430,11",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "SHVQ20-17",
+    "Fiyat": "$1.430,11",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "SHVQ20-19",
+    "Fiyat": "$1.430,11",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "SHVQ20-23",
+    "Fiyat": "$1.430,11",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "SHVQ35-19.8",
+    "Fiyat": "$1.635,96",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "SHVQ35-22.5",
+    "Fiyat": "$1.635,96",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "SHVQ35-24.9",
+    "Fiyat": "$1.635,96",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "SHVQ35-28.0",
+    "Fiyat": "$1.635,96",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "SHVQ35-31.8",
+    "Fiyat": "$1.635,96",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "SHVQ35-34.9",
+    "Fiyat": "$1.635,96",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "SHVQ35-40.9",
+    "Fiyat": "$1.635,96",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "SHVQ35-45.1",
+    "Fiyat": "$1.635,96",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "SHVQ35-50.0",
+    "Fiyat": "$1.635,96",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "SHVQ35-54.9",
+    "Fiyat": "$1.635,96",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "SHVQ35-61.0",
+    "Fiyat": "$1.635,96",
+    "Para_Birimi": "USD"
+  }
+]
+```
