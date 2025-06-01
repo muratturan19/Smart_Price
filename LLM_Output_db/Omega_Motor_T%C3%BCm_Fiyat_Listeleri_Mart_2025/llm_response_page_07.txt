@@ -301,8 +301,13 @@
     "Para_Birimi": "TL"
   },
   {
-    "Malzeme_Kodu": "280 - Özel Sargı",
+    "Malzeme_Kodu": "280 - B34 , B34/2",
     "Fiyat": "125,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "280 - Özel Sargı",
+    "Fiyat": "130,00",
     "Para_Birimi": "TL"
   },
   {
@@ -371,22 +376,7 @@
     "Para_Birimi": "TL"
   },
   {
-    "Malzeme_Kodu": "355/4,6,8P - Flanş (DIN 42948) B35",
-    "Fiyat": "1028,00",
-    "Para_Birimi": "TL"
-  },
-  {
-    "Malzeme_Kodu": "355/4,6,8P - Özel Sargı",
-    "Fiyat": "86,00",
-    "Para_Birimi": "TL"
-  },
-  {
     "Malzeme_Kodu": "355/4,6,8P - Nu Rulman",
-    "Fiyat": "942,00",
-    "Para_Birimi": "TL"
-  },
-  {
-    "Malzeme_Kodu": "355/4,6,8P - Yağlamalı Eş Rulman",
     "Fiyat": "672,00",
     "Para_Birimi": "TL"
   },
@@ -406,12 +396,12 @@
     "Para_Birimi": "TL"
   },
   {
-    "Malzeme_Kodu": "80 - Önden Kilitli Rulman",
+    "Malzeme_Kodu": "80 - Isıtıcı",
     "Fiyat": "4,00",
     "Para_Birimi": "TL"
   },
   {
-    "Malzeme_Kodu": "80 - İzole Rulman",
+    "Malzeme_Kodu": "80 - Önden Kilitli Rulman",
     "Fiyat": "4,00",
     "Para_Birimi": "TL"
   },
@@ -426,8 +416,18 @@
     "Para_Birimi": "TL"
   },
   {
-    "Malzeme_Kodu": "90 - Isıtıcı",
+    "Malzeme_Kodu": "90 - Kanopi",
     "Fiyat": "39,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "90 - Isıtıcı",
+    "Fiyat": "5,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "90 - Önden Kilitli Rulman",
+    "Fiyat": "5,00",
     "Para_Birimi": "TL"
   },
   {
@@ -446,16 +446,6 @@
     "Para_Birimi": "TL"
   },
   {
-    "Malzeme_Kodu": "100 - Önden Kilitli Rulman",
-    "Fiyat": "5,00",
-    "Para_Birimi": "TL"
-  },
-  {
-    "Malzeme_Kodu": "100 - İzole Rulman",
-    "Fiyat": "5,00",
-    "Para_Birimi": "TL"
-  },
-  {
     "Malzeme_Kodu": "112 - H İzolasyon",
     "Fiyat": "14,00",
     "Para_Birimi": "TL"
@@ -463,6 +453,16 @@
   {
     "Malzeme_Kodu": "112 - Kanopi",
     "Fiyat": "20,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "112 - Isıtıcı",
+    "Fiyat": "5,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "112 - Önden Kilitli Rulman",
+    "Fiyat": "5,00",
     "Para_Birimi": "TL"
   },
   {
@@ -511,7 +511,7 @@
     "Para_Birimi": "TL"
   },
   {
-    "Malzeme_Kodu": "160 - Önden Kilitli Rulman",
+    "Malzeme_Kodu": "160 - Isıtıcı",
     "Fiyat": "19,00",
     "Para_Birimi": "TL"
   },
@@ -531,12 +531,12 @@
     "Para_Birimi": "TL"
   },
   {
-    "Malzeme_Kodu": "180 - Kanopi",
+    "Malzeme_Kodu": "180 - Cebri Soğutma",
     "Fiyat": "33,00",
     "Para_Birimi": "TL"
   },
   {
-    "Malzeme_Kodu": "180 - Önden Kilitli Rulman",
+    "Malzeme_Kodu": "180 - Kanopi",
     "Fiyat": "25,00",
     "Para_Birimi": "TL"
   },
@@ -566,11 +566,6 @@
     "Para_Birimi": "TL"
   },
   {
-    "Malzeme_Kodu": "200 - Önden Kilitli Rulman",
-    "Fiyat": "32,00",
-    "Para_Birimi": "TL"
-  },
-  {
     "Malzeme_Kodu": "200 - İzole Rulman",
     "Fiyat": "514,00",
     "Para_Birimi": "TL"
@@ -583,6 +578,16 @@
   {
     "Malzeme_Kodu": "225 - H İzolasyon",
     "Fiyat": "68,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "225 - Kanopi",
+    "Fiyat": "55,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "225 - Isıtıcı",
+    "Fiyat": "55,00",
     "Para_Birimi": "TL"
   },
   {
@@ -601,6 +606,16 @@
     "Para_Birimi": "TL"
   },
   {
+    "Malzeme_Kodu": "250 - Kanopi",
+    "Fiyat": "55,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "250 - Isıtıcı",
+    "Fiyat": "55,00",
+    "Para_Birimi": "TL"
+  },
+  {
     "Malzeme_Kodu": "250 - İzole Rulman",
     "Fiyat": "824,00",
     "Para_Birimi": "TL"
@@ -608,6 +623,11 @@
   {
     "Malzeme_Kodu": "250 - Özel Boya Rengi (RAL7046/5010/7030/9005/5021)",
     "Fiyat": "15,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "280 - Cebri Soğutma",
+    "Fiyat": "389,00",
     "Para_Birimi": "TL"
   },
   {
@@ -631,8 +651,13 @@
     "Para_Birimi": "TL"
   },
   {
-    "Malzeme_Kodu": "355/2P - H İzolasyon",
+    "Malzeme_Kodu": "355/2P - Cebri Soğutma",
     "Fiyat": "404,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "355/2P - Kanopi",
+    "Fiyat": "86,00",
     "Para_Birimi": "TL"
   },
   {
