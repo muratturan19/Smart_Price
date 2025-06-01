@@ -111,7 +111,7 @@ def main() -> None:
     st.set_page_config(layout="wide")
 
     root_dir = Path(__file__).resolve().parents[2]
-    sidebar_logo = root_dir / "logo" / "dp şeffaf logo.PNG"
+    sidebar_logo = root_dir / "logo" / "dp_logo.png"
     sidebar_logo_b64 = img_to_base64(sidebar_logo)
     st.sidebar.markdown(
         f"<img src='data:image/png;base64,{sidebar_logo_b64}' "
@@ -120,7 +120,7 @@ def main() -> None:
         unsafe_allow_html=True,
     )
 
-    top_logo = root_dir / "logo" / "delta logo -150p.png"
+    top_logo = root_dir / "logo" / "delta_logo_150p.png"
     logo_overlay(top_logo, tooltip="Delta Proje")
 
     st.sidebar.title("Smart Price Sales")
