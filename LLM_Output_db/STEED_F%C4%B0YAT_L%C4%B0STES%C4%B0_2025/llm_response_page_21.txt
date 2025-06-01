@@ -1,0 +1,204 @@
+```json
+[
+  {
+    "Malzeme_Kodu": "SV08-20 - VALF",
+    "Fiyat": "64,52",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SV08-20 - VALF + BOBİN",
+    "Fiyat": "67,31",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SV08-20M - VALF",
+    "Fiyat": "68,58",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SV08-20M - VALF + BOBİN",
+    "Fiyat": "76,71",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SV08-20 - VALF",
+    "Fiyat": "78,99",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SV08-20 - VALF + BOBİN",
+    "Fiyat": "80,34",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SV10-20 - VALF",
+    "Fiyat": "91,20",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SV10-20 - VALF + BOBİN",
+    "Fiyat": "93,68",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SV10-20M - VALF",
+    "Fiyat": "94,92",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SV10-20M - VALF + BOBİN",
+    "Fiyat": "102,99",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SV12-20 - VALF",
+    "Fiyat": "106,71",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SV12-20 - VALF + BOBİN",
+    "Fiyat": "115,39",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SV12-20M - VALF",
+    "Fiyat": "117,57",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SV12-20M - VALF + BOBİN",
+    "Fiyat": "118,81",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SV16-20 - VALF",
+    "Fiyat": "127,80",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SV16-20 - VALF + BOBİN",
+    "Fiyat": "129,97",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SV16-20M - VALF",
+    "Fiyat": "131,21",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SV16-20M - VALF + BOBİN",
+    "Fiyat": "140,83",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SV08-21 - VALF",
+    "Fiyat": "73,21",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SV08-21 - VALF + BOBİN",
+    "Fiyat": "76,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SV08-21M - VALF",
+    "Fiyat": "77,55",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SV08-21M - VALF + BOBİN",
+    "Fiyat": "81,89",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SV10-21 - VALF",
+    "Fiyat": "96,24",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SV10-21 - VALF + BOBİN",
+    "Fiyat": "102,99",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SV10-21M - VALF",
+    "Fiyat": "105,16",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SV10-21M - VALF + BOBİN",
+    "Fiyat": "111,67",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SV12-21 - VALF",
+    "Fiyat": "113,84",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SV12-21 - VALF + BOBİN",
+    "Fiyat": "115,39",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SV12-21M - VALF",
+    "Fiyat": "126,87",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SV12-21M - VALF + BOBİN",
+    "Fiyat": "129,04",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SV16-21 - VALF",
+    "Fiyat": "130,59",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SV16-21 - VALF + BOBİN",
+    "Fiyat": "135,56",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SV16-21M - VALF",
+    "Fiyat": "138,04",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SV16-21M - VALF + BOBİN",
+    "Fiyat": "139,28",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SV16-21M - VALF",
+    "Fiyat": "140,83",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SV16-21M - VALF + BOBİN",
+    "Fiyat": "143,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SV16-21M - VALF",
+    "Fiyat": "144,24",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SV16-21M - VALF + BOBİN",
+    "Fiyat": "149,52",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SV16-21M - VALF",
+    "Fiyat": "151,69",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SV16-21M - VALF + BOBİN",
+    "Fiyat": "153,24",
+    "Para_Birimi": "TL"
+  }
+]
+```
