@@ -154,7 +154,7 @@
     "Malzeme_Kodu": "RK-3030-OOT",
     "Fiyat": "387,64",
     "Para_Birimi": "TL",
-    "Kutu_Adedi": "10"
+    "Kutu_Adedi": "8"
   },
   {
     "Malzeme_Kodu": "RK-3737-OOT",
@@ -166,7 +166,7 @@
     "Malzeme_Kodu": "RK-4343-OOT",
     "Fiyat": "637,68",
     "Para_Birimi": "TL",
-    "Kutu_Adedi": "5"
+    "Kutu_Adedi": "6"
   },
   {
     "Malzeme_Kodu": "RK-1414-OT",
