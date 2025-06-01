@@ -56,18 +56,12 @@
   },
   {
     "Malzeme_Kodu": "RK-1010-MSOD-L",
-    "Fiyat": "47,15",
-    "Para_Birimi": "TL",
-    "Adet": "50"
-  },
-  {
-    "Malzeme_Kodu": "RK-1012-MSOD-L",
     "Fiyat": "48,15",
     "Para_Birimi": "TL",
     "Adet": "50"
   },
   {
-    "Malzeme_Kodu": "RK-1015-MSOD-L",
+    "Malzeme_Kodu": "RK-1012-MSOD-L",
     "Fiyat": "52,42",
     "Para_Birimi": "TL",
     "Adet": "30"
@@ -79,7 +73,7 @@
     "Adet": "30"
   },
   {
-    "Malzeme_Kodu": "RK-1315-MSOD-L",
+    "Malzeme_Kodu": "RK-1318-MSOD-L",
     "Fiyat": "81,36",
     "Para_Birimi": "TL",
     "Adet": "30"
@@ -181,79 +175,73 @@
     "Adet": "25"
   },
   {
-    "Malzeme_Kodu": "RK-1015-MSOQ-L",
-    "Fiyat": "71,96",
+    "Malzeme_Kodu": "RK-1312-MSOQ-L",
+    "Fiyat": "84,12",
     "Para_Birimi": "TL",
     "Adet": "25"
   },
   {
-    "Malzeme_Kodu": "RK-1312-MSOQ-L",
-    "Fiyat": "84,12",
+    "Malzeme_Kodu": "RK-1315-MSOQ-L",
+    "Fiyat": "87,12",
     "Para_Birimi": "TL",
-    "Adet": "20"
+    "Adet": "25"
   },
   {
-    "Malzeme_Kodu": "RK-1315-MSOQ-L",
+    "Malzeme_Kodu": "RK-1618-MSOQ-L",
     "Fiyat": "118,98",
     "Para_Birimi": "TL",
     "Adet": "20"
   },
   {
-    "Malzeme_Kodu": "RK-1618-MSOQ-L",
+    "Malzeme_Kodu": "RK-1922-MSOQ-L",
     "Fiyat": "174,59",
     "Para_Birimi": "TL",
     "Adet": "10"
   },
   {
-    "Malzeme_Kodu": "RK-1922-MSOQ-L",
+    "Malzeme_Kodu": "RK-2528-MSOQ-L",
     "Fiyat": "239,42",
     "Para_Birimi": "TL",
     "Adet": "10"
   },
   {
-    "Malzeme_Kodu": "RK-2528-MSOQ-L",
+    "Malzeme_Kodu": "RK-3232-MSOQ-L",
     "Fiyat": "380,55",
     "Para_Birimi": "TL",
     "Adet": "-"
   },
   {
-    "Malzeme_Kodu": "RK-3232-MSOQ-L",
+    "Malzeme_Kodu": "RK-3432-MSOQ-L",
     "Fiyat": "479,40",
     "Para_Birimi": "TL",
     "Adet": "-"
   },
   {
-    "Malzeme_Kodu": "RK-3432-MSOQ-L",
+    "Malzeme_Kodu": "RK-3842-MSOQ-L",
     "Fiyat": "646,56",
     "Para_Birimi": "TL",
     "Adet": "-"
   },
   {
-    "Malzeme_Kodu": "RK-3842-MSOQ-L",
-    "Fiyat": "740,12",
-    "Para_Birimi": "TL",
-    "Adet": "-"
-  },
-  {
-    "Malzeme_Kodu": "RK-0606-MSOD-S",
+    "Malzeme_Kodu": "RK-0506-MSOD-S",
     "Fiyat": "42,85",
     "Para_Birimi": "TL",
     "Adet": "30"
   },
   {
-    "Malzeme_Kodu": "RK-0608-MSOD-S",
+    "Malzeme_Kodu": "RK-0606-MSOD-S",
     "Fiyat": "43,21",
     "Para_Birimi": "TL",
     "Adet": "30"
   },
   {
-    "Malzeme_Kodu": "RK-0610-MSOD-S",
+    "Malzeme_Kodu": "RK-0608-MSOD-S",
     "Fiyat": "46,53",
     "Para_Birimi": "TL",
     "Adet": "30"
   },
   {
-    "Malzeme_Kodu": "RK-0612-MSOD-S",
+    "Malzeme_Kodu": "RK-0610-MSOD-S",
     "Fiyat": "49,53",
     "Para_Birimi": "TL",
     "Adet": "30"
@@ -272,13 +260,13 @@
   },
   {
     "Malzeme_Kodu": "RK-0812-MSOD-S",
-    "Fiyat": "52,48",
+    "Fiyat": "52,85",
     "Para_Birimi": "TL",
     "Adet": "25"
   },
   {
     "Malzeme_Kodu": "RK-1010-MSOD-S",
-    "Fiyat": "50,73",
+    "Fiyat": "70,73",
     "Para_Birimi": "TL",
     "Adet": "30"
   },
@@ -289,31 +277,37 @@
     "Adet": "25"
   },
   {
-    "Malzeme_Kodu": "RK-1015-MSOD-S",
-    "Fiyat": "67,92",
-    "Para_Birimi": "TL",
-    "Adet": "25"
-  },
-  {
-    "Malzeme_Kodu": "RK-1310-MSOD-S",
-    "Fiyat": "63,29",
-    "Para_Birimi": "TL",
-    "Adet": "25"
-  },
-  {
     "Malzeme_Kodu": "RK-1312-MSOD-S",
-    "Fiyat": "70,75",
+    "Fiyat": "63,92",
     "Para_Birimi": "TL",
     "Adet": "25"
   },
   {
-    "Malzeme_Kodu": "RK-1315-MSOD-S",
-    "Fiyat": "106,86",
+    "Malzeme_Kodu": "RK-1316-MSOD-S",
+    "Fiyat": "67,75",
+    "Para_Birimi": "TL",
+    "Adet": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-1318-MSOD-S",
+    "Fiyat": "73,25",
     "Para_Birimi": "TL",
     "Adet": "25"
   },
   {
     "Malzeme_Kodu": "RK-1610-MSOD-S",
+    "Fiyat": "70,73",
+    "Para_Birimi": "TL",
+    "Adet": "30"
+  },
+  {
+    "Malzeme_Kodu": "RK-1612-MSOD-S",
+    "Fiyat": "65,75",
+    "Para_Birimi": "TL",
+    "Adet": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-1618-MSOD-S",
     "Fiyat": "108,93",
     "Para_Birimi": "TL",
     "Adet": "25"
@@ -349,74 +343,62 @@
     "Adet": "-"
   },
   {
-    "Malzeme_Kodu": "RK-3430-MSOD-S",
-    "Fiyat": "348,43",
-    "Para_Birimi": "TL",
-    "Adet": "-"
-  },
-  {
     "Malzeme_Kodu": "RK-3838-MSOD-S",
-    "Fiyat": "456,21",
+    "Fiyat": "466,41",
     "Para_Birimi": "TL",
     "Adet": "-"
   },
   {
-    "Malzeme_Kodu": "RK-0606-MSOQ-S",
+    "Malzeme_Kodu": "RK-0506-MSOQ-S",
     "Fiyat": "54,01",
     "Para_Birimi": "TL",
     "Adet": "25"
   },
   {
-    "Malzeme_Kodu": "RK-0608-MSOQ-S",
-    "Fiyat": "54,44",
+    "Malzeme_Kodu": "RK-0606-MSOQ-S",
+    "Fiyat": "55,44",
     "Para_Birimi": "TL",
     "Adet": "25"
   },
   {
-    "Malzeme_Kodu": "RK-0610-MSOQ-S",
+    "Malzeme_Kodu": "RK-0608-MSOQ-S",
     "Fiyat": "58,38",
     "Para_Birimi": "TL",
     "Adet": "25"
   },
   {
-    "Malzeme_Kodu": "RK-0612-MSOQ-S",
+    "Malzeme_Kodu": "RK-0610-MSOQ-S",
     "Fiyat": "63,46",
     "Para_Birimi": "TL",
-    "Adet": "25"
+    "Adet": "30"
   },
   {
-    "Malzeme_Kodu": "RK-0808-MSOQ-S",
-    "Fiyat": "59,63",
+    "Malzeme_Kodu": "RK-0612-MSOQ-S",
+    "Fiyat": "65,43",
     "Para_Birimi": "TL",
-    "Adet": "25"
+    "Adet": "30"
   },
   {
     "Malzeme_Kodu": "RK-0810-MSOQ-S",
-    "Fiyat": "63,46",
+    "Fiyat": "63,41",
     "Para_Birimi": "TL",
-    "Adet": "25"
+    "Adet": "30"
   },
   {
     "Malzeme_Kodu": "RK-0812-MSOQ-S",
     "Fiyat": "67,31",
     "Para_Birimi": "TL",
-    "Adet": "25"
+    "Adet": "30"
   },
   {
     "Malzeme_Kodu": "RK-1010-MSOQ-S",
-    "Fiyat": "63,41",
-    "Para_Birimi": "TL",
-    "Adet": "25"
-  },
-  {
-    "Malzeme_Kodu": "RK-1012-MSOQ-S",
     "Fiyat": "83,25",
     "Para_Birimi": "TL",
     "Adet": "25"
   },
   {
-    "Malzeme_Kodu": "RK-1015-MSOQ-S",
-    "Fiyat": "87,63",
+    "Malzeme_Kodu": "RK-1012-MSOQ-S",
+    "Fiyat": "87,12",
     "Para_Birimi": "TL",
     "Adet": "25"
   },
@@ -424,31 +406,37 @@
     "Malzeme_Kodu": "RK-1310-MSOQ-S",
     "Fiyat": "83,25",
     "Para_Birimi": "TL",
-    "Adet": "20"
+    "Adet": "25"
   },
   {
     "Malzeme_Kodu": "RK-1312-MSOQ-S",
-    "Fiyat": "93,86",
+    "Fiyat": "87,12",
     "Para_Birimi": "TL",
-    "Adet": "20"
+    "Adet": "25"
   },
   {
     "Malzeme_Kodu": "RK-1315-MSOQ-S",
-    "Fiyat": "125,48",
+    "Fiyat": "93,86",
     "Para_Birimi": "TL",
-    "Adet": "20"
+    "Adet": "25"
   },
   {
     "Malzeme_Kodu": "RK-1610-MSOQ-S",
-    "Fiyat": "125,48",
+    "Fiyat": "83,25",
     "Para_Birimi": "TL",
-    "Adet": "20"
+    "Adet": "25"
   },
   {
-    "Malzeme_Kodu": "RK-1616-MSOQ-S",
+    "Malzeme_Kodu": "RK-1612-MSOQ-S",
+    "Fiyat": "87,12",
+    "Para_Birimi": "TL",
+    "Adet": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-1615-MSOQ-S",
     "Fiyat": "125,48",
     "Para_Birimi": "TL",
-    "Adet": "20"
+    "Adet": "25"
   },
   {
     "Malzeme_Kodu": "RK-1920-MSOQ-S",
@@ -466,7 +454,7 @@
     "Malzeme_Kodu": "RK-2525-MSOQ-S",
     "Fiyat": "298,79",
     "Para_Birimi": "TL",
-    "Adet": "-"
+    "Adet": "15"
   },
   {
     "Malzeme_Kodu": "RK-3230-MSOQ-S",
