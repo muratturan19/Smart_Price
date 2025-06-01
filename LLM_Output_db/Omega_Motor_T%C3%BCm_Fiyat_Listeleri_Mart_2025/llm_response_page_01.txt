@@ -1,0 +1,299 @@
+```json
+[
+  {
+    "Malzeme_Kodu": "3MAS 80MA2 - 2k-3000 d/dak.",
+    "Fiyat": "110,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MAS 80MB2 - 2k-3000 d/dak.",
+    "Fiyat": "122,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MAS 90SA2 - 2k-3000 d/dak.",
+    "Fiyat": "152,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MAS 90LA2 - 2k-3000 d/dak.",
+    "Fiyat": "183,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MAS 100LA2 - 2k-3000 d/dak.",
+    "Fiyat": "237,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MAS 112MA2 - 2k-3000 d/dak.",
+    "Fiyat": "303,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MAS 132SA2 - 2k-3000 d/dak.",
+    "Fiyat": "435,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MAS 132SB2 - 2k-3000 d/dak.",
+    "Fiyat": "481,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MAS 160MA2 - 2k-3000 d/dak.",
+    "Fiyat": "741,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MAS 160MB2 - 2k-3000 d/dak.",
+    "Fiyat": "832,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MAS 160LA2 - 2k-3000 d/dak.",
+    "Fiyat": "923,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MAS 180MA2 - 2k-3000 d/dak.",
+    "Fiyat": "1.180,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MAS 200LA2 - 2k-3000 d/dak.",
+    "Fiyat": "1.734,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MAS 200LB2 - 2k-3000 d/dak.",
+    "Fiyat": "1.928,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MAS 225MA2 - 2k-3000 d/dak.",
+    "Fiyat": "2.245,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MAS 250MA2 - 2k-3000 d/dak.",
+    "Fiyat": "3.150,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MAS 80MA - 4k-1500 d/dak.",
+    "Fiyat": "128,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MAS 80MB - 4k-1500 d/dak.",
+    "Fiyat": "142,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MAS 90SA - 4k-1500 d/dak.",
+    "Fiyat": "175,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MAS 90LA4 - 4k-1500 d/dak.",
+    "Fiyat": "206,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MAS 100LA4 - 4k-1500 d/dak.",
+    "Fiyat": "250,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MAS 100LB4 - 4k-1500 d/dak.",
+    "Fiyat": "285,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MAS 112MA4 - 4k-1500 d/dak.",
+    "Fiyat": "358,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MAS 132SA4 - 4k-1500 d/dak.",
+    "Fiyat": "447,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MAS 132MA4 - 4k-1500 d/dak.",
+    "Fiyat": "521,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MAS 160MA4 - 4k-1500 d/dak.",
+    "Fiyat": "835,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MAS 160LA4 - 4k-1500 d/dak.",
+    "Fiyat": "998,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MAS 180MA4 - 4k-1500 d/dak.",
+    "Fiyat": "1.155,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MAS 180LA4 - 4k-1500 d/dak.",
+    "Fiyat": "1.400,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MAS 200LA4 - 4k-1500 d/dak.",
+    "Fiyat": "1.703,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MAS 225SA4 - 4k-1500 d/dak.",
+    "Fiyat": "2.057,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MAS 225MA4 - 4k-1500 d/dak.",
+    "Fiyat": "2.222,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MAS 250MA4 - 4k-1500 d/dak.",
+    "Fiyat": "2.980,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MAS 80MB6 - 6k-1000 d/dak.",
+    "Fiyat": "134,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MAS 90SA6 - 6k-1000 d/dak.",
+    "Fiyat": "162,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MAS 90LA6 - 6k-1000 d/dak.",
+    "Fiyat": "192,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MAS 100LA6 - 6k-1000 d/dak.",
+    "Fiyat": "238,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MAS 112MA6 - 6k-1000 d/dak.",
+    "Fiyat": "303,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MAS 132SA6 - 6k-1000 d/dak.",
+    "Fiyat": "401,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MAS 132MA6 - 6k-1000 d/dak.",
+    "Fiyat": "461,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MAS 132MB6 - 6k-1000 d/dak.",
+    "Fiyat": "553,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MAS 160MA6 - 6k-1000 d/dak.",
+    "Fiyat": "773,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MAS 160LA6 - 6k-1000 d/dak.",
+    "Fiyat": "942,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MAS 180LA6 - 6k-1000 d/dak.",
+    "Fiyat": "1.146,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MAS 200LB6 - 6k-1000 d/dak.",
+    "Fiyat": "1.595,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MAS 225MA6 - 6k-1000 d/dak.",
+    "Fiyat": "2.129,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MAS 250MA6 - 6k-1000 d/dak.",
+    "Fiyat": "2.765,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MAS 80MK2 - 2k-3000 d/dak.",
+    "Fiyat": "146,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MAS 90LK2 - 2k-3000 d/dak.",
+    "Fiyat": "213,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MAS 100LK2 - 2k-3000 d/dak.",
+    "Fiyat": "286,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MAS 112MK2 - 2k-3000 d/dak.",
+    "Fiyat": "378,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MAS 132MK2 - 2k-3000 d/dak.",
+    "Fiyat": "647,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MAS 112MK4 - 4k-1500 d/dak.",
+    "Fiyat": "419,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MAS 132MK4 - 4k-1500 d/dak.",
+    "Fiyat": "796,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MAS 160LK4 - 4k-1500 d/dak.",
+    "Fiyat": "1.090,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MAS 180LK4 - 4k-1500 d/dak.",
+    "Fiyat": "1.607,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MAS 200LK4 - 4k-1500 d/dak.",
+    "Fiyat": "1.949,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MAS 225MK4 - 4k-1500 d/dak.",
+    "Fiyat": "2.748,00",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "3MAS 225MK6 - 6k-1000 d/dak.",
+    "Fiyat": "2.847,00",
+    "Para_Birimi": "USD"
+  }
+]
+```
