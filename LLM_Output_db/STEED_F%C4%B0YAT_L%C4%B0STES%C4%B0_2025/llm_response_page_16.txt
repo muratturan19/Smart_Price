@@ -1,0 +1,44 @@
+```json
+[
+  {
+    "Malzeme_Kodu": "CB2F-LKN",
+    "Fiyat": "108,88",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "CB3F-LGN",
+    "Fiyat": "147,97",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "CB6F-LGN",
+    "Fiyat": "307,10",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "CW2A-LIN",
+    "Fiyat": "158,85",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "CW3A-LIN",
+    "Fiyat": "225,83",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "CW6A-LIN",
+    "Fiyat": "403,26",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "CW2G-LFN",
+    "Fiyat": "167,51",
+    "Para_Birimi": "USD"
+  },
+  {
+    "Malzeme_Kodu": "CW3G-LFN",
+    "Fiyat": "238,27",
+    "Para_Birimi": "USD"
+  }
+]
+```
