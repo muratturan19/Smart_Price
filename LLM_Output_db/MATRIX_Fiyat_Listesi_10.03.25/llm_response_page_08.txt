@@ -1,0 +1,254 @@
+```json
+[
+    {
+        "Malzeme_Kodu": "868.870C",
+        "Fiyat": "18,40",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "868.871D",
+        "Fiyat": "18,40",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "868.872E",
+        "Fiyat": "34,40",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "868.873F",
+        "Fiyat": "19,80",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "868.874G",
+        "Fiyat": "21,20",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "868.875H",
+        "Fiyat": "19,80",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "868.876I",
+        "Fiyat": "21,20",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "868.877J",
+        "Fiyat": "38,20",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "868.878K",
+        "Fiyat": "44,60",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "868.879L",
+        "Fiyat": "27,20",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "868.880M",
+        "Fiyat": "27,20",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "868.881N",
+        "Fiyat": "53,00",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "868.851J",
+        "Fiyat": "34,00",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "868.850V",
+        "Fiyat": "51,00",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "868.847F",
+        "Fiyat": "38,20",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "869.916I",
+        "Fiyat": "38,20",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "869.841L",
+        "Fiyat": "63,60",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "868.854M",
+        "Fiyat": "40,40",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "868.852X",
+        "Fiyat": "65,80",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "868.846G",
+        "Fiyat": "46,80",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "868.883P",
+        "Fiyat": "46,80",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "868.858R",
+        "Fiyat": "76,80",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "868.855N",
+        "Fiyat": "48,80",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "868.853L",
+        "Fiyat": "82,80",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "868.849H",
+        "Fiyat": "55,20",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "869.917J",
+        "Fiyat": "55,20",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "868.819P",
+        "Fiyat": "99,40",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "869.908A",
+        "Fiyat": "59,40",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "869.918K",
+        "Fiyat": "101,80",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "868.384Q",
+        "Fiyat": "68,00",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "868.868S",
+        "Fiyat": "110,40",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "868.950E",
+        "Fiyat": "114,60",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "868.951F",
+        "Fiyat": "131,60",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "868.952G",
+        "Fiyat": "148,40",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "868.953H",
+        "Fiyat": "176,00",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "868.954I",
+        "Fiyat": "193,00",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "868.955J",
+        "Fiyat": "216,40",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "868.956K",
+        "Fiyat": "233,20",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "869.308X",
+        "Fiyat": "15,80",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "869.314E",
+        "Fiyat": "15,80",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "H X 7 5 4 4 2 C 2 1 2",
+        "Fiyat": "290,60",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "H X 7 5 4 4 2 C 2 1 2",
+        "Fiyat": "290,60",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "H X 7 5 4 4 2 C 2 1 2",
+        "Fiyat": "311,80",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "H X 7 5 4 4 2 C 2 1 2",
+        "Fiyat": "301,20",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "B X 7 5 4 4 2 C 2 1 2",
+        "Fiyat": "301,20",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "B X 7 5 4 4 2 C 2 1 2",
+        "Fiyat": "324,40",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "B X 7 5 4 4 2 C 2 X 2",
+        "Fiyat": "324,40",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "M X 7 5 4 4 2 C 2 X 2",
+        "Fiyat": "311,80",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "M X 7 5 4 4 2 C 2 X 2",
+        "Fiyat": "339,20",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "M X 7 5 4 4 2 C 2 X 2",
+        "Fiyat": "339,20",
+        "Para_Birimi": "EUR"
+    }
+]
+```
