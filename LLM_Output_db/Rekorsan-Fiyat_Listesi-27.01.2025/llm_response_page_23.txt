@@ -100,7 +100,7 @@
     "Malzeme_Kodu": "RK-0212-BS-S",
     "Fiyat": "0,41",
     "Para_Birimi": "€",
-    "Kutu_Adedi": "1000"
+    "Kutu_Adedi": "100"
   },
   {
     "Malzeme_Kodu": "RK-0214-BS-S",
@@ -176,37 +176,37 @@
   },
   {
     "Malzeme_Kodu": "RK-0115-ÇY",
-    "Fiyat": "0,40",
-    "Para_Birimi": "€",
-    "Kutu_Adedi": "100"
-  },
-  {
-    "Malzeme_Kodu": "RK-0118-ÇY",
     "Fiyat": "0,61",
     "Para_Birimi": "€",
     "Kutu_Adedi": "50"
   },
   {
-    "Malzeme_Kodu": "RK-0122-ÇY",
+    "Malzeme_Kodu": "RK-0118-ÇY",
     "Fiyat": "0,89",
     "Para_Birimi": "€",
     "Kutu_Adedi": "50"
   },
   {
-    "Malzeme_Kodu": "RK-0128-ÇY",
+    "Malzeme_Kodu": "RK-0122-ÇY",
     "Fiyat": "1,29",
     "Para_Birimi": "€",
-    "Kutu_Adedi": "25"
+    "Kutu_Adedi": "50"
   },
   {
-    "Malzeme_Kodu": "RK-0135-ÇY",
+    "Malzeme_Kodu": "RK-0128-ÇY",
     "Fiyat": "2,29",
     "Para_Birimi": "€",
     "Kutu_Adedi": "25"
   },
   {
-    "Malzeme_Kodu": "RK-0142-ÇY",
+    "Malzeme_Kodu": "RK-0135-ÇY",
     "Fiyat": "3,03",
+    "Para_Birimi": "€",
+    "Kutu_Adedi": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-0142-ÇY",
+    "Fiyat": "3,13",
     "Para_Birimi": "€",
     "Kutu_Adedi": "25"
   },
