@@ -83,3 +83,46 @@ def upload_folder(path: Path, *, remote_prefix: str | None = None) -> bool:
             success = False
     return success
 
+
+def delete_github_folder(path: str) -> bool:
+    """Delete all files under ``path`` in the configured GitHub repository."""
+
+    repo = os.getenv("GITHUB_REPO")
+    token = os.getenv("GITHUB_TOKEN")
+    branch = os.getenv("GITHUB_BRANCH", "main")
+    if not repo or not token:
+        logger.info("GitHub repo or token not configured; skipping delete")
+        return False
+
+    path = _sanitize_repo_path(path)
+    base_url = f"https://api.github.com/repos/{repo}/contents/{path}"
+    try:
+        contents = _api_request("GET", f"{base_url}?ref={branch}", token)
+    except Exception as exc:  # pragma: no cover - network errors
+        logger.error("Failed to list GitHub folder %s: %s", path, exc)
+        return False
+
+    if isinstance(contents, dict):
+        contents = [contents]
+
+    success = True
+    for item in contents:
+        if item.get("type") == "dir":
+            if not delete_github_folder(item.get("path", "")):
+                success = False
+            continue
+        sha = item.get("sha")
+        file_path = item.get("path")
+        if not sha or not file_path:
+            continue
+        file_url = (
+            f"https://api.github.com/repos/{repo}/contents/{_sanitize_repo_path(file_path)}"
+        )
+        data = {"message": f"Delete {file_path}", "sha": sha, "branch": branch}
+        try:
+            _api_request("DELETE", file_url, token, data)
+        except Exception as exc:  # pragma: no cover - network errors
+            logger.error("Failed to delete %s: %s", file_path, exc)
+            success = False
+    return success
+

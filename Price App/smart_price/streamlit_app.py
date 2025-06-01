@@ -19,7 +19,7 @@ from smart_price.core.extract_excel import extract_from_excel
 from smart_price.core.extract_pdf import extract_from_pdf, MIN_CODE_RATIO
 from smart_price import config
 from smart_price.core.logger import init_logging
-from smart_price.core.github_upload import upload_folder
+from smart_price.core.github_upload import upload_folder, delete_github_folder
 
 logger = logging.getLogger("smart_price")
 
@@ -282,6 +282,26 @@ def save_master_dataset(
     return excel_path, db_path, upload_result
 
 
+def reset_database() -> None:
+    """Remove local files and clear GitHub folders."""
+
+    if config.DEBUG_DIR.exists():
+        shutil.rmtree(config.DEBUG_DIR, ignore_errors=True)
+    if config.MASTER_DB_PATH.exists():
+        try:
+            config.MASTER_DB_PATH.unlink()
+        except Exception:
+            pass
+    if config.MASTER_EXCEL_PATH.exists():
+        try:
+            config.MASTER_EXCEL_PATH.unlink()
+        except Exception:
+            pass
+
+    delete_github_folder("LLM_Output_db")
+    delete_github_folder("Master data base")
+
+
 def upload_page():
     st.header("Fiyat Dosyalarını Yükle")
     st.radio(
@@ -352,9 +372,21 @@ def search_page():
         st.write(results)
 
 
+def reset_page():
+    st.header("Database Sıfırla")
+    if st.button("Sıfırla"):
+        try:
+            reset_database()
+        except Exception as exc:
+            st.error(f"Hata: {exc}")
+        else:
+            st.success("Veritabanı sıfırlandı")
+
+
 PAGES = {
     "Dosya Yükle": upload_page,
     "Veride Ara": search_page,
+    "Database Sıfırla": reset_page,
 }
 
 
