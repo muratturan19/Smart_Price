@@ -1,0 +1,334 @@
+```json
+[
+  {
+    "Malzeme_Kodu": "RK-1010-URD",
+    "Fiyat": "31,90",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "50"
+  },
+  {
+    "Malzeme_Kodu": "RK-1013-URD",
+    "Fiyat": "31,90",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "30"
+  },
+  {
+    "Malzeme_Kodu": "RK-1310-URD",
+    "Fiyat": "31,90",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "30"
+  },
+  {
+    "Malzeme_Kodu": "RK-1313-URD",
+    "Fiyat": "31,90",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-1317-URD",
+    "Fiyat": "39,60",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "20"
+  },
+  {
+    "Malzeme_Kodu": "RK-1321-URD",
+    "Fiyat": "39,60",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-1713-URD",
+    "Fiyat": "39,60",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-1721-URD",
+    "Fiyat": "39,60",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "30"
+  },
+  {
+    "Malzeme_Kodu": "RK-1726-URD",
+    "Fiyat": "107,80",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-2117-URD",
+    "Fiyat": "53,90",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-2121-URD",
+    "Fiyat": "53,90",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-2612-URD",
+    "Fiyat": "115,50",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "10"
+  },
+  {
+    "Malzeme_Kodu": "RK-2133-URD",
+    "Fiyat": "143,00",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "20"
+  },
+  {
+    "Malzeme_Kodu": "RK-2621-URD",
+    "Fiyat": "102,30",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "30"
+  },
+  {
+    "Malzeme_Kodu": "RK-2626-URD",
+    "Fiyat": "115,50",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-2633-URD",
+    "Fiyat": "143,00",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "15"
+  },
+  {
+    "Malzeme_Kodu": "RK-2642-URD",
+    "Fiyat": "231,00",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "10"
+  },
+  {
+    "Malzeme_Kodu": "RK-3326-URD",
+    "Fiyat": "143,00",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "20"
+  },
+  {
+    "Malzeme_Kodu": "RK-3333-URD",
+    "Fiyat": "143,00",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "10"
+  },
+  {
+    "Malzeme_Kodu": "RK-3342-URD",
+    "Fiyat": "231,00",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "10"
+  },
+  {
+    "Malzeme_Kodu": "RK-3348-URD",
+    "Fiyat": "308,00",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "10"
+  },
+  {
+    "Malzeme_Kodu": "RK-4233-URD",
+    "Fiyat": "198,00",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "15"
+  },
+  {
+    "Malzeme_Kodu": "RK-4242-URD",
+    "Fiyat": "231,00",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "10"
+  },
+  {
+    "Malzeme_Kodu": "RK-4248-URD",
+    "Fiyat": "308,00",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "10"
+  },
+  {
+    "Malzeme_Kodu": "RK-4842-URD",
+    "Fiyat": "247,50",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "8"
+  },
+  {
+    "Malzeme_Kodu": "RK-4848-URD",
+    "Fiyat": "330,00",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "6"
+  },
+  {
+    "Malzeme_Kodu": "RK-1310-KRD",
+    "Fiyat": "26,95",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "50"
+  },
+  {
+    "Malzeme_Kodu": "RK-1710-KRD",
+    "Fiyat": "26,95",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "30"
+  },
+  {
+    "Malzeme_Kodu": "RK-1713-KRD",
+    "Fiyat": "26,95",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "30"
+  },
+  {
+    "Malzeme_Kodu": "RK-2110-KRD",
+    "Fiyat": "52,80",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-2113-KRD",
+    "Fiyat": "38,50",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-2117-KRD",
+    "Fiyat": "38,50",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-2613-KRD",
+    "Fiyat": "45,10",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "30"
+  },
+  {
+    "Malzeme_Kodu": "RK-2617-KRD",
+    "Fiyat": "45,10",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "30"
+  },
+  {
+    "Malzeme_Kodu": "RK-2621-KRD",
+    "Fiyat": "45,10",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "30"
+  },
+  {
+    "Malzeme_Kodu": "RK-3313-KRD",
+    "Fiyat": "106,70",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "30"
+  },
+  {
+    "Malzeme_Kodu": "RK-3321-KRD",
+    "Fiyat": "106,70",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "30"
+  },
+  {
+    "Malzeme_Kodu": "RK-3326-KRD",
+    "Fiyat": "106,70",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "30"
+  },
+  {
+    "Malzeme_Kodu": "RK-4226-KRD",
+    "Fiyat": "154,00",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "20"
+  },
+  {
+    "Malzeme_Kodu": "RK-4228-KRD",
+    "Fiyat": "154,00",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "20"
+  },
+  {
+    "Malzeme_Kodu": "RK-4821-KRD",
+    "Fiyat": "181,50",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "10"
+  },
+  {
+    "Malzeme_Kodu": "RK-4826-KRD",
+    "Fiyat": "181,50",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "10"
+  },
+  {
+    "Malzeme_Kodu": "RK-4842-KRD",
+    "Fiyat": "330,00",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "8"
+  },
+  {
+    "Malzeme_Kodu": "RK-6033-KRD",
+    "Fiyat": "330,00",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "8"
+  },
+  {
+    "Malzeme_Kodu": "RK-6042-KRD",
+    "Fiyat": "330,00",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "8"
+  },
+  {
+    "Malzeme_Kodu": "RK-6048-KRD",
+    "Fiyat": "330,00",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "8"
+  },
+  {
+    "Malzeme_Kodu": "RK-1028-RAM",
+    "Fiyat": "20,56",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "50"
+  },
+  {
+    "Malzeme_Kodu": "RK-1319-RAM",
+    "Fiyat": "27,04",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "30"
+  },
+  {
+    "Malzeme_Kodu": "RK-1719-RAM",
+    "Fiyat": "27,08",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-2114-RAM",
+    "Fiyat": "41,56",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-2614-RAM",
+    "Fiyat": "56,00",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "30"
+  },
+  {
+    "Malzeme_Kodu": "RK-3311-RAM",
+    "Fiyat": "90,94",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "20"
+  },
+  {
+    "Malzeme_Kodu": "RK-4211-RAM",
+    "Fiyat": "144,87",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "15"
+  },
+  {
+    "Malzeme_Kodu": "RK-4811-RAM",
+    "Fiyat": "163,92",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "10"
+  },
+  {
+    "Malzeme_Kodu": "RK-6011-RAM",
+    "Fiyat": "352,55",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "6"
+  }
+]
+```
