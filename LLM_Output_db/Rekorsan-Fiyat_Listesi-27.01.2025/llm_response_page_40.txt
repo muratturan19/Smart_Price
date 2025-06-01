@@ -1,5 +1,3 @@
-Aşağıda, sağlanan görseldeki tabloya göre çıkarılan veriler bulunmaktadır:
-
 ```json
 [
   {
@@ -35,7 +33,7 @@ Aşağıda, sağlanan görseldeki tabloya göre çıkarılan veriler bulunmaktad
   {
     "Malzeme_Kodu": "RK-3333-NRD",
     "Fiyat": "324,82",
-    "Kutu_Adedi": "10",
+    "Kutu_Adedi": "5",
     "Para_Birimi": "TL"
   },
   {
@@ -71,7 +69,7 @@ Aşağıda, sağlanan görseldeki tabloya göre çıkarılan veriler bulunmaktad
   {
     "Malzeme_Kodu": "RK-2121-RTD",
     "Fiyat": "139,00",
-    "Kutu_Adedi": "25",
+    "Kutu_Adedi": "20",
     "Para_Birimi": "TL"
   },
   {
@@ -82,8 +80,8 @@ Aşağıda, sağlanan görseldeki tabloya göre çıkarılan veriler bulunmaktad
   },
   {
     "Malzeme_Kodu": "RK-3333-RTD",
-    "Fiyat": "345,70",
-    "Kutu_Adedi": "10",
+    "Fiyat": "345,00",
+    "Kutu_Adedi": "4",
     "Para_Birimi": "TL"
   },
   {
@@ -94,7 +92,7 @@ Aşağıda, sağlanan görseldeki tabloya göre çıkarılan veriler bulunmaktad
   },
   {
     "Malzeme_Kodu": "RK-4848-RTD",
-    "Fiyat": "1177,26",
+    "Fiyat": "717,26",
     "Kutu_Adedi": "4",
     "Para_Birimi": "TL"
   },
@@ -118,8 +116,8 @@ Aşağıda, sağlanan görseldeki tabloya göre çıkarılan veriler bulunmaktad
   },
   {
     "Malzeme_Kodu": "RK-1717-RYT",
-    "Fiyat": "119,70",
-    "Kutu_Adedi": "15",
+    "Fiyat": "140,70",
+    "Kutu_Adedi": "25",
     "Para_Birimi": "TL"
   },
   {
@@ -166,8 +164,8 @@ Aşağıda, sağlanan görseldeki tabloya göre çıkarılan veriler bulunmaktad
   },
   {
     "Malzeme_Kodu": "RK-1717-ROT",
-    "Fiyat": "119,70",
-    "Kutu_Adedi": "15",
+    "Fiyat": "140,70",
+    "Kutu_Adedi": "25",
     "Para_Birimi": "TL"
   },
   {
@@ -221,19 +219,19 @@ Aşağıda, sağlanan görseldeki tabloya göre çıkarılan veriler bulunmaktad
   {
     "Malzeme_Kodu": "RK-2121-RTE",
     "Fiyat": "155,76",
-    "Kutu_Adedi": "25",
+    "Kutu_Adedi": "15",
     "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-2626-RTE",
     "Fiyat": "173,50",
-    "Kutu_Adedi": "20",
+    "Kutu_Adedi": "10",
     "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-3333-RTE",
-    "Fiyat": "324,82",
-    "Kutu_Adedi": "10",
+    "Fiyat": "342,04",
+    "Kutu_Adedi": "5",
     "Para_Birimi": "TL"
   },
   {
@@ -269,19 +267,19 @@ Aşağıda, sağlanan görseldeki tabloya göre çıkarılan veriler bulunmaktad
   {
     "Malzeme_Kodu": "RK-2121-KD",
     "Fiyat": "156,96",
-    "Kutu_Adedi": "25",
+    "Kutu_Adedi": "15",
     "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-2626-KD",
     "Fiyat": "242,48",
-    "Kutu_Adedi": "20",
+    "Kutu_Adedi": "10",
     "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-3333-KD",
-    "Fiyat": "345,70",
-    "Kutu_Adedi": "10",
+    "Fiyat": "345,00",
+    "Kutu_Adedi": "5",
     "Para_Birimi": "TL"
   },
   {
@@ -298,5 +296,3 @@ Aşağıda, sağlanan görseldeki tabloya göre çıkarılan veriler bulunmaktad
   }
 ]
 ```
-
-Bu veriler, görseldeki tablolardan çıkarılmıştır ve her bir ürün için "Malzeme_Kodu", "Fiyat", "Kutu_Adedi" ve varsayılan "Para_Birimi" bilgilerini içermektedir.
