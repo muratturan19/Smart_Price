@@ -248,6 +248,7 @@ def extract_from_excel(
         "Para_Birimi",
         "Marka",
         "Kaynak_Dosya",
+        "Sayfa",
         "Record_Code",
     ]
     tmp_df = combined[cols].copy()

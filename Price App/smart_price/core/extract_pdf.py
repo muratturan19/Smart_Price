@@ -364,6 +364,37 @@ def extract_from_pdf(
                     len(result),
                 )
                 logger.debug("[%s] DataFrame oluşturuldu: %d satır", src, len(result))
+                result["Para_Birimi"] = result["Para_Birimi"].fillna("TL")
+                result["Kaynak_Dosya"] = _basename(filepath, filename)
+                result["Yil"] = None
+                brand_from_file = detect_brand(_basename(filepath, filename))
+                if brand_from_file:
+                    result["Marka"] = brand_from_file
+                else:
+                    result["Marka"] = result["Descriptions"].apply(detect_brand)
+                result["Kategori"] = None
+                if "Kisa_Kod" not in result.columns:
+                    result["Kisa_Kod"] = None
+                base_name_no_ext = Path(_basename(filepath, filename)).stem
+                result["Record_Code"] = (
+                    base_name_no_ext
+                    + "|"
+                    + result["Sayfa"].astype(str)
+                    + "|"
+                    + (result.groupby("Sayfa").cumcount() + 1).astype(str)
+                )
+                cols = [
+                    "Malzeme_Kodu",
+                    "Descriptions",
+                    "Kisa_Kod",
+                    "Fiyat",
+                    "Para_Birimi",
+                    "Marka",
+                    "Kaynak_Dosya",
+                    "Sayfa",
+                    "Record_Code",
+                ]
+                result = result[cols].copy()
                 duration = time.time() - total_start
                 notify(
                     f"Finished {src} via LLM with {len(result)} rows in {duration:.2f}s"
@@ -553,6 +584,37 @@ def extract_from_pdf(
             len(result),
         )
         logger.debug("[%s] DataFrame oluşturuldu: %d satır", src, len(result))
+        result["Para_Birimi"] = result["Para_Birimi"].fillna("TL")
+        result["Kaynak_Dosya"] = _basename(filepath, filename)
+        result["Yil"] = None
+        brand_from_file = detect_brand(_basename(filepath, filename))
+        if brand_from_file:
+            result["Marka"] = brand_from_file
+        else:
+            result["Marka"] = result["Descriptions"].apply(detect_brand)
+        result["Kategori"] = None
+        if "Kisa_Kod" not in result.columns:
+            result["Kisa_Kod"] = None
+        base_name_no_ext = Path(_basename(filepath, filename)).stem
+        result["Record_Code"] = (
+            base_name_no_ext
+            + "|"
+            + result["Sayfa"].astype(str)
+            + "|"
+            + (result.groupby("Sayfa").cumcount() + 1).astype(str)
+        )
+        cols = [
+            "Malzeme_Kodu",
+            "Descriptions",
+            "Kisa_Kod",
+            "Fiyat",
+            "Para_Birimi",
+            "Marka",
+            "Kaynak_Dosya",
+            "Sayfa",
+            "Record_Code",
+        ]
+        result = result[cols].copy()
         duration = time.time() - total_start
         notify(
             f"Finished {src} via LLM with {len(result)} rows in {duration:.2f}s"
@@ -588,6 +650,37 @@ def extract_from_pdf(
             len(result),
         )
         logger.debug("[%s] DataFrame oluşturuldu: %d satır", src, len(result))
+        result["Para_Birimi"] = result["Para_Birimi"].fillna("TL")
+        result["Kaynak_Dosya"] = _basename(filepath, filename)
+        result["Yil"] = None
+        brand_from_file = detect_brand(_basename(filepath, filename))
+        if brand_from_file:
+            result["Marka"] = brand_from_file
+        else:
+            result["Marka"] = result["Descriptions"].apply(detect_brand)
+        result["Kategori"] = None
+        if "Kisa_Kod" not in result.columns:
+            result["Kisa_Kod"] = None
+        base_name_no_ext = Path(_basename(filepath, filename)).stem
+        result["Record_Code"] = (
+            base_name_no_ext
+            + "|"
+            + result["Sayfa"].astype(str)
+            + "|"
+            + (result.groupby("Sayfa").cumcount() + 1).astype(str)
+        )
+        cols = [
+            "Malzeme_Kodu",
+            "Descriptions",
+            "Kisa_Kod",
+            "Fiyat",
+            "Para_Birimi",
+            "Marka",
+            "Kaynak_Dosya",
+            "Sayfa",
+            "Record_Code",
+        ]
+        result = result[cols].copy()
         duration = time.time() - total_start
         notify(
             f"Finished {src} via LLM with {len(result)} rows in {duration:.2f}s"
@@ -623,6 +716,7 @@ def extract_from_pdf(
         "Para_Birimi",
         "Marka",
         "Kaynak_Dosya",
+        "Sayfa",
         "Record_Code",
     ]
     tmp_df = df[cols].copy()
