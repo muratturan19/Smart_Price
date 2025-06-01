@@ -10,8 +10,6 @@ import difflib
 import unicodedata
 
 import pandas as pd
-import pdfplumber
-import time
 try:
     from dotenv import load_dotenv, find_dotenv
 except ImportError:  # pragma: no cover - support missing find_dotenv
@@ -35,11 +33,12 @@ from .common_utils import (
     gpt_clean_text,
     safe_json_parse,
 )
+import time
 from .extract_excel import (
     POSSIBLE_PRICE_HEADERS,
     POSSIBLE_PRODUCT_NAME_HEADERS,
+    POSSIBLE_CODE_HEADERS,
 )
-from .extract_excel import POSSIBLE_CODE_HEADERS
 from . import ocr_llm_fallback
 from pathlib import Path
 from .debug_utils import save_debug, set_output_subdir
@@ -92,10 +91,8 @@ def extract_from_pdf(
     filepath: str | IO[bytes], *,
     filename: str | None = None,
     log: Any | None = None,
-    force_llm: bool = False,
 ) -> pd.DataFrame:
     """Extract product information from a PDF file."""
-    data = []
     page_summary: list[dict[str, object]] = []
 
     def notify(message: str) -> None:
@@ -323,18 +320,17 @@ def extract_from_pdf(
             notify("LLM returned no data")
         return results
 
-    notify("1. faz")
     tmp_for_llm: str | None = None
+    
     def cleanup() -> None:
         if tmp_for_llm:
             try:
                 os.remove(tmp_for_llm)
             except Exception as exc:
                 notify(f"temp file cleanup failed: {exc}")
-    page_range = None
+    
     try:
         if isinstance(filepath, (str, bytes, os.PathLike)):
-            cm = pdfplumber.open(filepath)
             path_for_llm = filepath
         else:
             try:
@@ -342,226 +338,17 @@ def extract_from_pdf(
             except Exception as exc:
                 notify(f"seek failed: {exc}")
             pdf_bytes = filepath.read()
-            cm = pdfplumber.open(io.BytesIO(pdf_bytes))
             tmp = tempfile.NamedTemporaryFile(delete=False, suffix=".pdf")
             tmp.write(pdf_bytes)
             tmp.close()
             tmp_for_llm = tmp.name
             path_for_llm = tmp_for_llm
-        with cm as pdf:
-            page_range = range(1, len(pdf.pages) + 1)
-            if force_llm:
-                notify("Force LLM (Vision) enabled")
-                result = ocr_llm_fallback.parse(
-                    path_for_llm,
-                    page_range,
-                    output_name=output_stem if tmp_for_llm else None,
-                )
-                logger.debug("[%s] Extraction method: Forced LLM", src)
-                logger.debug(
-                    "[%s] LLM Vision output: %d rows extracted from PDF",
-                    src,
-                    len(result),
-                )
-                logger.debug("[%s] DataFrame oluşturuldu: %d satır", src, len(result))
-                result["Para_Birimi"] = result["Para_Birimi"].fillna("TL")
-                result["Kaynak_Dosya"] = _basename(filepath, filename)
-                result["Yil"] = None
-                brand_from_file = detect_brand(_basename(filepath, filename))
-                if brand_from_file:
-                    result["Marka"] = brand_from_file
-                else:
-                    result["Marka"] = result["Descriptions"].apply(detect_brand)
-                result["Kategori"] = None
-                if "Kisa_Kod" not in result.columns:
-                    result["Kisa_Kod"] = None
-                base_name_no_ext = Path(_basename(filepath, filename)).stem
-                result["Record_Code"] = (
-                    base_name_no_ext
-                    + "|"
-                    + result["Sayfa"].astype(str)
-                    + "|"
-                    + (result.groupby("Sayfa").cumcount() + 1).astype(str)
-                )
-                cols = [
-                    "Malzeme_Kodu",
-                    "Descriptions",
-                    "Kisa_Kod",
-                    "Fiyat",
-                    "Para_Birimi",
-                    "Marka",
-                    "Kaynak_Dosya",
-                    "Sayfa",
-                    "Record_Code",
-                ]
-                result = result[cols].copy()
-                duration = time.time() - total_start
-                notify(
-                    f"Finished {src} via LLM with {len(result)} rows in {duration:.2f}s"
-                )
-                cleanup()
-                return result
-            for page in pdf.pages:
-                start_len = len(data)
-                status = "success"
-                note = None
-                try:
-                    text = page.extract_text() or ""
-                    notify(
-                        f"Page {page.page_number} read with {len(text.splitlines())} lines"
-                    )
-                    if text:
-                        for line in text.split("\n"):
-                            line = line.strip()
-                            if len(line) < 5:
-                                continue
-                            for pattern in _patterns:
-                                matches = pattern.findall(line)
-                                if not matches:
-                                    m = pattern.match(line)
-                                    if m:
-                                        matches = [m.groups()]
-                                for match in matches:
-                                    if len(match) != 2:
-                                        continue
-                                    product_name = re.sub(r"\s{2,}", " ", match[0].strip())
-                                    price_raw = match[1]
-                                    price = normalize_price(price_raw)
-                                    if product_name and price is not None:
-                                        data.append(
-                                            {
-                                                "Malzeme_Adi": product_name,
-                                                "Fiyat": price,
-                                                "Para_Birimi": detect_currency(price_raw),
-                                                "Sayfa": page.page_number,
-                                            }
-                                        )
-                                        notify(
-                                            f"Matched on page {page.page_number}: {line[:100]}"
-                                        )
-
-                    tables = page.extract_tables()
-                    for table in tables:
-                        if not table:
-                            continue
-                        try:
-                            header_row = None
-                            if table and any(
-                                header_match(
-                                    c,
-                                    POSSIBLE_PRODUCT_NAME_HEADERS,
-                                    match_type="DESC",
-                                )
-                                or header_match(
-                                    c,
-                                    POSSIBLE_PRICE_HEADERS,
-                                    match_type="PRICE",
-                                )
-                                for c in table[0]
-                            ):
-                                header_row = [str(c or "").strip() for c in table[0]]
-                                df_table = pd.DataFrame(table[1:], columns=header_row)
-                            else:
-                                df_table = pd.DataFrame(table)
-
-                            df_table.dropna(how="all", inplace=True)
-
-                            product_idx = 0
-                            price_idx = -1
-                            if any(
-                                header_match(
-                                    c,
-                                    POSSIBLE_PRODUCT_NAME_HEADERS,
-                                    match_type="DESC",
-                                )
-                                for c in df_table.columns
-                            ):
-                                product_idx = [
-                                    i
-                                    for i, c in enumerate(df_table.columns)
-                                    if header_match(
-                                        c,
-                                        POSSIBLE_PRODUCT_NAME_HEADERS,
-                                        match_type="DESC",
-                                    )
-                                ][0]
-                            if any(
-                                header_match(
-                                    c,
-                                    POSSIBLE_PRICE_HEADERS,
-                                    match_type="PRICE",
-                                )
-                                for c in df_table.columns
-                            ):
-                                price_idx = [
-                                    i
-                                    for i, c in enumerate(df_table.columns)
-                                    if header_match(
-                                        c,
-                                        POSSIBLE_PRICE_HEADERS,
-                                        match_type="PRICE",
-                                    )
-                                ][0]
-
-                            for _, row in df_table.iterrows():
-                                if len(row) <= max(product_idx, abs(price_idx)):
-                                    continue
-                                first = (row[0] or "").strip()
-                                code = CODE_RE.match(first)
-                                if code and not header_match(
-                                    first,
-                                    POSSIBLE_CODE_HEADERS,
-                                    match_type="CODE",
-                                ):
-                                    code_val = code.group(1)
-                                else:
-                                    code_val = None
-
-                                product = str(row.iloc[product_idx]).strip()
-                                price_raw = str(row.iloc[price_idx]).strip()
-                                if product and price_raw:
-                                    price = normalize_price(price_raw)
-                                    if pd.isna(code_val) or pd.isna(price):
-                                        logger.warning(
-                                            "Empty field p%s: %s",
-                                            page.page_number,
-                                            str(row)[:80],
-                                        )
-                                    if price is not None:
-                                        data.append(
-                                            {
-                                                "Malzeme_Adi": product,
-                                                "Fiyat": price,
-                                                "Para_Birimi": detect_currency(price_raw),
-                                                "Sayfa": page.page_number,
-                                                "Malzeme_Kodu": code_val,
-                                            }
-                                        )
-                        except Exception as exc:
-                            notify(f"table parse error: {exc}")
-                            status = "error"
-                            note = str(exc)
-                            continue
-                except Exception as exc:
-                    notify(f"page {page.page_number} error: {exc}")
-                    status = "error"
-                    note = str(exc)
-
-                count = len(data) - start_len
-                if status == "success" and count == 0:
-                    status = "empty"
-                page_summary.append(
-                    {
-                        "page_number": page.page_number,
-                        "rows": count,
-                        "status": status,
-                        "note": note,
-                    }
-                )
-
-        phase1_count = len(data)
-        if phase1_count:
-            notify(f"Phase 1 parsed {phase1_count} items; skipping LLM")
+    
+        result = ocr_llm_fallback.parse(
+            path_for_llm,
+            output_name=output_stem if tmp_for_llm else None,
+        )
+        page_summary = getattr(result, "page_summary", [])
     except Exception as exc:
         notify(f"PDF error for {filepath}: {exc}")
         logger.exception("PDF error for %s", filepath)
@@ -569,145 +356,35 @@ def extract_from_pdf(
         notify(f"Failed {src} after {duration:.2f}s")
         cleanup()
         return pd.DataFrame()
-    if not data:
-        result = ocr_llm_fallback.parse(
-            path_for_llm,
-            page_range,
-            output_name=output_stem if tmp_for_llm else None,
-        )
-        logger.debug(
-            "[%s] Extraction method: LLM Vision", src
-        )
-        logger.debug(
-            "[%s] LLM Vision output: %d rows extracted from PDF",
-            src,
-            len(result),
-        )
-        logger.debug("[%s] DataFrame oluşturuldu: %d satır", src, len(result))
-        result["Para_Birimi"] = result["Para_Birimi"].fillna("TL")
-        result["Kaynak_Dosya"] = _basename(filepath, filename)
-        result["Yil"] = None
-        brand_from_file = detect_brand(_basename(filepath, filename))
-        if brand_from_file:
-            result["Marka"] = brand_from_file
-        else:
-            result["Marka"] = result["Descriptions"].apply(detect_brand)
-        result["Kategori"] = None
-        if "Kisa_Kod" not in result.columns:
-            result["Kisa_Kod"] = None
-        base_name_no_ext = Path(_basename(filepath, filename)).stem
-        result["Record_Code"] = (
-            base_name_no_ext
-            + "|"
-            + result["Sayfa"].astype(str)
-            + "|"
-            + (result.groupby("Sayfa").cumcount() + 1).astype(str)
-        )
-        cols = [
-            "Malzeme_Kodu",
-            "Descriptions",
-            "Kisa_Kod",
-            "Fiyat",
-            "Para_Birimi",
-            "Marka",
-            "Kaynak_Dosya",
-            "Sayfa",
-            "Record_Code",
-        ]
-        result = result[cols].copy()
-        duration = time.time() - total_start
-        notify(
-            f"Finished {src} via LLM with {len(result)} rows in {duration:.2f}s"
-        )
+    
+    if result.empty:
         cleanup()
-        return result
-    df = pd.DataFrame(data)
-    logger.debug("[%s] Extraction method: Phase-1", src)
-    logger.debug("[%s] DataFrame oluşturuldu: %d satır", src, len(df))
-    if not df.empty:
-        codes, descs = zip(*df["Malzeme_Adi"].map(split_code_description))
-        df["Malzeme_Adi"] = list(descs)
-        if "Malzeme_Kodu" in df.columns:
-            df["Malzeme_Kodu"] = df["Malzeme_Kodu"].fillna(pd.Series(codes))
-        else:
-            df["Malzeme_Kodu"] = list(codes)
-
-    code_filled = df["Malzeme_Kodu"].notna().sum()
-    rows_extracted = len(df)
-    if rows_extracted < MIN_ROWS_PARSER or (
-        rows_extracted and code_filled / rows_extracted < MIN_CODE_RATIO
-    ):
-        logger.warning("Low-quality Phase-1 parse \u2192 switching to LLM vision")
-        result = ocr_llm_fallback.parse(
-            path_for_llm,
-            page_range,
-            output_name=output_stem if tmp_for_llm else None,
-        )
-        logger.debug("[%s] Extraction method: LLM Vision", src)
-        logger.debug(
-            "[%s] LLM Vision output: %d rows extracted from PDF",
-            src,
-            len(result),
-        )
-        logger.debug("[%s] DataFrame oluşturuldu: %d satır", src, len(result))
-        result["Para_Birimi"] = result["Para_Birimi"].fillna("TL")
-        result["Kaynak_Dosya"] = _basename(filepath, filename)
-        result["Yil"] = None
-        brand_from_file = detect_brand(_basename(filepath, filename))
-        if brand_from_file:
-            result["Marka"] = brand_from_file
-        else:
-            result["Marka"] = result["Descriptions"].apply(detect_brand)
-        result["Kategori"] = None
-        if "Kisa_Kod" not in result.columns:
-            result["Kisa_Kod"] = None
-        base_name_no_ext = Path(_basename(filepath, filename)).stem
-        result["Record_Code"] = (
-            base_name_no_ext
-            + "|"
-            + result["Sayfa"].astype(str)
-            + "|"
-            + (result.groupby("Sayfa").cumcount() + 1).astype(str)
-        )
-        cols = [
-            "Malzeme_Kodu",
-            "Descriptions",
-            "Kisa_Kod",
-            "Fiyat",
-            "Para_Birimi",
-            "Marka",
-            "Kaynak_Dosya",
-            "Sayfa",
-            "Record_Code",
-        ]
-        result = result[cols].copy()
         duration = time.time() - total_start
-        notify(
-            f"Finished {src} via LLM with {len(result)} rows in {duration:.2f}s"
-        )
-        cleanup()
+        notify(f"Finished {src} via LLM with 0 rows in {duration:.2f}s")
+        debug_dir = Path(os.getenv("SMART_PRICE_DEBUG_DIR", "LLM_Output_db")) / output_stem
+        set_output_subdir(None)
+        upload_folder(debug_dir, remote_prefix=f"LLM_Output_db/{debug_dir.name}")
         return result
-    # Default to Turkish Lira if currency could not be determined
-    df["Para_Birimi"] = df["Para_Birimi"].fillna("TL")
-    df["Kaynak_Dosya"] = _basename(filepath, filename)
-    df["Yil"] = None
+    
+    result["Para_Birimi"] = result["Para_Birimi"].fillna("TL")
+    result["Kaynak_Dosya"] = _basename(filepath, filename)
+    result["Yil"] = None
     brand_from_file = detect_brand(_basename(filepath, filename))
     if brand_from_file:
-        df["Marka"] = brand_from_file
+        result["Marka"] = brand_from_file
     else:
-        df["Marka"] = df["Malzeme_Adi"].apply(detect_brand)
-    df["Kategori"] = None
-    if "Kisa_Kod" not in df.columns:
-        df["Kisa_Kod"] = None
+        result["Marka"] = result["Descriptions"].apply(detect_brand)
+    result["Kategori"] = None
+    if "Kisa_Kod" not in result.columns:
+        result["Kisa_Kod"] = None
     base_name_no_ext = Path(_basename(filepath, filename)).stem
-    df["Record_Code"] = (
+    result["Record_Code"] = (
         base_name_no_ext
         + "|"
-        + df["Sayfa"].astype(str)
+        + result["Sayfa"].astype(str)
         + "|"
-        + (df.groupby("Sayfa").cumcount() + 1).astype(str)
+        + (result.groupby("Sayfa").cumcount() + 1).astype(str)
     )
-    df.rename(columns={"Malzeme_Adi": "Descriptions"}, inplace=True)
     cols = [
         "Malzeme_Kodu",
         "Descriptions",
@@ -719,27 +396,9 @@ def extract_from_pdf(
         "Sayfa",
         "Record_Code",
     ]
-    tmp_df = df[cols].copy()
-    before_df = tmp_df.copy()
-    drop_mask = tmp_df[["Descriptions", "Fiyat"]].isna().any(axis=1)
-    dropped_preview = tmp_df[drop_mask].head().to_dict(orient="records")
-    tmp_df.dropna(subset=["Descriptions", "Fiyat"], inplace=True)
-    logger.debug(
-        "[%s] Filter sonrası: %d satır (drop edilen: %d satır)",
-        src,
-        len(tmp_df),
-        len(before_df) - len(tmp_df),
-    )
-    if len(before_df) != len(tmp_df):
-        logger.debug("[%s] Drop nedeni: subset=['Descriptions', 'Fiyat']", src)
-        logger.debug(
-            "[%s] Drop edilen ilk 5 satır: %s",
-            src,
-            dropped_preview,
-        )
-    result_df = tmp_df
+    result_df = result[cols].copy()
     duration = time.time() - total_start
-    notify(f"Finished {src} with {len(result_df)} items in {duration:.2f}s")
+    notify(f"Finished {src} via LLM with {len(result_df)} rows in {duration:.2f}s")
     if hasattr(result_df, "__dict__"):
         object.__setattr__(result_df, "page_summary", page_summary)
     cleanup()

@@ -35,25 +35,21 @@ else:
 
 @pytest.mark.skipif(not HAS_PANDAS, reason="pandas not installed")
 def test_extract_from_pdf_summary(monkeypatch):
-    class FakePage:
-        def __init__(self, num, text=""):
-            self.page_number = num
-            self._text = text
-        def extract_text(self):
-            return self._text
-        def extract_tables(self):
-            return []
-    class FakePDF:
-        def __enter__(self):
-            return self
-        def __exit__(self, exc_type, exc, tb):
-            pass
-        @property
-        def pages(self):
-            return [FakePage(1, "ItemA    10"), FakePage(2, "")]
-    monkeypatch.setattr(sys.modules.get("pdfplumber"), "open", lambda *_a, **_k: FakePDF(), raising=False)
-    monkeypatch.setattr(pdf_mod, "MIN_ROWS_PARSER", 0)
-    monkeypatch.setattr(pdf_mod, "MIN_CODE_RATIO", 0)
+    def fake_parse(_path, *_, **__):
+        import pandas as pd
+        df = pd.DataFrame({
+            "Malzeme_Kodu": ["A"],
+            "Descriptions": ["Item"],
+            "Fiyat": [1.0],
+            "Sayfa": [1],
+        })
+        object.__setattr__(df, "page_summary", [
+            {"page_number": 1, "rows": 1, "status": "success", "note": None},
+            {"page_number": 2, "rows": 0, "status": "empty", "note": None},
+        ])
+        return df
+
+    monkeypatch.setattr(pdf_mod.ocr_llm_fallback, "parse", fake_parse)
 
     df = extract_from_pdf("dummy.pdf")
     summary = getattr(df, "page_summary", None)

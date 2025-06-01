@@ -80,10 +80,9 @@ def extract_from_pdf_file(
     *,
     file_name: str | None = None,
     status_log: Optional[Callable[[str], None]] = None,
-    force_llm: bool = False,
 ) -> pd.DataFrame:
     """Wrapper around :func:`smart_price.core.extract_pdf.extract_from_pdf`."""
-    return extract_from_pdf(file, filename=file_name, log=status_log, force_llm=force_llm)
+    return extract_from_pdf(file, filename=file_name, log=status_log)
 
 
 def merge_files(
@@ -91,7 +90,6 @@ def merge_files(
     *,
     update_status: Optional[Callable[[str], None]] = None,
     update_progress: Optional[Callable[[float], None]] = None,
-    force_llm: bool = False,
 ):
     """Extract and merge uploaded files with optional progress callbacks."""
     extracted = []
@@ -113,7 +111,6 @@ def merge_files(
                     bytes_data,
                     file_name=up_file.name,
                     status_log=update_status,
-                    force_llm=force_llm,
                 )
         except Exception:
             df = pd.DataFrame()
@@ -297,7 +294,6 @@ def upload_page():
         type=["xlsx", "xls", "pdf"],
         accept_multiple_files=True,
     )
-    force_llm = st.checkbox("Force LLM (Vision)")
     if not files:
         return
 
@@ -308,7 +304,6 @@ def upload_page():
             files,
             update_status=status.write,
             update_progress=lambda v: progress_bar.progress(v),
-            force_llm=force_llm,
         )
         if df.empty:
             st.warning("Dosyalardan veri çıkarılamadı.")

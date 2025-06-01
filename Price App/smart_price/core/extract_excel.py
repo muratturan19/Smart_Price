@@ -173,7 +173,7 @@ def extract_from_excel(
             if df.empty:
                 continue
             code_col, short_col, desc_col, price_col, currency_col = find_columns_in_excel(df)
-            if (desc_col or code_col) and price_col and price_col in df.columns:
+            if code_col and price_col and price_col in df.columns and code_col in df.columns:
                 cols = []
                 if code_col and code_col in df.columns:
                     cols.append(code_col)
@@ -269,4 +269,12 @@ def extract_from_excel(
             src,
             dropped_preview,
         )
+    if (
+        tmp_df.empty
+        or "Malzeme_Kodu" not in tmp_df.columns
+        or "Fiyat" not in tmp_df.columns
+        or tmp_df["Malzeme_Kodu"].isna().all()
+        or tmp_df["Fiyat"].isna().all()
+    ):
+        return pd.DataFrame()
     return tmp_df
