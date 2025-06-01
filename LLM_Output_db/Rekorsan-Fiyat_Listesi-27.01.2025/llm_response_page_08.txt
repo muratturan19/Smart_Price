@@ -1,5 +1,3 @@
-İşte istenen verilerin çıkarımı:
-
 ```json
 [
   {
@@ -58,7 +56,7 @@
   },
   {
     "Malzeme_Kodu": "RK-1633-RISD",
-    "Fiyat": "100,69",
+    "Fiyat": "120,69",
     "Para_Birimi": "TL",
     "Kutu_Adedi": "25"
   },
@@ -99,14 +97,8 @@
     "Kutu_Adedi": "25"
   },
   {
-    "Malzeme_Kodu": "RK-0817-RIS90",
-    "Fiyat": "91,21",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "25"
-  },
-  {
     "Malzeme_Kodu": "RK-0821-RIS90",
-    "Fiyat": "130,32",
+    "Fiyat": "91,21",
     "Para_Birimi": "TL",
     "Kutu_Adedi": "25"
   },
@@ -136,7 +128,7 @@
   },
   {
     "Malzeme_Kodu": "RK-1633-RIS90",
-    "Fiyat": "200,94",
+    "Fiyat": "230,22",
     "Para_Birimi": "TL",
     "Kutu_Adedi": "15"
   },
@@ -214,15 +206,21 @@
   },
   {
     "Malzeme_Kodu": "RK-1633-RE",
+    "Fiyat": "161,37",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "30"
+  },
+  {
+    "Malzeme_Kodu": "RK-1932-RE",
     "Fiyat": "149,81",
     "Para_Birimi": "TL",
     "Kutu_Adedi": "25"
   },
   {
-    "Malzeme_Kodu": "RK-1932-RE",
+    "Malzeme_Kodu": "RK-2533-RE",
     "Fiyat": "242,85",
     "Para_Birimi": "TL",
-    "Kutu_Adedi": "15"
+    "Kutu_Adedi": "-"
   },
   {
     "Malzeme_Kodu": "RK-3242-RE",
@@ -274,15 +272,15 @@
   },
   {
     "Malzeme_Kodu": "RK-1634-MISD",
-    "Fiyat": "125,40",
+    "Fiyat": "99,15",
     "Para_Birimi": "TL",
-    "Kutu_Adedi": "15"
+    "Kutu_Adedi": "20"
   },
   {
     "Malzeme_Kodu": "RK-1930-MISD",
     "Fiyat": "142,48",
     "Para_Birimi": "TL",
-    "Kutu_Adedi": "10"
+    "Kutu_Adedi": "15"
   },
   {
     "Malzeme_Kodu": "RK-2533-MISD",
@@ -304,5 +302,3 @@
   }
 ]
 ```
-
-Bu JSON listesi, her bir ürün için "Malzeme_Kodu", "Fiyat", "Para_Birimi" ve "Kutu_Adedi" bilgilerini içermektedir. Para birimi belirtilmediği için varsayılan olarak "TL" eklenmiştir.
