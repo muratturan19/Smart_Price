@@ -1,0 +1,154 @@
+```json
+[
+  {
+    "Malzeme_Kodu": "MX8990C2/2",
+    "Fiyat": "333,00",
+    "Para_Birimi": "EUR"
+  },
+  {
+    "Malzeme_Kodu": "MX8990C2/3",
+    "Fiyat": "343,50",
+    "Para_Birimi": "EUR"
+  },
+  {
+    "Malzeme_Kodu": "MX8990C2/4",
+    "Fiyat": "353,60",
+    "Para_Birimi": "EUR"
+  },
+  {
+    "Malzeme_Kodu": "MX8990C2/5",
+    "Fiyat": "381,60",
+    "Para_Birimi": "EUR"
+  },
+  {
+    "Malzeme_Kodu": "MX8990C2/6",
+    "Fiyat": "400,80",
+    "Para_Birimi": "EUR"
+  },
+  {
+    "Malzeme_Kodu": "MX8990C2/7",
+    "Fiyat": "424,00",
+    "Para_Birimi": "EUR"
+  },
+  {
+    "Malzeme_Kodu": "NX8990C2/2",
+    "Fiyat": "349,80",
+    "Para_Birimi": "EUR"
+  },
+  {
+    "Malzeme_Kodu": "NX8990C2/3",
+    "Fiyat": "349,80",
+    "Para_Birimi": "EUR"
+  },
+  {
+    "Malzeme_Kodu": "NX8990C2/4",
+    "Fiyat": "392,40",
+    "Para_Birimi": "EUR"
+  },
+  {
+    "Malzeme_Kodu": "NX8990C2/5",
+    "Fiyat": "364,80",
+    "Para_Birimi": "EUR"
+  },
+  {
+    "Malzeme_Kodu": "NX8990C2/6",
+    "Fiyat": "364,80",
+    "Para_Birimi": "EUR"
+  },
+  {
+    "Malzeme_Kodu": "NX8990C2/7",
+    "Fiyat": "407,00",
+    "Para_Birimi": "EUR"
+  },
+  {
+    "Malzeme_Kodu": "MX8990C2/2",
+    "Fiyat": "428,40",
+    "Para_Birimi": "EUR"
+  },
+  {
+    "Malzeme_Kodu": "MX8990C2/3",
+    "Fiyat": "475,00",
+    "Para_Birimi": "EUR"
+  },
+  {
+    "Malzeme_Kodu": "MX8990C2/4",
+    "Fiyat": "500,40",
+    "Para_Birimi": "EUR"
+  },
+  {
+    "Malzeme_Kodu": "MX8990C2/5",
+    "Fiyat": "530,00",
+    "Para_Birimi": "EUR"
+  },
+  {
+    "Malzeme_Kodu": "MX8990C2/6",
+    "Fiyat": "436,80",
+    "Para_Birimi": "EUR"
+  },
+  {
+    "Malzeme_Kodu": "MX8990C2/7",
+    "Fiyat": "436,80",
+    "Para_Birimi": "EUR"
+  },
+  {
+    "Malzeme_Kodu": "MX8990C2/2",
+    "Fiyat": "487,60",
+    "Para_Birimi": "EUR"
+  },
+  {
+    "Malzeme_Kodu": "MX8990C2/3",
+    "Fiyat": "455,80",
+    "Para_Birimi": "EUR"
+  },
+  {
+    "Malzeme_Kodu": "MX8990C2/4",
+    "Fiyat": "455,80",
+    "Para_Birimi": "EUR"
+  },
+  {
+    "Malzeme_Kodu": "MX8990C2/5",
+    "Fiyat": "455,80",
+    "Para_Birimi": "EUR"
+  },
+  {
+    "Malzeme_Kodu": "MX8990C2/6",
+    "Fiyat": "455,80",
+    "Para_Birimi": "EUR"
+  },
+  {
+    "Malzeme_Kodu": "MX8990C2/7",
+    "Fiyat": "508,80",
+    "Para_Birimi": "EUR"
+  },
+  {
+    "Malzeme_Kodu": "H",
+    "Fiyat": "44,00",
+    "Para_Birimi": "EUR"
+  },
+  {
+    "Malzeme_Kodu": "D",
+    "Fiyat": "31,40",
+    "Para_Birimi": "EUR"
+  },
+  {
+    "Malzeme_Kodu": "P",
+    "Fiyat": "75,40",
+    "Para_Birimi": "EUR"
+  },
+  {
+    "Malzeme_Kodu": "S",
+    "Fiyat": "38,00",
+    "Para_Birimi": "EUR"
+  },
+  {
+    "Malzeme_Kodu": "X",
+    "Fiyat": "51,00",
+    "Para_Birimi": "EUR"
+  },
+  {
+    "Malzeme_Kodu": "R",
+    "Fiyat": "68,00",
+    "Para_Birimi": "EUR"
+  }
+]
+```
