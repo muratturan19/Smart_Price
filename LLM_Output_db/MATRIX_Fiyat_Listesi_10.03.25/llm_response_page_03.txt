@@ -1,0 +1,24 @@
+```json
+[
+  {
+    "Malzeme_Kodu": "MX458S80C2",
+    "Fiyat": "428,00",
+    "Para_Birimi": "EUR"
+  },
+  {
+    "Malzeme_Kodu": "OX458S80C2",
+    "Fiyat": "452,00",
+    "Para_Birimi": "EUR"
+  },
+  {
+    "Malzeme_Kodu": "D",
+    "Fiyat": "38,00",
+    "Para_Birimi": "EUR"
+  },
+  {
+    "Malzeme_Kodu": "X",
+    "Fiyat": "51,00",
+    "Para_Birimi": "EUR"
+  }
+]
+```
