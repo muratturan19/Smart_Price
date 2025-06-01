@@ -17,6 +17,7 @@ from typing import Callable, Optional
 import base64
 
 from smart_price import icons
+from smart_price.ui_utils import img_to_base64
 
 from smart_price.core.extract_excel import extract_from_excel
 from smart_price.core.extract_pdf import extract_from_pdf, MIN_CODE_RATIO
