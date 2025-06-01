@@ -17,6 +17,7 @@ from typing import Callable, Optional
 import base64
 
 from smart_price import icons
+from smart_price.ui_utils import img_to_base64, logo_overlay
 
 from smart_price.core.extract_excel import extract_from_excel
 from smart_price.core.extract_pdf import extract_from_pdf, MIN_CODE_RATIO
@@ -63,12 +64,6 @@ def big_alert(message: str, *, level: str = "info", icon: str | None = None) -> 
         f"<strong>{message}</strong></p>"
     )
     func(html, unsafe_allow_html=True)
-
-
-def _img_to_base64(path: Path) -> str:
-    """Return base64 string for the image at ``path``."""
-    with open(path, "rb") as img_file:
-        return base64.b64encode(img_file.read()).decode("utf-8")
 
 
 def _configure_tesseract() -> None:
@@ -455,7 +450,7 @@ def main():
 
     root_dir = Path(__file__).resolve().parents[2]
     sidebar_logo = root_dir / "logo" / "dp şeffaf logo.PNG"
-    sidebar_logo_b64 = _img_to_base64(sidebar_logo)
+    sidebar_logo_b64 = img_to_base64(sidebar_logo)
     st.sidebar.markdown(
         f"<img src='data:image/png;base64,{sidebar_logo_b64}' "
         "style='display:block;margin:20px auto 10px;"
@@ -464,24 +459,7 @@ def main():
     )
 
     top_logo = root_dir / "logo" / "delta logo -150p.png"
-    encoded = _img_to_base64(top_logo)
-    st.markdown(
-        f"""
-        <style>
-            .top-right-logo {{
-                position: fixed;
-                top: 15px;
-                right: 20px;
-                width: clamp(80px,12vw,150px);
-                opacity: 0.6;
-                z-index: 1000;
-                pointer-events: none;
-            }}
-        </style>
-        <img class="top-right-logo" src="data:image/png;base64,{encoded}" />
-        """,
-        unsafe_allow_html=True,
-    )
+    logo_overlay(top_logo, tooltip="Delta Proje")
 
     st.sidebar.title("Smart Price")
 
