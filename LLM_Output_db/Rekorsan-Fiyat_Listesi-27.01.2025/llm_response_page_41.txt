@@ -152,6 +152,12 @@
   },
   {
     "Malzeme_Kodu": "RK-2125-RMEOP",
+    "Fiyat": "258,05",
+    "Kutu_Adedi": "25",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-2125-RMEOP",
     "Fiyat": "358,98",
     "Kutu_Adedi": "10",
     "Para_Birimi": "TL"
