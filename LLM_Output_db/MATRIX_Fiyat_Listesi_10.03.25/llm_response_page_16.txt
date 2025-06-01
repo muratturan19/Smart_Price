@@ -1,0 +1,69 @@
+```json
+[
+    {
+        "Malzeme_Kodu": "903.160V",
+        "Fiyat": "25,60",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "903.161Z",
+        "Fiyat": "34,00",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "998.219A",
+        "Fiyat": "31,80",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "998.230M",
+        "Fiyat": "40,40",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "GMK8210C3KK",
+        "Fiyat": "226,60",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "GMK8210C3KK",
+        "Fiyat": "236,00",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "GNK8210C3KK",
+        "Fiyat": "259,60",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "GNK8210C3KK",
+        "Fiyat": "259,60",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "GOK8210C3KK",
+        "Fiyat": "290,40",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "H1",
+        "Fiyat": "9,80",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "HA",
+        "Fiyat": "9,80",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "HB",
+        "Fiyat": "9,80",
+        "Para_Birimi": "EUR"
+    },
+    {
+        "Malzeme_Kodu": "GOK3",
+        "Fiyat": "27,20",
+        "Para_Birimi": "EUR"
+    }
+]
+```
