@@ -78,6 +78,19 @@ Alternatively run the included launcher script from the repository root:
 python run_app.py
 ```
 
+The look and feel of the interface is defined in `.streamlit/config.toml`:
+
+```toml
+[theme]
+primaryColor = "#002060"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F0F2F6"
+textColor = "#262730"
+font = "sans serif"
+```
+
+Modify these values if you wish to adjust the colour scheme or font.
+
 The upload page now includes an **İşlem türü** radio button. Choose
 **Güncelleme** to overwrite existing data for the same brand, year and
 month. When this mode is used the matching rows are removed from the master
