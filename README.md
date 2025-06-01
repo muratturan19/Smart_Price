@@ -42,6 +42,8 @@ The script bundles everything inside the `data` directory so that any price
 lists placed there (for example an initial `master_dataset.xlsx`) are available
 once the executable is launched. The resulting binary will appear in the
 `dist` folder.
+The batch file collects all Streamlit resources so the executable launches
+without a `PackageNotFoundError` for the `streamlit` distribution.
 
 ### Price normalization
 
