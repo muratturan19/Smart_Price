@@ -1,0 +1,304 @@
+```json
+[
+  {
+    "Malzeme_Kodu": "RK-0606-MKY",
+    "Fiyat": "32,58",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "50"
+  },
+  {
+    "Malzeme_Kodu": "RK-0808-MKY",
+    "Fiyat": "32,58",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "50"
+  },
+  {
+    "Malzeme_Kodu": "RK-1010-MKY",
+    "Fiyat": "34,75",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "50"
+  },
+  {
+    "Malzeme_Kodu": "RK-1212-MKY",
+    "Fiyat": "34,75",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "50"
+  },
+  {
+    "Malzeme_Kodu": "RK-1515-MKY",
+    "Fiyat": "52,12",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-1616-MKY",
+    "Fiyat": "56,47",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-1818-MKY",
+    "Fiyat": "65,15",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-2020-MKY",
+    "Fiyat": "69,51",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "30"
+  },
+  {
+    "Malzeme_Kodu": "RK-2222-MKY",
+    "Fiyat": "78,18",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-2525-MKY",
+    "Fiyat": "99,90",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-2828-MKY",
+    "Fiyat": "108,59",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-3030-MKY",
+    "Fiyat": "121,63",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "10"
+  },
+  {
+    "Malzeme_Kodu": "RK-3535-MKY",
+    "Fiyat": "130,32",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "10"
+  },
+  {
+    "Malzeme_Kodu": "RK-3838-MKY",
+    "Fiyat": "195,47",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "15"
+  },
+  {
+    "Malzeme_Kodu": "RK-4242-MKY",
+    "Fiyat": "195,47",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "15"
+  },
+  {
+    "Malzeme_Kodu": "RK-0606-MKPGN-L",
+    "Fiyat": "76,80",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "20"
+  },
+  {
+    "Malzeme_Kodu": "RK-0808-MKPGN-L",
+    "Fiyat": "76,80",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "20"
+  },
+  {
+    "Malzeme_Kodu": "RK-1010-MKPGN-L",
+    "Fiyat": "112,94",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "20"
+  },
+  {
+    "Malzeme_Kodu": "RK-1212-MKPGN-L",
+    "Fiyat": "112,94",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "20"
+  },
+  {
+    "Malzeme_Kodu": "RK-1515-MKPGN-L",
+    "Fiyat": "112,94",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "20"
+  },
+  {
+    "Malzeme_Kodu": "RK-1818-MKPGN-L",
+    "Fiyat": "135,53",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "20"
+  },
+  {
+    "Malzeme_Kodu": "RK-2222-MKPGN-L",
+    "Fiyat": "158,10",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "20"
+  },
+  {
+    "Malzeme_Kodu": "RK-2828-MKPGN-L",
+    "Fiyat": "271,05",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "10"
+  },
+  {
+    "Malzeme_Kodu": "RK-3535-MKPGN-L",
+    "Fiyat": "271,05",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "10"
+  },
+  {
+    "Malzeme_Kodu": "RK-4242-MKPGN-L",
+    "Fiyat": "361,39",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "5"
+  },
+  {
+    "Malzeme_Kodu": "RK-0606-MKPGN-S",
+    "Fiyat": "85,83",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "20"
+  },
+  {
+    "Malzeme_Kodu": "RK-0808-MKPGN-S",
+    "Fiyat": "85,83",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "20"
+  },
+  {
+    "Malzeme_Kodu": "RK-1010-MKPGN-S",
+    "Fiyat": "85,83",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "20"
+  },
+  {
+    "Malzeme_Kodu": "RK-1212-MKPGN-S",
+    "Fiyat": "85,83",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "20"
+  },
+  {
+    "Malzeme_Kodu": "RK-1616-MKPGN-S",
+    "Fiyat": "112,94",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "15"
+  },
+  {
+    "Malzeme_Kodu": "RK-2020-MKPGN-S",
+    "Fiyat": "158,10",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "10"
+  },
+  {
+    "Malzeme_Kodu": "RK-2525-MKPGN-S",
+    "Fiyat": "180,70",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "10"
+  },
+  {
+    "Malzeme_Kodu": "RK-3030-MKPGN-S",
+    "Fiyat": "271,05",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "5"
+  },
+  {
+    "Malzeme_Kodu": "RK-3838-MKPGN-S",
+    "Fiyat": "361,39",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "5"
+  },
+  {
+    "Malzeme_Kodu": "RK-1206-MKDL",
+    "Fiyat": "86,63",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "50"
+  },
+  {
+    "Malzeme_Kodu": "RK-1408-MKDL",
+    "Fiyat": "88,25",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "50"
+  },
+  {
+    "Malzeme_Kodu": "RK-1610-MKDL",
+    "Fiyat": "91,94",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "50"
+  },
+  {
+    "Malzeme_Kodu": "RK-1812-MKDL",
+    "Fiyat": "93,81",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "50"
+  },
+  {
+    "Malzeme_Kodu": "RK-2115-MKDL",
+    "Fiyat": "120,42",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "30"
+  },
+  {
+    "Malzeme_Kodu": "RK-2618-MKDL",
+    "Fiyat": "151,77",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-3022-MKDL",
+    "Fiyat": "226,09",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "25"
+  },
+  {
+    "Malzeme_Kodu": "RK-3628-MKDL",
+    "Fiyat": "308,32",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "10"
+  },
+  {
+    "Malzeme_Kodu": "RK-4535-MKDL",
+    "Fiyat": "408,03",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "10"
+  },
+  {
+    "Malzeme_Kodu": "RK-5242-MKDL",
+    "Fiyat": "582,98",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "5"
+  },
+  {
+    "Malzeme_Kodu": "RK-2012-MKDS",
+    "Fiyat": "112,42",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "30"
+  },
+  {
+    "Malzeme_Kodu": "RK-2416-MKDS",
+    "Fiyat": "120,23",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "30"
+  },
+  {
+    "Malzeme_Kodu": "RK-3020-MKDS",
+    "Fiyat": "203,59",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "10"
+  },
+  {
+    "Malzeme_Kodu": "RK-3625-MKDS",
+    "Fiyat": "270,83",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "15"
+  },
+  {
+    "Malzeme_Kodu": "RK-4230-MKDS",
+    "Fiyat": "305,49",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "10"
+  },
+  {
+    "Malzeme_Kodu": "RK-5238-MKDS",
+    "Fiyat": "582,98",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "5"
+  }
+]
+```
