@@ -1,0 +1,278 @@
+Aşağıda, sağlanan görselden çıkarılan veriler bulunmaktadır:
+
+```json
+[
+  {
+    "Malzeme_Kodu": "RK-1306-MTRL",
+    "Fiyat": "58,32",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1308-MTRL",
+    "Fiyat": "56,64",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1310-MTRL",
+    "Fiyat": "59,51",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1312-MTRL",
+    "Fiyat": "62,27",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-2106-MTRL",
+    "Fiyat": "115,12",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-2108-MTRL",
+    "Fiyat": "113,54",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-2110-MTRL",
+    "Fiyat": "114,73",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-2112-MTRL",
+    "Fiyat": "117,71",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1306-MTR-S",
+    "Fiyat": "86,69",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1308-MTR-S",
+    "Fiyat": "87,66",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1310-MTR-S",
+    "Fiyat": "90,45",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1312-MTR-S",
+    "Fiyat": "94,56",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-2106-MTR-S",
+    "Fiyat": "116,59",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-2108-MTR-S",
+    "Fiyat": "117,78",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-2110-MTR-S",
+    "Fiyat": "120,76",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1306-MER-L",
+    "Fiyat": "35,62",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1308-MER-L",
+    "Fiyat": "34,05",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1310-MER-L",
+    "Fiyat": "35,48",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-2106-MER-L",
+    "Fiyat": "71,13",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-2108-MER-L",
+    "Fiyat": "71,53",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-2110-MER-L",
+    "Fiyat": "71,57",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1306-MER-S",
+    "Fiyat": "61,16",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1308-MER-S",
+    "Fiyat": "61,16",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1310-MER-S",
+    "Fiyat": "61,16",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-2106-MER-S",
+    "Fiyat": "89,94",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-2108-MER-S",
+    "Fiyat": "89,94",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-2110-MER-S",
+    "Fiyat": "89,94",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1010-RTN",
+    "Fiyat": "41,36",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1313-RTN",
+    "Fiyat": "46,01",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1717-RTN",
+    "Fiyat": "54,08",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1718-RTN",
+    "Fiyat": "54,08",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-2636-RTN",
+    "Fiyat": "131,21",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-3333-RTN",
+    "Fiyat": "236,42",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-4848-RTN",
+    "Fiyat": "425,41",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-6060-RTN",
+    "Fiyat": "800,84",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1314-RWTN",
+    "Fiyat": "72,86",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1317-RWTN",
+    "Fiyat": "74,90",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1717-RWTN",
+    "Fiyat": "78,05",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1718-RWTN",
+    "Fiyat": "78,05",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-2627-RWTN",
+    "Fiyat": "117,56",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-2630-RWTN",
+    "Fiyat": "117,57",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-3337-RWTN",
+    "Fiyat": "322,82",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-4243-RWTN",
+    "Fiyat": "400,36",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1011-RWTN",
+    "Fiyat": "47,33",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1311-RWTN",
+    "Fiyat": "50,89",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1312-RWTN",
+    "Fiyat": "53,60",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1314-RWTN",
+    "Fiyat": "53,60",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1716-RWTN",
+    "Fiyat": "57,79",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-1718-RWTN",
+    "Fiyat": "57,79",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-2114-RWTN",
+    "Fiyat": "105,33",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-2119-RWTN",
+    "Fiyat": "113,14",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-2622-RWTN",
+    "Fiyat": "146,55",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-2627-RWTN",
+    "Fiyat": "146,56",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-3332-RWTN",
+    "Fiyat": "289,25",
+    "Para_Birimi": "TL"
+  }
+]
+```
+
+Bu veriler, görseldeki tabloların "Malzeme Kodu" ve "Fiyat" sütunlarından çıkarılmıştır. Para birimi belirtilmediği için varsayılan olarak "TL" eklenmiştir. Diğer alanlar boş bırakılmıştır.
