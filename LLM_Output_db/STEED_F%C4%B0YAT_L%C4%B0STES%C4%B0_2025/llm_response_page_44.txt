@@ -1,0 +1,34 @@
+```json
+[
+  {
+    "Malzeme_Kodu": "MJCSD-01-SC",
+    "Fiyat": "131,40",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "MJCSD-01-L-SC",
+    "Fiyat": "131,40",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "MJCSD-01",
+    "Fiyat": "113,74",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "MJCSD-01-L",
+    "Fiyat": "113,74",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "DPS",
+    "Fiyat": "334,21",
+    "Para_Birimi": "$"
+  },
+  {
+    "Malzeme_Kodu": "JC-DPS-N",
+    "Fiyat": "307,99",
+    "Para_Birimi": "$"
+  }
+]
+```
