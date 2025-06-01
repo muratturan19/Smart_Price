@@ -214,14 +214,21 @@ def safe_json_parse(text: str):
     if not text:
         return None
 
+    def _validate(obj):
+        return obj if isinstance(obj, (list, dict)) else None
+
     try:
-        return json.loads(text)
+        result = json.loads(text)
+        if _validate(result) is not None:
+            return result
     except Exception:
         pass
 
     text_sq = text.replace("'", '"')
     try:
-        return json.loads(text_sq)
+        result = json.loads(text_sq)
+        if _validate(result) is not None:
+            return result
     except Exception:
         pass
 
@@ -231,12 +238,15 @@ def safe_json_parse(text: str):
             lambda m: f'"{m.group(1)}":',
             text_sq,
         )
-        return json.loads(text_keys)
+        result = json.loads(text_keys)
+        if _validate(result) is not None:
+            return result
     except Exception:
         pass
 
     try:
-        return ast.literal_eval(text)
+        result = ast.literal_eval(text)
+        return _validate(result)
     except Exception:
         return None
 

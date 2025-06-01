@@ -319,6 +319,8 @@ def parse(
 
         items = items if isinstance(items, list) else [items]
         for item in items:
+            if not isinstance(item, dict):
+                continue
             code = item.get("Malzeme_Kodu") or item.get("Malzeme Kodu")
             descr = item.get("Açıklama")
             price_raw = str(item.get("Fiyat", "")).strip()
