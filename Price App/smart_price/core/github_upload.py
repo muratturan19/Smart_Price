@@ -4,6 +4,7 @@ import logging
 import os
 from pathlib import Path
 from urllib import request, error
+from urllib.parse import quote
 
 logger = logging.getLogger("smart_price")
 
@@ -28,6 +29,11 @@ def _api_request(method: str, url: str, token: str, data: dict | None = None) ->
         raise
 
 
+def _sanitize_repo_path(path: str) -> str:
+    safe = path.replace(" ", "_")
+    return quote(safe, safe="/")
+
+
 def upload_folder(path: Path, *, remote_prefix: str | None = None) -> bool:
     """Upload ``path`` to a GitHub repository.
 
@@ -47,6 +53,7 @@ def upload_folder(path: Path, *, remote_prefix: str | None = None) -> bool:
     branch = os.getenv("GITHUB_BRANCH", "main")
     if remote_prefix is None:
         remote_prefix = f"LLM_Output_db/{path.name}"
+    remote_prefix = _sanitize_repo_path(remote_prefix)
     if not repo or not token:
         logger.info("GitHub repo or token not configured; skipping upload")
         return False
@@ -56,7 +63,8 @@ def upload_folder(path: Path, *, remote_prefix: str | None = None) -> bool:
         if not file_path.is_file():
             continue
         repo_path = Path(remote_prefix) / file_path.relative_to(path)
-        url = f"https://api.github.com/repos/{repo}/contents/{repo_path.as_posix()}"
+        url_path = _sanitize_repo_path(repo_path.as_posix())
+        url = f"https://api.github.com/repos/{repo}/contents/{url_path}"
         with open(file_path, "rb") as fh:
             content = base64.b64encode(fh.read()).decode("ascii")
         try:
