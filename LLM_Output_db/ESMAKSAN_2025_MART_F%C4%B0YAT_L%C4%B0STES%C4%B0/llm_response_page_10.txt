@@ -1,0 +1,244 @@
+```json
+[
+  {
+    "Malzeme_Kodu": "160E H80 - 0 K Serisi Grup 1",
+    "Fiyat": "260,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "160E H80 - 0 K Serisi Grup 2",
+    "Fiyat": "260,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "200E H90 - 0 K Serisi Grup 1",
+    "Fiyat": "380,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "200E H90 - 0 K Serisi Grup 2",
+    "Fiyat": "370,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "200E H100 - 0 K Serisi Grup 1",
+    "Fiyat": "430,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "200E H100 - 0 K Serisi Grup 2",
+    "Fiyat": "420,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "250E H115 - 0 K Serisi Grup 1",
+    "Fiyat": "575,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "250E H115 - 0 K Serisi Grup 2",
+    "Fiyat": "565,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "300E H134 - 1 K Serisi Grup 3",
+    "Fiyat": "750,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "350E H171 - 1 K Serisi Grup 3",
+    "Fiyat": "1.300,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "350E H171 - 1 K Serisi Grup 4",
+    "Fiyat": "1.300,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "350E H171 - 3 K Serisi Grup 4",
+    "Fiyat": "1.300,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "120 H54 - 0 K Serisi Grup 1",
+    "Fiyat": "250,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "140 H72 - 0 K Serisi Grup 1",
+    "Fiyat": "260,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "160 H80 - 0 K Serisi Grup 1",
+    "Fiyat": "325,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "160 H80 - 0 K Serisi Grup 2",
+    "Fiyat": "345,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "200 H100 - 0 K Serisi Grup 1",
+    "Fiyat": "550,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "200 H100 - 0 K Serisi Grup 2",
+    "Fiyat": "550,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "250 H115 - 1 K Serisi Grup 3",
+    "Fiyat": "680,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "250 H115 - 0 K Serisi Grup 1",
+    "Fiyat": "770,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "250 H115 - 0 K Serisi Grup 2",
+    "Fiyat": "820,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "300 H135 - 1 K Serisi Grup 3",
+    "Fiyat": "1.000,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "300 H135 - 1 K Serisi Grup 4",
+    "Fiyat": "1.250,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "300 H135 - 3 K Serisi Grup 4",
+    "Fiyat": "1.650,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "350 H170 - 1 K Serisi Grup 3",
+    "Fiyat": "1.500,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "350 H170 - 1 K Serisi Grup 4",
+    "Fiyat": "1.700,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "350 H170 - 3 K Serisi Grup 4",
+    "Fiyat": "2.100,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "200 KV H100 - 80-82,5 Ø",
+    "Fiyat": "585,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "250 KV H135 - 80-82,5 Ø",
+    "Fiyat": "850,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "250 KV H135 KUM D - 80-82,5 Ø",
+    "Fiyat": "1.280,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "250 KV H150 KUM D - 80-82,5 Ø",
+    "Fiyat": "1.850,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "300 KV H135 - 80-82,5 Ø",
+    "Fiyat": "1.100,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "350 KV H170 - 80-82,5 Ø",
+    "Fiyat": "1.850,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "350 KV 127 H190 - 80-82,5 Ø",
+    "Fiyat": "2.600,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "350 KV 101.6-1190 KUM D - 80-82,5 Ø",
+    "Fiyat": "2.600,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "200 KR H85 - 50,6 Ø",
+    "Fiyat": "615,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "200 KR H100 - 50,6 Ø",
+    "Fiyat": "640,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "250 KR H115 - 50,6 Ø",
+    "Fiyat": "615,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "250 KR H115 - 80-82,5-95-100 Ø",
+    "Fiyat": "800,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "250 KR H135 - 80-82,5-95-100 Ø",
+    "Fiyat": "1.230,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "300 KR H135 - 80-82,5-95-100 Ø",
+    "Fiyat": "1.850,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "300 KR H150 - 80-82,5-95-100 Ø",
+    "Fiyat": "1.850,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "300 KR H170 - 80-82,5-95-100 Ø",
+    "Fiyat": "2.420,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "350 KR H135 - 80-82,5-95-100 Ø",
+    "Fiyat": "2.600,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "350 KR H170 - 80-82,5-95-100 Ø",
+    "Fiyat": "2.750,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "350 KR H190 (D: 300 mm X 300 mm) - 80-82,5-95-100 Ø",
+    "Fiyat": "2.750,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "350 KR H190 (D: 300 mm X 300 mm) - 101,8-125-127 Ø",
+    "Fiyat": "3.050,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "350 KR H190 (D: 300 mm X 300 mm) - 130-260 Ø",
+    "Fiyat": "5.050,00",
+    "Para_Birimi": "TL"
+  }
+]
+```
