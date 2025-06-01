@@ -1,0 +1,114 @@
+```json
+[
+  {
+    "Malzeme_Kodu": "SAE 3001",
+    "Fiyat": "200,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAE 3002",
+    "Fiyat": "220,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAE 3003",
+    "Fiyat": "300,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAE 3004",
+    "Fiyat": "360,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAE 3005",
+    "Fiyat": "420,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAE 3006",
+    "Fiyat": "470,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAE 3007",
+    "Fiyat": "800,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAE 3008",
+    "Fiyat": "1.300,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAE 3009",
+    "Fiyat": "1.400,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAE 3010",
+    "Fiyat": "2.000,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAE 3011",
+    "Fiyat": "2.500,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAE 3001V",
+    "Fiyat": "230,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAE 3002V",
+    "Fiyat": "260,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAE 3003V",
+    "Fiyat": "350,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAE 3004V",
+    "Fiyat": "410,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAE 3005V",
+    "Fiyat": "470,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAE 3006V",
+    "Fiyat": "530,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAE 3007V",
+    "Fiyat": "900,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAE 3008V",
+    "Fiyat": "1.200,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAE 3009V",
+    "Fiyat": "1.500,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAE 3010V",
+    "Fiyat": "2.100,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "SAE 3011V",
+    "Fiyat": "2.600,00",
+    "Para_Birimi": "TL"
+  }
+]
+```
