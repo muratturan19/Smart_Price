@@ -1,0 +1,214 @@
+```json
+[
+  {
+    "Malzeme_Kodu": "RK-194110-KFLD",
+    "Açıklama": "",
+    "Fiyat": "261,57",
+    "Adet": "",
+    "Birim": "",
+    "Para_Birimi": "TL",
+    "Marka": "",
+    "Kutu_Adedi": ""
+  },
+  {
+    "Malzeme_Kodu": "RK-254814-KFLD",
+    "Açıklama": "",
+    "Fiyat": "305,16",
+    "Adet": "",
+    "Birim": "",
+    "Para_Birimi": "TL",
+    "Marka": "",
+    "Kutu_Adedi": ""
+  },
+  {
+    "Malzeme_Kodu": "RK-25414-KFLD",
+    "Açıklama": "",
+    "Fiyat": "326,95",
+    "Adet": "",
+    "Birim": "",
+    "Para_Birimi": "TL",
+    "Marka": "",
+    "Kutu_Adedi": ""
+  },
+  {
+    "Malzeme_Kodu": "RK-324814-KFLD",
+    "Açıklama": "",
+    "Fiyat": "435,95",
+    "Adet": "",
+    "Birim": "",
+    "Para_Birimi": "TL",
+    "Marka": "",
+    "Kutu_Adedi": ""
+  },
+  {
+    "Malzeme_Kodu": "RK-32514-KFLD",
+    "Açıklama": "",
+    "Fiyat": "435,95",
+    "Adet": "",
+    "Birim": "",
+    "Para_Birimi": "TL",
+    "Marka": "",
+    "Kutu_Adedi": ""
+  },
+  {
+    "Malzeme_Kodu": "RK-326314-KFLD",
+    "Açıklama": "",
+    "Fiyat": "501,33",
+    "Adet": "",
+    "Birim": "",
+    "Para_Birimi": "TL",
+    "Marka": "",
+    "Kutu_Adedi": ""
+  },
+  {
+    "Malzeme_Kodu": "RK-336314-KFLD",
+    "Açıklama": "",
+    "Fiyat": "523,14",
+    "Adet": "",
+    "Birim": "",
+    "Para_Birimi": "TL",
+    "Marka": "",
+    "Kutu_Adedi": ""
+  },
+  {
+    "Malzeme_Kodu": "RK-194110-KFL45",
+    "Açıklama": "",
+    "Fiyat": "418,52",
+    "Adet": "",
+    "Birim": "",
+    "Para_Birimi": "TL",
+    "Marka": "",
+    "Kutu_Adedi": ""
+  },
+  {
+    "Malzeme_Kodu": "RK-254814-KFL45",
+    "Açıklama": "",
+    "Fiyat": "488,26",
+    "Adet": "",
+    "Birim": "",
+    "Para_Birimi": "TL",
+    "Marka": "",
+    "Kutu_Adedi": ""
+  },
+  {
+    "Malzeme_Kodu": "RK-25414-KFL45",
+    "Açıklama": "",
+    "Fiyat": "523,14",
+    "Adet": "",
+    "Birim": "",
+    "Para_Birimi": "TL",
+    "Marka": "",
+    "Kutu_Adedi": ""
+  },
+  {
+    "Malzeme_Kodu": "RK-324814-KFL45",
+    "Açıklama": "",
+    "Fiyat": "697,52",
+    "Adet": "",
+    "Birim": "",
+    "Para_Birimi": "TL",
+    "Marka": "",
+    "Kutu_Adedi": ""
+  },
+  {
+    "Malzeme_Kodu": "RK-32514-KFL45",
+    "Açıklama": "",
+    "Fiyat": "697,52",
+    "Adet": "",
+    "Birim": "",
+    "Para_Birimi": "TL",
+    "Marka": "",
+    "Kutu_Adedi": ""
+  },
+  {
+    "Malzeme_Kodu": "RK-326314-KFL45",
+    "Açıklama": "",
+    "Fiyat": "802,14",
+    "Adet": "",
+    "Birim": "",
+    "Para_Birimi": "TL",
+    "Marka": "",
+    "Kutu_Adedi": ""
+  },
+  {
+    "Malzeme_Kodu": "RK-336314-KFL45",
+    "Açıklama": "",
+    "Fiyat": "871,91",
+    "Adet": "",
+    "Birim": "",
+    "Para_Birimi": "TL",
+    "Marka": "",
+    "Kutu_Adedi": ""
+  },
+  {
+    "Malzeme_Kodu": "RK-194110-KFL90",
+    "Açıklama": "",
+    "Fiyat": "418,52",
+    "Adet": "",
+    "Birim": "",
+    "Para_Birimi": "TL",
+    "Marka": "",
+    "Kutu_Adedi": ""
+  },
+  {
+    "Malzeme_Kodu": "RK-254814-KFL90",
+    "Açıklama": "",
+    "Fiyat": "488,26",
+    "Adet": "",
+    "Birim": "",
+    "Para_Birimi": "TL",
+    "Marka": "",
+    "Kutu_Adedi": ""
+  },
+  {
+    "Malzeme_Kodu": "RK-25414-KFL90",
+    "Açıklama": "",
+    "Fiyat": "523,14",
+    "Adet": "",
+    "Birim": "",
+    "Para_Birimi": "TL",
+    "Marka": "",
+    "Kutu_Adedi": ""
+  },
+  {
+    "Malzeme_Kodu": "RK-324814-KFL90",
+    "Açıklama": "",
+    "Fiyat": "697,52",
+    "Adet": "",
+    "Birim": "",
+    "Para_Birimi": "TL",
+    "Marka": "",
+    "Kutu_Adedi": ""
+  },
+  {
+    "Malzeme_Kodu": "RK-32514-KFL90",
+    "Açıklama": "",
+    "Fiyat": "697,52",
+    "Adet": "",
+    "Birim": "",
+    "Para_Birimi": "TL",
+    "Marka": "",
+    "Kutu_Adedi": ""
+  },
+  {
+    "Malzeme_Kodu": "RK-326314-KFL90",
+    "Açıklama": "",
+    "Fiyat": "802,14",
+    "Adet": "",
+    "Birim": "",
+    "Para_Birimi": "TL",
+    "Marka": "",
+    "Kutu_Adedi": ""
+  },
+  {
+    "Malzeme_Kodu": "RK-336314-KFL90",
+    "Açıklama": "",
+    "Fiyat": "871,91",
+    "Adet": "",
+    "Birim": "",
+    "Para_Birimi": "TL",
+    "Marka": "",
+    "Kutu_Adedi": ""
+  }
+]
+```
