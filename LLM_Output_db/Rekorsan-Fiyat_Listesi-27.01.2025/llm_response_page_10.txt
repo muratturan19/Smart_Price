@@ -1,0 +1,245 @@
+```json
+[
+  {
+    "Malzeme_Kodu": "RK-0506-BUD",
+    "Fiyat": "32,25",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "50"
+  },
+  {
+    "Malzeme_Kodu": "RK-0606-BUD",
+    "Fiyat": "32,25",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "50"
+  },
+  {
+    "Malzeme_Kodu": "RK-0608-BUD",
+    "Fiyat": "32,25",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "50"
+  },
+  {
+    "Malzeme_Kodu": "RK-0610-BUD",
+    "Fiyat": "32,25",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "50"
+  },
+  {
+    "Malzeme_Kodu": "RK-0808-BUD",
+    "Fiyat": "32,25",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "50"
+  },
+  {
+    "Malzeme_Kodu": "RK-0810-BUD",
+    "Fiyat": "32,25",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "50"
+  },
+  {
+    "Malzeme_Kodu": "RK-1010-BUD",
+    "Fiyat": "34,95",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "40"
+  },
+  {
+    "Malzeme_Kodu": "RK-1012-BUD",
+    "Fiyat": "34,95",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "40"
+  },
+  {
+    "Malzeme_Kodu": "RK-1312-BUD",
+    "Fiyat": "49,61",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "40"
+  },
+  {
+    "Malzeme_Kodu": "RK-1316-BUD",
+    "Fiyat": "49,61",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "40"
+  },
+  {
+    "Malzeme_Kodu": "RK-0506-BU45",
+    "Fiyat": "64,49",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "50"
+  },
+  {
+    "Malzeme_Kodu": "RK-0606-BU45",
+    "Fiyat": "64,49",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "30"
+  },
+  {
+    "Malzeme_Kodu": "RK-0608-BU45",
+    "Fiyat": "64,49",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "30"
+  },
+  {
+    "Malzeme_Kodu": "RK-0610-BU45",
+    "Fiyat": "64,49",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "30"
+  },
+  {
+    "Malzeme_Kodu": "RK-0808-BU45",
+    "Fiyat": "64,49",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "30"
+  },
+  {
+    "Malzeme_Kodu": "RK-0810-BU45",
+    "Fiyat": "64,49",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "30"
+  },
+  {
+    "Malzeme_Kodu": "RK-1010-BU45",
+    "Fiyat": "70,25",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "30"
+  },
+  {
+    "Malzeme_Kodu": "RK-1012-BU45",
+    "Fiyat": "70,25",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "30"
+  },
+  {
+    "Malzeme_Kodu": "RK-1312-BU45",
+    "Fiyat": "102,34",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "20"
+  },
+  {
+    "Malzeme_Kodu": "RK-1316-BU45",
+    "Fiyat": "102,34",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "20"
+  },
+  {
+    "Malzeme_Kodu": "RK-0506-BU90",
+    "Fiyat": "64,49",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "50"
+  },
+  {
+    "Malzeme_Kodu": "RK-0606-BU90",
+    "Fiyat": "64,49",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "50"
+  },
+  {
+    "Malzeme_Kodu": "RK-0608-BU90",
+    "Fiyat": "64,49",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "30"
+  },
+  {
+    "Malzeme_Kodu": "RK-0610-BU90",
+    "Fiyat": "64,49",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "30"
+  },
+  {
+    "Malzeme_Kodu": "RK-0808-BU90",
+    "Fiyat": "64,49",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "30"
+  },
+  {
+    "Malzeme_Kodu": "RK-0810-BU90",
+    "Fiyat": "64,49",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "30"
+  },
+  {
+    "Malzeme_Kodu": "RK-1010-BU90",
+    "Fiyat": "70,25",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "30"
+  },
+  {
+    "Malzeme_Kodu": "RK-1012-BU90",
+    "Fiyat": "70,25",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "30"
+  },
+  {
+    "Malzeme_Kodu": "RK-1312-BU90",
+    "Fiyat": "102,34",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "20"
+  },
+  {
+    "Malzeme_Kodu": "RK-1316-BU90",
+    "Fiyat": "102,34",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "20"
+  },
+  {
+    "Malzeme_Kodu": "RK-0505-HE",
+    "Fiyat": "43,45",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "50"
+  },
+  {
+    "Malzeme_Kodu": "RK-0606-HE",
+    "Fiyat": "39,09",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "50"
+  },
+  {
+    "Malzeme_Kodu": "RK-0808-HE",
+    "Fiyat": "34,75",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "50"
+  },
+  {
+    "Malzeme_Kodu": "RK-1010-HE",
+    "Fiyat": "39,09",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "50"
+  },
+  {
+    "Malzeme_Kodu": "RK-1313-HE",
+    "Fiyat": "47,78",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "30"
+  },
+  {
+    "Malzeme_Kodu": "RK-1616-HE",
+    "Fiyat": "86,88",
+    "Para_Birimi": "TL",
+    "Kutu_Adedi": "30"
+  },
+  {
+    "Malzeme_Kodu": "RK-1919-HE",
+    "Fiyat": "139,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-2525-HE",
+    "Fiyat": "217,20",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-3232-HE",
+    "Fiyat": "295,37",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-3838-HE",
+    "Fiyat": "347,50",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "RK-5050-HE",
+    "Fiyat": "521,25",
+    "Para_Birimi": "TL"
+  }
+]
+```
