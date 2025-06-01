@@ -421,7 +421,30 @@ def search_page():
     query = st.text_input("Malzeme kodu veya adı")
     if query:
         results = master_df[master_df["Descriptions"].str.contains(query, case=False, na=False)]
-        st.write(results)
+        if not results.empty:
+            theme = st.get_option("theme") or {}
+            header_colour = theme.get("primaryColor", "#002060")
+            text_colour = theme.get("textColor", "#262730")
+
+            styled = results.style.set_table_styles(
+                {
+                    "": {
+                        "selector": "th",
+                        "props": [
+                            ("background-color", header_colour),
+                            ("color", "white"),
+                        ],
+                    }
+                }
+            )
+
+            st.dataframe(
+                styled,
+                hide_index=True,
+                use_container_width=True,
+            )
+        else:
+            st.info("Eşleşme bulunamadı.")
 
 
 def reset_page():
