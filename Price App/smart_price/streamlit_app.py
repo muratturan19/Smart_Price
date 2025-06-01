@@ -414,9 +414,9 @@ def reset_page():
 
 
 PAGES = {
-    "Dosya Yükle": upload_page,
-    "Veride Ara": search_page,
-    "Database Sıfırla": reset_page,
+    "📤 Dosya Yükle": upload_page,
+    "🔎 Veride Ara": search_page,
+    "♻️ Database Sıfırla": reset_page,
 }
 
 
@@ -456,9 +456,12 @@ def main():
     )
 
     st.sidebar.title("Smart Price")
-    choice = st.sidebar.radio("Seçim", list(PAGES.keys()))
-    page = PAGES[choice]
-    page()
+
+    tab_labels = list(PAGES.keys())
+    tabs = st.tabs(tab_labels)
+    for tab, label in zip(tabs, tab_labels):
+        with tab:
+            PAGES[label]()
 
 
 def cli() -> None:
