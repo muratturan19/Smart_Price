@@ -1,0 +1,669 @@
+```json
+[
+  {
+    "Malzeme_Kodu": "80 - Flanş (DIN 42948) B35",
+    "Fiyat": "12,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "80 - B34 , B34/2",
+    "Fiyat": "7,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "80 - Özel Sargı",
+    "Fiyat": "17,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "80 - Çift Taraflı Mil Çıkışı",
+    "Fiyat": "15,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "80 - IP56, IP65, IP66",
+    "Fiyat": "9,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "90 - Flanş (DIN 42948) B35",
+    "Fiyat": "14,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "90 - B34 , B34/2",
+    "Fiyat": "9,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "90 - Özel Sargı",
+    "Fiyat": "20,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "90 - Çift Taraflı Mil Çıkışı",
+    "Fiyat": "19,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "90 - IP56, IP65, IP66",
+    "Fiyat": "10,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "100 - Flanş (DIN 42948) B35",
+    "Fiyat": "19,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "100 - B34 , B34/2",
+    "Fiyat": "11,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "100 - Özel Sargı",
+    "Fiyat": "23,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "100 - Çift Taraflı Mil Çıkışı",
+    "Fiyat": "23,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "100 - IP56, IP65, IP66",
+    "Fiyat": "11,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "112 - Flanş (DIN 42948) B35",
+    "Fiyat": "20,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "112 - B34 , B34/2",
+    "Fiyat": "13,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "112 - Özel Sargı",
+    "Fiyat": "29,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "112 - Çift Taraflı Mil Çıkışı",
+    "Fiyat": "26,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "112 - IP56, IP65, IP66",
+    "Fiyat": "12,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "132 - Flanş (DIN 42948) B35",
+    "Fiyat": "28,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "132 - B34 , B34/2",
+    "Fiyat": "25,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "132 - Özel Sargı",
+    "Fiyat": "29,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "132 - Çift Taraflı Mil Çıkışı",
+    "Fiyat": "29,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "132 - IP56, IP65, IP66",
+    "Fiyat": "13,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "160 - Flanş (DIN 42948) B35",
+    "Fiyat": "70,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "160 - B34 , B34/2",
+    "Fiyat": "70,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "160 - Özel Sargı",
+    "Fiyat": "47,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "160 - Çift Taraflı Mil Çıkışı",
+    "Fiyat": "47,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "160 - IP56, IP65, IP66",
+    "Fiyat": "18,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "160 - Nu Rulman",
+    "Fiyat": "109,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "160 - Yağlamalı Eş Rulman",
+    "Fiyat": "54,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "180 - Flanş (DIN 42948) B35",
+    "Fiyat": "75,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "180 - B34 , B34/2",
+    "Fiyat": "60,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "180 - Özel Sargı",
+    "Fiyat": "60,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "180 - Çift Taraflı Mil Çıkışı",
+    "Fiyat": "60,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "180 - IP56, IP65, IP66",
+    "Fiyat": "20,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "180 - Nu Rulman",
+    "Fiyat": "122,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "180 - Yağlamalı Eş Rulman",
+    "Fiyat": "61,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "200 - Flanş (DIN 42948) B35",
+    "Fiyat": "113,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "200 - B34 , B34/2",
+    "Fiyat": "67,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "200 - Özel Sargı",
+    "Fiyat": "73,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "200 - Çift Taraflı Mil Çıkışı",
+    "Fiyat": "73,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "200 - IP56, IP65, IP66",
+    "Fiyat": "22,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "200 - Nu Rulman",
+    "Fiyat": "155,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "200 - Yağlamalı Eş Rulman",
+    "Fiyat": "90,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "225 - Flanş (DIN 42948) B35",
+    "Fiyat": "142,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "225 - B34 , B34/2",
+    "Fiyat": "78,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "225 - Özel Sargı",
+    "Fiyat": "87,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "225 - Çift Taraflı Mil Çıkışı",
+    "Fiyat": "87,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "225 - IP56, IP65, IP66",
+    "Fiyat": "25,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "225 - Nu Rulman",
+    "Fiyat": "192,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "225 - Yağlamalı Eş Rulman",
+    "Fiyat": "133,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "250 - Flanş (DIN 42948) B35",
+    "Fiyat": "212,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "250 - B34 , B34/2",
+    "Fiyat": "84,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "250 - Özel Sargı",
+    "Fiyat": "91,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "250 - Çift Taraflı Mil Çıkışı",
+    "Fiyat": "91,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "250 - IP56, IP65, IP66",
+    "Fiyat": "29,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "250 - Nu Rulman",
+    "Fiyat": "148,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "280 - Flanş (DIN 42948) B35",
+    "Fiyat": "252,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "280 - Özel Sargı",
+    "Fiyat": "125,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "280 - Çift Taraflı Mil Çıkışı",
+    "Fiyat": "130,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "280 - IP56, IP65, IP66",
+    "Fiyat": "32,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "280 - Nu Rulman",
+    "Fiyat": "186,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "315/2P - Flanş (DIN 42948) B35",
+    "Fiyat": "465,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "315/2P - Özel Sargı",
+    "Fiyat": "156,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "315/2P - Çift Taraflı Mil Çıkışı",
+    "Fiyat": "164,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "315/2P - IP56, IP65, IP66",
+    "Fiyat": "39,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "315/2P - Nu Rulman",
+    "Fiyat": "272,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "355/2P - Flanş (DIN 42948) B35",
+    "Fiyat": "698,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "355/2P - Özel Sargı",
+    "Fiyat": "210,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "355/2P - Çift Taraflı Mil Çıkışı",
+    "Fiyat": "210,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "355/2P - IP56, IP65, IP66",
+    "Fiyat": "54,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "355/2P - Nu Rulman",
+    "Fiyat": "384,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "355/4,6,8P - Flanş (DIN 42948) B35",
+    "Fiyat": "1028,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "355/4,6,8P - Özel Sargı",
+    "Fiyat": "86,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "355/4,6,8P - Nu Rulman",
+    "Fiyat": "942,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "355/4,6,8P - Yağlamalı Eş Rulman",
+    "Fiyat": "672,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "80 - H İzolasyon",
+    "Fiyat": "7,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "80 - Cebri Soğutma",
+    "Fiyat": "90,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "80 - Kanopi",
+    "Fiyat": "13,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "80 - Önden Kilitli Rulman",
+    "Fiyat": "4,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "80 - İzole Rulman",
+    "Fiyat": "4,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "90 - H İzolasyon",
+    "Fiyat": "9,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "90 - Cebri Soğutma",
+    "Fiyat": "14,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "90 - Isıtıcı",
+    "Fiyat": "39,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "100 - H İzolasyon",
+    "Fiyat": "12,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "100 - Cebri Soğutma",
+    "Fiyat": "127,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "100 - Kanopi",
+    "Fiyat": "15,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "100 - Önden Kilitli Rulman",
+    "Fiyat": "5,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "100 - İzole Rulman",
+    "Fiyat": "5,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "112 - H İzolasyon",
+    "Fiyat": "14,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "112 - Kanopi",
+    "Fiyat": "20,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "132 - H İzolasyon",
+    "Fiyat": "18,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "132 - Cebri Soğutma",
+    "Fiyat": "193,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "132 - Kanopi",
+    "Fiyat": "22,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "132 - Isıtıcı",
+    "Fiyat": "44,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "132 - Önden Kilitli Rulman",
+    "Fiyat": "11,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "132 - İzole Rulman",
+    "Fiyat": "6,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "160 - H İzolasyon",
+    "Fiyat": "32,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "160 - Cebri Soğutma",
+    "Fiyat": "273,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "160 - Kanopi",
+    "Fiyat": "29,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "160 - Önden Kilitli Rulman",
+    "Fiyat": "19,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "160 - İzole Rulman",
+    "Fiyat": "396,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "160 - Özel Boya Rengi (RAL7046/5010/7030/9005/5021)",
+    "Fiyat": "9,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "180 - H İzolasyon",
+    "Fiyat": "44,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "180 - Kanopi",
+    "Fiyat": "33,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "180 - Önden Kilitli Rulman",
+    "Fiyat": "25,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "180 - İzole Rulman",
+    "Fiyat": "450,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "180 - Özel Boya Rengi (RAL7046/5010/7030/9005/5021)",
+    "Fiyat": "10,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "200 - H İzolasyon",
+    "Fiyat": "55,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "200 - Cebri Soğutma",
+    "Fiyat": "343,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "200 - Kanopi",
+    "Fiyat": "39,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "200 - Önden Kilitli Rulman",
+    "Fiyat": "32,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "200 - İzole Rulman",
+    "Fiyat": "514,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "200 - Özel Boya Rengi (RAL7046/5010/7030/9005/5021)",
+    "Fiyat": "11,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "225 - H İzolasyon",
+    "Fiyat": "68,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "225 - Önden Kilitli Rulman",
+    "Fiyat": "37,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "225 - İzole Rulman",
+    "Fiyat": "600,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "225 - Özel Boya Rengi (RAL7046/5010/7030/9005/5021)",
+    "Fiyat": "14,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "250 - İzole Rulman",
+    "Fiyat": "824,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "250 - Özel Boya Rengi (RAL7046/5010/7030/9005/5021)",
+    "Fiyat": "15,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "280 - İzole Rulman",
+    "Fiyat": "878,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "280 - Özel Boya Rengi (RAL7046/5010/7030/9005/5021)",
+    "Fiyat": "20,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "315/4,6,8P - İzole Rulman",
+    "Fiyat": "1028,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "315/4,6,8P - Özel Boya Rengi (RAL7046/5010/7030/9005/5021)",
+    "Fiyat": "28,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "355/2P - H İzolasyon",
+    "Fiyat": "404,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "355/2P - İzole Rulman",
+    "Fiyat": "942,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "355/2P - Özel Boya Rengi (RAL7046/5010/7030/9005/5021)",
+    "Fiyat": "39,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "355/4,6,8P - İzole Rulman",
+    "Fiyat": "1391,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "Termistör",
+    "Fiyat": "15,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "Pt 100 RTD - Ön & Arka Rulman",
+    "Fiyat": "198,00",
+    "Para_Birimi": "TL"
+  },
+  {
+    "Malzeme_Kodu": "Pt 100 RTD - Sargı",
+    "Fiyat": "198,00",
+    "Para_Birimi": "TL"
+  }
+]
+```
