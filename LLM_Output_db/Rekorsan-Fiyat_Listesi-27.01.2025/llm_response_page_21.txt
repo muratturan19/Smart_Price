@@ -2,303 +2,353 @@
 [
   {
     "Malzeme_Kodu": "RK-0606-MKY",
+    "Açıklama": "6mm KUYRUKLU",
     "Fiyat": "32,58",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "50"
+    "Kutu_Adedi": "50",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-0808-MKY",
+    "Açıklama": "8mm KUYRUKLU",
     "Fiyat": "32,58",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "50"
+    "Kutu_Adedi": "50",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-1010-MKY",
+    "Açıklama": "10mm KUYRUKLU",
     "Fiyat": "34,75",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "50"
+    "Kutu_Adedi": "50",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-1212-MKY",
+    "Açıklama": "12mm KUYRUKLU",
     "Fiyat": "34,75",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "50"
+    "Kutu_Adedi": "50",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-1515-MKY",
+    "Açıklama": "15mm KUYRUKLU",
     "Fiyat": "52,12",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "25"
+    "Kutu_Adedi": "25",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-1616-MKY",
+    "Açıklama": "16mm KUYRUKLU",
     "Fiyat": "56,47",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "25"
+    "Kutu_Adedi": "25",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-1818-MKY",
+    "Açıklama": "18mm KUYRUKLU",
     "Fiyat": "65,15",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "25"
+    "Kutu_Adedi": "25",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-2020-MKY",
+    "Açıklama": "20mm KUYRUKLU",
     "Fiyat": "69,51",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "30"
+    "Kutu_Adedi": "30",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-2222-MKY",
+    "Açıklama": "22mm KUYRUKLU",
     "Fiyat": "78,18",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "25"
+    "Kutu_Adedi": "25",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-2525-MKY",
+    "Açıklama": "25mm KUYRUKLU",
     "Fiyat": "99,90",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "25"
+    "Kutu_Adedi": "25",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-2828-MKY",
+    "Açıklama": "28mm KUYRUKLU",
     "Fiyat": "108,59",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "25"
+    "Kutu_Adedi": "25",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-3030-MKY",
+    "Açıklama": "30mm KUYRUKLU",
     "Fiyat": "121,63",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "10"
+    "Kutu_Adedi": "10",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-3535-MKY",
+    "Açıklama": "35mm KUYRUKLU",
     "Fiyat": "130,32",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "10"
+    "Kutu_Adedi": "10",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-3838-MKY",
+    "Açıklama": "38mm KUYRUKLU",
     "Fiyat": "195,47",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "15"
+    "Kutu_Adedi": "15",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-4242-MKY",
+    "Açıklama": "42mm KUYRUKLU",
     "Fiyat": "195,47",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "15"
+    "Kutu_Adedi": "15",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-0606-MKPGN-L",
+    "Açıklama": "M12x1,5 6L",
     "Fiyat": "76,80",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "20"
+    "Kutu_Adedi": "20",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-0808-MKPGN-L",
+    "Açıklama": "M14x1,5 8L",
     "Fiyat": "76,80",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "20"
+    "Kutu_Adedi": "20",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-1010-MKPGN-L",
-    "Fiyat": "112,94",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "20"
+    "Açıklama": "M16x1,5 10L",
+    "Fiyat": "76,80",
+    "Kutu_Adedi": "20",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-1212-MKPGN-L",
+    "Açıklama": "M18x1,5 12L",
     "Fiyat": "112,94",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "20"
+    "Kutu_Adedi": "20",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-1515-MKPGN-L",
+    "Açıklama": "M22x1,5 15L",
     "Fiyat": "112,94",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "20"
+    "Kutu_Adedi": "20",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-1818-MKPGN-L",
+    "Açıklama": "M26x1,5 18L",
     "Fiyat": "135,53",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "20"
+    "Kutu_Adedi": "20",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-2222-MKPGN-L",
+    "Açıklama": "M30x2 22L",
     "Fiyat": "158,10",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "20"
+    "Kutu_Adedi": "20",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-2828-MKPGN-L",
+    "Açıklama": "M36x2 28L",
     "Fiyat": "271,05",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "10"
+    "Kutu_Adedi": "10",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-3535-MKPGN-L",
+    "Açıklama": "M45x2 35L",
     "Fiyat": "271,05",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "10"
+    "Kutu_Adedi": "10",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-4242-MKPGN-L",
+    "Açıklama": "M52x2 42L",
     "Fiyat": "361,39",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "5"
+    "Kutu_Adedi": "5",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-0606-MKPGN-S",
+    "Açıklama": "M14x1,5 6S",
     "Fiyat": "85,83",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "20"
+    "Kutu_Adedi": "20",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-0808-MKPGN-S",
+    "Açıklama": "M16x1,5 8S",
     "Fiyat": "85,83",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "20"
+    "Kutu_Adedi": "20",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-1010-MKPGN-S",
+    "Açıklama": "M18x1,5 10S",
     "Fiyat": "85,83",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "20"
+    "Kutu_Adedi": "20",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-1212-MKPGN-S",
+    "Açıklama": "M20x1,5 12S",
     "Fiyat": "85,83",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "20"
+    "Kutu_Adedi": "20",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-1616-MKPGN-S",
+    "Açıklama": "M24x1,5 16S",
     "Fiyat": "112,94",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "15"
+    "Kutu_Adedi": "15",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-2020-MKPGN-S",
+    "Açıklama": "M30x2 20S",
     "Fiyat": "158,10",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "10"
+    "Kutu_Adedi": "10",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-2525-MKPGN-S",
+    "Açıklama": "M36x2 25S",
     "Fiyat": "180,70",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "10"
+    "Kutu_Adedi": "10",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-3030-MKPGN-S",
+    "Açıklama": "M42x2 30S",
     "Fiyat": "271,05",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "5"
+    "Kutu_Adedi": "5",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-3838-MKPGN-S",
+    "Açıklama": "M52x2 38S",
     "Fiyat": "361,39",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "5"
+    "Kutu_Adedi": "5",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-1206-MKDL",
+    "Açıklama": "M12x1,5 6L",
     "Fiyat": "86,63",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "50"
+    "Kutu_Adedi": "50",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-1408-MKDL",
+    "Açıklama": "M14x1,5 8L",
     "Fiyat": "88,25",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "50"
+    "Kutu_Adedi": "50",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-1610-MKDL",
+    "Açıklama": "M16x1,5 10L",
     "Fiyat": "91,94",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "50"
+    "Kutu_Adedi": "50",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-1812-MKDL",
+    "Açıklama": "M18x1,5 12L",
     "Fiyat": "93,81",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "50"
+    "Kutu_Adedi": "50",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-2115-MKDL",
+    "Açıklama": "M22x1,5 15L",
     "Fiyat": "120,42",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "30"
+    "Kutu_Adedi": "30",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-2618-MKDL",
+    "Açıklama": "M26x1,5 18L",
     "Fiyat": "151,77",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "25"
+    "Kutu_Adedi": "25",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-3022-MKDL",
+    "Açıklama": "M30x2 22L",
     "Fiyat": "226,09",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "25"
+    "Kutu_Adedi": "25",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-3628-MKDL",
+    "Açıklama": "M36x2 28L",
     "Fiyat": "308,32",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "10"
+    "Kutu_Adedi": "10",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-4535-MKDL",
+    "Açıklama": "M45x2 35L",
     "Fiyat": "408,03",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "10"
+    "Kutu_Adedi": "10",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-5242-MKDL",
+    "Açıklama": "M52x2 42L",
     "Fiyat": "582,98",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "5"
+    "Kutu_Adedi": "5",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-2012-MKDS",
+    "Açıklama": "M20x1,5 12S",
     "Fiyat": "112,42",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "30"
+    "Kutu_Adedi": "30",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-2416-MKDS",
+    "Açıklama": "M24x1,5 16S",
     "Fiyat": "120,23",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "30"
+    "Kutu_Adedi": "30",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-3020-MKDS",
-    "Fiyat": "203,59",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "10"
+    "Açıklama": "M30x2 20S",
+    "Fiyat": "206,59",
+    "Kutu_Adedi": "10",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-3625-MKDS",
+    "Açıklama": "M36x2 25S",
     "Fiyat": "270,83",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "15"
+    "Kutu_Adedi": "10",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-4230-MKDS",
-    "Fiyat": "305,49",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "10"
+    "Açıklama": "M42x2 30S",
+    "Fiyat": "305,43",
+    "Kutu_Adedi": "5",
+    "Para_Birimi": "TL"
   },
   {
     "Malzeme_Kodu": "RK-5238-MKDS",
+    "Açıklama": "M52x2 38S",
     "Fiyat": "582,98",
-    "Para_Birimi": "TL",
-    "Kutu_Adedi": "5"
+    "Kutu_Adedi": "5",
+    "Para_Birimi": "TL"
   }
 ]
 ```
