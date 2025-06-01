@@ -19,6 +19,8 @@ def _setup_streamlit(monkeypatch):
     for lvl in ("success", "error", "warning", "info"):
         setattr(st_stub, lvl, make(lvl))
 
+    st_stub.get_option = lambda name: {}
+
     monkeypatch.setitem(sys.modules, "streamlit", st_stub)
 
     # Minimal stubs for optional dependencies
@@ -58,4 +60,6 @@ def test_big_alert_default_icon(monkeypatch, tmp_path):
     assert "success" in captured
     msg, allow = captured["success"]
     assert icons.SUCCESS_ICON_B64 in msg
+    assert "<div" in msg
+    assert "Hello" in msg
     assert allow is True
