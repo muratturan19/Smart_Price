@@ -115,7 +115,11 @@ def main() -> None:
 
     root_dir = Path(__file__).resolve().parents[2]
     sidebar_logo = root_dir / "logo" / "sadece dp şeffaf.PNG"
-    st.sidebar.image(str(sidebar_logo), use_column_width=True)
+    sidebar_logo_b64 = _img_to_base64(sidebar_logo)
+    st.sidebar.markdown(
+        f"<img src='data:image/png;base64,{sidebar_logo_b64}' style='width:60px;margin-bottom:10px;' />",
+        unsafe_allow_html=True,
+    )
 
     top_logo = root_dir / "logo" / "delta logo -150p.png"
     encoded = _img_to_base64(top_logo)
@@ -124,10 +128,9 @@ def main() -> None:
         <style>
             .top-right-logo {{
                 position: fixed;
-                top: 10px;
-                right: 10px;
-                width: 15vw;
-                max-width: 150px;
+                top: 30px;
+                right: 40px;
+                width: 180px;
                 z-index: 1000;
             }}
         </style>
