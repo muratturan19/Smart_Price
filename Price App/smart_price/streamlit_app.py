@@ -19,6 +19,13 @@ import base64
 from smart_price import icons
 from smart_price.ui_utils import img_to_base64
 
+left_logo_url = (
+    "https://raw.githubusercontent.com/muratturan19/Smart_Price/main/logo/dp_Seffaf_logo.PNG"
+)
+right_logo_url = (
+    "https://raw.githubusercontent.com/muratturan19/Smart_Price/main/logo/sadece_dp_seffaf.PNG"
+)
+
 from smart_price.core.extract_excel import extract_from_excel
 from smart_price.core.extract_pdf import extract_from_pdf, MIN_CODE_RATIO
 from smart_price import config
@@ -501,8 +508,8 @@ def main():
     _configure_tesseract()
     st.set_page_config(layout="wide")
 
-    left_logo_b64 = img_to_base64(Path(resource_path("logo/dp_logo.png")))
-    right_logo_b64 = img_to_base64(Path(resource_path("logo/delta_logo_150p.png")))
+    left_logo_b64 = img_to_base64(left_logo_url)
+    right_logo_b64 = img_to_base64(right_logo_url)
 
     header_html = f"""
         <header class='app-header'>

@@ -9,9 +9,15 @@ import pandas as pd
 import requests
 import streamlit as st
 from pathlib import Path
-import base64
 import sys
 from smart_price.ui_utils import img_to_base64, logo_overlay
+
+left_logo_url = (
+    "https://raw.githubusercontent.com/muratturan19/Smart_Price/main/logo/dp_Seffaf_logo.PNG"
+)
+right_logo_url = (
+    "https://raw.githubusercontent.com/muratturan19/Smart_Price/main/logo/sadece_dp_seffaf.PNG"
+)
 
 
 def resource_path(relative: str) -> str:
@@ -117,8 +123,7 @@ def search_page(df: pd.DataFrame) -> None:
 def main() -> None:
     st.set_page_config(layout="wide")
 
-    sidebar_logo = Path(resource_path("logo/dp_logo.png"))
-    sidebar_logo_b64 = img_to_base64(sidebar_logo)
+    sidebar_logo_b64 = img_to_base64(left_logo_url)
     st.sidebar.markdown(
         f"<img src='data:image/png;base64,{sidebar_logo_b64}' "
         "style='display:block;margin:20px auto 10px;"
@@ -126,8 +131,7 @@ def main() -> None:
         unsafe_allow_html=True,
     )
 
-    top_logo = Path(resource_path("logo/delta_logo_150p.png"))
-    logo_overlay(top_logo, tooltip="Delta Proje")
+    logo_overlay(right_logo_url, tooltip="Delta Proje")
 
     st.sidebar.title("Smart Price Sales")
     df = get_master_dataset()
