@@ -14,6 +14,10 @@ pip install .
 
 The tools attempt to locate the `tesseract` executable automatically using `shutil.which`. If `TESSDATA_PREFIX` is already defined it is respected, otherwise the location of the bundled language files is guessed from the executable path. When `tesseract` cannot be found a Windows default of `D:\Program Files\Tesseract-OCR` is used.
 
+The Poppler utilities `pdftoppm.exe`, `pdftocairo.exe` and `pdfinfo.exe` are
+also required for PDF processing. They are bundled in the `poppler/bin`
+directory.
+
 PDF files are parsed entirely through GPT‑4o Vision. Each page image is generated with **pdf2image** and sent to the model with a Turkish prompt. The response contains structured JSON for the rows.
 
 ### LLM assistance
@@ -44,7 +48,9 @@ once the executable is launched.  It also adds the `logo` folder to ensure
 the images used by the interface are packaged together with the `.streamlit`
 configuration folder.  The resulting binary will appear in the `dist` folder.
 Both Poppler and Tesseract binaries are bundled from the `poppler/bin` folder
-so no separate installation is required.  If you store these tools elsewhere
+so no separate installation is required.  This directory now also contains
+`pdfinfo.exe` from the same Poppler release as `pdftoppm.exe` and
+`pdftocairo.exe`.  If you store these tools elsewhere
 edit `POPLPLERDIR` (and set `TESSERACT_CMD` if needed) in
 `build_windows_exe.bat` to point to the correct paths.  The batch file
 collects all Streamlit resources so the executable launches without a
