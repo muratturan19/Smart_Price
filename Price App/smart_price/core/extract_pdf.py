@@ -37,6 +37,7 @@ import time
 from . import ocr_llm_fallback
 from pathlib import Path
 from .debug_utils import save_debug, set_output_subdir
+from .prompt_utils import prompts_for_pdf
 from .github_upload import upload_folder, _sanitize_repo_path
 
 MIN_CODE_RATIO = 0.70
@@ -92,6 +93,7 @@ def extract_from_pdf(
     *,
     filename: str | None = None,
     log: Optional[Callable[[str, str], None]] = None,
+    prompt: str | dict[int, str] | None = None,
 ) -> pd.DataFrame:
     """Extract product information from a PDF file."""
     page_summary: list[dict[str, object]] = []
@@ -108,6 +110,7 @@ def extract_from_pdf(
     output_stem = Path(src).stem
     sanitized_base = _sanitize_repo_path(output_stem)
     set_output_subdir(output_stem)
+    guide_prompt = prompt or prompts_for_pdf(src)
     notify(f"Processing {src} started at {datetime.now():%Y-%m-%d %H:%M:%S}")
     total_start = time.time()
 
@@ -349,6 +352,7 @@ def extract_from_pdf(
         result = ocr_llm_fallback.parse(
             path_for_llm,
             output_name=output_stem if tmp_for_llm else None,
+            prompt=guide_prompt,
         )
         notify("Sat\u0131rlar\u0131n g\u00f6rselleri haz\u0131rlan\u0131yor...")
         page_summary = getattr(result, "page_summary", [])

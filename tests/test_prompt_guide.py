@@ -1,0 +1,42 @@
+import sys
+import types
+
+# Ensure repo root on path
+import os
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
+from smart_price import config
+import smart_price.core.extract_pdf as pdf_mod
+
+
+class DummyResult:
+    empty = True
+
+
+def _run_extract(tmp_path, guide_content, filename="dummy.pdf"):
+    guide_path = tmp_path / "guide.csv"
+    guide_path.write_text(guide_content)
+    setattr(config, "EXTRACTION_GUIDE_PATH", guide_path)
+
+    captured = {}
+
+    def fake_parse(path, *, output_name=None, prompt=None, page_range=None):
+        captured["prompt"] = prompt
+        return DummyResult()
+
+    pdf_mod.ocr_llm_fallback.parse = fake_parse
+    pdf_mod.upload_folder = lambda *a, **k: None
+    pdf_mod.set_output_subdir = lambda *_: None
+
+    pdf_mod.extract_from_pdf(filename)
+    return captured.get("prompt")
+
+
+def test_guide_hit(monkeypatch, tmp_path):
+    prompt = _run_extract(tmp_path, "pdf,page,prompt\ndummy.pdf,1,HELLO\n")
+    assert prompt == {1: "HELLO"}
+
+
+def test_guide_miss(monkeypatch, tmp_path):
+    prompt = _run_extract(tmp_path, "pdf,page,prompt\nother.pdf,1,HELLO\n")
+    assert prompt is None
