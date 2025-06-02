@@ -7,11 +7,13 @@ set SCRIPT=run_app.py
 set DATAFOLDER=data
 set LOGOFOLDER=logo
 set PRICEAPP=Price App
+set STREAMLITCFG=.streamlit
 
 pyinstaller --noconfirm --onefile ^
     --add-data "%DATAFOLDER%;%DATAFOLDER%" ^
     --add-data "%LOGOFOLDER%;logo" ^
     --add-data "%PRICEAPP%;Price App" ^
+    --add-data "%STREAMLITCFG%;.streamlit" ^
     --hidden-import "streamlit.web.cli" --collect-all streamlit "%SCRIPT%"
 
 ECHO Build complete. Look in the dist folder for the EXE.
