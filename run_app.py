@@ -5,6 +5,8 @@ import pathlib
 # Ensure a consistent Streamlit configuration when packaged
 os.environ["STREAMLIT_SERVER_PORT"] = "8501"
 os.environ["STREAMLIT_SERVER_HEADLESS"] = "true"
+# Disable development mode to allow custom ports when packaged
+os.environ["STREAMLIT_GLOBAL_DEVELOPMENT_MODE"] = "false"
 try:
     from dotenv import load_dotenv, find_dotenv
 except ImportError:  # pragma: no cover - support missing find_dotenv
