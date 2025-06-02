@@ -290,8 +290,8 @@ def save_master_dataset(
             record_code TEXT,
             year INTEGER,
             brand TEXT,
-            main_title TEXT,
-            sub_title TEXT,
+            main_header TEXT,
+            sub_header TEXT,
             category TEXT
             )"""
         )
@@ -310,8 +310,8 @@ def save_master_dataset(
                 "Record_Code": "record_code",
                 "Yil": "year",
                 "Marka": "brand",
-                "Ana_Baslik": "main_title",
-                "Alt_Baslik": "sub_title",
+                "Ana_Baslik": "main_header",
+                "Alt_Baslik": "sub_header",
                 "Kategori": "category",
             },
             inplace=True,
@@ -329,8 +329,8 @@ def save_master_dataset(
             "record_code",
             "year",
             "brand",
-            "main_title",
-            "sub_title",
+            "main_header",
+            "sub_header",
             "category",
         ]:
             if col not in db_df.columns:
@@ -348,11 +348,11 @@ def save_master_dataset(
                 "image_path",
                 "record_code",
                 "year",
-                "brand",
-                "main_title",
-                "sub_title",
-                "category",
-            ]
+            "brand",
+            "main_header",
+            "sub_header",
+            "category",
+        ]
         ]
         db_df.to_sql("prices", conn, if_exists="replace", index=False)
     conn.close()

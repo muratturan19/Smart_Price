@@ -74,6 +74,8 @@ smart-price-parser data/list.xlsx another.pdf -o merged_prices.xlsx
 The parser writes its results to `output/` by default. Set `OUTPUT_DIR` to
 change this location or specify `OUTPUT_EXCEL`, `OUTPUT_DB` and `OUTPUT_LOG`
 to override each individual path.
+The resulting SQLite database contains `main_header` and `sub_header`
+columns to store any detected section headings.
 
 ### Running the Streamlit interface
 
