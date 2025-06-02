@@ -182,7 +182,7 @@ def test_llm_prompt_and_clean(monkeypatch):
 
     result = func('sample')
     assert cleaned == ['[{"name":"A","price":"4"}]']
-    assert 'PDF fiyat listesi analiz asistanısın' in captured_prompt[0]
+    assert 'Extraction_guide Kullanımı' in captured_prompt[0]
     assert result == [{
         'Malzeme_Adi': 'A',
         'Fiyat': 4.0,
