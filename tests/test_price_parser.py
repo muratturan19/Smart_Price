@@ -67,10 +67,10 @@ def test_extract_from_excel_basic(tmp_path):
     assert len(result) == 2
     assert result.iloc[0]["Fiyat"] == 1000.50
     assert result.iloc[1]["Fiyat"] == 2500.75
-    assert result["Descriptions"].tolist() == ["Elma", "Armut"]
+    assert result["Açıklama"].tolist() == ["Elma", "Armut"]
     expected_cols = [
         "Malzeme_Kodu",
-        "Descriptions",
+        "Açıklama",
         "Kisa_Kod",
         "Fiyat",
         "Para_Birimi",
@@ -120,7 +120,7 @@ def test_extract_from_pdf_llm_fallback(monkeypatch):
     def fake_parse(path, page_range=None):
         llm_calls.append({"path": path, "page_range": page_range})
         import pandas as pd
-        return pd.DataFrame({"Malzeme_Kodu": ["X"], "Descriptions": ["ItemZ"], "Fiyat": [55.0]})
+        return pd.DataFrame({"Malzeme_Kodu": ["X"], "Açıklama": ["ItemZ"], "Fiyat": [55.0]})
 
     import smart_price.core.extract_pdf as pdf_mod
     monkeypatch.setattr(pdf_mod.ocr_llm_fallback, "parse", fake_parse)
@@ -128,7 +128,7 @@ def test_extract_from_pdf_llm_fallback(monkeypatch):
     result = extract_from_pdf("dummy.pdf")
     assert len(result) == 1
     assert result.iloc[0]["Fiyat"] == 55.0
-    assert result.iloc[0]["Descriptions"] == "ItemZ"
+    assert result.iloc[0]["Açıklama"] == "ItemZ"
     assert len(llm_calls) == 1
 
 
@@ -203,7 +203,7 @@ def test_extract_from_pdf_llm_only(monkeypatch):
     def fake_parse(path, page_range=None):
         called['path'] = path
         import pandas as pd
-        return pd.DataFrame({"Descriptions": ["A"], "Fiyat": [1.0]})
+        return pd.DataFrame({"Açıklama": ["A"], "Fiyat": [1.0]})
 
     import sys
 
@@ -232,7 +232,7 @@ def test_extract_from_excel_xls(tmp_path):
     result = extract_from_excel(str(file))
     assert len(result) == 1
     assert result.iloc[0]["Fiyat"] == 1000.50
-    assert result["Descriptions"].tolist() == ["Elma"]
+    assert result["Açıklama"].tolist() == ["Elma"]
 
 
 def test_extract_from_excel_code_only(tmp_path):
@@ -247,7 +247,7 @@ def test_extract_from_excel_code_only(tmp_path):
 
     result = extract_from_excel(str(file))
     assert result["Malzeme_Kodu"].tolist() == ["C1", "D2"]
-    assert result["Descriptions"].tolist() == ["C1", "D2"]
+    assert result["Açıklama"].tolist() == ["C1", "D2"]
 
 
 def test_extract_from_excel_tip_header(tmp_path):
@@ -262,7 +262,7 @@ def test_extract_from_excel_tip_header(tmp_path):
 
     result = extract_from_excel(str(file))
     assert result["Malzeme_Kodu"].tolist() == ["C1", "D2"]
-    assert result["Descriptions"].tolist() == ["C1", "D2"]
+    assert result["Açıklama"].tolist() == ["C1", "D2"]
 
 
 def test_extract_from_excel_with_titles(tmp_path):
@@ -304,10 +304,10 @@ def test_extract_from_excel_bytesio():
     assert len(result) == 2
     assert result.iloc[0]["Fiyat"] == 1000.50
     assert result.iloc[1]["Fiyat"] == 2500.75
-    assert result["Descriptions"].tolist() == ["Elma", "Armut"]
+    assert result["Açıklama"].tolist() == ["Elma", "Armut"]
     expected_cols = [
         "Malzeme_Kodu",
-        "Descriptions",
+        "Açıklama",
         "Kisa_Kod",
         "Fiyat",
         "Para_Birimi",
@@ -336,7 +336,7 @@ def test_extract_from_excel_header_normalization(tmp_path):
 
     result = extract_from_excel(str(file))
     assert result.iloc[0]["Malzeme_Kodu"] == "001"
-    assert result["Descriptions"].tolist() == ["Elma"]
+    assert result["Açıklama"].tolist() == ["Elma"]
 
 def test_normalize_price_various_formats():
     assert normalize_price("1.234,56") == 1234.56
@@ -401,7 +401,7 @@ def test_extract_from_excel_brand_from_filename(tmp_path):
 
     result = extract_from_excel(str(file))
     assert result.iloc[0]["Marka"] == "Acme"
-    assert result["Descriptions"].tolist() == ["Elma"]
+    assert result["Açıklama"].tolist() == ["Elma"]
 
 
 def test_extract_from_excel_brand_filename_param():
@@ -418,7 +418,7 @@ def test_extract_from_excel_brand_filename_param():
 
     result = extract_from_excel(buf, filename="BrandX_prices.xlsx")
     assert result.iloc[0]["Marka"] == "BrandX"
-    assert result["Descriptions"].tolist() == ["Elma"]
+    assert result["Açıklama"].tolist() == ["Elma"]
 
 
 def test_extract_from_excel_brand_from_filename_multiword(tmp_path):
@@ -433,7 +433,7 @@ def test_extract_from_excel_brand_from_filename_multiword(tmp_path):
 
     result = extract_from_excel(str(file))
     assert result.iloc[0]["Marka"] == "Omega Motor"
-    assert result["Descriptions"].tolist() == ["Elma"]
+    assert result["Açıklama"].tolist() == ["Elma"]
 
 
 def test_extract_from_excel_short_code(tmp_path):
@@ -453,7 +453,7 @@ def test_extract_from_excel_short_code(tmp_path):
 
     result = extract_from_excel(str(file))
     assert result.iloc[0]["Kisa_Kod"] == "A1"
-    assert result["Descriptions"].tolist() == ["Elma"]
+    assert result["Açıklama"].tolist() == ["Elma"]
 
 
 def test_extract_from_excel_short_code_english_header(tmp_path):
@@ -473,7 +473,7 @@ def test_extract_from_excel_short_code_english_header(tmp_path):
 
     result = extract_from_excel(str(file))
     assert result.iloc[0]["Kisa_Kod"] == "BB"
-    assert result["Descriptions"].tolist() == ["Pear"]
+    assert result["Açıklama"].tolist() == ["Pear"]
 
 
 def test_extract_from_excel_default_currency(tmp_path):
@@ -489,7 +489,7 @@ def test_extract_from_excel_default_currency(tmp_path):
     result = extract_from_excel(str(file))
     assert result.iloc[0]["Para_Birimi"] == "TL"
     assert result.iloc[0]["Fiyat"] == 100.0
-    assert result["Descriptions"].tolist() == ["Elma"]
+    assert result["Açıklama"].tolist() == ["Elma"]
 
 
 def test_extract_from_pdf_default_currency(monkeypatch):
@@ -529,7 +529,7 @@ def test_extract_from_pdf_default_currency(monkeypatch):
     assert result.iloc[0]["Fiyat"] == 100.0
     expected_cols = [
         "Malzeme_Kodu",
-        "Descriptions",
+        "Açıklama",
         "Kisa_Kod",
         "Fiyat",
         "Para_Birimi",
@@ -586,7 +586,7 @@ def test_extract_from_pdf_table_headers(monkeypatch):
     assert result.iloc[1]["Fiyat"] == 2500.75
     expected_cols = [
         "Malzeme_Kodu",
-        "Descriptions",
+        "Açıklama",
         "Kisa_Kod",
         "Fiyat",
         "Para_Birimi",
@@ -655,7 +655,7 @@ def test_merge_files_casts_to_string(monkeypatch):
     df = pd.DataFrame(
         {
             "Malzeme_Kodu": [1, 2],
-            "Descriptions": ["A", "B"],
+            "Açıklama": ["A", "B"],
             "Kisa_Kod": [10, None],
             "Fiyat": [5, 6],
             "Para_Birimi": ["TL", "TL"],
@@ -687,7 +687,7 @@ def test_merge_files_pdf_called(monkeypatch):
     df = pd.DataFrame(
         {
             "Malzeme_Kodu": ["C1"],
-            "Descriptions": ["A"],
+            "Açıklama": ["A"],
             "Kisa_Kod": [None],
             "Fiyat": [5],
             "Para_Birimi": ["TL"],
@@ -729,21 +729,21 @@ def test_merge_files_dedup_by_code_and_price(monkeypatch):
     df_map = {
         "f1.xlsx": pd.DataFrame({
             "Malzeme_Kodu": ["X"],
-            "Descriptions": ["Item"],
+            "Açıklama": ["Item"],
             "Fiyat": [1.0],
             "Kaynak_Dosya": ["f1.xlsx"],
             "Ana_Baslik": ["T1"],
         }),
         "f2.xlsx": pd.DataFrame({
             "Malzeme_Kodu": ["X"],
-            "Descriptions": ["Item"],
+            "Açıklama": ["Item"],
             "Fiyat": [1.0],
             "Kaynak_Dosya": ["f2.xlsx"],
             "Ana_Baslik": ["T2"],
         }),
         "f3.xlsx": pd.DataFrame({
             "Malzeme_Kodu": ["X"],
-            "Descriptions": ["Item"],
+            "Açıklama": ["Item"],
             "Fiyat": [2.0],
             "Kaynak_Dosya": ["f3.xlsx"],
             "Ana_Baslik": ["T3"],
@@ -806,7 +806,7 @@ def test_llm_debug_files(monkeypatch, tmp_path):
     import smart_price.core.extract_pdf as pdf_mod
 
     def fake_parse(path, page_range=None):
-        return pd.DataFrame({"Malzeme_Kodu": ["X"], "Descriptions": ["A"], "Fiyat": [1.0]})
+        return pd.DataFrame({"Malzeme_Kodu": ["X"], "Açıklama": ["A"], "Fiyat": [1.0]})
 
     monkeypatch.setattr(pdf_mod.ocr_llm_fallback, "parse", fake_parse)
 
@@ -868,7 +868,7 @@ def test_extract_from_pdf_llm_sets_page_added(monkeypatch):
     def fake_parse(path, page_range=None):
         llm_calls.append({"path": path, "page_range": page_range})
         import pandas as pd
-        return pd.DataFrame({"Descriptions": ["X"], "Fiyat": [5.0]})
+        return pd.DataFrame({"Açıklama": ["X"], "Fiyat": [5.0]})
 
     monkeypatch.setattr(pdf_mod.ocr_llm_fallback, "parse", fake_parse)
 
@@ -889,7 +889,7 @@ def test_price_parser_db_schema(monkeypatch, tmp_path):
     sample_df = pd.DataFrame(
         {
             "Malzeme_Kodu": ["A1"],
-            "Descriptions": ["Item"],
+            "Açıklama": ["Item"],
             "Fiyat": [10.0],
             "Birim": ["ADET"],
             "Kutu_Adedi": ["5"],

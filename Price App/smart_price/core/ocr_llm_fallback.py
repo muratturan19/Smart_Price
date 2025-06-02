@@ -279,7 +279,7 @@ def parse(
             page_rows.append(
                 {
                     "Malzeme_Kodu": code,
-                    "Descriptions": descr,
+                    "Açıklama": descr,
                     "Ana_Baslik": main_title,
                     "Alt_Baslik": sub_title,
                     "Fiyat": normalize_price(price_raw),
