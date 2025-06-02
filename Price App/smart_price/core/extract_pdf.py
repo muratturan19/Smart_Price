@@ -138,130 +138,67 @@ def extract_from_pdf(
         logger.debug("Using model %s on text excerpt: %r", model_name, excerpt)
 
         prompt = """
-        Sen bir Malzeme_Kodu - Fiyat çıkarma asistanısın ve görevin karmaşık yapılı,
-        farklı ifadelerler yazılmış pdf dosyalarından Malzeme_Kodu - Fiyat ve varsa
-        diğer bilgileri çıkarmak. PDF dosyası sana sayfa sayfa image olarak
-        verilecek. Birçok pdf çıktısı tek dosyada toplanacağından çıkarımlar aynı
-        başlıklarla yapılmalı.
+Sen bir PDF fiyat listesi analiz asistanısın. Amacın, PDF’lerdeki ürün tablosu/ürün satırlarını ve bunların üst başlıklarını tam olarak, eksiksiz ve yapısal şekilde çıkarmaktır.
 
-        Aşağıda detaylı çalışma talimatların var:
+**Çalışma Akışın:**
 
-        1. Başlık Kümeleri (RAW_HEADERS)
-        Malzeme_Kodu (RAW_CODE_HEADERS):
-        Ürün, ürün adı, ürün kodu, kod, malzeme, malzeme kodu, part no, part code,
-        item code, code, stock code, vs.
+1. **Her PDF için, özel extraction talimatları olup olmadığını kontrol etmelisin:**
+    - Sistemde “extraction_guide” adında bir referans dosyası olabilir.
+    - Eğer bu dosya mevcutsa ve işlediğin PDF’ye (veya sayfa/alanına) ait özel bir extraction promptu/talimatı varsa, önce bu talimata uygun şekilde çıkarım yap.
+    - Eğer dosyada talimat bulunamazsa veya extraction_guide dosyası hiç yoksa, aşağıdaki _Genel Extraction Talimatları_ ile devam et.
 
-        Açıklama (RAW_DESC_HEADERS):
-        Açıklama, tip, tanım, description
+2. **Dosya veya talimat yoksa, hata verme; genel kurallarla standart extraction yap.**
 
-        Fiyat (RAW_PRICE_HEADERS):
-        Fiyat, birim fiyat, price, tl, amount, tutar, unit price, vs.
+---
 
-        Ek Sütunlar:
-        Adet, quantity, birim, para birimi, marka, kutu adedi...
+### **Genel Extraction Talimatları:**
 
-        2. Extraction Kuralları
-        Tabloda RAW_CODE_HEADERS ile eşleşen başlık altındaki tüm satırları veri
-        olarak işle.
+- Her ürün satırının;
+    - Hangi ana başlık altında olduğunu (“Ana_Baslik”)
+    - Hangi alt başlık altında olduğunu (“Alt_Baslik” – varsa)
+    - Ürün kodu, fiyatı, açıklaması/özellikleri, varsa adet, birim, para birimi, kutu adedi, marka gibi tüm alanlarını
+    - PDF dosya adı (“Kaynak_Dosya”) ve sayfa numarasını (“Sayfa”)
+    açık şekilde ayrıştır.
 
-        Her satırda Malzeme_Kodu ve Fiyat zorunlu; diğer alanlar varsa al, yoksa boş
-        bırak.
+- Tablo başlıklarını, alt başlıkları, genel açıklamaları **veri satırı olarak alma**;
+  sadece gerçek ürün satırlarını çıkart.
 
-        Ek bilgiler (Açıklama, Adet, Para Birimi vs.) mevcutsa çek, yoksa hata olarak
-        sayma.
+- Çıktı formatın JSON dizi olacak.
+  Her veri satırı için:
+    - Ana_Baslik (zorunlu)
+    - Alt_Baslik (varsa, zorunlu değil)
+    - Malzeme_Kodu (zorunlu)
+    - Açıklama/Özellikler (varsa)
+    - Fiyat (zorunlu)
+    - Para_Birimi (yoksa “TL” yaz)
+    - Kaynak_Dosya
+    - Sayfa
+    - (Varsa ek alanlar: Adet, Birim, Marka, Kutu_Adedi...)
 
-        Para birimi görünmüyorsa, varsayılan TL olarak ekle.
+---
 
-        3. Extraction Sırasında
-        Tablo başlığı, alt başlıklar veya sayfa açıklamaları kesinlikle veri olarak
-        alınmayacak.
+### **Extraction_guide Kullanımı:**
+- extraction_guide adlı dosya varsa, PDF başlığına veya dosya adına uygun talimatı uygula.
+- Bulamazsan veya extraction_guide yoksa, bu prompttaki _Genel Extraction Talimatları_ ile çalış.
 
-        Sadece RAW_HEADERS ile eşleşen sütunların altındaki gerçek ürün satırları
-        çıkarılacak.
+---
 
-        Malzeme_Kodu veya Fiyat boş olan satır atılacak.
-        
-        4. Eğer bir ürün kodunun bulunduğu satırda, sağında birden fazla fiyat sütunu varsa:
-        Her fiyat sütununun başlığını ürün kodunun sonuna “-” ile ekleyip,
-        ortaya çıkan bu yeni ifadeyi (ör. “DK24 - Plastik”) Malzeme_Kodu olarak kaydet.
-        Fiyatı ilgili değeriyle birlikte yaz.
-        Diğer alanlar yoksa boş bırak, açıklama alanını kullanma.
+### **Çıktı Örneği:**
 
-        Örnek:
-
-        Tablo:
-        Ürün Kodu	Plastik	Yedek Tek Dişli	DK Takım
-        DK24	45	80	205
-        Doğru Extraction Çıktısı:
-        
-        [
-          {
-            "Malzeme_Kodu": "DK24 - Plastik",
-            "Fiyat": "45",
-            "Para_Birimi": "TL"
-          },
-          {
-            "Malzeme_Kodu": "DK24 - Yedek Tek Dişli",
-            "Fiyat": "80",
-            "Para_Birimi": "TL"
-          },
-          {
-            "Malzeme_Kodu": "DK24 - DK Takım",
-            "Fiyat": "205",
-            "Para_Birimi": "TL"
-          }
-        ]
-
-
-        5. Çıktı Formatı
-        Her veri satırı (varsa):
-
-        Malzeme_Kodu
-        Açıklama
-        Fiyat
-        Adet
-        Birim
-        Para_Birimi
-        Marka
-        Kutu_Adedi
-        ... (tabloya göre diğer ek alanlar)
-
-        Çıktı: JSON listesi
-
-        6. Dinamik ve Dili Bağımsız
-        Başlıklar Türkçe, İngilizce, farklı varyasyonlarla gelebilir.
-
-        Senin görevin başlığı tanımak ve doğru alanlara atamak.
-
-        7. Yanlışlar ve Yasaklar
-        Tablo başlığı, sayfa açıklamaları, dipnotlar ürün verisi olarak alınmayacak.
-
-        Sadece ürün satırları dönecek.
-
-        Bir satırda birden fazla ürün varsa, her biri için ayrı satır üretilecek.
-
-        8. Örnek
-        [
-          {
-            "Malzeme_Kodu": "JKS19",
-            "Açıklama": "Jawtex Plastik",
-            "Fiyat": "90,00",
-            "Adet": "50",
-            "Birim": "Adet",
-            "Para_Birimi": "TL"
-          }
-        ]
-        Ek örnek:
-        Tabloda: Ürün Kodu: Ax2234, Description: Çap 12 O ring, Price: 12, Adet: 50
-        Çıktı:
-        Malzeme_Kodu: Ax2234, Açıklama: Çap 12 O ring, Fiyat: 12₺, Adet: 50
-
-        Kısa Samimi Versiyonu:
-        Belirttiğim başlıklar ve eşanlamlılar (RAW_HEADERS) ile eşleşen tablo
-        sütunlarının altındaki tüm veri satırlarını, ilgili alanlarla birlikte
-        eksiksiz döndür.
-        Tablo başlıkları, alt başlıklar ve sayfa üzerindeki genel açıklamalar asla
-        veri satırı olarak alınmasın.
+```
+[
+  {
+    "Ana_Baslik": "IE3 ALÜMİNYUM GÖVDELİ IEC 3~FAZLI ASENKRON ELEKTRİK MOTORLARI",
+    "Alt_Baslik": "2k-3000 d/dak",
+    "Malzeme_Kodu": "3MAS 80MA2",
+    "Açıklama": "0.55 KW",
+    "Fiyat": "110,00",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Omega Motor Fiyat Listesi 2025.pdf",
+    "Sayfa": "14"
+  }
+]
+```
         """
 
         save_debug("llm_prompt", 1, prompt)
