@@ -8,6 +8,7 @@ set DATAFOLDER=data
 set LOGOFOLDER=logo
 set PRICEAPP=Price App
 set STREAMLITCFG=.streamlit
+REM Poppler utilities (pdftoppm.exe, pdftocairo.exe, pdfinfo.exe)
 set POPLPLERDIR=poppler\bin
 
 pyinstaller --noconfirm --onefile ^
