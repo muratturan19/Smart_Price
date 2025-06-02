@@ -32,6 +32,7 @@ def test_defaults(monkeypatch):
         "OUTPUT_LOG",
         "LOG_PATH",
         "BASE_REPO_URL",
+        "EXTRACTION_GUIDE_PATH",
     ):
         monkeypatch.delenv(name, raising=False)
     importlib.reload(cfg)
@@ -50,6 +51,7 @@ def test_defaults(monkeypatch):
     assert cfg.BASE_REPO_URL.endswith("Smart_Price/master")
     assert cfg.DEFAULT_DB_URL == f"{cfg.BASE_REPO_URL}/master.db"
     assert cfg.DEFAULT_IMAGE_BASE_URL == cfg.BASE_REPO_URL
+    assert cfg.EXTRACTION_GUIDE_PATH == root / "extraction_guide.csv"
 
 
 def test_env_and_config_overrides(tmp_path, monkeypatch):
@@ -72,6 +74,7 @@ def test_env_and_config_overrides(tmp_path, monkeypatch):
     monkeypatch.setenv("OUTPUT_LOG", str(tmp_path / "out" / "log.csv"))
     monkeypatch.setenv("LOG_PATH", str(tmp_path / "custom.log"))
     monkeypatch.setenv("BASE_REPO_URL", "http://example.com/repo")
+    monkeypatch.setenv("EXTRACTION_GUIDE_PATH", str(tmp_path / "guide.csv"))
     importlib.reload(cfg)
     cfg.load_config()
     assert cfg.MASTER_EXCEL_PATH == tmp_path / "master.xlsx"
@@ -88,3 +91,4 @@ def test_env_and_config_overrides(tmp_path, monkeypatch):
     assert cfg.BASE_REPO_URL == "http://example.com/repo"
     assert cfg.DEFAULT_DB_URL == "http://example.com/repo/master.db"
     assert cfg.DEFAULT_IMAGE_BASE_URL == "http://example.com/repo"
+    assert cfg.EXTRACTION_GUIDE_PATH == tmp_path / "guide.csv"

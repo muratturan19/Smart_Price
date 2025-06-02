@@ -41,86 +41,7 @@ if TYPE_CHECKING:  # pragma: no cover - type hints only
 
 logger = logging.getLogger("smart_price")
 
-
-def _range_bounds(pages: Sequence[int] | range | None) -> tuple[int | None, int | None]:
-    """Return first and last page numbers from ``pages``."""
-    if not pages:
-        return None, None
-    try:
-        start = pages.start  # type: ignore[attr-defined]
-        end = pages.stop - 1  # type: ignore[attr-defined]
-    except AttributeError:
-        seq = list(pages)  # type: ignore[arg-type]
-        if not seq:
-            return None, None
-        start, end = min(seq), max(seq)
-    return start, end
-
-
-def parse(
-    pdf_path: str,
-    page_range: Iterable[int] | range | None = None,
-    *,
-    output_name: str | None = None,
-) -> pd.DataFrame:
-    """Parse ``pdf_path`` using GPT-4o vision.
-
-    Parameters
-    ----------
-    pdf_path : str
-        Path to the PDF file to parse.
-    page_range : iterable of int or range, optional
-        Pages to include when converting the PDF to images.
-    output_name : str, optional
-        Name of the debug output directory under ``LLM_Output_db``.  Defaults
-        to ``Path(pdf_path).stem``.
-    """
-
-    if output_name is None:
-        output_name = Path(pdf_path).stem
-
-    set_output_subdir(output_name)
-    total_start = time.time()
-
-    try:
-        from pdf2image import convert_from_path  # type: ignore
-    except Exception as exc:  # pragma: no cover - optional deps missing
-        logger.error("pdf2image unavailable: %s", exc)
-        return pd.DataFrame()
-
-    try:
-        kwargs = {"dpi": 300}
-        first, last = _range_bounds(page_range)
-        if first is not None:
-            kwargs["first_page"] = first
-        if last is not None:
-            kwargs["last_page"] = last
-        start_convert = time.time()
-        images = convert_from_path(
-            pdf_path, poppler_path=str(config.POPPLER_PATH), **kwargs
-        )
-        logger.info(
-            "pdf2image.convert_from_path took %.2fs for %d pages",
-            time.time() - start_convert,
-            len(images),
-        )
-    except Exception as exc:  # pragma: no cover - conversion errors
-        logger.error("pdf2image failed for %s: %s", pdf_path, exc)
-        return pd.DataFrame()
-
-    api_key = os.getenv("OPENAI_API_KEY")
-    if api_key:
-        os.environ.setdefault("OPENAI_API_KEY", api_key)
-
-    try:
-        import openai
-    except Exception as exc:  # pragma: no cover - import errors
-        logger.error("OpenAI import failed: %s", exc)
-        return pd.DataFrame()
-
-    model_name = os.getenv("OPENAI_MODEL", "gpt-4o")
-
-    prompt = """
+DEFAULT_PROMPT = """
     Sen bir Malzeme_Kodu - Fiyat çıkarma asistanısın ve görevin karmaşık yapılı,
     farklı ifadelerler yazılmış pdf dosyalarından Malzeme_Kodu - Fiyat ve varsa
     diğer bilgileri çıkarmak. PDF dosyası sana sayfa sayfa image olarak
@@ -163,7 +84,7 @@ def parse(
     çıkarılacak.
 
     Malzeme_Kodu veya Fiyat boş olan satır atılacak.
-    
+
     4. Eğer bir ürün kodunun bulunduğu satırda, sağında birden fazla fiyat sütunu varsa:
     Her fiyat sütununun başlığını ürün kodunun sonuna “-” ile ekleyip,
     ortaya çıkan bu yeni ifadeyi (ör. “DK24 - Plastik”) Malzeme_Kodu olarak kaydet.
@@ -173,8 +94,8 @@ def parse(
     Örnek:
 
     Tablo:
-    Ürün Kodu	Plastik	Yedek Tek Dişli	DK Takım
-    DK24	45	80	205
+    Ürün Kodu   Plastik Yedek Tek Dişli DK Takım
+    DK24        45      80      205
     Doğru Extraction Çıktısı:
 
     [
@@ -247,6 +168,91 @@ def parse(
     veri satırı olarak alınmasın.
     """
 
+
+def _range_bounds(pages: Sequence[int] | range | None) -> tuple[int | None, int | None]:
+    """Return first and last page numbers from ``pages``."""
+    if not pages:
+        return None, None
+    try:
+        start = pages.start  # type: ignore[attr-defined]
+        end = pages.stop - 1  # type: ignore[attr-defined]
+    except AttributeError:
+        seq = list(pages)  # type: ignore[arg-type]
+        if not seq:
+            return None, None
+        start, end = min(seq), max(seq)
+    return start, end
+
+
+def parse(
+    pdf_path: str,
+    page_range: Iterable[int] | range | None = None,
+    *,
+    output_name: str | None = None,
+    prompt: str | dict[int, str] | None = None,
+) -> pd.DataFrame:
+    """Parse ``pdf_path`` using GPT-4o vision.
+
+    Parameters
+    ----------
+    pdf_path : str
+        Path to the PDF file to parse.
+    page_range : iterable of int or range, optional
+        Pages to include when converting the PDF to images.
+    output_name : str, optional
+        Name of the debug output directory under ``LLM_Output_db``.  Defaults
+        to ``Path(pdf_path).stem``.
+    """
+
+    if output_name is None:
+        output_name = Path(pdf_path).stem
+
+    set_output_subdir(output_name)
+    total_start = time.time()
+
+    try:
+        from pdf2image import convert_from_path  # type: ignore
+    except Exception as exc:  # pragma: no cover - optional deps missing
+        logger.error("pdf2image unavailable: %s", exc)
+        return pd.DataFrame()
+
+    try:
+        kwargs = {"dpi": 300}
+        first, last = _range_bounds(page_range)
+        if first is not None:
+            kwargs["first_page"] = first
+        if last is not None:
+            kwargs["last_page"] = last
+        start_convert = time.time()
+        images = convert_from_path(
+            pdf_path, poppler_path=str(config.POPPLER_PATH), **kwargs
+        )
+        logger.info(
+            "pdf2image.convert_from_path took %.2fs for %d pages",
+            time.time() - start_convert,
+            len(images),
+        )
+    except Exception as exc:  # pragma: no cover - conversion errors
+        logger.error("pdf2image failed for %s: %s", pdf_path, exc)
+        return pd.DataFrame()
+
+    api_key = os.getenv("OPENAI_API_KEY")
+    if api_key:
+        os.environ.setdefault("OPENAI_API_KEY", api_key)
+
+    try:
+        import openai
+    except Exception as exc:  # pragma: no cover - import errors
+        logger.error("OpenAI import failed: %s", exc)
+        return pd.DataFrame()
+
+    model_name = os.getenv("OPENAI_MODEL", "gpt-4o")
+
+    def _get_prompt(page: int) -> str:
+        if isinstance(prompt, dict):
+            return prompt.get(page, prompt.get(0, DEFAULT_PROMPT))
+        return prompt if prompt is not None else DEFAULT_PROMPT
+
     rows: list[dict[str, object]] = []
     page_summary: list[dict[str, object]] = []
 
@@ -285,7 +291,7 @@ def parse(
                     {
                         "role": "user",
                         "content": [
-                            {"type": "text", "text": prompt},
+                            {"type": "text", "text": _get_prompt(idx)},
                             {
                                 "type": "image_url",
                                 "image_url": {"url": "data:image/png;base64," + img_base64},
