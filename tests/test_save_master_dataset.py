@@ -67,7 +67,7 @@ def test_save_master_new(tmp_path, monkeypatch):
     assert streamlit_app.config.MASTER_DB_PATH.exists()
     with sqlite3.connect(streamlit_app.config.MASTER_DB_PATH) as conn:
         rows = conn.execute(
-            "SELECT material_code, description, price, brand, main_title, sub_title FROM prices"
+            "SELECT material_code, description, price, brand, main_header, sub_header FROM prices"
         ).fetchall()
     assert rows == [("A1", "Item", 1.0, "BrandA", None, None)]
     assert len(saved) == 1

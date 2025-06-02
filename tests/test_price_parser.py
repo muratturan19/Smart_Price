@@ -936,8 +936,8 @@ def test_price_parser_db_schema(monkeypatch, tmp_path):
         "record_code",
         "year",
         "brand",
-        "main_title",
-        "sub_title",
+        "main_header",
+        "sub_header",
         "category",
     ]
     cur.execute("SELECT * FROM prices")

@@ -158,8 +158,8 @@ def main() -> None:
             record_code TEXT,
             year INTEGER,
             brand TEXT,
-            main_title TEXT,
-            sub_title TEXT,
+            main_header TEXT,
+            sub_header TEXT,
             category TEXT
             )"""
         )
@@ -177,8 +177,8 @@ def main() -> None:
                 "Record_Code": "record_code",
                 "Yil": "year",
                 "Marka": "brand",
-                "Ana_Baslik": "main_title",
-                "Alt_Baslik": "sub_title",
+                "Ana_Baslik": "main_header",
+                "Alt_Baslik": "sub_header",
                 "Kategori": "category",
             },
             inplace=True,
@@ -196,8 +196,8 @@ def main() -> None:
             "record_code",
             "year",
             "brand",
-            "main_title",
-            "sub_title",
+            "main_header",
+            "sub_header",
             "category",
         ]:
             if col not in master.columns:
@@ -216,8 +216,8 @@ def main() -> None:
             "record_code",
             "year",
             "brand",
-            "main_title",
-            "sub_title",
+            "main_header",
+            "sub_header",
             "category",
         ]
         ]
