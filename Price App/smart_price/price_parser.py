@@ -138,7 +138,7 @@ def main() -> None:
         return
     master = pd.concat(all_extracted, ignore_index=True)
     master.drop_duplicates(subset=["Malzeme_Kodu", "Fiyat"], keep="last", inplace=True)
-    master.sort_values(by="Descriptions", inplace=True)
+    master.sort_values(by="Açıklama", inplace=True)
     master.to_excel(args.output, index=False)
     logger.info("Saved %d records to %s", len(master), args.output)
 
@@ -166,7 +166,7 @@ def main() -> None:
         master.rename(
             columns={
                 "Malzeme_Kodu": "material_code",
-                "Descriptions": "description",
+                "Açıklama": "description",
                 "Fiyat": "price",
                 "Birim": "unit",
                 "Kutu_Adedi": "box_count",

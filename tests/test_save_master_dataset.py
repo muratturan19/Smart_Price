@@ -50,7 +50,7 @@ def test_save_master_new(tmp_path, monkeypatch):
     monkeypatch.setattr(streamlit_app, "upload_folder", lambda *_a, **_k: False)
     df = pd.DataFrame({
         'Malzeme_Kodu': ['A1'],
-        'Descriptions': ['Item'],
+        'Açıklama': ['Item'],
         'Fiyat': [1.0],
         'Kaynak_Dosya': ['new.xlsx'],
         'Marka': ['BrandA']
@@ -85,7 +85,7 @@ def test_save_master_update(tmp_path, monkeypatch):
     monkeypatch.setattr(streamlit_app, "upload_folder", lambda *_a, **_k: False)
     master = pd.DataFrame({
         'Malzeme_Kodu': ['X1', 'Y1'],
-        'Descriptions': ['Old', 'Keep'],
+        'Açıklama': ['Old', 'Keep'],
         'Fiyat': [2.0, 3.0],
         'Kaynak_Dosya': ['old.xlsx', 'keep.xlsx'],
         'Marka': ['BrandOld', 'BrandKeep'],
@@ -98,7 +98,7 @@ def test_save_master_update(tmp_path, monkeypatch):
 
     new = pd.DataFrame({
         'Malzeme_Kodu': ['Z1'],
-        'Descriptions': ['New'],
+        'Açıklama': ['New'],
         'Fiyat': [4.0],
         'Kaynak_Dosya': ['old.xlsx'],
         'Marka': ['BrandOld'],
@@ -118,5 +118,5 @@ def test_save_master_update(tmp_path, monkeypatch):
         rows = conn.execute("SELECT material_code, description FROM prices ORDER BY material_code").fetchall()
     assert rows == [("Y1", "Keep"), ("Z1", "New")]
     assert len(result) == 2
-    assert 'old.xlsx' not in result[result['Descriptions'] == 'Old']['Kaynak_Dosya'].values
+    assert 'old.xlsx' not in result[result['Açıklama'] == 'Old']['Kaynak_Dosya'].values
     assert not old_dir.exists()

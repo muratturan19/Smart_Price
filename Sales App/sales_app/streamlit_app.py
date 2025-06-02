@@ -70,7 +70,7 @@ def search_page(df: pd.DataFrame) -> None:
 
     filtered = df
     if query:
-        filtered = filtered[filtered["Descriptions"].str.contains(query, case=False, na=False) |
+        filtered = filtered[filtered["Açıklama"].str.contains(query, case=False, na=False) |
                               filtered["Malzeme_Kodu"].str.contains(query, case=False, na=False)]
     if brand:
         filtered = filtered[filtered["Marka"] == brand]
@@ -83,7 +83,7 @@ def search_page(df: pd.DataFrame) -> None:
     if not filtered.empty:
         def _fmt(idx: int) -> str:
             row = filtered.loc[idx]
-            return f"{row['Descriptions']} ({row['Malzeme_Kodu']})"
+            return f"{row['Açıklama']} ({row['Malzeme_Kodu']})"
 
         selected = st.selectbox(
             "Ürün seç",

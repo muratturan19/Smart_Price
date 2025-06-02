@@ -272,10 +272,10 @@ def extract_from_excel(
         + "|"
         + (combined.groupby("Sayfa").cumcount() + 1).astype(str)
     )
-    combined.rename(columns={"Malzeme_Adi": "Descriptions"}, inplace=True)
+    combined.rename(columns={"Malzeme_Adi": "Açıklama"}, inplace=True)
     cols = [
         "Malzeme_Kodu",
-        "Descriptions",
+        "Açıklama",
         "Kisa_Kod",
         "Fiyat",
         "Para_Birimi",
@@ -288,9 +288,9 @@ def extract_from_excel(
     ]
     tmp_df = combined[cols].copy()
     before_df = tmp_df.copy()
-    drop_mask = tmp_df[["Descriptions", "Fiyat"]].isna().any(axis=1)
+    drop_mask = tmp_df[["Açıklama", "Fiyat"]].isna().any(axis=1)
     dropped_preview = tmp_df[drop_mask].head().to_dict(orient="records")
-    tmp_df.dropna(subset=["Descriptions", "Fiyat"], inplace=True)
+    tmp_df.dropna(subset=["Açıklama", "Fiyat"], inplace=True)
     logger.debug(
         "[%s] Filter sonrası: %d satır (drop edilen: %d satır)",
         src,
@@ -298,7 +298,7 @@ def extract_from_excel(
         len(before_df) - len(tmp_df),
     )
     if len(before_df) != len(tmp_df):
-        logger.debug("[%s] Drop nedeni: subset=['Descriptions', 'Fiyat']", src)
+        logger.debug("[%s] Drop nedeni: subset=['Açıklama', 'Fiyat']", src)
         logger.debug(
             "[%s] Drop edilen ilk 5 satır: %s",
             src,

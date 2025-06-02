@@ -192,7 +192,7 @@ def merge_files(
             update_progress(idx / total)
 
     if not extracted:
-        return pd.DataFrame(columns=["Descriptions", "Fiyat"])
+        return pd.DataFrame(columns=["Açıklama", "Fiyat"])
 
     if update_progress:
         update_progress(1.0)
@@ -212,8 +212,8 @@ def merge_files(
     if before_len != len(master):
         logger.debug("[merge] Drop nedeni: subset=['Malzeme_Kodu', 'Fiyat']")
         logger.debug("[merge] Drop edilen ilk 5 satır: %s", dropped_preview)
-    master["Descriptions"] = master["Descriptions"].astype(str).str.strip().str.upper()
-    master.sort_values(by="Descriptions", inplace=True)
+    master["Açıklama"] = master["Açıklama"].astype(str).str.strip().str.upper()
+    master.sort_values(by="Açıklama", inplace=True)
     if "Kisa_Kod" in master.columns:
         master["Kisa_Kod"] = master["Kisa_Kod"].astype(str)
     if "Malzeme_Kodu" in master.columns:
@@ -299,7 +299,7 @@ def save_master_dataset(
         db_df.rename(
             columns={
                 "Malzeme_Kodu": "material_code",
-                "Descriptions": "description",
+                "Açıklama": "description",
                 "Fiyat": "price",
                 "Birim": "unit",
                 "Kutu_Adedi": "box_count",
@@ -474,7 +474,7 @@ def search_page():
     query = st.text_input("Malzeme kodu veya adı")
     if query:
         results = master_df[
-            master_df["Descriptions"].str.contains(query, case=False, na=False)
+            master_df["Açıklama"].str.contains(query, case=False, na=False)
         ]
         if not results.empty:
             try:

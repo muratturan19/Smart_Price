@@ -39,7 +39,7 @@ def test_extract_from_pdf_summary(monkeypatch):
         import pandas as pd
         df = pd.DataFrame({
             "Malzeme_Kodu": ["A"],
-            "Descriptions": ["Item"],
+            "Açıklama": ["Item"],
             "Fiyat": [1.0],
             "Sayfa": [1],
         })

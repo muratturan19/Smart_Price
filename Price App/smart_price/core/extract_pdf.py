@@ -319,7 +319,7 @@ Sen bir PDF fiyat listesi analiz asistanısın. Amacın, PDF’lerdeki ürün ta
     if brand_from_file:
         result["Marka"] = brand_from_file
     else:
-        result["Marka"] = result["Descriptions"].apply(detect_brand)
+        result["Marka"] = result["Açıklama"].apply(detect_brand)
     result["Kategori"] = None
     if "Kisa_Kod" not in result.columns:
         result["Kisa_Kod"] = None
@@ -340,7 +340,7 @@ Sen bir PDF fiyat listesi analiz asistanısın. Amacın, PDF’lerdeki ürün ta
     )
     cols = [
         "Malzeme_Kodu",
-        "Descriptions",
+        "Açıklama",
         "Kisa_Kod",
         "Fiyat",
         "Para_Birimi",
