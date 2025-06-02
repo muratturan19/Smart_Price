@@ -111,6 +111,15 @@ def _configure_tesseract() -> None:
         logger.error("Tesseract language query failed: %s", exc)
 
 
+def _configure_poppler() -> None:
+    """Ensure bundled Poppler binaries are on ``PATH``."""
+    if shutil.which("pdftoppm"):
+        return
+    os.environ["PATH"] = os.pathsep.join(
+        [str(config.POPPLER_PATH), os.environ.get("PATH", "")]
+    )
+
+
 def resource_path(relative: str) -> str:
     """Return absolute path to resource, works for PyInstaller bundles."""
     base_path = getattr(sys, "_MEIPASS", Path(__file__).parent)
@@ -506,6 +515,7 @@ PAGES = {
 def main():
     init_logging(config.LOG_PATH)
     _configure_tesseract()
+    _configure_poppler()
     st.set_page_config(layout="wide")
 
     left_logo_b64 = img_to_base64(left_logo_url)
@@ -560,6 +570,7 @@ def cli() -> None:
     """Entry point to launch the Streamlit application."""
     init_logging(config.LOG_PATH)
     _configure_tesseract()
+    _configure_poppler()
     from streamlit.web import cli as stcli
 
     sys.argv = ["streamlit", "run", __file__]

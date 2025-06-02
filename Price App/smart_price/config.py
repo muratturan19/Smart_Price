@@ -30,7 +30,7 @@ _DEFAULT_OUTPUT_LOG = _DEFAULT_OUTPUT_DIR / "source_log.csv"
 _DEFAULT_LOG_PATH = _REPO_ROOT / "smart_price.log"
 _DEFAULT_TESSERACT_CMD = Path(r"D:\\Program Files\\Tesseract-OCR\\tesseract.exe")
 _DEFAULT_TESSDATA_PREFIX = Path(r"D:\\Program Files\\Tesseract-OCR\\tessdata")
-_DEFAULT_POPPLER_PATH = _REPO_ROOT / "poppler" / "bin"
+_DEFAULT_POPPLER_PATH = Path(__file__).resolve().parents[2] / "poppler" / "bin"
 
 # Default remote repository for the public demo data
 _DEFAULT_BASE_REPO_URL = (
