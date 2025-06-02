@@ -41,10 +41,13 @@ build_windows_exe.bat
 The script bundles everything inside the `data` directory so that any price
 lists placed there (for example an initial `master_dataset.xlsx`) are available
 once the executable is launched.  It also adds the `logo` folder to ensure
-the images used by the interface are packaged.  The resulting binary will
-appear in the `dist` folder.
+the images used by the interface are packaged together with the `.streamlit`
+configuration folder.  The resulting binary will appear in the `dist` folder.
 The batch file collects all Streamlit resources so the executable launches
 without a `PackageNotFoundError` for the `streamlit` distribution.
+The launcher script sets `STREAMLIT_SERVER_PORT=8501` and
+`STREAMLIT_SERVER_HEADLESS=true` to ensure the app listens on the usual port
+when run from the generated EXE.
 
 ### Price normalization
 

@@ -1,6 +1,10 @@
 import os
 import sys
 import pathlib
+
+# Ensure a consistent Streamlit configuration when packaged
+os.environ["STREAMLIT_SERVER_PORT"] = "8501"
+os.environ["STREAMLIT_SERVER_HEADLESS"] = "true"
 try:
     from dotenv import load_dotenv, find_dotenv
 except ImportError:  # pragma: no cover - support missing find_dotenv
