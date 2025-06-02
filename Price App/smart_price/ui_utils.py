@@ -3,7 +3,7 @@ from __future__ import annotations
 
 import base64
 from pathlib import Path
-from typing import TYPE_CHECKING
+from typing import TYPE_CHECKING, Union
 
 if TYPE_CHECKING:  # pragma: no cover - hint for type checkers
     import streamlit as st
@@ -11,14 +11,23 @@ if TYPE_CHECKING:  # pragma: no cover - hint for type checkers
 from . import config
 
 
-def img_to_base64(path: Path) -> str:
-    """Return base64 string for the image at ``path``."""
-    with open(path, "rb") as img_file:
-        return base64.b64encode(img_file.read()).decode("utf-8")
+def img_to_base64(path: Union[Path, str]) -> str:
+    """Return base64 string for the image at ``path`` or URL."""
+    if isinstance(path, (str, Path)) and str(path).startswith("http"):
+        import requests
+
+        resp = requests.get(str(path))
+        resp.raise_for_status()
+        data = resp.content
+    else:
+        with open(Path(path), "rb") as img_file:
+            data = img_file.read()
+
+    return base64.b64encode(data).decode("utf-8")
 
 
 def logo_overlay(
-    path: Path,
+    path: Union[Path, str],
     *,
     top: str | None = None,
     right: str | None = None,
