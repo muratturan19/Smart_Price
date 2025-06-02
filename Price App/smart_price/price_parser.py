@@ -20,6 +20,7 @@ from smart_price.core.logger import init_logging
 logger = logging.getLogger("smart_price")
 
 def _configure_tesseract() -> None:
+    _configure_poppler()
     """Configure pytesseract paths and log available languages.
 
     ``pytesseract`` relies on ``tesseract`` being available on the system
@@ -51,6 +52,16 @@ def _configure_tesseract() -> None:
             )
     except Exception as exc:  # pragma: no cover - unexpected errors
         logger.error("Tesseract language query failed: %s", exc)
+
+def _configure_poppler() -> None:
+    """Ensure bundled Poppler binaries are on ``PATH``."""
+    if shutil.which("pdftoppm"):
+        return
+    os.environ["PATH"] = os.pathsep.join([
+        str(config.POPPLER_PATH),
+        os.environ.get("PATH", "")
+    ])
+
 
 
 
@@ -95,6 +106,7 @@ def main() -> None:
             print(f"Log file not found: {log_file}")
         return
     _configure_tesseract()
+    _configure_poppler()
     os.makedirs(os.path.dirname(args.output), exist_ok=True)
     os.makedirs(os.path.dirname(args.db), exist_ok=True)
     os.makedirs(os.path.dirname(args.log), exist_ok=True)

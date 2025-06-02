@@ -89,14 +89,16 @@ def parse(
         return pd.DataFrame()
 
     try:
-        kwargs = {"dpi": 300, "poppler_path": str(config.POPPLER_PATH)}
+        kwargs = {"dpi": 300}
         first, last = _range_bounds(page_range)
         if first is not None:
             kwargs["first_page"] = first
         if last is not None:
             kwargs["last_page"] = last
         start_convert = time.time()
-        images = convert_from_path(pdf_path, **kwargs)
+        images = convert_from_path(
+            pdf_path, poppler_path=str(config.POPPLER_PATH), **kwargs
+        )
         logger.info(
             "pdf2image.convert_from_path took %.2fs for %d pages",
             time.time() - start_convert,
