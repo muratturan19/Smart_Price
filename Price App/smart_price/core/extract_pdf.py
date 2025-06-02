@@ -323,6 +323,10 @@ Sen bir PDF fiyat listesi analiz asistanısın. Amacın, PDF’lerdeki ürün ta
     result["Kategori"] = None
     if "Kisa_Kod" not in result.columns:
         result["Kisa_Kod"] = None
+    if "Ana_Baslik" not in result.columns:
+        result["Ana_Baslik"] = None
+    if "Alt_Baslik" not in result.columns:
+        result["Alt_Baslik"] = None
     base_name_no_ext = Path(_basename(filepath, filename)).stem
     result["Record_Code"] = (
         sanitized_base
@@ -344,6 +348,8 @@ Sen bir PDF fiyat listesi analiz asistanısın. Amacın, PDF’lerdeki ürün ta
         "Kaynak_Dosya",
         "Sayfa",
         "Record_Code",
+        "Ana_Baslik",
+        "Alt_Baslik",
         "Image_Path",
     ]
     result_df = result[cols].copy()

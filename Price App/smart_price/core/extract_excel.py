@@ -80,6 +80,12 @@ _RAW_CURRENCY_HEADERS = ['para birimi', 'currency']
 POSSIBLE_PRICE_HEADERS = [_norm_header(h) for h in _RAW_PRICE_HEADERS]
 POSSIBLE_CURRENCY_HEADERS = [_norm_header(h) for h in _RAW_CURRENCY_HEADERS]
 
+# Headers for main and sub titles
+_RAW_MAIN_HEADERS = ["ana başlık", "ana baslik", "ana_baslik"]
+_RAW_SUB_HEADERS = ["alt başlık", "alt baslik", "alt_baslik"]
+POSSIBLE_MAIN_HEADERS = [_norm_header(h) for h in _RAW_MAIN_HEADERS]
+POSSIBLE_SUB_HEADERS = [_norm_header(h) for h in _RAW_SUB_HEADERS]
+
 
 def find_columns_in_excel(
     df: pd.DataFrame,
@@ -173,6 +179,17 @@ def extract_from_excel(
             if df.empty:
                 continue
             code_col, short_col, desc_col, price_col, currency_col = find_columns_in_excel(df)
+            norm_cols = [_norm_header(c) for c in df.columns]
+            main_col = None
+            sub_col = None
+            for header in POSSIBLE_MAIN_HEADERS:
+                if header in norm_cols:
+                    main_col = df.columns[norm_cols.index(header)]
+                    break
+            for header in POSSIBLE_SUB_HEADERS:
+                if header in norm_cols:
+                    sub_col = df.columns[norm_cols.index(header)]
+                    break
             if code_col and price_col and price_col in df.columns and code_col in df.columns:
                 cols = []
                 if code_col and code_col in df.columns:
@@ -184,6 +201,10 @@ def extract_from_excel(
                 cols.append(price_col)
                 if currency_col and currency_col in df.columns:
                     cols.append(currency_col)
+                if main_col and main_col in df.columns:
+                    cols.append(main_col)
+                if sub_col and sub_col in df.columns:
+                    cols.append(sub_col)
                 sheet_data = df[cols].copy()
                 mapping = {}
                 if code_col and code_col in df.columns:
@@ -201,6 +222,10 @@ def extract_from_excel(
                 mapping[price_col] = "Fiyat_Ham"
                 if currency_col and currency_col in df.columns:
                     mapping[currency_col] = "Para_Birimi"
+                if main_col and main_col in df.columns:
+                    mapping[main_col] = "Ana_Baslik"
+                if sub_col and sub_col in df.columns:
+                    mapping[sub_col] = "Alt_Baslik"
                 sheet_data.rename(columns=mapping, inplace=True)
                 if "Para_Birimi" not in sheet_data.columns:
                     sheet_data["Para_Birimi"] = sheet_data["Fiyat_Ham"].astype(str).apply(detect_currency)
@@ -217,6 +242,10 @@ def extract_from_excel(
                 else:
                     sheet_data["Marka"] = sheet_data["Malzeme_Adi"].astype(str).apply(detect_brand)
                 sheet_data["Kategori"] = None
+                if "Ana_Baslik" not in sheet_data.columns:
+                    sheet_data["Ana_Baslik"] = None
+                if "Alt_Baslik" not in sheet_data.columns:
+                    sheet_data["Alt_Baslik"] = None
                 sheet_data["Sayfa"] = sheet
                 all_data.append(sheet_data)
     except Exception:
@@ -231,6 +260,10 @@ def extract_from_excel(
         combined["Kisa_Kod"] = None
     if "Malzeme_Kodu" not in combined.columns:
         combined["Malzeme_Kodu"] = None
+    if "Ana_Baslik" not in combined.columns:
+        combined["Ana_Baslik"] = None
+    if "Alt_Baslik" not in combined.columns:
+        combined["Alt_Baslik"] = None
     base_name_no_ext = Path(_basename(filepath, filename)).stem
     combined["Record_Code"] = (
         base_name_no_ext
@@ -250,6 +283,8 @@ def extract_from_excel(
         "Kaynak_Dosya",
         "Sayfa",
         "Record_Code",
+        "Ana_Baslik",
+        "Alt_Baslik",
     ]
     tmp_df = combined[cols].copy()
     before_df = tmp_df.copy()

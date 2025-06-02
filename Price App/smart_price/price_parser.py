@@ -158,6 +158,8 @@ def main() -> None:
             record_code TEXT,
             year INTEGER,
             brand TEXT,
+            main_title TEXT,
+            sub_title TEXT,
             category TEXT
             )"""
         )
@@ -175,6 +177,8 @@ def main() -> None:
                 "Record_Code": "record_code",
                 "Yil": "year",
                 "Marka": "brand",
+                "Ana_Baslik": "main_title",
+                "Alt_Baslik": "sub_title",
                 "Kategori": "category",
             },
             inplace=True,
@@ -192,6 +196,8 @@ def main() -> None:
             "record_code",
             "year",
             "brand",
+            "main_title",
+            "sub_title",
             "category",
         ]:
             if col not in master.columns:
@@ -207,11 +213,13 @@ def main() -> None:
                 "source_file",
                 "source_page",
                 "image_path",
-                "record_code",
-                "year",
-                "brand",
-                "category",
-            ]
+            "record_code",
+            "year",
+            "brand",
+            "main_title",
+            "sub_title",
+            "category",
+        ]
         ]
         master.to_sql("prices", conn, if_exists="replace", index=False)
     conn.close()

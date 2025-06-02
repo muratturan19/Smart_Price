@@ -66,8 +66,10 @@ def test_save_master_new(tmp_path, monkeypatch):
     assert Path(excel_path) == tmp_path / "master_dataset.xlsx"
     assert streamlit_app.config.MASTER_DB_PATH.exists()
     with sqlite3.connect(streamlit_app.config.MASTER_DB_PATH) as conn:
-        rows = conn.execute("SELECT material_code, description, price, brand FROM prices").fetchall()
-    assert rows == [("A1", "Item", 1.0, "BrandA")]
+        rows = conn.execute(
+            "SELECT material_code, description, price, brand, main_title, sub_title FROM prices"
+        ).fetchall()
+    assert rows == [("A1", "Item", 1.0, "BrandA", None, None)]
     assert len(saved) == 1
     assert saved.iloc[0]['Malzeme_Kodu'] == 'A1'
 
