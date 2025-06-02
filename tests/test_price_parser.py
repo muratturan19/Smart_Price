@@ -77,6 +77,8 @@ def test_extract_from_excel_basic(tmp_path):
         "Marka",
         "Kaynak_Dosya",
         "Record_Code",
+        "Ana_Baslik",
+        "Alt_Baslik",
     ]
     assert result.columns.tolist() == expected_cols
 
@@ -263,6 +265,28 @@ def test_extract_from_excel_tip_header(tmp_path):
     assert result["Descriptions"].tolist() == ["C1", "D2"]
 
 
+def test_extract_from_excel_with_titles(tmp_path):
+    if not HAS_PANDAS:
+        pytest.skip("pandas not installed")
+    pytest.importorskip("openpyxl")
+    import pandas as pd
+
+    df = pd.DataFrame(
+        {
+            "Ana Başlık": ["Main"],
+            "Alt_Baslik": ["Sub"],
+            "Ürün Adı": ["Item"],
+            "Fiyat": ["10"],
+        }
+    )
+    file = tmp_path / "titles.xlsx"
+    df.to_excel(file, index=False)
+
+    result = extract_from_excel(str(file))
+    assert result.iloc[0]["Ana_Baslik"] == "Main"
+    assert result.iloc[0]["Alt_Baslik"] == "Sub"
+
+
 def test_extract_from_excel_bytesio():
     if not HAS_PANDAS:
         pytest.skip("pandas not installed")
@@ -290,6 +314,8 @@ def test_extract_from_excel_bytesio():
         "Marka",
         "Kaynak_Dosya",
         "Record_Code",
+        "Ana_Baslik",
+        "Alt_Baslik",
     ]
     assert result.columns.tolist() == expected_cols
 
@@ -510,6 +536,8 @@ def test_extract_from_pdf_default_currency(monkeypatch):
         "Marka",
         "Kaynak_Dosya",
         "Record_Code",
+        "Ana_Baslik",
+        "Alt_Baslik",
     ]
     assert result.columns.tolist() == expected_cols
 
@@ -565,6 +593,8 @@ def test_extract_from_pdf_table_headers(monkeypatch):
         "Marka",
         "Kaynak_Dosya",
         "Record_Code",
+        "Ana_Baslik",
+        "Alt_Baslik",
     ]
     assert result.columns.tolist() == expected_cols
 
@@ -663,6 +693,8 @@ def test_merge_files_pdf_called(monkeypatch):
             "Para_Birimi": ["TL"],
             "Marka": [None],
             "Kaynak_Dosya": ["f.pdf"],
+            "Ana_Baslik": ["M"],
+            "Alt_Baslik": ["S"],
         }
     )
 
@@ -685,6 +717,8 @@ def test_merge_files_pdf_called(monkeypatch):
 
     assert received.get("file_name") == "f.pdf"
     assert not result.empty
+    assert result.iloc[0]["Ana_Baslik"] == "M"
+    assert result.iloc[0]["Alt_Baslik"] == "S"
 
 
 def test_merge_files_dedup_by_code_and_price(monkeypatch):
@@ -698,18 +732,21 @@ def test_merge_files_dedup_by_code_and_price(monkeypatch):
             "Descriptions": ["Item"],
             "Fiyat": [1.0],
             "Kaynak_Dosya": ["f1.xlsx"],
+            "Ana_Baslik": ["T1"],
         }),
         "f2.xlsx": pd.DataFrame({
             "Malzeme_Kodu": ["X"],
             "Descriptions": ["Item"],
             "Fiyat": [1.0],
             "Kaynak_Dosya": ["f2.xlsx"],
+            "Ana_Baslik": ["T2"],
         }),
         "f3.xlsx": pd.DataFrame({
             "Malzeme_Kodu": ["X"],
             "Descriptions": ["Item"],
             "Fiyat": [2.0],
             "Kaynak_Dosya": ["f3.xlsx"],
+            "Ana_Baslik": ["T3"],
         }),
     }
 
@@ -730,6 +767,7 @@ def test_merge_files_dedup_by_code_and_price(monkeypatch):
 
     assert len(result) == 3
     assert list(result["Fiyat"]) == [1.0, 1.0, 2.0]
+    assert list(result["Ana_Baslik"]) == ["T1", "T2", "T3"]
 
 
 def test_llm_debug_files(monkeypatch, tmp_path):
@@ -898,6 +936,8 @@ def test_price_parser_db_schema(monkeypatch, tmp_path):
         "record_code",
         "year",
         "brand",
+        "main_title",
+        "sub_title",
         "category",
     ]
     cur.execute("SELECT * FROM prices")
@@ -915,6 +955,8 @@ def test_price_parser_db_schema(monkeypatch, tmp_path):
         "R1",
         2024,
         "Brand",
+        None,
+        None,
         "Cat",
     )
     conn.close()

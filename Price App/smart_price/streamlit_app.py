@@ -218,6 +218,10 @@ def merge_files(
         master["Kisa_Kod"] = master["Kisa_Kod"].astype(str)
     if "Malzeme_Kodu" in master.columns:
         master["Malzeme_Kodu"] = master["Malzeme_Kodu"].astype(str)
+    if "Ana_Baslik" in master.columns:
+        master["Ana_Baslik"] = master["Ana_Baslik"].astype(str)
+    if "Alt_Baslik" in master.columns:
+        master["Alt_Baslik"] = master["Alt_Baslik"].astype(str)
     if update_status:
         update_status(
             f"{len(master)} sat\u0131r ba\u015far\u0131yla bulundu, sonucu kaydetmek i\u00e7in butona bas\u0131n.",
@@ -286,6 +290,8 @@ def save_master_dataset(
             record_code TEXT,
             year INTEGER,
             brand TEXT,
+            main_title TEXT,
+            sub_title TEXT,
             category TEXT
             )"""
         )
@@ -304,6 +310,8 @@ def save_master_dataset(
                 "Record_Code": "record_code",
                 "Yil": "year",
                 "Marka": "brand",
+                "Ana_Baslik": "main_title",
+                "Alt_Baslik": "sub_title",
                 "Kategori": "category",
             },
             inplace=True,
@@ -321,6 +329,8 @@ def save_master_dataset(
             "record_code",
             "year",
             "brand",
+            "main_title",
+            "sub_title",
             "category",
         ]:
             if col not in db_df.columns:
@@ -339,6 +349,8 @@ def save_master_dataset(
                 "record_code",
                 "year",
                 "brand",
+                "main_title",
+                "sub_title",
                 "category",
             ]
         ]

@@ -269,6 +269,8 @@ def parse(
                 continue
             code = item.get("Malzeme_Kodu") or item.get("Malzeme Kodu")
             descr = item.get("Açıklama")
+            main_title = item.get("Ana_Baslik") or item.get("Ana Baslik")
+            sub_title = item.get("Alt_Baslik") or item.get("Alt Baslik")
             price_raw = str(item.get("Fiyat", "")).strip()
             kutu_adedi = item.get("Kutu_Adedi") or item.get("Kutu Adedi")
             para_birimi = item.get("Para_Birimi") or item.get("Para Birimi")
@@ -278,6 +280,8 @@ def parse(
                 {
                     "Malzeme_Kodu": code,
                     "Descriptions": descr,
+                    "Ana_Baslik": main_title,
+                    "Alt_Baslik": sub_title,
                     "Fiyat": normalize_price(price_raw),
                     "Birim": item.get("Birim"),
                     "Kutu_Adedi": kutu_adedi,
@@ -322,7 +326,16 @@ def parse(
     )
 
     df = pd.DataFrame(rows)
-    logger.debug("[%s] DataFrame oluşturuldu: %d satır", pdf_path, len(df))
+    try:
+        row_count = len(df)
+    except Exception:
+        row_count = len(rows)
+    logger.debug("[%s] DataFrame oluşturuldu: %d satır", pdf_path, row_count)
+    if hasattr(df, "columns"):
+        if "Ana_Baslik" not in df.columns:
+            df["Ana_Baslik"] = None
+        if "Alt_Baslik" not in df.columns:
+            df["Alt_Baslik"] = None
     if hasattr(df, "columns") and "Kutu_Adedi" in getattr(df, "columns", []):
         try:
             df["Kutu_Adedi"] = df["Kutu_Adedi"].astype("string")
