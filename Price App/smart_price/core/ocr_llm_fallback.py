@@ -34,6 +34,7 @@ from .common_utils import (
 )
 from .debug_utils import save_debug, save_debug_image, set_output_subdir
 from .github_upload import upload_folder
+from smart_price import config
 
 if TYPE_CHECKING:  # pragma: no cover - type hints only
     from PIL import Image  # noqa: F401
@@ -88,7 +89,7 @@ def parse(
         return pd.DataFrame()
 
     try:
-        kwargs = {"dpi": 300}
+        kwargs = {"dpi": 300, "poppler_path": str(config.POPPLER_PATH)}
         first, last = _range_bounds(page_range)
         if first is not None:
             kwargs["first_page"] = first
