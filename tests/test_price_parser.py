@@ -76,6 +76,7 @@ def test_extract_from_excel_basic(tmp_path):
         "Para_Birimi",
         "Marka",
         "Kaynak_Dosya",
+        "Sayfa",
         "Record_Code",
         "Ana_Baslik",
         "Alt_Baslik",
@@ -313,6 +314,7 @@ def test_extract_from_excel_bytesio():
         "Para_Birimi",
         "Marka",
         "Kaynak_Dosya",
+        "Sayfa",
         "Record_Code",
         "Ana_Baslik",
         "Alt_Baslik",
@@ -535,9 +537,11 @@ def test_extract_from_pdf_default_currency(monkeypatch):
         "Para_Birimi",
         "Marka",
         "Kaynak_Dosya",
+        "Sayfa",
         "Record_Code",
         "Ana_Baslik",
         "Alt_Baslik",
+        "Image_Path",
     ]
     assert result.columns.tolist() == expected_cols
 
@@ -592,9 +596,11 @@ def test_extract_from_pdf_table_headers(monkeypatch):
         "Para_Birimi",
         "Marka",
         "Kaynak_Dosya",
+        "Sayfa",
         "Record_Code",
         "Ana_Baslik",
         "Alt_Baslik",
+        "Image_Path",
     ]
     assert result.columns.tolist() == expected_cols
 
