@@ -1,0 +1,104 @@
+```json
+[
+  {
+    "Ana_Baslik": "SAE KAVİTE SOLENOİD KARTUŞ VALF GRUPLARI",
+    "Alt_Baslik": "2/2 NORMALDE KAPALI POPET VALF",
+    "Malzeme_Kodu": "SV08-20",
+    "Açıklama": "Çalışma Basıncı: 350,0 bar, Debi: 23,00 L/dk, Kavite: SAE-08-2, Bobin: D1/12V-DC",
+    "Fiyat": "64,52",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+    "Sayfa": "21"
+  },
+  {
+    "Ana_Baslik": "SAE KAVİTE SOLENOİD KARTUŞ VALF GRUPLARI",
+    "Alt_Baslik": "2/2 NORMALDE KAPALI POPET VALF",
+    "Malzeme_Kodu": "SV08-20",
+    "Açıklama": "Çalışma Basıncı: 350,0 bar, Debi: 23,00 L/dk, Kavite: SAE-08-2, Bobin: DC12/24V-DL",
+    "Fiyat": "67,31",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+    "Sayfa": "21"
+  },
+  {
+    "Ana_Baslik": "SAE KAVİTE SOLENOİD KARTUŞ VALF GRUPLARI",
+    "Alt_Baslik": "2/2 NORMALDE KAPALI POPET VALF",
+    "Malzeme_Kodu": "SV08-20",
+    "Açıklama": "Çalışma Basıncı: 350,0 bar, Debi: 23,00 L/dk, Kavite: SAE-08-2, Bobin: AC115/230V-DG",
+    "Fiyat": "68,58",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+    "Sayfa": "21"
+  },
+  {
+    "Ana_Baslik": "SAE KAVİTE SOLENOİD KARTUŞ VALF GRUPLARI",
+    "Alt_Baslik": "2/2 NORMALDE KAPALI POPET VALF",
+    "Malzeme_Kodu": "SV08-20M",
+    "Açıklama": "Çalışma Basıncı: 350,0 bar, Debi: 23,00 L/dk, Kavite: SAE-08-2, Bobin: D1/12V-DC",
+    "Fiyat": "76,71",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+    "Sayfa": "21"
+  },
+  {
+    "Ana_Baslik": "SAE KAVİTE SOLENOİD KARTUŞ VALF GRUPLARI",
+    "Alt_Baslik": "2/2 NORMALDE KAPALI POPET VALF",
+    "Malzeme_Kodu": "SV08-20M",
+    "Açıklama": "Çalışma Basıncı: 350,0 bar, Debi: 23,00 L/dk, Kavite: SAE-08-2, Bobin: DC12/24V-DL",
+    "Fiyat": "78,79",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+    "Sayfa": "21"
+  },
+  {
+    "Ana_Baslik": "SAE KAVİTE SOLENOİD KARTUŞ VALF GRUPLARI",
+    "Alt_Baslik": "2/2 NORMALDE KAPALI POPET VALF",
+    "Malzeme_Kodu": "SV08-20M",
+    "Açıklama": "Çalışma Basıncı: 350,0 bar, Debi: 23,00 L/dk, Kavite: SAE-08-2, Bobin: AC115/230V-DG",
+    "Fiyat": "80,34",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+    "Sayfa": "21"
+  },
+  {
+    "Ana_Baslik": "SAE KAVİTE SOLENOİD KARTUŞ VALF GRUPLARI",
+    "Alt_Baslik": "2/2 NORMALDE KAPALI POPET VALF",
+    "Malzeme_Kodu": "SV10-20",
+    "Açıklama": "Çalışma Basıncı: 350,0 bar, Debi: 45,00 L/dk, Kavite: SAE-10-2, Bobin: D1/12V-DC",
+    "Fiyat": "91,20",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+    "Sayfa": "21"
+  },
+  {
+    "Ana_Baslik": "SAE KAVİTE SOLENOİD KARTUŞ VALF GRUPLARI",
+    "Alt_Baslik": "2/2 NORMALDE KAPALI POPET VALF",
+    "Malzeme_Kodu": "SV10-20",
+    "Açıklama": "Çalışma Basıncı: 350,0 bar, Debi: 45,00 L/dk, Kavite: SAE-10-2, Bobin: DC12/24V-DL",
+    "Fiyat": "93,68",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+    "Sayfa": "21"
+  },
+  {
+    "Ana_Baslik": "SAE KAVİTE SOLENOİD KARTUŞ VALF GRUPLARI",
+    "Alt_Baslik": "2/2 NORMALDE KAPALI POPET VALF",
+    "Malzeme_Kodu": "SV10-20",
+    "Açıklama": "Çalışma Basıncı: 350,0 bar, Debi: 45,00 L/dk, Kavite: SAE-10-2, Bobin: AC115/230V-DG",
+    "Fiyat": "94,92",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+    "Sayfa": "21"
+  },
+  {
+    "Ana_Baslik": "SAE KAVİTE SOLENOİD KARTUŞ VALF GRUPLARI",
+    "Alt_Baslik": "2/2 NORMALDE KAPALI POPET VALF",
+    "Malzeme_Kodu": "SV10-20M",
+    "Açıklama": "Çalışma Basıncı: 350,0 bar, Debi: 45,00 L/dk, Kavite: SAE-10-2, Bobin: D1/12V-DC",
+    "Fiyat": "102,99",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+    "Sayfa": "21"
+  }
+]
+```
