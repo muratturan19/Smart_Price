@@ -1,0 +1,112 @@
+```json
+[
+  {
+    "Ana_Baslik": "KAVİTE TAPALARI 2 PORTLU",
+    "Malzeme_Kodu": "X10A2-T16A2-XX",
+    "Açıklama": "M16 P1.5",
+    "Fiyat": "FİYAT SORUNUZ",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+    "Sayfa": "19"
+  },
+  {
+    "Ana_Baslik": "KAVİTE TAPALARI 2 PORTLU",
+    "Malzeme_Kodu": "X20A2-T11A2-XX",
+    "Açıklama": "M20 P1.5",
+    "Fiyat": "$22,95",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+    "Sayfa": "19"
+  },
+  {
+    "Ana_Baslik": "KAVİTE TAPALARI 2 PORTLU",
+    "Malzeme_Kodu": "X20A2-T13A-XX",
+    "Açıklama": "M20 P1.5",
+    "Fiyat": "$22,95",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+    "Sayfa": "19"
+  },
+  {
+    "Ana_Baslik": "KAVİTE TAPALARI 2 PORTLU",
+    "Malzeme_Kodu": "X30A2-T13A-XX",
+    "Açıklama": "1\"-14UNS-2B",
+    "Fiyat": "$26,06",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+    "Sayfa": "19"
+  },
+  {
+    "Ana_Baslik": "KAVİTE TAPALARI 2 PORTLU",
+    "Malzeme_Kodu": "X30A2-T15A-XX",
+    "Açıklama": "1\"-14UNS-2B",
+    "Fiyat": "$26,06",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+    "Sayfa": "19"
+  },
+  {
+    "Ana_Baslik": "KAVİTE TAPALARI 2 PORTLU",
+    "Malzeme_Kodu": "X60A2-T16A-XX",
+    "Açıklama": "M36 P2",
+    "Fiyat": "$39,69",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+    "Sayfa": "19"
+  },
+  {
+    "Ana_Baslik": "KAVİTE TAPALARI 2 PORTLU",
+    "Malzeme_Kodu": "X60A2-T18A-XX",
+    "Açıklama": "M48 P2",
+    "Fiyat": "$52,11",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+    "Sayfa": "19"
+  },
+  {
+    "Ana_Baslik": "KAVİTE TAPALARI 3 PORTLU",
+    "Malzeme_Kodu": "X10A3-T16A3-XX",
+    "Açıklama": "M16 P1.5",
+    "Fiyat": "FİYAT SORUNUZ",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+    "Sayfa": "19"
+  },
+  {
+    "Ana_Baslik": "KAVİTE TAPALARI 3 PORTLU",
+    "Malzeme_Kodu": "X20A3-T11A-XX",
+    "Açıklama": "M20 P1.5",
+    "Fiyat": "$24,82",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+    "Sayfa": "19"
+  },
+  {
+    "Ana_Baslik": "KAVİTE TAPALARI 3 PORTLU",
+    "Malzeme_Kodu": "X30A3-T12A-XX",
+    "Açıklama": "1\"-14UNS-2B",
+    "Fiyat": "$30,71",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+    "Sayfa": "19"
+  },
+  {
+    "Ana_Baslik": "KAVİTE TAPALARI 3 PORTLU",
+    "Malzeme_Kodu": "X60A3-T17A-XX",
+    "Açıklama": "M36 P2",
+    "Fiyat": "$43,74",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+    "Sayfa": "19"
+  },
+  {
+    "Ana_Baslik": "KAVİTE TAPALARI 3 PORTLU",
+    "Malzeme_Kodu": "X60A3-T19A-XX",
+    "Açıklama": "M48 P2",
+    "Fiyat": "$54,29",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+    "Sayfa": "19"
+  }
+]
+```
