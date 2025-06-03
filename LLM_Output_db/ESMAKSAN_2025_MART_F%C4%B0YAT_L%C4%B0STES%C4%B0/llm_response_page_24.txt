@@ -1,0 +1,164 @@
+```json
+[
+  {
+    "Ana_Baslik": "6000 (psi) SAE ALIN KAYNAKLI FLANŞLAR",
+    "Alt_Baslik": "O-RİNGLİ",
+    "Malzeme_Kodu": "SAE 6001DO",
+    "Açıklama": "18,66X3,53",
+    "Fiyat": "240,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "24"
+  },
+  {
+    "Ana_Baslik": "6000 (psi) SAE ALIN KAYNAKLI FLANŞLAR",
+    "Alt_Baslik": "O-RİNGLİ",
+    "Malzeme_Kodu": "SAE 6002DO",
+    "Açıklama": "25X3,53",
+    "Fiyat": "300,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "24"
+  },
+  {
+    "Ana_Baslik": "6000 (psi) SAE ALIN KAYNAKLI FLANŞLAR",
+    "Alt_Baslik": "O-RİNGLİ",
+    "Malzeme_Kodu": "SAE 6003DO",
+    "Açıklama": "32,92X3,53",
+    "Fiyat": "360,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "24"
+  },
+  {
+    "Ana_Baslik": "6000 (psi) SAE ALIN KAYNAKLI FLANŞLAR",
+    "Alt_Baslik": "O-RİNGLİ",
+    "Malzeme_Kodu": "SAE 6004DO",
+    "Açıklama": "37,7X3,53",
+    "Fiyat": "470,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "24"
+  },
+  {
+    "Ana_Baslik": "6000 (psi) SAE ALIN KAYNAKLI FLANŞLAR",
+    "Alt_Baslik": "O-RİNGLİ",
+    "Malzeme_Kodu": "SAE 6005DO",
+    "Açıklama": "47,22X3,53",
+    "Fiyat": "700,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "24"
+  },
+  {
+    "Ana_Baslik": "6000 (psi) SAE ALIN KAYNAKLI FLANŞLAR",
+    "Alt_Baslik": "O-RİNGLİ",
+    "Malzeme_Kodu": "SAE 6006DO",
+    "Açıklama": "56,75X3,53",
+    "Fiyat": "1.200,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "24"
+  },
+  {
+    "Ana_Baslik": "6000 (psi) SAE ALIN KAYNAKLI FLANŞLAR",
+    "Alt_Baslik": "O-RİNGLİ",
+    "Malzeme_Kodu": "SAE 6007DO",
+    "Açıklama": "69,45X3,53",
+    "Fiyat": "3.100,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "24"
+  },
+  {
+    "Ana_Baslik": "6000 (psi) SAE ALIN KAYNAKLI FLANŞLAR",
+    "Alt_Baslik": "O-RİNGLİ",
+    "Malzeme_Kodu": "SAE 6008DO",
+    "Açıklama": "85,32X3,53",
+    "Fiyat": "4.100,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "24"
+  },
+  {
+    "Ana_Baslik": "6000 (psi) SAE ALIN KAYNAKLI FLANŞLAR",
+    "Alt_Baslik": "O-RİNKSİZ",
+    "Malzeme_Kodu": "SAE 6001D",
+    "Açıklama": "M8",
+    "Fiyat": "280,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "24"
+  },
+  {
+    "Ana_Baslik": "6000 (psi) SAE ALIN KAYNAKLI FLANŞLAR",
+    "Alt_Baslik": "O-RİNKSİZ",
+    "Malzeme_Kodu": "SAE 6002D",
+    "Açıklama": "M10",
+    "Fiyat": "370,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "24"
+  },
+  {
+    "Ana_Baslik": "6000 (psi) SAE ALIN KAYNAKLI FLANŞLAR",
+    "Alt_Baslik": "O-RİNKSİZ",
+    "Malzeme_Kodu": "SAE 6003D",
+    "Açıklama": "M12",
+    "Fiyat": "1.110,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "24"
+  },
+  {
+    "Ana_Baslik": "6000 (psi) SAE ALIN KAYNAKLI FLANŞLAR",
+    "Alt_Baslik": "O-RİNKSİZ",
+    "Malzeme_Kodu": "SAE 6004D",
+    "Açıklama": "M14",
+    "Fiyat": "1.430,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "24"
+  },
+  {
+    "Ana_Baslik": "6000 (psi) SAE ALIN KAYNAKLI FLANŞLAR",
+    "Alt_Baslik": "O-RİNKSİZ",
+    "Malzeme_Kodu": "SAE 6005D",
+    "Açıklama": "M16",
+    "Fiyat": "2.560,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "24"
+  },
+  {
+    "Ana_Baslik": "6000 (psi) SAE ALIN KAYNAKLI FLANŞLAR",
+    "Alt_Baslik": "O-RİNKSİZ",
+    "Malzeme_Kodu": "SAE 6006D",
+    "Açıklama": "M20",
+    "Fiyat": "3.780,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "24"
+  },
+  {
+    "Ana_Baslik": "6000 (psi) SAE ALIN KAYNAKLI FLANŞLAR",
+    "Alt_Baslik": "O-RİNKSİZ",
+    "Malzeme_Kodu": "SAE 6007D",
+    "Açıklama": "M24",
+    "Fiyat": "7.660,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "24"
+  },
+  {
+    "Ana_Baslik": "6000 (psi) SAE ALIN KAYNAKLI FLANŞLAR",
+    "Alt_Baslik": "O-RİNKSİZ",
+    "Malzeme_Kodu": "SAE 6008D",
+    "Açıklama": "M30",
+    "Fiyat": "12.180,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "24"
+  }
+]
+```
