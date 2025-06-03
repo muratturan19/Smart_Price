@@ -1,0 +1,254 @@
+```json
+[
+  {
+    "Ana_Baslik": "FLANŞ KEPLER 3000 - 6000 - 9000 psi",
+    "Alt_Baslik": "SAE 3000 psi YARIM AY FLANŞ KEPLER",
+    "Malzeme_Kodu": "FK 3001",
+    "Açıklama": "G 1/2\"",
+    "Fiyat": "60,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "15"
+  },
+  {
+    "Ana_Baslik": "FLANŞ KEPLER 3000 - 6000 - 9000 psi",
+    "Alt_Baslik": "SAE 3000 psi YARIM AY FLANŞ KEPLER",
+    "Malzeme_Kodu": "FK 3002",
+    "Açıklama": "G 3/4\"",
+    "Fiyat": "65,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "15"
+  },
+  {
+    "Ana_Baslik": "FLANŞ KEPLER 3000 - 6000 - 9000 psi",
+    "Alt_Baslik": "SAE 3000 psi YARIM AY FLANŞ KEPLER",
+    "Malzeme_Kodu": "FK 3003",
+    "Açıklama": "G 1\"",
+    "Fiyat": "80,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "15"
+  },
+  {
+    "Ana_Baslik": "FLANŞ KEPLER 3000 - 6000 - 9000 psi",
+    "Alt_Baslik": "SAE 3000 psi YARIM AY FLANŞ KEPLER",
+    "Malzeme_Kodu": "FK 3004",
+    "Açıklama": "G 1 1/4\"",
+    "Fiyat": "100,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "15"
+  },
+  {
+    "Ana_Baslik": "FLANŞ KEPLER 3000 - 6000 - 9000 psi",
+    "Alt_Baslik": "SAE 3000 psi YARIM AY FLANŞ KEPLER",
+    "Malzeme_Kodu": "FK 3005",
+    "Açıklama": "G 1 1/2\"",
+    "Fiyat": "120,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "15"
+  },
+  {
+    "Ana_Baslik": "FLANŞ KEPLER 3000 - 6000 - 9000 psi",
+    "Alt_Baslik": "SAE 3000 psi YARIM AY FLANŞ KEPLER",
+    "Malzeme_Kodu": "FK 3006",
+    "Açıklama": "G 2\"",
+    "Fiyat": "200,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "15"
+  },
+  {
+    "Ana_Baslik": "FLANŞ KEPLER 3000 - 6000 - 9000 psi",
+    "Alt_Baslik": "SAE 3000 psi YARIM AY FLANŞ KEPLER",
+    "Malzeme_Kodu": "FK 3007",
+    "Açıklama": "G 2 1/2\"",
+    "Fiyat": "300,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "15"
+  },
+  {
+    "Ana_Baslik": "FLANŞ KEPLER 3000 - 6000 - 9000 psi",
+    "Alt_Baslik": "SAE 3000 psi YARIM AY FLANŞ KEPLER",
+    "Malzeme_Kodu": "FK 3008",
+    "Açıklama": "G 3\"",
+    "Fiyat": "450,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "15"
+  },
+  {
+    "Ana_Baslik": "FLANŞ KEPLER 3000 - 6000 - 9000 psi",
+    "Alt_Baslik": "SAE 3000 psi YARIM AY FLANŞ KEPLER",
+    "Malzeme_Kodu": "FK 3009",
+    "Açıklama": "G 4\"",
+    "Fiyat": "600,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "15"
+  },
+  {
+    "Ana_Baslik": "FLANŞ KEPLER 3000 - 6000 - 9000 psi",
+    "Alt_Baslik": "SAE 3000 psi YARIM AY FLANŞ KEPLER",
+    "Malzeme_Kodu": "FK 3010",
+    "Açıklama": "G 5\"",
+    "Fiyat": "1.100,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "15"
+  },
+  {
+    "Ana_Baslik": "FLANŞ KEPLER 3000 - 6000 - 9000 psi",
+    "Alt_Baslik": "SAE 3000 psi YARIM AY FLANŞ KEPLER",
+    "Malzeme_Kodu": "FK 3011",
+    "Açıklama": "G 6\"",
+    "Fiyat": "1.300,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "15"
+  },
+  {
+    "Ana_Baslik": "FLANŞ KEPLER 3000 - 6000 - 9000 psi",
+    "Alt_Baslik": "SAE 6000 psi YARIM AY FLANŞ KEPLER",
+    "Malzeme_Kodu": "FK 6001",
+    "Açıklama": "G 1/2\"",
+    "Fiyat": "65,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "15"
+  },
+  {
+    "Ana_Baslik": "FLANŞ KEPLER 3000 - 6000 - 9000 psi",
+    "Alt_Baslik": "SAE 6000 psi YARIM AY FLANŞ KEPLER",
+    "Malzeme_Kodu": "FK 6002",
+    "Açıklama": "G 3/4\"",
+    "Fiyat": "100,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "15"
+  },
+  {
+    "Ana_Baslik": "FLANŞ KEPLER 3000 - 6000 - 9000 psi",
+    "Alt_Baslik": "SAE 6000 psi YARIM AY FLANŞ KEPLER",
+    "Malzeme_Kodu": "FK 6003",
+    "Açıklama": "G 1\"",
+    "Fiyat": "120,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "15"
+  },
+  {
+    "Ana_Baslik": "FLANŞ KEPLER 3000 - 6000 - 9000 psi",
+    "Alt_Baslik": "SAE 6000 psi YARIM AY FLANŞ KEPLER",
+    "Malzeme_Kodu": "FK 6004",
+    "Açıklama": "G 1 1/4\"",
+    "Fiyat": "160,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "15"
+  },
+  {
+    "Ana_Baslik": "FLANŞ KEPLER 3000 - 6000 - 9000 psi",
+    "Alt_Baslik": "SAE 6000 psi YARIM AY FLANŞ KEPLER",
+    "Malzeme_Kodu": "FK 6005",
+    "Açıklama": "G 1 1/2\"",
+    "Fiyat": "300,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "15"
+  },
+  {
+    "Ana_Baslik": "FLANŞ KEPLER 3000 - 6000 - 9000 psi",
+    "Alt_Baslik": "SAE 6000 psi YARIM AY FLANŞ KEPLER",
+    "Malzeme_Kodu": "FK 6006",
+    "Açıklama": "G 2\"",
+    "Fiyat": "430,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "15"
+  },
+  {
+    "Ana_Baslik": "FLANŞ KEPLER 3000 - 6000 - 9000 psi",
+    "Alt_Baslik": "SAE 6000 psi YARIM AY FLANŞ KEPLER",
+    "Malzeme_Kodu": "FK 6007",
+    "Açıklama": "G 2 1/2\"",
+    "Fiyat": "1.200,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "15"
+  },
+  {
+    "Ana_Baslik": "FLANŞ KEPLER 3000 - 6000 - 9000 psi",
+    "Alt_Baslik": "SAE 6000 psi YARIM AY FLANŞ KEPLER",
+    "Malzeme_Kodu": "FK 6008",
+    "Açıklama": "G 3\"",
+    "Fiyat": "1.500,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "15"
+  },
+  {
+    "Ana_Baslik": "FLANŞ KEPLER 3000 - 6000 - 9000 psi",
+    "Alt_Baslik": "SAE 9000 psi YARIM AY FLANŞ KEPLER",
+    "Malzeme_Kodu": "FK 9001",
+    "Açıklama": "G 1/2\"",
+    "Fiyat": "180,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "15"
+  },
+  {
+    "Ana_Baslik": "FLANŞ KEPLER 3000 - 6000 - 9000 psi",
+    "Alt_Baslik": "SAE 9000 psi YARIM AY FLANŞ KEPLER",
+    "Malzeme_Kodu": "FK 9002",
+    "Açıklama": "G 3/4\"",
+    "Fiyat": "300,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "15"
+  },
+  {
+    "Ana_Baslik": "FLANŞ KEPLER 3000 - 6000 - 9000 psi",
+    "Alt_Baslik": "SAE 9000 psi YARIM AY FLANŞ KEPLER",
+    "Malzeme_Kodu": "FK 9003",
+    "Açıklama": "G 1\"",
+    "Fiyat": "300,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "15"
+  },
+  {
+    "Ana_Baslik": "FLANŞ KEPLER 3000 - 6000 - 9000 psi",
+    "Alt_Baslik": "SAE 9000 psi YARIM AY FLANŞ KEPLER",
+    "Malzeme_Kodu": "FK 9004",
+    "Açıklama": "G 1 1/4\"",
+    "Fiyat": "500,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "15"
+  },
+  {
+    "Ana_Baslik": "FLANŞ KEPLER 3000 - 6000 - 9000 psi",
+    "Alt_Baslik": "SAE 9000 psi YARIM AY FLANŞ KEPLER",
+    "Malzeme_Kodu": "FK 9005",
+    "Açıklama": "G 1 1/2\"",
+    "Fiyat": "700,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "15"
+  },
+  {
+    "Ana_Baslik": "FLANŞ KEPLER 3000 - 6000 - 9000 psi",
+    "Alt_Baslik": "SAE 9000 psi YARIM AY FLANŞ KEPLER",
+    "Malzeme_Kodu": "FK 9006",
+    "Açıklama": "G 2\"",
+    "Fiyat": "900,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "15"
+  }
+]
+```
