@@ -79,6 +79,11 @@ def extract_from_pdf_agentic(
         logger.exception("agentic_doc.parse failed")
         return pd.DataFrame()
 
+    notify(f"{src}: parse returned {type(result).__name__}")
+    summary = getattr(result, "page_summary", None)
+    if summary is not None:
+        notify(f"{src}: page_summary {summary}")
+
     if isinstance(result, list):
         if result:
             result = result[0]
@@ -96,6 +101,10 @@ def extract_from_pdf_agentic(
     token_counts = getattr(result, "token_counts", None)
     if token_counts is not None and hasattr(df, "__dict__"):
         object.__setattr__(df, "token_counts", token_counts)
+
+    if df.empty:
+        pages = len(page_summary) if page_summary is not None else 0
+        notify(f"{src}: no rows extracted from {pages} pages", "warning")
 
     notify(f"agentic_doc returned {len(df)} rows")
 
