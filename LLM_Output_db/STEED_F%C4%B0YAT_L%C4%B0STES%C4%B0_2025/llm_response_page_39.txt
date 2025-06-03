@@ -1,0 +1,337 @@
+```json
+[
+    {
+        "Ana_Baslik": "ST6GCC YÜKSEK BASINÇLI PALETLİ POMPA",
+        "Malzeme_Kodu": "ST6GCC - B05",
+        "Açıklama": "Deplasman: 17,2 cc/dev, Max Basınç: 275 bar",
+        "Fiyat": "2,031.40",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "39"
+    },
+    {
+        "Ana_Baslik": "ST6GCC YÜKSEK BASINÇLI PALETLİ POMPA",
+        "Malzeme_Kodu": "ST6GCC - B06",
+        "Açıklama": "Deplasman: 21,3 cc/dev, Max Basınç: 275 bar",
+        "Fiyat": "2,031.40",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "39"
+    },
+    {
+        "Ana_Baslik": "ST6GCC YÜKSEK BASINÇLI PALETLİ POMPA",
+        "Malzeme_Kodu": "ST6GCC - B08",
+        "Açıklama": "Deplasman: 26,4 cc/dev, Max Basınç: 275 bar",
+        "Fiyat": "2,031.40",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "39"
+    },
+    {
+        "Ana_Baslik": "ST6GCC YÜKSEK BASINÇLI PALETLİ POMPA",
+        "Malzeme_Kodu": "ST6GCC - B10",
+        "Açıklama": "Deplasman: 34,1 cc/dev, Max Basınç: 275 bar",
+        "Fiyat": "2,031.40",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "39"
+    },
+    {
+        "Ana_Baslik": "ST6GCC YÜKSEK BASINÇLI PALETLİ POMPA",
+        "Malzeme_Kodu": "ST6GCC - B12",
+        "Açıklama": "Deplasman: 37,1 cc/dev, Max Basınç: 275 bar",
+        "Fiyat": "2,031.40",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "39"
+    },
+    {
+        "Ana_Baslik": "ST6GCC YÜKSEK BASINÇLI PALETLİ POMPA",
+        "Malzeme_Kodu": "ST6GCC - B14",
+        "Açıklama": "Deplasman: 46 cc/dev, Max Basınç: 275 bar",
+        "Fiyat": "2,031.40",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "39"
+    },
+    {
+        "Ana_Baslik": "ST6GCC YÜKSEK BASINÇLI PALETLİ POMPA",
+        "Malzeme_Kodu": "ST6GCC - B17",
+        "Açıklama": "Deplasman: 58,3 cc/dev, Max Basınç: 275 bar",
+        "Fiyat": "2,031.40",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "39"
+    },
+    {
+        "Ana_Baslik": "ST6GCC YÜKSEK BASINÇLI PALETLİ POMPA",
+        "Malzeme_Kodu": "ST6GCC - B20",
+        "Açıklama": "Deplasman: 63,8 cc/dev, Max Basınç: 275 bar",
+        "Fiyat": "2,031.40",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "39"
+    },
+    {
+        "Ana_Baslik": "ST6GCC YÜKSEK BASINÇLI PALETLİ POMPA",
+        "Malzeme_Kodu": "ST6GCC - B22",
+        "Açıklama": "Deplasman: 70,3 cc/dev, Max Basınç: 275 bar",
+        "Fiyat": "2,031.40",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "39"
+    },
+    {
+        "Ana_Baslik": "ST6GCC YÜKSEK BASINÇLI PALETLİ POMPA",
+        "Malzeme_Kodu": "ST6GCC - B25",
+        "Açıklama": "Deplasman: 79,3 cc/dev, Max Basınç: 275 bar",
+        "Fiyat": "2,031.40",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "39"
+    },
+    {
+        "Ana_Baslik": "ST6GCC YÜKSEK BASINÇLI PALETLİ POMPA",
+        "Malzeme_Kodu": "ST6GCC - B28",
+        "Açıklama": "Deplasman: 88,8 cc/dev, Max Basınç: 210 bar",
+        "Fiyat": "2,031.40",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "39"
+    },
+    {
+        "Ana_Baslik": "ST6GCC YÜKSEK BASINÇLI PALETLİ POMPA",
+        "Malzeme_Kodu": "ST6GCC - B31",
+        "Açıklama": "Deplasman: 100 cc/dev, Max Basınç: 210 bar",
+        "Fiyat": "2,031.40",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "39"
+    },
+    {
+        "Ana_Baslik": "ST6DCC YÜKSEK BASINÇLI PALETLİ POMPA",
+        "Malzeme_Kodu": "014 - 47,6 cc",
+        "Açıklama": "Pompa 1: 47,6 cc/dev, Pompa 2-3: 17,2 cc/dev, P1 Max Basınç: 240 bar, P2-P3 Max Basınç: 275 bar",
+        "Fiyat": "6,319.02",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "39"
+    },
+    {
+        "Ana_Baslik": "ST6DCC YÜKSEK BASINÇLI PALETLİ POMPA",
+        "Malzeme_Kodu": "017 - 58,2 cc",
+        "Açıklama": "Pompa 1: 58,2 cc/dev, Pompa 2-3: 21,3 cc/dev, P1 Max Basınç: 240 bar, P2-P3 Max Basınç: 275 bar",
+        "Fiyat": "6,319.02",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "39"
+    },
+    {
+        "Ana_Baslik": "ST6DCC YÜKSEK BASINÇLI PALETLİ POMPA",
+        "Malzeme_Kodu": "020 - 66,0 cc",
+        "Açıklama": "Pompa 1: 66,0 cc/dev, Pompa 2-3: 26,4 cc/dev, P1 Max Basınç: 240 bar, P2-P3 Max Basınç: 275 bar",
+        "Fiyat": "6,319.02",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "39"
+    },
+    {
+        "Ana_Baslik": "ST6DCC YÜKSEK BASINÇLI PALETLİ POMPA",
+        "Malzeme_Kodu": "024 - 79,5 cc",
+        "Açıklama": "Pompa 1: 79,5 cc/dev, Pompa 2-3: 34,1 cc/dev, P1 Max Basınç: 240 bar, P2-P3 Max Basınç: 275 bar",
+        "Fiyat": "6,319.02",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "39"
+    },
+    {
+        "Ana_Baslik": "ST6DCC YÜKSEK BASINÇLI PALETLİ POMPA",
+        "Malzeme_Kodu": "028 - 89,7 cc",
+        "Açıklama": "Pompa 1: 89,7 cc/dev, Pompa 2-3: 37,1 cc/dev, P1 Max Basınç: 240 bar, P2-P3 Max Basınç: 275 bar",
+        "Fiyat": "6,319.02",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "39"
+    },
+    {
+        "Ana_Baslik": "ST6DCC YÜKSEK BASINÇLI PALETLİ POMPA",
+        "Malzeme_Kodu": "031 - 98,3 cc",
+        "Açıklama": "Pompa 1: 98,3 cc/dev, Pompa 2-3: 46,0 cc/dev, P1 Max Basınç: 240 bar, P2-P3 Max Basınç: 275 bar",
+        "Fiyat": "6,319.02",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "39"
+    },
+    {
+        "Ana_Baslik": "ST6DCC YÜKSEK BASINÇLI PALETLİ POMPA",
+        "Malzeme_Kodu": "035 - 111,0 cc",
+        "Açıklama": "Pompa 1: 111,0 cc/dev, Pompa 2-3: 58,3 cc/dev, P1 Max Basınç: 240 bar, P2-P3 Max Basınç: 275 bar",
+        "Fiyat": "6,319.02",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "39"
+    },
+    {
+        "Ana_Baslik": "ST6DCC YÜKSEK BASINÇLI PALETLİ POMPA",
+        "Malzeme_Kodu": "038 - 120,3 cc",
+        "Açıklama": "Pompa 1: 120,3 cc/dev, Pompa 2-3: 63,8 cc/dev, P1 Max Basınç: 240 bar, P2-P3 Max Basınç: 275 bar",
+        "Fiyat": "6,319.02",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "39"
+    },
+    {
+        "Ana_Baslik": "ST6DCC YÜKSEK BASINÇLI PALETLİ POMPA",
+        "Malzeme_Kodu": "042 - 136,0 cc",
+        "Açıklama": "Pompa 1: 136,0 cc/dev, Pompa 2-3: 70,3 cc/dev, P1 Max Basınç: 240 bar, P2-P3 Max Basınç: 275 bar",
+        "Fiyat": "6,319.02",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "39"
+    },
+    {
+        "Ana_Baslik": "ST6DCC YÜKSEK BASINÇLI PALETLİ POMPA",
+        "Malzeme_Kodu": "045 - 145,7 cc",
+        "Açıklama": "Pompa 1: 145,7 cc/dev, Pompa 2-3: 79,3 cc/dev, P1 Max Basınç: 240 bar, P2-P3 Max Basınç: 275 bar",
+        "Fiyat": "6,319.02",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "39"
+    },
+    {
+        "Ana_Baslik": "ST6DCC YÜKSEK BASINÇLI PALETLİ POMPA",
+        "Malzeme_Kodu": "050 - 158,0 cc",
+        "Açıklama": "Pompa 1: 158,0 cc/dev, Pompa 2-3: 88,8 cc/dev, P1 Max Basınç: 210 bar, P2-P3 Max Basınç: 210 bar",
+        "Fiyat": "6,319.02",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "39"
+    },
+    {
+        "Ana_Baslik": "ST6DCC YÜKSEK BASINÇLI PALETLİ POMPA",
+        "Malzeme_Kodu": "061 - 190,5 cc",
+        "Açıklama": "Pompa 1: 190,5 cc/dev, Pompa 2-3: 100 cc/dev, P1 Max Basınç: 120 bar, P2-P3 Max Basınç: 210 bar",
+        "Fiyat": "6,319.02",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "39"
+    },
+    {
+        "Ana_Baslik": "ST6DDCS YÜKSEK BASINÇLI PALETLİ POMPA",
+        "Malzeme_Kodu": "014 - (47,6 cc)",
+        "Açıklama": "Pompa 1: 47,6 cc/dev, Pompa 2: 47,6 cc/dev, Pompa 3: 10,8 cc/dev, Max Basınç: 275 bar",
+        "Fiyat": "7,448.48",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "39"
+    },
+    {
+        "Ana_Baslik": "ST6DDCS YÜKSEK BASINÇLI PALETLİ POMPA",
+        "Malzeme_Kodu": "017 - (58,2 cc)",
+        "Açıklama": "Pompa 1: 58,2 cc/dev, Pompa 2: 58,2 cc/dev, Pompa 3: 17,2 cc/dev, Max Basınç: 275 bar",
+        "Fiyat": "7,448.48",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "39"
+    },
+    {
+        "Ana_Baslik": "ST6DDCS YÜKSEK BASINÇLI PALETLİ POMPA",
+        "Malzeme_Kodu": "020 - (66 cc)",
+        "Açıklama": "Pompa 1: 66 cc/dev, Pompa 2: 66 cc/dev, Pompa 3: 21,3 cc/dev, Max Basınç: 275 bar",
+        "Fiyat": "7,448.48",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "39"
+    },
+    {
+        "Ana_Baslik": "ST6DDCS YÜKSEK BASINÇLI PALETLİ POMPA",
+        "Malzeme_Kodu": "024 - (79,5 cc)",
+        "Açıklama": "Pompa 1: 79,5 cc/dev, Pompa 2: 79,5 cc/dev, Pompa 3: 26,4 cc/dev, Max Basınç: 275 bar",
+        "Fiyat": "7,448.48",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "39"
+    },
+    {
+        "Ana_Baslik": "ST6DDCS YÜKSEK BASINÇLI PALETLİ POMPA",
+        "Malzeme_Kodu": "028 - (89,7 cc)",
+        "Açıklama": "Pompa 1: 89,7 cc/dev, Pompa 2: 89,7 cc/dev, Pompa 3: 34,1 cc/dev, Max Basınç: 275 bar",
+        "Fiyat": "7,448.48",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "39"
+    },
+    {
+        "Ana_Baslik": "ST6DDCS YÜKSEK BASINÇLI PALETLİ POMPA",
+        "Malzeme_Kodu": "031 - (98,3 cc)",
+        "Açıklama": "Pompa 1: 98,3 cc/dev, Pompa 2: 98,3 cc/dev, Pompa 3: 37,1 cc/dev, Max Basınç: 275 bar",
+        "Fiyat": "7,448.48",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "39"
+    },
+    {
+        "Ana_Baslik": "ST6DDCS YÜKSEK BASINÇLI PALETLİ POMPA",
+        "Malzeme_Kodu": "035 - (111 cc)",
+        "Açıklama": "Pompa 1: 111 cc/dev, Pompa 2: 111 cc/dev, Pompa 3: 46 cc/dev, Max Basınç: 275 bar",
+        "Fiyat": "7,448.48",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "39"
+    },
+    {
+        "Ana_Baslik": "ST6DDCS YÜKSEK BASINÇLI PALETLİ POMPA",
+        "Malzeme_Kodu": "038 - (120,3 cc)",
+        "Açıklama": "Pompa 1: 120,3 cc/dev, Pompa 2: 120,3 cc/dev, Pompa 3: 58,3 cc/dev, Max Basınç: 275 bar",
+        "Fiyat": "7,448.48",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "39"
+    },
+    {
+        "Ana_Baslik": "ST6DDCS YÜKSEK BASINÇLI PALETLİ POMPA",
+        "Malzeme_Kodu": "042 - (136 cc)",
+        "Açıklama": "Pompa 1: 136 cc/dev, Pompa 2: 136 cc/dev, Pompa 3: 63,8 cc/dev, Max Basınç: 275 bar",
+        "Fiyat": "7,448.48",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "39"
+    },
+    {
+        "Ana_Baslik": "ST6DDCS YÜKSEK BASINÇLI PALETLİ POMPA",
+        "Malzeme_Kodu": "045 - (145,7 cc)",
+        "Açıklama": "Pompa 1: 145,7 cc/dev, Pompa 2: 145,7 cc/dev, Pompa 3: 70,3 cc/dev, Max Basınç: 275 bar",
+        "Fiyat": "7,448.48",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "39"
+    },
+    {
+        "Ana_Baslik": "ST6DDCS YÜKSEK BASINÇLI PALETLİ POMPA",
+        "Malzeme_Kodu": "050 - (158 cc)",
+        "Açıklama": "Pompa 1: 158 cc/dev, Pompa 2: 158 cc/dev, Pompa 3: 79,3 cc/dev, Max Basınç: 275 bar",
+        "Fiyat": "7,448.48",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "39"
+    },
+    {
+        "Ana_Baslik": "ST6DDCS YÜKSEK BASINÇLI PALETLİ POMPA",
+        "Malzeme_Kodu": "028 - (88,8 cc)",
+        "Açıklama": "Pompa 1: 88,8 cc/dev, Pompa 2: 88,8 cc/dev, Pompa 3: 88,8 cc/dev, Max Basınç: 275 bar",
+        "Fiyat": "7,448.48",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "39"
+    },
+    {
+        "Ana_Baslik": "ST6DDCS YÜKSEK BASINÇLI PALETLİ POMPA",
+        "Malzeme_Kodu": "031 - (100 cc)",
+        "Açıklama": "Pompa 1: 100 cc/dev, Pompa 2: 100 cc/dev, Pompa 3: 100 cc/dev, Max Basınç: 275 bar",
+        "Fiyat": "7,448.48",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "39"
+    }
+]
+```
