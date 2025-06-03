@@ -1,0 +1,158 @@
+```json
+[
+  {
+    "Ana_Baslik": "VEYA Valfi",
+    "Malzeme_Kodu": "LS-083-XXN",
+    "Açıklama": "Ayarlanamaz",
+    "Kavite": "T083",
+    "Debi": "15",
+    "Fiyat": "39,09",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+    "Sayfa": "29"
+  },
+  {
+    "Ana_Baslik": "VEYA Valfi",
+    "Malzeme_Kodu": "LS-103-XXN",
+    "Açıklama": "Ayarlanamaz",
+    "Kavite": "T103",
+    "Debi": "30",
+    "Fiyat": "FİYAT SORUNUZ",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+    "Sayfa": "29"
+  },
+  {
+    "Ana_Baslik": "ÇEK VALF (Serbest Akış 1-2)",
+    "Malzeme_Kodu": "CV-082-XAN",
+    "Açıklama": "0.3 bar",
+    "Kavite": "T082",
+    "Debi": "30",
+    "Fiyat": "23,58",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+    "Sayfa": "29"
+  },
+  {
+    "Ana_Baslik": "ÇEK VALF (Serbest Akış 1-2)",
+    "Malzeme_Kodu": "CV-082-XBN",
+    "Açıklama": "2.0 bar",
+    "Kavite": "T082",
+    "Debi": "30",
+    "Fiyat": "23,58",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+    "Sayfa": "29"
+  },
+  {
+    "Ana_Baslik": "ÇEK VALF (Serbest Akış 1-2)",
+    "Malzeme_Kodu": "CV-082-XCN",
+    "Açıklama": "5.0 bar",
+    "Kavite": "T082",
+    "Debi": "30",
+    "Fiyat": "23,58",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+    "Sayfa": "29"
+  },
+  {
+    "Ana_Baslik": "ÇEK VALF (Serbest Akış 1-2)",
+    "Malzeme_Kodu": "CV-102-XAN",
+    "Açıklama": "0.3 bar",
+    "Kavite": "T102",
+    "Debi": "50",
+    "Fiyat": "28,85",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+    "Sayfa": "29"
+  },
+  {
+    "Ana_Baslik": "ÇEK VALF (Serbest Akış 1-2)",
+    "Malzeme_Kodu": "CV-102-XBN",
+    "Açıklama": "2.0 bar",
+    "Kavite": "T102",
+    "Debi": "50",
+    "Fiyat": "28,85",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+    "Sayfa": "29"
+  },
+  {
+    "Ana_Baslik": "ÇEK VALF (Serbest Akış 1-2)",
+    "Malzeme_Kodu": "CV-102-XCN",
+    "Açıklama": "5.0 bar",
+    "Kavite": "T102",
+    "Debi": "50",
+    "Fiyat": "28,85",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+    "Sayfa": "29"
+  },
+  {
+    "Ana_Baslik": "ÇEK VALF (Serbest Akış 1-2)",
+    "Malzeme_Kodu": "CV-122-XAN",
+    "Açıklama": "0.3 bar",
+    "Kavite": "T122",
+    "Debi": "80",
+    "Fiyat": "39,09",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+    "Sayfa": "29"
+  },
+  {
+    "Ana_Baslik": "ÇEK VALF (Serbest Akış 1-2)",
+    "Malzeme_Kodu": "CV-122-XBN",
+    "Açıklama": "2.0 bar",
+    "Kavite": "T122",
+    "Debi": "80",
+    "Fiyat": "39,09",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+    "Sayfa": "29"
+  },
+  {
+    "Ana_Baslik": "ÇEK VALF (Serbest Akış 1-2)",
+    "Malzeme_Kodu": "CV-122-XCN",
+    "Açıklama": "5.0 bar",
+    "Kavite": "T122",
+    "Debi": "80",
+    "Fiyat": "39,09",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+    "Sayfa": "29"
+  },
+  {
+    "Ana_Baslik": "ÇEK VALF (Serbest Akış 1-2)",
+    "Malzeme_Kodu": "CV-162-XAN",
+    "Açıklama": "0.3 bar",
+    "Kavite": "T162",
+    "Debi": "150",
+    "Fiyat": "52,11",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+    "Sayfa": "29"
+  },
+  {
+    "Ana_Baslik": "ÇEK VALF (Serbest Akış 1-2)",
+    "Malzeme_Kodu": "CV-162-XBN",
+    "Açıklama": "2.0 bar",
+    "Kavite": "T162",
+    "Debi": "150",
+    "Fiyat": "52,11",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+    "Sayfa": "29"
+  },
+  {
+    "Ana_Baslik": "ÇEK VALF (Serbest Akış 1-2)",
+    "Malzeme_Kodu": "CV-162-XCN",
+    "Açıklama": "5.0 bar",
+    "Kavite": "T162",
+    "Debi": "150",
+    "Fiyat": "52,11",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+    "Sayfa": "29"
+  }
+]
+```
