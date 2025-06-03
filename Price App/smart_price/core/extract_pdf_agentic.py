@@ -56,7 +56,7 @@ def extract_from_pdf_agentic(
         os.environ.setdefault("VISION_AGENT_API_KEY", api_key)
 
     try:
-        import agentic_doc
+        from agentic_doc.parse import parse
     except Exception as exc:  # pragma: no cover - optional dependency missing
         notify(f"agentic_doc import failed: {exc}", "error")
         return pd.DataFrame()
@@ -66,9 +66,9 @@ def extract_from_pdf_agentic(
     guide_prompt = prompts_for_pdf(os.path.basename(src))
 
     try:
-        result = agentic_doc.parse(filepath, prompt=guide_prompt)
+        result = parse(filepath, prompt=guide_prompt)
     except TypeError:
-        result = agentic_doc.parse(filepath)
+        result = parse(filepath)
     except Exception as exc:
         notify(f"agentic_doc.parse failed: {exc}", "error")
         logger.exception("agentic_doc.parse failed")
