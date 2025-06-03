@@ -1,0 +1,224 @@
+```json
+[
+  {
+    "Ana_Baslik": "90° DİŞLİ POMPA DÖVME ADAPTÖRLERİ (FLANŞLARI)",
+    "Alt_Baslik": "DRA 3 DELİKLİ 90° DİŞLİ POMPA ADAPTÖRLERİ (FLANŞLARI)",
+    "Malzeme_Kodu": "DRA 330",
+    "Açıklama": "G 3/8\"- G 1/2\" 18 30 12 6,5 M6 15.88X2.62",
+    "Fiyat": "160,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "14"
+  },
+  {
+    "Ana_Baslik": "90° DİŞLİ POMPA DÖVME ADAPTÖRLERİ (FLANŞLARI)",
+    "Alt_Baslik": "DRA 3 DELİKLİ 90° DİŞLİ POMPA ADAPTÖRLERİ (FLANŞLARI)",
+    "Malzeme_Kodu": "DRA 335",
+    "Açıklama": "G 3/8\"- G 1/2\" 18 35 14 6,5 M6 18.72X2.62",
+    "Fiyat": "180,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "14"
+  },
+  {
+    "Ana_Baslik": "90° DİŞLİ POMPA DÖVME ADAPTÖRLERİ (FLANŞLARI)",
+    "Alt_Baslik": "DRA 3 DELİKLİ 90° DİŞLİ POMPA ADAPTÖRLERİ (FLANŞLARI)",
+    "Malzeme_Kodu": "DRA 340",
+    "Açıklama": "G 3/4\"- G 3/4\" 24 40 19 9 M8 22X3",
+    "Fiyat": "230,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "14"
+  },
+  {
+    "Ana_Baslik": "90° DİŞLİ POMPA DÖVME ADAPTÖRLERİ (FLANŞLARI)",
+    "Alt_Baslik": "DRA 3 DELİKLİ 90° DİŞLİ POMPA ADAPTÖRLERİ (FLANŞLARI)",
+    "Malzeme_Kodu": "DRA 348",
+    "Açıklama": "G 3/4\"- G 1\" 27 48 19 9 M8 22X3",
+    "Fiyat": "320,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "14"
+  },
+  {
+    "Ana_Baslik": "90° DİŞLİ POMPA DÖVME ADAPTÖRLERİ (FLANŞLARI)",
+    "Alt_Baslik": "DRA 3 DELİKLİ 90° DİŞLİ POMPA ADAPTÖRLERİ (FLANŞLARI)",
+    "Malzeme_Kodu": "DRA 351",
+    "Açıklama": "G 3/4\"- G 1\" 27 51 24 11 M10 29X4",
+    "Fiyat": "330,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "14"
+  },
+  {
+    "Ana_Baslik": "90° DİŞLİ POMPA DÖVME ADAPTÖRLERİ (FLANŞLARI)",
+    "Alt_Baslik": "DRA 3 DELİKLİ 90° DİŞLİ POMPA ADAPTÖRLERİ (FLANŞLARI)",
+    "Malzeme_Kodu": "DRA 354",
+    "Açıklama": "G 3/4\"- G 1\" 27 54 24 11 M10 29X4",
+    "Fiyat": "370,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "14"
+  },
+  {
+    "Ana_Baslik": "90° DİŞLİ POMPA DÖVME ADAPTÖRLERİ (FLANŞLARI)",
+    "Alt_Baslik": "DRA 3 DELİKLİ 90° DİŞLİ POMPA ADAPTÖRLERİ (FLANŞLARI)",
+    "Malzeme_Kodu": "DRA 356",
+    "Açıklama": "G 3/4\"- G 1\" 27 56 24 11 M10 29X4",
+    "Fiyat": "370,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "14"
+  },
+  {
+    "Ana_Baslik": "90° DİŞLİ POMPA DÖVME ADAPTÖRLERİ (FLANŞLARI)",
+    "Alt_Baslik": "DRA 4 DELİKLİ 90° DİŞLİ POMPA ADAPTÖRLERİ (FLANŞLARI)",
+    "Malzeme_Kodu": "DRA 430",
+    "Açıklama": "G 3/8\"- G 1/2\" 18 30 12 6,5 M6 15.88X2.62",
+    "Fiyat": "210,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "14"
+  },
+  {
+    "Ana_Baslik": "90° DİŞLİ POMPA DÖVME ADAPTÖRLERİ (FLANŞLARI)",
+    "Alt_Baslik": "DRA 4 DELİKLİ 90° DİŞLİ POMPA ADAPTÖRLERİ (FLANŞLARI)",
+    "Malzeme_Kodu": "DRA 435",
+    "Açıklama": "G 3/8\"- G 1/2\" 18 35 14 6,5 M6 18.72X2.62",
+    "Fiyat": "240,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "14"
+  },
+  {
+    "Ana_Baslik": "90° DİŞLİ POMPA DÖVME ADAPTÖRLERİ (FLANŞLARI)",
+    "Alt_Baslik": "DRA 4 DELİKLİ 90° DİŞLİ POMPA ADAPTÖRLERİ (FLANŞLARI)",
+    "Malzeme_Kodu": "DRA 440",
+    "Açıklama": "G 3/4\"- G 3/4\" 24 40 17 6,5 M6 22X3",
+    "Fiyat": "300,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "14"
+  },
+  {
+    "Ana_Baslik": "90° DİŞLİ POMPA DÖVME ADAPTÖRLERİ (FLANŞLARI)",
+    "Alt_Baslik": "DRA 4 DELİKLİ 90° DİŞLİ POMPA ADAPTÖRLERİ (FLANŞLARI)",
+    "Malzeme_Kodu": "DRA 455",
+    "Açıklama": "G 3/4\"- G 1\" 27 55 25 9 M8 29X4",
+    "Fiyat": "370,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "14"
+  },
+  {
+    "Ana_Baslik": "90° DİŞLİ POMPA DÖVME ADAPTÖRLERİ (FLANŞLARI)",
+    "Alt_Baslik": "DRA 4 DELİKLİ 90° DİŞLİ POMPA ADAPTÖRLERİ (FLANŞLARI)",
+    "Malzeme_Kodu": "DRA 456",
+    "Açıklama": "G 3/4\"- G 1\" 29 56 25 9 M8 29X4",
+    "Fiyat": "370,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "14"
+  },
+  {
+    "Ana_Baslik": "90° DİŞLİ POMPA DÖVME ADAPTÖRLERİ (FLANŞLARI)",
+    "Alt_Baslik": "DRA 4 DELİKLİ ERKEK 90° DİŞLİ POMPA ADAPTÖRLERİ (FLANŞLARI)",
+    "Malzeme_Kodu": "DRAE 435 M22 L15",
+    "Açıklama": "M22X1,5 25 35 15 6,5 M6 18.72X2.62",
+    "Fiyat": "280,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "14"
+  },
+  {
+    "Ana_Baslik": "90° DİŞLİ POMPA DÖVME ADAPTÖRLERİ (FLANŞLARI)",
+    "Alt_Baslik": "DRA 4 DELİKLİ ERKEK 90° DİŞLİ POMPA ADAPTÖRLERİ (FLANŞLARI)",
+    "Malzeme_Kodu": "DRAE 435 M24 L16",
+    "Açıklama": "M24X1,5 25 35 16 6,5 M6 18.72X2.62",
+    "Fiyat": "280,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "14"
+  },
+  {
+    "Ana_Baslik": "90° DİŞLİ POMPA DÖVME ADAPTÖRLERİ (FLANŞLARI)",
+    "Alt_Baslik": "DRA 4 DELİKLİ ERKEK 90° DİŞLİ POMPA ADAPTÖRLERİ (FLANŞLARI)",
+    "Malzeme_Kodu": "DRAE 435 M26 L16",
+    "Açıklama": "M26X1,5 25 35 16 6,5 M6 18.72X2.62",
+    "Fiyat": "280,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "14"
+  },
+  {
+    "Ana_Baslik": "90° DİŞLİ POMPA DÖVME ADAPTÖRLERİ (FLANŞLARI)",
+    "Alt_Baslik": "DRA 4 DELİKLİ ERKEK 90° DİŞLİ POMPA ADAPTÖRLERİ (FLANŞLARI)",
+    "Malzeme_Kodu": "DRAE 435 M30 S20",
+    "Açıklama": "M30X2 25 40 19 6,5 M6 22X3",
+    "Fiyat": "280,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "14"
+  },
+  {
+    "Ana_Baslik": "90° DİŞLİ POMPA DÖVME ADAPTÖRLERİ (FLANŞLARI)",
+    "Alt_Baslik": "DRA 4 DELİKLİ ERKEK 90° DİŞLİ POMPA ADAPTÖRLERİ (FLANŞLARI)",
+    "Malzeme_Kodu": "DRAE 435 M30 S22",
+    "Açıklama": "M30X2 25 40 19 6,5 M6 22X3",
+    "Fiyat": "280,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "14"
+  },
+  {
+    "Ana_Baslik": "90° DİŞLİ POMPA DÖVME ADAPTÖRLERİ (FLANŞLARI)",
+    "Alt_Baslik": "DRA 4 DELİKLİ ERKEK 90° DİŞLİ POMPA ADAPTÖRLERİ (FLANŞLARI)",
+    "Malzeme_Kodu": "DRAE 440 M30 S22",
+    "Açıklama": "M30X2 25 40 19 6,5 M6 22X3",
+    "Fiyat": "330,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "14"
+  },
+  {
+    "Ana_Baslik": "90° DİŞLİ POMPA DÖVME ADAPTÖRLERİ (FLANŞLARI)",
+    "Alt_Baslik": "DRA 4 DELİKLİ ERKEK 90° DİŞLİ POMPA ADAPTÖRLERİ (FLANŞLARI)",
+    "Malzeme_Kodu": "DRAE 440 M36X2",
+    "Açıklama": "M36X2 25 48 24 11 M10 29X4",
+    "Fiyat": "330,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "14"
+  },
+  {
+    "Ana_Baslik": "90° DİŞLİ POMPA DÖVME ADAPTÖRLERİ (FLANŞLARI)",
+    "Alt_Baslik": "DRA 4 DELİKLİ ERKEK 90° DİŞLİ POMPA ADAPTÖRLERİ (FLANŞLARI)",
+    "Malzeme_Kodu": "DRAE 440 M36X2",
+    "Açıklama": "M36X2 25 48 24 11 M10 29X4",
+    "Fiyat": "330,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "14"
+  },
+  {
+    "Ana_Baslik": "90° DİŞLİ POMPA DÖVME ADAPTÖRLERİ (FLANŞLARI)",
+    "Alt_Baslik": "DRA 4 DELİKLİ ERKEK 90° DİŞLİ POMPA ADAPTÖRLERİ (FLANŞLARI)",
+    "Malzeme_Kodu": "DRAE 456 M30 S20",
+    "Açıklama": "M30X2 25 55 16 8,5 M8 29X4",
+    "Fiyat": "530,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "14"
+  },
+  {
+    "Ana_Baslik": "90° DİŞLİ POMPA DÖVME ADAPTÖRLERİ (FLANŞLARI)",
+    "Alt_Baslik": "DRA 4 DELİKLİ ERKEK 90° DİŞLİ POMPA ADAPTÖRLERİ (FLANŞLARI)",
+    "Malzeme_Kodu": "DRAE 456 M30 S22",
+    "Açıklama": "M30X2 25 55 16 8,5 M8 29X4",
+    "Fiyat": "530,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "14"
+  }
+]
+```
