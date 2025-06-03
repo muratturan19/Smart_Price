@@ -1,0 +1,130 @@
+```json
+[
+    {
+        "Ana_Baslik": "TAM AYARLANABİLİR ÇEKSİZ İĞNE VANA",
+        "Malzeme_Kodu": "NF2C-LN",
+        "Açıklama": "0-8.4",
+        "Fiyat": "55,84",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "10"
+    },
+    {
+        "Ana_Baslik": "TAM AYARLANABİLİR ÇEKSİZ İĞNE VANA",
+        "Malzeme_Kodu": "NF3C-LN",
+        "Açıklama": "0-6.3",
+        "Fiyat": "59,73",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "10"
+    },
+    {
+        "Ana_Baslik": "TAM AYARLANABİLİR ÇEKSİZ İĞNE VANA",
+        "Malzeme_Kodu": "NF6C-LN",
+        "Açıklama": "0-9.6",
+        "Fiyat": "FİYAT SORUNUZ",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "10"
+    },
+    {
+        "Ana_Baslik": "TAM AYARLANABİLİR ÇEKSİZ İĞNE VANA",
+        "Malzeme_Kodu": "NF8C-LN",
+        "Açıklama": "0-14.2",
+        "Fiyat": "FİYAT SORUNUZ",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "10"
+    },
+    {
+        "Ana_Baslik": "TAM AYARLANABİLİR YÜKSEK KAPASİTELİ İĞNE VANA",
+        "Malzeme_Kodu": "NF2D-LN",
+        "Açıklama": "0-8.4",
+        "Fiyat": "55,84",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "10"
+    },
+    {
+        "Ana_Baslik": "TAM AYARLANABİLİR YÜKSEK KAPASİTELİ İĞNE VANA",
+        "Malzeme_Kodu": "NF3D-LGN",
+        "Açıklama": "0-12.7",
+        "Fiyat": "59,73",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "10"
+    },
+    {
+        "Ana_Baslik": "TAM AYARLANABİLİR YÜKSEK KAPASİTELİ İĞNE VANA",
+        "Malzeme_Kodu": "NF6D-LGN",
+        "Açıklama": "0-17.5",
+        "Fiyat": "176,50",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "10"
+    },
+    {
+        "Ana_Baslik": "TAM AYARLANABİLİR YÜKSEK KAPASİTELİ İĞNE VANA",
+        "Malzeme_Kodu": "NF8D-LGN",
+        "Açıklama": "0-21.6",
+        "Fiyat": "522,25",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "10"
+    },
+    {
+        "Ana_Baslik": "TAM AYARLANABİLİR ÇEKİLİ İĞNE VANA",
+        "Malzeme_Kodu": "NC2B-LAN",
+        "Açıklama": "0.3 bar",
+        "Fiyat": "71,19",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "10"
+    },
+    {
+        "Ana_Baslik": "TAM AYARLANABİLİR ÇEKİLİ İĞNE VANA",
+        "Malzeme_Kodu": "NC2B-LEN",
+        "Açıklama": "5.0 bar",
+        "Fiyat": "71,19",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "10"
+    },
+    {
+        "Ana_Baslik": "TAM AYARLANABİLİR ÇEKİLİ İĞNE VANA",
+        "Malzeme_Kodu": "NC6B-LAN",
+        "Açıklama": "0.3 bar",
+        "Fiyat": "107,70",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "10"
+    },
+    {
+        "Ana_Baslik": "TAM AYARLANABİLİR ÇEKİLİ İĞNE VANA",
+        "Malzeme_Kodu": "NC6B-LEN",
+        "Açıklama": "5.0 bar",
+        "Fiyat": "107,70",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "10"
+    },
+    {
+        "Ana_Baslik": "TAM AYARLANABİLİR ÇEKİLİ İĞNE VANA",
+        "Malzeme_Kodu": "NC8B-LAN",
+        "Açıklama": "0.3 bar",
+        "Fiyat": "389,11",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "10"
+    },
+    {
+        "Ana_Baslik": "TAM AYARLANABİLİR ÇEKİLİ İĞNE VANA",
+        "Malzeme_Kodu": "NC8B-LEN",
+        "Açıklama": "5.0 bar",
+        "Fiyat": "389,11",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "10"
+    }
+]
+```
