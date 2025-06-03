@@ -28,6 +28,7 @@ right_logo_url = (
 
 from smart_price.core.extract_excel import extract_from_excel
 from smart_price.core.extract_pdf import extract_from_pdf, MIN_CODE_RATIO
+from smart_price.core.extract_pdf_agentic import extract_from_pdf_agentic
 from smart_price import config
 from smart_price.core.logger import init_logging
 from smart_price.core.github_upload import upload_folder, delete_github_folder
@@ -144,8 +145,24 @@ def extract_from_pdf_file(
     *,
     file_name: str | None = None,
     status_log: Optional[Callable[[str, str], None]] = None,
+    method: str = "pdf2image + LLM",
 ) -> pd.DataFrame:
-    """Wrapper around :func:`smart_price.core.extract_pdf.extract_from_pdf`."""
+    """Wrapper around :func:`smart_price.core.extract_pdf.extract_from_pdf`.
+
+    Parameters
+    ----------
+    file:
+        PDF data as ``io.BytesIO``.
+    file_name:
+        Optional file name used for logging/debugging.
+    status_log:
+        Optional callable used for status updates.
+    method:
+        Extraction method. When ``"AgenticDE"`` the ``agentic_doc`` pipeline is
+        used. Defaults to ``"pdf2image + LLM"``.
+    """
+    if method == "AgenticDE":
+        return extract_from_pdf_agentic(file, filename=file_name, log=status_log)
     return extract_from_pdf(file, filename=file_name, log=status_log)
 
 
@@ -154,6 +171,7 @@ def merge_files(
     *,
     update_status: Optional[Callable[[str, str], None]] = None,
     update_progress: Optional[Callable[[float], None]] = None,
+    method: str = "pdf2image + LLM",
 ):
     """Extract and merge uploaded files with optional progress callbacks."""
     extracted = []
@@ -178,6 +196,7 @@ def merge_files(
                     bytes_data,
                     file_name=up_file.name,
                     status_log=update_status,
+                    method=method,
                 )
         except Exception:
             df = pd.DataFrame()
@@ -411,6 +430,11 @@ def upload_page():
         ["Yeni fiyat listesi", "Güncelleme"],
         key="upload_mode",
     )
+    method = st.radio(
+        "PDF extraction method",
+        ["pdf2image + LLM", "AgenticDE"],
+        key="pdf_method",
+    )
     files = st.file_uploader(
         "Excel veya PDF dosyalarını seçin",
         type=["xlsx", "xls", "pdf"],
@@ -437,6 +461,7 @@ def upload_page():
                 files,
                 update_status=show_status,
                 update_progress=lambda v: progress_bar.progress(v),
+                method=method,
             )
         st.info(f"Yüklenen dosyalar: {uploaded_list}")
         if df.empty:
