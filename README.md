@@ -220,3 +220,6 @@ When the AgenticDE workflow is used, the log also notes the type of object
 returned by ``agentic_doc.parse`` and dumps any ``page_summary`` entries. If no
 rows are produced a warning records how many pages were processed. All these
 messages include the source PDF name.
+Errors raised by ``agentic_doc`` now log the HTTP status code, full response
+text and exception details to help diagnose rate limit, authentication or
+parsing issues.

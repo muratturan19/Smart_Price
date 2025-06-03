@@ -198,7 +198,10 @@ def merge_files(
                     status_log=update_status,
                     method=method,
                 )
-        except Exception:
+        except Exception as exc:
+            logger.exception("Extraction failed for %s", up_file.name)
+            if update_status:
+                update_status(f"veri çıkarılamadı: {exc}", "error")
             df = pd.DataFrame()
 
         if df.empty:
