@@ -1,0 +1,254 @@
+```json
+[
+  {
+    "Ana_Baslik": "TÜM FLANŞ KEPLER 3000 - 6000 - 9000 psi",
+    "Alt_Baslik": "SAE 3000 psi TÜM FLANŞ KEPLER",
+    "Malzeme_Kodu": "FK 3001T",
+    "Açıklama": "G 1/2\"",
+    "Fiyat": "120,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "16"
+  },
+  {
+    "Ana_Baslik": "TÜM FLANŞ KEPLER 3000 - 6000 - 9000 psi",
+    "Alt_Baslik": "SAE 3000 psi TÜM FLANŞ KEPLER",
+    "Malzeme_Kodu": "FK 3002T",
+    "Açıklama": "G 3/4\"",
+    "Fiyat": "130,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "16"
+  },
+  {
+    "Ana_Baslik": "TÜM FLANŞ KEPLER 3000 - 6000 - 9000 psi",
+    "Alt_Baslik": "SAE 3000 psi TÜM FLANŞ KEPLER",
+    "Malzeme_Kodu": "FK 3003T",
+    "Açıklama": "G 1\"",
+    "Fiyat": "160,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "16"
+  },
+  {
+    "Ana_Baslik": "TÜM FLANŞ KEPLER 3000 - 6000 - 9000 psi",
+    "Alt_Baslik": "SAE 3000 psi TÜM FLANŞ KEPLER",
+    "Malzeme_Kodu": "FK 3004T",
+    "Açıklama": "G 1 1/4\"",
+    "Fiyat": "200,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "16"
+  },
+  {
+    "Ana_Baslik": "TÜM FLANŞ KEPLER 3000 - 6000 - 9000 psi",
+    "Alt_Baslik": "SAE 3000 psi TÜM FLANŞ KEPLER",
+    "Malzeme_Kodu": "FK 3005T",
+    "Açıklama": "G 1 1/2\"",
+    "Fiyat": "240,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "16"
+  },
+  {
+    "Ana_Baslik": "TÜM FLANŞ KEPLER 3000 - 6000 - 9000 psi",
+    "Alt_Baslik": "SAE 3000 psi TÜM FLANŞ KEPLER",
+    "Malzeme_Kodu": "FK 3006T",
+    "Açıklama": "G 2\"",
+    "Fiyat": "400,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "16"
+  },
+  {
+    "Ana_Baslik": "TÜM FLANŞ KEPLER 3000 - 6000 - 9000 psi",
+    "Alt_Baslik": "SAE 3000 psi TÜM FLANŞ KEPLER",
+    "Malzeme_Kodu": "FK 3007T",
+    "Açıklama": "G 2 1/2\"",
+    "Fiyat": "600,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "16"
+  },
+  {
+    "Ana_Baslik": "TÜM FLANŞ KEPLER 3000 - 6000 - 9000 psi",
+    "Alt_Baslik": "SAE 3000 psi TÜM FLANŞ KEPLER",
+    "Malzeme_Kodu": "FK 3008T",
+    "Açıklama": "G 3\"",
+    "Fiyat": "900,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "16"
+  },
+  {
+    "Ana_Baslik": "TÜM FLANŞ KEPLER 3000 - 6000 - 9000 psi",
+    "Alt_Baslik": "SAE 3000 psi TÜM FLANŞ KEPLER",
+    "Malzeme_Kodu": "FK 3010T",
+    "Açıklama": "G 4\"",
+    "Fiyat": "1.200,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "16"
+  },
+  {
+    "Ana_Baslik": "TÜM FLANŞ KEPLER 3000 - 6000 - 9000 psi",
+    "Alt_Baslik": "SAE 3000 psi TÜM FLANŞ KEPLER",
+    "Malzeme_Kodu": "FK 3011T",
+    "Açıklama": "G 5\"",
+    "Fiyat": "2.600,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "16"
+  },
+  {
+    "Ana_Baslik": "TÜM FLANŞ KEPLER 3000 - 6000 - 9000 psi",
+    "Alt_Baslik": "SAE 6000 psi TÜM FLANŞ KEPLER",
+    "Malzeme_Kodu": "FK 6001T",
+    "Açıklama": "G 1/2\"",
+    "Fiyat": "130,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "16"
+  },
+  {
+    "Ana_Baslik": "TÜM FLANŞ KEPLER 3000 - 6000 - 9000 psi",
+    "Alt_Baslik": "SAE 6000 psi TÜM FLANŞ KEPLER",
+    "Malzeme_Kodu": "FK 6002T",
+    "Açıklama": "G 3/4\"",
+    "Fiyat": "200,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "16"
+  },
+  {
+    "Ana_Baslik": "TÜM FLANŞ KEPLER 3000 - 6000 - 9000 psi",
+    "Alt_Baslik": "SAE 6000 psi TÜM FLANŞ KEPLER",
+    "Malzeme_Kodu": "FK 6003T",
+    "Açıklama": "G 1\"",
+    "Fiyat": "240,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "16"
+  },
+  {
+    "Ana_Baslik": "TÜM FLANŞ KEPLER 3000 - 6000 - 9000 psi",
+    "Alt_Baslik": "SAE 6000 psi TÜM FLANŞ KEPLER",
+    "Malzeme_Kodu": "FK 6004T",
+    "Açıklama": "G 1 1/4\"",
+    "Fiyat": "320,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "16"
+  },
+  {
+    "Ana_Baslik": "TÜM FLANŞ KEPLER 3000 - 6000 - 9000 psi",
+    "Alt_Baslik": "SAE 6000 psi TÜM FLANŞ KEPLER",
+    "Malzeme_Kodu": "FK 6005T",
+    "Açıklama": "G 1 1/2\"",
+    "Fiyat": "400,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "16"
+  },
+  {
+    "Ana_Baslik": "TÜM FLANŞ KEPLER 3000 - 6000 - 9000 psi",
+    "Alt_Baslik": "SAE 6000 psi TÜM FLANŞ KEPLER",
+    "Malzeme_Kodu": "FK 6006T",
+    "Açıklama": "G 2\"",
+    "Fiyat": "600,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "16"
+  },
+  {
+    "Ana_Baslik": "TÜM FLANŞ KEPLER 3000 - 6000 - 9000 psi",
+    "Alt_Baslik": "SAE 6000 psi TÜM FLANŞ KEPLER",
+    "Malzeme_Kodu": "FK 6007T",
+    "Açıklama": "G 2 1/2\"",
+    "Fiyat": "900,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "16"
+  },
+  {
+    "Ana_Baslik": "TÜM FLANŞ KEPLER 3000 - 6000 - 9000 psi",
+    "Alt_Baslik": "SAE 6000 psi TÜM FLANŞ KEPLER",
+    "Malzeme_Kodu": "FK 6008T",
+    "Açıklama": "G 3\"",
+    "Fiyat": "1.800,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "16"
+  },
+  {
+    "Ana_Baslik": "TÜM FLANŞ KEPLER 3000 - 6000 - 9000 psi",
+    "Alt_Baslik": "SAE 9000 psi TÜM FLANŞ KEPLER",
+    "Malzeme_Kodu": "FK 9001T",
+    "Açıklama": "G 1/2\"",
+    "Fiyat": "360,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "16"
+  },
+  {
+    "Ana_Baslik": "TÜM FLANŞ KEPLER 3000 - 6000 - 9000 psi",
+    "Alt_Baslik": "SAE 9000 psi TÜM FLANŞ KEPLER",
+    "Malzeme_Kodu": "FK 9002T",
+    "Açıklama": "G 3/4\"",
+    "Fiyat": "440,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "16"
+  },
+  {
+    "Ana_Baslik": "TÜM FLANŞ KEPLER 3000 - 6000 - 9000 psi",
+    "Alt_Baslik": "SAE 9000 psi TÜM FLANŞ KEPLER",
+    "Malzeme_Kodu": "FK 9003T",
+    "Açıklama": "G 1\"",
+    "Fiyat": "520,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "16"
+  },
+  {
+    "Ana_Baslik": "TÜM FLANŞ KEPLER 3000 - 6000 - 9000 psi",
+    "Alt_Baslik": "SAE 9000 psi TÜM FLANŞ KEPLER",
+    "Malzeme_Kodu": "FK 9004T",
+    "Açıklama": "G 1 1/4\"",
+    "Fiyat": "720,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "16"
+  },
+  {
+    "Ana_Baslik": "TÜM FLANŞ KEPLER 3000 - 6000 - 9000 psi",
+    "Alt_Baslik": "SAE 9000 psi TÜM FLANŞ KEPLER",
+    "Malzeme_Kodu": "FK 9005T",
+    "Açıklama": "G 1 1/2\"",
+    "Fiyat": "1.200,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "16"
+  },
+  {
+    "Ana_Baslik": "TÜM FLANŞ KEPLER 3000 - 6000 - 9000 psi",
+    "Alt_Baslik": "SAE 9000 psi TÜM FLANŞ KEPLER",
+    "Malzeme_Kodu": "FK 9006T",
+    "Açıklama": "G 2\"",
+    "Fiyat": "2.000,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "16"
+  },
+  {
+    "Ana_Baslik": "TÜM FLANŞ KEPLER 3000 - 6000 - 9000 psi",
+    "Alt_Baslik": "SAE 9000 psi TÜM FLANŞ KEPLER",
+    "Malzeme_Kodu": "FK 9007T",
+    "Açıklama": "G 2 1/2\"",
+    "Fiyat": "3.000,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "16"
+  }
+]
+```
