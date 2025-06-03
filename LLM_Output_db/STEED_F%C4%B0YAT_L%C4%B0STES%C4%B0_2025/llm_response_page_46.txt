@@ -1,0 +1,302 @@
+```json
+[
+  {
+    "Ana_Baslik": "HİDROLİK MODÜLER BASINÇ ŞALTERİ",
+    "Alt_Baslik": "MJCS-03-SC",
+    "Malzeme_Kodu": "MJCS-03A",
+    "Açıklama": "Çalışma Basıncı: 30-210 bar, Max Basınç: 350 bar, Çalıştığı Port: NG10-A HATTI",
+    "Fiyat": "201,00",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "46"
+  },
+  {
+    "Ana_Baslik": "HİDROLİK MODÜLER BASINÇ ŞALTERİ",
+    "Alt_Baslik": "MJCS-03-SC",
+    "Malzeme_Kodu": "MJCS-03B",
+    "Açıklama": "Çalışma Basıncı: 30-210 bar, Max Basınç: 350 bar, Çalıştığı Port: NG10-B HATTI",
+    "Fiyat": "201,00",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "46"
+  },
+  {
+    "Ana_Baslik": "HİDROLİK MODÜLER BASINÇ ŞALTERİ",
+    "Alt_Baslik": "MJCS-03-SC",
+    "Malzeme_Kodu": "MJCS-03P",
+    "Açıklama": "Çalışma Basıncı: 30-210 bar, Max Basınç: 350 bar, Çalıştığı Port: NG10-P HATTI",
+    "Fiyat": "201,00",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "46"
+  },
+  {
+    "Ana_Baslik": "HİDROLİK MODÜLER BASINÇ ŞALTERİ",
+    "Alt_Baslik": "MJCS-03ALL",
+    "Malzeme_Kodu": "MJCS-03ALL",
+    "Açıklama": "Çalışma Basıncı: 5-40 bar, Max Basınç: 60 bar, Çalıştığı Port: NG10-A HATTI",
+    "Fiyat": "201,00",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "46"
+  },
+  {
+    "Ana_Baslik": "HİDROLİK MODÜLER BASINÇ ŞALTERİ",
+    "Alt_Baslik": "MJCS-03ALL",
+    "Malzeme_Kodu": "MJCS-03BLL",
+    "Açıklama": "Çalışma Basıncı: 5-40 bar, Max Basınç: 60 bar, Çalıştığı Port: NG10-B HATTI",
+    "Fiyat": "201,00",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "46"
+  },
+  {
+    "Ana_Baslik": "HİDROLİK MODÜLER BASINÇ ŞALTERİ",
+    "Alt_Baslik": "MJCS-03ALL",
+    "Malzeme_Kodu": "MJCS-03PLL",
+    "Açıklama": "Çalışma Basıncı: 5-40 bar, Max Basınç: 60 bar, Çalıştığı Port: NG10-P HATTI",
+    "Fiyat": "201,00",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "46"
+  },
+  {
+    "Ana_Baslik": "HİDROLİK MODÜLER BASINÇ ŞALTERİ",
+    "Alt_Baslik": "MJCS-03W",
+    "Malzeme_Kodu": "MJCS-03W",
+    "Açıklama": "Çalışma Basıncı: 30-210 bar, Max Basınç: 350 bar, Çalıştığı Port: NG10-A ve B HATTI",
+    "Fiyat": "355,77",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "46"
+  },
+  {
+    "Ana_Baslik": "HİDROLİK MODÜLER BASINÇ ŞALTERİ",
+    "Alt_Baslik": "MJCS-03W",
+    "Malzeme_Kodu": "MJCS-03WL",
+    "Açıklama": "Çalışma Basıncı: 15-60 bar, Max Basınç: 210 bar, Çalıştığı Port: NG10-A ve B HATTI",
+    "Fiyat": "355,77",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "46"
+  },
+  {
+    "Ana_Baslik": "HİDROLİK MODÜLER BASINÇ ŞALTERİ",
+    "Alt_Baslik": "MJCS-03W",
+    "Malzeme_Kodu": "MJCS-03WLL",
+    "Açıklama": "Çalışma Basıncı: 5-40 bar, Max Basınç: 60 bar, Çalıştığı Port: NG10-A ve B HATTI",
+    "Fiyat": "355,77",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "46"
+  },
+  {
+    "Ana_Baslik": "HİDROLİK MODÜLER BASINÇ ŞALTERİ",
+    "Alt_Baslik": "MJCS-02W-SC",
+    "Malzeme_Kodu": "MJCS-02W-SC",
+    "Açıklama": "Çalışma Basıncı: 30-210 bar, Max Basınç: 350 bar, Çalıştığı Port: NG6-A ve B HATTI",
+    "Fiyat": "355,77",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "46"
+  },
+  {
+    "Ana_Baslik": "HİDROLİK MODÜLER BASINÇ ŞALTERİ",
+    "Alt_Baslik": "MJCS-02W-SC",
+    "Malzeme_Kodu": "MJCS-02WL-SC",
+    "Açıklama": "Çalışma Basıncı: 15-60 bar, Max Basınç: 210 bar, Çalıştığı Port: NG6-A ve B HATTI",
+    "Fiyat": "355,77",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "46"
+  },
+  {
+    "Ana_Baslik": "HİDROLİK MODÜLER BASINÇ ŞALTERİ",
+    "Alt_Baslik": "MJCS-02W-SC",
+    "Malzeme_Kodu": "MJCS-02WLL-SC",
+    "Açıklama": "Çalışma Basıncı: 5-40 bar, Max Basınç: 60 bar, Çalıştığı Port: NG6-A ve B HATTI",
+    "Fiyat": "355,77",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "46"
+  },
+  {
+    "Ana_Baslik": "HİDROLİK MODÜLER BASINÇ ŞALTERİ",
+    "Alt_Baslik": "MJCS-03W-SC",
+    "Malzeme_Kodu": "MJCS-03W-SC",
+    "Açıklama": "Çalışma Basıncı: 30-210 bar, Max Basınç: 350 bar, Çalıştığı Port: NG10-A ve B HATTI",
+    "Fiyat": "381,22",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "46"
+  },
+  {
+    "Ana_Baslik": "HİDROLİK MODÜLER BASINÇ ŞALTERİ",
+    "Alt_Baslik": "MJCS-03W-SC",
+    "Malzeme_Kodu": "MJCS-03WL-SC",
+    "Açıklama": "Çalışma Basıncı: 15-60 bar, Max Basınç: 210 bar, Çalıştığı Port: NG10-A ve B HATTI",
+    "Fiyat": "381,22",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "46"
+  },
+  {
+    "Ana_Baslik": "HİDROLİK MODÜLER BASINÇ ŞALTERİ",
+    "Alt_Baslik": "MJCS-03W-SC",
+    "Malzeme_Kodu": "MJCS-03WLL-SC",
+    "Açıklama": "Çalışma Basıncı: 5-40 bar, Max Basınç: 60 bar, Çalıştığı Port: NG10-A ve B HATTI",
+    "Fiyat": "381,22",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "46"
+  },
+  {
+    "Ana_Baslik": "SEVİYE ŞALTERİ",
+    "Malzeme_Kodu": "LVM-S",
+    "Açıklama": "Uzunluk: 200 mm, Kod: 200L, DIN Connector: D / None",
+    "Fiyat": "90,11",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "46"
+  },
+  {
+    "Ana_Baslik": "SEVİYE ŞALTERİ",
+    "Malzeme_Kodu": "LVM-S",
+    "Açıklama": "Uzunluk: 250 mm, Kod: 250L, DIN Connector: D / None",
+    "Fiyat": "90,11",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "46"
+  },
+  {
+    "Ana_Baslik": "SEVİYE ŞALTERİ",
+    "Malzeme_Kodu": "LVM-S",
+    "Açıklama": "Uzunluk: 300 mm, Kod: 300L, DIN Connector: D / None",
+    "Fiyat": "90,11",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "46"
+  },
+  {
+    "Ana_Baslik": "SEVİYE ŞALTERİ",
+    "Malzeme_Kodu": "LVM-M",
+    "Açıklama": "Uzunluk: 200 mm, Kod: 200L, DIN Connector: D / None",
+    "Fiyat": "105,17",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "46"
+  },
+  {
+    "Ana_Baslik": "SEVİYE ŞALTERİ",
+    "Malzeme_Kodu": "LVM-M",
+    "Açıklama": "Uzunluk: 250 mm, Kod: 250L, DIN Connector: D / None",
+    "Fiyat": "105,17",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "46"
+  },
+  {
+    "Ana_Baslik": "SEVİYE ŞALTERİ",
+    "Malzeme_Kodu": "LVM-M",
+    "Açıklama": "Uzunluk: 300 mm, Kod: 300L, DIN Connector: D / None",
+    "Fiyat": "105,17",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "46"
+  },
+  {
+    "Ana_Baslik": "SEVİYE ŞALTERİ",
+    "Malzeme_Kodu": "LVMT-S",
+    "Fiyat": "150,10",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "46"
+  },
+  {
+    "Ana_Baslik": "SEVİYE ŞALTERİ",
+    "Malzeme_Kodu": "LVMT-M",
+    "Fiyat": "165,16",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "46"
+  },
+  {
+    "Ana_Baslik": "SICAKLIK KONTROLLÜ SEVİYE ŞALTERİ",
+    "Malzeme_Kodu": "LVMT-C-S",
+    "Açıklama": "Uzunluk: 200 mm, Kod: 200L, Çıkış: TEK SEVİYE",
+    "Fiyat": "187,49",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "46"
+  },
+  {
+    "Ana_Baslik": "SICAKLIK KONTROLLÜ SEVİYE ŞALTERİ",
+    "Malzeme_Kodu": "LVMT-C-S",
+    "Açıklama": "Uzunluk: 250 mm, Kod: 250L, Çıkış: KONTAKLI",
+    "Fiyat": "187,49",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "46"
+  },
+  {
+    "Ana_Baslik": "SICAKLIK KONTROLLÜ SEVİYE ŞALTERİ",
+    "Malzeme_Kodu": "LVMT-C-S",
+    "Açıklama": "Uzunluk: 300 mm, Kod: 300L, Çıkış: KONTAKLI",
+    "Fiyat": "187,49",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "46"
+  },
+  {
+    "Ana_Baslik": "SICAKLIK KONTROLLÜ SEVİYE ŞALTERİ",
+    "Malzeme_Kodu": "LVMT-C-M",
+    "Açıklama": "Uzunluk: 200 mm, Kod: 200L, Çıkış: ÇİFT SEVİYE",
+    "Fiyat": "195,28",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "46"
+  },
+  {
+    "Ana_Baslik": "SICAKLIK KONTROLLÜ SEVİYE ŞALTERİ",
+    "Malzeme_Kodu": "LVMT-C-M",
+    "Açıklama": "Uzunluk: 250 mm, Kod: 250L, Çıkış: KONTAKLI",
+    "Fiyat": "195,28",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "46"
+  },
+  {
+    "Ana_Baslik": "SICAKLIK KONTROLLÜ SEVİYE ŞALTERİ",
+    "Malzeme_Kodu": "LVMT-C-M",
+    "Açıklama": "Uzunluk: 300 mm, Kod: 300L, Çıkış: KONTAKLI",
+    "Fiyat": "195,28",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "46"
+  },
+  {
+    "Ana_Baslik": "BASINÇ ŞALTERİ",
+    "Malzeme_Kodu": "IND-PNP",
+    "Fiyat": "285,65",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "46"
+  },
+  {
+    "Ana_Baslik": "BASINÇ SENSÖRÜ",
+    "Malzeme_Kodu": "ST03-10",
+    "Fiyat": "116,86",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "46"
+  },
+  {
+    "Ana_Baslik": "BASINÇ SENSÖRÜ",
+    "Malzeme_Kodu": "ST03-40",
+    "Fiyat": "103,87",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "46"
+  }
+]
+```
