@@ -76,6 +76,20 @@ def extract_from_pdf_agentic(
         result = parse(filepath)
     except Exception as exc:
         notify(f"agentic_doc.parse failed: {exc}", "error")
+        status = getattr(exc, "status", None) or getattr(exc, "status_code", None)
+        response = getattr(exc, "response", None)
+        if response is not None:
+            status = status or getattr(response, "status", None) or getattr(response, "status_code", None)
+            try:
+                body = getattr(response, "text", None) or getattr(response, "content", None)
+            except Exception:
+                body = None
+            if body:
+                notify(f"response: {body}", "error")
+                logger.error("response: %s", body)
+        if status is not None:
+            notify(f"status code: {status}", "error")
+            logger.error("status code: %s", status)
         logger.exception("agentic_doc.parse failed")
         return pd.DataFrame()
 
