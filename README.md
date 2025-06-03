@@ -194,3 +194,8 @@ and an excerpt of the prompt. This can help diagnose why the extraction failed.
 
 The prompt length and raw response are always logged to help troubleshoot
 unexpected LLM behaviour.
+
+When the AgenticDE workflow is used, the log also notes the type of object
+returned by ``agentic_doc.parse`` and dumps any ``page_summary`` entries. If no
+rows are produced a warning records how many pages were processed. All these
+messages include the source PDF name.
