@@ -1,0 +1,394 @@
+```json
+[
+    {
+        "Ana_Baslik": "BASINÇ ŞALTERLERİ",
+        "Alt_Baslik": "BASINÇ ŞALTERİ - HİDROELEKTRİK TİP",
+        "Malzeme_Kodu": "JCS-02N",
+        "Açıklama": "1/4\" PT, 20-210 bar, 350 bar",
+        "Fiyat": "132,44",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "43"
+    },
+    {
+        "Ana_Baslik": "BASINÇ ŞALTERLERİ",
+        "Alt_Baslik": "BASINÇ ŞALTERİ - HİDROELEKTRİK TİP",
+        "Malzeme_Kodu": "JCS-02N",
+        "Açıklama": "1/4\" NPT, 20-210 bar, 350 bar",
+        "Fiyat": "132,44",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "43"
+    },
+    {
+        "Ana_Baslik": "BASINÇ ŞALTERLERİ",
+        "Alt_Baslik": "BASINÇ ŞALTERİ - HİDROELEKTRİK TİP",
+        "Malzeme_Kodu": "JCS-02N",
+        "Açıklama": "1/4\" BSPP, 20-210 bar, 350 bar",
+        "Fiyat": "132,44",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "43"
+    },
+    {
+        "Ana_Baslik": "BASINÇ ŞALTERLERİ",
+        "Alt_Baslik": "BASINÇ ŞALTERİ - HİDROELEKTRİK TİP",
+        "Malzeme_Kodu": "JCS-02NL",
+        "Açıklama": "1/4\" PT, 15-60 bar, 350 bar",
+        "Fiyat": "132,44",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "43"
+    },
+    {
+        "Ana_Baslik": "BASINÇ ŞALTERLERİ",
+        "Alt_Baslik": "BASINÇ ŞALTERİ - HİDROELEKTRİK TİP",
+        "Malzeme_Kodu": "JCS-02NL",
+        "Açıklama": "1/4\" NPT, 15-60 bar, 350 bar",
+        "Fiyat": "132,44",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "43"
+    },
+    {
+        "Ana_Baslik": "BASINÇ ŞALTERLERİ",
+        "Alt_Baslik": "BASINÇ ŞALTERİ - HİDROELEKTRİK TİP",
+        "Malzeme_Kodu": "JCS-02NL",
+        "Açıklama": "1/4\" BSPP, 15-60 bar, 350 bar",
+        "Fiyat": "132,44",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "43"
+    },
+    {
+        "Ana_Baslik": "BASINÇ ŞALTERLERİ",
+        "Alt_Baslik": "BASINÇ ŞALTERİ - HİDROELEKTRİK TİP",
+        "Malzeme_Kodu": "JCS-02NLL",
+        "Açıklama": "1/4\" PT, 5-40 bar, 60 bar",
+        "Fiyat": "132,44",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "43"
+    },
+    {
+        "Ana_Baslik": "BASINÇ ŞALTERLERİ",
+        "Alt_Baslik": "BASINÇ ŞALTERİ - HİDROELEKTRİK TİP",
+        "Malzeme_Kodu": "JCS-02NLL",
+        "Açıklama": "1/4\" NPT, 5-40 bar, 60 bar",
+        "Fiyat": "132,44",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "43"
+    },
+    {
+        "Ana_Baslik": "BASINÇ ŞALTERLERİ",
+        "Alt_Baslik": "BASINÇ ŞALTERİ - HİDROELEKTRİK TİP",
+        "Malzeme_Kodu": "JCS-02NLL",
+        "Açıklama": "1/4\" BSPP, 5-40 bar, 60 bar",
+        "Fiyat": "132,44",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "43"
+    },
+    {
+        "Ana_Baslik": "BASINÇ ŞALTERLERİ",
+        "Alt_Baslik": "BASINÇ ŞALTERİ - HİDROELEKTRİK TİP",
+        "Malzeme_Kodu": "JCH-02",
+        "Açıklama": "1/4\" PT, 20-600 bar, 700 bar",
+        "Fiyat": "144,64",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "43"
+    },
+    {
+        "Ana_Baslik": "BASINÇ ŞALTERLERİ",
+        "Alt_Baslik": "BASINÇ ŞALTERİ - HİDROELEKTRİK TİP",
+        "Malzeme_Kodu": "JCH-02",
+        "Açıklama": "1/4\" NPT, 20-600 bar, 700 bar",
+        "Fiyat": "144,64",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "43"
+    },
+    {
+        "Ana_Baslik": "BASINÇ ŞALTERLERİ",
+        "Alt_Baslik": "BASINÇ ŞALTERİ - HİDROELEKTRİK TİP",
+        "Malzeme_Kodu": "JCH-02",
+        "Açıklama": "1/4\" BSPP, 20-600 bar, 700 bar",
+        "Fiyat": "144,64",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "43"
+    },
+    {
+        "Ana_Baslik": "BASINÇ ŞALTERLERİ",
+        "Alt_Baslik": "BASINÇ ŞALTERİ - HİDROELEKTRİK TİP",
+        "Malzeme_Kodu": "JC-PS-02",
+        "Açıklama": "1/4\" PT, 30-600 bar, 700 bar",
+        "Fiyat": "97,90",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "43"
+    },
+    {
+        "Ana_Baslik": "BASINÇ ŞALTERLERİ",
+        "Alt_Baslik": "BASINÇ ŞALTERİ - HİDROELEKTRİK TİP",
+        "Malzeme_Kodu": "JC-PS-02",
+        "Açıklama": "1/4\" NPT, 30-600 bar, 700 bar",
+        "Fiyat": "97,90",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "43"
+    },
+    {
+        "Ana_Baslik": "BASINÇ ŞALTERLERİ",
+        "Alt_Baslik": "BASINÇ ŞALTERİ - HİDROELEKTRİK TİP",
+        "Malzeme_Kodu": "JC-PS-02",
+        "Açıklama": "1/4\" BSPP, 30-600 bar, 700 bar",
+        "Fiyat": "97,90",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "43"
+    },
+    {
+        "Ana_Baslik": "BASINÇ ŞALTERLERİ",
+        "Alt_Baslik": "BASINÇ ŞALTERİ - HİDROELEKTRİK TİP",
+        "Malzeme_Kodu": "JC-PS-02L",
+        "Açıklama": "1/4\" PT, 10-230 bar, 350 bar",
+        "Fiyat": "97,90",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "43"
+    },
+    {
+        "Ana_Baslik": "BASINÇ ŞALTERLERİ",
+        "Alt_Baslik": "BASINÇ ŞALTERİ - HİDROELEKTRİK TİP",
+        "Malzeme_Kodu": "JC-PS-02L",
+        "Açıklama": "1/4\" NPT, 10-230 bar, 350 bar",
+        "Fiyat": "97,90",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "43"
+    },
+    {
+        "Ana_Baslik": "BASINÇ ŞALTERLERİ",
+        "Alt_Baslik": "BASINÇ ŞALTERİ - HİDROELEKTRİK TİP",
+        "Malzeme_Kodu": "JC-PS-02L",
+        "Açıklama": "1/4\" BSPP, 10-230 bar, 350 bar",
+        "Fiyat": "97,90",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "43"
+    },
+    {
+        "Ana_Baslik": "BASINÇ ŞALTERLERİ",
+        "Alt_Baslik": "BASINÇ ŞALTERİ - HİDROELEKTRİK TİP",
+        "Malzeme_Kodu": "JC-PS-02LL",
+        "Açıklama": "1/4\" PT, 5-60 bar, 250 bar",
+        "Fiyat": "97,90",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "43"
+    },
+    {
+        "Ana_Baslik": "BASINÇ ŞALTERLERİ",
+        "Alt_Baslik": "BASINÇ ŞALTERİ - HİDROELEKTRİK TİP",
+        "Malzeme_Kodu": "JC-PS-02LL",
+        "Açıklama": "1/4\" NPT, 5-60 bar, 250 bar",
+        "Fiyat": "97,90",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "43"
+    },
+    {
+        "Ana_Baslik": "BASINÇ ŞALTERLERİ",
+        "Alt_Baslik": "BASINÇ ŞALTERİ - HİDROELEKTRİK TİP",
+        "Malzeme_Kodu": "JC-PS-02LL",
+        "Açıklama": "1/4\" BSPP, 5-60 bar, 250 bar",
+        "Fiyat": "97,90",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "43"
+    },
+    {
+        "Ana_Baslik": "BASINÇ ŞALTERLERİ",
+        "Alt_Baslik": "BASINÇ ŞALTERİ - HİDROELEKTRİK TİP",
+        "Malzeme_Kodu": "JCD-02S",
+        "Açıklama": "1/4\" PT, 4-26 bar, 50 bar",
+        "Fiyat": "104,65",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "43"
+    },
+    {
+        "Ana_Baslik": "BASINÇ ŞALTERLERİ",
+        "Alt_Baslik": "BASINÇ ŞALTERİ - HİDROELEKTRİK TİP",
+        "Malzeme_Kodu": "JCD-02S",
+        "Açıklama": "1/4\" NPT, 4-26 bar, 50 bar",
+        "Fiyat": "104,65",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "43"
+    },
+    {
+        "Ana_Baslik": "BASINÇ ŞALTERLERİ",
+        "Alt_Baslik": "BASINÇ ŞALTERİ - HİDROELEKTRİK TİP",
+        "Malzeme_Kodu": "JCD-02S",
+        "Açıklama": "1/4\" BSPP, 4-26 bar, 50 bar",
+        "Fiyat": "104,65",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "43"
+    },
+    {
+        "Ana_Baslik": "BASINÇ ŞALTERLERİ",
+        "Alt_Baslik": "BASINÇ ŞALTERİ - HİDROELEKTRİK TİP",
+        "Malzeme_Kodu": "JCD-02H",
+        "Açıklama": "1/4\" PT, 15-200 bar, 350 bar",
+        "Fiyat": "104,65",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "43"
+    },
+    {
+        "Ana_Baslik": "BASINÇ ŞALTERLERİ",
+        "Alt_Baslik": "BASINÇ ŞALTERİ - HİDROELEKTRİK TİP",
+        "Malzeme_Kodu": "JCD-02H",
+        "Açıklama": "1/4\" NPT, 15-200 bar, 350 bar",
+        "Fiyat": "104,65",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "43"
+    },
+    {
+        "Ana_Baslik": "BASINÇ ŞALTERLERİ",
+        "Alt_Baslik": "BASINÇ ŞALTERİ - HİDROELEKTRİK TİP",
+        "Malzeme_Kodu": "JCD-02H",
+        "Açıklama": "1/4\" BSPP, 15-200 bar, 350 bar",
+        "Fiyat": "104,65",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "43"
+    },
+    {
+        "Ana_Baslik": "BASINÇ ŞALTERLERİ",
+        "Alt_Baslik": "BASINÇ ŞALTERİ - HİDROELEKTRİK TİP",
+        "Malzeme_Kodu": "JCD-02HH",
+        "Açıklama": "1/4\" PT, 20-360 bar, 600 bar",
+        "Fiyat": "135,04",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "43"
+    },
+    {
+        "Ana_Baslik": "BASINÇ ŞALTERLERİ",
+        "Alt_Baslik": "BASINÇ ŞALTERİ - HİDROELEKTRİK TİP",
+        "Malzeme_Kodu": "JCD-02HH",
+        "Açıklama": "1/4\" NPT, 20-360 bar, 600 bar",
+        "Fiyat": "135,04",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "43"
+    },
+    {
+        "Ana_Baslik": "BASINÇ ŞALTERLERİ",
+        "Alt_Baslik": "BASINÇ ŞALTERİ - HİDROELEKTRİK TİP",
+        "Malzeme_Kodu": "JCD-02HH",
+        "Açıklama": "1/4\" BSPP, 20-360 bar, 600 bar",
+        "Fiyat": "135,04",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "43"
+    },
+    {
+        "Ana_Baslik": "BASINÇ ŞALTERLERİ",
+        "Alt_Baslik": "BASINÇ ŞALTERİ - HİDROELEKTRİK TİP",
+        "Malzeme_Kodu": "JC-PSD-03H",
+        "Açıklama": "3/8\" PT, 20-300 bar, 350",
+        "Fiyat": "79,20",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "43"
+    },
+    {
+        "Ana_Baslik": "BASINÇ ŞALTERLERİ",
+        "Alt_Baslik": "BASINÇ ŞALTERİ - HİDROELEKTRİK TİP",
+        "Malzeme_Kodu": "JC-PSD-03H",
+        "Açıklama": "3/8\" NPT, 20-300 bar, 350",
+        "Fiyat": "79,20",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "43"
+    },
+    {
+        "Ana_Baslik": "BASINÇ ŞALTERLERİ",
+        "Alt_Baslik": "BASINÇ ŞALTERİ - HİDROELEKTRİK TİP",
+        "Malzeme_Kodu": "JC-PSD-03H",
+        "Açıklama": "3/8\" BSPP, 20-300 bar, 350",
+        "Fiyat": "79,20",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "43"
+    },
+    {
+        "Ana_Baslik": "BASINÇ ŞALTERLERİ",
+        "Alt_Baslik": "BASINÇ ŞALTERİ - HİDROELEKTRİK TİP",
+        "Malzeme_Kodu": "JC-PSD-03",
+        "Açıklama": "3/8\" PT, 10-200 bar, 350",
+        "Fiyat": "79,20",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "43"
+    },
+    {
+        "Ana_Baslik": "BASINÇ ŞALTERLERİ",
+        "Alt_Baslik": "BASINÇ ŞALTERİ - HİDROELEKTRİK TİP",
+        "Malzeme_Kodu": "JC-PSD-03",
+        "Açıklama": "3/8\" NPT, 10-200 bar, 350",
+        "Fiyat": "79,20",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "43"
+    },
+    {
+        "Ana_Baslik": "BASINÇ ŞALTERLERİ",
+        "Alt_Baslik": "BASINÇ ŞALTERİ - HİDROELEKTRİK TİP",
+        "Malzeme_Kodu": "JC-PSD-03",
+        "Açıklama": "3/8\" BSPP, 10-200 bar, 350",
+        "Fiyat": "79,20",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "43"
+    },
+    {
+        "Ana_Baslik": "BASINÇ ŞALTERLERİ",
+        "Alt_Baslik": "BASINÇ ŞALTERİ - HİDROELEKTRİK TİP",
+        "Malzeme_Kodu": "JC-PSD-03L",
+        "Açıklama": "3/8\" PT, 1-20 bar, 200",
+        "Fiyat": "79,20",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "43"
+    },
+    {
+        "Ana_Baslik": "BASINÇ ŞALTERLERİ",
+        "Alt_Baslik": "BASINÇ ŞALTERİ - HİDROELEKTRİK TİP",
+        "Malzeme_Kodu": "JC-PSD-03L",
+        "Açıklama": "3/8\" NPT, 1-20 bar, 200",
+        "Fiyat": "79,20",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "43"
+    },
+    {
+        "Ana_Baslik": "BASINÇ ŞALTERLERİ",
+        "Alt_Baslik": "BASINÇ ŞALTERİ - HİDROELEKTRİK TİP",
+        "Malzeme_Kodu": "JC-PSD-03L",
+        "Açıklama": "3/8\" BSPP, 1-20 bar, 200",
+        "Fiyat": "79,20",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "43"
+    }
+]
+```
