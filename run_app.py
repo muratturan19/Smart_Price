@@ -4,7 +4,8 @@ import pathlib
 
 # Ensure a consistent Streamlit configuration when packaged
 os.environ["STREAMLIT_SERVER_PORT"] = "8501"
-os.environ["STREAMLIT_SERVER_HEADLESS"] = "true"
+# Launch Streamlit with a browser tab when the app starts
+os.environ["STREAMLIT_SERVER_HEADLESS"] = "false"
 # Disable development mode to allow custom ports when packaged
 os.environ["STREAMLIT_GLOBAL_DEVELOPMENT_MODE"] = "false"
 try:
