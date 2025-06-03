@@ -1,0 +1,355 @@
+```json
+[
+    {
+        "Ana_Baslik": "SABİT DEPLASMANLI TEK PALETLİ POMPA",
+        "Malzeme_Kodu": "VQ45-136",
+        "Açıklama": "Deplasman: 136 cc/dev, Max Basınç: 175 bar",
+        "Fiyat": "2,253.50",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "32"
+    },
+    {
+        "Ana_Baslik": "SABİT DEPLASMANLI TEK PALETLİ POMPA",
+        "Malzeme_Kodu": "VQ45-156",
+        "Açıklama": "Deplasman: 156 cc/dev, Max Basınç: 175 bar",
+        "Fiyat": "2,253.50",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "32"
+    },
+    {
+        "Ana_Baslik": "SABİT DEPLASMANLI TEK PALETLİ POMPA",
+        "Malzeme_Kodu": "VQ45-189",
+        "Açıklama": "Deplasman: 189 cc/dev, Max Basınç: 175 bar",
+        "Fiyat": "2,253.50",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "32"
+    },
+    {
+        "Ana_Baslik": "SABİT DEPLASMANLI TEK PALETLİ POMPA",
+        "Malzeme_Kodu": "VQ45-200",
+        "Açıklama": "Deplasman: 200 cc/dev, Max Basınç: 175 bar",
+        "Fiyat": "2,253.50",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "32"
+    },
+    {
+        "Ana_Baslik": "SABİT DEPLASMANLI TEK PALETLİ POMPA",
+        "Malzeme_Kodu": "VQ45-216",
+        "Açıklama": "Deplasman: 216 cc/dev, Max Basınç: 175 bar",
+        "Fiyat": "2,253.50",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "32"
+    },
+    {
+        "Ana_Baslik": "SABİT DEPLASMANLI TEK PALETLİ POMPA",
+        "Malzeme_Kodu": "VQ45-237",
+        "Açıklama": "Deplasman: 237 cc/dev, Max Basınç: 175 bar",
+        "Fiyat": "2,253.50",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "32"
+    },
+    {
+        "Ana_Baslik": "SABİT DEPLASMANLI TANDEN PALETLİ POMPA",
+        "Malzeme_Kodu": "VQ215",
+        "Açıklama": "P1: 18 cc/dev, P2: 6 cc/dev",
+        "Fiyat": "1,365.10",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "32"
+    },
+    {
+        "Ana_Baslik": "SABİT DEPLASMANLI TANDEN PALETLİ POMPA",
+        "Malzeme_Kodu": "VQ215",
+        "Açıklama": "P1: 22 cc/dev, P2: 8 cc/dev",
+        "Fiyat": "1,365.10",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "32"
+    },
+    {
+        "Ana_Baslik": "SABİT DEPLASMANLI TANDEN PALETLİ POMPA",
+        "Malzeme_Kodu": "VQ215",
+        "Açıklama": "P1: 26 cc/dev, P2: 11 cc/dev",
+        "Fiyat": "1,365.10",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "32"
+    },
+    {
+        "Ana_Baslik": "SABİT DEPLASMANLI TANDEN PALETLİ POMPA",
+        "Malzeme_Kodu": "VQ215",
+        "Açıklama": "P1: 32 cc/dev, P2: 14 cc/dev",
+        "Fiyat": "1,365.10",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "32"
+    },
+    {
+        "Ana_Baslik": "SABİT DEPLASMANLI TANDEN PALETLİ POMPA",
+        "Malzeme_Kodu": "VQ215",
+        "Açıklama": "P1: 38 cc/dev, P2: 17 cc/dev",
+        "Fiyat": "1,365.10",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "32"
+    },
+    {
+        "Ana_Baslik": "SABİT DEPLASMANLI TANDEN PALETLİ POMPA",
+        "Malzeme_Kodu": "VQ215",
+        "Açıklama": "P1: 43 cc/dev, P2: 19 cc/dev",
+        "Fiyat": "1,365.10",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "32"
+    },
+    {
+        "Ana_Baslik": "SABİT DEPLASMANLI TANDEN PALETLİ POMPA",
+        "Malzeme_Kodu": "VQ215",
+        "Açıklama": "P1: 47 cc/dev, P2: 23 cc/dev",
+        "Fiyat": "1,365.10",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "32"
+    },
+    {
+        "Ana_Baslik": "SABİT DEPLASMANLI TANDEN PALETLİ POMPA",
+        "Malzeme_Kodu": "VQ215",
+        "Açıklama": "P1: 52 cc/dev, P2: 26 cc/dev",
+        "Fiyat": "1,365.10",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "32"
+    },
+    {
+        "Ana_Baslik": "SABİT DEPLASMANLI TANDEN PALETLİ POMPA",
+        "Malzeme_Kodu": "VQ215",
+        "Açıklama": "P1: 60 cc/dev, P2: 31 cc/dev",
+        "Fiyat": "1,365.10",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "32"
+    },
+    {
+        "Ana_Baslik": "SABİT DEPLASMANLI TANDEN PALETLİ POMPA",
+        "Malzeme_Kodu": "VQ215",
+        "Açıklama": "P1: 65 cc/dev, P2: 38 cc/dev",
+        "Fiyat": "1,365.10",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "32"
+    },
+    {
+        "Ana_Baslik": "SABİT DEPLASMANLI TANDEN PALETLİ POMPA",
+        "Malzeme_Kodu": "VQ215",
+        "Açıklama": "P1: 75 cc/dev, P2: 75 cc/dev",
+        "Fiyat": "1,365.10",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "32"
+    },
+    {
+        "Ana_Baslik": "SABİT DEPLASMANLI TANDEN PALETLİ POMPA",
+        "Malzeme_Kodu": "VQ 225",
+        "Açıklama": "P1: 18 cc/dev, P2: 18 cc/dev",
+        "Fiyat": "1,657.63",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "32"
+    },
+    {
+        "Ana_Baslik": "SABİT DEPLASMANLI TANDEN PALETLİ POMPA",
+        "Malzeme_Kodu": "VQ 225",
+        "Açıklama": "P1: 22 cc/dev, P2: 22 cc/dev",
+        "Fiyat": "1,657.63",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "32"
+    },
+    {
+        "Ana_Baslik": "SABİT DEPLASMANLI TANDEN PALETLİ POMPA",
+        "Malzeme_Kodu": "VQ 225",
+        "Açıklama": "P1: 26 cc/dev, P2: 26 cc/dev",
+        "Fiyat": "1,657.63",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "32"
+    },
+    {
+        "Ana_Baslik": "SABİT DEPLASMANLI TANDEN PALETLİ POMPA",
+        "Malzeme_Kodu": "VQ 225",
+        "Açıklama": "P1: 32 cc/dev, P2: 32 cc/dev",
+        "Fiyat": "1,657.63",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "32"
+    },
+    {
+        "Ana_Baslik": "SABİT DEPLASMANLI TANDEN PALETLİ POMPA",
+        "Malzeme_Kodu": "VQ 225",
+        "Açıklama": "P1: 38 cc/dev, P2: 38 cc/dev",
+        "Fiyat": "1,657.63",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "32"
+    },
+    {
+        "Ana_Baslik": "SABİT DEPLASMANLI TANDEN PALETLİ POMPA",
+        "Malzeme_Kodu": "VQ 225",
+        "Açıklama": "P1: 43 cc/dev, P2: 43 cc/dev",
+        "Fiyat": "1,657.63",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "32"
+    },
+    {
+        "Ana_Baslik": "SABİT DEPLASMANLI TANDEN PALETLİ POMPA",
+        "Malzeme_Kodu": "VQ 225",
+        "Açıklama": "P1: 47 cc/dev, P2: 47 cc/dev",
+        "Fiyat": "1,657.63",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "32"
+    },
+    {
+        "Ana_Baslik": "SABİT DEPLASMANLI TANDEN PALETLİ POMPA",
+        "Malzeme_Kodu": "VQ 225",
+        "Açıklama": "P1: 52 cc/dev, P2: 52 cc/dev",
+        "Fiyat": "1,657.63",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "32"
+    },
+    {
+        "Ana_Baslik": "SABİT DEPLASMANLI TANDEN PALETLİ POMPA",
+        "Malzeme_Kodu": "VQ 225",
+        "Açıklama": "P1: 60 cc/dev, P2: 60 cc/dev",
+        "Fiyat": "1,657.63",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "32"
+    },
+    {
+        "Ana_Baslik": "SABİT DEPLASMANLI TANDEN PALETLİ POMPA",
+        "Malzeme_Kodu": "VQ 225",
+        "Açıklama": "P1: 65 cc/dev, P2: 65 cc/dev",
+        "Fiyat": "1,657.63",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "32"
+    },
+    {
+        "Ana_Baslik": "SABİT DEPLASMANLI TANDEN PALETLİ POMPA",
+        "Malzeme_Kodu": "VQ 225",
+        "Açıklama": "P1: 75 cc/dev, P2: 75 cc/dev",
+        "Fiyat": "1,657.63",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "32"
+    },
+    {
+        "Ana_Baslik": "SABİT DEPLASMANLI TANDEN PALETLİ POMPA",
+        "Malzeme_Kodu": "VQ 325 (3525VQ, PV2R23)",
+        "Açıklama": "P1: 60 cc/dev, P2: 18 cc/dev",
+        "Fiyat": "2,248.09",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "32"
+    },
+    {
+        "Ana_Baslik": "SABİT DEPLASMANLI TANDEN PALETLİ POMPA",
+        "Malzeme_Kodu": "VQ 325 (3525VQ, PV2R23)",
+        "Açıklama": "P1: 66 cc/dev, P2: 22 cc/dev",
+        "Fiyat": "2,248.09",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "32"
+    },
+    {
+        "Ana_Baslik": "SABİT DEPLASMANLI TANDEN PALETLİ POMPA",
+        "Malzeme_Kodu": "VQ 325 (3525VQ, PV2R23)",
+        "Açıklama": "P1: 76 cc/dev, P2: 26 cc/dev",
+        "Fiyat": "2,248.09",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "32"
+    },
+    {
+        "Ana_Baslik": "SABİT DEPLASMANLI TANDEN PALETLİ POMPA",
+        "Malzeme_Kodu": "VQ 325 (3525VQ, PV2R23)",
+        "Açıklama": "P1: 82 cc/dev, P2: 32 cc/dev",
+        "Fiyat": "2,248.09",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "32"
+    },
+    {
+        "Ana_Baslik": "SABİT DEPLASMANLI TANDEN PALETLİ POMPA",
+        "Malzeme_Kodu": "VQ 325 (3525VQ, PV2R23)",
+        "Açıklama": "P1: 88 cc/dev, P2: 38 cc/dev",
+        "Fiyat": "2,248.09",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "32"
+    },
+    {
+        "Ana_Baslik": "SABİT DEPLASMANLI TANDEN PALETLİ POMPA",
+        "Malzeme_Kodu": "VQ 325 (3525VQ, PV2R23)",
+        "Açıklama": "P1: 94 cc/dev, P2: 43 cc/dev",
+        "Fiyat": "2,248.09",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "32"
+    },
+    {
+        "Ana_Baslik": "SABİT DEPLASMANLI TANDEN PALETLİ POMPA",
+        "Malzeme_Kodu": "VQ 325 (3525VQ, PV2R23)",
+        "Açıklama": "P1: 108 cc/dev, P2: 47 cc/dev",
+        "Fiyat": "2,248.09",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "32"
+    },
+    {
+        "Ana_Baslik": "SABİT DEPLASMANLI TANDEN PALETLİ POMPA",
+        "Malzeme_Kodu": "VQ 325 (3525VQ, PV2R23)",
+        "Açıklama": "P1: 116 cc/dev, P2: 52 cc/dev",
+        "Fiyat": "2,248.09",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "32"
+    },
+    {
+        "Ana_Baslik": "SABİT DEPLASMANLI TANDEN PALETLİ POMPA",
+        "Malzeme_Kodu": "VQ 325 (3525VQ, PV2R23)",
+        "Açıklama": "P1: 125 cc/dev, P2: 60 cc/dev",
+        "Fiyat": "2,248.09",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "32"
+    },
+    {
+        "Ana_Baslik": "SABİT DEPLASMANLI TANDEN PALETLİ POMPA",
+        "Malzeme_Kodu": "VQ 325 (3525VQ, PV2R23)",
+        "Açıklama": "P1: 65 cc/dev, P2: 65 cc/dev",
+        "Fiyat": "2,248.09",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "32"
+    },
+    {
+        "Ana_Baslik": "SABİT DEPLASMANLI TANDEN PALETLİ POMPA",
+        "Malzeme_Kodu": "VQ 325 (3525VQ, PV2R23)",
+        "Açıklama": "P1: 75 cc/dev, P2: 75 cc/dev",
+        "Fiyat": "2,248.09",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "32"
+    }
+]
+```
