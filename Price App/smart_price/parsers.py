@@ -10,6 +10,7 @@ from .core.common_utils import (
     normalize_price,
     detect_currency,
     detect_brand,
+    normalize_currency,
 )
 
 
@@ -58,7 +59,8 @@ def parse_df(df: pd.DataFrame) -> pd.DataFrame:
 
     if "Para_Birimi" not in data.columns:
         data["Para_Birimi"] = data["Fiyat_Ham"].astype(str).apply(detect_currency)
-    data["Para_Birimi"] = data["Para_Birimi"].fillna("TL")
+    data["Para_Birimi"] = data["Para_Birimi"].apply(normalize_currency)
+    data["Para_Birimi"] = data["Para_Birimi"].fillna("₺")
 
     year_match = None
     if price_col:

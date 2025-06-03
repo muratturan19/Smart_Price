@@ -112,7 +112,7 @@ def test_llm_extract_valid_json(monkeypatch):
     assert result == [{
         'Malzeme_Adi': 'Item',
         'Fiyat': 10.0,
-        'Para_Birimi': 'TRY'
+        'Para_Birimi': '₺'
     }]
     assert logs[0].startswith("LLM fazı başladı")
     assert logs[-1] == "LLM parsed 1 items"
@@ -127,7 +127,7 @@ def test_llm_extract_extra_text(monkeypatch):
     assert result == [{
         'Malzeme_Adi': 'Foo',
         'Fiyat': 5.0,
-        'Para_Birimi': 'USD'
+        'Para_Birimi': '$'
     }]
     assert logs[0].startswith("LLM fazı başladı")
     assert logs[-1] == "LLM parsed 1 items"
@@ -199,6 +199,6 @@ def test_llm_extract_mismatched_quotes(monkeypatch):
     assert result == [{
         'Malzeme_Adi': 'Foo',
         'Fiyat': 5.0,
-        'Para_Birimi': 'USD'
+        'Para_Birimi': '$'
     }]
 

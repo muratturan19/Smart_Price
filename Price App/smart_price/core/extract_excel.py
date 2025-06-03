@@ -14,6 +14,7 @@ from .common_utils import (
     select_latest_year_column,
     detect_currency,
     detect_brand,
+    normalize_currency,
 )
 
 logger = logging.getLogger("smart_price")
@@ -229,8 +230,8 @@ def extract_from_excel(
                 sheet_data.rename(columns=mapping, inplace=True)
                 if "Para_Birimi" not in sheet_data.columns:
                     sheet_data["Para_Birimi"] = sheet_data["Fiyat_Ham"].astype(str).apply(detect_currency)
-                # Default to Turkish Lira if currency could not be determined
-                sheet_data["Para_Birimi"] = sheet_data["Para_Birimi"].fillna("TL")
+                sheet_data["Para_Birimi"] = sheet_data["Para_Birimi"].apply(normalize_currency)
+                sheet_data["Para_Birimi"] = sheet_data["Para_Birimi"].fillna("₺")
                 sheet_data["Kaynak_Dosya"] = _basename(filepath, filename)
                 brand_from_file = detect_brand(_basename(filepath, filename))
                 year_match = None

@@ -29,6 +29,7 @@ import re
 from .common_utils import (
     normalize_price,
     detect_currency,
+    normalize_currency,
     detect_brand,
     gpt_clean_text,
     safe_json_parse,
@@ -261,7 +262,7 @@ Sen bir PDF fiyat listesi analiz asistanısın. Amacın, PDF’lerdeki ürün ta
                     {
                         "Malzeme_Adi": name,
                         "Fiyat": val,
-                        "Para_Birimi": detect_currency(price_raw),
+                        "Para_Birimi": normalize_currency(detect_currency(price_raw)),
                     }
                 )
         count = len(results)
@@ -325,7 +326,8 @@ Sen bir PDF fiyat listesi analiz asistanısın. Amacın, PDF’lerdeki ürün ta
         upload_folder(debug_dir, remote_prefix=f"LLM_Output_db/{debug_dir.name}")
         return result
 
-    result["Para_Birimi"] = result["Para_Birimi"].fillna("TL")
+    result["Para_Birimi"] = result["Para_Birimi"].apply(normalize_currency)
+    result["Para_Birimi"] = result["Para_Birimi"].fillna("₺")
     result["Kaynak_Dosya"] = _basename(filepath, filename)
     result["Yil"] = None
     brand_from_file = detect_brand(_basename(filepath, filename))

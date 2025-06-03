@@ -489,7 +489,7 @@ def test_extract_from_excel_default_currency(tmp_path):
     df.to_excel(file, index=False)
 
     result = extract_from_excel(str(file))
-    assert result.iloc[0]["Para_Birimi"] == "TL"
+    assert result.iloc[0]["Para_Birimi"] == "₺"
     assert result.iloc[0]["Fiyat"] == 100.0
     assert result["Açıklama"].tolist() == ["Elma"]
 
@@ -527,7 +527,7 @@ def test_extract_from_pdf_default_currency(monkeypatch):
 
     result = extract_from_pdf("dummy.pdf")
     assert len(result) == 1
-    assert result.iloc[0]["Para_Birimi"] == "TL"
+    assert result.iloc[0]["Para_Birimi"] == "₺"
     assert result.iloc[0]["Fiyat"] == 100.0
     expected_cols = [
         "Malzeme_Kodu",
@@ -664,7 +664,7 @@ def test_merge_files_casts_to_string(monkeypatch):
             "Açıklama": ["A", "B"],
             "Kisa_Kod": [10, None],
             "Fiyat": [5, 6],
-            "Para_Birimi": ["TL", "TL"],
+            "Para_Birimi": ["₺", "₺"],
             "Marka": [None, None],
             "Kaynak_Dosya": ["f.xlsx", "f.xlsx"],
         }
@@ -696,7 +696,7 @@ def test_merge_files_pdf_called(monkeypatch):
             "Açıklama": ["A"],
             "Kisa_Kod": [None],
             "Fiyat": [5],
-            "Para_Birimi": ["TL"],
+            "Para_Birimi": ["₺"],
             "Marka": [None],
             "Kaynak_Dosya": ["f.pdf"],
             "Ana_Baslik": ["M"],
@@ -899,7 +899,7 @@ def test_price_parser_db_schema(monkeypatch, tmp_path):
             "Fiyat": [10.0],
             "Birim": ["ADET"],
             "Kutu_Adedi": ["5"],
-            "Para_Birimi": ["TL"],
+            "Para_Birimi": ["₺"],
             "Kaynak_Dosya": ["src.xlsx"],
             "Sayfa": [1],
             "Image_Path": ["img.png"],
@@ -954,7 +954,7 @@ def test_price_parser_db_schema(monkeypatch, tmp_path):
         10.0,
         "ADET",
         "5",
-        "TL",
+        "₺",
         "src.xlsx",
         1,
         "img.png",
