@@ -1,0 +1,346 @@
+```json
+[
+    {
+        "Ana_Baslik": "PİLOT İLE AÇAN ÇEK VALF (SIZDIRMAZ PİLOT ODALI)",
+        "Malzeme_Kodu": "CZ2D-XAN",
+        "Açıklama": "0.3 bar, T11A, 60 L/dk",
+        "Fiyat": "558.63",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "12"
+    },
+    {
+        "Ana_Baslik": "PİLOT İLE AÇAN ÇEK VALF (SIZDIRMAZ PİLOT ODALI)",
+        "Malzeme_Kodu": "CV2D-XCN",
+        "Açıklama": "2.0 bar, T11A, 60 L/dk",
+        "Fiyat": "558.63",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "12"
+    },
+    {
+        "Ana_Baslik": "PİLOT İLE AÇAN ÇEK VALF (SIZDIRMAZ PİLOT ODALI)",
+        "Malzeme_Kodu": "CX2D-XEN",
+        "Açıklama": "5.0 bar, T11A, 60 L/dk",
+        "Fiyat": "558.63",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "12"
+    },
+    {
+        "Ana_Baslik": "PİLOT İLE AÇAN ÇEK VALF (SIZDIRMAZ PİLOT ODALI)",
+        "Malzeme_Kodu": "CK3D-XAN",
+        "Açıklama": "0.3 bar, T2A, 120 L/dk",
+        "Fiyat": "593.51",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "12"
+    },
+    {
+        "Ana_Baslik": "PİLOT İLE AÇAN ÇEK VALF (SIZDIRMAZ PİLOT ODALI)",
+        "Malzeme_Kodu": "CK3D-XCN",
+        "Açıklama": "2.0 bar, T2A, 120 L/dk",
+        "Fiyat": "593.51",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "12"
+    },
+    {
+        "Ana_Baslik": "PİLOT İLE AÇAN ÇEK VALF (SIZDIRMAZ PİLOT ODALI)",
+        "Malzeme_Kodu": "CK3D-XEN",
+        "Açıklama": "5.0 bar, T2A, 120 L/dk",
+        "Fiyat": "593.51",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "12"
+    },
+    {
+        "Ana_Baslik": "PİLOT İLE AÇAN ÇEK VALF (SIZDIRMAZ PİLOT ODALI)",
+        "Malzeme_Kodu": "CK6D-XAN",
+        "Açıklama": "0.3 bar, T17A, 240 L/dk",
+        "Fiyat": "182.40",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "12"
+    },
+    {
+        "Ana_Baslik": "PİLOT İLE AÇAN ÇEK VALF (SIZDIRMAZ PİLOT ODALI)",
+        "Malzeme_Kodu": "CK6D-XCN",
+        "Açıklama": "2.0 bar, T17A, 240 L/dk",
+        "Fiyat": "182.40",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "12"
+    },
+    {
+        "Ana_Baslik": "PİLOT İLE AÇAN ÇEK VALF (SIZDIRMAZ PİLOT ODALI)",
+        "Malzeme_Kodu": "CK6D-XEN",
+        "Açıklama": "5.0 bar, T17A, 240 L/dk",
+        "Fiyat": "182.40",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "12"
+    },
+    {
+        "Ana_Baslik": "SIZINTILI, PİLOT İLE AÇAN ÇEK VALF",
+        "Malzeme_Kodu": "C3F-XAN",
+        "Açıklama": "0.3 bar, T2A, 120 L/dk",
+        "Fiyat": "101.33",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "12"
+    },
+    {
+        "Ana_Baslik": "SIZINTILI, PİLOT İLE AÇAN ÇEK VALF",
+        "Malzeme_Kodu": "C3F-XCN",
+        "Açıklama": "2.0 bar, T2A, 120 L/dk",
+        "Fiyat": "101.33",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "12"
+    },
+    {
+        "Ana_Baslik": "SIZINTILI, PİLOT İLE AÇAN ÇEK VALF",
+        "Malzeme_Kodu": "C3F-XEN",
+        "Açıklama": "5.0 bar, T2A, 120 L/dk",
+        "Fiyat": "101.33",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "12"
+    },
+    {
+        "Ana_Baslik": "SIZINTILI, PİLOT İLE AÇAN ÇEK VALF",
+        "Malzeme_Kodu": "CK6F-XAN",
+        "Açıklama": "0.3 bar, T17A, 240 L/dk",
+        "Fiyat": "193.56",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "12"
+    },
+    {
+        "Ana_Baslik": "SIZINTILI, PİLOT İLE AÇAN ÇEK VALF",
+        "Malzeme_Kodu": "CK6F-XCN",
+        "Açıklama": "2.0 bar, T17A, 240 L/dk",
+        "Fiyat": "193.56",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "12"
+    },
+    {
+        "Ana_Baslik": "SIZINTILI, PİLOT İLE AÇAN ÇEK VALF",
+        "Malzeme_Kodu": "CK6F-XEN",
+        "Açıklama": "5.0 bar, T17A, 240 L/dk",
+        "Fiyat": "193.56",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "12"
+    },
+    {
+        "Ana_Baslik": "SIZINTILI, PİLOT İLE AÇAN ÇEK VALF",
+        "Malzeme_Kodu": "CV2V-XAN",
+        "Açıklama": "0.3 bar, T21A, 60 L/dk",
+        "Fiyat": "151.32",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "12"
+    },
+    {
+        "Ana_Baslik": "SIZINTILI, PİLOT İLE AÇAN ÇEK VALF",
+        "Malzeme_Kodu": "CV2V-XCN",
+        "Açıklama": "2.0 bar, T21A, 60 L/dk",
+        "Fiyat": "151.32",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "12"
+    },
+    {
+        "Ana_Baslik": "SIZINTILI, PİLOT İLE AÇAN ÇEK VALF",
+        "Malzeme_Kodu": "CV2V-XEN",
+        "Açıklama": "5.0 bar, T21A, 60 L/dk",
+        "Fiyat": "151.32",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "12"
+    },
+    {
+        "Ana_Baslik": "PİLOT İLE KAPATAN ÇEK VALF",
+        "Malzeme_Kodu": "C01A-XAN",
+        "Açıklama": "0.3 bar, T163A, 40 L/dk",
+        "Fiyat": "565.14",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "12"
+    },
+    {
+        "Ana_Baslik": "PİLOT İLE KAPATAN ÇEK VALF",
+        "Malzeme_Kodu": "C01A-XCN",
+        "Açıklama": "2.0 bar, T163A, 40 L/dk",
+        "Fiyat": "565.14",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "12"
+    },
+    {
+        "Ana_Baslik": "PİLOT İLE KAPATAN ÇEK VALF",
+        "Malzeme_Kodu": "C01A-XEN",
+        "Açıklama": "5.0 bar, T163A, 40 L/dk",
+        "Fiyat": "565.14",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "12"
+    },
+    {
+        "Ana_Baslik": "PİLOT İLE KAPATAN ÇEK VALF",
+        "Malzeme_Kodu": "C02A-XAN",
+        "Açıklama": "0.3 bar, T11A, 80 L/dk",
+        "Fiyat": "565.33",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "12"
+    },
+    {
+        "Ana_Baslik": "PİLOT İLE KAPATAN ÇEK VALF",
+        "Malzeme_Kodu": "C02A-XCN",
+        "Açıklama": "2.0 bar, T11A, 80 L/dk",
+        "Fiyat": "565.33",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "12"
+    },
+    {
+        "Ana_Baslik": "PİLOT İLE KAPATAN ÇEK VALF",
+        "Malzeme_Kodu": "C02A-XEN",
+        "Açıklama": "5.0 bar, T11A, 80 L/dk",
+        "Fiyat": "565.33",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "12"
+    },
+    {
+        "Ana_Baslik": "PİLOT İLE KAPATAN ÇEK VALF",
+        "Malzeme_Kodu": "C03A-XAN",
+        "Açıklama": "0.3 bar, T2A, 160 L/dk",
+        "Fiyat": "594.09",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "12"
+    },
+    {
+        "Ana_Baslik": "PİLOT İLE KAPATAN ÇEK VALF",
+        "Malzeme_Kodu": "C03A-XCN",
+        "Açıklama": "2.0 bar, T2A, 160 L/dk",
+        "Fiyat": "594.09",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "12"
+    },
+    {
+        "Ana_Baslik": "PİLOT İLE KAPATAN ÇEK VALF",
+        "Malzeme_Kodu": "C03A-XEN",
+        "Açıklama": "5.0 bar, T2A, 160 L/dk",
+        "Fiyat": "594.09",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "12"
+    },
+    {
+        "Ana_Baslik": "PİLOT İLE KAPATAN ÇEK VALF",
+        "Malzeme_Kodu": "C06A-XAN",
+        "Açıklama": "0.3 bar, T17A, 320 L/dk",
+        "Fiyat": "189.22",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "12"
+    },
+    {
+        "Ana_Baslik": "PİLOT İLE KAPATAN ÇEK VALF",
+        "Malzeme_Kodu": "C06A-XCN",
+        "Açıklama": "2.0 bar, T17A, 320 L/dk",
+        "Fiyat": "189.22",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "12"
+    },
+    {
+        "Ana_Baslik": "PİLOT İLE KAPATAN ÇEK VALF",
+        "Malzeme_Kodu": "C06A-XEN",
+        "Açıklama": "5.0 bar, T17A, 320 L/dk",
+        "Fiyat": "189.22",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "12"
+    },
+    {
+        "Ana_Baslik": "PİLOT İLE KAPATAN ÇEK VALF",
+        "Malzeme_Kodu": "C08A-XAN",
+        "Açıklama": "0.3 bar, T19A, 640 L/dk",
+        "Fiyat": "362.11",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "12"
+    },
+    {
+        "Ana_Baslik": "PİLOT İLE KAPATAN ÇEK VALF",
+        "Malzeme_Kodu": "C08A-XCN",
+        "Açıklama": "2.0 bar, T19A, 640 L/dk",
+        "Fiyat": "362.11",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "12"
+    },
+    {
+        "Ana_Baslik": "PİLOT İLE KAPATAN ÇEK VALF",
+        "Malzeme_Kodu": "C08A-XEN",
+        "Açıklama": "5.0 bar, T19A, 640 L/dk",
+        "Fiyat": "362.11",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "12"
+    },
+    {
+        "Ana_Baslik": "PİLOT İLE KAPATAN ÇEK VALF (COO) 120:1",
+        "Malzeme_Kodu": "C03D-XDN",
+        "Açıklama": "4 bar, T2A, 4 L/dk",
+        "Fiyat": "131.73",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "12"
+    },
+    {
+        "Ana_Baslik": "VEYA VALFİ",
+        "Malzeme_Kodu": "C31Z-XXN",
+        "Açıklama": "350 bar, T163A, 5 L/dk",
+        "Fiyat": "FİYAT SORUNUZ",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "12"
+    },
+    {
+        "Ana_Baslik": "VEYA VALFİ",
+        "Malzeme_Kodu": "C31X-XXN",
+        "Açıklama": "350 bar, T163A, 5 L/dk",
+        "Fiyat": "FİYAT SORUNUZ",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "12"
+    },
+    {
+        "Ana_Baslik": "VEYA VALFİ",
+        "Malzeme_Kodu": "C32D-XXN",
+        "Açıklama": "350 bar, T11A, 10 L/dk",
+        "Fiyat": "48.30",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "12"
+    },
+    {
+        "Ana_Baslik": "VEYA VALFİ",
+        "Malzeme_Kodu": "C32B-XXN",
+        "Açıklama": "350 bar, T11A, 10 L/dk",
+        "Fiyat": "51.09",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "12"
+    }
+]
+```
