@@ -1,0 +1,334 @@
+```json
+[
+    {
+        "Ana_Baslik": "SAE KAVİTE VALFLER",
+        "Alt_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFLERİ",
+        "Malzeme_Kodu": "RV08-20-N-05",
+        "Açıklama": "3.5÷41 BAR, 8*2 KAVİTE, 22.7 LT/DK",
+        "Fiyat": "56,15",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "25"
+    },
+    {
+        "Ana_Baslik": "SAE KAVİTE VALFLER",
+        "Alt_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFLERİ",
+        "Malzeme_Kodu": "RV08-20-N-09",
+        "Açıklama": "7÷89 BAR, 8*2 KAVİTE, 22.7 LT/DK",
+        "Fiyat": "56,15",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "25"
+    },
+    {
+        "Ana_Baslik": "SAE KAVİTE VALFLER",
+        "Alt_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFLERİ",
+        "Malzeme_Kodu": "RV08-20-N-18",
+        "Açıklama": "17÷179 BAR, 8*2 KAVİTE, 22.7 LT/DK",
+        "Fiyat": "56,15",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "25"
+    },
+    {
+        "Ana_Baslik": "SAE KAVİTE VALFLER",
+        "Alt_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFLERİ",
+        "Malzeme_Kodu": "RV08-20-N-33",
+        "Açıklama": "17÷278 BAR, 8*2 KAVİTE, 22.7 LT/DK",
+        "Fiyat": "56,15",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "25"
+    },
+    {
+        "Ana_Baslik": "SAE KAVİTE VALFLER",
+        "Alt_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFLERİ",
+        "Malzeme_Kodu": "RV10-20-N-06",
+        "Açıklama": "3.5÷41 BAR, 10*2 KAVİTE, 37.9 LT/DK",
+        "Fiyat": "60,18",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "25"
+    },
+    {
+        "Ana_Baslik": "SAE KAVİTE VALFLER",
+        "Alt_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFLERİ",
+        "Malzeme_Kodu": "RV10-20-N-12",
+        "Açıklama": "10.5÷62 BAR, 10*2 KAVİTE, 37.9 LT/DK",
+        "Fiyat": "60,18",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "25"
+    },
+    {
+        "Ana_Baslik": "SAE KAVİTE VALFLER",
+        "Alt_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFLERİ",
+        "Malzeme_Kodu": "RV10-20-N-23",
+        "Açıklama": "17÷158 BAR, 10*2 KAVİTE, 37.9 LT/DK",
+        "Fiyat": "60,18",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "25"
+    },
+    {
+        "Ana_Baslik": "SAE KAVİTE VALFLER",
+        "Alt_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFLERİ",
+        "Malzeme_Kodu": "RV10-20-N-33",
+        "Açıklama": "17÷227 BAR, 10*2 KAVİTE, 37.9 LT/DK",
+        "Fiyat": "60,18",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "25"
+    },
+    {
+        "Ana_Baslik": "SAE KAVİTE VALFLER",
+        "Alt_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFLERİ",
+        "Malzeme_Kodu": "RV08-22-N-04",
+        "Açıklama": "3.5÷27 BAR, 8*2 KAVİTE, 30 LT/DK",
+        "Fiyat": "82,51",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "25"
+    },
+    {
+        "Ana_Baslik": "SAE KAVİTE VALFLER",
+        "Alt_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFLERİ",
+        "Malzeme_Kodu": "RV08-22-N-07",
+        "Açıklama": "7÷26 BAR, 8*2 KAVİTE, 30 LT/DK",
+        "Fiyat": "82,51",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "25"
+    },
+    {
+        "Ana_Baslik": "SAE KAVİTE VALFLER",
+        "Alt_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFLERİ",
+        "Malzeme_Kodu": "RV08-22-N-13",
+        "Açıklama": "7÷117 BAR, 8*2 KAVİTE, 30 LT/DK",
+        "Fiyat": "82,51",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "25"
+    },
+    {
+        "Ana_Baslik": "SAE KAVİTE VALFLER",
+        "Alt_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFLERİ",
+        "Malzeme_Kodu": "RV08-22-N-26",
+        "Açıklama": "17÷220 BAR, 8*2 KAVİTE, 30 LT/DK",
+        "Fiyat": "82,51",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "25"
+    },
+    {
+        "Ana_Baslik": "SAE KAVİTE VALFLER",
+        "Alt_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFLERİ",
+        "Malzeme_Kodu": "RV10-22-N-06",
+        "Açıklama": "10÷41 BAR, 10*2 KAVİTE, 113 LT/DK",
+        "Fiyat": "115,08",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "25"
+    },
+    {
+        "Ana_Baslik": "SAE KAVİTE VALFLER",
+        "Alt_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFLERİ",
+        "Malzeme_Kodu": "RV10-22-N-12",
+        "Açıklama": "10÷89 BAR, 10*2 KAVİTE, 113 LT/DK",
+        "Fiyat": "115,08",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "25"
+    },
+    {
+        "Ana_Baslik": "SAE KAVİTE VALFLER",
+        "Alt_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFLERİ",
+        "Malzeme_Kodu": "RV10-22-N-25",
+        "Açıklama": "25÷165 BAR, 10*2 KAVİTE, 113 LT/DK",
+        "Fiyat": "115,08",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "25"
+    },
+    {
+        "Ana_Baslik": "SAE KAVİTE VALFLER",
+        "Alt_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFLERİ",
+        "Malzeme_Kodu": "RV10-22-N-35",
+        "Açıklama": "17÷241 BAR, 10*2 KAVİTE, 113 LT/DK",
+        "Fiyat": "115,08",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "25"
+    },
+    {
+        "Ana_Baslik": "SAE KAVİTE VALFLER",
+        "Alt_Baslik": "PİLOT KUMANDALI BASINÇ EMNİYET VALFLERİ",
+        "Malzeme_Kodu": "RV10-26-N-04",
+        "Açıklama": "7÷27 BAR, 10*2 KAVİTE, 113 LT/DK",
+        "Fiyat": "82,51",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "25"
+    },
+    {
+        "Ana_Baslik": "SAE KAVİTE VALFLER",
+        "Alt_Baslik": "PİLOT KUMANDALI BASINÇ EMNİYET VALFLERİ",
+        "Malzeme_Kodu": "RV10-26-N-15",
+        "Açıklama": "10÷103 BAR, 10*2 KAVİTE, 113 LT/DK",
+        "Fiyat": "82,51",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "25"
+    },
+    {
+        "Ana_Baslik": "SAE KAVİTE VALFLER",
+        "Alt_Baslik": "PİLOT KUMANDALI BASINÇ EMNİYET VALFLERİ",
+        "Malzeme_Kodu": "RV10-26-N-30",
+        "Açıklama": "27÷207 BAR, 10*2 KAVİTE, 113 LT/DK",
+        "Fiyat": "82,51",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "25"
+    },
+    {
+        "Ana_Baslik": "SAE KAVİTE VALFLER",
+        "Alt_Baslik": "PİLOT KUMANDALI BASINÇ EMNİYET VALFLERİ",
+        "Malzeme_Kodu": "RV12-26-N-04",
+        "Açıklama": "7÷27 BAR, 12*2 KAVİTE, 189 LT/DK",
+        "Fiyat": "115,08",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "25"
+    },
+    {
+        "Ana_Baslik": "SAE KAVİTE VALFLER",
+        "Alt_Baslik": "PİLOT KUMANDALI BASINÇ EMNİYET VALFLERİ",
+        "Malzeme_Kodu": "RV12-26-N-15",
+        "Açıklama": "3.8÷110 BAR, 12*2 KAVİTE, 189 LT/DK",
+        "Fiyat": "115,08",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "25"
+    },
+    {
+        "Ana_Baslik": "SAE KAVİTE VALFLER",
+        "Alt_Baslik": "PİLOT KUMANDALI BASINÇ EMNİYET VALFLERİ",
+        "Malzeme_Kodu": "RV12-26-N-30",
+        "Açıklama": "31÷207 BAR, 12*2 KAVİTE, 189 LT/DK",
+        "Fiyat": "115,08",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "25"
+    },
+    {
+        "Ana_Baslik": "SAE KAVİTE VALFLER",
+        "Alt_Baslik": "PİLOT KUMANDALI BASINÇ EMNİYET VALFLERİ",
+        "Malzeme_Kodu": "RV12-26-N-35",
+        "Açıklama": "31÷241 BAR, 12*2 KAVİTE, 189 LT/DK",
+        "Fiyat": "115,08",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "25"
+    },
+    {
+        "Ana_Baslik": "SAE KAVİTE VALFLER",
+        "Alt_Baslik": "PİLOT KUMANDALI BASINÇ EMNİYET VALFLERİ",
+        "Malzeme_Kodu": "RV16-26-N-03",
+        "Açıklama": "9÷20 BAR, 16*2 KAVİTE, 302 LT/DK",
+        "Fiyat": "FİYAT SORUNUZ",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "25"
+    },
+    {
+        "Ana_Baslik": "SAE KAVİTE VALFLER",
+        "Alt_Baslik": "PİLOT KUMANDALI BASINÇ EMNİYET VALFLERİ",
+        "Malzeme_Kodu": "RV16-26-N-06",
+        "Açıklama": "16÷41 BAR, 16*2 KAVİTE, 302 LT/DK",
+        "Fiyat": "FİYAT SORUNUZ",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "25"
+    },
+    {
+        "Ana_Baslik": "SAE KAVİTE VALFLER",
+        "Alt_Baslik": "PİLOT KUMANDALI BASINÇ EMNİYET VALFLERİ",
+        "Malzeme_Kodu": "RV16-26-N-15",
+        "Açıklama": "36÷103 BAR, 16*2 KAVİTE, 302 LT/DK",
+        "Fiyat": "FİYAT SORUNUZ",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "25"
+    },
+    {
+        "Ana_Baslik": "SAE KAVİTE VALFLER",
+        "Alt_Baslik": "PİLOT KUMANDALI BASINÇ EMNİYET VALFLERİ",
+        "Malzeme_Kodu": "RV16-26-N-35",
+        "Açıklama": "82÷241 BAR, 16*2 KAVİTE, 302 LT/DK",
+        "Fiyat": "FİYAT SORUNUZ",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "25"
+    },
+    {
+        "Ana_Baslik": "SAE KAVİTE VALFLER",
+        "Alt_Baslik": "İKİ YÖNLÜ PİLOT KUMANDALI BASINÇ EMNİYET VALFLERİ",
+        "Malzeme_Kodu": "CR08-28-N-15",
+        "Açıklama": "6.9÷103.4 BAR, 8*2 KAVİTE, 37 LT/DK",
+        "Fiyat": "73,21",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "25"
+    },
+    {
+        "Ana_Baslik": "SAE KAVİTE VALFLER",
+        "Alt_Baslik": "İKİ YÖNLÜ PİLOT KUMANDALI BASINÇ EMNİYET VALFLERİ",
+        "Malzeme_Kodu": "CR08-28-N-30",
+        "Açıklama": "51.7÷206.9 BAR, 8*2 KAVİTE, 37 LT/DK",
+        "Fiyat": "73,21",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "25"
+    },
+    {
+        "Ana_Baslik": "SAE KAVİTE VALFLER",
+        "Alt_Baslik": "İKİ YÖNLÜ PİLOT KUMANDALI BASINÇ EMNİYET VALFLERİ",
+        "Malzeme_Kodu": "CR08-28-N-50",
+        "Açıklama": "103.4÷344.8 BAR, 8*2 KAVİTE, 37 LT/DK",
+        "Fiyat": "73,21",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "25"
+    },
+    {
+        "Ana_Baslik": "SAE KAVİTE VALFLER",
+        "Alt_Baslik": "İKİ YÖNLÜ PİLOT KUMANDALI BASINÇ EMNİYET VALFLERİ",
+        "Malzeme_Kodu": "CR10-28-N-15",
+        "Açıklama": "6.9÷103.4 BAR, 10*2 KAVİTE, 75 LT/DK",
+        "Fiyat": "81,89",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "25"
+    },
+    {
+        "Ana_Baslik": "SAE KAVİTE VALFLER",
+        "Alt_Baslik": "İKİ YÖNLÜ PİLOT KUMANDALI BASINÇ EMNİYET VALFLERİ",
+        "Malzeme_Kodu": "CR10-28-N-30",
+        "Açıklama": "51.7÷206.9 BAR, 10*2 KAVİTE, 75 LT/DK",
+        "Fiyat": "81,89",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "25"
+    },
+    {
+        "Ana_Baslik": "SAE KAVİTE VALFLER",
+        "Alt_Baslik": "İKİ YÖNLÜ PİLOT KUMANDALI BASINÇ EMNİYET VALFLERİ",
+        "Malzeme_Kodu": "CR10-28-N-50",
+        "Açıklama": "103.4÷344.8 BAR, 10*2 KAVİTE, 75 LT/DK",
+        "Fiyat": "81,89",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "25"
+    }
+]
+```
