@@ -1,0 +1,175 @@
+```json
+[
+  {
+    "Ana_Baslik": "ST6ERM YÜKSEK BASINÇLI PALETLİ POMPA",
+    "Malzeme_Kodu": "SR6ERM - 042",
+    "Açıklama": "132,3 cc / devir, 240 bar",
+    "Fiyat": "2.868,34",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+    "Sayfa": "40"
+  },
+  {
+    "Ana_Baslik": "ST6ERM YÜKSEK BASINÇLI PALETLİ POMPA",
+    "Malzeme_Kodu": "SR6ERM - 045",
+    "Açıklama": "142,4 cc / devir, 240 bar",
+    "Fiyat": "2.868,34",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+    "Sayfa": "40"
+  },
+  {
+    "Ana_Baslik": "ST6ERM YÜKSEK BASINÇLI PALETLİ POMPA",
+    "Malzeme_Kodu": "SR6ERM - 050",
+    "Açıklama": "158,5 cc / devir, 240 bar",
+    "Fiyat": "2.868,34",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+    "Sayfa": "40"
+  },
+  {
+    "Ana_Baslik": "ST6ERM YÜKSEK BASINÇLI PALETLİ POMPA",
+    "Malzeme_Kodu": "SR6ERM - 052",
+    "Açıklama": "164,8 cc / devir, 240 bar",
+    "Fiyat": "2.868,34",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+    "Sayfa": "40"
+  },
+  {
+    "Ana_Baslik": "ST6ERM YÜKSEK BASINÇLI PALETLİ POMPA",
+    "Malzeme_Kodu": "SR6ERM - 062",
+    "Açıklama": "196,7 cc / devir, 240 bar",
+    "Fiyat": "2.868,34",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+    "Sayfa": "40"
+  },
+  {
+    "Ana_Baslik": "ST6ERM YÜKSEK BASINÇLI PALETLİ POMPA",
+    "Malzeme_Kodu": "SR6ERM - 066",
+    "Açıklama": "213,3 cc / devir, 240 bar",
+    "Fiyat": "2.868,34",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+    "Sayfa": "40"
+  },
+  {
+    "Ana_Baslik": "ST6ERM YÜKSEK BASINÇLI PALETLİ POMPA",
+    "Malzeme_Kodu": "SR6ERM - 072",
+    "Açıklama": "227,1 cc / devir, 240 bar",
+    "Fiyat": "2.868,34",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+    "Sayfa": "40"
+  },
+  {
+    "Ana_Baslik": "ST6EDC - ST6EDCM YÜKSEK BASINÇLI PALETLİ POMPA",
+    "Malzeme_Kodu": "042 - (132,3 cc)",
+    "Açıklama": "Pompa 1",
+    "Fiyat": "8.802,75",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+    "Sayfa": "40"
+  },
+  {
+    "Ana_Baslik": "ST6EDC - ST6EDCM YÜKSEK BASINÇLI PALETLİ POMPA",
+    "Malzeme_Kodu": "014 - (47,6 cc)",
+    "Açıklama": "Pompa 2",
+    "Fiyat": "8.802,75",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+    "Sayfa": "40"
+  },
+  {
+    "Ana_Baslik": "ST6EDC - ST6EDCM YÜKSEK BASINÇLI PALETLİ POMPA",
+    "Malzeme_Kodu": "005 - (17,2 cc)",
+    "Açıklama": "Pompa 3",
+    "Fiyat": "8.802,75",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+    "Sayfa": "40"
+  },
+  {
+    "Ana_Baslik": "ST7EE YÜKSEK BASINÇLI PALETLİ POMPA",
+    "Malzeme_Kodu": "ST7EE - 042",
+    "Açıklama": "132,3 cc / devir, 240 bar",
+    "Fiyat": "8.125,62",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+    "Sayfa": "40"
+  },
+  {
+    "Ana_Baslik": "ST7EE YÜKSEK BASINÇLI PALETLİ POMPA",
+    "Malzeme_Kodu": "ST7EE - 045",
+    "Açıklama": "142,4 cc / devir, 240 bar",
+    "Fiyat": "8.125,62",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+    "Sayfa": "40"
+  },
+  {
+    "Ana_Baslik": "ST7EE YÜKSEK BASINÇLI PALETLİ POMPA",
+    "Malzeme_Kodu": "ST7EE - 050",
+    "Açıklama": "158,5 cc / devir, 240 bar",
+    "Fiyat": "8.125,62",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+    "Sayfa": "40"
+  },
+  {
+    "Ana_Baslik": "ST7EE YÜKSEK BASINÇLI PALETLİ POMPA",
+    "Malzeme_Kodu": "ST7EE - 052",
+    "Açıklama": "164,8 cc / devir, 240 bar",
+    "Fiyat": "8.125,62",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+    "Sayfa": "40"
+  },
+  {
+    "Ana_Baslik": "ST7EE YÜKSEK BASINÇLI PALETLİ POMPA",
+    "Malzeme_Kodu": "ST7EE - 057",
+    "Açıklama": "180,7 cc / devir, 240 bar",
+    "Fiyat": "8.125,62",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+    "Sayfa": "40"
+  },
+  {
+    "Ana_Baslik": "ST7EE YÜKSEK BASINÇLI PALETLİ POMPA",
+    "Malzeme_Kodu": "ST7EE - 062",
+    "Açıklama": "196,7 cc / devir, 240 bar",
+    "Fiyat": "8.125,62",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+    "Sayfa": "40"
+  },
+  {
+    "Ana_Baslik": "ST7EE YÜKSEK BASINÇLI PALETLİ POMPA",
+    "Malzeme_Kodu": "ST7EE - 066",
+    "Açıklama": "213,3 cc / devir, 240 bar",
+    "Fiyat": "8.125,62",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+    "Sayfa": "40"
+  },
+  {
+    "Ana_Baslik": "ST7EE YÜKSEK BASINÇLI PALETLİ POMPA",
+    "Malzeme_Kodu": "ST7EE - 072",
+    "Açıklama": "227,1 cc / devir, 240 bar",
+    "Fiyat": "8.125,62",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+    "Sayfa": "40"
+  },
+  {
+    "Ana_Baslik": "ST7EE YÜKSEK BASINÇLI PALETLİ POMPA",
+    "Malzeme_Kodu": "ST7EE - 085",
+    "Açıklama": "269,8 cc / devir, 90 bar",
+    "Fiyat": "8.125,62",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+    "Sayfa": "40"
+  }
+]
+```
