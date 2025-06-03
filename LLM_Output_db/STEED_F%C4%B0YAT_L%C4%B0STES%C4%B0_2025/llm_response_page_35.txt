@@ -1,0 +1,74 @@
+```json
+[
+  {
+    "Ana_Baslik": "DENISON TİP SABİT DEPLASMANLI PALETLİ POMPA GRUBU",
+    "Alt_Baslik": "ST6C, ST6CM YÜKSEK BASINÇLI PALETLİ POMPA",
+    "Malzeme_Kodu": "ST6C, ST6CM - 003",
+    "Açıklama": "Deplasman: 10,8 cc/dev, Max. Basınç: 275 bar",
+    "Fiyat": "847,77",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+    "Sayfa": "35"
+  },
+  {
+    "Ana_Baslik": "DENISON TİP SABİT DEPLASMANLI PALETLİ POMPA GRUBU",
+    "Alt_Baslik": "ST6C, ST6CM YÜKSEK BASINÇLI PALETLİ POMPA",
+    "Malzeme_Kodu": "ST6C, ST6CM - 005",
+    "Açıklama": "Deplasman: 17,2 cc/dev, Max. Basınç: 275 bar",
+    "Fiyat": "847,77",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+    "Sayfa": "35"
+  },
+  {
+    "Ana_Baslik": "DENISON TİP SABİT DEPLASMANLI PALETLİ POMPA GRUBU",
+    "Alt_Baslik": "ST6C, ST6CM YÜKSEK BASINÇLI PALETLİ POMPA",
+    "Malzeme_Kodu": "ST6C, ST6CM - 006",
+    "Açıklama": "Deplasman: 21,3 cc/dev, Max. Basınç: 275 bar",
+    "Fiyat": "847,77",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+    "Sayfa": "35"
+  },
+  {
+    "Ana_Baslik": "DENISON TİP SABİT DEPLASMANLI PALETLİ POMPA GRUBU",
+    "Alt_Baslik": "ST6D, ST6DM YÜKSEK BASINÇLI PALETLİ POMPA",
+    "Malzeme_Kodu": "ST6D, ST6DM - 014",
+    "Açıklama": "Deplasman: 47,6 cc/dev, Max. Basınç: 240 bar",
+    "Fiyat": "1.692,84",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+    "Sayfa": "35"
+  },
+  {
+    "Ana_Baslik": "DENISON TİP SABİT DEPLASMANLI PALETLİ POMPA GRUBU",
+    "Alt_Baslik": "ST6D, ST6DM YÜKSEK BASINÇLI PALETLİ POMPA",
+    "Malzeme_Kodu": "ST6D, ST6DM - 017",
+    "Açıklama": "Deplasman: 58,2 cc/dev, Max. Basınç: 240 bar",
+    "Fiyat": "1.692,84",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+    "Sayfa": "35"
+  },
+  {
+    "Ana_Baslik": "DENISON TİP SABİT DEPLASMANLI PALETLİ POMPA GRUBU",
+    "Alt_Baslik": "ST6E, ST6EM YÜKSEK BASINÇLI PALETLİ POMPA",
+    "Malzeme_Kodu": "ST6E, ST6EM - 042",
+    "Açıklama": "Deplasman: 132,3 cc/dev, Max. Basınç: 240 bar",
+    "Fiyat": "2.640,83",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+    "Sayfa": "35"
+  },
+  {
+    "Ana_Baslik": "DENISON TİP SABİT DEPLASMANLI PALETLİ POMPA GRUBU",
+    "Alt_Baslik": "ST6E, ST6EM YÜKSEK BASINÇLI PALETLİ POMPA",
+    "Malzeme_Kodu": "ST6E, ST6EM - 045",
+    "Açıklama": "Deplasman: 142,4 cc/dev, Max. Basınç: 240 bar",
+    "Fiyat": "2.640,83",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+    "Sayfa": "35"
+  }
+]
+```
