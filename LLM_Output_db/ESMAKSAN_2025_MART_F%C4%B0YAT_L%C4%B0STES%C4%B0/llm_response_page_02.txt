@@ -1,0 +1,43 @@
+Üzgünüm, PDF dosyalarını veya içeriğini doğrudan işleyemem. Ancak, PDF'den elde edilen verileri yukarıda belirtilen formatta nasıl yapılandırabileceğinizi açıklayabilirim.
+
+Öncelikle, PDF'deki ürün bilgilerini manuel olarak çıkarmanız gerekecek. Ardından, bu bilgileri JSON formatında aşağıdaki gibi yapılandırabilirsiniz:
+
+### Örnek JSON Çıktısı
+
+```json
+[
+  {
+    "Ana_Baslik": "JAWTEX KAPLİNLER",
+    "Alt_Baslik": "İŞLENMEMİŞ JAWTEX KAPLİNLER",
+    "Malzeme_Kodu": "Örnek Kod 1",
+    "Açıklama": "Örnek Açıklama 1",
+    "Fiyat": "100,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "3"
+  },
+  {
+    "Ana_Baslik": "DK-ELASTİK ve YILDIZ KAPLİNLER",
+    "Alt_Baslik": "İŞLENMEMİŞ DK ELASTİK KAPLİNLER",
+    "Malzeme_Kodu": "Örnek Kod 2",
+    "Açıklama": "Örnek Açıklama 2",
+    "Fiyat": "200,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+    "Sayfa": "6"
+  }
+]
+```
+
+### Adımlar
+
+1. **PDF'den Verileri Çıkarın:**
+   - PDF'deki ürün bilgilerini manuel olarak okuyun ve not alın.
+
+2. **JSON Formatına Dönüştürün:**
+   - Her ürün için yukarıdaki JSON formatını kullanarak verileri yapılandırın.
+
+3. **Ek Alanlar:**
+   - Eğer ürünle ilgili ek bilgiler varsa (örneğin, adet, birim, marka), bunları da JSON yapısına ekleyin.
+
+Bu şekilde, PDF'deki ürün bilgilerini yapılandırılmış bir formatta saklayabilirsiniz.
