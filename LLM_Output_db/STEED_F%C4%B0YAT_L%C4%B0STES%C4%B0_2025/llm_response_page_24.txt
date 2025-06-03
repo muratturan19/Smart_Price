@@ -1,0 +1,124 @@
+```json
+[
+    {
+        "Ana_Baslik": "VALF",
+        "Alt_Baslik": "3/2 NORMDALE KAPALI SÜRGÜLÜ VALF",
+        "Malzeme_Kodu": "SV08-34",
+        "Açıklama": "Çalışma Basıncı: 255,00 bar, Debi: 11,00 L/dk, Kavit: SAE-08-3",
+        "Fiyat": "71,04",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "24"
+    },
+    {
+        "Ana_Baslik": "VALF",
+        "Alt_Baslik": "3/2 NORMDALE KAPALI SÜRGÜLÜ VALF",
+        "Malzeme_Kodu": "SV08-34",
+        "Açıklama": "Çalışma Basıncı: 255,00 bar, Debi: 11,00 L/dk, Kavit: SAE-08-3",
+        "Fiyat": "73,83",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "24"
+    },
+    {
+        "Ana_Baslik": "VALF",
+        "Alt_Baslik": "3/2 NORMDALE KAPALI SÜRGÜLÜ VALF",
+        "Malzeme_Kodu": "SV08-34",
+        "Açıklama": "Çalışma Basıncı: 255,00 bar, Debi: 11,00 L/dk, Kavit: SAE-08-3",
+        "Fiyat": "75,38",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "24"
+    },
+    {
+        "Ana_Baslik": "VALF",
+        "Alt_Baslik": "3/2 NORMDALE KAPALI SÜRGÜLÜ VALF",
+        "Malzeme_Kodu": "SV10-34",
+        "Açıklama": "Çalışma Basıncı: 255,00 bar, Debi: 23,00 L/dk, Kavit: SAE-10-3",
+        "Fiyat": "102,95",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "24"
+    },
+    {
+        "Ana_Baslik": "VALF",
+        "Alt_Baslik": "3/2 NORMDALE KAPALI SÜRGÜLÜ VALF",
+        "Malzeme_Kodu": "SV10-34",
+        "Açıklama": "Çalışma Basıncı: 255,00 bar, Debi: 23,00 L/dk, Kavit: SAE-10-3",
+        "Fiyat": "105,16",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "24"
+    },
+    {
+        "Ana_Baslik": "VALF",
+        "Alt_Baslik": "3/2 NORMDALE KAPALI SÜRGÜLÜ VALF",
+        "Malzeme_Kodu": "SV10-34",
+        "Açıklama": "Çalışma Basıncı: 255,00 bar, Debi: 23,00 L/dk, Kavit: SAE-10-3",
+        "Fiyat": "106,71",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "24"
+    },
+    {
+        "Ana_Baslik": "VALF",
+        "Alt_Baslik": "4/2 SÜRGÜLÜ VALF",
+        "Malzeme_Kodu": "SV08-40",
+        "Açıklama": "Çalışma Basıncı: 255,00 bar, Debi: 11,00 L/dk, Kavit: SAE-08-4",
+        "Fiyat": "92,75",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "24"
+    },
+    {
+        "Ana_Baslik": "VALF",
+        "Alt_Baslik": "4/2 SÜRGÜLÜ VALF",
+        "Malzeme_Kodu": "SV08-40",
+        "Açıklama": "Çalışma Basıncı: 255,00 bar, Debi: 11,00 L/dk, Kavit: SAE-08-4",
+        "Fiyat": "95,54",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "24"
+    },
+    {
+        "Ana_Baslik": "VALF",
+        "Alt_Baslik": "4/2 SÜRGÜLÜ VALF",
+        "Malzeme_Kodu": "SV08-40",
+        "Açıklama": "Çalışma Basıncı: 255,00 bar, Debi: 11,00 L/dk, Kavit: SAE-08-4",
+        "Fiyat": "97,09",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "24"
+    },
+    {
+        "Ana_Baslik": "VALF",
+        "Alt_Baslik": "4/2 SÜRGÜLÜ VALF",
+        "Malzeme_Kodu": "SV10-40",
+        "Açıklama": "Çalışma Basıncı: 255,00 bar, Debi: 22,00 L/dk, Kavit: SAE-10-4",
+        "Fiyat": "118,81",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "24"
+    },
+    {
+        "Ana_Baslik": "VALF",
+        "Alt_Baslik": "4/2 SÜRGÜLÜ VALF",
+        "Malzeme_Kodu": "SV10-40",
+        "Açıklama": "Çalışma Basıncı: 255,00 bar, Debi: 22,00 L/dk, Kavit: SAE-10-4",
+        "Fiyat": "120,98",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "24"
+    },
+    {
+        "Ana_Baslik": "VALF",
+        "Alt_Baslik": "4/2 SÜRGÜLÜ VALF",
+        "Malzeme_Kodu": "SV10-40",
+        "Açıklama": "Çalışma Basıncı: 255,00 bar, Debi: 22,00 L/dk, Kavit: SAE-10-4",
+        "Fiyat": "122,22",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "24"
+    }
+]
+```
