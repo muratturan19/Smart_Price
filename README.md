@@ -50,6 +50,27 @@ under **PDF extraction method** to activate this workflow. Both parsing
 pipelines currently use the same prompt structure, so results should be
 comparable.
 
+The AgenticDE client automatically retries failed HTTP requests such as
+rate limit responses (429) or temporary 502--504 errors.  Parallelism and
+retry behaviour can be tuned by setting the following environment
+variables in your `.env` file:
+
+```bash
+# Number of files processed in parallel
+BATCH_SIZE=4
+# Worker threads per file
+MAX_WORKERS=2
+# Retry attempts for intermittent failures
+MAX_RETRIES=80
+# Maximum wait time per retry in seconds
+MAX_RETRY_WAIT_TIME=30
+# Logging style for retries: log_msg, inline_block or none
+RETRY_LOGGING_STYLE=log_msg
+```
+
+These values configure the internal `agentic_doc` Settings object.  The
+optimal numbers depend on your API rate limit and document size.
+
 ``agentic_doc.parse`` now returns a list of ``ParsedDocument`` objects. The
 tools use the first item in that list.
 
