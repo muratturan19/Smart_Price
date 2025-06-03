@@ -36,6 +36,20 @@ and how to return the rows as JSON with fields like *Malzeme_Kodu*, *Fiyat*,
 enable this step. Optionally set `OPENAI_MODEL` to override the default
 `gpt-4o` model. The Vision API is queried with a temperature of `0`.
 
+### Agentic document extraction
+
+Install the optional `agentic-doc` package to try an alternative PDF pipeline:
+
+```bash
+pip install agentic-doc
+```
+
+Add a `VISION_AGENT_API_KEY` entry to your `.env` file alongside the regular
+OpenAI credentials. When uploading files in the interface choose **AgenticDE**
+under **PDF extraction method** to activate this workflow. Both parsing
+pipelines currently use the same prompt structure, so results should be
+comparable.
+
 ### Building a Windows executable
 
 You can package the Streamlit interface into a single Windows executable using
