@@ -1,0 +1,103 @@
+```json
+[
+    {
+        "Ana_Baslik": "BASINÇ KOMPANZATÖRLÜ TAM AYARLANABİLİR ÇEKİLİ AKIŞ KONTROL VALFI",
+        "Malzeme_Kodu": "FD2A-LAN",
+        "Açıklama": "350 bar, T13A, 23 l/dk",
+        "Fiyat": "153,83",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "11"
+    },
+    {
+        "Ana_Baslik": "BASINÇ KOMPANZATÖRLÜ TAM AYARLANABİLİR ÇEKİLİ AKIŞ KONTROL VALFI",
+        "Malzeme_Kodu": "FD3B-LAN",
+        "Açıklama": "350 bar, T15A, 45 l/dk",
+        "Fiyat": "219,99",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "11"
+    },
+    {
+        "Ana_Baslik": "BASINÇ KOMPANZATÖRLÜ TAM AYARLANABİLİR ÇEKİLİ AKIŞ KONTROL VALFI",
+        "Malzeme_Kodu": "FD4B-LAN",
+        "Açıklama": "350 bar, T16A, 95 l/dk",
+        "Fiyat": "403,98",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "11"
+    },
+    {
+        "Ana_Baslik": "BASINÇ KOMPANZATÖRLÜ TAM AYARLANABİLİR ÇEKİLİ AKIŞ KONTROL VALFI",
+        "Malzeme_Kodu": "FD8A-LAN",
+        "Açıklama": "350 bar, T18A, 200 l/dk",
+        "Fiyat": "814,84",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "11"
+    },
+    {
+        "Ana_Baslik": "NORMALDE KAPALI, PORT 1'DEN PİLOT ALAN KOMPANZATÖRLER",
+        "Malzeme_Kodu": "LR2A-XDN",
+        "Açıklama": "3.5 bar, T11A, 60 l/dk",
+        "Fiyat": "101,62",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "11"
+    },
+    {
+        "Ana_Baslik": "NORMALDE KAPALI, PORT 1'DEN PİLOT ALAN KOMPANZATÖRLER",
+        "Malzeme_Kodu": "LR3A-XDN",
+        "Açıklama": "7.0 bar, T2A, 120 l/dk",
+        "Fiyat": "131,73",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "11"
+    },
+    {
+        "Ana_Baslik": "NORMALDE KAPALI KOMPANSATÖRLER",
+        "Malzeme_Kodu": "LR2C-XDN",
+        "Açıklama": "3.5 bar, T11A, 60 l/dk",
+        "Fiyat": "101,62",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "11"
+    },
+    {
+        "Ana_Baslik": "NORMALDE KAPALI KOMPANSATÖRLER",
+        "Malzeme_Kodu": "LR3C-XDN",
+        "Açıklama": "7.0 bar, T2A, 120 l/dk",
+        "Fiyat": "131,73",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "11"
+    },
+    {
+        "Ana_Baslik": "PİLOT İLE AÇAN ÇEK VALF",
+        "Malzeme_Kodu": "CX1B-XAN",
+        "Açıklama": "0.3 bar, T16A, 28.4 l/dk",
+        "Fiyat": "62,04",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "11"
+    },
+    {
+        "Ana_Baslik": "PİLOT İLE AÇAN ÇEK VALF",
+        "Malzeme_Kodu": "CX2B-XAN",
+        "Açıklama": "0.3 bar, T11A, 60 l/dk",
+        "Fiyat": "58,63",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "11"
+    },
+    {
+        "Ana_Baslik": "PİLOT İLE AÇAN ÇEK VALF",
+        "Malzeme_Kodu": "CX3B-XAN",
+        "Açıklama": "0.3 bar, T2A, 120 l/dk",
+        "Fiyat": "93,51",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "11"
+    }
+]
+```
