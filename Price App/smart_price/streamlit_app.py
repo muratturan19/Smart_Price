@@ -31,6 +31,7 @@ from smart_price.core.extract_pdf import extract_from_pdf, MIN_CODE_RATIO
 from smart_price import config
 from smart_price.core.logger import init_logging
 from smart_price.core.github_upload import upload_folder, delete_github_folder
+from smart_price.core.common_utils import normalize_currency
 
 logger = logging.getLogger("smart_price")
 
@@ -250,6 +251,10 @@ def save_master_dataset(
     excel_path = os.path.abspath(str(config.MASTER_EXCEL_PATH))
     db_path = os.path.abspath(str(config.MASTER_DB_PATH))
     os.makedirs(os.path.dirname(excel_path), exist_ok=True)
+    if "Para_Birimi" not in df.columns:
+        df["Para_Birimi"] = None
+    df["Para_Birimi"] = df["Para_Birimi"].apply(normalize_currency)
+    df["Para_Birimi"] = df["Para_Birimi"].fillna("₺")
     existing = pd.DataFrame()
     if os.path.exists(excel_path):
         try:

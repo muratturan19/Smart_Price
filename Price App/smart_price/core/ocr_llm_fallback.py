@@ -30,6 +30,7 @@ from .common_utils import (
     gpt_clean_text,
     normalize_price,
     detect_currency,
+    normalize_currency,
     safe_json_parse,
 )
 from .debug_utils import save_debug, save_debug_image, set_output_subdir
@@ -284,6 +285,7 @@ def parse(
             para_birimi = item.get("Para_Birimi") or item.get("Para Birimi")
             if para_birimi is None:
                 para_birimi = detect_currency(price_raw)
+            para_birimi = normalize_currency(para_birimi)
             page_rows.append(
                 {
                     "Malzeme_Kodu": code,
@@ -339,6 +341,11 @@ def parse(
     except Exception:
         row_count = len(rows)
     logger.debug("[%s] DataFrame oluşturuldu: %d satır", pdf_path, row_count)
+    if hasattr(df, "columns"):
+        if "Para_Birimi" not in df.columns:
+            df["Para_Birimi"] = None
+        df["Para_Birimi"] = df["Para_Birimi"].apply(normalize_currency)
+        df["Para_Birimi"] = df["Para_Birimi"].fillna("₺")
     if hasattr(df, "columns"):
         if "Ana_Baslik" not in df.columns:
             df["Ana_Baslik"] = None

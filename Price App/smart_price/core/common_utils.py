@@ -64,6 +64,27 @@ def detect_currency(text: str) -> Optional[str]:
     return None
 
 
+def normalize_currency(value: Optional[str]) -> Optional[str]:
+    """Return a single currency symbol for ``value``."""
+    if not value:
+        return None
+    mapping = {
+        "TL": "₺",
+        "TRY": "₺",
+        "₺": "₺",
+        "USD": "$",
+        "$": "$",
+        "EUR": "€",
+        "€": "€",
+    }
+    key = str(value).strip().upper()
+    if key in mapping:
+        return mapping[key]
+    if value in mapping:
+        return mapping[value]
+    return None
+
+
 def select_latest_year_column(df, pattern: str = r"(\d{4})") -> Optional[str]:
     """Return the column name containing the latest year according to pattern."""
     year_cols = {}
