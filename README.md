@@ -50,6 +50,9 @@ under **PDF extraction method** to activate this workflow. Both parsing
 pipelines currently use the same prompt structure, so results should be
 comparable.
 
+``agentic_doc.parse`` now returns a list of ``ParsedDocument`` objects. The
+tools use the first item in that list.
+
 ### Building a Windows executable
 
 You can package the Streamlit interface into a single Windows executable using

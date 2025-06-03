@@ -42,6 +42,11 @@ def extract_from_pdf_agentic(
     -------
     pandas.DataFrame
         DataFrame with the same columns as :func:`extract_from_pdf`.
+
+    Notes
+    -----
+    ``agentic_doc.parse`` returns a list of ``ParsedDocument`` objects.
+    This function uses only the first document in that list.
     """
     def notify(message: str, level: str = "info") -> None:
         logger.info(message)
@@ -73,6 +78,13 @@ def extract_from_pdf_agentic(
         notify(f"agentic_doc.parse failed: {exc}", "error")
         logger.exception("agentic_doc.parse failed")
         return pd.DataFrame()
+
+    if isinstance(result, list):
+        if result:
+            result = result[0]
+        else:
+            notify("agentic_doc.parse returned no documents", "warning")
+            return pd.DataFrame()
 
     chunks = getattr(result, "chunks", [])
     df = pd.DataFrame(list(chunks) if chunks is not None else [])
