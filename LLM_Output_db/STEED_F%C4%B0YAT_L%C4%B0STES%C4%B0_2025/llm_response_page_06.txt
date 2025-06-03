@@ -1,0 +1,136 @@
+```json
+[
+  {
+    "Ana_Baslik": "HARİCİ PİLOT KUMANDALI BASINÇ EMNİYET VALFİ",
+    "Malzeme_Kodu": "RV1A-LAN",
+    "Açıklama": "7 ÷ 210 bar",
+    "Kavite": "T16A",
+    "Debi": "28.4",
+    "Fiyat": "589.96",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Fiyat Listesi.pdf",
+    "Sayfa": "6"
+  },
+  {
+    "Ana_Baslik": "HARİCİ PİLOT KUMANDALI BASINÇ EMNİYET VALFİ",
+    "Malzeme_Kodu": "RV1A-LBN",
+    "Açıklama": "3.5 ÷ 105 bar",
+    "Kavite": "T16A",
+    "Debi": "28.4",
+    "Fiyat": "589.96",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Fiyat Listesi.pdf",
+    "Sayfa": "6"
+  },
+  {
+    "Ana_Baslik": "HARİCİ PİLOT KUMANDALI BASINÇ EMNİYET VALFİ",
+    "Malzeme_Kodu": "RV1A-LCN",
+    "Açıklama": "10.5 ÷ 420 bar",
+    "Kavite": "T16A",
+    "Debi": "28.4",
+    "Fiyat": "589.96",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Fiyat Listesi.pdf",
+    "Sayfa": "6"
+  },
+  {
+    "Ana_Baslik": "HARİCİ PİLOT KUMANDALI BASINÇ EMNİYET VALFİ",
+    "Malzeme_Kodu": "RV1A-LNN",
+    "Açıklama": "5 ÷ 55 bar",
+    "Kavite": "T16A",
+    "Debi": "28.4",
+    "Fiyat": "589.96",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Fiyat Listesi.pdf",
+    "Sayfa": "6"
+  },
+  {
+    "Ana_Baslik": "HARİCİ PİLOT KUMANDALI BASINÇ EMNİYET VALFİ",
+    "Malzeme_Kodu": "RV2A-LAN",
+    "Açıklama": "7 ÷ 210 bar",
+    "Kavite": "T11A",
+    "Debi": "60",
+    "Fiyat": "110.56",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Fiyat Listesi.pdf",
+    "Sayfa": "6"
+  },
+  {
+    "Ana_Baslik": "HARİCİ PİLOT KUMANDALI BASINÇ EMNİYET VALFİ",
+    "Malzeme_Kodu": "RV2A-LBN",
+    "Açıklama": "3.5 ÷ 105 bar",
+    "Kavite": "T11A",
+    "Debi": "60",
+    "Fiyat": "110.56",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Fiyat Listesi.pdf",
+    "Sayfa": "6"
+  },
+  {
+    "Ana_Baslik": "HARİCİ PİLOT KUMANDALI BASINÇ EMNİYET VALFİ",
+    "Malzeme_Kodu": "RV2A-LCN",
+    "Açıklama": "10.5 ÷ 420 bar",
+    "Kavite": "T11A",
+    "Debi": "60",
+    "Fiyat": "110.56",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Fiyat Listesi.pdf",
+    "Sayfa": "6"
+  },
+  {
+    "Ana_Baslik": "HARİCİ PİLOT KUMANDALI BASINÇ EMNİYET VALFİ",
+    "Malzeme_Kodu": "RV2A-LNN",
+    "Açıklama": "5 ÷ 55 bar",
+    "Kavite": "T11A",
+    "Debi": "60",
+    "Fiyat": "110.56",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Fiyat Listesi.pdf",
+    "Sayfa": "6"
+  },
+  {
+    "Ana_Baslik": "HAVALANDIRMALI, PİLOT KUMANDALI, DENGELİ PİSTONLU EMNİYET VALFİ",
+    "Malzeme_Kodu": "RV2D-LAN",
+    "Açıklama": "7 ÷ 210 bar",
+    "Kavite": "T21A",
+    "Debi": "60",
+    "Fiyat": "157.18",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Fiyat Listesi.pdf",
+    "Sayfa": "6"
+  },
+  {
+    "Ana_Baslik": "HAVALANDIRMALI, PİLOT KUMANDALI, DENGELİ PİSTONLU EMNİYET VALFİ",
+    "Malzeme_Kodu": "RV2D-LBN",
+    "Açıklama": "3.5 ÷ 105 bar",
+    "Kavite": "T21A",
+    "Debi": "60",
+    "Fiyat": "157.18",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Fiyat Listesi.pdf",
+    "Sayfa": "6"
+  },
+  {
+    "Ana_Baslik": "HAVALANDIRMALI, PİLOT KUMANDALI, DENGELİ PİSTONLU EMNİYET VALFİ",
+    "Malzeme_Kodu": "RV2D-LCN",
+    "Açıklama": "10.5 ÷ 420 bar",
+    "Kavite": "T21A",
+    "Debi": "60",
+    "Fiyat": "157.18",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Fiyat Listesi.pdf",
+    "Sayfa": "6"
+  },
+  {
+    "Ana_Baslik": "HAVALANDIRMALI, PİLOT KUMANDALI, DENGELİ PİSTONLU EMNİYET VALFİ",
+    "Malzeme_Kodu": "RV2D-LNN",
+    "Açıklama": "5 ÷ 55 bar",
+    "Kavite": "T21A",
+    "Debi": "60",
+    "Fiyat": "157.18",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Fiyat Listesi.pdf",
+    "Sayfa": "6"
+  }
+]
+```
