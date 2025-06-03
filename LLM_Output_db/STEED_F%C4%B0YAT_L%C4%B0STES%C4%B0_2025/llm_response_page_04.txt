@@ -1,0 +1,324 @@
+```json
+[
+    {
+        "Ana_Baslik": "T KAVİTE KARTUŞ VALF GRUPLARI (SUN)",
+        "Alt_Baslik": "ORANSAL BASINÇ EMNİYET VALFİ (PILOT STAGE)",
+        "Malzeme_Kodu": "R81P-MAN",
+        "Açıklama": "20 - 210 bar, TBA, 1 l/dk",
+        "Fiyat": "214,97",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "4"
+    },
+    {
+        "Ana_Baslik": "T KAVİTE KARTUŞ VALF GRUPLARI (SUN)",
+        "Alt_Baslik": "ORANSAL BASINÇ EMNİYET VALFİ (PILOT STAGE)",
+        "Malzeme_Kodu": "R81P-MBN",
+        "Açıklama": "3.5 - 105 bar, TBA, 1 l/dk",
+        "Fiyat": "214,97",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "4"
+    },
+    {
+        "Ana_Baslik": "T KAVİTE KARTUŞ VALF GRUPLARI (SUN)",
+        "Alt_Baslik": "ORANSAL BASINÇ EMNİYET VALFİ (PILOT STAGE)",
+        "Malzeme_Kodu": "R81P-MDN",
+        "Açıklama": "3.5 - 50 bar, TBA, 1 l/dk",
+        "Fiyat": "214,97",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "4"
+    },
+    {
+        "Ana_Baslik": "T KAVİTE KARTUŞ VALF GRUPLARI (SUN)",
+        "Alt_Baslik": "ORANSAL BASINÇ EMNİYET VALFİ (PILOT STAGE)",
+        "Malzeme_Kodu": "R81P-MVN",
+        "Açıklama": "3.5 - 350 bar, TBA, 1 l/dk",
+        "Fiyat": "214,97",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "4"
+    },
+    {
+        "Ana_Baslik": "T KAVİTE KARTUŞ VALF GRUPLARI (SUN)",
+        "Alt_Baslik": "ORANSAL BASINÇ EMNİYET VALFİ (PILOT STAGE) ENERJİSİZKEN MAX BASINÇ",
+        "Malzeme_Kodu": "R81N-MAN",
+        "Açıklama": "105 - 210 bar, TBA, 1 l/dk",
+        "Fiyat": "248,78",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "4"
+    },
+    {
+        "Ana_Baslik": "T KAVİTE KARTUŞ VALF GRUPLARI (SUN)",
+        "Alt_Baslik": "ORANSAL BASINÇ EMNİYET VALFİ (PILOT STAGE) ENERJİSİZKEN MAX BASINÇ",
+        "Malzeme_Kodu": "R81N-MBN",
+        "Açıklama": "55 - 105 bar, TBA, 1 l/dk",
+        "Fiyat": "248,78",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "4"
+    },
+    {
+        "Ana_Baslik": "T KAVİTE KARTUŞ VALF GRUPLARI (SUN)",
+        "Alt_Baslik": "ORANSAL BASINÇ EMNİYET VALFİ (PILOT STAGE) ENERJİSİZKEN MAX BASINÇ",
+        "Malzeme_Kodu": "R81N-MDN",
+        "Açıklama": "0 - 55 bar, TBA, 1 l/dk",
+        "Fiyat": "248,78",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "4"
+    },
+    {
+        "Ana_Baslik": "T KAVİTE KARTUŞ VALF GRUPLARI (SUN)",
+        "Alt_Baslik": "ORANSAL BASINÇ EMNİYET VALFİ (PILOT STAGE) ENERJİSİZKEN MAX BASINÇ",
+        "Malzeme_Kodu": "R81N-MVN",
+        "Açıklama": "210 - 350 bar, TBA, 1 l/dk",
+        "Fiyat": "248,78",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "4"
+    },
+    {
+        "Ana_Baslik": "T KAVİTE KARTUŞ VALF GRUPLARI (SUN)",
+        "Alt_Baslik": "DAHİLİ KAVİTELİ BASINÇ EMNİYET VALFİ (MAIN STAGE)",
+        "Malzeme_Kodu": "R82PC",
+        "Açıklama": "350 bar, T10A, 95 l/dk",
+        "Fiyat": "154,94",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "4"
+    },
+    {
+        "Ana_Baslik": "T KAVİTE KARTUŞ VALF GRUPLARI (SUN)",
+        "Alt_Baslik": "DAHİLİ KAVİTELİ BASINÇ EMNİYET VALFİ (MAIN STAGE)",
+        "Malzeme_Kodu": "R83PC",
+        "Açıklama": "350 bar, T3A, 200 l/dk",
+        "Fiyat": "181,82",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "4"
+    },
+    {
+        "Ana_Baslik": "T KAVİTE KARTUŞ VALF GRUPLARI (SUN)",
+        "Alt_Baslik": "DAHİLİ KAVİTELİ BASINÇ EMNİYET VALFİ (MAIN STAGE)",
+        "Malzeme_Kodu": "R85PC",
+        "Açıklama": "350 bar, T16A, 380 l/dk",
+        "Fiyat": "319,51",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "4"
+    },
+    {
+        "Ana_Baslik": "T KAVİTE KARTUŞ VALF GRUPLARI (SUN)",
+        "Alt_Baslik": "DAHİLİ KAVİTELİ BASINÇ EMNİYET VALFİ (MAIN STAGE)",
+        "Malzeme_Kodu": "R88PC",
+        "Açıklama": "350 bar, T18A, 760 l/dk",
+        "Fiyat": "579,04",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "4"
+    },
+    {
+        "Ana_Baslik": "T KAVİTE KARTUŞ VALF GRUPLARI (SUN)",
+        "Alt_Baslik": "PİLOT KUMANDALI BASINÇ EMNİYET VALFİ",
+        "Malzeme_Kodu": "RP2C-LAN",
+        "Açıklama": "7 - 210 bar, T10A, 95 l/dk",
+        "Fiyat": "92,97",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "4"
+    },
+    {
+        "Ana_Baslik": "T KAVİTE KARTUŞ VALF GRUPLARI (SUN)",
+        "Alt_Baslik": "PİLOT KUMANDALI BASINÇ EMNİYET VALFİ",
+        "Malzeme_Kodu": "RP2C-LBN",
+        "Açıklama": "3.5 - 105 bar, T10A, 95 l/dk",
+        "Fiyat": "92,97",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "4"
+    },
+    {
+        "Ana_Baslik": "T KAVİTE KARTUŞ VALF GRUPLARI (SUN)",
+        "Alt_Baslik": "PİLOT KUMANDALI BASINÇ EMNİYET VALFİ",
+        "Malzeme_Kodu": "RP2C-LCN",
+        "Açıklama": "10.5 - 400 bar, T10A, 95 l/dk",
+        "Fiyat": "92,97",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "4"
+    },
+    {
+        "Ana_Baslik": "T KAVİTE KARTUŞ VALF GRUPLARI (SUN)",
+        "Alt_Baslik": "PİLOT KUMANDALI BASINÇ EMNİYET VALFİ",
+        "Malzeme_Kodu": "RP2C-LNN",
+        "Açıklama": "5 - 55 bar, T10A, 95 l/dk",
+        "Fiyat": "92,97",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "4"
+    },
+    {
+        "Ana_Baslik": "T KAVİTE KARTUŞ VALF GRUPLARI (SUN)",
+        "Alt_Baslik": "PİLOT KUMANDALI BASINÇ EMNİYET VALFİ",
+        "Malzeme_Kodu": "RP2C-LVN",
+        "Açıklama": "10 - 315 bar, T10A, 95 l/dk",
+        "Fiyat": "92,97",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "4"
+    },
+    {
+        "Ana_Baslik": "T KAVİTE KARTUŞ VALF GRUPLARI (SUN)",
+        "Alt_Baslik": "PİLOT KUMANDALI BASINÇ EMNİYET VALFİ",
+        "Malzeme_Kodu": "RP3C-LAN",
+        "Açıklama": "7 - 210 bar, T3A, 200 l/dk",
+        "Fiyat": "125,32",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "4"
+    },
+    {
+        "Ana_Baslik": "T KAVİTE KARTUŞ VALF GRUPLARI (SUN)",
+        "Alt_Baslik": "PİLOT KUMANDALI BASINÇ EMNİYET VALFİ",
+        "Malzeme_Kodu": "RP3C-LBN",
+        "Açıklama": "3.5 - 105 bar, T3A, 200 l/dk",
+        "Fiyat": "125,32",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "4"
+    },
+    {
+        "Ana_Baslik": "T KAVİTE KARTUŞ VALF GRUPLARI (SUN)",
+        "Alt_Baslik": "PİLOT KUMANDALI BASINÇ EMNİYET VALFİ",
+        "Malzeme_Kodu": "RP3C-LCN",
+        "Açıklama": "10.5 - 400 bar, T3A, 200 l/dk",
+        "Fiyat": "125,32",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "4"
+    },
+    {
+        "Ana_Baslik": "T KAVİTE KARTUŞ VALF GRUPLARI (SUN)",
+        "Alt_Baslik": "PİLOT KUMANDALI BASINÇ EMNİYET VALFİ",
+        "Malzeme_Kodu": "RP3C-LNN",
+        "Açıklama": "5 - 55 bar, T3A, 200 l/dk",
+        "Fiyat": "125,32",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "4"
+    },
+    {
+        "Ana_Baslik": "T KAVİTE KARTUŞ VALF GRUPLARI (SUN)",
+        "Alt_Baslik": "PİLOT KUMANDALI BASINÇ EMNİYET VALFİ",
+        "Malzeme_Kodu": "RP3C-LVN",
+        "Açıklama": "10 - 315 bar, T3A, 200 l/dk",
+        "Fiyat": "125,32",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "4"
+    },
+    {
+        "Ana_Baslik": "T KAVİTE KARTUŞ VALF GRUPLARI (SUN)",
+        "Alt_Baslik": "PİLOT KUMANDALI BASINÇ EMNİYET VALFİ",
+        "Malzeme_Kodu": "RP6C-LAN",
+        "Açıklama": "7 - 210 bar, T16A, 380 l/dk",
+        "Fiyat": "260,73",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "4"
+    },
+    {
+        "Ana_Baslik": "T KAVİTE KARTUŞ VALF GRUPLARI (SUN)",
+        "Alt_Baslik": "PİLOT KUMANDALI BASINÇ EMNİYET VALFİ",
+        "Malzeme_Kodu": "RP6C-LBN",
+        "Açıklama": "3.5 - 105 bar, T16A, 380 l/dk",
+        "Fiyat": "260,73",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "4"
+    },
+    {
+        "Ana_Baslik": "T KAVİTE KARTUŞ VALF GRUPLARI (SUN)",
+        "Alt_Baslik": "PİLOT KUMANDALI BASINÇ EMNİYET VALFİ",
+        "Malzeme_Kodu": "RP6C-LCN",
+        "Açıklama": "10.5 - 400 bar, T16A, 380 l/dk",
+        "Fiyat": "260,73",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "4"
+    },
+    {
+        "Ana_Baslik": "T KAVİTE KARTUŞ VALF GRUPLARI (SUN)",
+        "Alt_Baslik": "PİLOT KUMANDALI BASINÇ EMNİYET VALFİ",
+        "Malzeme_Kodu": "RP6C-LNN",
+        "Açıklama": "5 - 55 bar, T16A, 380 l/dk",
+        "Fiyat": "260,73",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "4"
+    },
+    {
+        "Ana_Baslik": "T KAVİTE KARTUŞ VALF GRUPLARI (SUN)",
+        "Alt_Baslik": "PİLOT KUMANDALI BASINÇ EMNİYET VALFİ",
+        "Malzeme_Kodu": "RP6C-LVN",
+        "Açıklama": "10 - 315 bar, T16A, 380 l/dk",
+        "Fiyat": "260,73",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "4"
+    },
+    {
+        "Ana_Baslik": "T KAVİTE KARTUŞ VALF GRUPLARI (SUN)",
+        "Alt_Baslik": "PİLOT KUMANDALI BASINÇ EMNİYET VALFİ",
+        "Malzeme_Kodu": "RP8C-LAN",
+        "Açıklama": "7 - 210 bar, T18A, 760 l/dk",
+        "Fiyat": "516,79",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "4"
+    },
+    {
+        "Ana_Baslik": "T KAVİTE KARTUŞ VALF GRUPLARI (SUN)",
+        "Alt_Baslik": "PİLOT KUMANDALI BASINÇ EMNİYET VALFİ",
+        "Malzeme_Kodu": "RP8C-LBN",
+        "Açıklama": "3.5 - 105 bar, T18A, 760 l/dk",
+        "Fiyat": "516,79",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "4"
+    },
+    {
+        "Ana_Baslik": "T KAVİTE KARTUŞ VALF GRUPLARI (SUN)",
+        "Alt_Baslik": "PİLOT KUMANDALI BASINÇ EMNİYET VALFİ",
+        "Malzeme_Kodu": "RP8C-LCN",
+        "Açıklama": "10.5 - 400 bar, T18A, 760 l/dk",
+        "Fiyat": "516,79",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "4"
+    },
+    {
+        "Ana_Baslik": "T KAVİTE KARTUŞ VALF GRUPLARI (SUN)",
+        "Alt_Baslik": "PİLOT KUMANDALI BASINÇ EMNİYET VALFİ",
+        "Malzeme_Kodu": "RP8C-LNN",
+        "Açıklama": "5 - 55 bar, T18A, 760 l/dk",
+        "Fiyat": "516,79",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "4"
+    },
+    {
+        "Ana_Baslik": "T KAVİTE KARTUŞ VALF GRUPLARI (SUN)",
+        "Alt_Baslik": "PİLOT KUMANDALI BASINÇ EMNİYET VALFİ",
+        "Malzeme_Kodu": "RP8C-LVN",
+        "Açıklama": "10 - 315 bar, T18A, 760 l/dk",
+        "Fiyat": "516,79",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "4"
+    }
+]
+```
