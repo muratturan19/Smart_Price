@@ -1,0 +1,64 @@
+```json
+[
+  {
+    "Ana_Baslik": "SAE KAVİTE ORANSAL KARTUŞ VALF GRUPLARI",
+    "Alt_Baslik": "ORANSAL YÖN KONTROL VALFİ (HSP)",
+    "Malzeme_Kodu": "HSP08-20",
+    "Açıklama": "Çalışma Basıncı: 207 bar, Debi: 22,0 L/dk, Kavite: SAE-08-2, Bobin: 08 Coil(D1/D2-DG/DR)",
+    "Fiyat": "110,43",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+    "Sayfa": "20"
+  },
+  {
+    "Ana_Baslik": "SAE KAVİTE ORANSAL KARTUŞ VALF GRUPLARI",
+    "Alt_Baslik": "ORANSAL YÖN KONTROL VALFİ (HSP)",
+    "Malzeme_Kodu": "HSP08-20-S",
+    "Açıklama": "Çalışma Basıncı: 207 bar, Debi: 18,4 L/dk, Kavite: SAE-08-2, Bobin: 08 Coil(D1/D2-DG/DR)",
+    "Fiyat": "129,35",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+    "Sayfa": "20"
+  },
+  {
+    "Ana_Baslik": "SAE KAVİTE ORANSAL KARTUŞ VALF GRUPLARI",
+    "Alt_Baslik": "ORANSAL YÖN KONTROL VALFİ (HSP)",
+    "Malzeme_Kodu": "HSP10-20",
+    "Açıklama": "Çalışma Basıncı: 250 bar, Debi: 68,0 L/dk, Kavite: SAE-10-2, Bobin: 10 Coil(D1/D2-DG/DR)",
+    "Fiyat": "130,28",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+    "Sayfa": "20"
+  },
+  {
+    "Ana_Baslik": "SAE KAVİTE ORANSAL KARTUŞ VALF GRUPLARI",
+    "Alt_Baslik": "ORANSAL AKIŞ KONTROL VALFİ (SPV)",
+    "Malzeme_Kodu": "SPV70-30",
+    "Açıklama": "Çalışma Basıncı: 207 bar, Debi: 30,0 L/dk, Kavite: SAE-10-3, Bobin: PV Coil(D1/D2-DG)",
+    "Fiyat": "160,99",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+    "Sayfa": "20"
+  },
+  {
+    "Ana_Baslik": "SAE KAVİTE ORANSAL KARTUŞ VALF GRUPLARI",
+    "Alt_Baslik": "ORANSAL BASINÇ KONTROL VALFİ (STS)",
+    "Malzeme_Kodu": "STS-38-20(A)",
+    "Açıklama": "Çalışma Basıncı: 207 bar, Debi: 11,4 L/dk, Kavite: SAE-08-2, Bobin: 8 Coil(D1/D2-DG/DR)",
+    "Fiyat": "126,56",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+    "Sayfa": "20"
+  },
+  {
+    "Ana_Baslik": "SAE KAVİTE ORANSAL KARTUŞ VALF GRUPLARI",
+    "Alt_Baslik": "ORANSAL BASINÇ KONTROL VALFİ (STS)",
+    "Malzeme_Kodu": "STS-10-36(A)",
+    "Açıklama": "Çalışma Basıncı: 6,9 ~ 207 bar, Debi: 57 L/dk, Kavite: SAE-10-3, Bobin: 10 Coil(D1/D2-DG/DR)",
+    "Fiyat": "147,97",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+    "Sayfa": "20"
+  }
+]
+```
