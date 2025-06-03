@@ -1,0 +1,67 @@
+```json
+[
+    {
+        "Ana_Baslik": "ST7E - ST7ES YÜKSEK BASINÇLI PALETLİ POMPA",
+        "Malzeme_Kodu": "ST7E - 042",
+        "Açıklama": "Deplasman: 132,3 cc/dev, Max. Basınç: 240 bar",
+        "Fiyat": "2,640.83",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "ST7E - ST7ES YÜKSEK BASINÇLI PALETLİ POMPA",
+        "Malzeme_Kodu": "ST7E - 045",
+        "Açıklama": "Deplasman: 142,4 cc/dev, Max. Basınç: 240 bar",
+        "Fiyat": "2,640.83",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "ST7E - ST7ES YÜKSEK BASINÇLI PALETLİ POMPA",
+        "Malzeme_Kodu": "ST7E - 050",
+        "Açıklama": "Deplasman: 158,5 cc/dev, Max. Basınç: 240 bar",
+        "Fiyat": "2,640.83",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "ST7DXW YÜKSEK BASINÇLI PALETLİ POMPA",
+        "Malzeme_Kodu": "ST7DXW - X14",
+        "Açıklama": "Deplasman: 43,9 cc/dev, Max. Basınç: 300 bar",
+        "Fiyat": "2,369.97",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "ST7DXW YÜKSEK BASINÇLI PALETLİ POMPA",
+        "Malzeme_Kodu": "ST7DXW - X17",
+        "Açıklama": "Deplasman: 55,0 cc/dev, Max. Basınç: 300 bar",
+        "Fiyat": "2,369.97",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "ST6CC YÜKSEK BASINÇLI PALETLİ POMPA",
+        "Malzeme_Kodu": "ST6CC - 003",
+        "Açıklama": "Deplasman: 10,8 cc/dev, Max. Basınç: 275 bar",
+        "Fiyat": "1,806.60",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "ST6CC YÜKSEK BASINÇLI PALETLİ POMPA",
+        "Malzeme_Kodu": "ST6CC - 005",
+        "Açıklama": "Deplasman: 17,2 cc/dev, Max. Basınç: 275 bar",
+        "Fiyat": "1,806.60",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "1"
+    }
+]
+```
