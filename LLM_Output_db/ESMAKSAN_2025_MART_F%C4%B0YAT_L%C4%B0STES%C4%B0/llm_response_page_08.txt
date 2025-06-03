@@ -1,0 +1,64 @@
+```json
+[
+    {
+        "Ana_Baslik": "MAVİ PLASTİKLİ FREZELİ DK KAPLİNLER",
+        "Alt_Baslik": "STANDART FREZELİ KAPLİNLER",
+        "Malzeme_Kodu": "9 FREZE",
+        "Açıklama": "Ø12,5 mm / Ø15,5 mm",
+        "Fiyat": "300,00",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+        "Sayfa": "8"
+    },
+    {
+        "Ana_Baslik": "MAVİ PLASTİKLİ FREZELİ DK KAPLİNLER",
+        "Alt_Baslik": "STANDART FREZELİ KAPLİNLER",
+        "Malzeme_Kodu": "9 FREZE",
+        "Açıklama": "Ø20,10 mm / Ø25,10 mm",
+        "Fiyat": "300,00",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+        "Sayfa": "8"
+    },
+    {
+        "Ana_Baslik": "MAVİ PLASTİKLİ FREZELİ DK KAPLİNLER",
+        "Alt_Baslik": "STANDART FREZELİ KAPLİNLER",
+        "Malzeme_Kodu": "8 FREZE",
+        "Açıklama": "Ø32,00 mm / Ø35,00 mm",
+        "Fiyat": "360,00",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+        "Sayfa": "8"
+    },
+    {
+        "Ana_Baslik": "SİYAH PLASTİKLİ AVRUPA TİP FREZELİ DKA KAPLİNLER",
+        "Alt_Baslik": "STANDART AVRUPA TİP FREZELİ DKA KAPLİNLER",
+        "Malzeme_Kodu": "9 FREZE",
+        "Açıklama": "Ø12,5 mm / Ø15,5 mm",
+        "Fiyat": "420,00",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+        "Sayfa": "8"
+    },
+    {
+        "Ana_Baslik": "SİYAH PLASTİKLİ AVRUPA TİP FREZELİ DKA KAPLİNLER",
+        "Alt_Baslik": "STANDART AVRUPA TİP FREZELİ DKA KAPLİNLER",
+        "Malzeme_Kodu": "6 FREZE",
+        "Açıklama": "Ø20,10 mm / Ø25,10 mm",
+        "Fiyat": "420,00",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+        "Sayfa": "8"
+    },
+    {
+        "Ana_Baslik": "SİYAH PLASTİKLİ AVRUPA TİP FREZELİ DKA KAPLİNLER",
+        "Alt_Baslik": "STANDART AVRUPA TİP FREZELİ DKA KAPLİNLER",
+        "Malzeme_Kodu": "8 FREZE",
+        "Açıklama": "Ø32,00 mm / Ø35,00 mm",
+        "Fiyat": "440,00",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Fiyat Listesi Mart 2025.pdf",
+        "Sayfa": "8"
+    }
+]
+```
