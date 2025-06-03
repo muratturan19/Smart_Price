@@ -60,8 +60,8 @@ store these tools elsewhere edit `POPLPLERDIR` (and set `TESSERACT_CMD` if neede
 `build_windows_exe.bat` to point to the correct paths.  The batch file
 collects all Streamlit resources so the executable launches without a
 `PackageNotFoundError` for the `streamlit` distribution. The launcher script
-sets `STREAMLIT_SERVER_PORT=8501` and `STREAMLIT_SERVER_HEADLESS=true` to
-ensure the app listens on the usual port when run from the generated EXE.
+sets `STREAMLIT_SERVER_PORT=8501` and `STREAMLIT_SERVER_HEADLESS=false` so the
+browser opens automatically when the app is started from the generated EXE.
 
 ### Price normalization
 
