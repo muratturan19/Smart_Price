@@ -2,6 +2,8 @@ from __future__ import annotations
 
 import os
 import logging
+import tempfile
+from pathlib import Path
 from typing import IO, Optional, Callable
 
 import pandas as pd
@@ -46,7 +48,8 @@ def extract_from_pdf_agentic(
     Notes
     -----
     ``agentic_doc.parse`` returns a list of ``ParsedDocument`` objects.
-    This function uses only the first document in that list.
+    This function uses only the first document in that list. When ``filepath``
+    is a file-like object, it is written to a temporary PDF before parsing.
     """
     def notify(message: str, level: str = "info") -> None:
         logger.info(message)
@@ -70,10 +73,25 @@ def extract_from_pdf_agentic(
     notify(f"Processing {src} via agentic_doc")
     guide_prompt = prompts_for_pdf(os.path.basename(src))
 
+    tmp_file: str | None = None
+    if isinstance(filepath, (str, bytes, os.PathLike)):
+        parse_path = filepath
+    else:
+        try:
+            filepath.seek(0)
+        except Exception as exc:
+            notify(f"seek failed: {exc}", "warning")
+        pdf_bytes = filepath.read()
+        tmp = tempfile.NamedTemporaryFile(delete=False, suffix=".pdf")
+        tmp.write(pdf_bytes)
+        tmp.close()
+        tmp_file = tmp.name
+        parse_path = tmp_file
+
     try:
-        result = parse(filepath, prompt=guide_prompt)
+        result = parse(parse_path, prompt=guide_prompt)
     except TypeError:
-        result = parse(filepath)
+        result = parse(parse_path)
     except Exception as exc:
         notify(f"agentic_doc.parse failed: {exc}", "error")
         status = getattr(exc, "status", None) or getattr(exc, "status_code", None)
@@ -121,5 +139,10 @@ def extract_from_pdf_agentic(
         notify(f"{src}: no rows extracted from {pages} pages", "warning")
 
     notify(f"agentic_doc returned {len(df)} rows")
+    if tmp_file:
+        try:
+            os.remove(tmp_file)
+        except Exception as exc:  # pragma: no cover - cleanup errors
+            logger.error("temp file cleanup failed: %s", exc)
 
     return df
