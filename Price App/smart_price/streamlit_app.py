@@ -37,6 +37,38 @@ from smart_price.core.common_utils import normalize_currency
 logger = logging.getLogger("smart_price")
 
 
+def standardize_column_names(df: pd.DataFrame) -> pd.DataFrame:
+    """Return ``df`` with common column name variants normalised."""
+    mapping = {}
+    for col in df.columns:
+        norm = str(col).replace("_", " ").casefold()
+        if norm in {
+            "fiyat",
+            "birim fiyat",
+            "liste fiyatı",
+            "price",
+            "unit price",
+            "list price",
+            "tutar",
+            "fiyat ham",
+        }:
+            mapping[col] = "Fiyat"
+        elif norm in {
+            "malzeme kodu",
+            "urun kodu",
+            "ürün kodu",
+            "kod",
+            "product code",
+            "part no",
+            "item no",
+            "item number",
+        }:
+            mapping[col] = "Malzeme_Kodu"
+    if mapping:
+        df = df.rename(columns=mapping)
+    return df
+
+
 def big_alert(message: str, *, level: str = "info", icon: str | None = None) -> None:
     """Show an alert box styled using the active theme.
 
@@ -225,8 +257,16 @@ def merge_files(
         update_progress(1.0)
 
     master = pd.concat(extracted, ignore_index=True)
+    master = standardize_column_names(master)
     logger.debug("[merge] Raw merged rows: %d", len(master))
-    master["Fiyat"] = pd.to_numeric(master["Fiyat"], errors="coerce")
+    if "Fiyat" in master.columns:
+        master["Fiyat"] = pd.to_numeric(master["Fiyat"], errors="coerce")
+    else:
+        logger.warning("[merge] 'Fiyat' column missing after merge; columns: %s", list(master.columns))
+        master["Fiyat"] = pd.NA
+    if "Malzeme_Kodu" not in master.columns:
+        logger.warning("[merge] 'Malzeme_Kodu' column missing after merge")
+        master["Malzeme_Kodu"] = None
     drop_mask = master[["Malzeme_Kodu", "Fiyat"]].isna().any(axis=1)
     dropped_preview = master[drop_mask].head().to_dict(orient="records")
     before_len = len(master)
