@@ -38,11 +38,19 @@ from . import ocr_llm_fallback
 from pathlib import Path
 from .debug_utils import save_debug, set_output_subdir
 from .prompt_utils import prompts_for_pdf
+from .token_utils import (
+    num_tokens_from_messages,
+    num_tokens_from_text,
+    log_token_counts,
+)
 from .github_upload import upload_folder, _sanitize_repo_path
 
 MIN_CODE_RATIO = 0.70
 MIN_ROWS_PARSER = 500
 CODE_RE = re.compile(r"^([A-ZÇĞİÖŞÜ0-9][A-ZÇĞİÖŞÜ0-9\-/]{1,})", re.I)
+
+# Token accumulator used during extraction
+TOKEN_ACCUM = {"input": 0, "output": 0}
 
 logger = logging.getLogger("smart_price")
 
@@ -97,7 +105,9 @@ def extract_from_pdf(
 ) -> pd.DataFrame:
     """Extract product information from a PDF file."""
     page_summary: list[dict[str, object]] = []
-
+    TOKEN_ACCUM["input"] = 0
+    TOKEN_ACCUM["output"] = 0
+    
     def notify(message: str, level: str = "info") -> None:
         logger.info(message)
         if log:
@@ -293,6 +303,9 @@ Sen bir PDF fiyat listesi analiz asistanısın. Amacın, PDF’lerdeki ürün ta
         )
         notify("Sat\u0131rlar\u0131n g\u00f6rselleri haz\u0131rlan\u0131yor...")
         page_summary = getattr(result, "page_summary", [])
+        tok = getattr(result, "token_counts", {})
+        total_input_tokens = tok.get("input", TOKEN_ACCUM.get("input", 0))
+        total_output_tokens = tok.get("output", TOKEN_ACCUM.get("output", 0))
     except Exception as exc:
         notify(f"PDF error for {filepath}: {exc}")
         logger.exception("PDF error for %s", filepath)
@@ -357,6 +370,11 @@ Sen bir PDF fiyat listesi analiz asistanısın. Amacın, PDF’lerdeki ürün ta
     notify(f"Finished {src} via LLM with {len(result_df)} rows in {duration:.2f}s")
     if hasattr(result_df, "__dict__"):
         object.__setattr__(result_df, "page_summary", page_summary)
+        object.__setattr__(result_df, "token_counts", {
+            "input": total_input_tokens,
+            "output": total_output_tokens,
+        })
+    log_token_counts(src, total_input_tokens, total_output_tokens)
     cleanup()
     debug_dir = Path(os.getenv("SMART_PRICE_DEBUG_DIR", "LLM_Output_db")) / output_stem
     set_output_subdir(None)
