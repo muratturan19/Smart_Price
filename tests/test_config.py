@@ -33,6 +33,7 @@ def test_defaults(monkeypatch):
         "LOG_PATH",
         "BASE_REPO_URL",
         "EXTRACTION_GUIDE_PATH",
+        "VISION_AGENT_API_KEY",
     ):
         monkeypatch.delenv(name, raising=False)
     importlib.reload(cfg)
@@ -75,6 +76,7 @@ def test_env_and_config_overrides(tmp_path, monkeypatch):
     monkeypatch.setenv("LOG_PATH", str(tmp_path / "custom.log"))
     monkeypatch.setenv("BASE_REPO_URL", "http://example.com/repo")
     monkeypatch.setenv("EXTRACTION_GUIDE_PATH", str(tmp_path / "guide.csv"))
+    monkeypatch.setenv("VISION_AGENT_API_KEY", "abc")
     importlib.reload(cfg)
     cfg.load_config()
     assert cfg.MASTER_EXCEL_PATH == tmp_path / "master.xlsx"
@@ -92,3 +94,4 @@ def test_env_and_config_overrides(tmp_path, monkeypatch):
     assert cfg.DEFAULT_DB_URL == "http://example.com/repo/master.db"
     assert cfg.DEFAULT_IMAGE_BASE_URL == "http://example.com/repo"
     assert cfg.EXTRACTION_GUIDE_PATH == tmp_path / "guide.csv"
+    assert cfg.VISION_AGENT_API_KEY == "abc"
