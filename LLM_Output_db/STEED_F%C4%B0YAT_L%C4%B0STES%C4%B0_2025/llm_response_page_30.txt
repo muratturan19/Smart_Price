@@ -1,0 +1,304 @@
+```json
+[
+    {
+        "Ana_Baslik": "PALETLİ POMPA GRUBU",
+        "Alt_Baslik": "250 bar DEĞİŞKEN DEPLASMANLI PALETLİ POMPA",
+        "Malzeme_Kodu": "KPV-8",
+        "Açıklama": "Deplasman: 8 cc/dev, Max Basınç: 250 bar",
+        "Fiyat": "847,77",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+        "Sayfa": "30"
+    },
+    {
+        "Ana_Baslik": "PALETLİ POMPA GRUBU",
+        "Alt_Baslik": "250 bar DEĞİŞKEN DEPLASMANLI PALETLİ POMPA",
+        "Malzeme_Kodu": "KPV-12",
+        "Açıklama": "Deplasman: 12 cc/dev, Max Basınç: 250 bar",
+        "Fiyat": "847,77",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+        "Sayfa": "30"
+    },
+    {
+        "Ana_Baslik": "PALETLİ POMPA GRUBU",
+        "Alt_Baslik": "250 bar DEĞİŞKEN DEPLASMANLI PALETLİ POMPA",
+        "Malzeme_Kodu": "KPV-16",
+        "Açıklama": "Deplasman: 16 cc/dev, Max Basınç: 250 bar",
+        "Fiyat": "847,77",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+        "Sayfa": "30"
+    },
+    {
+        "Ana_Baslik": "PALETLİ POMPA GRUBU",
+        "Alt_Baslik": "250 bar DEĞİŞKEN DEPLASMANLI PALETLİ POMPA",
+        "Malzeme_Kodu": "KPV-20",
+        "Açıklama": "Deplasman: 20 cc/dev, Max Basınç: 250 bar",
+        "Fiyat": "847,77",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+        "Sayfa": "30"
+    },
+    {
+        "Ana_Baslik": "PALETLİ POMPA GRUBU",
+        "Alt_Baslik": "250 bar DEĞİŞKEN DEPLASMANLI PALETLİ POMPA",
+        "Malzeme_Kodu": "KPV-23",
+        "Açıklama": "Deplasman: 23 cc/dev, Max Basınç: 250 bar",
+        "Fiyat": "847,77",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+        "Sayfa": "30"
+    },
+    {
+        "Ana_Baslik": "PALETLİ POMPA GRUBU",
+        "Alt_Baslik": "250 bar DEĞİŞKEN DEPLASMANLI PALETLİ POMPA",
+        "Malzeme_Kodu": "KPV-25",
+        "Açıklama": "Deplasman: 25 cc/dev, Max Basınç: 250 bar",
+        "Fiyat": "1.706,38",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+        "Sayfa": "30"
+    },
+    {
+        "Ana_Baslik": "PALETLİ POMPA GRUBU",
+        "Alt_Baslik": "250 bar DEĞİŞKEN DEPLASMANLI PALETLİ POMPA",
+        "Malzeme_Kodu": "KPV-32",
+        "Açıklama": "Deplasman: 32 cc/dev, Max Basınç: 250 bar",
+        "Fiyat": "1.706,38",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+        "Sayfa": "30"
+    },
+    {
+        "Ana_Baslik": "PALETLİ POMPA GRUBU",
+        "Alt_Baslik": "250 bar DEĞİŞKEN DEPLASMANLI PALETLİ POMPA",
+        "Malzeme_Kodu": "KPV-36",
+        "Açıklama": "Deplasman: 36 cc/dev, Max Basınç: 250 bar",
+        "Fiyat": "1.706,38",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+        "Sayfa": "30"
+    },
+    {
+        "Ana_Baslik": "PALETLİ POMPA GRUBU",
+        "Alt_Baslik": "250 bar DEĞİŞKEN DEPLASMANLI TANDEM PALETLİ POMPA",
+        "Malzeme_Kodu": "KPVV-8-12-16-20-23",
+        "Açıklama": "Deplasman: 8-12-16-20-23 cc/dev, Max Basınç: 250 bar",
+        "Fiyat": "1.806,60",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+        "Sayfa": "30"
+    },
+    {
+        "Ana_Baslik": "PALETLİ POMPA GRUBU",
+        "Alt_Baslik": "250 bar DEĞİŞKEN DEPLASMANLI TANDEM PALETLİ POMPA",
+        "Malzeme_Kodu": "KPVV-25-32-36",
+        "Açıklama": "Deplasman: 8-12-16-20-23-25-32-36 cc/dev, Max Basınç: 250 bar",
+        "Fiyat": "3.613,19",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+        "Sayfa": "30"
+    },
+    {
+        "Ana_Baslik": "PALETLİ POMPA GRUBU",
+        "Alt_Baslik": "250 bar DEĞİŞKEN DEPLASMANLI TANDEM PALETLİ POMPA",
+        "Malzeme_Kodu": "KPVV-25-32-36/8-12-16-20-23",
+        "Açıklama": "Deplasman: 8-12-16-20-23 cc/dev, Max Basınç: 250 bar",
+        "Fiyat": "2.708,54",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+        "Sayfa": "30"
+    },
+    {
+        "Ana_Baslik": "PALETLİ POMPA GRUBU",
+        "Alt_Baslik": "400 bar SABİT DEPLASMANLI PALETLİ POMPA",
+        "Malzeme_Kodu": "SHVQ20-4",
+        "Açıklama": "Deplasman: 4 cc/dev, Max Basınç: 400 bar",
+        "Fiyat": "1.430,11",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+        "Sayfa": "30"
+    },
+    {
+        "Ana_Baslik": "PALETLİ POMPA GRUBU",
+        "Alt_Baslik": "400 bar SABİT DEPLASMANLI PALETLİ POMPA",
+        "Malzeme_Kodu": "SHVQ20-6",
+        "Açıklama": "Deplasman: 6 cc/dev, Max Basınç: 400 bar",
+        "Fiyat": "1.430,11",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+        "Sayfa": "30"
+    },
+    {
+        "Ana_Baslik": "PALETLİ POMPA GRUBU",
+        "Alt_Baslik": "400 bar SABİT DEPLASMANLI PALETLİ POMPA",
+        "Malzeme_Kodu": "SHVQ20-8",
+        "Açıklama": "Deplasman: 8 cc/dev, Max Basınç: 400 bar",
+        "Fiyat": "1.430,11",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+        "Sayfa": "30"
+    },
+    {
+        "Ana_Baslik": "PALETLİ POMPA GRUBU",
+        "Alt_Baslik": "400 bar SABİT DEPLASMANLI PALETLİ POMPA",
+        "Malzeme_Kodu": "SHVQ20-11",
+        "Açıklama": "Deplasman: 11 cc/dev, Max Basınç: 400 bar",
+        "Fiyat": "1.430,11",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+        "Sayfa": "30"
+    },
+    {
+        "Ana_Baslik": "PALETLİ POMPA GRUBU",
+        "Alt_Baslik": "400 bar SABİT DEPLASMANLI PALETLİ POMPA",
+        "Malzeme_Kodu": "SHVQ20-14",
+        "Açıklama": "Deplasman: 14 cc/dev, Max Basınç: 400 bar",
+        "Fiyat": "1.430,11",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+        "Sayfa": "30"
+    },
+    {
+        "Ana_Baslik": "PALETLİ POMPA GRUBU",
+        "Alt_Baslik": "400 bar SABİT DEPLASMANLI PALETLİ POMPA",
+        "Malzeme_Kodu": "SHVQ20-17",
+        "Açıklama": "Deplasman: 17 cc/dev, Max Basınç: 350 bar",
+        "Fiyat": "1.430,11",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+        "Sayfa": "30"
+    },
+    {
+        "Ana_Baslik": "PALETLİ POMPA GRUBU",
+        "Alt_Baslik": "400 bar SABİT DEPLASMANLI PALETLİ POMPA",
+        "Malzeme_Kodu": "SHVQ20-19",
+        "Açıklama": "Deplasman: 19 cc/dev, Max Basınç: 350 bar",
+        "Fiyat": "1.430,11",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+        "Sayfa": "30"
+    },
+    {
+        "Ana_Baslik": "PALETLİ POMPA GRUBU",
+        "Alt_Baslik": "400 bar SABİT DEPLASMANLI PALETLİ POMPA",
+        "Malzeme_Kodu": "SHVQ20-23",
+        "Açıklama": "Deplasman: 23 cc/dev, Max Basınç: 350 bar",
+        "Fiyat": "1.430,11",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+        "Sayfa": "30"
+    },
+    {
+        "Ana_Baslik": "PALETLİ POMPA GRUBU",
+        "Alt_Baslik": "400 bar SABİT DEPLASMANLI PALETLİ POMPA",
+        "Malzeme_Kodu": "SHVQ35-19.8",
+        "Açıklama": "Deplasman: 19,8 cc/dev, Max Basınç: 320 bar",
+        "Fiyat": "1.635,96",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+        "Sayfa": "30"
+    },
+    {
+        "Ana_Baslik": "PALETLİ POMPA GRUBU",
+        "Alt_Baslik": "400 bar SABİT DEPLASMANLI PALETLİ POMPA",
+        "Malzeme_Kodu": "SHVQ35-22.5",
+        "Açıklama": "Deplasman: 22,5 cc/dev, Max Basınç: 320 bar",
+        "Fiyat": "1.635,96",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+        "Sayfa": "30"
+    },
+    {
+        "Ana_Baslik": "PALETLİ POMPA GRUBU",
+        "Alt_Baslik": "400 bar SABİT DEPLASMANLI PALETLİ POMPA",
+        "Malzeme_Kodu": "SHVQ35-24.9",
+        "Açıklama": "Deplasman: 24,9 cc/dev, Max Basınç: 320 bar",
+        "Fiyat": "1.635,96",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+        "Sayfa": "30"
+    },
+    {
+        "Ana_Baslik": "PALETLİ POMPA GRUBU",
+        "Alt_Baslik": "400 bar SABİT DEPLASMANLI PALETLİ POMPA",
+        "Malzeme_Kodu": "SHVQ35-28.0",
+        "Açıklama": "Deplasman: 28,0 cc/dev, Max Basınç: 320 bar",
+        "Fiyat": "1.635,96",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+        "Sayfa": "30"
+    },
+    {
+        "Ana_Baslik": "PALETLİ POMPA GRUBU",
+        "Alt_Baslik": "400 bar SABİT DEPLASMANLI PALETLİ POMPA",
+        "Malzeme_Kodu": "SHVQ35-31.8",
+        "Açıklama": "Deplasman: 31,8 cc/dev, Max Basınç: 320 bar",
+        "Fiyat": "1.635,96",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+        "Sayfa": "30"
+    },
+    {
+        "Ana_Baslik": "PALETLİ POMPA GRUBU",
+        "Alt_Baslik": "400 bar SABİT DEPLASMANLI PALETLİ POMPA",
+        "Malzeme_Kodu": "SHVQ35-34.9",
+        "Açıklama": "Deplasman: 34,9 cc/dev, Max Basınç: 320 bar",
+        "Fiyat": "1.635,96",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+        "Sayfa": "30"
+    },
+    {
+        "Ana_Baslik": "PALETLİ POMPA GRUBU",
+        "Alt_Baslik": "400 bar SABİT DEPLASMANLI PALETLİ POMPA",
+        "Malzeme_Kodu": "SHVQ35-40.9",
+        "Açıklama": "Deplasman: 40,9 cc/dev, Max Basınç: 320 bar",
+        "Fiyat": "1.635,96",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+        "Sayfa": "30"
+    },
+    {
+        "Ana_Baslik": "PALETLİ POMPA GRUBU",
+        "Alt_Baslik": "400 bar SABİT DEPLASMANLI PALETLİ POMPA",
+        "Malzeme_Kodu": "SHVQ35-45.1",
+        "Açıklama": "Deplasman: 45,1 cc/dev, Max Basınç: 320 bar",
+        "Fiyat": "1.635,96",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+        "Sayfa": "30"
+    },
+    {
+        "Ana_Baslik": "PALETLİ POMPA GRUBU",
+        "Alt_Baslik": "400 bar SABİT DEPLASMANLI PALETLİ POMPA",
+        "Malzeme_Kodu": "SHVQ35-50.0",
+        "Açıklama": "Deplasman: 50,0 cc/dev, Max Basınç: 320 bar",
+        "Fiyat": "1.635,96",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+        "Sayfa": "30"
+    },
+    {
+        "Ana_Baslik": "PALETLİ POMPA GRUBU",
+        "Alt_Baslik": "400 bar SABİT DEPLASMANLI PALETLİ POMPA",
+        "Malzeme_Kodu": "SHVQ35-54.9",
+        "Açıklama": "Deplasman: 54,9 cc/dev, Max Basınç: 320 bar",
+        "Fiyat": "1.635,96",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+        "Sayfa": "30"
+    },
+    {
+        "Ana_Baslik": "PALETLİ POMPA GRUBU",
+        "Alt_Baslik": "400 bar SABİT DEPLASMANLI PALETLİ POMPA",
+        "Malzeme_Kodu": "SHVQ35-61.0",
+        "Açıklama": "Deplasman: 61,0 cc/dev, Max Basınç: 300 bar",
+        "Fiyat": "1.635,96",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+        "Sayfa": "30"
+    }
+]
+```
