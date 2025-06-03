@@ -1,0 +1,436 @@
+```json
+[
+    {
+        "Ana_Baslik": "ÇEK VALF (PORT 1'DEN 2'YE SERBEST AKIŞ)",
+        "Malzeme_Kodu": "CX2A-XAN",
+        "Açıklama": "Açma Basıncı: 0.3 bar, Kavite: T13A, Debi: 80 L/dk",
+        "Fiyat": "43,27",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "13"
+    },
+    {
+        "Ana_Baslik": "ÇEK VALF (PORT 1'DEN 2'YE SERBEST AKIŞ)",
+        "Malzeme_Kodu": "CX2A-XBN",
+        "Açıklama": "Açma Basıncı: 1 bar, Kavite: T13A, Debi: 80 L/dk",
+        "Fiyat": "43,27",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "13"
+    },
+    {
+        "Ana_Baslik": "ÇEK VALF (PORT 1'DEN 2'YE SERBEST AKIŞ)",
+        "Malzeme_Kodu": "CX2A-XCN",
+        "Açıklama": "Açma Basıncı: 2 bar, Kavite: T13A, Debi: 80 L/dk",
+        "Fiyat": "43,27",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "13"
+    },
+    {
+        "Ana_Baslik": "ÇEK VALF (PORT 1'DEN 2'YE SERBEST AKIŞ)",
+        "Malzeme_Kodu": "CX2A-XDN",
+        "Açıklama": "Açma Basıncı: 3 bar, Kavite: T13A, Debi: 80 L/dk",
+        "Fiyat": "43,27",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "13"
+    },
+    {
+        "Ana_Baslik": "ÇEK VALF (PORT 1'DEN 2'YE SERBEST AKIŞ)",
+        "Malzeme_Kodu": "CX2A-XEN",
+        "Açıklama": "Açma Basıncı: 5 bar, Kavite: T13A, Debi: 80 L/dk",
+        "Fiyat": "43,27",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "13"
+    },
+    {
+        "Ana_Baslik": "ÇEK VALF (PORT 1'DEN 2'YE SERBEST AKIŞ)",
+        "Malzeme_Kodu": "CX3A-XAN",
+        "Açıklama": "Açma Basıncı: 0.3 bar, Kavite: T5A, Debi: 160 L/dk",
+        "Fiyat": "559,06",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "13"
+    },
+    {
+        "Ana_Baslik": "ÇEK VALF (PORT 1'DEN 2'YE SERBEST AKIŞ)",
+        "Malzeme_Kodu": "CX3A-XBN",
+        "Açıklama": "Açma Basıncı: 1 bar, Kavite: T5A, Debi: 160 L/dk",
+        "Fiyat": "559,06",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "13"
+    },
+    {
+        "Ana_Baslik": "ÇEK VALF (PORT 1'DEN 2'YE SERBEST AKIŞ)",
+        "Malzeme_Kodu": "CX3A-XCN",
+        "Açıklama": "Açma Basıncı: 2 bar, Kavite: T5A, Debi: 160 L/dk",
+        "Fiyat": "559,06",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "13"
+    },
+    {
+        "Ana_Baslik": "ÇEK VALF (PORT 1'DEN 2'YE SERBEST AKIŞ)",
+        "Malzeme_Kodu": "CX3A-XDN",
+        "Açıklama": "Açma Basıncı: 3 bar, Kavite: T5A, Debi: 160 L/dk",
+        "Fiyat": "559,06",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "13"
+    },
+    {
+        "Ana_Baslik": "ÇEK VALF (PORT 1'DEN 2'YE SERBEST AKIŞ)",
+        "Malzeme_Kodu": "CX3A-XEN",
+        "Açıklama": "Açma Basıncı: 5 bar, Kavite: T5A, Debi: 160 L/dk",
+        "Fiyat": "559,06",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "13"
+    },
+    {
+        "Ana_Baslik": "ÇEK VALF (PORT 1'DEN 2'YE SERBEST AKIŞ)",
+        "Malzeme_Kodu": "CX6A-XAN",
+        "Açıklama": "Açma Basıncı: 0.3 bar, Kavite: T16A, Debi: 320 L/dk",
+        "Fiyat": "112,48",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "13"
+    },
+    {
+        "Ana_Baslik": "ÇEK VALF (PORT 1'DEN 2'YE SERBEST AKIŞ)",
+        "Malzeme_Kodu": "CX6A-XBN",
+        "Açıklama": "Açma Basıncı: 1 bar, Kavite: T16A, Debi: 320 L/dk",
+        "Fiyat": "112,48",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "13"
+    },
+    {
+        "Ana_Baslik": "ÇEK VALF (PORT 1'DEN 2'YE SERBEST AKIŞ)",
+        "Malzeme_Kodu": "CX6A-XCN",
+        "Açıklama": "Açma Basıncı: 2 bar, Kavite: T16A, Debi: 320 L/dk",
+        "Fiyat": "112,48",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "13"
+    },
+    {
+        "Ana_Baslik": "ÇEK VALF (PORT 1'DEN 2'YE SERBEST AKIŞ)",
+        "Malzeme_Kodu": "CX6A-XDN",
+        "Açıklama": "Açma Basıncı: 3 bar, Kavite: T16A, Debi: 320 L/dk",
+        "Fiyat": "112,48",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "13"
+    },
+    {
+        "Ana_Baslik": "ÇEK VALF (PORT 1'DEN 2'YE SERBEST AKIŞ)",
+        "Malzeme_Kodu": "CX6A-XEN",
+        "Açıklama": "Açma Basıncı: 5 bar, Kavite: T16A, Debi: 320 L/dk",
+        "Fiyat": "112,48",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "13"
+    },
+    {
+        "Ana_Baslik": "ÇEK VALF (PORT 1'DEN 2'YE SERBEST AKIŞ)",
+        "Malzeme_Kodu": "CX8A-XAN",
+        "Açıklama": "Açma Basıncı: 0.3 bar, Kavite: T18A, Debi: 640 L/dk",
+        "Fiyat": "218,88",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "13"
+    },
+    {
+        "Ana_Baslik": "ÇEK VALF (PORT 1'DEN 2'YE SERBEST AKIŞ)",
+        "Malzeme_Kodu": "CX8A-XBN",
+        "Açıklama": "Açma Basıncı: 1 bar, Kavite: T18A, Debi: 640 L/dk",
+        "Fiyat": "218,88",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "13"
+    },
+    {
+        "Ana_Baslik": "ÇEK VALF (PORT 1'DEN 2'YE SERBEST AKIŞ)",
+        "Malzeme_Kodu": "CX8A-XCN",
+        "Açıklama": "Açma Basıncı: 2 bar, Kavite: T18A, Debi: 640 L/dk",
+        "Fiyat": "218,88",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "13"
+    },
+    {
+        "Ana_Baslik": "ÇEK VALF (PORT 1'DEN 2'YE SERBEST AKIŞ)",
+        "Malzeme_Kodu": "CX8A-XDN",
+        "Açıklama": "Açma Basıncı: 3 bar, Kavite: T18A, Debi: 640 L/dk",
+        "Fiyat": "218,88",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "13"
+    },
+    {
+        "Ana_Baslik": "ÇEK VALF (PORT 1'DEN 2'YE SERBEST AKIŞ)",
+        "Malzeme_Kodu": "CX8A-XEN",
+        "Açıklama": "Açma Basıncı: 5 bar, Kavite: T18A, Debi: 640 L/dk",
+        "Fiyat": "218,88",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "13"
+    },
+    {
+        "Ana_Baslik": "ÇEK VALF (PORT 2'DEN 1'E SERBEST AKIŞ)",
+        "Malzeme_Kodu": "CX2D-XAN",
+        "Açıklama": "Açma Basıncı: 0.3 bar, Kavite: T13A, Debi: 60 L/dk",
+        "Fiyat": "58,07",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "13"
+    },
+    {
+        "Ana_Baslik": "ÇEK VALF (PORT 2'DEN 1'E SERBEST AKIŞ)",
+        "Malzeme_Kodu": "CX2D-XBN",
+        "Açıklama": "Açma Basıncı: 1 bar, Kavite: T13A, Debi: 60 L/dk",
+        "Fiyat": "58,07",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "13"
+    },
+    {
+        "Ana_Baslik": "ÇEK VALF (PORT 2'DEN 1'E SERBEST AKIŞ)",
+        "Malzeme_Kodu": "CX2D-XCN",
+        "Açıklama": "Açma Basıncı: 2 bar, Kavite: T13A, Debi: 60 L/dk",
+        "Fiyat": "58,07",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "13"
+    },
+    {
+        "Ana_Baslik": "ÇEK VALF (PORT 2'DEN 1'E SERBEST AKIŞ)",
+        "Malzeme_Kodu": "CX2D-XDN",
+        "Açıklama": "Açma Basıncı: 3 bar, Kavite: T13A, Debi: 60 L/dk",
+        "Fiyat": "58,07",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "13"
+    },
+    {
+        "Ana_Baslik": "ÇEK VALF (PORT 2'DEN 1'E SERBEST AKIŞ)",
+        "Malzeme_Kodu": "CX2D-XEN",
+        "Açıklama": "Açma Basıncı: 5 bar, Kavite: T13A, Debi: 60 L/dk",
+        "Fiyat": "58,07",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "13"
+    },
+    {
+        "Ana_Baslik": "ÇEK VALF (PORT 2'DEN 1'E SERBEST AKIŞ)",
+        "Malzeme_Kodu": "CX3D-XAN",
+        "Açıklama": "Açma Basıncı: 0.3 bar, Kavite: T5A, Debi: 120 L/dk",
+        "Fiyat": "76,14",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "13"
+    },
+    {
+        "Ana_Baslik": "ÇEK VALF (PORT 2'DEN 1'E SERBEST AKIŞ)",
+        "Malzeme_Kodu": "CX3D-XBN",
+        "Açıklama": "Açma Basıncı: 1 bar, Kavite: T5A, Debi: 120 L/dk",
+        "Fiyat": "76,14",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "13"
+    },
+    {
+        "Ana_Baslik": "ÇEK VALF (PORT 2'DEN 1'E SERBEST AKIŞ)",
+        "Malzeme_Kodu": "CX3D-XCN",
+        "Açıklama": "Açma Basıncı: 2 bar, Kavite: T5A, Debi: 120 L/dk",
+        "Fiyat": "76,14",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "13"
+    },
+    {
+        "Ana_Baslik": "ÇEK VALF (PORT 2'DEN 1'E SERBEST AKIŞ)",
+        "Malzeme_Kodu": "CX3D-XDN",
+        "Açıklama": "Açma Basıncı: 3 bar, Kavite: T5A, Debi: 120 L/dk",
+        "Fiyat": "76,14",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "13"
+    },
+    {
+        "Ana_Baslik": "ÇEK VALF (PORT 2'DEN 1'E SERBEST AKIŞ)",
+        "Malzeme_Kodu": "CX3D-XEN",
+        "Açıklama": "Açma Basıncı: 5 bar, Kavite: T5A, Debi: 120 L/dk",
+        "Fiyat": "76,14",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "13"
+    },
+    {
+        "Ana_Baslik": "ÇEK VALF (PORT 2'DEN 1'E SERBEST AKIŞ)",
+        "Malzeme_Kodu": "CX6D-XAN",
+        "Açıklama": "Açma Basıncı: 0.3 bar, Kavite: T16A, Debi: 240 L/dk",
+        "Fiyat": "136,80",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "13"
+    },
+    {
+        "Ana_Baslik": "ÇEK VALF (PORT 2'DEN 1'E SERBEST AKIŞ)",
+        "Malzeme_Kodu": "CX6D-XBN",
+        "Açıklama": "Açma Basıncı: 1 bar, Kavite: T16A, Debi: 240 L/dk",
+        "Fiyat": "136,80",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "13"
+    },
+    {
+        "Ana_Baslik": "ÇEK VALF (PORT 2'DEN 1'E SERBEST AKIŞ)",
+        "Malzeme_Kodu": "CX6D-XCN",
+        "Açıklama": "Açma Basıncı: 2 bar, Kavite: T16A, Debi: 240 L/dk",
+        "Fiyat": "136,80",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "13"
+    },
+    {
+        "Ana_Baslik": "ÇEK VALF (PORT 2'DEN 1'E SERBEST AKIŞ)",
+        "Malzeme_Kodu": "CX6D-XDN",
+        "Açıklama": "Açma Basıncı: 3 bar, Kavite: T16A, Debi: 240 L/dk",
+        "Fiyat": "136,80",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "13"
+    },
+    {
+        "Ana_Baslik": "ÇEK VALF (PORT 2'DEN 1'E SERBEST AKIŞ)",
+        "Malzeme_Kodu": "CX6D-XEN",
+        "Açıklama": "Açma Basıncı: 5 bar, Kavite: T16A, Debi: 240 L/dk",
+        "Fiyat": "136,80",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "13"
+    },
+    {
+        "Ana_Baslik": "ÇEK VALF (PORT 2'DEN 1'E SERBEST AKIŞ)",
+        "Malzeme_Kodu": "CX8D-XAN",
+        "Açıklama": "Açma Basıncı: 0.3 bar, Kavite: T18A, Debi: 480 L/dk",
+        "Fiyat": "214,10",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "13"
+    },
+    {
+        "Ana_Baslik": "ÇEK VALF (PORT 2'DEN 1'E SERBEST AKIŞ)",
+        "Malzeme_Kodu": "CX8D-XBN",
+        "Açıklama": "Açma Basıncı: 1 bar, Kavite: T18A, Debi: 480 L/dk",
+        "Fiyat": "214,10",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "13"
+    },
+    {
+        "Ana_Baslik": "ÇEK VALF (PORT 2'DEN 1'E SERBEST AKIŞ)",
+        "Malzeme_Kodu": "CX8D-XCN",
+        "Açıklama": "Açma Basıncı: 2 bar, Kavite: T18A, Debi: 480 L/dk",
+        "Fiyat": "214,10",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "13"
+    },
+    {
+        "Ana_Baslik": "ÇEK VALF (PORT 2'DEN 1'E SERBEST AKIŞ)",
+        "Malzeme_Kodu": "CX8D-XDN",
+        "Açıklama": "Açma Basıncı: 3 bar, Kavite: T18A, Debi: 480 L/dk",
+        "Fiyat": "214,10",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "13"
+    },
+    {
+        "Ana_Baslik": "ÇEK VALF (PORT 2'DEN 1'E SERBEST AKIŞ)",
+        "Malzeme_Kodu": "CX8D-XEN",
+        "Açıklama": "Açma Basıncı: 5 bar, Kavite: T18A, Debi: 480 L/dk",
+        "Fiyat": "214,10",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "13"
+    },
+    {
+        "Ana_Baslik": "HAVALANDIRMALI 3:1 PİLOT ORANLI KARŞI DENGE VALFİ",
+        "Malzeme_Kodu": "CA2A-LHN",
+        "Açıklama": "Ayar Aralığı: 70 ~ 280 bar, Kavite: T11A, Debi: 60 L/dk",
+        "Fiyat": "168,13",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "13"
+    },
+    {
+        "Ana_Baslik": "HAVALANDIRMALI 3:1 PİLOT ORANLI KARŞI DENGE VALFİ",
+        "Malzeme_Kodu": "CA2A-LJN",
+        "Açıklama": "Ayar Aralığı: 25 ~ 105 bar, Kavite: T11A, Debi: 60 L/dk",
+        "Fiyat": "168,13",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "13"
+    },
+    {
+        "Ana_Baslik": "HAVALANDIRMALI 3:1 PİLOT ORANLI KARŞI DENGE VALFİ",
+        "Malzeme_Kodu": "CA3A-LHN",
+        "Açıklama": "Ayar Aralığı: 70 ~ 280 bar, Kavite: T2A, Debi: 120 L/dk",
+        "Fiyat": "244,85",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "13"
+    },
+    {
+        "Ana_Baslik": "HAVALANDIRMALI 3:1 PİLOT ORANLI KARŞI DENGE VALFİ",
+        "Malzeme_Kodu": "CA3A-LJN",
+        "Açıklama": "Ayar Aralığı: 25 ~ 105 bar, Kavite: T2A, Debi: 120 L/dk",
+        "Fiyat": "244,85",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "13"
+    },
+    {
+        "Ana_Baslik": "HAVALANDIRMALI 3:1 PİLOT ORANLI KARŞI DENGE VALFİ",
+        "Malzeme_Kodu": "CA6A-LHN",
+        "Açıklama": "Ayar Aralığı: 70 ~ 280 bar, Kavite: T17A, Debi: 240 L/dk",
+        "Fiyat": "435,52",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "13"
+    },
+    {
+        "Ana_Baslik": "HAVALANDIRMALI 3:1 PİLOT ORANLI KARŞI DENGE VALFİ",
+        "Malzeme_Kodu": "CA6A-LJN",
+        "Açıklama": "Ayar Aralığı: 25 ~ 105 bar, Kavite: T17A, Debi: 240 L/dk",
+        "Fiyat": "435,52",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "13"
+    },
+    {
+        "Ana_Baslik": "HAVALANDIRMALI 3:1 PİLOT ORANLI KARŞI DENGE VALFİ",
+        "Malzeme_Kodu": "CA8A-LHN",
+        "Açıklama": "Ayar Aralığı: 70 ~ 280 bar, Kavite: T19A, Debi: 480 L/dk",
+        "Fiyat": "FİYAT SORUNUZ",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "13"
+    },
+    {
+        "Ana_Baslik": "HAVALANDIRMALI 3:1 PİLOT ORANLI KARŞI DENGE VALFİ",
+        "Malzeme_Kodu": "CA8A-LJN",
+        "Açıklama": "Ayar Aralığı: 25 ~ 105 bar, Kavite: T19A, Debi: 480 L/dk",
+        "Fiyat": "FİYAT SORUNUZ",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "13"
+    }
+]
+```
