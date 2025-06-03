@@ -1,0 +1,319 @@
+```json
+[
+    {
+        "Ana_Baslik": "PİLOT İLE AÇAN ÇEK VALF",
+        "Malzeme_Kodu": "PC08-30",
+        "Açıklama/Özellikler": "Çalışma Basıncı: 240 bar, Kavite: 8*3, Debi: 28,3 LT/DK",
+        "Fiyat": "55,22",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "28"
+    },
+    {
+        "Ana_Baslik": "PİLOT İLE AÇAN ÇEK VALF",
+        "Malzeme_Kodu": "PC10-30",
+        "Açıklama/Özellikler": "Çalışma Basıncı: 240 bar, Kavite: 10*3, Debi: 30,2 LT/DK",
+        "Fiyat": "62,04",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "28"
+    },
+    {
+        "Ana_Baslik": "PİLOT İLE AÇAN ÇEK VALF",
+        "Malzeme_Kodu": "PC10-32",
+        "Açıklama/Özellikler": "Çalışma Basıncı: 240 bar, Kavite: 10*3, Debi: 30,2 LT/DK",
+        "Fiyat": "62,35",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "28"
+    },
+    {
+        "Ana_Baslik": "BASINÇ KOMPANZATÖRÜ",
+        "Malzeme_Kodu": "PC54-10-40",
+        "Açıklama/Özellikler": "Açma Basıncı: 2,8 bar, Kavite: 10*4, Debi: 38 LT/DK",
+        "Fiyat": "89,96",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "28"
+    },
+    {
+        "Ana_Baslik": "BASINÇ KOMPANZATÖRÜ",
+        "Malzeme_Kodu": "PC54-10-80",
+        "Açıklama/Özellikler": "Açma Basıncı: 5,5 bar, Kavite: 10*4, Debi: 38 LT/DK",
+        "Fiyat": "89,96",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "28"
+    },
+    {
+        "Ana_Baslik": "BASINÇ KOMPANZATÖRÜ",
+        "Malzeme_Kodu": "PC54-10-160",
+        "Açıklama/Özellikler": "Açma Basıncı: 11 bar, Kavite: 10*4, Debi: 38 LT/DK",
+        "Fiyat": "89,96",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "28"
+    },
+    {
+        "Ana_Baslik": "SESSİZ, DİREKT KUMANDALI BASINÇ EMNİYET VALFİ",
+        "Malzeme_Kodu": "MH-082-LAN",
+        "Açıklama/Özellikler": "Ayar Aralığı: 7~210 bar, Kavite: T082, Debi: 25 LT/DK",
+        "Fiyat": "48,39",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "28"
+    },
+    {
+        "Ana_Baslik": "SESSİZ, DİREKT KUMANDALI BASINÇ EMNİYET VALFİ",
+        "Malzeme_Kodu": "MH-082-LBN",
+        "Açıklama/Özellikler": "Ayar Aralığı: 3,5~105 bar, Kavite: T082, Debi: 25 LT/DK",
+        "Fiyat": "48,39",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "28"
+    },
+    {
+        "Ana_Baslik": "SESSİZ, DİREKT KUMANDALI BASINÇ EMNİYET VALFİ",
+        "Malzeme_Kodu": "MH-082-LCN",
+        "Açıklama/Özellikler": "Ayar Aralığı: 90~350 bar, Kavite: T082, Debi: 25 LT/DK",
+        "Fiyat": "48,39",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "28"
+    },
+    {
+        "Ana_Baslik": "SESSİZ, DİREKT KUMANDALI BASINÇ EMNİYET VALFİ",
+        "Malzeme_Kodu": "MH-092-LAN",
+        "Açıklama/Özellikler": "Ayar Aralığı: 7~210 bar, Kavite: T092, Debi: 45 LT/DK",
+        "Fiyat": "FİYAT SORUNUZ",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "28"
+    },
+    {
+        "Ana_Baslik": "SESSİZ, DİREKT KUMANDALI BASINÇ EMNİYET VALFİ",
+        "Malzeme_Kodu": "MH-092-LBN",
+        "Açıklama/Özellikler": "Ayar Aralığı: 3,5~105 bar, Kavite: T092, Debi: 45 LT/DK",
+        "Fiyat": "FİYAT SORUNUZ",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "28"
+    },
+    {
+        "Ana_Baslik": "SESSİZ, DİREKT KUMANDALI BASINÇ EMNİYET VALFİ",
+        "Malzeme_Kodu": "MH-092-LCN",
+        "Açıklama/Özellikler": "Ayar Aralığı: 90~350 bar, Kavite: T092, Debi: 47 LT/DK",
+        "Fiyat": "FİYAT SORUNUZ",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "28"
+    },
+    {
+        "Ana_Baslik": "SESSİZ, DİREKT KUMANDALI BASINÇ EMNİYET VALFİ",
+        "Malzeme_Kodu": "MH-102-LAN",
+        "Açıklama/Özellikler": "Ayar Aralığı: 7~210 bar, Kavite: T102, Debi: 55 LT/DK",
+        "Fiyat": "59,87",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "28"
+    },
+    {
+        "Ana_Baslik": "SESSİZ, DİREKT KUMANDALI BASINÇ EMNİYET VALFİ",
+        "Malzeme_Kodu": "MH-102-LBN",
+        "Açıklama/Özellikler": "Ayar Aralığı: 3,5~105 bar, Kavite: T102, Debi: 55 LT/DK",
+        "Fiyat": "59,87",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "28"
+    },
+    {
+        "Ana_Baslik": "SESSİZ, DİREKT KUMANDALI BASINÇ EMNİYET VALFİ",
+        "Malzeme_Kodu": "MH-102-LCN",
+        "Açıklama/Özellikler": "Ayar Aralığı: 90~350 bar, Kavite: T102, Debi: 55 LT/DK",
+        "Fiyat": "59,87",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "28"
+    },
+    {
+        "Ana_Baslik": "SESSİZ, DİREKT KUMANDALI BASINÇ EMNİYET VALFİ",
+        "Malzeme_Kodu": "MH-122-LAN",
+        "Açıklama/Özellikler": "Ayar Aralığı: 7~210 bar, Kavite: T122, Debi: 85 LT/DK",
+        "Fiyat": "120,98",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "28"
+    },
+    {
+        "Ana_Baslik": "SESSİZ, DİREKT KUMANDALI BASINÇ EMNİYET VALFİ",
+        "Malzeme_Kodu": "MH-122-LBN",
+        "Açıklama/Özellikler": "Ayar Aralığı: 3,5~105 bar, Kavite: T122, Debi: 85 LT/DK",
+        "Fiyat": "120,98",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "28"
+    },
+    {
+        "Ana_Baslik": "SESSİZ, DİREKT KUMANDALI BASINÇ EMNİYET VALFİ",
+        "Malzeme_Kodu": "MH-122-LCN",
+        "Açıklama/Özellikler": "Ayar Aralığı: 90~350 bar, Kavite: T122, Debi: 85 LT/DK",
+        "Fiyat": "120,98",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "28"
+    },
+    {
+        "Ana_Baslik": "TAM AYARLANABİLİR ÇEKSİZ İĞNE VALF",
+        "Malzeme_Kodu": "NV-082-LAN",
+        "Açıklama/Özellikler": "Orifis Çapı: 6,5 mm, Kavite: T082, Debi: 30 LT/DK",
+        "Fiyat": "29,78",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "28"
+    },
+    {
+        "Ana_Baslik": "TAM AYARLANABİLİR ÇEKSİZ İĞNE VALF",
+        "Malzeme_Kodu": "NV-102-LAN",
+        "Açıklama/Özellikler": "Orifis Çapı: 8,5 mm, Kavite: T102, Debi: 50 LT/DK",
+        "Fiyat": "34,74",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "28"
+    },
+    {
+        "Ana_Baslik": "TAM AYARLANABİLİR ÇEKSİZ İĞNE VALF",
+        "Malzeme_Kodu": "NV-122-LAN",
+        "Açıklama/Özellikler": "Orifis Çapı: 12,5 mm, Kavite: T122, Debi: 80 LT/DK",
+        "Fiyat": "47,15",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "28"
+    },
+    {
+        "Ana_Baslik": "TAM AYARLANABİLİR ÇEKSİZ İĞNE VALF",
+        "Malzeme_Kodu": "NV-162-LAN",
+        "Açıklama/Özellikler": "Orifis Çapı: 16 mm, Kavite: T162, Debi: 150 LT/DK",
+        "Fiyat": "62,04",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "28"
+    },
+    {
+        "Ana_Baslik": "TAM AYARLANABİLİR ÇEKİLİ İĞNE VALF",
+        "Malzeme_Kodu": "NC-082-LCN",
+        "Açıklama/Özellikler": "Orifis Çapı: 5,9 mm, Kavite: T082, Debi: 30 LT/DK",
+        "Fiyat": "36,60",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "28"
+    },
+    {
+        "Ana_Baslik": "TAM AYARLANABİLİR ÇEKİLİ İĞNE VALF",
+        "Malzeme_Kodu": "NC-102-LCN",
+        "Açıklama/Özellikler": "Orifis Çapı: 8 mm, Kavite: T102, Debi: 50 LT/DK",
+        "Fiyat": "49,63",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "28"
+    },
+    {
+        "Ana_Baslik": "TAM AYARLANABİLİR ÇEKİLİ İĞNE VALF",
+        "Malzeme_Kodu": "NC-122-LCN",
+        "Açıklama/Özellikler": "Orifis Çapı: 11 mm, Kavite: T122, Debi: 80 LT/DK",
+        "Fiyat": "65,14",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "28"
+    },
+    {
+        "Ana_Baslik": "TAM AYARLANABİLİR ÇEKİLİ İĞNE VALF",
+        "Malzeme_Kodu": "NC-162-LCN",
+        "Açıklama/Özellikler": "Orifis Çapı: 13 mm, Kavite: T162, Debi: 150 LT/DK",
+        "Fiyat": "78,17",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "28"
+    },
+    {
+        "Ana_Baslik": "AKIŞ BÖLÜCÜ (Akış Oranı 1:1)",
+        "Malzeme_Kodu": "CP-104-XAN",
+        "Açıklama/Özellikler": "Kontrol: Ayarlanamaz, Kavite: T104, Debi: 7,6 LT/DK",
+        "Fiyat": "97,09",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "28"
+    },
+    {
+        "Ana_Baslik": "AKIŞ BÖLÜCÜ (Akış Oranı 1:1)",
+        "Malzeme_Kodu": "CP-104-XBN",
+        "Açıklama/Özellikler": "Kontrol: Ayarlanamaz, Kavite: T104, Debi: 23 LT/DK",
+        "Fiyat": "97,09",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "28"
+    },
+    {
+        "Ana_Baslik": "AKIŞ BÖLÜCÜ (Akış Oranı 1:1)",
+        "Malzeme_Kodu": "CP-104-XCN",
+        "Açıklama/Özellikler": "Kontrol: Ayarlanamaz, Kavite: T104, Debi: 45 LT/DK",
+        "Fiyat": "97,09",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "28"
+    },
+    {
+        "Ana_Baslik": "AKIŞ BÖLÜCÜ (Akış Oranı 1:1)",
+        "Malzeme_Kodu": "CP-124-XAN",
+        "Açıklama/Özellikler": "Kontrol: Ayarlanamaz, Kavite: T124, Debi: 38 LT/DK",
+        "Fiyat": "FİYAT SORUNUZ",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "28"
+    },
+    {
+        "Ana_Baslik": "AKIŞ BÖLÜCÜ (Akış Oranı 1:1)",
+        "Malzeme_Kodu": "CP-124-XBN",
+        "Açıklama/Özellikler": "Kontrol: Ayarlanamaz, Kavite: T124, Debi: 53 LT/DK",
+        "Fiyat": "FİYAT SORUNUZ",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "28"
+    },
+    {
+        "Ana_Baslik": "AKIŞ BÖLÜCÜ (Akış Oranı 1:1)",
+        "Malzeme_Kodu": "CP-124-XCN",
+        "Açıklama/Özellikler": "Kontrol: Ayarlanamaz, Kavite: T124, Debi: 53 LT/DK",
+        "Fiyat": "FİYAT SORUNUZ",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "28"
+    },
+    {
+        "Ana_Baslik": "AKIŞ BÖLÜCÜ (Akış Oranı 1:1)",
+        "Malzeme_Kodu": "CP-164-XAN",
+        "Açıklama/Özellikler": "Kontrol: Ayarlanamaz, Kavite: T164, Debi: 91 LT/DK",
+        "Fiyat": "FİYAT SORUNUZ",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "28"
+    },
+    {
+        "Ana_Baslik": "AKIŞ BÖLÜCÜ (Akış Oranı 1:1)",
+        "Malzeme_Kodu": "CP-164-XBN",
+        "Açıklama/Özellikler": "Kontrol: Ayarlanamaz, Kavite: T164, Debi: 114 LT/DK",
+        "Fiyat": "FİYAT SORUNUZ",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "28"
+    },
+    {
+        "Ana_Baslik": "AKIŞ BÖLÜCÜ (Akış Oranı 1:1)",
+        "Malzeme_Kodu": "CP-164-XCN",
+        "Açıklama/Özellikler": "Kontrol: Ayarlanamaz, Kavite: T164, Debi: 150 LT/DK",
+        "Fiyat": "FİYAT SORUNUZ",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "28"
+    }
+]
+```
