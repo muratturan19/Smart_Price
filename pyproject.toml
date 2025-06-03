@@ -20,6 +20,7 @@ dependencies = [
     "openai>=1.0",
     "tiktoken",
     "python-dotenv",
+    "agentic-doc",
 ]
 
 [tool.setuptools.packages.find]
