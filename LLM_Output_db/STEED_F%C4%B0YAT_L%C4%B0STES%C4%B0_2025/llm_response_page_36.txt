@@ -1,0 +1,346 @@
+```json
+[
+  {
+    "Ana_Baslik": "ST6GC YÜKSEK BASINÇLI PALETLİ POMPA",
+    "Malzeme_Kodu": "ST6GC- B05",
+    "Açıklama": "Deplasman: 10,8 cc/dev, Max. Basınç: 275 bar",
+    "Fiyat": "1,015.70",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+    "Sayfa": "36"
+  },
+  {
+    "Ana_Baslik": "ST6GC YÜKSEK BASINÇLI PALETLİ POMPA",
+    "Malzeme_Kodu": "ST6GC- B05",
+    "Açıklama": "Deplasman: 17,2 cc/dev, Max. Basınç: 275 bar",
+    "Fiyat": "1,015.70",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+    "Sayfa": "36"
+  },
+  {
+    "Ana_Baslik": "ST6GC YÜKSEK BASINÇLI PALETLİ POMPA",
+    "Malzeme_Kodu": "ST6GC- B06",
+    "Açıklama": "Deplasman: 21,3 cc/dev, Max. Basınç: 275 bar",
+    "Fiyat": "1,015.70",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+    "Sayfa": "36"
+  },
+  {
+    "Ana_Baslik": "ST6GC YÜKSEK BASINÇLI PALETLİ POMPA",
+    "Malzeme_Kodu": "ST6GC- B08",
+    "Açıklama": "Deplasman: 26,4 cc/dev, Max. Basınç: 275 bar",
+    "Fiyat": "1,015.70",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+    "Sayfa": "36"
+  },
+  {
+    "Ana_Baslik": "ST6GC YÜKSEK BASINÇLI PALETLİ POMPA",
+    "Malzeme_Kodu": "ST6GC- B10",
+    "Açıklama": "Deplasman: 34,1 cc/dev, Max. Basınç: 275 bar",
+    "Fiyat": "1,015.70",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+    "Sayfa": "36"
+  },
+  {
+    "Ana_Baslik": "ST6GC YÜKSEK BASINÇLI PALETLİ POMPA",
+    "Malzeme_Kodu": "ST6GC- B12",
+    "Açıklama": "Deplasman: 37,1 cc/dev, Max. Basınç: 275 bar",
+    "Fiyat": "1,015.70",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+    "Sayfa": "36"
+  },
+  {
+    "Ana_Baslik": "ST6GC YÜKSEK BASINÇLI PALETLİ POMPA",
+    "Malzeme_Kodu": "ST6GC- B14",
+    "Açıklama": "Deplasman: 46,0 cc/dev, Max. Basınç: 275 bar",
+    "Fiyat": "1,015.70",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+    "Sayfa": "36"
+  },
+  {
+    "Ana_Baslik": "ST6GC YÜKSEK BASINÇLI PALETLİ POMPA",
+    "Malzeme_Kodu": "ST6GC- B17",
+    "Açıklama": "Deplasman: 58,3 cc/dev, Max. Basınç: 275 bar",
+    "Fiyat": "1,015.70",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+    "Sayfa": "36"
+  },
+  {
+    "Ana_Baslik": "ST6GC YÜKSEK BASINÇLI PALETLİ POMPA",
+    "Malzeme_Kodu": "ST6GC- B20",
+    "Açıklama": "Deplasman: 63,8 cc/dev, Max. Basınç: 275 bar",
+    "Fiyat": "1,015.70",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+    "Sayfa": "36"
+  },
+  {
+    "Ana_Baslik": "ST6GC YÜKSEK BASINÇLI PALETLİ POMPA",
+    "Malzeme_Kodu": "ST6GC- B22",
+    "Açıklama": "Deplasman: 70,3 cc/dev, Max. Basınç: 275 bar",
+    "Fiyat": "1,015.70",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+    "Sayfa": "36"
+  },
+  {
+    "Ana_Baslik": "ST6GC YÜKSEK BASINÇLI PALETLİ POMPA",
+    "Malzeme_Kodu": "ST6GC- B25",
+    "Açıklama": "Deplasman: 79,3 cc/dev, Max. Basınç: 275 bar",
+    "Fiyat": "1,015.70",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+    "Sayfa": "36"
+  },
+  {
+    "Ana_Baslik": "ST6GC YÜKSEK BASINÇLI PALETLİ POMPA",
+    "Malzeme_Kodu": "ST6GC- B28",
+    "Açıklama": "Deplasman: 88,8 cc/dev, Max. Basınç: 210 bar",
+    "Fiyat": "1,015.70",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+    "Sayfa": "36"
+  },
+  {
+    "Ana_Baslik": "ST6GC YÜKSEK BASINÇLI PALETLİ POMPA",
+    "Malzeme_Kodu": "ST6GC- B31",
+    "Açıklama": "Deplasman: 100,0 cc/dev, Max. Basınç: 210 bar",
+    "Fiyat": "1,015.70",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+    "Sayfa": "36"
+  },
+  {
+    "Ana_Baslik": "ST7B, ST7BS YÜKSEK BASINÇLI PALETLİ POMPA",
+    "Malzeme_Kodu": "ST7B, ST7BS - B02",
+    "Açıklama": "Deplasman: 5,8 cc/dev, Max. Basınç: 320 bar",
+    "Fiyat": "1,297.39",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+    "Sayfa": "36"
+  },
+  {
+    "Ana_Baslik": "ST7B, ST7BS YÜKSEK BASINÇLI PALETLİ POMPA",
+    "Malzeme_Kodu": "ST7B, ST7BS - B03",
+    "Açıklama": "Deplasman: 9,8 cc/dev, Max. Basınç: 320 bar",
+    "Fiyat": "1,297.39",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+    "Sayfa": "36"
+  },
+  {
+    "Ana_Baslik": "ST7B, ST7BS YÜKSEK BASINÇLI PALETLİ POMPA",
+    "Malzeme_Kodu": "ST7B, ST7BS - B04",
+    "Açıklama": "Deplasman: 12,8 cc/dev, Max. Basınç: 240 bar",
+    "Fiyat": "1,297.39",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+    "Sayfa": "36"
+  },
+  {
+    "Ana_Baslik": "ST7B, ST7BS YÜKSEK BASINÇLI PALETLİ POMPA",
+    "Malzeme_Kodu": "ST7B, ST7BS - B05",
+    "Açıklama": "Deplasman: 15,9 cc/dev, Max. Basınç: 240 bar",
+    "Fiyat": "1,297.39",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+    "Sayfa": "36"
+  },
+  {
+    "Ana_Baslik": "ST7B, ST7BS YÜKSEK BASINÇLI PALETLİ POMPA",
+    "Malzeme_Kodu": "ST7B, ST7BS - B06",
+    "Açıklama": "Deplasman: 19,8 cc/dev, Max. Basınç: 240 bar",
+    "Fiyat": "1,297.39",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+    "Sayfa": "36"
+  },
+  {
+    "Ana_Baslik": "ST7B, ST7BS YÜKSEK BASINÇLI PALETLİ POMPA",
+    "Malzeme_Kodu": "ST7B, ST7BS - B07",
+    "Açıklama": "Deplasman: 22,5 cc/dev, Max. Basınç: 240 bar",
+    "Fiyat": "1,297.39",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+    "Sayfa": "36"
+  },
+  {
+    "Ana_Baslik": "ST7B, ST7BS YÜKSEK BASINÇLI PALETLİ POMPA",
+    "Malzeme_Kodu": "ST7B, ST7BS - B08",
+    "Açıklama": "Deplasman: 24,9 cc/dev, Max. Basınç: 240 bar",
+    "Fiyat": "1,297.39",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+    "Sayfa": "36"
+  },
+  {
+    "Ana_Baslik": "ST7B, ST7BS YÜKSEK BASINÇLI PALETLİ POMPA",
+    "Malzeme_Kodu": "ST7B, ST7BS - B09",
+    "Açıklama": "Deplasman: 28,0 cc/dev, Max. Basınç: 240 bar",
+    "Fiyat": "1,297.39",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+    "Sayfa": "36"
+  },
+  {
+    "Ana_Baslik": "ST7B, ST7BS YÜKSEK BASINÇLI PALETLİ POMPA",
+    "Malzeme_Kodu": "ST7B, ST7BS - B10",
+    "Açıklama": "Deplasman: 31,8 cc/dev, Max. Basınç: 240 bar",
+    "Fiyat": "1,297.39",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+    "Sayfa": "36"
+  },
+  {
+    "Ana_Baslik": "ST7B, ST7BS YÜKSEK BASINÇLI PALETLİ POMPA",
+    "Malzeme_Kodu": "ST7B, ST7BS - B11",
+    "Açıklama": "Deplasman: 35,0 cc/dev, Max. Basınç: 210 bar",
+    "Fiyat": "1,297.39",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+    "Sayfa": "36"
+  },
+  {
+    "Ana_Baslik": "ST7B, ST7BS YÜKSEK BASINÇLI PALETLİ POMPA",
+    "Malzeme_Kodu": "ST7B, ST7BS - B12",
+    "Açıklama": "Deplasman: 41,0 cc/dev, Max. Basınç: 210 bar",
+    "Fiyat": "1,297.39",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+    "Sayfa": "36"
+  },
+  {
+    "Ana_Baslik": "ST7B, ST7BS YÜKSEK BASINÇLI PALETLİ POMPA",
+    "Malzeme_Kodu": "ST7B, ST7BS - B14",
+    "Açıklama": "Deplasman: 45,0 cc/dev, Max. Basınç: 210 bar",
+    "Fiyat": "1,297.39",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+    "Sayfa": "36"
+  },
+  {
+    "Ana_Baslik": "ST7B, ST7BS YÜKSEK BASINÇLI PALETLİ POMPA",
+    "Malzeme_Kodu": "ST7B, ST7BS - B15",
+    "Açıklama": "Deplasman: 50,0 cc/dev, Max. Basınç: 210 bar",
+    "Fiyat": "1,297.39",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+    "Sayfa": "36"
+  },
+  {
+    "Ana_Baslik": "ST7D - ST7DS YÜKSEK BASINÇLI PALETLİ POMPA",
+    "Malzeme_Kodu": "ST7D - 014",
+    "Açıklama": "Deplasman: 44,0 cc/dev, Max. Basınç: 300 bar",
+    "Fiyat": "2,088.28",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+    "Sayfa": "36"
+  },
+  {
+    "Ana_Baslik": "ST7D - ST7DS YÜKSEK BASINÇLI PALETLİ POMPA",
+    "Malzeme_Kodu": "ST7D - 017",
+    "Açıklama": "Deplasman: 55,0 cc/dev, Max. Basınç: 300 bar",
+    "Fiyat": "2,088.28",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+    "Sayfa": "36"
+  },
+  {
+    "Ana_Baslik": "ST7D - ST7DS YÜKSEK BASINÇLI PALETLİ POMPA",
+    "Malzeme_Kodu": "ST7D - 020",
+    "Açıklama": "Deplasman: 66,0 cc/dev, Max. Basınç: 300 bar",
+    "Fiyat": "2,088.28",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+    "Sayfa": "36"
+  },
+  {
+    "Ana_Baslik": "ST7D - ST7DS YÜKSEK BASINÇLI PALETLİ POMPA",
+    "Malzeme_Kodu": "ST7D - 022",
+    "Açıklama": "Deplasman: 70,3 cc/dev, Max. Basınç: 300 bar",
+    "Fiyat": "2,088.28",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+    "Sayfa": "36"
+  },
+  {
+    "Ana_Baslik": "ST7D - ST7DS YÜKSEK BASINÇLI PALETLİ POMPA",
+    "Malzeme_Kodu": "ST7D - 024",
+    "Açıklama": "Deplasman: 81,1 cc/dev, Max. Basınç: 300 bar",
+    "Fiyat": "2,088.28",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+    "Sayfa": "36"
+  },
+  {
+    "Ana_Baslik": "ST7D - ST7DS YÜKSEK BASINÇLI PALETLİ POMPA",
+    "Malzeme_Kodu": "ST7D - 028",
+    "Açıklama": "Deplasman: 90,0 cc/dev, Max. Basınç: 300 bar",
+    "Fiyat": "2,088.28",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+    "Sayfa": "36"
+  },
+  {
+    "Ana_Baslik": "ST7D - ST7DS YÜKSEK BASINÇLI PALETLİ POMPA",
+    "Malzeme_Kodu": "ST7D - 031",
+    "Açıklama": "Deplasman: 99,2 cc/dev, Max. Basınç: 300 bar",
+    "Fiyat": "2,088.28",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+    "Sayfa": "36"
+  },
+  {
+    "Ana_Baslik": "ST7D - ST7DS YÜKSEK BASINÇLI PALETLİ POMPA",
+    "Malzeme_Kodu": "ST7D - 035",
+    "Açıklama": "Deplasman: 113,4 cc/dev, Max. Basınç: 280 bar",
+    "Fiyat": "2,088.28",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+    "Sayfa": "36"
+  },
+  {
+    "Ana_Baslik": "ST7D - ST7DS YÜKSEK BASINÇLI PALETLİ POMPA",
+    "Malzeme_Kodu": "ST7D - 038",
+    "Açıklama": "Deplasman: 120,6 cc/dev, Max. Basınç: 260 bar",
+    "Fiyat": "2,088.28",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+    "Sayfa": "36"
+  },
+  {
+    "Ana_Baslik": "ST7D - ST7DS YÜKSEK BASINÇLI PALETLİ POMPA",
+    "Malzeme_Kodu": "ST7D - 042",
+    "Açıklama": "Deplasman: 137,5 cc/dev, Max. Basınç: 260 bar",
+    "Fiyat": "2,088.28",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+    "Sayfa": "36"
+  },
+  {
+    "Ana_Baslik": "ST7D - ST7DS YÜKSEK BASINÇLI PALETLİ POMPA",
+    "Malzeme_Kodu": "ST7D - 045",
+    "Açıklama": "Deplasman: 145,7 cc/dev, Max. Basınç: 240 bar",
+    "Fiyat": "2,088.28",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+    "Sayfa": "36"
+  },
+  {
+    "Ana_Baslik": "ST7D - ST7DS YÜKSEK BASINÇLI PALETLİ POMPA",
+    "Malzeme_Kodu": "ST7D - 050",
+    "Açıklama": "Deplasman: 158,0 cc/dev, Max. Basınç: 210 bar",
+    "Fiyat": "2,088.28",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+    "Sayfa": "36"
+  }
+]
+```
