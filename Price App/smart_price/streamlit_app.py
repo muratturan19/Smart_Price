@@ -156,6 +156,7 @@ def merge_files(
 ):
     """Extract and merge uploaded files with optional progress callbacks."""
     extracted = []
+    token_totals: dict[str, dict[str, int]] = {}
     total = len(uploaded_files)
     for idx, up_file in enumerate(uploaded_files, start=1):
         if update_status:
@@ -185,6 +186,9 @@ def merge_files(
                 update_status("veri çıkarılamadı", "warning")
         else:
             extracted.append(df)
+            tok = getattr(df, "token_counts", None)
+            if tok:
+                token_totals[up_file.name] = tok
             if update_status:
                 update_status(f"{len(df)} kayıt bulundu", "info")
 
@@ -227,6 +231,10 @@ def merge_files(
             f"{len(master)} sat\u0131r ba\u015far\u0131yla bulundu, sonucu kaydetmek i\u00e7in butona bas\u0131n.",
             "success",
         )
+    total_tokens = sum(v.get("input", 0) + v.get("output", 0) for v in token_totals.values())
+    if hasattr(master, "__dict__"):
+        object.__setattr__(master, "token_totals", token_totals)
+        object.__setattr__(master, "total_tokens", total_tokens)
     return master
 
 
@@ -437,6 +445,12 @@ def upload_page():
         if coverage < MIN_CODE_RATIO:
             big_alert("Low code coverage – OCR/LLM suggested", level="error")
         st.dataframe(df)
+        token_total = getattr(df, "total_tokens", None)
+        if token_total is not None:
+            st.info(f"Toplam Token: {token_total}")
+            details = getattr(df, "token_totals", {})
+            for fname, vals in details.items():
+                st.write(f"{fname}: input {vals.get('input',0)}, output {vals.get('output',0)}")
 
     if st.session_state.get("processed_df") is not None and st.button(
         "Master Veriyi Kaydet"

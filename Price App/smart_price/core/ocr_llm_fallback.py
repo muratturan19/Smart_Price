@@ -33,6 +33,7 @@ from .common_utils import (
     safe_json_parse,
 )
 from .debug_utils import save_debug, save_debug_image, set_output_subdir
+from .token_utils import num_tokens_from_messages, num_tokens_from_text, log_token_counts
 from .github_upload import upload_folder
 from smart_price import config
 
@@ -146,6 +147,8 @@ def parse(
 
     set_output_subdir(output_name)
     total_start = time.time()
+    total_input_tokens = 0
+    total_output_tokens = 0
 
     try:
         from pdf2image import convert_from_path  # type: ignore
@@ -197,7 +200,7 @@ def parse(
     running = 0
 
     def process_page(args: tuple[int, "Image.Image"]):
-        nonlocal running
+        nonlocal running, total_input_tokens, total_output_tokens
         idx, img = args
         start = time.time()
         with lock:
@@ -221,6 +224,10 @@ def parse(
             with open(tmp_path, "rb") as f:
                 image_bytes = f.read()
             img_base64 = base64.b64encode(image_bytes).decode()
+            prompt_text = _get_prompt(idx)
+            total_input_tokens += num_tokens_from_messages([
+                {"role": "user", "content": prompt_text}
+            ], model_name)
             api_start = time.time()
             resp = openai.chat.completions.create(
                 model=model_name,
@@ -228,7 +235,7 @@ def parse(
                     {
                         "role": "user",
                         "content": [
-                            {"type": "text", "text": _get_prompt(idx)},
+                            {"type": "text", "text": prompt_text},
                             {
                                 "type": "image_url",
                                 "image_url": {"url": "data:image/png;base64," + img_base64},
@@ -242,6 +249,7 @@ def parse(
                 "OpenAI request for page %d took %.2fs", idx, time.time() - api_start
             )
             content = resp.choices[0].message.content
+            total_output_tokens += num_tokens_from_text(content or "", model_name)
             save_debug("llm_response", idx, content or "")
         except Exception as exc:  # pragma: no cover - request errors
             logger.error("OpenAI request failed on page %d: %s", idx, exc)
@@ -352,8 +360,13 @@ def parse(
         )
     if hasattr(df, "__dict__"):
         object.__setattr__(df, "page_summary", page_summary)
+        object.__setattr__(df, "token_counts", {
+            "input": total_input_tokens,
+            "output": total_output_tokens,
+        })
     total_dur = time.time() - total_start
     logger.info("Finished %s with %d rows in %.2fs", pdf_path, len(df), total_dur)
+    log_token_counts(pdf_path, total_input_tokens, total_output_tokens)
     debug_dir = Path(os.getenv("SMART_PRICE_DEBUG_DIR", "LLM_Output_db")) / output_name
     set_output_subdir(None)
     upload_folder(debug_dir, remote_prefix=f"LLM_Output_db/{debug_dir.name}")
