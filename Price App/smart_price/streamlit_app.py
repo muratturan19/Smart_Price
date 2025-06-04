@@ -271,8 +271,14 @@ def merge_files(
     if before_len != len(master):
         logger.debug("[merge] Drop nedeni: subset=['Malzeme_Kodu', 'Fiyat']")
         logger.debug("[merge] Drop edilen ilk 5 satır: %s", dropped_preview)
-    master["Açıklama"] = master["Açıklama"].astype(str).str.strip().str.upper()
-    master.sort_values(by="Açıklama", inplace=True)
+    if "Açıklama" in master.columns:
+        master["Açıklama"] = (
+            master["Açıklama"].astype(str).str.strip().str.upper()
+        )
+        master.sort_values(by="Açıklama", inplace=True)
+    else:
+        logger.warning("[merge] 'Açıklama' column missing after merge")
+        master["Açıklama"] = None
     if "Kisa_Kod" in master.columns:
         master["Kisa_Kod"] = master["Kisa_Kod"].astype(str)
     if "Malzeme_Kodu" in master.columns:
