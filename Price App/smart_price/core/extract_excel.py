@@ -52,6 +52,10 @@ _RAW_DESC_HEADERS = [
     "description",
     "ürün açıklaması",
     "açıklama",
+    "aciklama",
+    "özellikler",
+    "detay",
+    "explanation",
 ]
 
 POSSIBLE_CODE_HEADERS = set(_RAW_CODE_HEADERS)
