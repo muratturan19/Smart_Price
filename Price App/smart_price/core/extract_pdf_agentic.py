@@ -126,6 +126,25 @@ def extract_from_pdf_agentic(
     chunks = getattr(result, "chunks", [])
     df = pd.DataFrame(list(chunks) if chunks is not None else [])
 
+    # ``agentic_doc`` may return column indices instead of headers.  In that
+    # case rename the first few columns to the expected names so downstream
+    # logic works without requiring a separate mapping step.
+    if not df.empty:
+        # Detect purely numeric column labels (``0``, ``1`` ...) regardless of
+        # type.  ``df.columns`` may contain either ints or strings so cast to
+        # ``str`` before checking ``isdigit``.
+        if all(str(col).isdigit() for col in df.columns):
+            mapping: dict[Any, str] = {}
+            cols = list(df.columns)
+            if len(cols) > 0:
+                mapping[cols[0]] = "Malzeme_Kodu"
+            if len(cols) > 1:
+                mapping[cols[1]] = "Açıklama"
+            if len(cols) > 2:
+                mapping[cols[2]] = "Fiyat"
+            if mapping:
+                df = df.rename(columns=mapping)
+
     page_summary = getattr(result, "page_summary", None)
     if page_summary is not None and hasattr(df, "__dict__"):
         object.__setattr__(df, "page_summary", page_summary)
