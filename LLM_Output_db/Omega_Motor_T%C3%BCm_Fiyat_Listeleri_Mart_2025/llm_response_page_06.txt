@@ -1,0 +1,104 @@
+```json
+[
+  {
+    "Ana_Baslik": "YEDEK PARÇA FİYATLARI",
+    "Alt_Baslik": "KAPAK (ÖN VEYA ARKA)",
+    "Malzeme_Kodu": "80",
+    "Açıklama": "AL.",
+    "Fiyat": "9,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Omega Motor Fiyat Listesi 2025.pdf",
+    "Sayfa": "1"
+  },
+  {
+    "Ana_Baslik": "YEDEK PARÇA FİYATLARI",
+    "Alt_Baslik": "KAPAK (ÖN VEYA ARKA)",
+    "Malzeme_Kodu": "80",
+    "Açıklama": "PİK",
+    "Fiyat": "-",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Omega Motor Fiyat Listesi 2025.pdf",
+    "Sayfa": "1"
+  },
+  {
+    "Ana_Baslik": "YEDEK PARÇA FİYATLARI",
+    "Alt_Baslik": "FLANŞ (DIN 42948)",
+    "Malzeme_Kodu": "80",
+    "Açıklama": "B5",
+    "Fiyat": "13,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Omega Motor Fiyat Listesi 2025.pdf",
+    "Sayfa": "1"
+  },
+  {
+    "Ana_Baslik": "YEDEK PARÇA FİYATLARI",
+    "Alt_Baslik": "FLANŞ (DIN 42948)",
+    "Malzeme_Kodu": "80",
+    "Açıklama": "B14, B14/2",
+    "Fiyat": "8,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Omega Motor Fiyat Listesi 2025.pdf",
+    "Sayfa": "1"
+  },
+  {
+    "Ana_Baslik": "YEDEK PARÇA FİYATLARI",
+    "Alt_Baslik": "Klemens Kutusu ve Kapağı",
+    "Malzeme_Kodu": "80",
+    "Açıklama": "",
+    "Fiyat": "5,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Omega Motor Fiyat Listesi 2025.pdf",
+    "Sayfa": "1"
+  },
+  {
+    "Ana_Baslik": "YEDEK PARÇA FİYATLARI",
+    "Alt_Baslik": "KAPAK (ÖN VEYA ARKA)",
+    "Malzeme_Kodu": "90",
+    "Açıklama": "AL.",
+    "Fiyat": "10,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Omega Motor Fiyat Listesi 2025.pdf",
+    "Sayfa": "1"
+  },
+  {
+    "Ana_Baslik": "YEDEK PARÇA FİYATLARI",
+    "Alt_Baslik": "KAPAK (ÖN VEYA ARKA)",
+    "Malzeme_Kodu": "90",
+    "Açıklama": "PİK",
+    "Fiyat": "-",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Omega Motor Fiyat Listesi 2025.pdf",
+    "Sayfa": "1"
+  },
+  {
+    "Ana_Baslik": "YEDEK PARÇA FİYATLARI",
+    "Alt_Baslik": "FLANŞ (DIN 42948)",
+    "Malzeme_Kodu": "90",
+    "Açıklama": "B5",
+    "Fiyat": "15,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Omega Motor Fiyat Listesi 2025.pdf",
+    "Sayfa": "1"
+  },
+  {
+    "Ana_Baslik": "YEDEK PARÇA FİYATLARI",
+    "Alt_Baslik": "FLANŞ (DIN 42948)",
+    "Malzeme_Kodu": "90",
+    "Açıklama": "B14, B14/2",
+    "Fiyat": "10,00",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Omega Motor Fiyat Listesi 2025.pdf",
+    "Sayfa": "1"
+  },
+  {
+    "Ana_Baslik": "YEDEK PARÇA FİYATLARI",
+    "Alt_Baslik": "Klemens Kutusu ve Kapağı",
+    "Malzeme_Kodu": "90",
+    "Açıklama": "",
+    "Fiyat": "",
+    "Para_Birimi": "TL",
+    "Kaynak_Dosya": "Omega Motor Fiyat Listesi 2025.pdf",
+    "Sayfa": "1"
+  }
+]
+```
