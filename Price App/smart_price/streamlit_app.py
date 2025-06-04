@@ -26,7 +26,13 @@ right_logo_url = (
     "https://raw.githubusercontent.com/muratturan19/Smart_Price/main/logo/sadece_dp_seffaf.PNG"
 )
 
-from smart_price.core.extract_excel import extract_from_excel
+from smart_price.core.extract_excel import (
+    extract_from_excel,
+    _norm_header,
+    _NORMALIZED_CODE_HEADERS,
+    POSSIBLE_DESC_HEADERS,
+    POSSIBLE_PRICE_HEADERS,
+)
 from smart_price.core.extract_pdf import extract_from_pdf, MIN_CODE_RATIO
 from smart_price.core.extract_pdf_agentic import extract_from_pdf_agentic
 from smart_price import config
@@ -41,29 +47,15 @@ def standardize_column_names(df: pd.DataFrame) -> pd.DataFrame:
     """Return ``df`` with common column name variants normalised."""
     mapping = {}
     for col in df.columns:
-        norm = str(col).replace("_", " ").casefold()
-        if norm in {
-            "fiyat",
-            "birim fiyat",
-            "liste fiyatı",
-            "price",
-            "unit price",
-            "list price",
-            "tutar",
-            "fiyat ham",
-        }:
+        norm = _norm_header(col)
+        if norm in POSSIBLE_PRICE_HEADERS:
             mapping[col] = "Fiyat"
-        elif norm in {
-            "malzeme kodu",
-            "urun kodu",
-            "ürün kodu",
-            "kod",
-            "product code",
-            "part no",
-            "item no",
-            "item number",
-        }:
+        elif norm in _NORMALIZED_CODE_HEADERS:
             mapping[col] = "Malzeme_Kodu"
+        elif norm in POSSIBLE_DESC_HEADERS or any(
+            term in norm for term in {"ozellik", "detay", "explanation"}
+        ):
+            mapping[col] = "Açıklama"
     if mapping:
         df = df.rename(columns=mapping)
     return df
