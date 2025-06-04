@@ -1,0 +1,294 @@
+```json
+[
+    {
+        "Ana_Baslik": "IE3 PİK DÖKÜM GÖVDELİ IEC 3~FAZLI ASENKRON ELEKTRİK MOTORLARI",
+        "Alt_Baslik": "2k-3000 d/dak.",
+        "Malzeme_Kodu": "3MGS 160MB2",
+        "Açıklama": "7,5 kW",
+        "Fiyat": "899,00",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Omega Motor Fiyat Listesi 2025.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "IE3 PİK DÖKÜM GÖVDELİ IEC 3~FAZLI ASENKRON ELEKTRİK MOTORLARI",
+        "Alt_Baslik": "2k-3000 d/dak.",
+        "Malzeme_Kodu": "3MGS 160MB2",
+        "Açıklama": "11 kW",
+        "Fiyat": "1.008,00",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Omega Motor Fiyat Listesi 2025.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "IE3 PİK DÖKÜM GÖVDELİ IEC 3~FAZLI ASENKRON ELEKTRİK MOTORLARI",
+        "Alt_Baslik": "2k-3000 d/dak.",
+        "Malzeme_Kodu": "3MGS 160LA2",
+        "Açıklama": "15 kW",
+        "Fiyat": "1.110,00",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Omega Motor Fiyat Listesi 2025.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "IE3 PİK DÖKÜM GÖVDELİ IEC 3~FAZLI ASENKRON ELEKTRİK MOTORLARI",
+        "Alt_Baslik": "2k-3000 d/dak.",
+        "Malzeme_Kodu": "3MGS 180MA2",
+        "Açıklama": "18.5 kW",
+        "Fiyat": "1.427,00",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Omega Motor Fiyat Listesi 2025.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "IE3 PİK DÖKÜM GÖVDELİ IEC 3~FAZLI ASENKRON ELEKTRİK MOTORLARI",
+        "Alt_Baslik": "2k-3000 d/dak.",
+        "Malzeme_Kodu": "3MGS 200LA2",
+        "Açıklama": "22 kW",
+        "Fiyat": "2.096,00",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Omega Motor Fiyat Listesi 2025.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "IE3 PİK DÖKÜM GÖVDELİ IEC 3~FAZLI ASENKRON ELEKTRİK MOTORLARI",
+        "Alt_Baslik": "2k-3000 d/dak.",
+        "Malzeme_Kodu": "3MGS 200LB2",
+        "Açıklama": "30 kW",
+        "Fiyat": "2.260,00",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Omega Motor Fiyat Listesi 2025.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "IE3 PİK DÖKÜM GÖVDELİ IEC 3~FAZLI ASENKRON ELEKTRİK MOTORLARI",
+        "Alt_Baslik": "2k-3000 d/dak.",
+        "Malzeme_Kodu": "3MGS 225MA2",
+        "Açıklama": "37 kW",
+        "Fiyat": "2.633,00",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Omega Motor Fiyat Listesi 2025.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "IE3 PİK DÖKÜM GÖVDELİ IEC 3~FAZLI ASENKRON ELEKTRİK MOTORLARI",
+        "Alt_Baslik": "2k-3000 d/dak.",
+        "Malzeme_Kodu": "3MGS 250MA2",
+        "Açıklama": "45 kW",
+        "Fiyat": "3.667,00",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Omega Motor Fiyat Listesi 2025.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "IE3 PİK DÖKÜM GÖVDELİ IEC 3~FAZLI ASENKRON ELEKTRİK MOTORLARI",
+        "Alt_Baslik": "2k-3000 d/dak.",
+        "Malzeme_Kodu": "3MGS 280SA2",
+        "Açıklama": "75 kW",
+        "Fiyat": "-",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Omega Motor Fiyat Listesi 2025.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "IE3 PİK DÖKÜM GÖVDELİ IEC 3~FAZLI ASENKRON ELEKTRİK MOTORLARI",
+        "Alt_Baslik": "2k-3000 d/dak.",
+        "Malzeme_Kodu": "3MGS 280MA2",
+        "Açıklama": "90 kW",
+        "Fiyat": "-",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Omega Motor Fiyat Listesi 2025.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "IE3 PİK DÖKÜM GÖVDELİ IEC 3~FAZLI ASENKRON ELEKTRİK MOTORLARI",
+        "Alt_Baslik": "2k-3000 d/dak.",
+        "Malzeme_Kodu": "3MGS 315SA2",
+        "Açıklama": "110 kW",
+        "Fiyat": "-",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Omega Motor Fiyat Listesi 2025.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "IE3 PİK DÖKÜM GÖVDELİ IEC 3~FAZLI ASENKRON ELEKTRİK MOTORLARI",
+        "Alt_Baslik": "2k-3000 d/dak.",
+        "Malzeme_Kodu": "3MGS 315MA2",
+        "Açıklama": "132 kW",
+        "Fiyat": "-",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Omega Motor Fiyat Listesi 2025.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "IE3 PİK DÖKÜM GÖVDELİ IEC 3~FAZLI ASENKRON ELEKTRİK MOTORLARI",
+        "Alt_Baslik": "2k-3000 d/dak.",
+        "Malzeme_Kodu": "3MGS 315MB2",
+        "Açıklama": "160 kW",
+        "Fiyat": "-",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Omega Motor Fiyat Listesi 2025.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "IE3 PİK DÖKÜM GÖVDELİ IEC 3~FAZLI ASENKRON ELEKTRİK MOTORLARI",
+        "Alt_Baslik": "2k-3000 d/dak.",
+        "Malzeme_Kodu": "3MGS 315MC2",
+        "Açıklama": "185 kW",
+        "Fiyat": "-",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Omega Motor Fiyat Listesi 2025.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "IE3 PİK DÖKÜM GÖVDELİ IEC 3~FAZLI ASENKRON ELEKTRİK MOTORLARI",
+        "Alt_Baslik": "2k-3000 d/dak.",
+        "Malzeme_Kodu": "3MGS 315MD2",
+        "Açıklama": "200 kW",
+        "Fiyat": "-",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Omega Motor Fiyat Listesi 2025.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "IE3 PİK DÖKÜM GÖVDELİ IEC 3~FAZLI ASENKRON ELEKTRİK MOTORLARI",
+        "Alt_Baslik": "2k-3000 d/dak.",
+        "Malzeme_Kodu": "3MGS 355MA2",
+        "Açıklama": "250 kW",
+        "Fiyat": "13.636,00",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Omega Motor Fiyat Listesi 2025.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "IE3 PİK DÖKÜM GÖVDELİ IEC 3~FAZLI ASENKRON ELEKTRİK MOTORLARI",
+        "Alt_Baslik": "2k-3000 d/dak.",
+        "Malzeme_Kodu": "3MGS 355MB2",
+        "Açıklama": "315 kW",
+        "Fiyat": "15.356,00",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Omega Motor Fiyat Listesi 2025.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "IE3 PİK DÖKÜM GÖVDELİ IEC 3~FAZLI ASENKRON ELEKTRİK MOTORLARI",
+        "Alt_Baslik": "2k-3000 d/dak.",
+        "Malzeme_Kodu": "3MGS 355MC2",
+        "Açıklama": "355 kW",
+        "Fiyat": "16.373,00",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Omega Motor Fiyat Listesi 2025.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "IE3 PİK DÖKÜM GÖVDELİ IEC 3~FAZLI ASENKRON ELEKTRİK MOTORLARI",
+        "Alt_Baslik": "2k-3000 d/dak.",
+        "Malzeme_Kodu": "3MGS 355LA2",
+        "Açıklama": "400 kW",
+        "Fiyat": "18.524,00",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Omega Motor Fiyat Listesi 2025.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "IE3 PİK DÖKÜM GÖVDELİ IEC 3~FAZLI ASENKRON ELEKTRİK MOTORLARI",
+        "Alt_Baslik": "2k-3000 d/dak.",
+        "Malzeme_Kodu": "3MGS 355LB2",
+        "Açıklama": "450 kW",
+        "Fiyat": "20.642,00",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Omega Motor Fiyat Listesi 2025.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "IE3 PİK DÖKÜM GÖVDELİ IEC 3~FAZLI ASENKRON ELEKTRİK MOTORLARI",
+        "Alt_Baslik": "2k-3000 d/dak.",
+        "Malzeme_Kodu": "3MGS 355LC2",
+        "Açıklama": "500 kW",
+        "Fiyat": "23.018,00",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Omega Motor Fiyat Listesi 2025.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "IE3 PİK DÖKÜM GÖVDELİ IEC 3~FAZLI ASENKRON ELEKTRİK MOTORLARI",
+        "Alt_Baslik": "2k-3000 d/dak.",
+        "Malzeme_Kodu": "3MGS 355LD2",
+        "Açıklama": "560 kW",
+        "Fiyat": "28.402,00",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Omega Motor Fiyat Listesi 2025.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "IE3 PİK DÖKÜM GÖVDELİ KOMPAKT MOTORLAR",
+        "Alt_Baslik": "2k-3000 d/dak.",
+        "Malzeme_Kodu": "3MGS 160LK2",
+        "Açıklama": "18,5 kW",
+        "Fiyat": "1.335,00",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Omega Motor Fiyat Listesi 2025.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "IE3 PİK DÖKÜM GÖVDELİ KOMPAKT MOTORLAR",
+        "Alt_Baslik": "2k-3000 d/dak.",
+        "Malzeme_Kodu": "3MGS 180LK2",
+        "Açıklama": "22 kW",
+        "Fiyat": "1.909,00",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Omega Motor Fiyat Listesi 2025.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "IE3 PİK DÖKÜM GÖVDELİ KOMPAKT MOTORLAR",
+        "Alt_Baslik": "2k-3000 d/dak.",
+        "Malzeme_Kodu": "3MGS 200LK2",
+        "Açıklama": "30 kW",
+        "Fiyat": "2.512,00",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Omega Motor Fiyat Listesi 2025.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "IE3 PİK DÖKÜM GÖVDELİ KOMPAKT MOTORLAR",
+        "Alt_Baslik": "2k-3000 d/dak.",
+        "Malzeme_Kodu": "3MGS 225MK2",
+        "Açıklama": "37 kW",
+        "Fiyat": "3.362,00",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Omega Motor Fiyat Listesi 2025.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "IE3 PİK DÖKÜM GÖVDELİ KOMPAKT MOTORLAR",
+        "Alt_Baslik": "2k-3000 d/dak.",
+        "Malzeme_Kodu": "3MGS 250MK2",
+        "Açıklama": "45 kW",
+        "Fiyat": "-",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Omega Motor Fiyat Listesi 2025.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "IE3 PİK DÖKÜM GÖVDELİ KOMPAKT MOTORLAR",
+        "Alt_Baslik": "2k-3000 d/dak.",
+        "Malzeme_Kodu": "3MGS 280MK2",
+        "Açıklama": "75 kW",
+        "Fiyat": "-",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Omega Motor Fiyat Listesi 2025.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "IE3 PİK DÖKÜM GÖVDELİ KOMPAKT MOTORLAR",
+        "Alt_Baslik": "2k-3000 d/dak.",
+        "Malzeme_Kodu": "3MGS 315LK2",
+        "Açıklama": "110 kW",
+        "Fiyat": "13.227,00",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Omega Motor Fiyat Listesi 2025.pdf",
+        "Sayfa": "1"
+    }
+]
+```
