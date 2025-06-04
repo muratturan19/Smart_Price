@@ -1,0 +1,124 @@
+```json
+[
+    {
+        "Ana_Baslik": "YEDEK PARÇA SET FİYATLARI",
+        "Alt_Baslik": "B5 Flanş",
+        "Malzeme_Kodu": "80",
+        "Açıklama": "Set",
+        "Fiyat": "102,00",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Omega Motor Fiyat Listesi 2025.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "YEDEK PARÇA SET FİYATLARI",
+        "Alt_Baslik": "B14/1 Flanş",
+        "Malzeme_Kodu": "80",
+        "Açıklama": "Set",
+        "Fiyat": "59,00",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Omega Motor Fiyat Listesi 2025.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "YEDEK PARÇA SET FİYATLARI",
+        "Alt_Baslik": "B14/2 Flanş",
+        "Malzeme_Kodu": "80",
+        "Açıklama": "Set",
+        "Fiyat": "59,00",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Omega Motor Fiyat Listesi 2025.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "YEDEK PARÇA SET FİYATLARI",
+        "Alt_Baslik": "Kapak-Alüminyum",
+        "Malzeme_Kodu": "80",
+        "Açıklama": "Ön Kapak",
+        "Fiyat": "59,00",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Omega Motor Fiyat Listesi 2025.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "YEDEK PARÇA SET FİYATLARI",
+        "Alt_Baslik": "Kapak-Alüminyum",
+        "Malzeme_Kodu": "80",
+        "Açıklama": "Arka Kapak",
+        "Fiyat": "59,00",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Omega Motor Fiyat Listesi 2025.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "YEDEK PARÇA SET FİYATLARI",
+        "Alt_Baslik": "Klemens Kutusu Kutusu/Kapağı Alüminyum",
+        "Malzeme_Kodu": "90",
+        "Açıklama": "Klemens Kapağı",
+        "Fiyat": "257,00",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Omega Motor Fiyat Listesi 2025.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "YEDEK PARÇA SET FİYATLARI",
+        "Alt_Baslik": "Klemens Kutusu Kutusu/Kapağı Alüminyum",
+        "Malzeme_Kodu": "132",
+        "Açıklama": "Klemens Kutusu ve Kapağı",
+        "Fiyat": "68,00",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Omega Motor Fiyat Listesi 2025.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "YEDEK PARÇA SET FİYATLARI",
+        "Alt_Baslik": "Takma Ayak Alüminyum",
+        "Malzeme_Kodu": "80-90S",
+        "Açıklama": "Çift Takma Ayak",
+        "Fiyat": "155,00",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Omega Motor Fiyat Listesi 2025.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "YEDEK PARÇA SET FİYATLARI",
+        "Alt_Baslik": "Takma Ayak Alüminyum",
+        "Malzeme_Kodu": "90L",
+        "Açıklama": "Çift Takma Ayak",
+        "Fiyat": "120,00",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Omega Motor Fiyat Listesi 2025.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "YEDEK PARÇA SET FİYATLARI",
+        "Alt_Baslik": "Takma Ayak Alüminyum",
+        "Malzeme_Kodu": "100-112",
+        "Açıklama": "Çift Takma Ayak",
+        "Fiyat": "172,00",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Omega Motor Fiyat Listesi 2025.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "YEDEK PARÇA SET FİYATLARI",
+        "Alt_Baslik": "Takma Ayak Alüminyum",
+        "Malzeme_Kodu": "132S",
+        "Açıklama": "Çift Takma Ayak",
+        "Fiyat": "167,00",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Omega Motor Fiyat Listesi 2025.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "YEDEK PARÇA SET FİYATLARI",
+        "Alt_Baslik": "Takma Ayak Alüminyum",
+        "Malzeme_Kodu": "132M",
+        "Açıklama": "Çift Takma Ayak",
+        "Fiyat": "225,00",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Omega Motor Fiyat Listesi 2025.pdf",
+        "Sayfa": "1"
+    }
+]
+```
