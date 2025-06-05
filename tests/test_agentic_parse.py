@@ -18,9 +18,9 @@ else:
 
 @pytest.mark.skipif(not HAS_PANDAS, reason="pandas not installed")
 def test_agentic_parse_list(monkeypatch):
-    df = pd.DataFrame([{"Malzeme_Kodu": "A", "Açıklama": "Item", "Fiyat": 1.0}])
+    row = {"Malzeme_Kodu": "A", "Açıklama": "Item", "Fiyat": 1.0}
     parsed_doc = types.SimpleNamespace(
-        to_dataframe=lambda: df,
+        chunks=[types.SimpleNamespace(table_row=row)],
         page_summary=[{"page_number": 1, "rows": 1, "status": "success", "note": None}],
         token_counts={"input": 1, "output": 1},
     )
@@ -45,9 +45,9 @@ def test_agentic_parse_list(monkeypatch):
 
 @pytest.mark.skipif(not HAS_PANDAS, reason="pandas not installed")
 def test_agentic_numeric_headers(monkeypatch):
-    df = pd.DataFrame([{0: "A1", 1: "Desc", 2: "5"}])
+    row = {0: "A1", 1: "Desc", 2: "5"}
     parsed_doc = types.SimpleNamespace(
-        to_dataframe=lambda: df,
+        chunks=[types.SimpleNamespace(table_row=row)],
         page_summary=[{"page_number": 1, "rows": 1, "status": "success"}],
         token_counts={"input": 1, "output": 1},
     )
