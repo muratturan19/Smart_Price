@@ -8,6 +8,7 @@ The required Python packages are listed in `pyproject.toml`. Install them togeth
 
 ```bash
 pip install .
+pip install .[agentic]  # optional AgenticDE support
 ```
 
 `tkinter` must also be available. It is typically included with many Python distributions but may require a separate installation on some systems.
