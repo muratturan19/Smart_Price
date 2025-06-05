@@ -3,7 +3,6 @@ from __future__ import annotations
 import os
 import logging
 import tempfile
-from pathlib import Path
 from typing import IO, Optional, Callable
 
 import pandas as pd
@@ -16,18 +15,30 @@ except ImportError:  # pragma: no cover - support missing find_dotenv
     def find_dotenv() -> str:
         return ""
 
+
 try:  # pragma: no cover - allow stub without args
     load_dotenv(dotenv_path=find_dotenv())
 except TypeError:  # pragma: no cover
     load_dotenv(dotenv_path=find_dotenv())
 
 from .prompt_utils import prompts_for_pdf
+from .ocr_llm_fallback import parse as parse_with_openai
+from .extract_excel import (
+    _norm_header,
+    POSSIBLE_CODE_HEADERS,
+    POSSIBLE_DESC_HEADERS,
+    POSSIBLE_PRICE_HEADERS,
+)
+from .common_utils import normalize_price, detect_currency, normalize_currency
 
 logger = logging.getLogger("smart_price")
 
 
 def extract_from_pdf_agentic(
-    filepath: str | IO[bytes], *, filename: str | None = None, log: Optional[Callable[[str, str], None]] = None
+    filepath: str | IO[bytes],
+    *,
+    filename: str | None = None,
+    log: Optional[Callable[[str, str], None]] = None,
 ) -> pd.DataFrame:
     """Extract product information from a PDF file using ``agentic_doc``.
 
@@ -51,6 +62,7 @@ def extract_from_pdf_agentic(
     This function uses only the first document in that list. When ``filepath``
     is a file-like object, it is written to a temporary PDF before parsing.
     """
+
     def notify(message: str, level: str = "info") -> None:
         logger.info(message)
         if log:
@@ -65,6 +77,7 @@ def extract_from_pdf_agentic(
 
     try:
         from agentic_doc.parse import parse
+        from agentic_doc.exceptions import AgenticDocError
     except Exception as exc:  # pragma: no cover - optional dependency missing
         notify(f"agentic_doc import failed: {exc}", "error")
         return pd.DataFrame()
@@ -89,17 +102,26 @@ def extract_from_pdf_agentic(
         parse_path = tmp_file
 
     try:
-        result = parse(parse_path, prompt=guide_prompt)
-    except TypeError:
-        result = parse(parse_path)
+        docs = parse(parse_path, prompt=guide_prompt)
+    except TypeError:  # pragma: no cover - older agentic_doc versions
+        docs = parse(parse_path)
+    except AgenticDocError as e:
+        logger.warning("ADE failed \u2192 fallback", exc_info=e)
+        return parse_with_openai(parse_path)
     except Exception as exc:
         notify(f"agentic_doc.parse failed: {exc}", "error")
         status = getattr(exc, "status", None) or getattr(exc, "status_code", None)
         response = getattr(exc, "response", None)
         if response is not None:
-            status = status or getattr(response, "status", None) or getattr(response, "status_code", None)
+            status = (
+                status
+                or getattr(response, "status", None)
+                or getattr(response, "status_code", None)
+            )
             try:
-                body = getattr(response, "text", None) or getattr(response, "content", None)
+                body = getattr(response, "text", None) or getattr(
+                    response, "content", None
+                )
             except Exception:
                 body = None
             if body:
@@ -111,45 +133,51 @@ def extract_from_pdf_agentic(
         logger.exception("agentic_doc.parse failed")
         return pd.DataFrame()
 
-    notify(f"{src}: parse returned {type(result).__name__}")
-    summary = getattr(result, "page_summary", None)
+    if not docs:
+        notify("agentic_doc.parse returned no documents", "warning")
+        return pd.DataFrame()
+
+    notify(f"{src}: parse returned {type(docs).__name__}")
+    summary = getattr(docs[0], "page_summary", None)
     if summary is not None:
         notify(f"{src}: page_summary {summary}")
 
-    if isinstance(result, list):
-        if result:
-            result = result[0]
-        else:
-            notify("agentic_doc.parse returned no documents", "warning")
-            return pd.DataFrame()
+    df = pd.concat([d.to_dataframe() for d in docs], ignore_index=True)
 
-    chunks = getattr(result, "chunks", [])
-    df = pd.DataFrame(list(chunks) if chunks is not None else [])
+    # Promote first row to header when columns are numeric and row has values
+    if all(isinstance(c, int) for c in df.columns) and df.iloc[0].notna().all():
+        df.columns = [str(x).strip().replace(" ", "_") for x in df.iloc[0]]
+        df = df.iloc[1:].reset_index(drop=True)
 
-    # ``agentic_doc`` may return column indices instead of headers.  In that
-    # case rename the first few columns to the expected names so downstream
-    # logic works without requiring a separate mapping step.
-    if not df.empty:
-        # Detect purely numeric column labels (``0``, ``1`` ...) regardless of
-        # type.  ``df.columns`` may contain either ints or strings so cast to
-        # ``str`` before checking ``isdigit``.
-        if all(str(col).isdigit() for col in df.columns):
-            mapping: dict[Any, str] = {}
-            cols = list(df.columns)
-            if len(cols) > 0:
-                mapping[cols[0]] = "Malzeme_Kodu"
-            if len(cols) > 1:
-                mapping[cols[1]] = "Açıklama"
-            if len(cols) > 2:
-                mapping[cols[2]] = "Fiyat"
-            if mapping:
-                df = df.rename(columns=mapping)
+    def _map_columns(df: pd.DataFrame) -> pd.DataFrame:
+        norm = [_norm_header(c) for c in df.columns]
 
-    page_summary = getattr(result, "page_summary", None)
+        def pick(cands):
+            for h in cands:
+                if h in norm:
+                    return df.columns[norm.index(h)]
+
+        rename = {
+            pick(POSSIBLE_CODE_HEADERS): "Malzeme_Kodu",
+            pick(POSSIBLE_DESC_HEADERS): "Açıklama",
+            pick(POSSIBLE_PRICE_HEADERS): "Fiyat",
+        }
+        df.rename(columns={k: v for k, v in rename.items() if k}, inplace=True)
+        return df
+
+    df = _map_columns(df)
+
+    df["Fiyat"] = df["Fiyat"].apply(normalize_price)
+    df["Para_Birimi"] = df.get(
+        "Para_Birimi", df["Fiyat"].astype(str).apply(detect_currency)
+    )
+    df["Para_Birimi"] = df["Para_Birimi"].apply(normalize_currency).fillna("₺")
+
+    page_summary = getattr(docs[0], "page_summary", None)
     if page_summary is not None and hasattr(df, "__dict__"):
         object.__setattr__(df, "page_summary", page_summary)
 
-    token_counts = getattr(result, "token_counts", None)
+    token_counts = getattr(docs[0], "token_counts", None)
     if token_counts is not None and hasattr(df, "__dict__"):
         object.__setattr__(df, "token_counts", token_counts)
 

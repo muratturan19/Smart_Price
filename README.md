@@ -12,6 +12,8 @@ pip install .
 
 `tkinter` must also be available. It is typically included with many Python distributions but may require a separate installation on some systems.
 
+Smart_Price supports **Python 3.8** through **3.12**.
+
 The tools attempt to locate the `tesseract` executable automatically using `shutil.which`. If `TESSDATA_PREFIX` is already defined it is respected, otherwise the location of the bundled language files is guessed from the executable path. When `tesseract` cannot be found a Windows default of `D:\Program Files\Tesseract-OCR` is used.
 
 The Poppler utilities `pdftoppm.exe`, `pdftocairo.exe` and `pdfinfo.exe` are
@@ -44,11 +46,16 @@ Install the optional `agentic-doc` package to try an alternative PDF pipeline:
 pip install agentic-doc
 ```
 
-Add a `VISION_AGENT_API_KEY` entry to your `.env` file alongside the regular
-OpenAI credentials. When uploading files in the interface choose **AgenticDE**
-under **PDF extraction method** to activate this workflow. Both parsing
-pipelines currently use the same prompt structure, so results should be
-comparable.
+Set both `OPENAI_API_KEY` and `VISION_AGENT_API_KEY` in your `.env` file.
+When uploading files in the interface choose **AgenticDE** under
+**PDF extraction method** to activate this workflow. Both parsing pipelines
+use the same prompt structure, so results should be comparable.
+
+Example CLI usage:
+
+```bash
+smart-price-parser tests/samples/ESMAKSAN_2025_MART.pdf -o out.xlsx
+```
 
 The AgenticDE client automatically retries failed HTTP requests such as
 rate limit responses (429) or temporary 502--504 errors.  Parallelism and
