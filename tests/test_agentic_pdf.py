@@ -36,4 +36,6 @@ def test_agentic_pdf_columns(monkeypatch):
     pdf_path = os.path.join("tests", "samples", "ESMAKSAN_2025_MART.pdf")
     df = mod.extract_from_pdf_agentic(pdf_path)
     assert set(df.columns) >= {"Malzeme_Kodu", "Açıklama", "Fiyat"}
-    assert len(df) > 0
+    assert len(df) == 1
+    parsed = df.loc[0, ["Malzeme_Kodu", "Açıklama", "Fiyat"]].to_dict()
+    assert parsed == {"Malzeme_Kodu": "X1", "Açıklama": "Desc", "Fiyat": 5.0}
