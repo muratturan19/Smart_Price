@@ -7,6 +7,7 @@ import time
 import threading
 from concurrent.futures import ThreadPoolExecutor
 from typing import Iterable, Sequence, TYPE_CHECKING
+
 try:
     from dotenv import load_dotenv, find_dotenv
 except ImportError:  # pragma: no cover - support missing find_dotenv
@@ -14,6 +15,7 @@ except ImportError:  # pragma: no cover - support missing find_dotenv
 
     def find_dotenv() -> str:
         return ""
+
 
 try:
     load_dotenv(dotenv_path=find_dotenv())
@@ -32,9 +34,14 @@ from .common_utils import (
     detect_currency,
     normalize_currency,
     safe_json_parse,
+    log_metric,
 )
 from .debug_utils import save_debug, save_debug_image, set_output_subdir
-from .token_utils import num_tokens_from_messages, num_tokens_from_text, log_token_counts
+from .token_utils import (
+    num_tokens_from_messages,
+    num_tokens_from_text,
+    log_token_counts,
+)
 from .github_upload import upload_folder
 from smart_price import config
 
@@ -80,6 +87,8 @@ Sen bir PDF fiyat listesi analiz asistanısın. Amacın, PDF’lerdeki ürün ta
     - Kaynak_Dosya
     - Sayfa
     - (Varsa ek alanlar: Adet, Birim, Marka, Kutu_Adedi...)
+
+Çıktıdaki kolon adları tam olarak: Malzeme_Kodu, Açıklama, Fiyat, Para_Birimi, Ana_Baslik, Alt_Baslik, Sayfa. İlk satıra başlık yazmayın.
 
 ---
 
@@ -226,9 +235,9 @@ def parse(
                 image_bytes = f.read()
             img_base64 = base64.b64encode(image_bytes).decode()
             prompt_text = _get_prompt(idx)
-            total_input_tokens += num_tokens_from_messages([
-                {"role": "user", "content": prompt_text}
-            ], model_name)
+            total_input_tokens += num_tokens_from_messages(
+                [{"role": "user", "content": prompt_text}], model_name
+            )
             api_start = time.time()
             resp = openai.chat.completions.create(
                 model=model_name,
@@ -239,7 +248,9 @@ def parse(
                             {"type": "text", "text": prompt_text},
                             {
                                 "type": "image_url",
-                                "image_url": {"url": "data:image/png;base64," + img_base64},
+                                "image_url": {
+                                    "url": "data:image/png;base64," + img_base64
+                                },
                             },
                         ],
                     }
@@ -314,14 +325,14 @@ def parse(
         with lock:
             running -= 1
             current = running
-        logger.info(
-            "LLM request end page %d (running=%d, %.2fs)", idx, current, dur
-        )
+        logger.info("LLM request end page %d (running=%d, %.2fs)", idx, current, dur)
         return idx, page_rows, summary
 
     workers = int(os.getenv("SMART_PRICE_LLM_WORKERS", "5"))
     with ThreadPoolExecutor(max_workers=workers) as ex:
-        futures = [ex.submit(process_page, (i, img)) for i, img in enumerate(images, start=1)]
+        futures = [
+            ex.submit(process_page, (i, img)) for i, img in enumerate(images, start=1)
+        ]
         results = [f.result() for f in futures]
 
     results.sort(key=lambda r: r[0])
@@ -367,12 +378,17 @@ def parse(
         )
     if hasattr(df, "__dict__"):
         object.__setattr__(df, "page_summary", page_summary)
-        object.__setattr__(df, "token_counts", {
-            "input": total_input_tokens,
-            "output": total_output_tokens,
-        })
+        object.__setattr__(
+            df,
+            "token_counts",
+            {
+                "input": total_input_tokens,
+                "output": total_output_tokens,
+            },
+        )
     total_dur = time.time() - total_start
     logger.info("Finished %s with %d rows in %.2fs", pdf_path, len(df), total_dur)
+    log_metric("parse_pdf", len(page_summary), total_dur)
     log_token_counts(pdf_path, total_input_tokens, total_output_tokens)
     debug_dir = Path(os.getenv("SMART_PRICE_DEBUG_DIR", "LLM_Output_db")) / output_name
     set_output_subdir(None)

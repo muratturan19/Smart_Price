@@ -1,4 +1,3 @@
-import os
 import sys
 import types
 import importlib
@@ -6,6 +5,7 @@ import pytest
 
 try:
     import pandas as pd  # noqa: F401
+
     HAS_PANDAS = True
 except ModuleNotFoundError:
     HAS_PANDAS = False
@@ -18,8 +18,9 @@ else:
 
 @pytest.mark.skipif(not HAS_PANDAS, reason="pandas not installed")
 def test_agentic_parse_list(monkeypatch):
+    df = pd.DataFrame([{"Malzeme_Kodu": "A", "Açıklama": "Item", "Fiyat": 1.0}])
     parsed_doc = types.SimpleNamespace(
-        chunks=[{"Malzeme_Kodu": "A", "Açıklama": "Item", "Fiyat": 1.0}],
+        to_dataframe=lambda: df,
         page_summary=[{"page_number": 1, "rows": 1, "status": "success", "note": None}],
         token_counts={"input": 1, "output": 1},
     )
@@ -44,8 +45,9 @@ def test_agentic_parse_list(monkeypatch):
 
 @pytest.mark.skipif(not HAS_PANDAS, reason="pandas not installed")
 def test_agentic_numeric_headers(monkeypatch):
+    df = pd.DataFrame([{0: "A1", 1: "Desc", 2: "5"}])
     parsed_doc = types.SimpleNamespace(
-        chunks=[{0: "A1", 1: "Desc", 2: "5"}],
+        to_dataframe=lambda: df,
         page_summary=[{"page_number": 1, "rows": 1, "status": "success"}],
         token_counts={"input": 1, "output": 1},
     )

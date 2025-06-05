@@ -1,5 +1,6 @@
 import os
 import re
+from pathlib import Path
 from typing import Optional
 
 
@@ -149,6 +150,7 @@ CODE_DESC_PATTERNS = [
     re.compile(r"^(?P<desc>.+?)\s*/\s*(?P<code>[A-Z0-9\-/]{3,})$"),
 ]
 
+
 def split_code_description(text: str) -> tuple[Optional[str], str]:
     """Split a product text into code and description parts.
 
@@ -271,3 +273,34 @@ def safe_json_parse(text: str):
     except Exception:
         return None
 
+
+def log_metric(
+    event: str, n_pages: int, elapsed: float, path: str | Path | None = None
+) -> None:
+    """Append a metric entry to ``metrics.csv``.
+
+    Parameters
+    ----------
+    event : str
+        Metric label such as ``"parse_pdf"``.
+    n_pages : int
+        Number of processed pages.
+    elapsed : float
+        Duration in seconds.
+    path : str or Path, optional
+        Destination CSV path. Defaults to ``metrics.csv`` under the repository root.
+    """
+    from datetime import datetime
+    from pathlib import Path
+    import csv
+
+    dest = Path(path) if path else Path("metrics.csv")
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    write_header = not dest.exists()
+    with dest.open("a", newline="") as fh:
+        writer = csv.writer(fh)
+        if write_header:
+            writer.writerow(["timestamp", "event", "n_pages", "elapsed"])
+        writer.writerow(
+            [datetime.utcnow().isoformat(), event, n_pages, f"{elapsed:.2f}"]
+        )
