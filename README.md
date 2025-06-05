@@ -40,10 +40,11 @@ enable this step. Optionally set `OPENAI_MODEL` to override the default
 
 ### Agentic document extraction
 
-Install the optional `agentic-doc` package to try an alternative PDF pipeline:
+Install the optional `agentic` extra (or install `agentic-doc` separately)
+to try an alternative PDF pipeline:
 
 ```bash
-pip install agentic-doc
+pip install smart-price[agentic]
 ```
 
 Set both `OPENAI_API_KEY` and `VISION_AGENT_API_KEY` in your `.env` file.
