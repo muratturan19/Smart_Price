@@ -38,7 +38,7 @@ def test_agentic_parse_list(monkeypatch):
 
     df = mod.extract_from_pdf_agentic("dummy.pdf")
     assert len(df) == 1
-    assert df.iloc[0]["Malzeme_Kodu"] == "A"
+    assert df.to_dict("records") == [row]
     assert getattr(df, "page_summary", None) == parsed_doc.page_summary
     assert getattr(df, "token_counts", None) == parsed_doc.token_counts
 
@@ -65,5 +65,5 @@ def test_agentic_numeric_headers(monkeypatch):
 
     df = mod.extract_from_pdf_agentic("dummy.pdf")
     assert list(df.columns)[:3] == ["Malzeme_Kodu", "Açıklama", "Fiyat"]
-    assert df.iloc[0]["Malzeme_Kodu"] == "A1"
-    assert df.iloc[0]["Açıklama"] == "Desc"
+    parsed = df.loc[0, ["Malzeme_Kodu", "Açıklama", "Fiyat"]].to_dict()
+    assert parsed == {"Malzeme_Kodu": "A1", "Açıklama": "Desc", "Fiyat": 5.0}
