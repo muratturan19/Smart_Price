@@ -150,7 +150,30 @@ def extract_from_pdf_agentic(
     if summary is not None:
         notify(f"{src}: page_summary {summary}")
 
-    df = pd.concat([d.to_dataframe() for d in docs], ignore_index=True)
+    rows: list[dict] = []
+    for d in docs:
+        for chunk in getattr(d, "chunks", []):
+            row = getattr(chunk, "table_row", None)
+            if row is None:
+                continue
+            if hasattr(row, "items"):
+                rows.append(dict(row))
+            else:
+                try:
+                    rows.append(dict(row))
+                except Exception:
+                    rows.append({})
+
+    if not rows:
+        notify("No rows from agentic_doc; falling back to Vision", "warning")
+        if tmp_file:
+            try:
+                os.remove(tmp_file)
+            except Exception as exc:  # pragma: no cover - cleanup errors
+                logger.error("temp file cleanup failed: %s", exc)
+        return parse_with_openai(parse_path)
+
+    df = pd.DataFrame(rows)
 
     # Promote first row to header when columns are numeric and row has values
     if all(isinstance(c, int) for c in df.columns) and df.iloc[0].notna().all():
