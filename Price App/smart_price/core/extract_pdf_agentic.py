@@ -31,6 +31,17 @@ from .extract_excel import (
 )
 from .common_utils import normalize_price, detect_currency, normalize_currency
 
+try:
+    from agentic_doc.common import RetryableError as AgenticDocError
+    from agentic_doc.parse import parse
+    ADE_AVAILABLE = True
+except Exception:  # pragma: no cover - optional dependency missing
+    ADE_AVAILABLE = False
+
+    class AgenticDocError(Exception):
+        """Fallback error when ``agentic_doc`` is unavailable."""
+
+
 logger = logging.getLogger("smart_price")
 
 
@@ -75,12 +86,9 @@ def extract_from_pdf_agentic(
     if api_key:
         os.environ.setdefault("VISION_AGENT_API_KEY", api_key)
 
-    try:
-        from agentic_doc.parse import parse
-        from agentic_doc.exceptions import AgenticDocError
-    except Exception as exc:  # pragma: no cover - optional dependency missing
-        notify(f"agentic_doc import failed: {exc}", "error")
-        return pd.DataFrame()
+    if not ADE_AVAILABLE:
+        notify("agentic_doc not installed; using Vision fallback")
+        return parse_with_openai(filepath)
 
     src = filename or getattr(filepath, "name", str(filepath))
     notify(f"Processing {src} via agentic_doc")
