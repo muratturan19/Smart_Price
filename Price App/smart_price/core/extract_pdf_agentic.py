@@ -104,7 +104,7 @@ def extract_from_pdf_agentic(
         parse_path = tmp_file
 
     try:
-        docs = parse(parse_path)
+        docs = parse(parse_path)   # Agentic-doc 0.2.3
     except Exception as exc:
         logger.error("ADE failed: %s", exc, exc_info=True)
         raise
@@ -118,15 +118,19 @@ def extract_from_pdf_agentic(
     if summary is not None:
         notify(f"{src}: page_summary {summary}")
 
-    def _ade_to_df(doc):
-        rows = [
-            [cell.text for cell in ch.grounding]
-            for ch in getattr(doc, "chunks", [])
-            if getattr(ch, "chunk_type", None) == "table_row"
-        ]
-        return pd.DataFrame(rows)
+    def _ade_df(doc):
+        return pd.concat(
+            [
+                pd.read_html(ch.text)[0]
+                for ch in doc.chunks
+                if ch.chunk_type in ("table", "text")
+            ],
+            ignore_index=True,
+        )
 
-    df = pd.concat([_ade_to_df(d) for d in docs], ignore_index=True)
+    df = pd.concat([_ade_df(d) for d in docs], ignore_index=True)
+    if df.empty:
+        raise ValueError("AgenticDE tablo bulamadı")
 
     # Promote first row to header when columns are numeric
     if all(isinstance(c, int) for c in df.columns):
