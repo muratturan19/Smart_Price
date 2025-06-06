@@ -104,9 +104,7 @@ def extract_from_pdf_agentic(
         parse_path = tmp_file
 
     try:
-        docs = parse(parse_path, prompt=guide_prompt, cleanup_tmp_files=False)
-    except TypeError:  # pragma: no cover - older agentic_doc versions
-        docs = parse(parse_path, cleanup_tmp_files=False)
+        docs = parse(parse_path)
     except Exception as exc:
         logger.error("ADE failed: %s", exc, exc_info=True)
         raise
