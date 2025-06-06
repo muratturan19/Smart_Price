@@ -16,9 +16,19 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")
 
 @pytest.mark.skipif(not HAS_PANDAS, reason="pandas not installed")
 def test_agentic_pdf_columns(monkeypatch):
-    row = {"Malzeme_Kodu": "X1", "Açıklama": "Desc", "Fiyat": "5"}
+    header = ["Malzeme_Kodu", "Açıklama", "Fiyat"]
+    data = ["X1", "Desc", "5"]
     parsed_doc = types.SimpleNamespace(
-        chunks=[types.SimpleNamespace(table_row=row)],
+        chunks=[
+            types.SimpleNamespace(
+                chunk_type="table_row",
+                grounding=[types.SimpleNamespace(text=t) for t in header],
+            ),
+            types.SimpleNamespace(
+                chunk_type="table_row",
+                grounding=[types.SimpleNamespace(text=t) for t in data],
+            ),
+        ],
         page_summary=[{"page_number": 1, "rows": 1, "status": "success"}],
         token_counts={"input": 1, "output": 1},
     )

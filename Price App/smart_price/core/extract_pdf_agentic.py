@@ -22,13 +22,7 @@ except TypeError:  # pragma: no cover
     load_dotenv(dotenv_path=find_dotenv())
 
 from .prompt_utils import prompts_for_pdf
-from .ocr_llm_fallback import parse as parse_with_openai
-from .extract_excel import (
-    _norm_header,
-    POSSIBLE_CODE_HEADERS,
-    POSSIBLE_DESC_HEADERS,
-    POSSIBLE_PRICE_HEADERS,
-)
+from smart_price.extract_excel import _map_columns
 from .common_utils import normalize_price, detect_currency, normalize_currency
 
 try:
@@ -87,8 +81,8 @@ def extract_from_pdf_agentic(
         os.environ.setdefault("VISION_AGENT_API_KEY", api_key)
 
     if not ADE_AVAILABLE:
-        notify("agentic_doc not installed; using Vision fallback")
-        return parse_with_openai(filepath)
+        notify("agentic_doc not installed", "error")
+        raise ValueError("agentic_doc not installed")
 
     src = filename or getattr(filepath, "name", str(filepath))
     notify(f"Processing {src} via agentic_doc")
@@ -110,91 +104,36 @@ def extract_from_pdf_agentic(
         parse_path = tmp_file
 
     try:
-        docs = parse(parse_path, prompt=guide_prompt)
+        docs = parse(parse_path, prompt=guide_prompt, cleanup_tmp_files=False)
     except TypeError:  # pragma: no cover - older agentic_doc versions
-        docs = parse(parse_path)
-    except AgenticDocError as e:
-        logger.warning("ADE failed \u2192 fallback", exc_info=e)
-        return parse_with_openai(parse_path)
+        docs = parse(parse_path, cleanup_tmp_files=False)
     except Exception as exc:
-        notify(f"agentic_doc.parse failed: {exc}", "error")
-        status = getattr(exc, "status", None) or getattr(exc, "status_code", None)
-        response = getattr(exc, "response", None)
-        if response is not None:
-            status = (
-                status
-                or getattr(response, "status", None)
-                or getattr(response, "status_code", None)
-            )
-            try:
-                body = getattr(response, "text", None) or getattr(
-                    response, "content", None
-                )
-            except Exception:
-                body = None
-            if body:
-                notify(f"response: {body}", "error")
-                logger.error("response: %s", body)
-        if status is not None:
-            notify(f"status code: {status}", "error")
-            logger.error("status code: %s", status)
-        logger.exception("agentic_doc.parse failed")
-        return pd.DataFrame()
+        logger.error("ADE failed: %s", exc, exc_info=True)
+        raise
 
     if not docs:
         notify("agentic_doc.parse returned no documents", "warning")
-        return pd.DataFrame()
+        raise ValueError("AgenticDE empty result")
 
     notify(f"{src}: parse returned {type(docs).__name__}")
     summary = getattr(docs[0], "page_summary", None)
     if summary is not None:
         notify(f"{src}: page_summary {summary}")
 
-    rows: list[dict] = []
-    for d in docs:
-        for chunk in getattr(d, "chunks", []):
-            row = getattr(chunk, "table_row", None)
-            if row is None:
-                continue
-            if hasattr(row, "items"):
-                rows.append(dict(row))
-            else:
-                try:
-                    rows.append(dict(row))
-                except Exception:
-                    rows.append({})
+    def _ade_to_df(doc):
+        rows = [
+            [cell.text for cell in ch.grounding]
+            for ch in getattr(doc, "chunks", [])
+            if getattr(ch, "chunk_type", None) == "table_row"
+        ]
+        return pd.DataFrame(rows)
 
-    if not rows:
-        notify("No rows from agentic_doc; falling back to Vision", "warning")
-        if tmp_file:
-            try:
-                os.remove(tmp_file)
-            except Exception as exc:  # pragma: no cover - cleanup errors
-                logger.error("temp file cleanup failed: %s", exc)
-        return parse_with_openai(parse_path)
+    df = pd.concat([_ade_to_df(d) for d in docs], ignore_index=True)
 
-    df = pd.DataFrame(rows)
-
-    # Promote first row to header when columns are numeric and row has values
-    if all(isinstance(c, int) for c in df.columns) and df.iloc[0].notna().all():
-        df.columns = [str(x).strip().replace(" ", "_") for x in df.iloc[0]]
+    # Promote first row to header when columns are numeric
+    if all(isinstance(c, int) for c in df.columns):
+        df.columns = df.iloc[0].str.strip().str.replace(" ", "_")
         df = df.iloc[1:].reset_index(drop=True)
-
-    def _map_columns(df: pd.DataFrame) -> pd.DataFrame:
-        norm = [_norm_header(c) for c in df.columns]
-
-        def pick(cands):
-            for h in cands:
-                if h in norm:
-                    return df.columns[norm.index(h)]
-
-        rename = {
-            pick(POSSIBLE_CODE_HEADERS): "Malzeme_Kodu",
-            pick(POSSIBLE_DESC_HEADERS): "Açıklama",
-            pick(POSSIBLE_PRICE_HEADERS): "Fiyat",
-        }
-        df.rename(columns={k: v for k, v in rename.items() if k}, inplace=True)
-        return df
 
     df = _map_columns(df)
 
@@ -215,6 +154,12 @@ def extract_from_pdf_agentic(
     if df.empty:
         pages = len(page_summary) if page_summary is not None else 0
         notify(f"{src}: no rows extracted from {pages} pages", "warning")
+        if tmp_file:
+            try:
+                os.remove(tmp_file)
+            except Exception as exc:  # pragma: no cover - cleanup errors
+                logger.error("temp file cleanup failed: %s", exc)
+        raise ValueError("AgenticDE empty result")
 
     notify(f"agentic_doc returned {len(df)} rows")
     if tmp_file:

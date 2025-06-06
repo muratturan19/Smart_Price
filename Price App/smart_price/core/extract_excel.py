@@ -92,6 +92,25 @@ POSSIBLE_MAIN_HEADERS = [_norm_header(h) for h in _RAW_MAIN_HEADERS]
 POSSIBLE_SUB_HEADERS = [_norm_header(h) for h in _RAW_SUB_HEADERS]
 
 
+def _map_columns(df: pd.DataFrame) -> pd.DataFrame:
+    """Rename common columns for code, description and price."""
+    norm = [_norm_header(c) for c in df.columns]
+
+    def pick(cands):
+        for h in cands:
+            if h in norm:
+                return df.columns[norm.index(h)]
+        return None
+
+    rename = {
+        pick(POSSIBLE_CODE_HEADERS): "Malzeme_Kodu",
+        pick(POSSIBLE_DESC_HEADERS): "Açıklama",
+        pick(POSSIBLE_PRICE_HEADERS): "Fiyat",
+    }
+    df.rename(columns={k: v for k, v in rename.items() if k}, inplace=True)
+    return df
+
+
 def find_columns_in_excel(
     df: pd.DataFrame,
 ) -> Tuple[Optional[str], Optional[str], Optional[str], Optional[str], Optional[str]]:

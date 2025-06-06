@@ -18,9 +18,19 @@ else:
 
 @pytest.mark.skipif(not HAS_PANDAS, reason="pandas not installed")
 def test_agentic_parse_list(monkeypatch):
-    row = {"Malzeme_Kodu": "A", "Açıklama": "Item", "Fiyat": 1.0}
+    header = ["Malzeme_Kodu", "Açıklama", "Fiyat"]
+    data = ["A", "Item", "1"]
     parsed_doc = types.SimpleNamespace(
-        chunks=[types.SimpleNamespace(table_row=row)],
+        chunks=[
+            types.SimpleNamespace(
+                chunk_type="table_row",
+                grounding=[types.SimpleNamespace(text=t) for t in header],
+            ),
+            types.SimpleNamespace(
+                chunk_type="table_row",
+                grounding=[types.SimpleNamespace(text=t) for t in data],
+            ),
+        ],
         page_summary=[{"page_number": 1, "rows": 1, "status": "success", "note": None}],
         token_counts={"input": 1, "output": 1},
     )
@@ -38,16 +48,27 @@ def test_agentic_parse_list(monkeypatch):
 
     df = mod.extract_from_pdf_agentic("dummy.pdf")
     assert len(df) == 1
-    assert df.to_dict("records") == [row]
+    parsed = df.to_dict("records")[0]
+    assert parsed == {"Malzeme_Kodu": "A", "Açıklama": "Item", "Fiyat": 1.0}
     assert getattr(df, "page_summary", None) == parsed_doc.page_summary
     assert getattr(df, "token_counts", None) == parsed_doc.token_counts
 
 
 @pytest.mark.skipif(not HAS_PANDAS, reason="pandas not installed")
 def test_agentic_numeric_headers(monkeypatch):
-    row = {0: "A1", 1: "Desc", 2: "5"}
+    header = ["Malzeme Kodu", "Açıklama", "Fiyat"]
+    data = ["A1", "Desc", "5"]
     parsed_doc = types.SimpleNamespace(
-        chunks=[types.SimpleNamespace(table_row=row)],
+        chunks=[
+            types.SimpleNamespace(
+                chunk_type="table_row",
+                grounding=[types.SimpleNamespace(text=t) for t in header],
+            ),
+            types.SimpleNamespace(
+                chunk_type="table_row",
+                grounding=[types.SimpleNamespace(text=t) for t in data],
+            ),
+        ],
         page_summary=[{"page_number": 1, "rows": 1, "status": "success"}],
         token_counts={"input": 1, "output": 1},
     )
