@@ -6,6 +6,7 @@ import tempfile
 from typing import IO, Optional, Callable
 
 import pandas as pd
+import io
 
 try:
     from dotenv import load_dotenv, find_dotenv
@@ -121,7 +122,7 @@ def extract_from_pdf_agentic(
     def _ade_df(doc):
         return pd.concat(
             [
-                pd.read_html(ch.text)[0]
+                pd.read_html(io.StringIO(ch.text))[0]
                 for ch in doc.chunks
                 if ch.chunk_type in ("table", "text")
             ],

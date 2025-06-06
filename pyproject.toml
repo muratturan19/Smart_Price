@@ -26,7 +26,12 @@ dependencies = [
 where = ["Price App", "Sales App"]
 
 [project.optional-dependencies]
-agentic = ["agentic-doc>=0.2.3"]
+agentic = [
+    "agentic-doc>=0.2.3",
+    "lxml>=4.9",                # read_html için
+    "beautifulsoup4",
+    "html5lib",
+]
 
 
 [project.scripts]
