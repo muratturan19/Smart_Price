@@ -169,7 +169,7 @@ def extract_from_pdf_file(
     *,
     file_name: str | None = None,
     status_log: Optional[Callable[[str, str], None]] = None,
-    method: str = "pdf2image + LLM",
+    method: str = "LLM (Vision)",
 ) -> pd.DataFrame:
     """Wrapper around :func:`smart_price.core.extract_pdf.extract_from_pdf`.
 
@@ -183,7 +183,7 @@ def extract_from_pdf_file(
         Optional callable used for status updates.
     method:
         Extraction method. When ``"AgenticDE"`` the ``agentic_doc`` pipeline is
-        used. Defaults to ``"pdf2image + LLM"``.
+        used. Defaults to ``"LLM (Vision)"``.
     """
     if method == "AgenticDE":
         return extract_from_pdf_agentic(file, filename=file_name, log=status_log)
@@ -195,7 +195,7 @@ def merge_files(
     *,
     update_status: Optional[Callable[[str, str], None]] = None,
     update_progress: Optional[Callable[[float], None]] = None,
-    method: str = "pdf2image + LLM",
+    method: str = "LLM (Vision)",
 ):
     """Extract and merge uploaded files with optional progress callbacks."""
     extracted = []
@@ -473,7 +473,7 @@ def upload_page():
     )
     method = st.radio(
         "PDF extraction method",
-        ["pdf2image + LLM", "AgenticDE"],
+        ["LLM (Vision)", "AgenticDE"],
         key="pdf_method",
     )
     files = st.file_uploader(
@@ -498,12 +498,20 @@ def upload_page():
                 else:
                     status_box.info(msg)
 
-            df = merge_files(
-                files,
-                update_status=show_status,
-                update_progress=lambda v: progress_bar.progress(v),
-                method=method,
-            )
+            try:
+                df = merge_files(
+                    files,
+                    update_status=show_status,
+                    update_progress=lambda v: progress_bar.progress(v),
+                    method=method,
+                )
+            except Exception as exc:
+                if method == "AgenticDE":
+                    logger.error("ADE failed: %s", exc, exc_info=True)
+                    st.error(f"AgenticDE başarısız oldu: {exc}")
+                else:
+                    st.error(f"LLM extraction failed: {exc}")
+                return
         st.info(f"Yüklenen dosyalar: {uploaded_list}")
         if df.empty:
             big_alert("Dosyalardan veri çıkarılamadı.", level="warning")
