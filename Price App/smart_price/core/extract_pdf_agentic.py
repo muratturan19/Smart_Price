@@ -120,14 +120,20 @@ def extract_from_pdf_agentic(
         notify(f"{src}: page_summary {summary}")
 
     def _ade_df(doc):
-        return pd.concat(
-            [
-                pd.read_html(io.StringIO(ch.text))[0]
-                for ch in doc.chunks
-                if ch.chunk_type in ("table", "text")
-            ],
-            ignore_index=True,
-        )
+        parts: list[pd.DataFrame] = []
+        for ch in doc.chunks:
+            if ch.chunk_type == "table_row" and getattr(ch, "grounding", None):
+                row = [getattr(g, "text", "") for g in ch.grounding]
+                parts.append(pd.DataFrame([row]))
+            elif ch.chunk_type in ("table", "text"):
+                try:
+                    parts.append(pd.read_html(io.StringIO(ch.text))[0])
+                except Exception:  # pragma: no cover - skip non-table chunks
+                    continue
+
+        if not parts:
+            return pd.DataFrame()
+        return pd.concat(parts, ignore_index=True)
 
     df = pd.concat([_ade_df(d) for d in docs], ignore_index=True)
     if df.empty:
