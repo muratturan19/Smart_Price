@@ -23,7 +23,6 @@ try:  # pragma: no cover - allow stub without args
 except TypeError:  # pragma: no cover
     load_dotenv(dotenv_path=find_dotenv())
 
-from .prompt_utils import prompts_for_pdf
 from smart_price.extract_excel import _map_columns
 from smart_price.core.extract_excel import (
     _norm_header,
@@ -33,7 +32,6 @@ from smart_price.core.extract_excel import (
 )
 from .common_utils import normalize_price, detect_currency, normalize_currency
 from .debug_utils import save_debug, set_output_subdir
-from smart_price.core.ocr_llm_fallback import DEFAULT_PROMPT
 
 try:
     from agentic_doc.common import RetryableError as AgenticDocError
@@ -99,7 +97,6 @@ def extract_from_pdf_agentic(
     ade_debug = bool(os.getenv("ADE_DEBUG"))
     if ade_debug:
         set_output_subdir(Path(src).stem)
-    guide_prompt = prompts_for_pdf(os.path.basename(src))
 
     tmp_file: str | None = None
     if isinstance(filepath, (str, bytes, os.PathLike)):
@@ -117,10 +114,7 @@ def extract_from_pdf_agentic(
         parse_path = tmp_file
 
     try:
-        if guide_prompt is not None:
-            docs = parse(parse_path, prompt=guide_prompt)  # Agentic-doc 0.2.3+
-        else:
-            docs = parse(parse_path, prompt=DEFAULT_PROMPT)   # Agentic-doc 0.2.3
+        docs = parse(parse_path)  # Agentic-doc 0.2.3+
     except Exception as exc:
         logger.error("ADE failed: %s", exc, exc_info=True)
         raise
