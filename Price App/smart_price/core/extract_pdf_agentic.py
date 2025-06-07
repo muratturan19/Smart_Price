@@ -6,7 +6,7 @@ import tempfile
 from typing import IO, Optional, Callable
 
 import pandas as pd
-import io
+import re
 
 try:
     from dotenv import load_dotenv, find_dotenv
@@ -24,6 +24,12 @@ except TypeError:  # pragma: no cover
 
 from .prompt_utils import prompts_for_pdf
 from smart_price.extract_excel import _map_columns
+from smart_price.core.extract_excel import (
+    _norm_header,
+    POSSIBLE_CODE_HEADERS,
+    POSSIBLE_DESC_HEADERS,
+    POSSIBLE_PRICE_HEADERS,
+)
 from .common_utils import normalize_price, detect_currency, normalize_currency
 
 try:
@@ -123,20 +129,31 @@ def extract_from_pdf_agentic(
         notify(f"{src}: page_summary {summary}")
 
     def _ade_df(doc):
-        parts: list[pd.DataFrame] = []
-        for ch in doc.chunks:
-            if ch.chunk_type == "table_row" and getattr(ch, "grounding", None):
-                row = [getattr(g, "text", "") for g in ch.grounding]
-                parts.append(pd.DataFrame([row]))
-            elif ch.chunk_type in ("table", "text"):
-                try:
-                    parts.append(pd.read_html(io.StringIO(ch.text))[0])
-                except Exception:  # pragma: no cover - skip non-table chunks
+        rows: list[list[str]] = []
+        current_header: list[str] | None = None
+
+        for ch in doc.chunks:  # chunk_type fark etmeksizin
+            text = getattr(ch, "text", "")
+            for line in text.splitlines():
+                cells = [c.strip() for c in re.split(r"\s{2,}|\t", line) if c.strip()]
+                if not cells:
                     continue
 
-        if not parts:
+                norm = [_norm_header(c) for c in cells]
+                if (
+                    any(h in norm for h in POSSIBLE_CODE_HEADERS)
+                    and any(h in norm for h in POSSIBLE_PRICE_HEADERS)
+                ):
+                    current_header = cells
+                    continue
+
+                if current_header and len(cells) >= 3:
+                    rows.append(cells[: len(current_header)])
+
+        if not rows:
             return pd.DataFrame()
-        return pd.concat(parts, ignore_index=True)
+
+        return pd.DataFrame(rows, columns=current_header)
 
     df = pd.concat([_ade_df(d) for d in docs], ignore_index=True)
     if df.empty:
