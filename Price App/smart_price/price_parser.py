@@ -9,10 +9,6 @@ import shutil
 from dotenv import load_dotenv
 
 from smart_price import config
-
-project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".env"))
-load_dotenv(dotenv_path=project_root)
-
 from smart_price.core.extract_excel import extract_from_excel
 from smart_price.core.extract_pdf import extract_from_pdf
 from smart_price.core.logger import init_logging
@@ -95,6 +91,8 @@ def parse_args() -> argparse.Namespace:
 
 
 def main() -> None:
+    project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".env"))
+    load_dotenv(dotenv_path=project_root)
     args = parse_args()
     init_logging(config.LOG_PATH)
     if args.show_log:
