@@ -243,3 +243,45 @@ def test_agentic_debug_output(monkeypatch, tmp_path):
     assert debug_files, "no debug files"
     first_content = debug_files[0].read_text()
     assert "table_row" in first_content
+
+
+@pytest.mark.skipif(not HAS_PANDAS, reason="pandas not installed")
+def test_grounding_fallback(monkeypatch):
+    header = ["Malzeme_Kodu", "Açıklama", "Fiyat"]
+    data = ["X3", "Desc", "12"]
+    parsed_doc = types.SimpleNamespace(
+        chunks=[
+            types.SimpleNamespace(
+                chunk_type="table_row",
+                text="",
+                grounding=[types.SimpleNamespace(text=t) for t in header],
+            ),
+            types.SimpleNamespace(
+                chunk_type="table_row",
+                text="",
+                grounding=[types.SimpleNamespace(text=t) for t in data],
+            ),
+        ],
+        page_summary=None,
+        token_counts=None,
+    )
+
+    parse_mod = types.ModuleType("agentic_doc.parse")
+    parse_mod.parse = lambda *_a, **_kw: [parsed_doc]
+    common_mod = types.ModuleType("agentic_doc.common")
+    common_mod.RetryableError = Exception
+    agentic_pkg = types.ModuleType("agentic_doc")
+    agentic_pkg.__path__ = []
+    agentic_pkg.parse = parse_mod
+    agentic_pkg.common = common_mod
+    monkeypatch.setitem(sys.modules, "agentic_doc", agentic_pkg)
+    monkeypatch.setitem(sys.modules, "agentic_doc.parse", parse_mod)
+    monkeypatch.setitem(sys.modules, "agentic_doc.common", common_mod)
+
+    mod = importlib.import_module("smart_price.core.extract_pdf_agentic")
+    importlib.reload(mod)
+
+    df = mod.extract_from_pdf_agentic("dummy.pdf")
+    assert len(df) == 1
+    parsed = df.loc[0, ["Malzeme_Kodu", "Açıklama", "Fiyat"]].to_dict()
+    assert parsed == {"Malzeme_Kodu": "X3", "Açıklama": "Desc", "Fiyat": 12.0}
