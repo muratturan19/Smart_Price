@@ -98,3 +98,34 @@ def test_agentic_numeric_headers(monkeypatch):
     assert list(df.columns)[:3] == ["Malzeme_Kodu", "Açıklama", "Fiyat"]
     parsed = df.loc[0, ["Malzeme_Kodu", "Açıklama", "Fiyat"]].to_dict()
     assert parsed == {"Malzeme_Kodu": "A1", "Açıklama": "Desc", "Fiyat": 5.0}
+
+
+@pytest.mark.skipif(not HAS_PANDAS, reason="pandas not installed")
+def test_agentic_prompt_forward(monkeypatch):
+    header = ["X", "Y", "Z"]
+    parsed_doc = types.SimpleNamespace(chunks=[], page_summary=None, token_counts=None)
+
+    captured = {}
+
+    def fake_parse(path, *, prompt=None):
+        captured["prompt"] = prompt
+        return [parsed_doc]
+
+    parse_mod = types.ModuleType("agentic_doc.parse")
+    parse_mod.parse = fake_parse
+    common_mod = types.ModuleType("agentic_doc.common")
+    common_mod.RetryableError = Exception
+    agentic_pkg = types.ModuleType("agentic_doc")
+    agentic_pkg.__path__ = []
+    agentic_pkg.parse = parse_mod
+    agentic_pkg.common = common_mod
+    monkeypatch.setitem(sys.modules, "agentic_doc", agentic_pkg)
+    monkeypatch.setitem(sys.modules, "agentic_doc.parse", parse_mod)
+    monkeypatch.setitem(sys.modules, "agentic_doc.common", common_mod)
+
+    mod = importlib.import_module("smart_price.core.extract_pdf_agentic")
+    importlib.reload(mod)
+    monkeypatch.setattr(mod, "prompts_for_pdf", lambda _src: {0: "PROMPT"})
+
+    mod.extract_from_pdf_agentic("dummy.pdf")
+    assert captured.get("prompt") == {0: "PROMPT"}

@@ -105,7 +105,10 @@ def extract_from_pdf_agentic(
         parse_path = tmp_file
 
     try:
-        docs = parse(parse_path)   # Agentic-doc 0.2.3
+        if guide_prompt is not None:
+            docs = parse(parse_path, prompt=guide_prompt)  # Agentic-doc 0.2.3+
+        else:
+            docs = parse(parse_path)   # Agentic-doc 0.2.3
     except Exception as exc:
         logger.error("ADE failed: %s", exc, exc_info=True)
         raise
