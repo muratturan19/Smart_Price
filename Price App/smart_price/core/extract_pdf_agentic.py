@@ -134,13 +134,12 @@ def extract_from_pdf_agentic(
 
         for idx, ch in enumerate(doc.chunks, 1):  # chunk_type fark etmeksizin
             text = getattr(ch, "text", "")
+            if not text:
+                text = " ".join(
+                    getattr(g, "text", "") for g in getattr(ch, "grounding", [])
+                )
             if ade_debug:
-                if text:
-                    dbg_text = text
-                else:
-                    dbg_text = " ".join(
-                        getattr(g, "text", "") for g in getattr(ch, "grounding", [])
-                    )
+                dbg_text = text
                 save_debug("ade_chunk", idx, f"{ch.chunk_type}: {dbg_text}")
                 logger.debug("chunk %d %s: %s", idx, ch.chunk_type, dbg_text)
             for line in text.splitlines():
