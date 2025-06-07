@@ -143,20 +143,27 @@ def extract_from_pdf_agentic(
                 save_debug("ade_chunk", idx, f"{ch.chunk_type}: {dbg_text}")
                 logger.debug("chunk %d %s: %s", idx, ch.chunk_type, dbg_text)
             for line in text.splitlines():
-                cells = [c.strip() for c in re.split(r"\s{2,}|\t", line) if c.strip()]
+                # Allow both whitespace and ':' separated values
+                cells = [c.strip() for c in re.split(r"\s{2,}|\t|:\s*", line) if c.strip()]
                 if not cells:
                     continue
 
                 norm = [_norm_header(c) for c in cells]
-                if (
-                    any(h in norm for h in POSSIBLE_CODE_HEADERS)
-                    and any(h in norm for h in POSSIBLE_PRICE_HEADERS)
-                ):
+                header_hits = {
+                    "code": any(h in norm for h in POSSIBLE_CODE_HEADERS),
+                    "price": any(h in norm for h in POSSIBLE_PRICE_HEADERS),
+                    "desc": any(h in norm for h in POSSIBLE_DESC_HEADERS),
+                }
+
+                if sum(header_hits.values()) >= 2:
                     current_header = cells
                     continue
 
-                if current_header and len(cells) >= 3:
-                    rows.append(cells[: len(current_header)])
+                if current_header and len(cells) >= 2:
+                    row = cells[: len(current_header)]
+                    if len(row) < len(current_header):
+                        row.extend([""] * (len(current_header) - len(row)))
+                    rows.append(row)
 
         if not rows:
             return pd.DataFrame()
