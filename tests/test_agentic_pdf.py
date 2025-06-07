@@ -28,17 +28,22 @@ def test_agentic_pdf_columns(monkeypatch):
                 chunk_type="table_row",
                 grounding=[types.SimpleNamespace(text=t) for t in data],
             ),
+            types.SimpleNamespace(chunk_type="text", text="foo"),
         ],
         page_summary=[{"page_number": 1, "rows": 1, "status": "success"}],
         token_counts={"input": 1, "output": 1},
     )
     parse_mod = types.ModuleType("agentic_doc.parse")
     parse_mod.parse = lambda *_a, **_kw: [parsed_doc]
+    common_mod = types.ModuleType("agentic_doc.common")
+    common_mod.RetryableError = Exception
     agentic_pkg = types.ModuleType("agentic_doc")
     agentic_pkg.__path__ = []
     agentic_pkg.parse = parse_mod
+    agentic_pkg.common = common_mod
     monkeypatch.setitem(sys.modules, "agentic_doc", agentic_pkg)
     monkeypatch.setitem(sys.modules, "agentic_doc.parse", parse_mod)
+    monkeypatch.setitem(sys.modules, "agentic_doc.common", common_mod)
 
     mod = importlib.import_module("smart_price.core.extract_pdf_agentic")
     importlib.reload(mod)

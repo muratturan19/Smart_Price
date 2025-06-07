@@ -30,6 +30,7 @@ def test_agentic_parse_list(monkeypatch):
                 chunk_type="table_row",
                 grounding=[types.SimpleNamespace(text=t) for t in data],
             ),
+            types.SimpleNamespace(chunk_type="text", text="not a table"),
         ],
         page_summary=[{"page_number": 1, "rows": 1, "status": "success", "note": None}],
         token_counts={"input": 1, "output": 1},
@@ -37,18 +38,22 @@ def test_agentic_parse_list(monkeypatch):
 
     parse_mod = types.ModuleType("agentic_doc.parse")
     parse_mod.parse = lambda *_a, **_kw: [parsed_doc]
+    common_mod = types.ModuleType("agentic_doc.common")
+    common_mod.RetryableError = Exception
     agentic_pkg = types.ModuleType("agentic_doc")
     agentic_pkg.__path__ = []
     agentic_pkg.parse = parse_mod
+    agentic_pkg.common = common_mod
     monkeypatch.setitem(sys.modules, "agentic_doc", agentic_pkg)
     monkeypatch.setitem(sys.modules, "agentic_doc.parse", parse_mod)
+    monkeypatch.setitem(sys.modules, "agentic_doc.common", common_mod)
 
     mod = importlib.import_module("smart_price.core.extract_pdf_agentic")
     importlib.reload(mod)
 
     df = mod.extract_from_pdf_agentic("dummy.pdf")
     assert len(df) == 1
-    parsed = df.to_dict("records")[0]
+    parsed = df.loc[0, ["Malzeme_Kodu", "Açıklama", "Fiyat"]].to_dict()
     assert parsed == {"Malzeme_Kodu": "A", "Açıklama": "Item", "Fiyat": 1.0}
     assert getattr(df, "page_summary", None) == parsed_doc.page_summary
     assert getattr(df, "token_counts", None) == parsed_doc.token_counts
@@ -68,6 +73,7 @@ def test_agentic_numeric_headers(monkeypatch):
                 chunk_type="table_row",
                 grounding=[types.SimpleNamespace(text=t) for t in data],
             ),
+            types.SimpleNamespace(chunk_type="text", text="ignored text"),
         ],
         page_summary=[{"page_number": 1, "rows": 1, "status": "success"}],
         token_counts={"input": 1, "output": 1},
@@ -75,11 +81,15 @@ def test_agentic_numeric_headers(monkeypatch):
 
     parse_mod = types.ModuleType("agentic_doc.parse")
     parse_mod.parse = lambda *_a, **_kw: [parsed_doc]
+    common_mod = types.ModuleType("agentic_doc.common")
+    common_mod.RetryableError = Exception
     agentic_pkg = types.ModuleType("agentic_doc")
     agentic_pkg.__path__ = []
     agentic_pkg.parse = parse_mod
+    agentic_pkg.common = common_mod
     monkeypatch.setitem(sys.modules, "agentic_doc", agentic_pkg)
     monkeypatch.setitem(sys.modules, "agentic_doc.parse", parse_mod)
+    monkeypatch.setitem(sys.modules, "agentic_doc.common", common_mod)
 
     mod = importlib.import_module("smart_price.core.extract_pdf_agentic")
     importlib.reload(mod)
