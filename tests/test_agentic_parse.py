@@ -132,6 +132,36 @@ def test_agentic_prompt_forward(monkeypatch):
 
 
 @pytest.mark.skipif(not HAS_PANDAS, reason="pandas not installed")
+def test_agentic_default_prompt(monkeypatch):
+    parsed_doc = types.SimpleNamespace(chunks=[], page_summary=None, token_counts=None)
+
+    captured = {}
+
+    def fake_parse(path, *, prompt=None):
+        captured["prompt"] = prompt
+        return [parsed_doc]
+
+    parse_mod = types.ModuleType("agentic_doc.parse")
+    parse_mod.parse = fake_parse
+    common_mod = types.ModuleType("agentic_doc.common")
+    common_mod.RetryableError = Exception
+    agentic_pkg = types.ModuleType("agentic_doc")
+    agentic_pkg.__path__ = []
+    agentic_pkg.parse = parse_mod
+    agentic_pkg.common = common_mod
+    monkeypatch.setitem(sys.modules, "agentic_doc", agentic_pkg)
+    monkeypatch.setitem(sys.modules, "agentic_doc.parse", parse_mod)
+    monkeypatch.setitem(sys.modules, "agentic_doc.common", common_mod)
+
+    mod = importlib.import_module("smart_price.core.extract_pdf_agentic")
+    importlib.reload(mod)
+    monkeypatch.setattr(mod, "prompts_for_pdf", lambda _src: None)
+
+    mod.extract_from_pdf_agentic("dummy.pdf")
+    assert captured.get("prompt") == mod.DEFAULT_PROMPT
+
+
+@pytest.mark.skipif(not HAS_PANDAS, reason="pandas not installed")
 def test_agentic_debug_output(monkeypatch, tmp_path):
     header = ["Malzeme_Kodu", "Açıklama", "Fiyat"]
     data = ["X", "Desc", "1"]
