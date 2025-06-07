@@ -22,10 +22,12 @@ def test_agentic_pdf_columns(monkeypatch):
         chunks=[
             types.SimpleNamespace(
                 chunk_type="table_row",
+                text="\t".join(header),
                 grounding=[types.SimpleNamespace(text=t) for t in header],
             ),
             types.SimpleNamespace(
                 chunk_type="table_row",
+                text="\t".join(data),
                 grounding=[types.SimpleNamespace(text=t) for t in data],
             ),
             types.SimpleNamespace(chunk_type="text", text="foo"),

@@ -24,10 +24,12 @@ def test_agentic_parse_list(monkeypatch):
         chunks=[
             types.SimpleNamespace(
                 chunk_type="table_row",
+                text="\t".join(header),
                 grounding=[types.SimpleNamespace(text=t) for t in header],
             ),
             types.SimpleNamespace(
                 chunk_type="table_row",
+                text="\t".join(data),
                 grounding=[types.SimpleNamespace(text=t) for t in data],
             ),
             types.SimpleNamespace(chunk_type="text", text="not a table"),
@@ -67,10 +69,12 @@ def test_agentic_numeric_headers(monkeypatch):
         chunks=[
             types.SimpleNamespace(
                 chunk_type="table_row",
+                text="\t".join(header),
                 grounding=[types.SimpleNamespace(text=t) for t in header],
             ),
             types.SimpleNamespace(
                 chunk_type="table_row",
+                text="\t".join(data),
                 grounding=[types.SimpleNamespace(text=t) for t in data],
             ),
             types.SimpleNamespace(chunk_type="text", text="ignored text"),
@@ -102,13 +106,29 @@ def test_agentic_numeric_headers(monkeypatch):
 
 @pytest.mark.skipif(not HAS_PANDAS, reason="pandas not installed")
 def test_agentic_prompt_forward(monkeypatch):
-    header = ["X", "Y", "Z"]
-    parsed_doc = types.SimpleNamespace(chunks=[], page_summary=None, token_counts=None)
+    header = ["Malzeme_Kodu", "Açıklama", "Fiyat"]
+    data = ["X1", "Desc", "5"]
+    parsed_doc = types.SimpleNamespace(
+        chunks=[
+            types.SimpleNamespace(
+                chunk_type="table_row",
+                text="\t".join(header),
+                grounding=[types.SimpleNamespace(text=t) for t in header],
+            ),
+            types.SimpleNamespace(
+                chunk_type="table_row",
+                text="\t".join(data),
+                grounding=[types.SimpleNamespace(text=t) for t in data],
+            ),
+        ],
+        page_summary=None,
+        token_counts=None,
+    )
 
     captured = {}
 
-    def fake_parse(path, *, prompt=None):
-        captured["prompt"] = prompt
+    def fake_parse(path, **kwargs):
+        captured.update(kwargs)
         return [parsed_doc]
 
     parse_mod = types.ModuleType("agentic_doc.parse")
@@ -125,20 +145,36 @@ def test_agentic_prompt_forward(monkeypatch):
 
     mod = importlib.import_module("smart_price.core.extract_pdf_agentic")
     importlib.reload(mod)
-    monkeypatch.setattr(mod, "prompts_for_pdf", lambda _src: {0: "PROMPT"})
 
     mod.extract_from_pdf_agentic("dummy.pdf")
-    assert captured.get("prompt") == {0: "PROMPT"}
+    assert captured == {}
 
 
 @pytest.mark.skipif(not HAS_PANDAS, reason="pandas not installed")
 def test_agentic_default_prompt(monkeypatch):
-    parsed_doc = types.SimpleNamespace(chunks=[], page_summary=None, token_counts=None)
+    header = ["Malzeme_Kodu", "Açıklama", "Fiyat"]
+    data = ["X2", "Item", "7"]
+    parsed_doc = types.SimpleNamespace(
+        chunks=[
+            types.SimpleNamespace(
+                chunk_type="table_row",
+                text="\t".join(header),
+                grounding=[types.SimpleNamespace(text=t) for t in header],
+            ),
+            types.SimpleNamespace(
+                chunk_type="table_row",
+                text="\t".join(data),
+                grounding=[types.SimpleNamespace(text=t) for t in data],
+            ),
+        ],
+        page_summary=None,
+        token_counts=None,
+    )
 
     captured = {}
 
-    def fake_parse(path, *, prompt=None):
-        captured["prompt"] = prompt
+    def fake_parse(path, **kwargs):
+        captured.update(kwargs)
         return [parsed_doc]
 
     parse_mod = types.ModuleType("agentic_doc.parse")
@@ -155,10 +191,9 @@ def test_agentic_default_prompt(monkeypatch):
 
     mod = importlib.import_module("smart_price.core.extract_pdf_agentic")
     importlib.reload(mod)
-    monkeypatch.setattr(mod, "prompts_for_pdf", lambda _src: None)
 
     mod.extract_from_pdf_agentic("dummy.pdf")
-    assert captured.get("prompt") == mod.DEFAULT_PROMPT
+    assert captured == {}
 
 
 @pytest.mark.skipif(not HAS_PANDAS, reason="pandas not installed")
