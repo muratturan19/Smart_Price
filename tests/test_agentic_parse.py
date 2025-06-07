@@ -1,6 +1,7 @@
 import sys
 import types
 import importlib
+import logging
 import pytest
 
 try:
@@ -285,3 +286,51 @@ def test_grounding_fallback(monkeypatch):
     assert len(df) == 1
     parsed = df.loc[0, ["Malzeme_Kodu", "Açıklama", "Fiyat"]].to_dict()
     assert parsed == {"Malzeme_Kodu": "X3", "Açıklama": "Desc", "Fiyat": 12.0}
+
+
+@pytest.mark.skipif(not HAS_PANDAS, reason="pandas not installed")
+def test_agentic_no_rows_logged(monkeypatch, caplog):
+    header = ["Malzeme_Kodu", "Açıklama", "Fiyat"]
+    data = ["A", "Item", "1"]
+    parsed_doc = types.SimpleNamespace(
+        chunks=[
+            types.SimpleNamespace(
+                chunk_type="table_row",
+                text="\t".join(header),
+                grounding=[types.SimpleNamespace(text=t) for t in header],
+            ),
+            types.SimpleNamespace(
+                chunk_type="table_row",
+                text="\t".join(data),
+                grounding=[types.SimpleNamespace(text=t) for t in data],
+            ),
+        ],
+        page_summary=[{"page_number": 1, "rows": 1, "status": "success"}],
+        token_counts=None,
+    )
+
+    parse_mod = types.ModuleType("agentic_doc.parse")
+    parse_mod.parse = lambda *_a, **_kw: [parsed_doc]
+    common_mod = types.ModuleType("agentic_doc.common")
+    common_mod.RetryableError = Exception
+    agentic_pkg = types.ModuleType("agentic_doc")
+    agentic_pkg.__path__ = []
+    agentic_pkg.parse = parse_mod
+    agentic_pkg.common = common_mod
+    monkeypatch.setitem(sys.modules, "agentic_doc", agentic_pkg)
+    monkeypatch.setitem(sys.modules, "agentic_doc.parse", parse_mod)
+    monkeypatch.setitem(sys.modules, "agentic_doc.common", common_mod)
+
+    mod = importlib.import_module("smart_price.core.extract_pdf_agentic")
+    importlib.reload(mod)
+
+    monkeypatch.setattr(mod, "_map_columns", lambda df: df.iloc[:0])
+
+    with caplog.at_level(logging.INFO, logger="smart_price"):
+        with pytest.raises(ValueError):
+            mod.extract_from_pdf_agentic("dummy.pdf")
+
+    messages = "\n".join(r.getMessage() for r in caplog.records)
+    assert "no rows extracted" in messages
+    assert "preview=" in messages
+    assert "page_summary" in messages

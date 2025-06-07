@@ -197,7 +197,24 @@ def extract_from_pdf_agentic(
 
     if df.empty:
         pages = len(page_summary) if page_summary is not None else 0
-        notify(f"{src}: no rows extracted from {pages} pages", "warning")
+        preview_chunks: list[str] = []
+        try:
+            for ch in docs[0].chunks[:3]:
+                text = getattr(ch, "text", "")
+                if not text:
+                    text = " ".join(
+                        getattr(g, "text", "") for g in getattr(ch, "grounding", [])
+                    )
+                preview_chunks.append(text)
+        except Exception as exc:  # pragma: no cover - defensive
+            logger.error("preview generation failed: %s", exc)
+        preview = "; ".join(preview_chunks)
+        info = f"{src}: no rows extracted from {pages} pages"
+        if page_summary is not None:
+            info += f" page_summary={page_summary}"
+        if preview:
+            info += f" preview={preview}"
+        notify(info, "warning")
         if tmp_file:
             try:
                 os.remove(tmp_file)
