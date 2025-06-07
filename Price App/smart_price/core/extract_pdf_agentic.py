@@ -3,6 +3,7 @@ from __future__ import annotations
 import os
 import logging
 import tempfile
+from pathlib import Path
 from typing import IO, Optional, Callable
 
 import pandas as pd
@@ -31,6 +32,7 @@ from smart_price.core.extract_excel import (
     POSSIBLE_PRICE_HEADERS,
 )
 from .common_utils import normalize_price, detect_currency, normalize_currency
+from .debug_utils import save_debug, set_output_subdir
 
 try:
     from agentic_doc.common import RetryableError as AgenticDocError
@@ -93,6 +95,9 @@ def extract_from_pdf_agentic(
 
     src = filename or getattr(filepath, "name", str(filepath))
     notify(f"Processing {src} via agentic_doc")
+    ade_debug = bool(os.getenv("ADE_DEBUG"))
+    if ade_debug:
+        set_output_subdir(Path(src).stem)
     guide_prompt = prompts_for_pdf(os.path.basename(src))
 
     tmp_file: str | None = None
@@ -132,8 +137,17 @@ def extract_from_pdf_agentic(
         rows: list[list[str]] = []
         current_header: list[str] | None = None
 
-        for ch in doc.chunks:  # chunk_type fark etmeksizin
+        for idx, ch in enumerate(doc.chunks, 1):  # chunk_type fark etmeksizin
             text = getattr(ch, "text", "")
+            if ade_debug:
+                if text:
+                    dbg_text = text
+                else:
+                    dbg_text = " ".join(
+                        getattr(g, "text", "") for g in getattr(ch, "grounding", [])
+                    )
+                save_debug("ade_chunk", idx, f"{ch.chunk_type}: {dbg_text}")
+                logger.debug("chunk %d %s: %s", idx, ch.chunk_type, dbg_text)
             for line in text.splitlines():
                 cells = [c.strip() for c in re.split(r"\s{2,}|\t", line) if c.strip()]
                 if not cells:
@@ -196,5 +210,7 @@ def extract_from_pdf_agentic(
             os.remove(tmp_file)
         except Exception as exc:  # pragma: no cover - cleanup errors
             logger.error("temp file cleanup failed: %s", exc)
+    if ade_debug:
+        set_output_subdir(None)
 
     return df

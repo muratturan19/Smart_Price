@@ -129,3 +129,52 @@ def test_agentic_prompt_forward(monkeypatch):
 
     mod.extract_from_pdf_agentic("dummy.pdf")
     assert captured.get("prompt") == {0: "PROMPT"}
+
+
+@pytest.mark.skipif(not HAS_PANDAS, reason="pandas not installed")
+def test_agentic_debug_output(monkeypatch, tmp_path):
+    header = ["Malzeme_Kodu", "Açıklama", "Fiyat"]
+    data = ["X", "Desc", "1"]
+    parsed_doc = types.SimpleNamespace(
+        chunks=[
+            types.SimpleNamespace(
+                chunk_type="table_row",
+                text="\t".join(header),
+                grounding=[types.SimpleNamespace(text=t) for t in header],
+            ),
+            types.SimpleNamespace(
+                chunk_type="table_row",
+                text="\t".join(data),
+                grounding=[types.SimpleNamespace(text=t) for t in data],
+            ),
+        ],
+        page_summary=None,
+        token_counts=None,
+    )
+
+    parse_mod = types.ModuleType("agentic_doc.parse")
+    parse_mod.parse = lambda *_a, **_kw: [parsed_doc]
+    common_mod = types.ModuleType("agentic_doc.common")
+    common_mod.RetryableError = Exception
+    agentic_pkg = types.ModuleType("agentic_doc")
+    agentic_pkg.__path__ = []
+    agentic_pkg.parse = parse_mod
+    agentic_pkg.common = common_mod
+    monkeypatch.setitem(sys.modules, "agentic_doc", agentic_pkg)
+    monkeypatch.setitem(sys.modules, "agentic_doc.parse", parse_mod)
+    monkeypatch.setitem(sys.modules, "agentic_doc.common", common_mod)
+
+    monkeypatch.setenv("ADE_DEBUG", "1")
+    monkeypatch.setenv("SMART_PRICE_DEBUG_DIR", str(tmp_path))
+
+    mod = importlib.import_module("smart_price.core.extract_pdf_agentic")
+    importlib.reload(mod)
+
+    df = mod.extract_from_pdf_agentic("dummy.pdf")
+    assert not df.empty
+
+    folder = tmp_path / "dummy"
+    debug_files = list(folder.glob("ade_chunk_page_*.txt"))
+    assert debug_files, "no debug files"
+    first_content = debug_files[0].read_text()
+    assert "table_row" in first_content
