@@ -39,11 +39,7 @@ from . import ocr_llm_fallback
 from pathlib import Path
 from .debug_utils import save_debug, set_output_subdir
 from .prompt_utils import prompts_for_pdf
-from .token_utils import (
-    num_tokens_from_messages,
-    num_tokens_from_text,
-    log_token_counts,
-)
+from .token_utils import log_token_counts
 from .github_upload import upload_folder, _sanitize_repo_path
 
 MIN_CODE_RATIO = 0.70
@@ -342,7 +338,6 @@ Sen bir PDF fiyat listesi analiz asistanısın. Amacın, PDF’lerdeki ürün ta
         result["Ana_Baslik"] = None
     if "Alt_Baslik" not in result.columns:
         result["Alt_Baslik"] = None
-    base_name_no_ext = Path(_basename(filepath, filename)).stem
     result["Record_Code"] = (
         sanitized_base
         + "|"
