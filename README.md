@@ -105,7 +105,7 @@ configuration folder.  The resulting binary will appear in the `dist` folder.
 Both Poppler and Tesseract binaries are bundled from the `poppler/bin` folder
 so the resulting EXE runs without additional dependencies. Place the actual
 `pdftoppm.exe`, `pdftocairo.exe` and `pdfinfo.exe` files there first.  If you
-store these tools elsewhere edit `POPLPLERDIR` (and set `TESSERACT_CMD` if needed) in
+store these tools elsewhere edit `POPPLERDIR` (and set `TESSERACT_CMD` if needed) in
 `build_windows_exe.bat` to point to the correct paths.  The batch file
 collects all Streamlit resources so the executable launches without a
 `PackageNotFoundError` for the `streamlit` distribution. The launcher script
