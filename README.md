@@ -219,6 +219,21 @@ local output and master files.  When GitHub credentials are configured the same
 folders (`LLM_Output_db` and `Master data base`) are cleared from the
 repository as well.
 
+### Linting and tests
+
+Run Ruff and the test suite:
+
+```bash
+ruff check .
+pytest
+```
+
+Install the optional extras for full coverage:
+
+```bash
+pip install .[agentic]
+```
+
 ## Troubleshooting
 
 If the vision stage fails to produce any items, the log records the model name
