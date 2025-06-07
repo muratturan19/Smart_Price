@@ -81,7 +81,9 @@ These values configure the internal `agentic_doc` Settings object.  The
 optimal numbers depend on your API rate limit and document size.
 
 ``agentic_doc.parse`` now returns a list of ``ParsedDocument`` objects. The
-tools use the first item in that list.
+tools use the first item in that list. When an extraction guide provides
+page prompts for a PDF file these prompts are forwarded to
+``agentic_doc.parse``.
 
 ### Building a Windows executable
 
