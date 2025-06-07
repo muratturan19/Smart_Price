@@ -9,14 +9,14 @@ set LOGOFOLDER=logo
 set PRICEAPP=Price App
 set STREAMLITCFG=.streamlit
 REM Poppler utilities (pdftoppm.exe, pdftocairo.exe, pdfinfo.exe)
-set POPLPLERDIR=poppler\bin
+set POPPLERDIR=poppler\bin
 
 pyinstaller --noconfirm --onefile ^
     --add-data "%DATAFOLDER%;%DATAFOLDER%" ^
     --add-data "%LOGOFOLDER%;logo" ^
     --add-data "%PRICEAPP%;Price App" ^
     --add-data "%STREAMLITCFG%;.streamlit" ^
-    --add-binary "%POPLPLERDIR%\*;poppler\bin" ^
+    --add-binary "%POPPLERDIR%\*;poppler\bin" ^
     --hidden-import "streamlit.web.cli" --collect-all streamlit "%SCRIPT%"
 
 ECHO Build complete. Look in the dist folder for the EXE.
