@@ -49,6 +49,24 @@ def _load_dataset(url: str) -> pd.DataFrame:
             os.unlink(tmp.name)
         except OSError:
             pass
+    column_map = {
+        "material_code": "Malzeme_Kodu",
+        "description": "Açıklama",
+        "price": "Fiyat",
+        "unit": "Birim",
+        "box_count": "Kutu_Adedi",
+        "price_currency": "Para_Birimi",
+        "source_file": "Kaynak_Dosya",
+        "source_page": "Sayfa",
+        "image_path": "Image_Path",
+        "record_code": "Record_Code",
+        "year": "Yil",
+        "brand": "Marka",
+        "main_header": "Ana_Baslik",
+        "sub_header": "Alt_Baslik",
+        "category": "Kategori",
+    }
+    df.rename(columns=column_map, inplace=True)
     return df
 
 
