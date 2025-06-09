@@ -2,6 +2,7 @@
 [
   {
     "Ana_Baslik": "SABİT DEPLASMANLI PALETLİ POMPA",
+    "Alt_Baslik": null,
     "Malzeme_Kodu": "DVQ20-06",
     "Açıklama": "Deplasman: 6 cc/dev, Max Basınç: 210 bar",
     "Fiyat": "644,63",
@@ -11,6 +12,7 @@
   },
   {
     "Ana_Baslik": "SABİT DEPLASMANLI PALETLİ POMPA",
+    "Alt_Baslik": null,
     "Malzeme_Kodu": "DVQ20-08",
     "Açıklama": "Deplasman: 8 cc/dev, Max Basınç: 210 bar",
     "Fiyat": "644,63",
@@ -20,6 +22,7 @@
   },
   {
     "Ana_Baslik": "SABİT DEPLASMANLI PALETLİ POMPA",
+    "Alt_Baslik": null,
     "Malzeme_Kodu": "DVQ20-11",
     "Açıklama": "Deplasman: 11 cc/dev, Max Basınç: 210 bar",
     "Fiyat": "644,63",
@@ -29,6 +32,7 @@
   },
   {
     "Ana_Baslik": "SABİT DEPLASMANLI PALETLİ POMPA",
+    "Alt_Baslik": null,
     "Malzeme_Kodu": "DVQ20-14",
     "Açıklama": "Deplasman: 14 cc/dev, Max Basınç: 210 bar",
     "Fiyat": "644,63",
@@ -38,6 +42,7 @@
   },
   {
     "Ana_Baslik": "SABİT DEPLASMANLI PALETLİ POMPA",
+    "Alt_Baslik": null,
     "Malzeme_Kodu": "DVQ20-17",
     "Açıklama": "Deplasman: 17 cc/dev, Max Basınç: 210 bar",
     "Fiyat": "644,63",
@@ -47,6 +52,7 @@
   },
   {
     "Ana_Baslik": "SABİT DEPLASMANLI PALETLİ POMPA",
+    "Alt_Baslik": null,
     "Malzeme_Kodu": "DVQ20-19",
     "Açıklama": "Deplasman: 19 cc/dev, Max Basınç: 210 bar",
     "Fiyat": "644,63",
@@ -56,6 +62,7 @@
   },
   {
     "Ana_Baslik": "SABİT DEPLASMANLI PALETLİ POMPA",
+    "Alt_Baslik": null,
     "Malzeme_Kodu": "DVQ20-23",
     "Açıklama": "Deplasman: 23 cc/dev, Max Basınç: 210 bar",
     "Fiyat": "644,63",
@@ -65,6 +72,7 @@
   },
   {
     "Ana_Baslik": "SABİT DEPLASMANLI PALETLİ POMPA",
+    "Alt_Baslik": null,
     "Malzeme_Kodu": "DVQ20-26",
     "Açıklama": "Deplasman: 26 cc/dev, Max Basınç: 210 bar",
     "Fiyat": "644,63",
@@ -74,6 +82,7 @@
   },
   {
     "Ana_Baslik": "SABİT DEPLASMANLI PALETLİ POMPA",
+    "Alt_Baslik": null,
     "Malzeme_Kodu": "DVQ20-32",
     "Açıklama": "Deplasman: 32 cc/dev, Max Basınç: 175 bar",
     "Fiyat": "644,63",
@@ -83,6 +92,7 @@
   },
   {
     "Ana_Baslik": "SABİT DEPLASMANLI PALETLİ POMPA",
+    "Alt_Baslik": null,
     "Malzeme_Kodu": "DVQ20-34",
     "Açıklama": "Deplasman: 34 cc/dev, Max Basınç: 175 bar",
     "Fiyat": "644,63",
@@ -92,6 +102,7 @@
   },
   {
     "Ana_Baslik": "SABİT DEPLASMANLI PALETLİ POMPA",
+    "Alt_Baslik": null,
     "Malzeme_Kodu": "DVQ20-38",
     "Açıklama": "Deplasman: 38 cc/dev, Max Basınç: 175 bar",
     "Fiyat": "644,63",
@@ -101,6 +112,7 @@
   },
   {
     "Ana_Baslik": "SABİT DEPLASMANLI PALETLİ POMPA",
+    "Alt_Baslik": null,
     "Malzeme_Kodu": "DVQ20-44",
     "Açıklama": "Deplasman: 44 cc/dev, Max Basınç: 175 bar",
     "Fiyat": "644,63",
@@ -110,6 +122,7 @@
   },
   {
     "Ana_Baslik": "SABİT DEPLASMANLI PALETLİ POMPA",
+    "Alt_Baslik": null,
     "Malzeme_Kodu": "DVQ25-18",
     "Açıklama": "Deplasman: 18 cc/dev, Max Basınç: 210 bar",
     "Fiyat": "758,39",
@@ -119,6 +132,7 @@
   },
   {
     "Ana_Baslik": "SABİT DEPLASMANLI PALETLİ POMPA",
+    "Alt_Baslik": null,
     "Malzeme_Kodu": "DVQ25-22",
     "Açıklama": "Deplasman: 22 cc/dev, Max Basınç: 210 bar",
     "Fiyat": "758,39",
@@ -128,6 +142,7 @@
   },
   {
     "Ana_Baslik": "SABİT DEPLASMANLI PALETLİ POMPA",
+    "Alt_Baslik": null,
     "Malzeme_Kodu": "DVQ25-26",
     "Açıklama": "Deplasman: 26 cc/dev, Max Basınç: 210 bar",
     "Fiyat": "758,39",
@@ -137,6 +152,7 @@
   },
   {
     "Ana_Baslik": "SABİT DEPLASMANLI PALETLİ POMPA",
+    "Alt_Baslik": null,
     "Malzeme_Kodu": "DVQ25-32",
     "Açıklama": "Deplasman: 32 cc/dev, Max Basınç: 210 bar",
     "Fiyat": "758,39",
@@ -146,6 +162,7 @@
   },
   {
     "Ana_Baslik": "SABİT DEPLASMANLI PALETLİ POMPA",
+    "Alt_Baslik": null,
     "Malzeme_Kodu": "DVQ25-38",
     "Açıklama": "Deplasman: 38 cc/dev, Max Basınç: 210 bar",
     "Fiyat": "758,39",
@@ -155,6 +172,7 @@
   },
   {
     "Ana_Baslik": "SABİT DEPLASMANLI PALETLİ POMPA",
+    "Alt_Baslik": null,
     "Malzeme_Kodu": "DVQ25-43",
     "Açıklama": "Deplasman: 43 cc/dev, Max Basınç: 210 bar",
     "Fiyat": "758,39",
@@ -164,6 +182,7 @@
   },
   {
     "Ana_Baslik": "SABİT DEPLASMANLI PALETLİ POMPA",
+    "Alt_Baslik": null,
     "Malzeme_Kodu": "DVQ25-47",
     "Açıklama": "Deplasman: 47 cc/dev, Max Basınç: 210 bar",
     "Fiyat": "758,39",
@@ -173,6 +192,7 @@
   },
   {
     "Ana_Baslik": "SABİT DEPLASMANLI PALETLİ POMPA",
+    "Alt_Baslik": null,
     "Malzeme_Kodu": "DVQ25-52",
     "Açıklama": "Deplasman: 52 cc/dev, Max Basınç: 210 bar",
     "Fiyat": "758,39",
@@ -182,6 +202,7 @@
   },
   {
     "Ana_Baslik": "SABİT DEPLASMANLI PALETLİ POMPA",
+    "Alt_Baslik": null,
     "Malzeme_Kodu": "DVQ25-60",
     "Açıklama": "Deplasman: 60 cc/dev, Max Basınç: 210 bar",
     "Fiyat": "758,39",
@@ -191,6 +212,7 @@
   },
   {
     "Ana_Baslik": "SABİT DEPLASMANLI PALETLİ POMPA",
+    "Alt_Baslik": null,
     "Malzeme_Kodu": "DVQ25-65",
     "Açıklama": "Deplasman: 65 cc/dev, Max Basınç: 210 bar",
     "Fiyat": "758,39",
@@ -200,6 +222,7 @@
   },
   {
     "Ana_Baslik": "SABİT DEPLASMANLI PALETLİ POMPA",
+    "Alt_Baslik": null,
     "Malzeme_Kodu": "DVQ25-75",
     "Açıklama": "Deplasman: 75 cc/dev, Max Basınç: 210 bar",
     "Fiyat": "758,39",
@@ -209,6 +232,7 @@
   },
   {
     "Ana_Baslik": "SABİT DEPLASMANLI PALETLİ POMPA",
+    "Alt_Baslik": null,
     "Malzeme_Kodu": "VQ15-06",
     "Açıklama": "Deplasman: 6 cc/dev, Max Basınç: 210 bar",
     "Fiyat": "587,75",
@@ -218,6 +242,7 @@
   },
   {
     "Ana_Baslik": "SABİT DEPLASMANLI PALETLİ POMPA",
+    "Alt_Baslik": null,
     "Malzeme_Kodu": "VQ15-08",
     "Açıklama": "Deplasman: 8 cc/dev, Max Basınç: 210 bar",
     "Fiyat": "587,75",
@@ -227,6 +252,7 @@
   },
   {
     "Ana_Baslik": "SABİT DEPLASMANLI PALETLİ POMPA",
+    "Alt_Baslik": null,
     "Malzeme_Kodu": "VQ15-11",
     "Açıklama": "Deplasman: 11 cc/dev, Max Basınç: 210 bar",
     "Fiyat": "587,75",
@@ -236,6 +262,7 @@
   },
   {
     "Ana_Baslik": "SABİT DEPLASMANLI PALETLİ POMPA",
+    "Alt_Baslik": null,
     "Malzeme_Kodu": "VQ15-14",
     "Açıklama": "Deplasman: 14 cc/dev, Max Basınç: 210 bar",
     "Fiyat": "587,75",
@@ -245,6 +272,7 @@
   },
   {
     "Ana_Baslik": "SABİT DEPLASMANLI PALETLİ POMPA",
+    "Alt_Baslik": null,
     "Malzeme_Kodu": "VQ15-17",
     "Açıklama": "Deplasman: 17 cc/dev, Max Basınç: 210 bar",
     "Fiyat": "587,75",
@@ -254,6 +282,7 @@
   },
   {
     "Ana_Baslik": "SABİT DEPLASMANLI PALETLİ POMPA",
+    "Alt_Baslik": null,
     "Malzeme_Kodu": "VQ15-19",
     "Açıklama": "Deplasman: 19 cc/dev, Max Basınç: 210 bar",
     "Fiyat": "587,75",
@@ -263,6 +292,7 @@
   },
   {
     "Ana_Baslik": "SABİT DEPLASMANLI PALETLİ POMPA",
+    "Alt_Baslik": null,
     "Malzeme_Kodu": "VQ15-23",
     "Açıklama": "Deplasman: 23 cc/dev, Max Basınç: 210 bar",
     "Fiyat": "587,75",
@@ -272,6 +302,7 @@
   },
   {
     "Ana_Baslik": "SABİT DEPLASMANLI PALETLİ POMPA",
+    "Alt_Baslik": null,
     "Malzeme_Kodu": "VQ15-26",
     "Açıklama": "Deplasman: 26 cc/dev, Max Basınç: 210 bar",
     "Fiyat": "587,75",
@@ -281,6 +312,7 @@
   },
   {
     "Ana_Baslik": "SABİT DEPLASMANLI PALETLİ POMPA",
+    "Alt_Baslik": null,
     "Malzeme_Kodu": "VQ15-31",
     "Açıklama": "Deplasman: 31 cc/dev, Max Basınç: 175 bar",
     "Fiyat": "587,75",
@@ -290,6 +322,7 @@
   },
   {
     "Ana_Baslik": "SABİT DEPLASMANLI PALETLİ POMPA",
+    "Alt_Baslik": null,
     "Malzeme_Kodu": "VQ15-38",
     "Açıklama": "Deplasman: 38 cc/dev, Max Basınç: 175 bar",
     "Fiyat": "587,75",
@@ -299,6 +332,7 @@
   },
   {
     "Ana_Baslik": "SABİT DEPLASMANLI PALETLİ POMPA",
+    "Alt_Baslik": null,
     "Malzeme_Kodu": "VQ35-60",
     "Açıklama": "Deplasman: 60 cc/dev, Max Basınç: 175 bar",
     "Fiyat": "1.365,10",
@@ -308,6 +342,7 @@
   },
   {
     "Ana_Baslik": "SABİT DEPLASMANLI PALETLİ POMPA",
+    "Alt_Baslik": null,
     "Malzeme_Kodu": "VQ35-66",
     "Açıklama": "Deplasman: 66 cc/dev, Max Basınç: 175 bar",
     "Fiyat": "1.365,10",
@@ -317,6 +352,7 @@
   },
   {
     "Ana_Baslik": "SABİT DEPLASMANLI PALETLİ POMPA",
+    "Alt_Baslik": null,
     "Malzeme_Kodu": "VQ35-76",
     "Açıklama": "Deplasman: 76 cc/dev, Max Basınç: 175 bar",
     "Fiyat": "1.365,10",
@@ -326,6 +362,7 @@
   },
   {
     "Ana_Baslik": "SABİT DEPLASMANLI PALETLİ POMPA",
+    "Alt_Baslik": null,
     "Malzeme_Kodu": "VQ35-82",
     "Açıklama": "Deplasman: 82 cc/dev, Max Basınç: 175 bar",
     "Fiyat": "1.365,10",
@@ -335,6 +372,7 @@
   },
   {
     "Ana_Baslik": "SABİT DEPLASMANLI PALETLİ POMPA",
+    "Alt_Baslik": null,
     "Malzeme_Kodu": "VQ35-88",
     "Açıklama": "Deplasman: 88 cc/dev, Max Basınç: 175 bar",
     "Fiyat": "1.365,10",
@@ -344,6 +382,7 @@
   },
   {
     "Ana_Baslik": "SABİT DEPLASMANLI PALETLİ POMPA",
+    "Alt_Baslik": null,
     "Malzeme_Kodu": "VQ35-94",
     "Açıklama": "Deplasman: 94 cc/dev, Max Basınç: 175 bar",
     "Fiyat": "1.365,10",
@@ -353,6 +392,7 @@
   },
   {
     "Ana_Baslik": "SABİT DEPLASMANLI PALETLİ POMPA",
+    "Alt_Baslik": null,
     "Malzeme_Kodu": "VQ35-108",
     "Açıklama": "Deplasman: 108 cc/dev, Max Basınç: 175 bar",
     "Fiyat": "1.365,10",
@@ -362,6 +402,7 @@
   },
   {
     "Ana_Baslik": "SABİT DEPLASMANLI PALETLİ POMPA",
+    "Alt_Baslik": null,
     "Malzeme_Kodu": "VQ35-116",
     "Açıklama": "Deplasman: 116 cc/dev, Max Basınç: 175 bar",
     "Fiyat": "1.365,10",
@@ -371,6 +412,7 @@
   },
   {
     "Ana_Baslik": "SABİT DEPLASMANLI PALETLİ POMPA",
+    "Alt_Baslik": null,
     "Malzeme_Kodu": "VQ35-125",
     "Açıklama": "Deplasman: 125 cc/dev, Max Basınç: 175 bar",
     "Fiyat": "1.365,10",
