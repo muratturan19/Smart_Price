@@ -2,6 +2,7 @@
 [
     {
         "Ana_Baslik": "NORMALDE KAPALI, PORT 1'DEN PİLOT ALAN KOMPANSATÖRLER",
+        "Alt_Baslik": null,
         "Malzeme_Kodu": "LR2A-XDN",
         "Açıklama": "3.5 bar, T11A, 60 l/dk",
         "Fiyat": "101.62",
@@ -11,6 +12,7 @@
     },
     {
         "Ana_Baslik": "NORMALDE KAPALI, PORT 1'DEN PİLOT ALAN KOMPANSATÖRLER",
+        "Alt_Baslik": null,
         "Malzeme_Kodu": "LR2A-XFN",
         "Açıklama": "7.0 bar, T11A, 60 l/dk",
         "Fiyat": "101.62",
@@ -20,6 +22,7 @@
     },
     {
         "Ana_Baslik": "NORMALDE KAPALI, PORT 1'DEN PİLOT ALAN KOMPANSATÖRLER",
+        "Alt_Baslik": null,
         "Malzeme_Kodu": "LR2A-XGN",
         "Açıklama": "10.0 bar, T11A, 60 l/dk",
         "Fiyat": "101.62",
@@ -29,6 +32,7 @@
     },
     {
         "Ana_Baslik": "NORMALDE KAPALI, PORT 1'DEN PİLOT ALAN KOMPANSATÖRLER",
+        "Alt_Baslik": null,
         "Malzeme_Kodu": "LR3A-XDN",
         "Açıklama": "3.5 bar, T2A, 120 l/dk",
         "Fiyat": "132.02",
@@ -38,6 +42,7 @@
     },
     {
         "Ana_Baslik": "NORMALDE KAPALI, PORT 1'DEN PİLOT ALAN KOMPANSATÖRLER",
+        "Alt_Baslik": null,
         "Malzeme_Kodu": "LR3A-XFN",
         "Açıklama": "7.0 bar, T2A, 120 l/dk",
         "Fiyat": "132.02",
@@ -47,6 +52,7 @@
     },
     {
         "Ana_Baslik": "NORMALDE KAPALI, PORT 1'DEN PİLOT ALAN KOMPANSATÖRLER",
+        "Alt_Baslik": null,
         "Malzeme_Kodu": "LR3A-XGN",
         "Açıklama": "10.0 bar, T2A, 120 l/dk",
         "Fiyat": "132.02",
@@ -55,34 +61,8 @@
         "Sayfa": "18"
     },
     {
-        "Ana_Baslik": "NORMALDE KAPALI, PORT 1'DEN PİLOT ALAN KOMPANSATÖRLER",
-        "Malzeme_Kodu": "LR6A-XDN",
-        "Açıklama": "3.5 bar, T17A, 240 l/dk",
-        "Fiyat": "228.00",
-        "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
-        "Sayfa": "18"
-    },
-    {
-        "Ana_Baslik": "NORMALDE KAPALI, PORT 1'DEN PİLOT ALAN KOMPANSATÖRLER",
-        "Malzeme_Kodu": "LR6A-XFN",
-        "Açıklama": "7.0 bar, T17A, 240 l/dk",
-        "Fiyat": "228.00",
-        "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
-        "Sayfa": "18"
-    },
-    {
-        "Ana_Baslik": "NORMALDE KAPALI, PORT 1'DEN PİLOT ALAN KOMPANSATÖRLER",
-        "Malzeme_Kodu": "LR6A-XGN",
-        "Açıklama": "10.0 bar, T17A, 240 l/dk",
-        "Fiyat": "228.00",
-        "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
-        "Sayfa": "18"
-    },
-    {
         "Ana_Baslik": "NORMALDE KAPALI KOMPANSATÖRLER",
+        "Alt_Baslik": null,
         "Malzeme_Kodu": "LR2C-XDN",
         "Açıklama": "3.5 bar, T11A, 60 l/dk",
         "Fiyat": "101.62",
@@ -92,6 +72,7 @@
     },
     {
         "Ana_Baslik": "NORMALDE KAPALI KOMPANSATÖRLER",
+        "Alt_Baslik": null,
         "Malzeme_Kodu": "LR2C-XFN",
         "Açıklama": "7.0 bar, T11A, 60 l/dk",
         "Fiyat": "101.62",
@@ -101,6 +82,7 @@
     },
     {
         "Ana_Baslik": "NORMALDE KAPALI KOMPANSATÖRLER",
+        "Alt_Baslik": null,
         "Malzeme_Kodu": "LR2C-XGN",
         "Açıklama": "10.0 bar, T11A, 60 l/dk",
         "Fiyat": "101.62",
@@ -110,6 +92,7 @@
     },
     {
         "Ana_Baslik": "NORMALDE KAPALI KOMPANSATÖRLER",
+        "Alt_Baslik": null,
         "Malzeme_Kodu": "LR3C-XDN",
         "Açıklama": "3.5 bar, T2A, 120 l/dk",
         "Fiyat": "132.02",
@@ -119,6 +102,7 @@
     },
     {
         "Ana_Baslik": "NORMALDE KAPALI KOMPANSATÖRLER",
+        "Alt_Baslik": null,
         "Malzeme_Kodu": "LR3C-XFN",
         "Açıklama": "7.0 bar, T2A, 120 l/dk",
         "Fiyat": "132.02",
@@ -128,6 +112,7 @@
     },
     {
         "Ana_Baslik": "NORMALDE KAPALI KOMPANSATÖRLER",
+        "Alt_Baslik": null,
         "Malzeme_Kodu": "LR3C-XGN",
         "Açıklama": "10.0 bar, T2A, 120 l/dk",
         "Fiyat": "132.02",
@@ -136,61 +121,8 @@
         "Sayfa": "18"
     },
     {
-        "Ana_Baslik": "NORMALDE KAPALI KOMPANSATÖRLER",
-        "Malzeme_Kodu": "LR6C-XDN",
-        "Açıklama": "3.5 bar, T17A, 240 l/dk",
-        "Fiyat": "243.20",
-        "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
-        "Sayfa": "18"
-    },
-    {
-        "Ana_Baslik": "NORMALDE KAPALI KOMPANSATÖRLER",
-        "Malzeme_Kodu": "LR6C-XFN",
-        "Açıklama": "7.0 bar, T17A, 240 l/dk",
-        "Fiyat": "243.20",
-        "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
-        "Sayfa": "18"
-    },
-    {
-        "Ana_Baslik": "NORMALDE KAPALI KOMPANSATÖRLER",
-        "Malzeme_Kodu": "LR6C-XGN",
-        "Açıklama": "10.0 bar, T17A, 240 l/dk",
-        "Fiyat": "243.20",
-        "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
-        "Sayfa": "18"
-    },
-    {
-        "Ana_Baslik": "NORMALDE KAPALI KOMPANSATÖRLER",
-        "Malzeme_Kodu": "LR8C-XDN",
-        "Açıklama": "3.5 bar, T19A, 480 l/dk",
-        "Fiyat": "FİYAT SORUNUZ",
-        "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
-        "Sayfa": "18"
-    },
-    {
-        "Ana_Baslik": "NORMALDE KAPALI KOMPANSATÖRLER",
-        "Malzeme_Kodu": "LR8C-XFN",
-        "Açıklama": "7.0 bar, T19A, 480 l/dk",
-        "Fiyat": "FİYAT SORUNUZ",
-        "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
-        "Sayfa": "18"
-    },
-    {
-        "Ana_Baslik": "NORMALDE KAPALI KOMPANSATÖRLER",
-        "Malzeme_Kodu": "LR8C-XGN",
-        "Açıklama": "10.0 bar, T19A, 480 l/dk",
-        "Fiyat": "FİYAT SORUNUZ",
-        "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
-        "Sayfa": "18"
-    },
-    {
         "Ana_Baslik": "HORTUM PATLAMA VALFİ",
+        "Alt_Baslik": null,
         "Malzeme_Kodu": "FQ2A-XAN",
         "Açıklama": "350 bar, T13A, 23 l/dk",
         "Fiyat": "102.74",
@@ -200,6 +132,7 @@
     },
     {
         "Ana_Baslik": "HORTUM PATLAMA VALFİ",
+        "Alt_Baslik": null,
         "Malzeme_Kodu": "FQ2A-XBN",
         "Açıklama": "350 bar, T13A, 23 l/dk",
         "Fiyat": "102.74",
@@ -209,6 +142,7 @@
     },
     {
         "Ana_Baslik": "HORTUM PATLAMA VALFİ",
+        "Alt_Baslik": null,
         "Malzeme_Kodu": "FQ3A-XAN",
         "Açıklama": "350 bar, T5A, 60 l/dk",
         "Fiyat": "FİYAT SORUNUZ",
@@ -218,6 +152,7 @@
     },
     {
         "Ana_Baslik": "HORTUM PATLAMA VALFİ",
+        "Alt_Baslik": null,
         "Malzeme_Kodu": "FQ3A-XBN",
         "Açıklama": "350 bar, T5A, 60 l/dk",
         "Fiyat": "FİYAT SORUNUZ",
@@ -227,6 +162,7 @@
     },
     {
         "Ana_Baslik": "HORTUM PATLAMA VALFİ",
+        "Alt_Baslik": null,
         "Malzeme_Kodu": "FQ6A-XAN",
         "Açıklama": "350 bar, T16A, 95 l/dk",
         "Fiyat": "FİYAT SORUNUZ",
@@ -236,6 +172,7 @@
     },
     {
         "Ana_Baslik": "HORTUM PATLAMA VALFİ",
+        "Alt_Baslik": null,
         "Malzeme_Kodu": "FQ6A-XBN",
         "Açıklama": "350 bar, T16A, 95 l/dk",
         "Fiyat": "FİYAT SORUNUZ",
@@ -245,6 +182,7 @@
     },
     {
         "Ana_Baslik": "HORTUM PATLAMA VALFİ",
+        "Alt_Baslik": null,
         "Malzeme_Kodu": "FQ8A-XAN",
         "Açıklama": "350 bar, T18A, 200 l/dk",
         "Fiyat": "FİYAT SORUNUZ",
@@ -254,6 +192,7 @@
     },
     {
         "Ana_Baslik": "HORTUM PATLAMA VALFİ",
+        "Alt_Baslik": null,
         "Malzeme_Kodu": "FQ8A-XBN",
         "Açıklama": "350 bar, T18A, 200 l/dk",
         "Fiyat": "FİYAT SORUNUZ",
@@ -263,6 +202,7 @@
     },
     {
         "Ana_Baslik": "AKÜ DOLUM VE POMPA BOŞALTMA VALFİ, %30",
+        "Alt_Baslik": null,
         "Malzeme_Kodu": "QZC-T21A-LAN",
         "Açıklama": "7 - 210 bar, T21A",
         "Fiyat": "528.35",
@@ -272,6 +212,7 @@
     },
     {
         "Ana_Baslik": "AKÜ DOLUM VE POMPA BOŞALTMA VALFİ, %30",
+        "Alt_Baslik": null,
         "Malzeme_Kodu": "QZC-T21A-LBN",
         "Açıklama": "3.5 - 105 bar, T21A",
         "Fiyat": "528.35",
@@ -281,6 +222,7 @@
     },
     {
         "Ana_Baslik": "AKÜ DOLUM VE POMPA BOŞALTMA VALFİ, %30",
+        "Alt_Baslik": null,
         "Malzeme_Kodu": "QZC-T21A-LCN",
         "Açıklama": "140 - 350 bar, T21A",
         "Fiyat": "528.35",
@@ -290,6 +232,7 @@
     },
     {
         "Ana_Baslik": "AKÜ DOLUM VE POMPA BOŞALTMA VALFİ, %30",
+        "Alt_Baslik": null,
         "Malzeme_Kodu": "QZC-T21A-LDN",
         "Açıklama": "18 - 35 bar, T21A",
         "Fiyat": "528.35",
@@ -299,6 +242,7 @@
     },
     {
         "Ana_Baslik": "KARTUŞ FİLTRELER",
+        "Alt_Baslik": null,
         "Malzeme_Kodu": "FL2A-T13A-XDN",
         "Açıklama": "40 µm, T13A, 37.9 l/dk",
         "Fiyat": "129.08",
@@ -308,6 +252,7 @@
     },
     {
         "Ana_Baslik": "KARTUŞ FİLTRELER",
+        "Alt_Baslik": null,
         "Malzeme_Kodu": "FL6A-T16A-XAN",
         "Açıklama": "3 µm, T16A, 151.4 l/dk",
         "Fiyat": "206.53",
@@ -317,6 +262,7 @@
     },
     {
         "Ana_Baslik": "KARTUŞ FİLTRELER",
+        "Alt_Baslik": null,
         "Malzeme_Kodu": "FL6A-T16A-XBN",
         "Açıklama": "10 µm, T16A, 151.4 l/dk",
         "Fiyat": "206.53",
@@ -326,6 +272,7 @@
     },
     {
         "Ana_Baslik": "KARTUŞ FİLTRELER",
+        "Alt_Baslik": null,
         "Malzeme_Kodu": "FL6A-T16A-XCN",
         "Açıklama": "25 µm, T16A, 151.4 l/dk",
         "Fiyat": "206.53",
@@ -335,6 +282,7 @@
     },
     {
         "Ana_Baslik": "KARTUŞ FİLTRELER",
+        "Alt_Baslik": null,
         "Malzeme_Kodu": "FL6A-T16A-XDN",
         "Açıklama": "40 µm, T16A, 151.4 l/dk",
         "Fiyat": "206.53",
@@ -344,6 +292,7 @@
     },
     {
         "Ana_Baslik": "KARTUŞ FİLTRELER",
+        "Alt_Baslik": null,
         "Malzeme_Kodu": "FL8A-T18A-XAN",
         "Açıklama": "3 µm, T18A, 302.8 l/dk",
         "Fiyat": "309.79",
@@ -353,6 +302,7 @@
     },
     {
         "Ana_Baslik": "KARTUŞ FİLTRELER",
+        "Alt_Baslik": null,
         "Malzeme_Kodu": "FL8A-T18A-XBN",
         "Açıklama": "10 µm, T18A, 302.8 l/dk",
         "Fiyat": "309.79",
@@ -362,6 +312,7 @@
     },
     {
         "Ana_Baslik": "KARTUŞ FİLTRELER",
+        "Alt_Baslik": null,
         "Malzeme_Kodu": "FL8A-T18A-XCN",
         "Açıklama": "25 µm, T18A, 302.8 l/dk",
         "Fiyat": "309.79",
@@ -371,6 +322,7 @@
     },
     {
         "Ana_Baslik": "KARTUŞ FİLTRELER",
+        "Alt_Baslik": null,
         "Malzeme_Kodu": "FL8A-T18A-XDN",
         "Açıklama": "40 µm, T18A, 302.8 l/dk",
         "Fiyat": "309.79",
