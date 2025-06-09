@@ -104,6 +104,111 @@ def big_alert(message: str, *, level: str = "info", icon: str | None = None) -> 
     st.markdown(html, unsafe_allow_html=True)
 
 
+def inject_style() -> None:
+    """Inject the global CSS used across the application."""
+    css = f"""
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+    html, body, [class*="css"]  {{
+        font-family: 'Inter', sans-serif;
+    }}
+
+    .app-header {{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.75rem 1rem;
+        background: var(--secondary-background-color);
+        border-bottom: 1px solid #ccc;
+    }}
+
+    .header-title {{
+        margin: 0;
+        font-size: clamp(1.8rem, 3vw, 2.6rem);
+        font-weight: 700;
+        text-align: center;
+    }}
+
+    .header-logo {{
+        height: clamp(50px, 8vw, 70px);
+        padding: 0.25rem;
+    }}
+
+    .header-logo.left {{
+        position: absolute;
+        left: 1rem;
+    }}
+
+    .header-logo.right {{
+        position: absolute;
+        right: 1rem;
+    }}
+
+    .card {{
+        background: linear-gradient(135deg, #ffffff, #f7f7f9);
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }}
+
+    .stButton button, .stDownloadButton button {{
+        background: #002060;
+        color: #fff;
+        border: none;
+        padding: 0.4rem 1rem;
+        border-radius: 6px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }}
+    .stButton button:hover, .stDownloadButton button:hover {{
+        background: #013080;
+    }}
+
+    input, textarea, select {{
+        border-radius: 4px !important;
+        border: 1px solid #ccc !important;
+        padding: 0.4rem !important;
+    }}
+    input:focus, textarea:focus, select:focus {{
+        border-color: #002060 !important;
+        box-shadow: 0 0 0 3px rgba(0,32,96,0.2) !important;
+    }}
+
+    .uploaded-list {{
+        list-style: none;
+        padding-left: 0;
+        margin: 0.5rem 0 1rem 0;
+    }}
+    .uploaded-list li {{
+        background: #fff;
+        border-radius: 6px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        padding: 0.5rem;
+        margin-bottom: 0.5rem;
+        display: flex;
+        align-items: center;
+    }}
+    .uploaded-list img {{
+        height: 40px;
+        width: auto;
+        margin-right: 0.5rem;
+        border-radius: 4px;
+    }}
+
+    @media (max-width: 768px) {{
+        .header-title {{
+            font-size: 1.5rem;
+        }}
+        .header-logo {{
+            height: 40px;
+        }}
+    }}
+    </style>
+    """
+    st.markdown(css, unsafe_allow_html=True)
+
+
 def _configure_tesseract() -> None:
     """Configure pytesseract paths and log available languages.
 
@@ -484,6 +589,18 @@ def upload_page():
     if not files:
         return
 
+    items: list[str] = []
+    for f in files:
+        if f.type.startswith("image"):
+            data = f.getvalue()
+            img_b64 = base64.b64encode(data).decode("utf-8")
+            items.append(f"<li><img src='data:{f.type};base64,{img_b64}' alt='{f.name}' /></li>")
+            if hasattr(f, "seek"):
+                f.seek(0)
+        else:
+            items.append(f"<li>{f.name}</li>")
+    st.markdown("<ul class='uploaded-list'>" + "".join(items) + "</ul>", unsafe_allow_html=True)
+
     if st.button("Dosyaları İşle"):
         uploaded_list = ", ".join(f.name for f in files)
         with st.spinner("Dosyalar işleniyor..."):
@@ -623,6 +740,8 @@ def main():
     _configure_poppler()
     st.set_page_config(layout="wide")
 
+    inject_style()
+
     left_logo_b64 = img_to_base64(left_logo_url)
     right_logo_b64 = img_to_base64(right_logo_url)
 
@@ -632,33 +751,6 @@ def main():
             <h1 class='header-title'>Smart Price</h1>
             <img src='data:image/png;base64,{right_logo_b64}' class='header-logo right'>
         </header>
-        <style>
-            .app-header {{
-                position: relative;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                padding: 0.5rem 1rem;
-                background: #fff;
-                border-bottom: 1px solid #ccc;
-            }}
-            .header-title {{
-                margin: 0;
-                font-size: clamp(1.5rem, 2.5vw, 2.2rem);
-                font-weight: 600;
-            }}
-            .header-logo {{
-                height: 40px;
-            }}
-            .left {{
-                position: absolute;
-                left: 1rem;
-            }}
-            .right {{
-                position: absolute;
-                right: 1rem;
-            }}
-        </style>
     """
     st.markdown(header_html, unsafe_allow_html=True)
 
