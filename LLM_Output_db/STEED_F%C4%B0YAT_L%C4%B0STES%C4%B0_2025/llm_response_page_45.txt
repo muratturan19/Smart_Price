@@ -7,27 +7,27 @@
         "Açıklama": "1/4\" PT, 150 bar, NPN or PNP mode, 4~20mA, 0~20mA, 0~5V, 0.5~4.5V",
         "Fiyat": "401,73",
         "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Steed Basınç Sensörleri.pdf",
+        "Kaynak_Dosya": "Steed Hydraulic Technology.pdf",
         "Sayfa": "45"
     },
     {
         "Ana_Baslik": "BASINÇ SENSÖRÜ",
         "Alt_Baslik": "JC-DPS-NS (w/Pressure Transducer)",
         "Malzeme_Kodu": "JC-DPS-NS",
-        "Açıklama": "1/4\" NPT, 150 bar, NPN or PNP mode, 4~20mA, 0~20mA, 0~5V, 0.5~4.5V",
+        "Açıklama": "1/4\" NPT, 150 bar",
         "Fiyat": "401,73",
         "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Steed Basınç Sensörleri.pdf",
+        "Kaynak_Dosya": "Steed Hydraulic Technology.pdf",
         "Sayfa": "45"
     },
     {
         "Ana_Baslik": "BASINÇ SENSÖRÜ",
         "Alt_Baslik": "JC-DPS-NS (w/Pressure Transducer)",
         "Malzeme_Kodu": "JC-DPS-NS",
-        "Açıklama": "1/4\" BSPP, 150 bar, NPN or PNP mode, 4~20mA, 0~20mA, 0~5V, 0.5~4.5V",
+        "Açıklama": "1/4\" BSPP, 150 bar",
         "Fiyat": "401,73",
         "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Steed Basınç Sensörleri.pdf",
+        "Kaynak_Dosya": "Steed Hydraulic Technology.pdf",
         "Sayfa": "45"
     },
     {
@@ -37,87 +37,77 @@
         "Açıklama": "1/4\" PT, 250 bar, 1~5V, 0~10V, 1~10V option selected by panel operation.",
         "Fiyat": "401,73",
         "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Steed Basınç Sensörleri.pdf",
+        "Kaynak_Dosya": "Steed Hydraulic Technology.pdf",
         "Sayfa": "45"
     },
     {
         "Ana_Baslik": "BASINÇ SENSÖRÜ",
         "Alt_Baslik": "JC-DPS-NS (w/Pressure Transducer)",
         "Malzeme_Kodu": "JC-DPS-NS",
-        "Açıklama": "1/4\" NPT, 250 bar, 1~5V, 0~10V, 1~10V option selected by panel operation.",
+        "Açıklama": "1/4\" NPT, 250 bar",
         "Fiyat": "401,73",
         "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Steed Basınç Sensörleri.pdf",
+        "Kaynak_Dosya": "Steed Hydraulic Technology.pdf",
         "Sayfa": "45"
     },
     {
         "Ana_Baslik": "BASINÇ SENSÖRÜ",
         "Alt_Baslik": "JC-DPS-NS (w/Pressure Transducer)",
         "Malzeme_Kodu": "JC-DPS-NS",
-        "Açıklama": "1/4\" BSPP, 250 bar, 1~5V, 0~10V, 1~10V option selected by panel operation.",
+        "Açıklama": "1/4\" BSPP, 250 bar",
         "Fiyat": "401,73",
         "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Steed Basınç Sensörleri.pdf",
+        "Kaynak_Dosya": "Steed Hydraulic Technology.pdf",
         "Sayfa": "45"
     },
     {
         "Ana_Baslik": "BASINÇ SENSÖRÜ",
         "Alt_Baslik": "JC-DPS-NS (w/Pressure Transducer)",
         "Malzeme_Kodu": "JC-DPS-NS",
-        "Açıklama": "1/4\" PT, 350 bar, 1~5V, 0~10V, 1~10V option selected by panel operation.",
+        "Açıklama": "1/4\" PT, 350 bar",
         "Fiyat": "401,73",
         "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Steed Basınç Sensörleri.pdf",
+        "Kaynak_Dosya": "Steed Hydraulic Technology.pdf",
         "Sayfa": "45"
     },
     {
         "Ana_Baslik": "BASINÇ SENSÖRÜ",
         "Alt_Baslik": "JC-DPS-NS (w/Pressure Transducer)",
         "Malzeme_Kodu": "JC-DPS-NS",
-        "Açıklama": "1/4\" NPT, 350 bar, 1~5V, 0~10V, 1~10V option selected by panel operation.",
+        "Açıklama": "1/4\" NPT, 350 bar",
         "Fiyat": "401,73",
         "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Steed Basınç Sensörleri.pdf",
+        "Kaynak_Dosya": "Steed Hydraulic Technology.pdf",
         "Sayfa": "45"
     },
     {
         "Ana_Baslik": "BASINÇ SENSÖRÜ",
         "Alt_Baslik": "JC-DPS-NS (w/Pressure Transducer)",
         "Malzeme_Kodu": "JC-DPS-NS",
-        "Açıklama": "1/4\" BSPP, 350 bar, 1~5V, 0~10V, 1~10V option selected by panel operation.",
+        "Açıklama": "1/4\" BSPP, 350 bar",
         "Fiyat": "401,73",
         "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Steed Basınç Sensörleri.pdf",
+        "Kaynak_Dosya": "Steed Hydraulic Technology.pdf",
         "Sayfa": "45"
     },
     {
         "Ana_Baslik": "BASINÇ SENSÖRÜ",
         "Alt_Baslik": "JC-DPS-NS (w/Pressure Transducer)",
         "Malzeme_Kodu": "JC-DPS-NS",
-        "Açıklama": "1/4\" PT, 420 bar, 1~5V, 0~10V, 1~10V option selected by panel operation.",
+        "Açıklama": "1/4\" PT, 420 bar",
         "Fiyat": "401,73",
         "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Steed Basınç Sensörleri.pdf",
+        "Kaynak_Dosya": "Steed Hydraulic Technology.pdf",
         "Sayfa": "45"
     },
     {
         "Ana_Baslik": "BASINÇ SENSÖRÜ",
         "Alt_Baslik": "JC-DPS-NS (w/Pressure Transducer)",
         "Malzeme_Kodu": "JC-DPS-NS",
-        "Açıklama": "1/4\" NPT, 420 bar, 1~5V, 0~10V, 1~10V option selected by panel operation.",
+        "Açıklama": "1/4\" NPT, 420 bar",
         "Fiyat": "401,73",
         "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Steed Basınç Sensörleri.pdf",
-        "Sayfa": "45"
-    },
-    {
-        "Ana_Baslik": "BASINÇ SENSÖRÜ",
-        "Alt_Baslik": "JC-DPS-NS (w/Pressure Transducer)",
-        "Malzeme_Kodu": "JC-DPS-NS",
-        "Açıklama": "420 bar, 1~5V, 0~10V, 1~10V option selected by panel operation.",
-        "Fiyat": "401,73",
-        "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Steed Basınç Sensörleri.pdf",
+        "Kaynak_Dosya": "Steed Hydraulic Technology.pdf",
         "Sayfa": "45"
     },
     {
@@ -127,7 +117,7 @@
         "Açıklama": "2 bar, 0.5~4.5V",
         "Fiyat": "175,29",
         "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Steed Basınç Sensörleri.pdf",
+        "Kaynak_Dosya": "Steed Hydraulic Technology.pdf",
         "Sayfa": "45"
     },
     {
@@ -137,27 +127,27 @@
         "Açıklama": "1/4\" PT, 70 bar, 1~5V",
         "Fiyat": "175,29",
         "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Steed Basınç Sensörleri.pdf",
+        "Kaynak_Dosya": "Steed Hydraulic Technology.pdf",
         "Sayfa": "45"
     },
     {
         "Ana_Baslik": "BASINÇ SENSÖRÜ",
         "Alt_Baslik": "JC-P5",
         "Malzeme_Kodu": "JC-P5",
-        "Açıklama": "1/4\" NPT, 150 bar, 0~10V",
+        "Açıklama": "1/4\" NPT, 150 bar",
         "Fiyat": "175,29",
         "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Steed Basınç Sensörleri.pdf",
+        "Kaynak_Dosya": "Steed Hydraulic Technology.pdf",
         "Sayfa": "45"
     },
     {
         "Ana_Baslik": "BASINÇ SENSÖRÜ",
         "Alt_Baslik": "JC-P5",
         "Malzeme_Kodu": "JC-P5",
-        "Açıklama": "1/4\" BSPP, 250 bar, 4~20mA",
+        "Açıklama": "1/4\" BSPP, 250 bar, 0~10V",
         "Fiyat": "175,29",
         "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Steed Basınç Sensörleri.pdf",
+        "Kaynak_Dosya": "Steed Hydraulic Technology.pdf",
         "Sayfa": "45"
     },
     {
@@ -167,7 +157,17 @@
         "Açıklama": "350 bar, 4~20mA",
         "Fiyat": "175,29",
         "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Steed Basınç Sensörleri.pdf",
+        "Kaynak_Dosya": "Steed Hydraulic Technology.pdf",
+        "Sayfa": "45"
+    },
+    {
+        "Ana_Baslik": "BASINÇ SENSÖRÜ",
+        "Alt_Baslik": "JC-P5",
+        "Malzeme_Kodu": "JC-P5",
+        "Açıklama": "420 bar",
+        "Fiyat": "175,29",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Technology.pdf",
         "Sayfa": "45"
     },
     {
@@ -177,7 +177,7 @@
         "Açıklama": "30-210 bar, 350 bar, NG6-A HATTI",
         "Fiyat": "164,64",
         "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Steed Basınç Sensörleri.pdf",
+        "Kaynak_Dosya": "Steed Hydraulic Technology.pdf",
         "Sayfa": "45"
     },
     {
@@ -187,7 +187,7 @@
         "Açıklama": "30-210 bar, 350 bar, NG6-B HATTI",
         "Fiyat": "164,64",
         "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Steed Basınç Sensörleri.pdf",
+        "Kaynak_Dosya": "Steed Hydraulic Technology.pdf",
         "Sayfa": "45"
     },
     {
@@ -197,7 +197,7 @@
         "Açıklama": "30-210 bar, 350 bar, NG6-P HATTI",
         "Fiyat": "164,64",
         "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Steed Basınç Sensörleri.pdf",
+        "Kaynak_Dosya": "Steed Hydraulic Technology.pdf",
         "Sayfa": "45"
     },
     {
@@ -207,7 +207,7 @@
         "Açıklama": "30-210 bar, 350 bar, NG6-A ve B HATTI",
         "Fiyat": "317,33",
         "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Steed Basınç Sensörleri.pdf",
+        "Kaynak_Dosya": "Steed Hydraulic Technology.pdf",
         "Sayfa": "45"
     },
     {
@@ -217,7 +217,7 @@
         "Açıklama": "15-60 bar, 210 bar, NG6-A ve B HATTI",
         "Fiyat": "317,33",
         "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Steed Basınç Sensörleri.pdf",
+        "Kaynak_Dosya": "Steed Hydraulic Technology.pdf",
         "Sayfa": "45"
     },
     {
@@ -227,7 +227,7 @@
         "Açıklama": "5-40 bar, 60 bar, NG6-A ve B HATTI",
         "Fiyat": "317,33",
         "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Steed Basınç Sensörleri.pdf",
+        "Kaynak_Dosya": "Steed Hydraulic Technology.pdf",
         "Sayfa": "45"
     },
     {
@@ -237,7 +237,7 @@
         "Açıklama": "30-210 bar, 350 bar, NG10-A HATTI",
         "Fiyat": "195,02",
         "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Steed Basınç Sensörleri.pdf",
+        "Kaynak_Dosya": "Steed Hydraulic Technology.pdf",
         "Sayfa": "45"
     },
     {
@@ -247,7 +247,7 @@
         "Açıklama": "30-210 bar, 350 bar, NG10-B HATTI",
         "Fiyat": "195,02",
         "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Steed Basınç Sensörleri.pdf",
+        "Kaynak_Dosya": "Steed Hydraulic Technology.pdf",
         "Sayfa": "45"
     },
     {
@@ -257,7 +257,7 @@
         "Açıklama": "30-210 bar, 350 bar, NG10-P HATTI",
         "Fiyat": "195,02",
         "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Steed Basınç Sensörleri.pdf",
+        "Kaynak_Dosya": "Steed Hydraulic Technology.pdf",
         "Sayfa": "45"
     },
     {
@@ -267,7 +267,7 @@
         "Açıklama": "30-210 bar, 350 bar, NG6-A HATTI",
         "Fiyat": "178,14",
         "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Steed Basınç Sensörleri.pdf",
+        "Kaynak_Dosya": "Steed Hydraulic Technology.pdf",
         "Sayfa": "45"
     },
     {
@@ -277,7 +277,7 @@
         "Açıklama": "30-210 bar, 350 bar, NG6-B HATTI",
         "Fiyat": "178,14",
         "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Steed Basınç Sensörleri.pdf",
+        "Kaynak_Dosya": "Steed Hydraulic Technology.pdf",
         "Sayfa": "45"
     },
     {
@@ -287,67 +287,67 @@
         "Açıklama": "30-210 bar, 350 bar, NG6-P HATTI",
         "Fiyat": "178,14",
         "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Steed Basınç Sensörleri.pdf",
+        "Kaynak_Dosya": "Steed Hydraulic Technology.pdf",
         "Sayfa": "45"
     },
     {
         "Ana_Baslik": "HİDROLİK MODÜLER BASINÇ ŞALTERİ",
-        "Alt_Baslik": "MJCS-02-SC",
+        "Alt_Baslik": "MJCS-02L-SC",
         "Malzeme_Kodu": "MJCS-02AL-SC",
         "Açıklama": "15-60 bar, 210 bar, NG6-A HATTI",
         "Fiyat": "178,14",
         "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Steed Basınç Sensörleri.pdf",
+        "Kaynak_Dosya": "Steed Hydraulic Technology.pdf",
         "Sayfa": "45"
     },
     {
         "Ana_Baslik": "HİDROLİK MODÜLER BASINÇ ŞALTERİ",
-        "Alt_Baslik": "MJCS-02-SC",
+        "Alt_Baslik": "MJCS-02L-SC",
         "Malzeme_Kodu": "MJCS-02BL-SC",
         "Açıklama": "15-60 bar, 210 bar, NG6-B HATTI",
         "Fiyat": "178,14",
         "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Steed Basınç Sensörleri.pdf",
+        "Kaynak_Dosya": "Steed Hydraulic Technology.pdf",
         "Sayfa": "45"
     },
     {
         "Ana_Baslik": "HİDROLİK MODÜLER BASINÇ ŞALTERİ",
-        "Alt_Baslik": "MJCS-02-SC",
+        "Alt_Baslik": "MJCS-02L-SC",
         "Malzeme_Kodu": "MJCS-02PL-SC",
         "Açıklama": "15-60 bar, 210 bar, NG6-P HATTI",
         "Fiyat": "178,14",
         "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Steed Basınç Sensörleri.pdf",
+        "Kaynak_Dosya": "Steed Hydraulic Technology.pdf",
         "Sayfa": "45"
     },
     {
         "Ana_Baslik": "HİDROLİK MODÜLER BASINÇ ŞALTERİ",
-        "Alt_Baslik": "MJCS-02-SC",
+        "Alt_Baslik": "MJCS-02LL-SC",
         "Malzeme_Kodu": "MJCS-02ALL-SC",
         "Açıklama": "5-40 bar, 60 bar, NG6-A HATTI",
         "Fiyat": "178,14",
         "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Steed Basınç Sensörleri.pdf",
+        "Kaynak_Dosya": "Steed Hydraulic Technology.pdf",
         "Sayfa": "45"
     },
     {
         "Ana_Baslik": "HİDROLİK MODÜLER BASINÇ ŞALTERİ",
-        "Alt_Baslik": "MJCS-02-SC",
+        "Alt_Baslik": "MJCS-02LL-SC",
         "Malzeme_Kodu": "MJCS-02BLL-SC",
         "Açıklama": "5-40 bar, 60 bar, NG6-B HATTI",
         "Fiyat": "178,14",
         "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Steed Basınç Sensörleri.pdf",
+        "Kaynak_Dosya": "Steed Hydraulic Technology.pdf",
         "Sayfa": "45"
     },
     {
         "Ana_Baslik": "HİDROLİK MODÜLER BASINÇ ŞALTERİ",
-        "Alt_Baslik": "MJCS-02-SC",
+        "Alt_Baslik": "MJCS-02LL-SC",
         "Malzeme_Kodu": "MJCS-02PLL-SC",
         "Açıklama": "5-40 bar, 60 bar, NG6-P HATTI",
         "Fiyat": "178,14",
         "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Steed Basınç Sensörleri.pdf",
+        "Kaynak_Dosya": "Steed Hydraulic Technology.pdf",
         "Sayfa": "45"
     }
 ]
