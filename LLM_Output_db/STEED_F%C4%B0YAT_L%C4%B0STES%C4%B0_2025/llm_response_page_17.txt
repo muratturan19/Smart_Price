@@ -1,136 +1,124 @@
 ```json
 [
-    {
-        "Ana_Baslik": "LOJİK ELEMANLAR",
-        "Alt_Baslik": "LO-A-02",
-        "Malzeme_Kodu": "L02A-XDN",
-        "Açıklama": "T11A",
-        "Debi": "80",
-        "Fiyat": "75,07",
-        "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
-        "Sayfa": "17"
-    },
-    {
-        "Ana_Baslik": "LOJİK ELEMANLAR",
-        "Alt_Baslik": "LO-A-02",
-        "Malzeme_Kodu": "L03A-XDN",
-        "Açıklama": "T12A",
-        "Debi": "160",
-        "Fiyat": "107,64",
-        "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
-        "Sayfa": "17"
-    },
-    {
-        "Ana_Baslik": "LOJİK ELEMANLAR",
-        "Alt_Baslik": "LO-A-02",
-        "Malzeme_Kodu": "L06A-XDN",
-        "Açıklama": "T17A",
-        "Debi": "320",
-        "Fiyat": "195,43",
-        "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
-        "Sayfa": "17"
-    },
-    {
-        "Ana_Baslik": "LOJİK ELEMANLAR",
-        "Alt_Baslik": "LO-A-02",
-        "Malzeme_Kodu": "L08A-XDN",
-        "Açıklama": "T19A",
-        "Debi": "640",
-        "Fiyat": "355,08",
-        "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
-        "Sayfa": "17"
-    },
-    {
-        "Ana_Baslik": "LOJİK ELEMANLAR",
-        "Alt_Baslik": "LO-B-02",
-        "Malzeme_Kodu": "L02B-XDN",
-        "Açıklama": "T11A",
-        "Debi": "80",
-        "Fiyat": "75,07",
-        "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
-        "Sayfa": "17"
-    },
-    {
-        "Ana_Baslik": "LOJİK ELEMANLAR",
-        "Alt_Baslik": "LO-B-02",
-        "Malzeme_Kodu": "L03B-XDN",
-        "Açıklama": "T12A",
-        "Debi": "160",
-        "Fiyat": "107,64",
-        "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
-        "Sayfa": "17"
-    },
-    {
-        "Ana_Baslik": "LOJİK ELEMANLAR",
-        "Alt_Baslik": "LO-B-02",
-        "Malzeme_Kodu": "L06B-XDN",
-        "Açıklama": "T17A",
-        "Debi": "320",
-        "Fiyat": "195,43",
-        "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
-        "Sayfa": "17"
-    },
-    {
-        "Ana_Baslik": "LOJİK ELEMANLAR",
-        "Alt_Baslik": "LO-B-02",
-        "Malzeme_Kodu": "L08B-XDN",
-        "Açıklama": "T19A",
-        "Debi": "640",
-        "Fiyat": "355,08",
-        "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
-        "Sayfa": "17"
-    },
-    {
-        "Ana_Baslik": "LOJİK ELEMANLAR",
-        "Alt_Baslik": "LO-C-02",
-        "Malzeme_Kodu": "L02C-XDN",
-        "Açıklama": "T11A",
-        "Debi": "80",
-        "Fiyat": "75,07",
-        "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
-        "Sayfa": "17"
-    },
-    {
-        "Ana_Baslik": "LOJİK ELEMANLAR",
-        "Alt_Baslik": "LO-C-02",
-        "Malzeme_Kodu": "L03C-XDN",
-        "Açıklama": "T12A",
-        "Debi": "160",
-        "Fiyat": "107,64",
-        "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
-        "Sayfa": "17"
-    },
-    {
-        "Ana_Baslik": "LOJİK ELEMANLAR",
-        "Alt_Baslik": "LO-C-02",
-        "Malzeme_Kodu": "L06C-XDN",
-        "Açıklama": "T17A",
-        "Debi": "320",
-        "Fiyat": "195,43",
-        "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
-        "Sayfa": "17"
-    },
-    {
-        "Ana_Baslik": "LOJİK ELEMANLAR",
-        "Alt_Baslik": "LO-C-02",
-        "Malzeme_Kodu": "L08C-XDN",
-        "Açıklama": "T19A",
-        "Debi": "640",
-        "Fiyat": "355,08",
-        "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
-        "Sayfa": "17"
-    }
+  {
+    "Ana_Baslik": "LOJİK ELEMANLAR",
+    "Alt_Baslik": "LO-DA",
+    "Malzeme_Kodu": "L02A-XDN",
+    "Açıklama": "T11A",
+    "Fiyat": "75.07",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+    "Sayfa": "17"
+  },
+  {
+    "Ana_Baslik": "LOJİK ELEMANLAR",
+    "Alt_Baslik": "LO-DA",
+    "Malzeme_Kodu": "L03A-XDN",
+    "Açıklama": "T12A",
+    "Fiyat": "107.64",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+    "Sayfa": "17"
+  },
+  {
+    "Ana_Baslik": "LOJİK ELEMANLAR",
+    "Alt_Baslik": "LO-DA",
+    "Malzeme_Kodu": "L06A-XDN",
+    "Açıklama": "T17A",
+    "Fiyat": "195.43",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+    "Sayfa": "17"
+  },
+  {
+    "Ana_Baslik": "LOJİK ELEMANLAR",
+    "Alt_Baslik": "LO-DA",
+    "Malzeme_Kodu": "L08A-XDN",
+    "Açıklama": "T19A",
+    "Fiyat": "355.08",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+    "Sayfa": "17"
+  },
+  {
+    "Ana_Baslik": "LOJİK ELEMANLAR",
+    "Alt_Baslik": "LO-DB",
+    "Malzeme_Kodu": "L02B-XDN",
+    "Açıklama": "T11A",
+    "Fiyat": "75.07",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+    "Sayfa": "17"
+  },
+  {
+    "Ana_Baslik": "LOJİK ELEMANLAR",
+    "Alt_Baslik": "LO-DB",
+    "Malzeme_Kodu": "L03B-XDN",
+    "Açıklama": "T12A",
+    "Fiyat": "107.64",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+    "Sayfa": "17"
+  },
+  {
+    "Ana_Baslik": "LOJİK ELEMANLAR",
+    "Alt_Baslik": "LO-DB",
+    "Malzeme_Kodu": "L06B-XDN",
+    "Açıklama": "T17A",
+    "Fiyat": "195.43",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+    "Sayfa": "17"
+  },
+  {
+    "Ana_Baslik": "LOJİK ELEMANLAR",
+    "Alt_Baslik": "LO-DB",
+    "Malzeme_Kodu": "L08B-XDN",
+    "Açıklama": "T19A",
+    "Fiyat": "355.08",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+    "Sayfa": "17"
+  },
+  {
+    "Ana_Baslik": "LOJİK ELEMANLAR",
+    "Alt_Baslik": "LO-DC",
+    "Malzeme_Kodu": "L02C-XDN",
+    "Açıklama": "T11A",
+    "Fiyat": "75.07",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+    "Sayfa": "17"
+  },
+  {
+    "Ana_Baslik": "LOJİK ELEMANLAR",
+    "Alt_Baslik": "LO-DC",
+    "Malzeme_Kodu": "L03C-XDN",
+    "Açıklama": "T12A",
+    "Fiyat": "107.64",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+    "Sayfa": "17"
+  },
+  {
+    "Ana_Baslik": "LOJİK ELEMANLAR",
+    "Alt_Baslik": "LO-DC",
+    "Malzeme_Kodu": "L06C-XDN",
+    "Açıklama": "T17A",
+    "Fiyat": "195.43",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+    "Sayfa": "17"
+  },
+  {
+    "Ana_Baslik": "LOJİK ELEMANLAR",
+    "Alt_Baslik": "LO-DC",
+    "Malzeme_Kodu": "L08C-XDN",
+    "Açıklama": "T19A",
+    "Fiyat": "355.08",
+    "Para_Birimi": "USD",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+    "Sayfa": "17"
+  }
 ]
 ```
