@@ -1,278 +1,304 @@
 ```json
 [
-  {
-    "Ana_Baslik": "BASINÇ ŞALTERİ - HİDROELEKTRİK TİP",
-    "Alt_Baslik": "MJCDS-01-SC",
-    "Malzeme_Kodu": "MJCDS-01-SC",
-    "Açıklama": "SC, 10-250 bar, 350 bar",
-    "Fiyat": "131,40",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Steed Basınç Şalteri Fiyat Listesi.pdf",
-    "Sayfa": "44"
-  },
-  {
-    "Ana_Baslik": "BASINÇ ŞALTERİ - HİDROELEKTRİK TİP",
-    "Alt_Baslik": "MJCDS-01-L-SC",
-    "Malzeme_Kodu": "MJCDS-01-L-SC",
-    "Açıklama": "SC, 5-60 bar, 200 bar",
-    "Fiyat": "131,40",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Steed Basınç Şalteri Fiyat Listesi.pdf",
-    "Sayfa": "44"
-  },
-  {
-    "Ana_Baslik": "BASINÇ ŞALTERİ - HİDROELEKTRİK TİP",
-    "Alt_Baslik": "MJCDS-01",
-    "Malzeme_Kodu": "MJCDS-01",
-    "Açıklama": "10-250 bar, 350 bar",
-    "Fiyat": "113,74",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Steed Basınç Şalteri Fiyat Listesi.pdf",
-    "Sayfa": "44"
-  },
-  {
-    "Ana_Baslik": "BASINÇ ŞALTERİ - HİDROELEKTRİK TİP",
-    "Alt_Baslik": "MJCDS-01-L",
-    "Malzeme_Kodu": "MJCDS-01-L",
-    "Açıklama": "5-60 bar, 200 bar",
-    "Fiyat": "113,74",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Steed Basınç Şalteri Fiyat Listesi.pdf",
-    "Sayfa": "44"
-  },
-  {
-    "Ana_Baslik": "BASINÇ ŞALTERİ - DİJİTAL TİP",
-    "Malzeme_Kodu": "DPS",
-    "Açıklama": "5 PSI",
-    "Fiyat": "334,21",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Steed Basınç Şalteri Fiyat Listesi.pdf",
-    "Sayfa": "44"
-  },
-  {
-    "Ana_Baslik": "BASINÇ ŞALTERİ - DİJİTAL TİP",
-    "Malzeme_Kodu": "DPS",
-    "Açıklama": "15 PSI",
-    "Fiyat": "334,21",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Steed Basınç Şalteri Fiyat Listesi.pdf",
-    "Sayfa": "44"
-  },
-  {
-    "Ana_Baslik": "BASINÇ ŞALTERİ - DİJİTAL TİP",
-    "Malzeme_Kodu": "DPS",
-    "Açıklama": "50 PSI",
-    "Fiyat": "334,21",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Steed Basınç Şalteri Fiyat Listesi.pdf",
-    "Sayfa": "44"
-  },
-  {
-    "Ana_Baslik": "BASINÇ ŞALTERİ - DİJİTAL TİP",
-    "Malzeme_Kodu": "DPS",
-    "Açıklama": "75 PSI",
-    "Fiyat": "334,21",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Steed Basınç Şalteri Fiyat Listesi.pdf",
-    "Sayfa": "44"
-  },
-  {
-    "Ana_Baslik": "BASINÇ ŞALTERİ - DİJİTAL TİP",
-    "Malzeme_Kodu": "DPS",
-    "Açıklama": "100 PSI",
-    "Fiyat": "334,21",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Steed Basınç Şalteri Fiyat Listesi.pdf",
-    "Sayfa": "44"
-  },
-  {
-    "Ana_Baslik": "BASINÇ ŞALTERİ - DİJİTAL TİP",
-    "Malzeme_Kodu": "DPS",
-    "Açıklama": "200 PSI",
-    "Fiyat": "334,21",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Steed Basınç Şalteri Fiyat Listesi.pdf",
-    "Sayfa": "44"
-  },
-  {
-    "Ana_Baslik": "BASINÇ ŞALTERİ - DİJİTAL TİP",
-    "Malzeme_Kodu": "DPS",
-    "Açıklama": "300 PSI",
-    "Fiyat": "334,21",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Steed Basınç Şalteri Fiyat Listesi.pdf",
-    "Sayfa": "44"
-  },
-  {
-    "Ana_Baslik": "BASINÇ ŞALTERİ - DİJİTAL TİP",
-    "Malzeme_Kodu": "DPS",
-    "Açıklama": "500 PSI",
-    "Fiyat": "334,21",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Steed Basınç Şalteri Fiyat Listesi.pdf",
-    "Sayfa": "44"
-  },
-  {
-    "Ana_Baslik": "BASINÇ ŞALTERİ - DİJİTAL TİP",
-    "Malzeme_Kodu": "DPS",
-    "Açıklama": "750 PSI",
-    "Fiyat": "334,21",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Steed Basınç Şalteri Fiyat Listesi.pdf",
-    "Sayfa": "44"
-  },
-  {
-    "Ana_Baslik": "BASINÇ ŞALTERİ - DİJİTAL TİP",
-    "Malzeme_Kodu": "DPS",
-    "Açıklama": "1000 PSI",
-    "Fiyat": "334,21",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Steed Basınç Şalteri Fiyat Listesi.pdf",
-    "Sayfa": "44"
-  },
-  {
-    "Ana_Baslik": "BASINÇ ŞALTERİ - DİJİTAL TİP",
-    "Malzeme_Kodu": "DPS",
-    "Açıklama": "1500 PSI",
-    "Fiyat": "334,21",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Steed Basınç Şalteri Fiyat Listesi.pdf",
-    "Sayfa": "44"
-  },
-  {
-    "Ana_Baslik": "BASINÇ ŞALTERİ - DİJİTAL TİP",
-    "Malzeme_Kodu": "DPS",
-    "Açıklama": "2000 PSI",
-    "Fiyat": "334,21",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Steed Basınç Şalteri Fiyat Listesi.pdf",
-    "Sayfa": "44"
-  },
-  {
-    "Ana_Baslik": "BASINÇ ŞALTERİ - DİJİTAL TİP",
-    "Malzeme_Kodu": "DPS",
-    "Açıklama": "3000 PSI",
-    "Fiyat": "334,21",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Steed Basınç Şalteri Fiyat Listesi.pdf",
-    "Sayfa": "44"
-  },
-  {
-    "Ana_Baslik": "BASINÇ ŞALTERİ - DİJİTAL TİP",
-    "Malzeme_Kodu": "DPS",
-    "Açıklama": "5000 PSI",
-    "Fiyat": "334,21",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Steed Basınç Şalteri Fiyat Listesi.pdf",
-    "Sayfa": "44"
-  },
-  {
-    "Ana_Baslik": "BASINÇ ŞALTERİ - DİJİTAL TİP",
-    "Malzeme_Kodu": "JC-DPS-N",
-    "Açıklama": "1/4\" PT, 150 bar",
-    "Fiyat": "307,99",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Steed Basınç Şalteri Fiyat Listesi.pdf",
-    "Sayfa": "44"
-  },
-  {
-    "Ana_Baslik": "BASINÇ ŞALTERİ - DİJİTAL TİP",
-    "Malzeme_Kodu": "JC-DPS-N",
-    "Açıklama": "1/4\" NPT, 150 bar",
-    "Fiyat": "307,99",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Steed Basınç Şalteri Fiyat Listesi.pdf",
-    "Sayfa": "44"
-  },
-  {
-    "Ana_Baslik": "BASINÇ ŞALTERİ - DİJİTAL TİP",
-    "Malzeme_Kodu": "JC-DPS-N",
-    "Açıklama": "1/4\" BSPP, 150 bar",
-    "Fiyat": "307,99",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Steed Basınç Şalteri Fiyat Listesi.pdf",
-    "Sayfa": "44"
-  },
-  {
-    "Ana_Baslik": "BASINÇ ŞALTERİ - DİJİTAL TİP",
-    "Malzeme_Kodu": "JC-DPS-N",
-    "Açıklama": "1/4\" PT, 250 bar",
-    "Fiyat": "307,99",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Steed Basınç Şalteri Fiyat Listesi.pdf",
-    "Sayfa": "44"
-  },
-  {
-    "Ana_Baslik": "BASINÇ ŞALTERİ - DİJİTAL TİP",
-    "Malzeme_Kodu": "JC-DPS-N",
-    "Açıklama": "1/4\" NPT, 250 bar",
-    "Fiyat": "307,99",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Steed Basınç Şalteri Fiyat Listesi.pdf",
-    "Sayfa": "44"
-  },
-  {
-    "Ana_Baslik": "BASINÇ ŞALTERİ - DİJİTAL TİP",
-    "Malzeme_Kodu": "JC-DPS-N",
-    "Açıklama": "1/4\" BSPP, 250 bar",
-    "Fiyat": "307,99",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Steed Basınç Şalteri Fiyat Listesi.pdf",
-    "Sayfa": "44"
-  },
-  {
-    "Ana_Baslik": "BASINÇ ŞALTERİ - DİJİTAL TİP",
-    "Malzeme_Kodu": "JC-DPS-N",
-    "Açıklama": "1/4\" PT, 350 bar",
-    "Fiyat": "307,99",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Steed Basınç Şalteri Fiyat Listesi.pdf",
-    "Sayfa": "44"
-  },
-  {
-    "Ana_Baslik": "BASINÇ ŞALTERİ - DİJİTAL TİP",
-    "Malzeme_Kodu": "JC-DPS-N",
-    "Açıklama": "1/4\" NPT, 350 bar",
-    "Fiyat": "307,99",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Steed Basınç Şalteri Fiyat Listesi.pdf",
-    "Sayfa": "44"
-  },
-  {
-    "Ana_Baslik": "BASINÇ ŞALTERİ - DİJİTAL TİP",
-    "Malzeme_Kodu": "JC-DPS-N",
-    "Açıklama": "1/4\" BSPP, 350 bar",
-    "Fiyat": "307,99",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Steed Basınç Şalteri Fiyat Listesi.pdf",
-    "Sayfa": "44"
-  },
-  {
-    "Ana_Baslik": "BASINÇ ŞALTERİ - DİJİTAL TİP",
-    "Malzeme_Kodu": "JC-DPS-N",
-    "Açıklama": "1/4\" PT, 420 bar",
-    "Fiyat": "307,99",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Steed Basınç Şalteri Fiyat Listesi.pdf",
-    "Sayfa": "44"
-  },
-  {
-    "Ana_Baslik": "BASINÇ ŞALTERİ - DİJİTAL TİP",
-    "Malzeme_Kodu": "JC-DPS-N",
-    "Açıklama": "1/4\" NPT, 420 bar",
-    "Fiyat": "307,99",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Steed Basınç Şalteri Fiyat Listesi.pdf",
-    "Sayfa": "44"
-  },
-  {
-    "Ana_Baslik": "BASINÇ ŞALTERİ - DİJİTAL TİP",
-    "Malzeme_Kodu": "JC-DPS-N",
-    "Açıklama": "1/4\" BSPP, 420 bar",
-    "Fiyat": "307,99",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Steed Basınç Şalteri Fiyat Listesi.pdf",
-    "Sayfa": "44"
-  }
+    {
+        "Ana_Baslik": "BASINÇ ŞALTERİ - HİDROELEKTRİK TİP",
+        "Alt_Baslik": "MJCDS-01-SC",
+        "Malzeme_Kodu": "MJCDS-01-SC",
+        "Açıklama": "SC, 10-250 bar, 350 bar",
+        "Fiyat": "131,40",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "44"
+    },
+    {
+        "Ana_Baslik": "BASINÇ ŞALTERİ - HİDROELEKTRİK TİP",
+        "Alt_Baslik": "MJCDS-01-L-SC",
+        "Malzeme_Kodu": "MJCDS-01-L-SC",
+        "Açıklama": "SC, 5-60 bar, 200 bar",
+        "Fiyat": "131,40",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "44"
+    },
+    {
+        "Ana_Baslik": "BASINÇ ŞALTERİ - HİDROELEKTRİK TİP",
+        "Alt_Baslik": "MJCDS-01",
+        "Malzeme_Kodu": "MJCDS-01",
+        "Açıklama": "10-250 bar, 350 bar",
+        "Fiyat": "113,74",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "44"
+    },
+    {
+        "Ana_Baslik": "BASINÇ ŞALTERİ - HİDROELEKTRİK TİP",
+        "Alt_Baslik": "MJCDS-01-L",
+        "Malzeme_Kodu": "MJCDS-01-L",
+        "Açıklama": "5-60 bar, 200 bar",
+        "Fiyat": "113,74",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "44"
+    },
+    {
+        "Ana_Baslik": "BASINÇ ŞALTERİ - DİJİTAL TİP",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "DPS",
+        "Açıklama": "5 PSI",
+        "Fiyat": "334,21",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "44"
+    },
+    {
+        "Ana_Baslik": "BASINÇ ŞALTERİ - DİJİTAL TİP",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "DPS",
+        "Açıklama": "15 PSI",
+        "Fiyat": "334,21",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "44"
+    },
+    {
+        "Ana_Baslik": "BASINÇ ŞALTERİ - DİJİTAL TİP",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "DPS",
+        "Açıklama": "50 PSI",
+        "Fiyat": "334,21",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "44"
+    },
+    {
+        "Ana_Baslik": "BASINÇ ŞALTERİ - DİJİTAL TİP",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "DPS",
+        "Açıklama": "75 PSI",
+        "Fiyat": "334,21",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "44"
+    },
+    {
+        "Ana_Baslik": "BASINÇ ŞALTERİ - DİJİTAL TİP",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "DPS",
+        "Açıklama": "100 PSI",
+        "Fiyat": "334,21",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "44"
+    },
+    {
+        "Ana_Baslik": "BASINÇ ŞALTERİ - DİJİTAL TİP",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "DPS",
+        "Açıklama": "200 PSI",
+        "Fiyat": "334,21",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "44"
+    },
+    {
+        "Ana_Baslik": "BASINÇ ŞALTERİ - DİJİTAL TİP",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "DPS",
+        "Açıklama": "300 PSI",
+        "Fiyat": "334,21",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "44"
+    },
+    {
+        "Ana_Baslik": "BASINÇ ŞALTERİ - DİJİTAL TİP",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "DPS",
+        "Açıklama": "500 PSI",
+        "Fiyat": "334,21",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "44"
+    },
+    {
+        "Ana_Baslik": "BASINÇ ŞALTERİ - DİJİTAL TİP",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "DPS",
+        "Açıklama": "750 PSI",
+        "Fiyat": "334,21",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "44"
+    },
+    {
+        "Ana_Baslik": "BASINÇ ŞALTERİ - DİJİTAL TİP",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "DPS",
+        "Açıklama": "1000 PSI",
+        "Fiyat": "334,21",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "44"
+    },
+    {
+        "Ana_Baslik": "BASINÇ ŞALTERİ - DİJİTAL TİP",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "DPS",
+        "Açıklama": "1500 PSI",
+        "Fiyat": "334,21",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "44"
+    },
+    {
+        "Ana_Baslik": "BASINÇ ŞALTERİ - DİJİTAL TİP",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "DPS",
+        "Açıklama": "2000 PSI",
+        "Fiyat": "334,21",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "44"
+    },
+    {
+        "Ana_Baslik": "BASINÇ ŞALTERİ - DİJİTAL TİP",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "DPS",
+        "Açıklama": "3000 PSI",
+        "Fiyat": "334,21",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "44"
+    },
+    {
+        "Ana_Baslik": "BASINÇ ŞALTERİ - DİJİTAL TİP",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "DPS",
+        "Açıklama": "5000 PSI",
+        "Fiyat": "334,21",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "44"
+    },
+    {
+        "Ana_Baslik": "BASINÇ ŞALTERİ - DİJİTAL TİP",
+        "Alt_Baslik": "JC-DPS-N",
+        "Malzeme_Kodu": "JC-DPS-N",
+        "Açıklama": "1/4\" PT, 150 bar",
+        "Fiyat": "307,99",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "44"
+    },
+    {
+        "Ana_Baslik": "BASINÇ ŞALTERİ - DİJİTAL TİP",
+        "Alt_Baslik": "JC-DPS-N",
+        "Malzeme_Kodu": "JC-DPS-N",
+        "Açıklama": "1/4\" NPT, 150 bar",
+        "Fiyat": "307,99",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "44"
+    },
+    {
+        "Ana_Baslik": "BASINÇ ŞALTERİ - DİJİTAL TİP",
+        "Alt_Baslik": "JC-DPS-N",
+        "Malzeme_Kodu": "JC-DPS-N",
+        "Açıklama": "1/4\" BSPP, 150 bar",
+        "Fiyat": "307,99",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "44"
+    },
+    {
+        "Ana_Baslik": "BASINÇ ŞALTERİ - DİJİTAL TİP",
+        "Alt_Baslik": "JC-DPS-N",
+        "Malzeme_Kodu": "JC-DPS-N",
+        "Açıklama": "1/4\" PT, 250 bar",
+        "Fiyat": "307,99",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "44"
+    },
+    {
+        "Ana_Baslik": "BASINÇ ŞALTERİ - DİJİTAL TİP",
+        "Alt_Baslik": "JC-DPS-N",
+        "Malzeme_Kodu": "JC-DPS-N",
+        "Açıklama": "1/4\" NPT, 250 bar",
+        "Fiyat": "307,99",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "44"
+    },
+    {
+        "Ana_Baslik": "BASINÇ ŞALTERİ - DİJİTAL TİP",
+        "Alt_Baslik": "JC-DPS-N",
+        "Malzeme_Kodu": "JC-DPS-N",
+        "Açıklama": "1/4\" BSPP, 250 bar",
+        "Fiyat": "307,99",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "44"
+    },
+    {
+        "Ana_Baslik": "BASINÇ ŞALTERİ - DİJİTAL TİP",
+        "Alt_Baslik": "JC-DPS-N",
+        "Malzeme_Kodu": "JC-DPS-N",
+        "Açıklama": "1/4\" PT, 350 bar",
+        "Fiyat": "307,99",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "44"
+    },
+    {
+        "Ana_Baslik": "BASINÇ ŞALTERİ - DİJİTAL TİP",
+        "Alt_Baslik": "JC-DPS-N",
+        "Malzeme_Kodu": "JC-DPS-N",
+        "Açıklama": "1/4\" NPT, 350 bar",
+        "Fiyat": "307,99",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "44"
+    },
+    {
+        "Ana_Baslik": "BASINÇ ŞALTERİ - DİJİTAL TİP",
+        "Alt_Baslik": "JC-DPS-N",
+        "Malzeme_Kodu": "JC-DPS-N",
+        "Açıklama": "1/4\" BSPP, 350 bar",
+        "Fiyat": "307,99",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "44"
+    },
+    {
+        "Ana_Baslik": "BASINÇ ŞALTERİ - DİJİTAL TİP",
+        "Alt_Baslik": "JC-DPS-N",
+        "Malzeme_Kodu": "JC-DPS-N",
+        "Açıklama": "1/4\" PT, 420 bar",
+        "Fiyat": "307,99",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "44"
+    },
+    {
+        "Ana_Baslik": "BASINÇ ŞALTERİ - DİJİTAL TİP",
+        "Alt_Baslik": "JC-DPS-N",
+        "Malzeme_Kodu": "JC-DPS-N",
+        "Açıklama": "1/4\" NPT, 420 bar",
+        "Fiyat": "307,99",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "44"
+    },
+    {
+        "Ana_Baslik": "BASINÇ ŞALTERİ - DİJİTAL TİP",
+        "Alt_Baslik": "JC-DPS-N",
+        "Malzeme_Kodu": "JC-DPS-N",
+        "Açıklama": "1/4\" BSPP, 420 bar",
+        "Fiyat": "307,99",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Steed Hydraulic Fiyat Listesi.pdf",
+        "Sayfa": "44"
+    }
 ]
 ```
