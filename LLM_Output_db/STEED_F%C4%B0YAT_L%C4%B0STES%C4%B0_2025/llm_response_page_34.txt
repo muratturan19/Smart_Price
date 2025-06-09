@@ -2,6 +2,7 @@
 [
   {
     "Ana_Baslik": "SABİT DEPLASMANLI TANDEM PALETLİ POMPA",
+    "Alt_Baslik": null,
     "Malzeme_Kodu": "DVQ 2215",
     "Açıklama": "P1: 18 cc/dev, P2: 6 cc/dev, P3: 6 cc/dev",
     "Fiyat": "3,198.78",
@@ -11,6 +12,7 @@
   },
   {
     "Ana_Baslik": "SABİT DEPLASMANLI TANDEM PALETLİ POMPA",
+    "Alt_Baslik": null,
     "Malzeme_Kodu": "DVQ 2215",
     "Açıklama": "P1: 22 cc/dev, P2: 8 cc/dev, P3: 8 cc/dev",
     "Fiyat": "3,198.78",
@@ -20,6 +22,7 @@
   },
   {
     "Ana_Baslik": "SABİT DEPLASMANLI TANDEM PALETLİ POMPA",
+    "Alt_Baslik": null,
     "Malzeme_Kodu": "DVQ 2215",
     "Açıklama": "P1: 26 cc/dev, P2: 11 cc/dev, P3: 11 cc/dev",
     "Fiyat": "3,198.78",
@@ -29,6 +32,7 @@
   },
   {
     "Ana_Baslik": "SABİT DEPLASMANLI TANDEM PALETLİ POMPA",
+    "Alt_Baslik": null,
     "Malzeme_Kodu": "DVQ 2215",
     "Açıklama": "P1: 32 cc/dev, P2: 14 cc/dev, P3: 14 cc/dev",
     "Fiyat": "3,198.78",
@@ -38,6 +42,7 @@
   },
   {
     "Ana_Baslik": "SABİT DEPLASMANLI TANDEM PALETLİ POMPA",
+    "Alt_Baslik": null,
     "Malzeme_Kodu": "DVQ 2215",
     "Açıklama": "P1: 38 cc/dev, P2: 17 cc/dev, P3: 17 cc/dev",
     "Fiyat": "3,198.78",
@@ -47,6 +52,7 @@
   },
   {
     "Ana_Baslik": "SABİT DEPLASMANLI TANDEM PALETLİ POMPA",
+    "Alt_Baslik": null,
     "Malzeme_Kodu": "DVQ 2215",
     "Açıklama": "P1: 43 cc/dev, P2: 19 cc/dev, P3: 19 cc/dev",
     "Fiyat": "3,198.78",
@@ -56,6 +62,7 @@
   },
   {
     "Ana_Baslik": "SABİT DEPLASMANLI TANDEM PALETLİ POMPA",
+    "Alt_Baslik": null,
     "Malzeme_Kodu": "DVQ 2215",
     "Açıklama": "P1: 47 cc/dev, P2: 23 cc/dev, P3: 23 cc/dev",
     "Fiyat": "3,198.78",
@@ -65,6 +72,7 @@
   },
   {
     "Ana_Baslik": "SABİT DEPLASMANLI TANDEM PALETLİ POMPA",
+    "Alt_Baslik": null,
     "Malzeme_Kodu": "DVQ 2215",
     "Açıklama": "P1: 52 cc/dev, P2: 26 cc/dev, P3: 26 cc/dev",
     "Fiyat": "3,198.78",
@@ -74,6 +82,7 @@
   },
   {
     "Ana_Baslik": "SABİT DEPLASMANLI TANDEM PALETLİ POMPA",
+    "Alt_Baslik": null,
     "Malzeme_Kodu": "DVQ 2215",
     "Açıklama": "P1: 60 cc/dev, P2: 32 cc/dev, P3: 31 cc/dev",
     "Fiyat": "3,198.78",
@@ -83,6 +92,7 @@
   },
   {
     "Ana_Baslik": "SABİT DEPLASMANLI TANDEM PALETLİ POMPA",
+    "Alt_Baslik": null,
     "Malzeme_Kodu": "DVQ 2215",
     "Açıklama": "P1: 65 cc/dev, P2: 34 cc/dev",
     "Fiyat": "3,198.78",
@@ -92,6 +102,7 @@
   },
   {
     "Ana_Baslik": "SABİT DEPLASMANLI TANDEM PALETLİ POMPA",
+    "Alt_Baslik": null,
     "Malzeme_Kodu": "DVQ 4325",
     "Açıklama": "P1: 136 cc/dev, P2: 60 cc/dev, P3: 18 cc/dev",
     "Fiyat": "7,039.49",
@@ -101,6 +112,7 @@
   },
   {
     "Ana_Baslik": "SABİT DEPLASMANLI TANDEM PALETLİ POMPA",
+    "Alt_Baslik": null,
     "Malzeme_Kodu": "DVQ 4325",
     "Açıklama": "P1: 156 cc/dev, P2: 66 cc/dev, P3: 22 cc/dev",
     "Fiyat": "7,039.49",
@@ -110,6 +122,7 @@
   },
   {
     "Ana_Baslik": "SABİT DEPLASMANLI TANDEM PALETLİ POMPA",
+    "Alt_Baslik": null,
     "Malzeme_Kodu": "DVQ 4325",
     "Açıklama": "P1: 189 cc/dev, P2: 76 cc/dev, P3: 26 cc/dev",
     "Fiyat": "7,039.49",
@@ -119,6 +132,7 @@
   },
   {
     "Ana_Baslik": "SABİT DEPLASMANLI TANDEM PALETLİ POMPA",
+    "Alt_Baslik": null,
     "Malzeme_Kodu": "DVQ 4325",
     "Açıklama": "P1: 200 cc/dev, P2: 82 cc/dev, P3: 32 cc/dev",
     "Fiyat": "7,039.49",
@@ -128,6 +142,7 @@
   },
   {
     "Ana_Baslik": "SABİT DEPLASMANLI TANDEM PALETLİ POMPA",
+    "Alt_Baslik": null,
     "Malzeme_Kodu": "DVQ 4325",
     "Açıklama": "P1: 216 cc/dev, P2: 88 cc/dev, P3: 38 cc/dev",
     "Fiyat": "7,039.49",
@@ -137,6 +152,7 @@
   },
   {
     "Ana_Baslik": "SABİT DEPLASMANLI TANDEM PALETLİ POMPA",
+    "Alt_Baslik": null,
     "Malzeme_Kodu": "DVQ 4325",
     "Açıklama": "P1: 237 cc/dev, P2: 94 cc/dev, P3: 43 cc/dev",
     "Fiyat": "7,039.49",
@@ -146,6 +162,7 @@
   },
   {
     "Ana_Baslik": "SABİT DEPLASMANLI TANDEM PALETLİ POMPA",
+    "Alt_Baslik": null,
     "Malzeme_Kodu": "DVQ 4325",
     "Açıklama": "P1: 108 cc/dev, P2: 47 cc/dev",
     "Fiyat": "7,039.49",
@@ -155,6 +172,7 @@
   },
   {
     "Ana_Baslik": "SABİT DEPLASMANLI TANDEM PALETLİ POMPA",
+    "Alt_Baslik": null,
     "Malzeme_Kodu": "DVQ 4325",
     "Açıklama": "P1: 116 cc/dev, P2: 52 cc/dev",
     "Fiyat": "7,039.49",
@@ -164,6 +182,7 @@
   },
   {
     "Ana_Baslik": "SABİT DEPLASMANLI TANDEM PALETLİ POMPA",
+    "Alt_Baslik": null,
     "Malzeme_Kodu": "DVQ 4325",
     "Açıklama": "P1: 125 cc/dev, P2: 60 cc/dev",
     "Fiyat": "7,039.49",
@@ -173,6 +192,7 @@
   },
   {
     "Ana_Baslik": "SABİT DEPLASMANLI TANDEM PALETLİ POMPA",
+    "Alt_Baslik": null,
     "Malzeme_Kodu": "DVQ 4325",
     "Açıklama": "P1: 65 cc/dev",
     "Fiyat": "7,039.49",
@@ -182,6 +202,7 @@
   },
   {
     "Ana_Baslik": "SABİT DEPLASMANLI TANDEM PALETLİ POMPA",
+    "Alt_Baslik": null,
     "Malzeme_Kodu": "DVQ 4325",
     "Açıklama": "P1: 75 cc/dev",
     "Fiyat": "7,039.49",
