@@ -7,7 +7,7 @@
         "Açıklama": null,
         "Fiyat": "2,686.87",
         "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
         "Sayfa": "38"
     },
     {
@@ -17,7 +17,7 @@
         "Açıklama": null,
         "Fiyat": "2,686.87",
         "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
         "Sayfa": "38"
     },
     {
@@ -27,7 +27,7 @@
         "Açıklama": null,
         "Fiyat": "2,686.87",
         "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
         "Sayfa": "38"
     },
     {
@@ -37,7 +37,7 @@
         "Açıklama": null,
         "Fiyat": "2,686.87",
         "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
         "Sayfa": "38"
     },
     {
@@ -47,7 +47,7 @@
         "Açıklama": null,
         "Fiyat": "2,686.87",
         "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
         "Sayfa": "38"
     },
     {
@@ -57,7 +57,7 @@
         "Açıklama": null,
         "Fiyat": "2,686.87",
         "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
         "Sayfa": "38"
     },
     {
@@ -67,7 +67,7 @@
         "Açıklama": null,
         "Fiyat": "2,686.87",
         "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
         "Sayfa": "38"
     },
     {
@@ -77,7 +77,7 @@
         "Açıklama": null,
         "Fiyat": "2,686.87",
         "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
         "Sayfa": "38"
     },
     {
@@ -87,7 +87,7 @@
         "Açıklama": null,
         "Fiyat": "2,686.87",
         "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
         "Sayfa": "38"
     },
     {
@@ -97,7 +97,7 @@
         "Açıklama": null,
         "Fiyat": "2,686.87",
         "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
         "Sayfa": "38"
     },
     {
@@ -107,7 +107,7 @@
         "Açıklama": null,
         "Fiyat": "2,686.87",
         "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
         "Sayfa": "38"
     },
     {
@@ -117,97 +117,97 @@
         "Açıklama": null,
         "Fiyat": "2,686.87",
         "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
         "Sayfa": "38"
     },
     {
-        "Ana_Baslik": "ST6E6 YÜKSEK BASINÇLI PALETLİ POMPA",
+        "Ana_Baslik": "ST6EC YÜKSEK BASINÇLI PALETLİ POMPA",
         "Alt_Baslik": null,
         "Malzeme_Kodu": "042 - (132,3 cc)",
         "Açıklama": null,
         "Fiyat": "3,610.48",
         "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
         "Sayfa": "38"
     },
     {
-        "Ana_Baslik": "ST6E6 YÜKSEK BASINÇLI PALETLİ POMPA",
+        "Ana_Baslik": "ST6EC YÜKSEK BASINÇLI PALETLİ POMPA",
         "Alt_Baslik": null,
-        "Malzeme_Kodu": "045 - (142,4 cc)",
+        "Malzeme_Kodu": "042 - (142,4 cc)",
         "Açıklama": null,
         "Fiyat": "3,610.48",
         "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
         "Sayfa": "38"
     },
     {
-        "Ana_Baslik": "ST6E6 YÜKSEK BASINÇLI PALETLİ POMPA",
+        "Ana_Baslik": "ST6EC YÜKSEK BASINÇLI PALETLİ POMPA",
         "Alt_Baslik": null,
         "Malzeme_Kodu": "050 - (158,5 cc)",
         "Açıklama": null,
         "Fiyat": "3,610.48",
         "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
         "Sayfa": "38"
     },
     {
-        "Ana_Baslik": "ST6E6 YÜKSEK BASINÇLI PALETLİ POMPA",
+        "Ana_Baslik": "ST6EC YÜKSEK BASINÇLI PALETLİ POMPA",
         "Alt_Baslik": null,
         "Malzeme_Kodu": "052 - (164,8 cc)",
         "Açıklama": null,
         "Fiyat": "3,610.48",
         "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
         "Sayfa": "38"
     },
     {
-        "Ana_Baslik": "ST6E6 YÜKSEK BASINÇLI PALETLİ POMPA",
+        "Ana_Baslik": "ST6EC YÜKSEK BASINÇLI PALETLİ POMPA",
         "Alt_Baslik": null,
         "Malzeme_Kodu": "057 - (180,7 cc)",
         "Açıklama": null,
         "Fiyat": "3,610.48",
         "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
         "Sayfa": "38"
     },
     {
-        "Ana_Baslik": "ST6E6 YÜKSEK BASINÇLI PALETLİ POMPA",
+        "Ana_Baslik": "ST6EC YÜKSEK BASINÇLI PALETLİ POMPA",
         "Alt_Baslik": null,
         "Malzeme_Kodu": "062 - (196,7 cc)",
         "Açıklama": null,
         "Fiyat": "3,610.48",
         "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
         "Sayfa": "38"
     },
     {
-        "Ana_Baslik": "ST6E6 YÜKSEK BASINÇLI PALETLİ POMPA",
+        "Ana_Baslik": "ST6EC YÜKSEK BASINÇLI PALETLİ POMPA",
         "Alt_Baslik": null,
         "Malzeme_Kodu": "066 - (213,3 cc)",
         "Açıklama": null,
         "Fiyat": "3,610.48",
         "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
         "Sayfa": "38"
     },
     {
-        "Ana_Baslik": "ST6E6 YÜKSEK BASINÇLI PALETLİ POMPA",
+        "Ana_Baslik": "ST6EC YÜKSEK BASINÇLI PALETLİ POMPA",
         "Alt_Baslik": null,
         "Malzeme_Kodu": "072 - (227,1 cc)",
         "Açıklama": null,
         "Fiyat": "3,610.48",
         "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
         "Sayfa": "38"
     },
     {
-        "Ana_Baslik": "ST6E6 YÜKSEK BASINÇLI PALETLİ POMPA",
+        "Ana_Baslik": "ST6EC YÜKSEK BASINÇLI PALETLİ POMPA",
         "Alt_Baslik": null,
         "Malzeme_Kodu": "085 - (269,8 cc)",
         "Açıklama": null,
         "Fiyat": "3,610.48",
         "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
         "Sayfa": "38"
     },
     {
@@ -217,7 +217,7 @@
         "Açıklama": null,
         "Fiyat": "8,125.62",
         "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
         "Sayfa": "38"
     },
     {
@@ -227,7 +227,7 @@
         "Açıklama": null,
         "Fiyat": "8,125.62",
         "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
         "Sayfa": "38"
     },
     {
@@ -237,7 +237,7 @@
         "Açıklama": null,
         "Fiyat": "8,125.62",
         "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
         "Sayfa": "38"
     },
     {
@@ -247,7 +247,7 @@
         "Açıklama": null,
         "Fiyat": "8,125.62",
         "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
         "Sayfa": "38"
     },
     {
@@ -257,7 +257,7 @@
         "Açıklama": null,
         "Fiyat": "8,125.62",
         "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
         "Sayfa": "38"
     },
     {
@@ -267,7 +267,7 @@
         "Açıklama": null,
         "Fiyat": "8,125.62",
         "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
         "Sayfa": "38"
     },
     {
@@ -277,7 +277,7 @@
         "Açıklama": null,
         "Fiyat": "8,125.62",
         "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
         "Sayfa": "38"
     },
     {
@@ -287,7 +287,7 @@
         "Açıklama": null,
         "Fiyat": "8,125.62",
         "Para_Birimi": "USD",
-        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
         "Sayfa": "38"
     }
 ]
