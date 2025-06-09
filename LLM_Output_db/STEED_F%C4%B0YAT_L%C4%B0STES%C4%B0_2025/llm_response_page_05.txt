@@ -1,112 +1,124 @@
 ```json
 [
-  {
-    "Ana_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFİ",
-    "Malzeme_Kodu": "RD1A-LAN",
-    "Açıklama": "AYAR ARALIĞI: 35~210 bar, KAVİTE: T16A2, DEBİ: 30 l/dk",
-    "Fiyat": "81.07",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
-    "Sayfa": "5"
-  },
-  {
-    "Ana_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFİ",
-    "Malzeme_Kodu": "RD1A-LBN",
-    "Açıklama": "AYAR ARALIĞI: 20~105 bar, KAVİTE: T16A2, DEBİ: 30 l/dk",
-    "Fiyat": "81.07",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
-    "Sayfa": "5"
-  },
-  {
-    "Ana_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFİ",
-    "Malzeme_Kodu": "RD1A-KCN",
-    "Açıklama": "AYAR ARALIĞI: 70~420 bar, KAVİTE: T16A2, DEBİ: 30 l/dk",
-    "Fiyat": "81.07",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
-    "Sayfa": "5"
-  },
-  {
-    "Ana_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFİ",
-    "Malzeme_Kodu": "RD1A-LCN",
-    "Açıklama": "AYAR ARALIĞI: 14~55 bar, KAVİTE: T16A2, DEBİ: 30 l/dk",
-    "Fiyat": "81.07",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
-    "Sayfa": "5"
-  },
-  {
-    "Ana_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFİ",
-    "Malzeme_Kodu": "RD2A-LAN",
-    "Açıklama": "AYAR ARALIĞI: 35~210 bar, KAVİTE: T10A, DEBİ: 95 l/dk",
-    "Fiyat": "92.97",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
-    "Sayfa": "5"
-  },
-  {
-    "Ana_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFİ",
-    "Malzeme_Kodu": "RD2A-LBN",
-    "Açıklama": "AYAR ARALIĞI: 20~105 bar, KAVİTE: T10A, DEBİ: 95 l/dk",
-    "Fiyat": "92.97",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
-    "Sayfa": "5"
-  },
-  {
-    "Ana_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFİ",
-    "Malzeme_Kodu": "RD2A-KCN",
-    "Açıklama": "AYAR ARALIĞI: 70~420 bar, KAVİTE: T10A, DEBİ: 95 l/dk",
-    "Fiyat": "92.97",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
-    "Sayfa": "5"
-  },
-  {
-    "Ana_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFİ",
-    "Malzeme_Kodu": "RD2A-LCN",
-    "Açıklama": "AYAR ARALIĞI: 14~55 bar, KAVİTE: T10A, DEBİ: 95 l/dk",
-    "Fiyat": "92.97",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
-    "Sayfa": "5"
-  },
-  {
-    "Ana_Baslik": "KICK-DOWN, PİLOT KUMANDALI BASINÇ EMNİYET VALFİ",
-    "Malzeme_Kodu": "RQ2B-LAN",
-    "Açıklama": "AYAR ARALIĞI: 7 ~ 210 bar, KAVİTE: T10A, DEBİ: 95 l/dk",
-    "Fiyat": "91.29",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
-    "Sayfa": "5"
-  },
-  {
-    "Ana_Baslik": "KICK-DOWN, PİLOT KUMANDALI BASINÇ EMNİYET VALFİ",
-    "Malzeme_Kodu": "RQ2B-LBN",
-    "Açıklama": "AYAR ARALIĞI: 3.5 ~ 105 bar, KAVİTE: T10A, DEBİ: 95 l/dk",
-    "Fiyat": "91.29",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
-    "Sayfa": "5"
-  },
-  {
-    "Ana_Baslik": "KICK-DOWN, PİLOT KUMANDALI BASINÇ EMNİYET VALFİ",
-    "Malzeme_Kodu": "RQ2B-LCN",
-    "Açıklama": "AYAR ARALIĞI: 10.5 ~ 420 bar, KAVİTE: T10A, DEBİ: 95 l/dk",
-    "Fiyat": "91.29",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
-    "Sayfa": "5"
-  },
-  {
-    "Ana_Baslik": "KICK-DOWN, PİLOT KUMANDALI BASINÇ EMNİYET VALFİ",
-    "Malzeme_Kodu": "RQ2B-KNN",
-    "Açıklama": "AYAR ARALIĞI: 5 ~ 55 bar, KAVİTE: T10A, DEBİ: 95 l/dk",
-    "Fiyat": "91.29",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
-    "Sayfa": "5"
-  }
+    {
+        "Ana_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RD1A-LAN",
+        "Açıklama": "35~210 bar, T16A, 30 L/dk",
+        "Fiyat": "81.07",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "5"
+    },
+    {
+        "Ana_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RD1A-LBN",
+        "Açıklama": "20~105 bar, T16A, 30 L/dk",
+        "Fiyat": "81.07",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "5"
+    },
+    {
+        "Ana_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RD1A-KCN",
+        "Açıklama": "70~420 bar, T16A, 30 L/dk",
+        "Fiyat": "81.07",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "5"
+    },
+    {
+        "Ana_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RD1A-LDN",
+        "Açıklama": "14~55 bar, T16A, 30 L/dk",
+        "Fiyat": "81.07",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "5"
+    },
+    {
+        "Ana_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RD2A-LAN",
+        "Açıklama": "35~210 bar, T10A, 95 L/dk",
+        "Fiyat": "92.97",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "5"
+    },
+    {
+        "Ana_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RD2A-LBN",
+        "Açıklama": "20~105 bar, T10A, 95 L/dk",
+        "Fiyat": "92.97",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "5"
+    },
+    {
+        "Ana_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RD2A-KCN",
+        "Açıklama": "70~420 bar, T10A, 95 L/dk",
+        "Fiyat": "92.97",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "5"
+    },
+    {
+        "Ana_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RD2A-LDN",
+        "Açıklama": "14~55 bar, T10A, 95 L/dk",
+        "Fiyat": "92.97",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "5"
+    },
+    {
+        "Ana_Baslik": "KICK-DOWN, PİLOT KUMANDALI BASINÇ EMNİYET VALFİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RQ2B-LAN",
+        "Açıklama": "7 ~ 210 bar, T10A, 95 L/dk",
+        "Fiyat": "91.29",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "5"
+    },
+    {
+        "Ana_Baslik": "KICK-DOWN, PİLOT KUMANDALI BASINÇ EMNİYET VALFİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RQ2B-LBN",
+        "Açıklama": "3.5 ~ 105 bar, T10A, 95 L/dk",
+        "Fiyat": "91.29",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "5"
+    },
+    {
+        "Ana_Baslik": "KICK-DOWN, PİLOT KUMANDALI BASINÇ EMNİYET VALFİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RQ2B-LCN",
+        "Açıklama": "10.5 ~ 420 bar, T10A, 95 L/dk",
+        "Fiyat": "91.29",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "5"
+    },
+    {
+        "Ana_Baslik": "KICK-DOWN, PİLOT KUMANDALI BASINÇ EMNİYET VALFİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RQ2B-LNN",
+        "Açıklama": "5 ~ 55 bar, T10A, 95 L/dk",
+        "Fiyat": "91.29",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "5"
+    }
 ]
 ```
