@@ -49,7 +49,7 @@ def test_defaults(monkeypatch):
     assert cfg.OUTPUT_DB == root / "output" / "fiyat_listesi.db"
     assert cfg.OUTPUT_LOG == root / "output" / "source_log.csv"
     assert cfg.LOG_PATH == root / "smart_price.log"
-    assert cfg.BASE_REPO_URL.endswith("Smart_Price/master")
+    assert cfg.BASE_REPO_URL.endswith("Smart_Price/main/Master_data_base")
     assert cfg.DEFAULT_DB_URL == f"{cfg.BASE_REPO_URL}/master.db"
     assert cfg.DEFAULT_IMAGE_BASE_URL == cfg.BASE_REPO_URL
     assert cfg.EXTRACTION_GUIDE_PATH == root / "extraction_guide.csv"
