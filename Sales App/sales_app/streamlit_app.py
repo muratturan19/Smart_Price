@@ -89,20 +89,66 @@ def search_page(df: pd.DataFrame) -> None:
         return
 
     query = st.text_input("Malzeme kodu veya adı")
-    brand = st.selectbox("Marka", [""] + sorted(df["Marka"].dropna().unique().tolist())) if "Marka" in df.columns else ""
-    year = st.selectbox("Yıl", [""] + sorted(df["Yil"].dropna().unique().tolist())) if "Yil" in df.columns else ""
+    keyword = st.text_input("Anahtar kelime")
+    brand = (
+        st.selectbox(
+            "Marka", [""] + sorted(df["Marka"].dropna().unique().tolist())
+        )
+        if "Marka" in df.columns
+        else ""
+    )
+    main_header = (
+        st.selectbox(
+            "Ana Başlık", [""] + sorted(df["Ana_Baslik"].dropna().unique().tolist())
+        )
+        if "Ana_Baslik" in df.columns
+        else ""
+    )
+    sub_header = (
+        st.selectbox(
+            "Alt Başlık", [""] + sorted(df["Alt_Baslik"].dropna().unique().tolist())
+        )
+        if "Alt_Baslik" in df.columns
+        else ""
+    )
+    category = (
+        st.selectbox(
+            "Ürün grubu", [""] + sorted(df["Kategori"].dropna().unique().tolist())
+        )
+        if "Kategori" in df.columns
+        else ""
+    )
+
+    if not any([query, keyword, brand, main_header, sub_header, category]):
+        st.info("Aramak için kriter girin")
+        return
 
     filtered = df
     if query:
-        filtered = filtered[filtered["Açıklama"].str.contains(query, case=False, na=False) |
-                              filtered["Malzeme_Kodu"].str.contains(query, case=False, na=False)]
+        filtered = filtered[
+            filtered["Açıklama"].str.contains(query, case=False, na=False)
+            | filtered["Malzeme_Kodu"].str.contains(query, case=False, na=False)
+        ]
+    if keyword:
+        mask = filtered.apply(
+            lambda r: r.astype(str)
+            .str.contains(keyword, case=False, na=False)
+            .any(),
+            axis=1,
+        )
+        filtered = filtered[mask]
     if brand:
         filtered = filtered[filtered["Marka"] == brand]
-    if year:
-        filtered = filtered[filtered["Yil"] == year]
+    if main_header:
+        filtered = filtered[filtered["Ana_Baslik"] == main_header]
+    if sub_header:
+        filtered = filtered[filtered["Alt_Baslik"] == sub_header]
+    if category:
+        filtered = filtered[filtered["Kategori"] == category]
 
     st.write(f"{len(filtered)} kayıt bulundu")
-    st.dataframe(filtered)
+    styled = filtered.style.format({'Fiyat': '{:,.2f}'})
+    st.dataframe(styled, hide_index=True, use_container_width=True)
 
     if not filtered.empty:
         def _fmt(idx: int) -> str:
@@ -115,6 +161,10 @@ def search_page(df: pd.DataFrame) -> None:
             format_func=_fmt,
         )
         row = filtered.loc[selected]
+        st.metric(
+            label="Fiyat",
+            value=f"{row.get('Fiyat')} {row.get('Para_Birimi','')}"
+        )
         img_path = row.get("Image_Path") or row.get("image_path")
         base = os.getenv("IMAGE_BASE_URL", DEFAULT_IMAGE_BASE_URL)
         img_url = None
