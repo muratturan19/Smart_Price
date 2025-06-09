@@ -35,8 +35,7 @@ _DEFAULT_POPPLER_PATH = Path(__file__).resolve().parents[2] / "poppler" / "bin"
 
 # Default remote repository for the public demo data
 _DEFAULT_BASE_REPO_URL = (
-    "https://raw.githubusercontent.com/muratturan19/Smart_Price/main/"
-    "Master_data_base"
+    "https://raw.githubusercontent.com/muratturan19/Smart_Price/main"
 )
 
 # Overlay defaults
@@ -61,7 +60,7 @@ TESSERACT_CMD: Path = _DEFAULT_TESSERACT_CMD
 TESSDATA_PREFIX: Path = _DEFAULT_TESSDATA_PREFIX
 POPPLER_PATH: Path = _DEFAULT_POPPLER_PATH
 BASE_REPO_URL: str = _DEFAULT_BASE_REPO_URL
-DEFAULT_DB_URL: str = f"{BASE_REPO_URL}/master.db"
+DEFAULT_DB_URL: str = f"{BASE_REPO_URL}/Master_data_base/master.db"
 DEFAULT_IMAGE_BASE_URL: str = BASE_REPO_URL
 LOGO_TOP: str = _DEFAULT_LOGO_TOP
 LOGO_RIGHT: str = _DEFAULT_LOGO_RIGHT
@@ -141,7 +140,7 @@ def load_config() -> None:
     VISION_AGENT_API_KEY = _get_str("VISION_AGENT_API_KEY", _DEFAULT_VISION_AGENT_API_KEY)
 
     BASE_REPO_URL = _get_str("BASE_REPO_URL", _DEFAULT_BASE_REPO_URL)
-    DEFAULT_DB_URL = f"{BASE_REPO_URL}/master.db"
+    DEFAULT_DB_URL = f"{BASE_REPO_URL}/Master_data_base/master.db"
     DEFAULT_IMAGE_BASE_URL = BASE_REPO_URL
     LOGO_TOP = os.getenv("LOGO_TOP", config.get("LOGO_TOP", _DEFAULT_LOGO_TOP))
     LOGO_RIGHT = os.getenv("LOGO_RIGHT", config.get("LOGO_RIGHT", _DEFAULT_LOGO_RIGHT))
