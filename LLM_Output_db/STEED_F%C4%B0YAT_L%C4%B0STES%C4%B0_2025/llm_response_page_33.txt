@@ -7,7 +7,7 @@
     "Açıklama": "P1: 136 cc/dev, P2: 18 cc/dev",
     "Fiyat": "3,139.20",
     "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
     "Sayfa": "33"
   },
   {
@@ -17,7 +17,7 @@
     "Açıklama": "P1: 156 cc/dev, P2: 22 cc/dev",
     "Fiyat": "3,139.20",
     "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
     "Sayfa": "33"
   },
   {
@@ -27,7 +27,7 @@
     "Açıklama": "P1: 189 cc/dev, P2: 26 cc/dev",
     "Fiyat": "3,139.20",
     "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
     "Sayfa": "33"
   },
   {
@@ -37,7 +37,7 @@
     "Açıklama": "P1: 200 cc/dev, P2: 32 cc/dev",
     "Fiyat": "3,139.20",
     "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
     "Sayfa": "33"
   },
   {
@@ -47,7 +47,7 @@
     "Açıklama": "P1: 216 cc/dev, P2: 38 cc/dev",
     "Fiyat": "3,139.20",
     "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
     "Sayfa": "33"
   },
   {
@@ -57,7 +57,7 @@
     "Açıklama": "P1: 237 cc/dev, P2: 43 cc/dev",
     "Fiyat": "3,139.20",
     "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
     "Sayfa": "33"
   },
   {
@@ -67,7 +67,7 @@
     "Açıklama": "P1: 136 cc/dev, P2: 18 cc/dev",
     "Fiyat": "3,255.66",
     "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
     "Sayfa": "33"
   },
   {
@@ -77,7 +77,7 @@
     "Açıklama": "P1: 156 cc/dev, P2: 22 cc/dev",
     "Fiyat": "3,255.66",
     "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
     "Sayfa": "33"
   },
   {
@@ -87,7 +87,7 @@
     "Açıklama": "P1: 189 cc/dev, P2: 26 cc/dev",
     "Fiyat": "3,255.66",
     "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
     "Sayfa": "33"
   },
   {
@@ -97,7 +97,7 @@
     "Açıklama": "P1: 200 cc/dev, P2: 32 cc/dev",
     "Fiyat": "3,255.66",
     "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik Fiyat Listesi.pdf",
+    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
     "Sayfa": "33"
   }
 ]
