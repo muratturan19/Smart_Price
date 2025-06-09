@@ -1,292 +1,164 @@
 ```json
 [
-  {
-    "Ana_Baslik": "PİLOT KUMANDALI BASINÇ DÜŞÜRÜCÜ VALF (Reducing-Relieving)",
-    "Malzeme_Kodu": "PP2B-LAN",
-    "Açıklama": "7 ÷ 210 bar, T11A, 40 L/dk",
-    "Fiyat": "116,14",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
-    "Sayfa": "9"
-  },
-  {
-    "Ana_Baslik": "PİLOT KUMANDALI BASINÇ DÜŞÜRÜCÜ VALF (Reducing-Relieving)",
-    "Malzeme_Kodu": "PP2B-LBN",
-    "Açıklama": "3.5 ÷ 105 bar, T11A, 40 L/dk",
-    "Fiyat": "116,14",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
-    "Sayfa": "9"
-  },
-  {
-    "Ana_Baslik": "PİLOT KUMANDALI BASINÇ DÜŞÜRÜCÜ VALF (Reducing-Relieving)",
-    "Malzeme_Kodu": "PP2B-LDN",
-    "Açıklama": "10.5 ÷ 420 bar, T11A, 40 L/dk",
-    "Fiyat": "116,14",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
-    "Sayfa": "9"
-  },
-  {
-    "Ana_Baslik": "PİLOT KUMANDALI BASINÇ DÜŞÜRÜCÜ VALF (Reducing-Relieving)",
-    "Malzeme_Kodu": "PP2B-LVN",
-    "Açıklama": "4 ÷ 55 bar, T11A, 40 L/dk",
-    "Fiyat": "116,14",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
-    "Sayfa": "9"
-  },
-  {
-    "Ana_Baslik": "PİLOT KUMANDALI BASINÇ DÜŞÜRÜCÜ VALF (Reducing-Relieving)",
-    "Malzeme_Kodu": "PP3B-LAN",
-    "Açıklama": "7 ÷ 210 bar, T2A, 80 L/dk",
-    "Fiyat": "175,16",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
-    "Sayfa": "9"
-  },
-  {
-    "Ana_Baslik": "PİLOT KUMANDALI BASINÇ DÜŞÜRÜCÜ VALF (Reducing-Relieving)",
-    "Malzeme_Kodu": "PP3B-LBN",
-    "Açıklama": "3.5 ÷ 105 bar, T2A, 80 L/dk",
-    "Fiyat": "175,16",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
-    "Sayfa": "9"
-  },
-  {
-    "Ana_Baslik": "PİLOT KUMANDALI BASINÇ DÜŞÜRÜCÜ VALF (Reducing-Relieving)",
-    "Malzeme_Kodu": "PP3B-LDN",
-    "Açıklama": "10.5 ÷ 420 bar, T2A, 80 L/dk",
-    "Fiyat": "175,16",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
-    "Sayfa": "9"
-  },
-  {
-    "Ana_Baslik": "PİLOT KUMANDALI BASINÇ DÜŞÜRÜCÜ VALF (Reducing-Relieving)",
-    "Malzeme_Kodu": "PP3B-LVN",
-    "Açıklama": "4 ÷ 55 bar, T2A, 80 L/dk",
-    "Fiyat": "175,16",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
-    "Sayfa": "9"
-  },
-  {
-    "Ana_Baslik": "PİLOT KUMANDALI BASINÇ DÜŞÜRÜCÜ VALF (Reducing-Relieving)",
-    "Malzeme_Kodu": "PP6B-LAN",
-    "Açıklama": "7 ÷ 210 bar, T17A, 160 L/dk",
-    "Fiyat": "328,23",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
-    "Sayfa": "9"
-  },
-  {
-    "Ana_Baslik": "PİLOT KUMANDALI BASINÇ DÜŞÜRÜCÜ VALF (Reducing-Relieving)",
-    "Malzeme_Kodu": "PP6B-LBN",
-    "Açıklama": "3.5 ÷ 105 bar, T17A, 160 L/dk",
-    "Fiyat": "328,23",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
-    "Sayfa": "9"
-  },
-  {
-    "Ana_Baslik": "PİLOT KUMANDALI BASINÇ DÜŞÜRÜCÜ VALF (Reducing-Relieving)",
-    "Malzeme_Kodu": "PP6B-LDN",
-    "Açıklama": "10.5 ÷ 420 bar, T17A, 160 L/dk",
-    "Fiyat": "328,23",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
-    "Sayfa": "9"
-  },
-  {
-    "Ana_Baslik": "PİLOT KUMANDALI BASINÇ DÜŞÜRÜCÜ VALF (Reducing-Relieving)",
-    "Malzeme_Kodu": "PP6B-LVN",
-    "Açıklama": "4 ÷ 55 bar, T17A, 160 L/dk",
-    "Fiyat": "328,23",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
-    "Sayfa": "9"
-  },
-  {
-    "Ana_Baslik": "PİLOT KUMANDALI BASINÇ DÜŞÜRÜCÜ VALF (Reducing-Relieving)",
-    "Malzeme_Kodu": "PP8B-LAN",
-    "Açıklama": "7 ÷ 210 bar, T19A, 320 L/dk",
-    "Fiyat": "765,99",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
-    "Sayfa": "9"
-  },
-  {
-    "Ana_Baslik": "PİLOT KUMANDALI BASINÇ DÜŞÜRÜCÜ VALF (Reducing-Relieving)",
-    "Malzeme_Kodu": "PP8B-LBN",
-    "Açıklama": "3.5 ÷ 105 bar, T19A, 320 L/dk",
-    "Fiyat": "765,99",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
-    "Sayfa": "9"
-  },
-  {
-    "Ana_Baslik": "PİLOT KUMANDALI BASINÇ DÜŞÜRÜCÜ VALF (Reducing-Relieving)",
-    "Malzeme_Kodu": "PP8B-LDN",
-    "Açıklama": "10.5 ÷ 420 bar, T19A, 320 L/dk",
-    "Fiyat": "765,99",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
-    "Sayfa": "9"
-  },
-  {
-    "Ana_Baslik": "PİLOT KUMANDALI BASINÇ DÜŞÜRÜCÜ VALF (Reducing-Relieving)",
-    "Malzeme_Kodu": "PP8B-LVN",
-    "Açıklama": "4 ÷ 55 bar, T19A, 320 L/dk",
-    "Fiyat": "765,99",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
-    "Sayfa": "9"
-  },
-  {
-    "Ana_Baslik": "DİREKT KUMANDALI BASINÇ DÜŞÜRÜCÜ VALF (Reducing-Relieving)",
-    "Malzeme_Kodu": "PP2B-LAN",
-    "Açıklama": "7 ÷ 210 bar, T11A, 40 L/dk",
-    "Fiyat": "116,14",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
-    "Sayfa": "9"
-  },
-  {
-    "Ana_Baslik": "DİREKT KUMANDALI BASINÇ DÜŞÜRÜCÜ VALF (Reducing-Relieving)",
-    "Malzeme_Kodu": "PP2B-LBN",
-    "Açıklama": "3.5 ÷ 105 bar, T11A, 40 L/dk",
-    "Fiyat": "116,14",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
-    "Sayfa": "9"
-  },
-  {
-    "Ana_Baslik": "DİREKT KUMANDALI BASINÇ DÜŞÜRÜCÜ VALF (Reducing-Relieving)",
-    "Malzeme_Kodu": "PP2B-LDN",
-    "Açıklama": "14 ÷ 55 bar, T11A, 40 L/dk",
-    "Fiyat": "116,14",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
-    "Sayfa": "9"
-  },
-  {
-    "Ana_Baslik": "DİREKT KUMANDALI BASINÇ DÜŞÜRÜCÜ VALF (Reducing-Relieving)",
-    "Malzeme_Kodu": "PP2B-LVN",
-    "Açıklama": "50 ÷ 315 bar, T11A, 40 L/dk",
-    "Fiyat": "116,14",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
-    "Sayfa": "9"
-  },
-  {
-    "Ana_Baslik": "DİREKT KUMANDALI BASINÇ DÜŞÜRÜCÜ VALF (Reducing-Relieving)",
-    "Malzeme_Kodu": "PP3B-LAN",
-    "Açıklama": "35 ÷ 210 bar, T2A, 80 L/dk",
-    "Fiyat": "175,16",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
-    "Sayfa": "9"
-  },
-  {
-    "Ana_Baslik": "DİREKT KUMANDALI BASINÇ DÜŞÜRÜCÜ VALF (Reducing-Relieving)",
-    "Malzeme_Kodu": "PP3B-LBN",
-    "Açıklama": "3.5 ÷ 105 bar, T2A, 80 L/dk",
-    "Fiyat": "175,16",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
-    "Sayfa": "9"
-  },
-  {
-    "Ana_Baslik": "DİREKT KUMANDALI BASINÇ DÜŞÜRÜCÜ VALF (Reducing-Relieving)",
-    "Malzeme_Kodu": "PP3B-LDN",
-    "Açıklama": "14 ÷ 55 bar, T2A, 80 L/dk",
-    "Fiyat": "175,16",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
-    "Sayfa": "9"
-  },
-  {
-    "Ana_Baslik": "DİREKT KUMANDALI BASINÇ DÜŞÜRÜCÜ VALF (Reducing-Relieving)",
-    "Malzeme_Kodu": "PP3B-LVN",
-    "Açıklama": "50 ÷ 315 bar, T2A, 80 L/dk",
-    "Fiyat": "175,16",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
-    "Sayfa": "9"
-  },
-  {
-    "Ana_Baslik": "DİREKT KUMANDALI BASINÇ DÜŞÜRÜCÜ VALF (Reducing-Relieving)",
-    "Malzeme_Kodu": "PP6B-LAN",
-    "Açıklama": "35 ÷ 210 bar, T17A, 160 L/dk",
-    "Fiyat": "344,32",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
-    "Sayfa": "9"
-  },
-  {
-    "Ana_Baslik": "DİREKT KUMANDALI BASINÇ DÜŞÜRÜCÜ VALF (Reducing-Relieving)",
-    "Malzeme_Kodu": "PP6B-LBN",
-    "Açıklama": "3.5 ÷ 105 bar, T17A, 160 L/dk",
-    "Fiyat": "344,32",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
-    "Sayfa": "9"
-  },
-  {
-    "Ana_Baslik": "DİREKT KUMANDALI BASINÇ DÜŞÜRÜCÜ VALF (Reducing-Relieving)",
-    "Malzeme_Kodu": "PP6B-LDN",
-    "Açıklama": "14 ÷ 55 bar, T17A, 160 L/dk",
-    "Fiyat": "344,32",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
-    "Sayfa": "9"
-  },
-  {
-    "Ana_Baslik": "DİREKT KUMANDALI BASINÇ DÜŞÜRÜCÜ VALF (Reducing-Relieving)",
-    "Malzeme_Kodu": "PP6B-LVN",
-    "Açıklama": "50 ÷ 315 bar, T17A, 160 L/dk",
-    "Fiyat": "344,32",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
-    "Sayfa": "9"
-  },
-  {
-    "Ana_Baslik": "DİREKT KUMANDALI BASINÇ DÜŞÜRÜCÜ VALF (Reducing-Relieving)",
-    "Malzeme_Kodu": "PP8B-LAN",
-    "Açıklama": "35 ÷ 210 bar, T19A, 320 L/dk",
-    "Fiyat": "FİYAT SORUNUZ",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
-    "Sayfa": "9"
-  },
-  {
-    "Ana_Baslik": "DİREKT KUMANDALI BASINÇ DÜŞÜRÜCÜ VALF (Reducing-Relieving)",
-    "Malzeme_Kodu": "PP8B-LBN",
-    "Açıklama": "3.5 ÷ 105 bar, T19A, 320 L/dk",
-    "Fiyat": "FİYAT SORUNUZ",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
-    "Sayfa": "9"
-  },
-  {
-    "Ana_Baslik": "DİREKT KUMANDALI BASINÇ DÜŞÜRÜCÜ VALF (Reducing-Relieving)",
-    "Malzeme_Kodu": "PP8B-LDN",
-    "Açıklama": "14 ÷ 55 bar, T19A, 320 L/dk",
-    "Fiyat": "FİYAT SORUNUZ",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
-    "Sayfa": "9"
-  },
-  {
-    "Ana_Baslik": "DİREKT KUMANDALI BASINÇ DÜŞÜRÜCÜ VALF (Reducing-Relieving)",
-    "Malzeme_Kodu": "PP8B-LVN",
-    "Açıklama": "50 ÷ 315 bar, T19A, 320 L/dk",
-    "Fiyat": "FİYAT SORUNUZ",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
-    "Sayfa": "9"
-  }
+    {
+        "Ana_Baslik": "PILOT KUMANDALI BASINÇ DÜŞÜRÜCÜ VALF (Reducing-Relieving)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "PP2B-LAN",
+        "Açıklama": "7 ÷ 210 bar, T11A, 40",
+        "Fiyat": "116,14",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "9"
+    },
+    {
+        "Ana_Baslik": "PILOT KUMANDALI BASINÇ DÜŞÜRÜCÜ VALF (Reducing-Relieving)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "PP2B-LBN",
+        "Açıklama": "3.5 ÷ 105 bar, T11A, 40",
+        "Fiyat": "116,14",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "9"
+    },
+    {
+        "Ana_Baslik": "PILOT KUMANDALI BASINÇ DÜŞÜRÜCÜ VALF (Reducing-Relieving)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "PP2B-LDN",
+        "Açıklama": "10.5 ÷ 420 bar, T11A, 40",
+        "Fiyat": "116,14",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "9"
+    },
+    {
+        "Ana_Baslik": "PILOT KUMANDALI BASINÇ DÜŞÜRÜCÜ VALF (Reducing-Relieving)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "PP2B-LVN",
+        "Açıklama": "4 ÷ 55 bar, T11A, 40",
+        "Fiyat": "116,14",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "9"
+    },
+    {
+        "Ana_Baslik": "PILOT KUMANDALI BASINÇ DÜŞÜRÜCÜ VALF (Reducing-Relieving)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "PP3B-LAN",
+        "Açıklama": "7 ÷ 210 bar, T2A, 80",
+        "Fiyat": "175,16",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "9"
+    },
+    {
+        "Ana_Baslik": "PILOT KUMANDALI BASINÇ DÜŞÜRÜCÜ VALF (Reducing-Relieving)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "PP3B-LBN",
+        "Açıklama": "3.5 ÷ 105 bar, T2A, 80",
+        "Fiyat": "175,16",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "9"
+    },
+    {
+        "Ana_Baslik": "PILOT KUMANDALI BASINÇ DÜŞÜRÜCÜ VALF (Reducing-Relieving)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "PP3B-LDN",
+        "Açıklama": "10.5 ÷ 420 bar, T2A, 80",
+        "Fiyat": "175,16",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "9"
+    },
+    {
+        "Ana_Baslik": "PILOT KUMANDALI BASINÇ DÜŞÜRÜCÜ VALF (Reducing-Relieving)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "PP3B-LVN",
+        "Açıklama": "4 ÷ 55 bar, T2A, 80",
+        "Fiyat": "175,16",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "9"
+    },
+    {
+        "Ana_Baslik": "DIREKT KUMANDALI BASINÇ DÜŞÜRÜCÜ VALF (Reducing-Relieving)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "PP2B-LAN",
+        "Açıklama": "7 ÷ 210 bar, T11A, 40",
+        "Fiyat": "116,14",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "9"
+    },
+    {
+        "Ana_Baslik": "DIREKT KUMANDALI BASINÇ DÜŞÜRÜCÜ VALF (Reducing-Relieving)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "PP2B-LBN",
+        "Açıklama": "3.5 ÷ 105 bar, T11A, 40",
+        "Fiyat": "116,14",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "9"
+    },
+    {
+        "Ana_Baslik": "DIREKT KUMANDALI BASINÇ DÜŞÜRÜCÜ VALF (Reducing-Relieving)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "PP2B-LDN",
+        "Açıklama": "14 ÷ 55 bar, T11A, 40",
+        "Fiyat": "116,14",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "9"
+    },
+    {
+        "Ana_Baslik": "DIREKT KUMANDALI BASINÇ DÜŞÜRÜCÜ VALF (Reducing-Relieving)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "PP2B-LVN",
+        "Açıklama": "50 ÷ 315 bar, T11A, 40",
+        "Fiyat": "116,14",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "9"
+    },
+    {
+        "Ana_Baslik": "DIREKT KUMANDALI BASINÇ DÜŞÜRÜCÜ VALF (Reducing-Relieving)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "PP3B-LAN",
+        "Açıklama": "35 ÷ 210 bar, T2A, 80",
+        "Fiyat": "175,16",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "9"
+    },
+    {
+        "Ana_Baslik": "DIREKT KUMANDALI BASINÇ DÜŞÜRÜCÜ VALF (Reducing-Relieving)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "PP3B-LBN",
+        "Açıklama": "3.5 ÷ 105 bar, T2A, 80",
+        "Fiyat": "175,16",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "9"
+    },
+    {
+        "Ana_Baslik": "DIREKT KUMANDALI BASINÇ DÜŞÜRÜCÜ VALF (Reducing-Relieving)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "PP3B-LDN",
+        "Açıklama": "14 ÷ 55 bar, T2A, 80",
+        "Fiyat": "175,16",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "9"
+    },
+    {
+        "Ana_Baslik": "DIREKT KUMANDALI BASINÇ DÜŞÜRÜCÜ VALF (Reducing-Relieving)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "PP3B-LVN",
+        "Açıklama": "50 ÷ 315 bar, T2A, 80",
+        "Fiyat": "175,16",
+        "Para_Birimi": "USD",
+        "Kaynak_Dosya": "Delta Proje Hidrolik Pnömatik.pdf",
+        "Sayfa": "9"
+    }
 ]
 ```
