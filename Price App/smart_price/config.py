@@ -35,7 +35,8 @@ _DEFAULT_POPPLER_PATH = Path(__file__).resolve().parents[2] / "poppler" / "bin"
 
 # Default remote repository for the public demo data
 _DEFAULT_BASE_REPO_URL = (
-    "https://raw.githubusercontent.com/USERNAME/Smart_Price/master"
+    "https://raw.githubusercontent.com/muratturan19/Smart_Price/main/"
+    "Master_data_base"
 )
 
 # Overlay defaults
