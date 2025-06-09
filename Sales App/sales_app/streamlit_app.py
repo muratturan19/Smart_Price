@@ -37,12 +37,18 @@ def _load_dataset(url: str) -> pd.DataFrame:
     logger.info("Fetching master data from %s", url)
     resp = requests.get(url)
     resp.raise_for_status()
-    with tempfile.NamedTemporaryFile(suffix=".db") as tmp:
+    tmp = tempfile.NamedTemporaryFile(delete=False, suffix=".db")
+    try:
         tmp.write(resp.content)
-        tmp.flush()
+        tmp.close()
         conn = sqlite3.connect(tmp.name)
         df = pd.read_sql("SELECT * FROM prices", conn)
         conn.close()
+    finally:
+        try:
+            os.unlink(tmp.name)
+        except OSError:
+            pass
     return df
 
 
