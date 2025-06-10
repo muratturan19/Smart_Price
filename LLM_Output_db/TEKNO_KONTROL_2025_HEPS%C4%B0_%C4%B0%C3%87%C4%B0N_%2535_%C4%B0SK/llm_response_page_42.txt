@@ -1,0 +1,94 @@
+```json
+[
+    {
+        "Ana_Baslik": "INSERT DEAL YÜKSEK BASINÇ REGÜLATÖRLERİ, FİLTRELERİ, YAĞLAYICILARI",
+        "Alt_Baslik": "20 Bar STANDART REGÜLATÖRLER (0.8 – 8 Bar)",
+        "Malzeme_Kodu": "ID105",
+        "Açıklama": "Regülatör 1/8\" 20 Bar 0.8-8 Bar R1/8MC",
+        "Fiyat": "27,57",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Unknown",
+        "Sayfa": "42"
+    },
+    {
+        "Ana_Baslik": "INSERT DEAL YÜKSEK BASINÇ REGÜLATÖRLERİ, FİLTRELERİ, YAĞLAYICILARI",
+        "Alt_Baslik": "20 Bar STANDART REGÜLATÖRLER (0.8 – 8 Bar)",
+        "Malzeme_Kodu": "ID110",
+        "Açıklama": "Regülatör 1/4\" 20 Bar 0.8-8 Bar R1/4MC",
+        "Fiyat": "32,00",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Unknown",
+        "Sayfa": "42"
+    },
+    {
+        "Ana_Baslik": "INSERT DEAL YÜKSEK BASINÇ REGÜLATÖRLERİ, FİLTRELERİ, YAĞLAYICILARI",
+        "Alt_Baslik": "20 Bar STANDART REGÜLATÖRLER (0.8 – 8 Bar)",
+        "Malzeme_Kodu": "ID115",
+        "Açıklama": "Regülatör 3/8\" 20 Bar 0.8-8 Bar R3/8T",
+        "Fiyat": "72,44",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Unknown",
+        "Sayfa": "42"
+    },
+    {
+        "Ana_Baslik": "INSERT DEAL YÜKSEK BASINÇ REGÜLATÖRLERİ, FİLTRELERİ, YAĞLAYICILARI",
+        "Alt_Baslik": "20 Bar STANDART REGÜLATÖRLER (0.8 – 8 Bar)",
+        "Malzeme_Kodu": "ID120",
+        "Açıklama": "Regülatör 1/2\" 20 Bar 0.8-8 Bar R1/2ST",
+        "Fiyat": "74,16",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Unknown",
+        "Sayfa": "42"
+    },
+    {
+        "Ana_Baslik": "INSERT DEAL YÜKSEK BASINÇ REGÜLATÖRLERİ, FİLTRELERİ, YAĞLAYICILARI",
+        "Alt_Baslik": "20 Bar STANDART REGÜLATÖRLER (0.8 – 8 Bar)",
+        "Malzeme_Kodu": "ID125",
+        "Açıklama": "Regülatör 3/4\" 20 Bar 0.8-8 Bar R3/4MD",
+        "Fiyat": "95,41",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Unknown",
+        "Sayfa": "42"
+    },
+    {
+        "Ana_Baslik": "INSERT DEAL YÜKSEK BASINÇ REGÜLATÖRLERİ, FİLTRELERİ, YAĞLAYICILARI",
+        "Alt_Baslik": "20 Bar STANDART REGÜLATÖRLER (0.8 – 8 Bar)",
+        "Malzeme_Kodu": "ID130",
+        "Açıklama": "Regülatör 1\" 20 Bar 0.8-8 Bar R1MD",
+        "Fiyat": "124,12",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Unknown",
+        "Sayfa": "42"
+    },
+    {
+        "Ana_Baslik": "INSERT DEAL YÜKSEK BASINÇ REGÜLATÖRLERİ, FİLTRELERİ, YAĞLAYICILARI",
+        "Alt_Baslik": "20 Bar STANDART REGÜLATÖRLER (0.8 – 8 Bar)",
+        "Malzeme_Kodu": "ID135",
+        "Açıklama": "Regülatör 1 1/2\" 20 Bar 0.8-8 Bar R1/2MD",
+        "Fiyat": "72,22",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Unknown",
+        "Sayfa": "42"
+    },
+    {
+        "Ana_Baslik": "INSERT DEAL YÜKSEK BASINÇ REGÜLATÖRLERİ, FİLTRELERİ, YAĞLAYICILARI",
+        "Alt_Baslik": "20 Bar STANDART REGÜLATÖRLER (0.8 – 8 Bar)",
+        "Malzeme_Kodu": "ID140",
+        "Açıklama": "Regülatör 2\" 20 Bar 0.8-8 Bar R2MD",
+        "Fiyat": "72,22",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Unknown",
+        "Sayfa": "42"
+    },
+    {
+        "Ana_Baslik": "INSERT DEAL YÜKSEK BASINÇ REGÜLATÖRLERİ, FİLTRELERİ, YAĞLAYICILARI",
+        "Alt_Baslik": "20 Bar STANDART REGÜLATÖRLER (0.8 – 8 Bar)",
+        "Malzeme_Kodu": "ID145",
+        "Açıklama": "Regülatör 2 1/2\" 20 Bar 0.8-8 Bar R2/5MD",
+        "Fiyat": "72,22",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Unknown",
+        "Sayfa": "42"
+    }
+]
+```
