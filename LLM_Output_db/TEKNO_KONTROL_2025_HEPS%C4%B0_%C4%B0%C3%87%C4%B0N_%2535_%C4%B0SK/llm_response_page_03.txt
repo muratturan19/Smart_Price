@@ -1,0 +1,564 @@
+```json
+[
+    {
+        "Ana_Baslik": "PARKER-OLAEK AKÜ BALONLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OL1006",
+        "Açıklama": "Akü Balonu 190/200-025-0.16 - 016",
+        "Fiyat": "370,91",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat Listesi.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "PARKER-OLAEK AKÜ BALONLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OL1008",
+        "Açıklama": "Akü Balonu 190/200-025-1 - 020",
+        "Fiyat": "370,91",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat Listesi.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "PARKER-OLAEK AKÜ BALONLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OL1010",
+        "Açıklama": "Akü Balonu 190/200-025-2.5 - 025",
+        "Fiyat": "370,91",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat Listesi.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "PARKER-OLAEK AKÜ BALONLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OL1012",
+        "Açıklama": "Akü Balonu 190/200-025-4 - 032",
+        "Fiyat": "370,91",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat Listesi.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "PARKER-OLAEK AKÜ BALONLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OL1014",
+        "Açıklama": "Akü Balonu 190/200-025-6.3 - 040",
+        "Fiyat": "370,91",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat Listesi.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "PARKER-OLAEK AKÜ BALONLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OL1016",
+        "Açıklama": "Akü Balonu 190/200-025-10 - 050",
+        "Fiyat": "370,91",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat Listesi.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "PARKER-OLAEK AKÜ BALONLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OL1018",
+        "Açıklama": "Akü Balonu 190/200-025-16 - 063",
+        "Fiyat": "370,91",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat Listesi.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "PARKER-OLAEK AKÜ BALONLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OL1020",
+        "Açıklama": "Akü Balonu 190/200-025-25 - 080",
+        "Fiyat": "370,91",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat Listesi.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "PARKER-OLAEK AKÜ BALONLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OL1022",
+        "Açıklama": "Akü Balonu 190/200-025-40 - 100",
+        "Fiyat": "370,91",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat Listesi.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "PARKER-OLAEK AKÜ BALONLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OL1024",
+        "Açıklama": "Akü Balonu 190/200-025-63 - 150",
+        "Fiyat": "370,91",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat Listesi.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "PARKER-OLAEK AKÜ BALONLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OL1026",
+        "Açıklama": "Akü Balonu 190/200-025-100 - 200",
+        "Fiyat": "370,91",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat Listesi.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "PARKER-OLAEK AKÜ BALONLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OL1028",
+        "Açıklama": "Akü Balonu 190/200-025-160 - 250",
+        "Fiyat": "370,91",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat Listesi.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "PARKER-OLAEK AKÜ BALONLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OL1030",
+        "Açıklama": "Akü Balonu 190/200-025-250 - 330",
+        "Fiyat": "370,91",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat Listesi.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "PARKER-OLAEK BALONLU AKÜLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OL1201",
+        "Açıklama": "Balonlu Akü EN4-2.5/300-0.5 158/160/1123",
+        "Fiyat": "806,54",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat Listesi.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "PARKER-OLAEK BALONLU AKÜLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OL1202",
+        "Açıklama": "Balonlu Akü EN4-4/300-0.5 158/160/1123",
+        "Fiyat": "806,54",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat Listesi.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "PARKER-OLAEK BALONLU AKÜLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OL1203",
+        "Açıklama": "Balonlu Akü EN4-6.3/300-0.5 158/160/1123",
+        "Fiyat": "806,54",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat Listesi.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "PARKER-OLAEK BALONLU AKÜLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OL1204",
+        "Açıklama": "Balonlu Akü EN4-10/300-0.5 158/160/1123",
+        "Fiyat": "806,54",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat Listesi.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "PARKER-OLAEK BALONLU AKÜLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OL1205",
+        "Açıklama": "Balonlu Akü EN4-16/300-0.5 158/160/1123",
+        "Fiyat": "806,54",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat Listesi.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "PARKER-OLAEK BALONLU AKÜLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OL1206",
+        "Açıklama": "Balonlu Akü EN4-25/300-0.5 158/160/1123",
+        "Fiyat": "806,54",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat Listesi.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "PARKER-OLAEK BALONLU AKÜLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OL1207",
+        "Açıklama": "Balonlu Akü EN4-40/300-0.5 158/160/1123",
+        "Fiyat": "806,54",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat Listesi.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "PARKER-OLAEK BALONLU AKÜLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OL1208",
+        "Açıklama": "Balonlu Akü EN4-63/300-0.5 158/160/1123",
+        "Fiyat": "806,54",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat Listesi.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "PARKER-OLAEK BALONLU AKÜLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OL1209",
+        "Açıklama": "Balonlu Akü EN4-100/300-0.5 158/160/1123",
+        "Fiyat": "806,54",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat Listesi.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "PARKER-OLAEK BALONLU AKÜLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OL1210",
+        "Açıklama": "Balonlu Akü EN4-160/300-0.5 158/160/1123",
+        "Fiyat": "806,54",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat Listesi.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "PARKER-OLAEK BALONLU AKÜLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OL1211",
+        "Açıklama": "Balonlu Akü EN4-250/300-0.5 158/160/1123",
+        "Fiyat": "806,54",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat Listesi.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "PARKER-OLAEK BALONLU AKÜLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OL1212",
+        "Açıklama": "Balonlu Akü EN4-400/300-0.5 158/160/1123",
+        "Fiyat": "806,54",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat Listesi.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "OMT AKÜ BALONLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OL1506",
+        "Açıklama": "Akü Balonu SCCA-1.6/8-1.2/2K - 022",
+        "Fiyat": "Fiyat Sorunuz",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Fiyat Listesi.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "OMT AKÜ BALONLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OL1508",
+        "Açıklama": "Akü Balonu SCCA-2.5/8-2.2/2K - 025",
+        "Fiyat": "Fiyat Sorunuz",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Fiyat Listesi.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "OMT AKÜ BALONLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OL1510",
+        "Açıklama": "Akü Balonu SCCA-4/8-3.6/2K - 032",
+        "Fiyat": "Fiyat Sorunuz",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Fiyat Listesi.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "OMT AKÜ BALONLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OL1512",
+        "Açıklama": "Akü Balonu SCCA-6.3/8-5.6/2K - 040",
+        "Fiyat": "Fiyat Sorunuz",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Fiyat Listesi.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "OMT AKÜ BALONLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OL1514",
+        "Açıklama": "Akü Balonu SCCA-10/8-9/2K - 050",
+        "Fiyat": "Fiyat Sorunuz",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Fiyat Listesi.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "OMT AKÜ BALONLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OL1516",
+        "Açıklama": "Akü Balonu SCCA-16/8-14/2K - 063",
+        "Fiyat": "Fiyat Sorunuz",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Fiyat Listesi.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "OMT AKÜ BALONLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OL1518",
+        "Açıklama": "Akü Balonu SCCA-25/8-22/2K - 080",
+        "Fiyat": "Fiyat Sorunuz",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Fiyat Listesi.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "OMT AKÜ BALONLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OL1520",
+        "Açıklama": "Akü Balonu SCCA-40/8-36/2K - 100",
+        "Fiyat": "Fiyat Sorunuz",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Fiyat Listesi.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "OMT AKÜ BALONLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OL1522",
+        "Açıklama": "Akü Balonu SCCA-63/8-56/2K - 150",
+        "Fiyat": "Fiyat Sorunuz",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Fiyat Listesi.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "OMT AKÜ BALONLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OL1524",
+        "Açıklama": "Akü Balonu SCCA-100/8-90/2K - 200",
+        "Fiyat": "Fiyat Sorunuz",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Fiyat Listesi.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "OMT AKÜ BALONLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OL1526",
+        "Açıklama": "Akü Balonu SCCA-160/8-144/2K - 250",
+        "Fiyat": "Fiyat Sorunuz",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Fiyat Listesi.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "OMT BALONLU AKÜLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OL1700",
+        "Açıklama": "Balonlu Akü A4-3.5/10/NC-0.5 - 1\" - 180 bar - 3/4\"",
+        "Fiyat": "Fiyat Sorunuz",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Fiyat Listesi.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "OMT BALONLU AKÜLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OL1702",
+        "Açıklama": "Balonlu Akü A4-6.3/10/NC-0.5 - 1\" - 180 bar - 1\"",
+        "Fiyat": "Fiyat Sorunuz",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Fiyat Listesi.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "OMT BALONLU AKÜLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OL1704",
+        "Açıklama": "Balonlu Akü A4-10/10/NC-0.5 - 1\" - 180 bar - 1 1/4\"",
+        "Fiyat": "Fiyat Sorunuz",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Fiyat Listesi.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "OMT BALONLU AKÜLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OL1706",
+        "Açıklama": "Balonlu Akü A4-16/10/NC-0.5 - 1\" - 180 bar - 1 1/2\"",
+        "Fiyat": "Fiyat Sorunuz",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Fiyat Listesi.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "OMT BALONLU AKÜLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OL1708",
+        "Açıklama": "Balonlu Akü A4-25/10/NC-0.5 - 1\" - 180 bar - 2\"",
+        "Fiyat": "Fiyat Sorunuz",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Fiyat Listesi.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "OMT BALONLU AKÜLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OL1710",
+        "Açıklama": "Balonlu Akü A4-40/10/NC-0.5 - 1\" - 355 bar - 2\"",
+        "Fiyat": "Fiyat Sorunuz",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Fiyat Listesi.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "OMT BALONLU AKÜLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OL1712",
+        "Açıklama": "Balonlu Akü A4-63/10/NC-0.5 - 1\" - 355 bar - 2\"",
+        "Fiyat": "Fiyat Sorunuz",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Fiyat Listesi.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "OMT BALONLU AKÜLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OL1714",
+        "Açıklama": "Balonlu Akü A4-100/10/NC-0.5 - 1\" - 355 bar - 2\"",
+        "Fiyat": "Fiyat Sorunuz",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Fiyat Listesi.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "OMT BALONLU AKÜLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OL1716",
+        "Açıklama": "Balonlu Akü A4-160/10/NC-0.5 - 1\" - 355 bar - 2\"",
+        "Fiyat": "Fiyat Sorunuz",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Fiyat Listesi.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "OMT BALONLU AKÜLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OL1718",
+        "Açıklama": "Balonlu Akü A4-250/10/NC-0.5 - 1\" - 355 bar - 2\"",
+        "Fiyat": "Fiyat Sorunuz",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Fiyat Listesi.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "OMT BALONLU AKÜLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OL1720",
+        "Açıklama": "Balonlu Akü A4-315/10/NC-0.5 - 1\" - 355 bar - 2\"",
+        "Fiyat": "Fiyat Sorunuz",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Fiyat Listesi.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "FREUDENBERG DİYAFRAMLI AKÜLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OL1500",
+        "Açıklama": "Diyaframlı Akü - 016-115/116-041/11 - 0.6 Litre - 250 bar",
+        "Fiyat": "103,51",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat Listesi.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "FREUDENBERG DİYAFRAMLI AKÜLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OL1501",
+        "Açıklama": "Diyaframlı Akü - 016-115/116-041/11 - 0.75 Litre - 250 bar",
+        "Fiyat": "103,51",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat Listesi.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "FREUDENBERG DİYAFRAMLI AKÜLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OL1502",
+        "Açıklama": "Diyaframlı Akü - 016-115/116-041/11 - 1 Litre - 250 bar",
+        "Fiyat": "103,51",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat Listesi.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "FREUDENBERG DİYAFRAMLI AKÜLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OL1503",
+        "Açıklama": "Diyaframlı Akü - 016-115/116-041/11 - 1.4 Litre - 250 bar",
+        "Fiyat": "103,51",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat Listesi.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "FREUDENBERG DİYAFRAMLI AKÜLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OL1504",
+        "Açıklama": "Diyaframlı Akü - 016-115/116-041/11 - 2 Litre - 250 bar",
+        "Fiyat": "103,51",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat Listesi.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "FREUDENBERG DİYAFRAMLI AKÜLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OL1505",
+        "Açıklama": "Diyaframlı Akü - 016-115/116-041/11 - 3 Litre - 250 bar",
+        "Fiyat": "103,51",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat Listesi.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "FREUDENBERG DİYAFRAMLI AKÜLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OL1506",
+        "Açıklama": "Diyaframlı Akü - 016-115/116-041/11 - 4 Litre - 250 bar",
+        "Fiyat": "103,51",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat Listesi.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "FREUDENBERG DİYAFRAMLI AKÜLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OL1507",
+        "Açıklama": "Diyaframlı Akü - 016-115/116-041/11 - 5 Litre - 250 bar",
+        "Fiyat": "103,51",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat Listesi.pdf",
+        "Sayfa": "1"
+    },
+    {
+        "Ana_Baslik": "FREUDENBERG DİYAFRAMLI AKÜLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OL1508",
+        "Açıklama": "Diyaframlı Akü - 016-115/116-041/11 - 6 Litre - 250 bar",
+        "Fiyat": "103,51",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat Listesi.pdf",
+        "Sayfa": "1"
+    }
+]
+```
