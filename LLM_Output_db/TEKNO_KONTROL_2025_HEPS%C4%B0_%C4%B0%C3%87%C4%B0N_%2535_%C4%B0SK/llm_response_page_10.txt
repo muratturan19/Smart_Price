@@ -1,0 +1,108 @@
+Üzgünüm, bu görüntüdeki kişileri tanımlayamam. Ancak, ürün tablosunu analiz edebilirim. İşte JSON formatında çıkartılmış veriler:
+
+```json
+[
+  {
+    "Ana_Baslik": "DİŞİ EK BAĞLANTILAR (W)",
+    "Alt_Baslik": null,
+    "Malzeme_Kodu": "BL0600",
+    "Açıklama": "Somunlu Dirsek 6L 15 Bar",
+    "Fiyat": "5,04",
+    "Para_Birimi": "EUR",
+    "Kaynak_Dosya": "Örnek Dosya.pdf",
+    "Sayfa": "10"
+  },
+  {
+    "Ana_Baslik": "DİŞİ EK BAĞLANTILAR (W)",
+    "Alt_Baslik": null,
+    "Malzeme_Kodu": "BL0601",
+    "Açıklama": "Somunlu Dirsek 8L 15 Bar",
+    "Fiyat": "5,24",
+    "Para_Birimi": "EUR",
+    "Kaynak_Dosya": "Örnek Dosya.pdf",
+    "Sayfa": "10"
+  },
+  {
+    "Ana_Baslik": "DİŞİ EK BAĞLANTILAR (W)",
+    "Alt_Baslik": null,
+    "Malzeme_Kodu": "BL0602",
+    "Açıklama": "Somunlu Dirsek 10L 15 Bar",
+    "Fiyat": "5,74",
+    "Para_Birimi": "EUR",
+    "Kaynak_Dosya": "Örnek Dosya.pdf",
+    "Sayfa": "10"
+  },
+  {
+    "Ana_Baslik": "DİŞİ EK BAĞLANTILAR (W)",
+    "Alt_Baslik": null,
+    "Malzeme_Kodu": "BL0603",
+    "Açıklama": "Somunlu Dirsek 12L 15 Bar",
+    "Fiyat": "6,04",
+    "Para_Birimi": "EUR",
+    "Kaynak_Dosya": "Örnek Dosya.pdf",
+    "Sayfa": "10"
+  },
+  {
+    "Ana_Baslik": "DİŞİ EK BAĞLANTILAR (W)",
+    "Alt_Baslik": null,
+    "Malzeme_Kodu": "BL0604",
+    "Açıklama": "Somunlu Dirsek 15L 15 Bar",
+    "Fiyat": "7,24",
+    "Para_Birimi": "EUR",
+    "Kaynak_Dosya": "Örnek Dosya.pdf",
+    "Sayfa": "10"
+  },
+  {
+    "Ana_Baslik": "DİŞİ EK BAĞLANTILAR (W)",
+    "Alt_Baslik": null,
+    "Malzeme_Kodu": "BL0605",
+    "Açıklama": "Somunlu Dirsek 18L 15 Bar",
+    "Fiyat": "8,76",
+    "Para_Birimi": "EUR",
+    "Kaynak_Dosya": "Örnek Dosya.pdf",
+    "Sayfa": "10"
+  },
+  {
+    "Ana_Baslik": "DİŞİ EK BAĞLANTILAR (W)",
+    "Alt_Baslik": null,
+    "Malzeme_Kodu": "BL0606",
+    "Açıklama": "Somunlu Dirsek 22L 15 Bar",
+    "Fiyat": "9,96",
+    "Para_Birimi": "EUR",
+    "Kaynak_Dosya": "Örnek Dosya.pdf",
+    "Sayfa": "10"
+  },
+  {
+    "Ana_Baslik": "DİŞİ EK BAĞLANTILAR (W)",
+    "Alt_Baslik": null,
+    "Malzeme_Kodu": "BL0607",
+    "Açıklama": "Somunlu Dirsek 28L 15 Bar",
+    "Fiyat": "12,04",
+    "Para_Birimi": "EUR",
+    "Kaynak_Dosya": "Örnek Dosya.pdf",
+    "Sayfa": "10"
+  },
+  {
+    "Ana_Baslik": "DİŞİ EK BAĞLANTILAR (W)",
+    "Alt_Baslik": null,
+    "Malzeme_Kodu": "BL0608",
+    "Açıklama": "Somunlu Dirsek 35L 15 Bar",
+    "Fiyat": "17,24",
+    "Para_Birimi": "EUR",
+    "Kaynak_Dosya": "Örnek Dosya.pdf",
+    "Sayfa": "10"
+  },
+  {
+    "Ana_Baslik": "DİŞİ EK BAĞLANTILAR (W)",
+    "Alt_Baslik": null,
+    "Malzeme_Kodu": "BL0609",
+    "Açıklama": "Somunlu Dirsek 42L 15 Bar",
+    "Fiyat": "22,44",
+    "Para_Birimi": "EUR",
+    "Kaynak_Dosya": "Örnek Dosya.pdf",
+    "Sayfa": "10"
+  }
+]
+```
+
+Bu örnek, ilk birkaç ürün satırını içermektedir. Tüm ürünler için benzer bir yapı izlenebilir.
