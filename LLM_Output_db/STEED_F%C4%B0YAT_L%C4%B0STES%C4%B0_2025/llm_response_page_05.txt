@@ -1,0 +1,674 @@
+```json
+{
+  "Malzeme_Kodu": "RD1A-LAN",
+  "Açıklama": "35÷210 bar",
+  "Kisa_Kod": "T162A",
+  "Fiyat": "$81,07",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 5,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "RD1A-LBN",
+  "Açıklama": "20÷105 bar",
+  "Kisa_Kod": "T162A",
+  "Fiyat": "$81,07",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 5,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "RD1A-KCN",
+  "Açıklama": "70÷420 bar",
+  "Kisa_Kod": "T162A",
+  "Fiyat": "$81,07",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 5,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "RD1A-LNN",
+  "Açıklama": "14÷55 bar",
+  "Kisa_Kod": "T162A",
+  "Fiyat": "$81,07",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 5,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "RD2A-LAN",
+  "Açıklama": "35÷210 bar",
+  "Kisa_Kod": "T10A",
+  "Fiyat": "$92,97",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 5,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "RD2A-LBN",
+  "Açıklama": "20÷105 bar",
+  "Kisa_Kod": "T10A",
+  "Fiyat": "$92,97",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 5,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "RD2A-KCN",
+  "Açıklama": "70÷420 bar",
+  "Kisa_Kod": "T10A",
+  "Fiyat": "$92,97",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 5,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "RD2A-LNN",
+  "Açıklama": "14÷55 bar",
+  "Kisa_Kod": "T10A",
+  "Fiyat": "$92,97",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 5,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "RD3A-LAN",
+  "Açıklama": "35÷210 bar",
+  "Kisa_Kod": "T3A",
+  "Fiyat": "$132,60",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 5,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "RD3A-LBN",
+  "Açıklama": "20÷105 bar",
+  "Kisa_Kod": "T3A",
+  "Fiyat": "$132,60",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 5,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "RD3A-KCN",
+  "Açıklama": "70÷420 bar",
+  "Kisa_Kod": "T3A",
+  "Fiyat": "$132,60",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 5,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "RD3A-LNN",
+  "Açıklama": "14÷55 bar",
+  "Kisa_Kod": "T3A",
+  "Fiyat": "$132,60",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 5,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "RD6A-LAN",
+  "Açıklama": "35÷210 bar",
+  "Kisa_Kod": "T16A",
+  "Fiyat": "$255,60",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 5,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "RD6A-LBN",
+  "Açıklama": "20÷105 bar",
+  "Kisa_Kod": "T16A",
+  "Fiyat": "$255,60",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 5,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "RD6A-KCN",
+  "Açıklama": "70÷420 bar",
+  "Kisa_Kod": "T16A",
+  "Fiyat": "$255,60",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 5,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "RD6A-LNN",
+  "Açıklama": "14÷55 bar",
+  "Kisa_Kod": "T16A",
+  "Fiyat": "$255,60",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 5,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "RD8A-LAN",
+  "Açıklama": "35÷210 bar",
+  "Kisa_Kod": "T18A",
+  "Fiyat": "$615,59",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 5,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "RD8A-LBN",
+  "Açıklama": "20÷105 bar",
+  "Kisa_Kod": "T18A",
+  "Fiyat": "$615,59",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 5,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "RD8A-KCN",
+  "Açıklama": "70÷420 bar",
+  "Kisa_Kod": "T18A",
+  "Fiyat": "$615,59",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 5,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "RD8A-LNN",
+  "Açıklama": "14÷55 bar",
+  "Kisa_Kod": "T18A",
+  "Fiyat": "$615,59",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 5,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "RD1A-KAN",
+  "Açıklama": "35÷210 bar",
+  "Kisa_Kod": "T162A",
+  "Fiyat": "$86,86",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 5,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "RD1A-KBN",
+  "Açıklama": "20÷105 bar",
+  "Kisa_Kod": "T162A",
+  "Fiyat": "$86,86",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 5,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "RD1A-KCN",
+  "Açıklama": "70÷420 bar",
+  "Kisa_Kod": "T162A",
+  "Fiyat": "$86,86",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 5,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "RD1A-KNN",
+  "Açıklama": "14÷55 bar",
+  "Kisa_Kod": "T162A",
+  "Fiyat": "$86,86",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 5,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "RD2A-KAN",
+  "Açıklama": "35÷210 bar",
+  "Kisa_Kod": "T10A",
+  "Fiyat": "$98,55",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 5,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "RD2A-KBN",
+  "Açıklama": "20÷105 bar",
+  "Kisa_Kod": "T10A",
+  "Fiyat": "$98,55",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 5,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "RD2A-KCN",
+  "Açıklama": "70÷420 bar",
+  "Kisa_Kod": "T10A",
+  "Fiyat": "$98,55",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 5,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "RD2A-KNN",
+  "Açıklama": "14÷55 bar",
+  "Kisa_Kod": "T10A",
+  "Fiyat": "$98,55",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 5,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "RD3A-KAN",
+  "Açıklama": "35÷210 bar",
+  "Kisa_Kod": "T3A",
+  "Fiyat": "$138,68",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 5,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "RD3A-KBN",
+  "Açıklama": "20÷105 bar",
+  "Kisa_Kod": "T3A",
+  "Fiyat": "$138,68",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 5,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "RD3A-KCN",
+  "Açıklama": "70÷420 bar",
+  "Kisa_Kod": "T3A",
+  "Fiyat": "$138,68",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 5,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "RD3A-KNN",
+  "Açıklama": "14÷55 bar",
+  "Kisa_Kod": "T3A",
+  "Fiyat": "$138,68",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 5,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "RD6A-KAN",
+  "Açıklama": "35÷210 bar",
+  "Kisa_Kod": "T16A",
+  "Fiyat": "$261,81",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 5,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "RD6A-KBN",
+  "Açıklama": "20÷105 bar",
+  "Kisa_Kod": "T16A",
+  "Fiyat": "$261,81",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 5,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "RD6A-KCN",
+  "Açıklama": "70÷420 bar",
+  "Kisa_Kod": "T16A",
+  "Fiyat": "$261,81",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 5,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "RD6A-KNN",
+  "Açıklama": "14÷55 bar",
+  "Kisa_Kod": "T16A",
+  "Fiyat": "$261,81",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 5,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "RD8A-KAN",
+  "Açıklama": "35÷210 bar",
+  "Kisa_Kod": "T18A",
+  "Fiyat": "$621,45",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 5,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "RD8A-KBN",
+  "Açıklama": "20÷105 bar",
+  "Kisa_Kod": "T18A",
+  "Fiyat": "$621,45",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 5,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "RD8A-KCN",
+  "Açıklama": "70÷420 bar",
+  "Kisa_Kod": "T18A",
+  "Fiyat": "$621,45",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 5,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "RD8A-KNN",
+  "Açıklama": "14÷55 bar",
+  "Kisa_Kod": "T18A",
+  "Fiyat": "$621,45",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 5,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "DİREKT KUMANDALI BASINÇ EMNİYET VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "RQ2B-LAN",
+  "Açıklama": "7 ÷ 210 bar",
+  "Kisa_Kod": "T10A",
+  "Fiyat": "$91,29",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 5,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "KICK-DOWN, PİLOT KUMANDALI BASINÇ EMNİYET VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "RQ2B-LBN",
+  "Açıklama": "3.5 ÷ 105 bar",
+  "Kisa_Kod": "T10A",
+  "Fiyat": "$91,29",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 5,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "KICK-DOWN, PİLOT KUMANDALI BASINÇ EMNİYET VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "RQ2B-LCN",
+  "Açıklama": "10.5 ÷ 420 bar",
+  "Kisa_Kod": "T10A",
+  "Fiyat": "$91,29",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 5,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "KICK-DOWN, PİLOT KUMANDALI BASINÇ EMNİYET VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "RQ2B-LNN",
+  "Açıklama": "5 ÷ 55 bar",
+  "Kisa_Kod": "T10A",
+  "Fiyat": "$91,29",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 5,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "KICK-DOWN, PİLOT KUMANDALI BASINÇ EMNİYET VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "RQ2B-KAN",
+  "Açıklama": "7 ÷ 210 bar",
+  "Kisa_Kod": "T10A",
+  "Fiyat": "$96,88",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 5,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "KICK-DOWN, PİLOT KUMANDALI BASINÇ EMNİYET VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "RQ2B-KBN",
+  "Açıklama": "3.5 ÷ 105 bar",
+  "Kisa_Kod": "T10A",
+  "Fiyat": "$96,88",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 5,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "KICK-DOWN, PİLOT KUMANDALI BASINÇ EMNİYET VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "RQ2B-KCN",
+  "Açıklama": "10.5 ÷ 420 bar",
+  "Kisa_Kod": "T10A",
+  "Fiyat": "$96,88",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 5,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "KICK-DOWN, PİLOT KUMANDALI BASINÇ EMNİYET VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "RQ2B-KNN",
+  "Açıklama": "5 ÷ 55 bar",
+  "Kisa_Kod": "T10A",
+  "Fiyat": "$96,88",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 5,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "KICK-DOWN, PİLOT KUMANDALI BASINÇ EMNİYET VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+```
