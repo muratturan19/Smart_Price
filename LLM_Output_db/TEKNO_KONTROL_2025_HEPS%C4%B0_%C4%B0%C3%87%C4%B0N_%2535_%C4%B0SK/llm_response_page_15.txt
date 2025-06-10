@@ -1,0 +1,54 @@
+```json
+[
+    {
+        "Ana_Baslik": "PASLANMAZ ÇELİK TİE BAĞLANTILARI (AISI 316)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "PH1000",
+        "Açıklama": "To Bağlantı 1/4\" T/L V-06",
+        "Fiyat": "",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "15"
+    },
+    {
+        "Ana_Baslik": "PASLANMAZ ÇELİK ÇEK VALFLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "PH1010",
+        "Açıklama": "P.Çelik Çek Valf RDR 1/8\" RDR1/8\"",
+        "Fiyat": "",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "15"
+    },
+    {
+        "Ana_Baslik": "PASLANMAZ ÇELİK HİGH ÇÖZÜLÜ DİSKLER (AISI 316)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "PH1180",
+        "Açıklama": "Drossel 3/8\" W 3/8 Z",
+        "Fiyat": "",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "15"
+    },
+    {
+        "Ana_Baslik": "PASLANMAZ ÇELİK HİGH ÇÖZÜLÜ TEE BAĞLANTILAR (AISI 316)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "PH1190",
+        "Açıklama": "To Bağlantı 3/8\" KG 3 1/4 Z",
+        "Fiyat": "",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "15"
+    },
+    {
+        "Ana_Baslik": "PASLANMAZ ÇELİK HİGH ÇÖZÜLÜ MANOMETRE KORUMA VALFİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "PH1200",
+        "Açıklama": "Manometre Koruma Valfi 1/4\" MVR",
+        "Fiyat": "",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "15"
+    }
+]
+```
