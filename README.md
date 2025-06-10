@@ -206,6 +206,10 @@ The log records extra details to help trace each step:
 - and the first items parsed from the response.
 - per-page debug files stored under `LLM_Output_db/<PDF adı>` (set
   `SMART_PRICE_DEBUG_DIR` to override the location)
+Debug images can be downloaded directly from GitHub using a URL like
+`https://raw.githubusercontent.com/<owner>/<repo>/main/LLM_Output_db/<PDF adı>/page_image_page_<NN>.png`.
+Note that the `LLM_Output_db` folder sits at the repository root; **do not**
+prefix the path with `Master_data_base`.
  - set `GITHUB_REPO` and `GITHUB_TOKEN` to automatically push each debug
    directory and the files under `Master_data_base/` (including
    `master_dataset.xlsx` and `master.db`) to the configured repository

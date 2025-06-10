@@ -163,7 +163,11 @@ def search_page(df: pd.DataFrame) -> None:
             value=f"{row.get('Fiyat')} {row.get('Para_Birimi','')}"
         )
         img_path = row.get("Image_Path") or row.get("image_path")
-        base = os.getenv("IMAGE_BASE_URL", DEFAULT_IMAGE_BASE_URL)
+        base = os.getenv("IMAGE_BASE_URL", DEFAULT_IMAGE_BASE_URL).rstrip("/")
+        if base.endswith("/master.db"):
+            base = base.rsplit("/", 1)[0]
+        if base.endswith("/Master_data_base"):
+            base = base.rsplit("/", 1)[0]
         img_url = None
         if isinstance(img_path, str) and img_path:
             img_url = f"{base}/{img_path.lstrip('/')}"
