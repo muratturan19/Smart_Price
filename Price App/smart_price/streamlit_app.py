@@ -19,12 +19,9 @@ import base64
 from smart_price import icons
 from smart_price.ui_utils import img_to_base64
 
-left_logo_url = (
-    "https://raw.githubusercontent.com/muratturan19/Smart_Price/main/logo/dp_Seffaf_logo.PNG"
-)
-right_logo_url = (
-    "https://raw.githubusercontent.com/muratturan19/Smart_Price/main/logo/sadece_dp_seffaf.PNG"
-)
+ROOT = Path(__file__).resolve().parents[2]
+left_logo_url = ROOT / "logo" / "dp_Seffaf_logo.PNG"
+right_logo_url = ROOT / "logo" / "sadece_dp_seffaf.PNG"
 
 from smart_price.core.extract_excel import (
     extract_from_excel,
