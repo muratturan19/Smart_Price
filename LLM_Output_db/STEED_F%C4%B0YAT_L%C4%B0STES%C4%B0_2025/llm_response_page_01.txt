@@ -1,0 +1,20 @@
+Üzgünüm, görseldeki metin içeriğini tam olarak çıkaramıyorum. Ancak, sağladığınız kurallara göre bir JSON formatı örneği oluşturabilirim. İşte örnek bir JSON yapısı:
+
+```json
+{
+  "Malzeme_Kodu": "",
+  "Açıklama": "",
+  "Kisa_Kod": "",
+  "Fiyat": "",
+  "Para_Birimi": "",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 1,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "2025 STEED FİYAT LİSTESİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+```
+
+Bu formatı, elinizdeki verilerle doldurabilirsiniz.
