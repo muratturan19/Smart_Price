@@ -128,7 +128,7 @@ def inject_style() -> None:
     }}
 
     .header-logo {{
-        height: clamp(50px, 8vw, 70px);
+        height: clamp(70px, 10vw, 100px);
         padding: 0.25rem;
     }}
 
@@ -198,7 +198,7 @@ def inject_style() -> None:
             font-size: 1.5rem;
         }}
         .header-logo {{
-            height: 40px;
+            height: 60px;
         }}
     }}
     </style>
