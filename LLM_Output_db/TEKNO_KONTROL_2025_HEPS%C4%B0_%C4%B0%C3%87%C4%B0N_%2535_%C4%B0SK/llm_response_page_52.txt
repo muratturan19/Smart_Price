@@ -1,0 +1,104 @@
+```json
+[
+    {
+        "Ana_Baslik": "POLİÜRETAN NUTRİNGLER T-20",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "MR10045",
+        "Açıklama": "P.Nutring T-20 30*17*8 800-22-206",
+        "Fiyat": "2,82",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "52"
+    },
+    {
+        "Ana_Baslik": "POLİÜRETAN NUTRİNGLER T-20",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "MR10050",
+        "Açıklama": "P.Nutring T-20 32*20*8 800-22-206",
+        "Fiyat": "2,82",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "52"
+    },
+    {
+        "Ana_Baslik": "POLİÜRETAN NUTRİNGLER T-20",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "MR10055",
+        "Açıklama": "P.Nutring T-20 35*22*8 800-22-206",
+        "Fiyat": "2,82",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "52"
+    },
+    {
+        "Ana_Baslik": "POLİÜRETAN NUTRİNGLER T-20",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "MR10060",
+        "Açıklama": "P.Nutring T-20 36*24*8 800-22-206",
+        "Fiyat": "2,82",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "52"
+    },
+    {
+        "Ana_Baslik": "POLİÜRETAN NUTRİNGLER T-20",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "MR10065",
+        "Açıklama": "P.Nutring T-20 38*25*8 800-22-206",
+        "Fiyat": "2,82",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "52"
+    },
+    {
+        "Ana_Baslik": "POLİÜRETAN NUTRİNGLER T-20",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "MR10070",
+        "Açıklama": "P.Nutring T-20 40*27*8 800-22-206",
+        "Fiyat": "2,82",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "52"
+    },
+    {
+        "Ana_Baslik": "POLİÜRETAN NUTRİNGLER T-20",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "MR10075",
+        "Açıklama": "P.Nutring T-20 42*30*8 800-22-206",
+        "Fiyat": "2,82",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "52"
+    },
+    {
+        "Ana_Baslik": "POLİÜRETAN NUTRİNGLER T-20",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "MR10080",
+        "Açıklama": "P.Nutring T-20 45*32*8 800-22-206",
+        "Fiyat": "2,82",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "52"
+    },
+    {
+        "Ana_Baslik": "POLİÜRETAN NUTRİNGLER T-20",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "MR10085",
+        "Açıklama": "P.Nutring T-20 50*36*8 800-22-206",
+        "Fiyat": "2,82",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "52"
+    },
+    {
+        "Ana_Baslik": "POLİÜRETAN NUTRİNGLER T-20",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "MR10090",
+        "Açıklama": "P.Nutring T-20 52*38*8 800-22-206",
+        "Fiyat": "2,82",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "52"
+    }
+]
+```
