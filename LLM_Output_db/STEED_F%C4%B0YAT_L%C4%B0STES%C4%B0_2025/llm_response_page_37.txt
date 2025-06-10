@@ -1,0 +1,464 @@
+```json
+{
+  "Malzeme_Kodu": "ST7E - 042",
+  "Açıklama": "YÜKSEK BASINÇLI PALETLİ POMPA",
+  "Kisa_Kod": "",
+  "Fiyat": "2,640.83",
+  "Para_Birimi": "USD",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 37,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "ST7E - ST7ES YÜKSEK BASINÇLI PALETLİ POMPA",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "ST7E - 045",
+  "Açıklama": "YÜKSEK BASINÇLI PALETLİ POMPA",
+  "Kisa_Kod": "",
+  "Fiyat": "2,640.83",
+  "Para_Birimi": "USD",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 37,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "ST7E - ST7ES YÜKSEK BASINÇLI PALETLİ POMPA",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "ST7E - 050",
+  "Açıklama": "YÜKSEK BASINÇLI PALETLİ POMPA",
+  "Kisa_Kod": "",
+  "Fiyat": "2,640.83",
+  "Para_Birimi": "USD",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 37,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "ST7E - ST7ES YÜKSEK BASINÇLI PALETLİ POMPA",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "ST7E - 052",
+  "Açıklama": "YÜKSEK BASINÇLI PALETLİ POMPA",
+  "Kisa_Kod": "",
+  "Fiyat": "2,640.83",
+  "Para_Birimi": "USD",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 37,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "ST7E - ST7ES YÜKSEK BASINÇLI PALETLİ POMPA",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "ST7E - 057",
+  "Açıklama": "YÜKSEK BASINÇLI PALETLİ POMPA",
+  "Kisa_Kod": "",
+  "Fiyat": "2,640.83",
+  "Para_Birimi": "USD",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 37,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "ST7E - ST7ES YÜKSEK BASINÇLI PALETLİ POMPA",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "ST7E - 062",
+  "Açıklama": "YÜKSEK BASINÇLI PALETLİ POMPA",
+  "Kisa_Kod": "",
+  "Fiyat": "2,640.83",
+  "Para_Birimi": "USD",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 37,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "ST7E - ST7ES YÜKSEK BASINÇLI PALETLİ POMPA",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "ST7E - 066",
+  "Açıklama": "YÜKSEK BASINÇLI PALETLİ POMPA",
+  "Kisa_Kod": "",
+  "Fiyat": "2,640.83",
+  "Para_Birimi": "USD",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 37,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "ST7E - ST7ES YÜKSEK BASINÇLI PALETLİ POMPA",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "ST7E - 072",
+  "Açıklama": "YÜKSEK BASINÇLI PALETLİ POMPA",
+  "Kisa_Kod": "",
+  "Fiyat": "2,640.83",
+  "Para_Birimi": "USD",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 37,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "ST7E - ST7ES YÜKSEK BASINÇLI PALETLİ POMPA",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "ST7E - 085",
+  "Açıklama": "YÜKSEK BASINÇLI PALETLİ POMPA",
+  "Kisa_Kod": "",
+  "Fiyat": "2,640.83",
+  "Para_Birimi": "USD",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 37,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "ST7E - ST7ES YÜKSEK BASINÇLI PALETLİ POMPA",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "ST7DXW - X14",
+  "Açıklama": "YÜKSEK BASINÇLI PALETLİ POMPA",
+  "Kisa_Kod": "",
+  "Fiyat": "2,369.97",
+  "Para_Birimi": "USD",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 37,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "ST7DXW YÜKSEK BASINÇLI PALETLİ POMPA",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "ST7DXW - X17",
+  "Açıklama": "YÜKSEK BASINÇLI PALETLİ POMPA",
+  "Kisa_Kod": "",
+  "Fiyat": "2,369.97",
+  "Para_Birimi": "USD",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 37,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "ST7DXW YÜKSEK BASINÇLI PALETLİ POMPA",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "ST7DXW - X20",
+  "Açıklama": "YÜKSEK BASINÇLI PALETLİ POMPA",
+  "Kisa_Kod": "",
+  "Fiyat": "2,369.97",
+  "Para_Birimi": "USD",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 37,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "ST7DXW YÜKSEK BASINÇLI PALETLİ POMPA",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "ST7DXW - X24",
+  "Açıklama": "YÜKSEK BASINÇLI PALETLİ POMPA",
+  "Kisa_Kod": "",
+  "Fiyat": "2,369.97",
+  "Para_Birimi": "USD",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 37,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "ST7DXW YÜKSEK BASINÇLI PALETLİ POMPA",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "ST7DXW - X28",
+  "Açıklama": "YÜKSEK BASINÇLI PALETLİ POMPA",
+  "Kisa_Kod": "",
+  "Fiyat": "2,369.97",
+  "Para_Birimi": "USD",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 37,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "ST7DXW YÜKSEK BASINÇLI PALETLİ POMPA",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "ST7DXW - X31",
+  "Açıklama": "YÜKSEK BASINÇLI PALETLİ POMPA",
+  "Kisa_Kod": "",
+  "Fiyat": "2,369.97",
+  "Para_Birimi": "USD",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 37,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "ST7DXW YÜKSEK BASINÇLI PALETLİ POMPA",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "ST7DXW - X35",
+  "Açıklama": "YÜKSEK BASINÇLI PALETLİ POMPA",
+  "Kisa_Kod": "",
+  "Fiyat": "2,369.97",
+  "Para_Birimi": "USD",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 37,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "ST7DXW YÜKSEK BASINÇLI PALETLİ POMPA",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "ST7DXW - X38",
+  "Açıklama": "YÜKSEK BASINÇLI PALETLİ POMPA",
+  "Kisa_Kod": "",
+  "Fiyat": "2,369.97",
+  "Para_Birimi": "USD",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 37,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "ST7DXW YÜKSEK BASINÇLI PALETLİ POMPA",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "ST7DXW - X42",
+  "Açıklama": "YÜKSEK BASINÇLI PALETLİ POMPA",
+  "Kisa_Kod": "",
+  "Fiyat": "2,369.97",
+  "Para_Birimi": "USD",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 37,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "ST7DXW YÜKSEK BASINÇLI PALETLİ POMPA",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "ST7DXW - X45",
+  "Açıklama": "YÜKSEK BASINÇLI PALETLİ POMPA",
+  "Kisa_Kod": "",
+  "Fiyat": "2,369.97",
+  "Para_Birimi": "USD",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 37,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "ST7DXW YÜKSEK BASINÇLI PALETLİ POMPA",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "ST7DXW - X50",
+  "Açıklama": "YÜKSEK BASINÇLI PALETLİ POMPA",
+  "Kisa_Kod": "",
+  "Fiyat": "2,369.97",
+  "Para_Birimi": "USD",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 37,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "ST7DXW YÜKSEK BASINÇLI PALETLİ POMPA",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "ST6CC - 003",
+  "Açıklama": "YÜKSEK BASINÇLI PALETLİ POMPA",
+  "Kisa_Kod": "",
+  "Fiyat": "1,806.60",
+  "Para_Birimi": "USD",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 37,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "ST6CC YÜKSEK BASINÇLI PALETLİ POMPA",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "ST6CC - 005",
+  "Açıklama": "YÜKSEK BASINÇLI PALETLİ POMPA",
+  "Kisa_Kod": "",
+  "Fiyat": "1,806.60",
+  "Para_Birimi": "USD",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 37,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "ST6CC YÜKSEK BASINÇLI PALETLİ POMPA",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "ST6CC - 006",
+  "Açıklama": "YÜKSEK BASINÇLI PALETLİ POMPA",
+  "Kisa_Kod": "",
+  "Fiyat": "1,806.60",
+  "Para_Birimi": "USD",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 37,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "ST6CC YÜKSEK BASINÇLI PALETLİ POMPA",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "ST6CC - 008",
+  "Açıklama": "YÜKSEK BASINÇLI PALETLİ POMPA",
+  "Kisa_Kod": "",
+  "Fiyat": "1,806.60",
+  "Para_Birimi": "USD",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 37,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "ST6CC YÜKSEK BASINÇLI PALETLİ POMPA",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "ST6CC - 010",
+  "Açıklama": "YÜKSEK BASINÇLI PALETLİ POMPA",
+  "Kisa_Kod": "",
+  "Fiyat": "1,806.60",
+  "Para_Birimi": "USD",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 37,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "ST6CC YÜKSEK BASINÇLI PALETLİ POMPA",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "ST6CC - 012",
+  "Açıklama": "YÜKSEK BASINÇLI PALETLİ POMPA",
+  "Kisa_Kod": "",
+  "Fiyat": "1,806.60",
+  "Para_Birimi": "USD",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 37,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "ST6CC YÜKSEK BASINÇLI PALETLİ POMPA",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "ST6CC - 014",
+  "Açıklama": "YÜKSEK BASINÇLI PALETLİ POMPA",
+  "Kisa_Kod": "",
+  "Fiyat": "1,806.60",
+  "Para_Birimi": "USD",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 37,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "ST6CC YÜKSEK BASINÇLI PALETLİ POMPA",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "ST6CC - 017",
+  "Açıklama": "YÜKSEK BASINÇLI PALETLİ POMPA",
+  "Kisa_Kod": "",
+  "Fiyat": "1,806.60",
+  "Para_Birimi": "USD",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 37,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "ST6CC YÜKSEK BASINÇLI PALETLİ POMPA",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "ST6CC - 020",
+  "Açıklama": "YÜKSEK BASINÇLI PALETLİ POMPA",
+  "Kisa_Kod": "",
+  "Fiyat": "1,806.60",
+  "Para_Birimi": "USD",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 37,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "ST6CC YÜKSEK BASINÇLI PALETLİ POMPA",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "ST6CC - 022",
+  "Açıklama": "YÜKSEK BASINÇLI PALETLİ POMPA",
+  "Kisa_Kod": "",
+  "Fiyat": "1,806.60",
+  "Para_Birimi": "USD",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 37,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "ST6CC YÜKSEK BASINÇLI PALETLİ POMPA",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "ST6CC - 025",
+  "Açıklama": "YÜKSEK BASINÇLI PALETLİ POMPA",
+  "Kisa_Kod": "",
+  "Fiyat": "1,806.60",
+  "Para_Birimi": "USD",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 37,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "ST6CC YÜKSEK BASINÇLI PALETLİ POMPA",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "ST6CC - 028",
+  "Açıklama": "YÜKSEK BASINÇLI PALETLİ POMPA",
+  "Kisa_Kod": "",
+  "Fiyat": "1,806.60",
+  "Para_Birimi": "USD",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 37,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "ST6CC YÜKSEK BASINÇLI PALETLİ POMPA",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "ST6CC - 031",
+  "Açıklama": "YÜKSEK BASINÇLI PALETLİ POMPA",
+  "Kisa_Kod": "",
+  "Fiyat": "1,806.60",
+  "Para_Birimi": "USD",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 37,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "ST6CC YÜKSEK BASINÇLI PALETLİ POMPA",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+```
