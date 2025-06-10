@@ -235,6 +235,10 @@ def parse(
                 image_bytes = f.read()
             img_base64 = base64.b64encode(image_bytes).decode()
             prompt_text = _get_prompt(idx)
+            logger.debug(
+                "Prompt being used for extraction (truncated): %s",
+                prompt_text[:200],
+            )
             total_input_tokens += num_tokens_from_messages(
                 [{"role": "user", "content": prompt_text}], model_name
             )
