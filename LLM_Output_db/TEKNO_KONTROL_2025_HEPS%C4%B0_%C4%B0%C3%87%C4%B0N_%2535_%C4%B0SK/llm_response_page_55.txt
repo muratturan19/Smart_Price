@@ -1,0 +1,54 @@
+I'm unable to directly extract text from images. However, I can guide you on how to manually extract the data based on the provided instructions.
+
+### Steps to Extract Data:
+
+1. **Identify the Main and Subheadings:**
+   - Main Heading: "Simrit Nutringler (Rod)"
+   - Subheadings are not explicitly mentioned, so they might not be present.
+
+2. **Extract Product Details:**
+   - For each product row, identify:
+     - **Malzeme_Kodu (Stock Kodu)**
+     - **Açıklama (Description)**
+     - **Fiyat (Birim Fiyat)**
+     - **Para_Birimi**: If not specified, default to "TL".
+     - **Marka (Brand)**
+     - **Kaynak_Dosya**: Use the PDF file name.
+     - **Sayfa**: Page number from the PDF.
+
+3. **Format the Data in JSON:**
+
+Here's an example of how the JSON output should look based on the visible data:
+
+```json
+[
+  {
+    "Ana_Baslik": "Simrit Nutringler (Rod)",
+    "Alt_Baslik": null,
+    "Malzeme_Kodu": "SM4000",
+    "Açıklama": "Nutring N3 300 9/10*8/7*12/36",
+    "Fiyat": "4.06",
+    "Para_Birimi": "€",
+    "Marka": "SIMRIT-MERKEL",
+    "Kaynak_Dosya": "Simrit Nutringler Fiyat Listesi.pdf",
+    "Sayfa": "55"
+  },
+  {
+    "Ana_Baslik": "Simrit Nutringler (Rod)",
+    "Alt_Baslik": null,
+    "Malzeme_Kodu": "SM4001",
+    "Açıklama": "Nutring N3 300 10/12*8/7*12/36",
+    "Fiyat": "4.06",
+    "Para_Birimi": "€",
+    "Marka": "SIMRIT-MERKEL",
+    "Kaynak_Dosya": "Simrit Nutringler Fiyat Listesi.pdf",
+    "Sayfa": "55"
+  }
+  // Continue for each product row
+]
+```
+
+### Tips:
+- Ensure each product row is captured accurately.
+- If there are any specific extraction guides, follow them for precise data extraction.
+- Use OCR tools if needed to convert the image text to editable text for easier extraction.
