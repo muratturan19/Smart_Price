@@ -1,0 +1,45 @@
+I'm unable to process images directly. However, I can guide you on how to extract the data manually or using software tools.
+
+To extract the data from the PDF page you provided, follow these steps:
+
+1. **Identify the Main and Subheadings:**
+   - Main Heading: "KORLAR (KOR)"
+   - Subheadings: "PASLANMAZ ÇELİK YÜKSEKLER (AISI 316)", "PASLANMAZ ÇELİK SOMUNLAR (AISI 316)", etc.
+
+2. **Extract Product Rows:**
+   - For each product row, note the stock code, brand, description, and unit price.
+
+3. **Format the Data in JSON:**
+   - Use the structure provided in the prompt to format each product entry.
+
+Here's an example of how you might format one entry:
+
+```json
+[
+  {
+    "Ana_Baslik": "KORLAR (KOR)",
+    "Alt_Baslik": null,
+    "Malzeme_Kodu": "BL1900",
+    "Açıklama": "KCR 1/8 2.5-8.0 Bar",
+    "Fiyat": "7.02",
+    "Para_Birimi": "EUR",
+    "Kaynak_Dosya": "Your_PDF_File_Name.pdf",
+    "Sayfa": "14"
+  },
+  {
+    "Ana_Baslik": "PASLANMAZ ÇELİK YÜKSEKLER (AISI 316)",
+    "Alt_Baslik": null,
+    "Malzeme_Kodu": "PH0100",
+    "Açıklama": "Yüksük 6 L/S SKL/S-06ZK",
+    "Fiyat": "3.00",
+    "Para_Birimi": "EUR",
+    "Kaynak_Dosya": "Your_PDF_File_Name.pdf",
+    "Sayfa": "14"
+  }
+]
+```
+
+4. **Repeat for Each Product:**
+   - Continue this process for each product row in the table.
+
+For automated extraction, consider using PDF extraction tools like Adobe Acrobat, Tabula, or Python libraries such as PyPDF2 or pdfplumber. These tools can help automate the extraction process by converting PDF tables into structured data formats.
