@@ -1,0 +1,104 @@
+```json
+[
+    {
+        "Ana_Baslik": "PATLAÇ VALFLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "MA2000",
+        "Açıklama": "Patlaç Valf 1/8\" 2/2 24 VDC",
+        "Fiyat": "17,05",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "64"
+    },
+    {
+        "Ana_Baslik": "PATLAÇ VALFLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "MA2002",
+        "Açıklama": "Patlaç Valf 1/8\" 2/2 220 VDC",
+        "Fiyat": "17,05",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "64"
+    },
+    {
+        "Ana_Baslik": "PATLAÇ VALFLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "MA4000",
+        "Açıklama": "Patlaç Valf 1/4\" 2/2 24 VDC",
+        "Fiyat": "29,90",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "64"
+    },
+    {
+        "Ana_Baslik": "PATLAÇ VALFLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "MA4002",
+        "Açıklama": "Patlaç Valf 1/4\" 2/2 220 VDC",
+        "Fiyat": "29,90",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "64"
+    },
+    {
+        "Ana_Baslik": "PATLAÇ VALFLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "MA5000",
+        "Açıklama": "Patlaç Valf 1/4\" 2/2 24 VDC",
+        "Fiyat": "49,50",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "64"
+    },
+    {
+        "Ana_Baslik": "PATLAÇ VALFLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "MA5002",
+        "Açıklama": "Patlaç Valf 1/4\" 2/2 220 VDC",
+        "Fiyat": "49,50",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "64"
+    },
+    {
+        "Ana_Baslik": "MODÜLER VALFLER 3/2",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "YW5000",
+        "Açıklama": "Modüler Pnömatik Valf 3/2 5/2 YS 211 220 VAC",
+        "Fiyat": "20,06",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "64"
+    },
+    {
+        "Ana_Baslik": "MODÜLER VALFLER 3/2",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "YW5002",
+        "Açıklama": "Modüler Pnömatik Valf 3/2 5/2 YS 211 24 VDC",
+        "Fiyat": "20,06",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "64"
+    },
+    {
+        "Ana_Baslik": "MODÜLER VALFLER 3/2",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "YW5003",
+        "Açıklama": "Modüler Pnömatik Valf 3/2 5/2 YS 211 24 VDC",
+        "Fiyat": "20,06",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "64"
+    },
+    {
+        "Ana_Baslik": "MODÜLER VALFLER 3/2",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "YW5005",
+        "Açıklama": "Modüler Pnömatik Valf 3/2 5/2 YS 311 24 VDC",
+        "Fiyat": "24,04",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "64"
+    }
+]
+```
