@@ -1,0 +1,104 @@
+```json
+[
+    {
+        "Ana_Baslik": "YONWOO BOOSTER SİLİNDİRLERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "W2205",
+        "Açıklama": "Booster 10 Bar YNB15-10",
+        "Fiyat": "75,92",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "PDF Dosya Adı",
+        "Sayfa": "67"
+    },
+    {
+        "Ana_Baslik": "YONWOO BOOSTER SİLİNDİRLERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "W2210",
+        "Açıklama": "Booster 16 Bar YNB15-16",
+        "Fiyat": "75,92",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "PDF Dosya Adı",
+        "Sayfa": "67"
+    },
+    {
+        "Ana_Baslik": "YONWOO BOOSTER SİLİNDİRLERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "W2215",
+        "Açıklama": "Booster 21 Bar YNB15-21",
+        "Fiyat": "75,92",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "PDF Dosya Adı",
+        "Sayfa": "67"
+    },
+    {
+        "Ana_Baslik": "YONWOO BOOSTER SİLİNDİRLERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "W2225",
+        "Açıklama": "Booster 28 Bar YNB15-28",
+        "Fiyat": "75,92",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "PDF Dosya Adı",
+        "Sayfa": "67"
+    },
+    {
+        "Ana_Baslik": "YONWOO BOOSTER SİLİNDİRLERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "W2230",
+        "Açıklama": "Booster 40 Bar YNB15-40",
+        "Fiyat": "75,92",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "PDF Dosya Adı",
+        "Sayfa": "67"
+    },
+    {
+        "Ana_Baslik": "YONWOO MEKANİK VARYAL VALFLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "W3000",
+        "Açıklama": "32 Makara Valf (Plastik makara) 1/8\" YMV 310-1/8P",
+        "Fiyat": "33,01",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "PDF Dosya Adı",
+        "Sayfa": "67"
+    },
+    {
+        "Ana_Baslik": "YONWOO MEKANİK VARYAL VALFLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "W3005",
+        "Açıklama": "32 Makara Valf (Plastik makara) 1/4\" YMV 410-1/8P",
+        "Fiyat": "33,01",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "PDF Dosya Adı",
+        "Sayfa": "67"
+    },
+    {
+        "Ana_Baslik": "YONWOO MEKANİK VARYAL VALFLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "W3010",
+        "Açıklama": "32 Makara Valf (Plastik makara) 1/4\" YMV 410-1/4P",
+        "Fiyat": "33,01",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "PDF Dosya Adı",
+        "Sayfa": "67"
+    },
+    {
+        "Ana_Baslik": "YONWOO MEKANİK VARYAL VALFLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "W3015",
+        "Açıklama": "32 Makara Valf (Plastik makara) 1/4\" YMV 410-1/8P",
+        "Fiyat": "33,01",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "PDF Dosya Adı",
+        "Sayfa": "67"
+    },
+    {
+        "Ana_Baslik": "YONWOO MEKANİK VARYAL VALFLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "W3020",
+        "Açıklama": "32 Makara Valf (Plastik makara) 1/4\" YMV 410-1/4P",
+        "Fiyat": "33,01",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "PDF Dosya Adı",
+        "Sayfa": "67"
+    }
+]
+```
