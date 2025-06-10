@@ -1,0 +1,84 @@
+```json
+[
+    {
+        "Ana_Baslik": "BAĞLANTI RAKORLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "HT1000",
+        "Açıklama": "Düz Rakor 4/6 PG 7/9/11",
+        "Fiyat": "0,51",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "60"
+    },
+    {
+        "Ana_Baslik": "BAĞLANTI RAKORLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "HT1004",
+        "Açıklama": "Düz Rakor 4/6 PG 13/16",
+        "Fiyat": "0,51",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "60"
+    },
+    {
+        "Ana_Baslik": "BAĞLANTI RAKORLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "HT1009",
+        "Açıklama": "Düz Rakor 8/10 PG 7/9/11",
+        "Fiyat": "0,57",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "60"
+    },
+    {
+        "Ana_Baslik": "BAĞLANTI RAKORLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "HT1010",
+        "Açıklama": "Düz Rakor 8/10 PG 13/16",
+        "Fiyat": "0,57",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "60"
+    },
+    {
+        "Ana_Baslik": "DÖNER DİRSEK BAĞLANTILAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "HT3005",
+        "Açıklama": "Döner Dirsek 4/6 PL 0401",
+        "Fiyat": "0,72",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "60"
+    },
+    {
+        "Ana_Baslik": "DÖNER DİRSEK BAĞLANTILAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "HT3010",
+        "Açıklama": "Döner Dirsek 6/8 PL 0401",
+        "Fiyat": "0,72",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "60"
+    },
+    {
+        "Ana_Baslik": "DÖNER DİRSEK BAĞLANTILAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "HT3015",
+        "Açıklama": "Döner Dirsek 8/10 PL 0401",
+        "Fiyat": "0,72",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "60"
+    },
+    {
+        "Ana_Baslik": "DÖNER DİRSEK BAĞLANTILAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "HT3020",
+        "Açıklama": "Döner Dirsek 10/12 PL 0401",
+        "Fiyat": "0,72",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "60"
+    }
+]
+```
