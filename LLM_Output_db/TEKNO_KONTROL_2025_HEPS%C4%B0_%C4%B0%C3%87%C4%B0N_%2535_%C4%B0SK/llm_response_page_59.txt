@@ -1,0 +1,94 @@
+```json
+[
+    {
+        "Ana_Baslik": "6000 PSI 90° SAE FLANŞLI HORTUM BAŞLIKLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "VW3106",
+        "Açıklama": "SAE 90° Flanş Bağlantı 1/2 - 6000 11491-12-08",
+        "Fiyat": "17,06",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "VOSS Fiyat Listesi.pdf",
+        "Sayfa": "59"
+    },
+    {
+        "Ana_Baslik": "6000 PSI 90° SAE FLANŞLI HORTUM BAŞLIKLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "VW3110",
+        "Açıklama": "SAE 90° Flanş Bağlantı 5/8 - 6000 11491-12-10",
+        "Fiyat": "17,06",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "VOSS Fiyat Listesi.pdf",
+        "Sayfa": "59"
+    },
+    {
+        "Ana_Baslik": "6000 PSI 90° SAE FLANŞLI HORTUM BAŞLIKLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "VW3112",
+        "Açıklama": "SAE 90° Flanş Bağlantı 3/4 - 6000 11491-12-12",
+        "Fiyat": "17,06",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "VOSS Fiyat Listesi.pdf",
+        "Sayfa": "59"
+    },
+    {
+        "Ana_Baslik": "6000 PSI 90° SAE FLANŞLI HORTUM BAŞLIKLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "VW3116",
+        "Açıklama": "SAE 90° Flanş Bağlantı 1 - 6000 11491-12-16",
+        "Fiyat": "17,06",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "VOSS Fiyat Listesi.pdf",
+        "Sayfa": "59"
+    },
+    {
+        "Ana_Baslik": "6000 PSI 90° SAE FLANŞLI HORTUM BAŞLIKLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "VW3120",
+        "Açıklama": "SAE 90° Flanş Bağlantı 1.1/4 - 6000 11491-12-20",
+        "Fiyat": "19,06",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "VOSS Fiyat Listesi.pdf",
+        "Sayfa": "59"
+    },
+    {
+        "Ana_Baslik": "6000 PSI 90° SAE FLANŞLI HORTUM BAŞLIKLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "VW3124",
+        "Açıklama": "SAE 90° Flanş Bağlantı 1.1/2 - 6000 11491-12-24",
+        "Fiyat": "29,06",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "VOSS Fiyat Listesi.pdf",
+        "Sayfa": "59"
+    },
+    {
+        "Ana_Baslik": "6000 PSI 90° SAE FLANŞLI HORTUM BAŞLIKLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "VW3128",
+        "Açıklama": "SAE 90° Flanş Bağlantı 2 - 6000 11491-12-32",
+        "Fiyat": "39,06",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "VOSS Fiyat Listesi.pdf",
+        "Sayfa": "59"
+    },
+    {
+        "Ana_Baslik": "6000 PSI 90° SAE FLANŞLI HORTUM BAŞLIKLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "VW3132",
+        "Açıklama": "SAE 90° Flanş Bağlantı 2.1/2 - 6000 11491-12-40",
+        "Fiyat": "74,06",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "VOSS Fiyat Listesi.pdf",
+        "Sayfa": "59"
+    },
+    {
+        "Ana_Baslik": "6000 PSI 90° SAE FLANŞLI HORTUM BAŞLIKLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "VW3136",
+        "Açıklama": "SAE 90° Flanş Bağlantı 3 - 6000 11491-12-48",
+        "Fiyat": "124,06",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "VOSS Fiyat Listesi.pdf",
+        "Sayfa": "59"
+    }
+]
+```
