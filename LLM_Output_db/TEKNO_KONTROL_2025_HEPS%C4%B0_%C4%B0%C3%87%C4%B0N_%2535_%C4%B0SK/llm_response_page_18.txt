@@ -1,0 +1,274 @@
+```json
+[
+    {
+        "Ana_Baslik": "QUICK KAPLİNLER N.B.NV SERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA300",
+        "Açıklama": "Quick Kaplin DN 6 1/4 GAS F",
+        "Fiyat": "13,00",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "Faster Fiyat Listesi.pdf",
+        "Sayfa": "18"
+    },
+    {
+        "Ana_Baslik": "QUICK KAPLİNLER N.B.NV SERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA310",
+        "Açıklama": "Quick Kaplin DN 8 3/8 GAS F",
+        "Fiyat": "13,00",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "Faster Fiyat Listesi.pdf",
+        "Sayfa": "18"
+    },
+    {
+        "Ana_Baslik": "QUICK KAPLİNLER N.B.NV SERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA320",
+        "Açıklama": "Quick Kaplin DN 10 1/2 GAS F",
+        "Fiyat": "15,00",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "Faster Fiyat Listesi.pdf",
+        "Sayfa": "18"
+    },
+    {
+        "Ana_Baslik": "QUICK KAPLİNLER N.B.NV SERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA330",
+        "Açıklama": "Quick Kaplin DN 12 3/4 GAS F",
+        "Fiyat": "18,00",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "Faster Fiyat Listesi.pdf",
+        "Sayfa": "18"
+    },
+    {
+        "Ana_Baslik": "QUICK KAPLİNLER N.B.NV SERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA340",
+        "Açıklama": "Quick Kaplin DN 15 1 GAS F",
+        "Fiyat": "22,00",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "Faster Fiyat Listesi.pdf",
+        "Sayfa": "18"
+    },
+    {
+        "Ana_Baslik": "QUICK KAPLİNLER N.B.NV SERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA350",
+        "Açıklama": "Quick Kaplin DN 19 1 1/4 GAS F",
+        "Fiyat": "28,00",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "Faster Fiyat Listesi.pdf",
+        "Sayfa": "18"
+    },
+    {
+        "Ana_Baslik": "QUICK KAPLİNLER N.B.NV SERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA360",
+        "Açıklama": "Quick Kaplin DN 25 1 1/2 GAS F",
+        "Fiyat": "38,00",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "Faster Fiyat Listesi.pdf",
+        "Sayfa": "18"
+    },
+    {
+        "Ana_Baslik": "QUICK KAPLİNLER N.B.NV SERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA370",
+        "Açıklama": "Quick Kaplin DN 32 2 GAS F",
+        "Fiyat": "54,00",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "Faster Fiyat Listesi.pdf",
+        "Sayfa": "18"
+    },
+    {
+        "Ana_Baslik": "QUICK KAPLİNLER N.B.NV SERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA380",
+        "Açıklama": "Quick Kaplin DN 40 2 1/2 GAS F",
+        "Fiyat": "72,00",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "Faster Fiyat Listesi.pdf",
+        "Sayfa": "18"
+    },
+    {
+        "Ana_Baslik": "QUICK KAPLİNLER N.B.NV SERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA390",
+        "Açıklama": "Quick Kaplin DN 50 3 GAS F",
+        "Fiyat": "102,00",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "Faster Fiyat Listesi.pdf",
+        "Sayfa": "18"
+    },
+    {
+        "Ana_Baslik": "ÇEK VALFLER VE SERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA400",
+        "Açıklama": "Çek Valf VU 3/8 GAS F",
+        "Fiyat": "13,00",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "Faster Fiyat Listesi.pdf",
+        "Sayfa": "18"
+    },
+    {
+        "Ana_Baslik": "ÇEK VALFLER VE SERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA410",
+        "Açıklama": "Çek Valf VU 1/2 GAS F",
+        "Fiyat": "15,00",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "Faster Fiyat Listesi.pdf",
+        "Sayfa": "18"
+    },
+    {
+        "Ana_Baslik": "ÇEK VALFLER VE SERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA420",
+        "Açıklama": "Çek Valf VU 3/4 GAS F",
+        "Fiyat": "18,00",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "Faster Fiyat Listesi.pdf",
+        "Sayfa": "18"
+    },
+    {
+        "Ana_Baslik": "ÇEK VALFLER VE SERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA430",
+        "Açıklama": "Çek Valf VU 1 GAS F",
+        "Fiyat": "22,00",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "Faster Fiyat Listesi.pdf",
+        "Sayfa": "18"
+    },
+    {
+        "Ana_Baslik": "ÇEK VALFLER VE SERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA440",
+        "Açıklama": "Çek Valf VU 1 1/4 GAS F",
+        "Fiyat": "28,00",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "Faster Fiyat Listesi.pdf",
+        "Sayfa": "18"
+    },
+    {
+        "Ana_Baslik": "ÇEK VALFLER VE SERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA450",
+        "Açıklama": "Çek Valf VU 1 1/2 GAS F",
+        "Fiyat": "38,00",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "Faster Fiyat Listesi.pdf",
+        "Sayfa": "18"
+    },
+    {
+        "Ana_Baslik": "ÇEK VALFLER VE SERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA460",
+        "Açıklama": "Çek Valf VU 2 GAS F",
+        "Fiyat": "54,00",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "Faster Fiyat Listesi.pdf",
+        "Sayfa": "18"
+    },
+    {
+        "Ana_Baslik": "VIDALI KAPLİN BAĞLANTILAR VB SERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA500",
+        "Açıklama": "Vidalı Kaplin DN 6 1/4 GAS M",
+        "Fiyat": "13,00",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "Faster Fiyat Listesi.pdf",
+        "Sayfa": "18"
+    },
+    {
+        "Ana_Baslik": "VIDALI KAPLİN BAĞLANTILAR VB SERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA510",
+        "Açıklama": "Vidalı Kaplin DN 8 3/8 GAS M",
+        "Fiyat": "13,00",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "Faster Fiyat Listesi.pdf",
+        "Sayfa": "18"
+    },
+    {
+        "Ana_Baslik": "VIDALI KAPLİN BAĞLANTILAR VB SERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA520",
+        "Açıklama": "Vidalı Kaplin DN 10 1/2 GAS M",
+        "Fiyat": "15,00",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "Faster Fiyat Listesi.pdf",
+        "Sayfa": "18"
+    },
+    {
+        "Ana_Baslik": "VIDALI KAPLİN BAĞLANTILAR VB SERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA530",
+        "Açıklama": "Vidalı Kaplin DN 12 3/4 GAS M",
+        "Fiyat": "18,00",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "Faster Fiyat Listesi.pdf",
+        "Sayfa": "18"
+    },
+    {
+        "Ana_Baslik": "VIDALI KAPLİN BAĞLANTILAR VB SERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA540",
+        "Açıklama": "Vidalı Kaplin DN 15 1 GAS M",
+        "Fiyat": "22,00",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "Faster Fiyat Listesi.pdf",
+        "Sayfa": "18"
+    },
+    {
+        "Ana_Baslik": "VIDALI KAPLİN BAĞLANTILAR VB SERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA550",
+        "Açıklama": "Vidalı Kaplin DN 19 1 1/4 GAS M",
+        "Fiyat": "28,00",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "Faster Fiyat Listesi.pdf",
+        "Sayfa": "18"
+    },
+    {
+        "Ana_Baslik": "VIDALI KAPLİN BAĞLANTILAR VB SERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA560",
+        "Açıklama": "Vidalı Kaplin DN 25 1 1/2 GAS M",
+        "Fiyat": "38,00",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "Faster Fiyat Listesi.pdf",
+        "Sayfa": "18"
+    },
+    {
+        "Ana_Baslik": "VIDALI KAPLİN BAĞLANTILAR VB SERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA570",
+        "Açıklama": "Vidalı Kaplin DN 32 2 GAS M",
+        "Fiyat": "54,00",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "Faster Fiyat Listesi.pdf",
+        "Sayfa": "18"
+    },
+    {
+        "Ana_Baslik": "VIDALI KAPLİN BAĞLANTILAR VB SERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA580",
+        "Açıklama": "Vidalı Kaplin DN 40 2 1/2 GAS M",
+        "Fiyat": "72,00",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "Faster Fiyat Listesi.pdf",
+        "Sayfa": "18"
+    },
+    {
+        "Ana_Baslik": "VIDALI KAPLİN BAĞLANTILAR VB SERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA590",
+        "Açıklama": "Vidalı Kaplin DN 50 3 GAS M",
+        "Fiyat": "102,00",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "Faster Fiyat Listesi.pdf",
+        "Sayfa": "18"
+    }
+]
+```
