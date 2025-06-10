@@ -1,0 +1,1 @@
+Üzgünüm, bu görüntüdeki metni doğrudan işleyemem. Ancak, görüntüdeki metni okuyarak veya bir OCR (Optik Karakter Tanıma) aracı kullanarak metni çıkarabilir ve ardından yukarıdaki talimatlara göre yapılandırabilirsiniz. Eğer metni sağlarsanız, JSON formatında nasıl düzenleyeceğiniz konusunda yardımcı olabilirim.
