@@ -17,8 +17,8 @@ except Exception:  # pragma: no cover - optional dependency
 _REPO_ROOT = Path(__file__).resolve().parents[2]
 
 # Default locations matching the repository layout
-_DEFAULT_MASTER_DB_PATH = _REPO_ROOT / "Master data base" / "master.db"
-_DEFAULT_MASTER_EXCEL_PATH = _REPO_ROOT / "Master data base" / "master_dataset.xlsx"
+_DEFAULT_MASTER_DB_PATH = _REPO_ROOT / "Master_data_base" / "master.db"
+_DEFAULT_MASTER_EXCEL_PATH = _REPO_ROOT / "Master_data_base" / "master_dataset.xlsx"
 _DEFAULT_IMAGE_DIR = _REPO_ROOT / "images"
 _DEFAULT_SALES_APP_DIR = _REPO_ROOT / "Sales App" / "sales_app"
 _DEFAULT_PRICE_APP_DIR = _REPO_ROOT / "Price App" / "smart_price"

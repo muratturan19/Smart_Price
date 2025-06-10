@@ -537,7 +537,7 @@ def save_master_dataset(
 
     upload_ok = upload_folder(
         Path(config.MASTER_EXCEL_PATH).parent,
-        remote_prefix="Master data base",
+        remote_prefix="Master_data_base",
     )
 
     if upload_ok:
@@ -566,7 +566,7 @@ def reset_database() -> None:
             pass
 
     delete_github_folder("LLM_Output_db")
-    delete_github_folder("Master data base")
+    delete_github_folder("Master_data_base")
 
 
 def upload_page():
