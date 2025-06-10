@@ -1,0 +1,64 @@
+```json
+[
+    {
+        "Ana_Baslik": "KOMPAKT PİSTON KEÇELERİ L4-3",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "MR1105",
+        "Açıklama": "Kompakt Keçe 40x47x5.8 B1015-231-780",
+        "Fiyat": "2,30",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "53"
+    },
+    {
+        "Ana_Baslik": "KOMPAKT PİSTON KEÇELERİ L4-3",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "MR1110",
+        "Açıklama": "Kompakt Keçe 45x52x5.8 B1015-231-780",
+        "Fiyat": "2,30",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "53"
+    },
+    {
+        "Ana_Baslik": "KOMPAKT PİSTON KEÇELERİ L4-3",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "MR1115",
+        "Açıklama": "Kompakt Keçe 50x57x5.8 B1015-231-780",
+        "Fiyat": "3,34",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "53"
+    },
+    {
+        "Ana_Baslik": "TOZ KEÇELERİ P8",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "MR2505",
+        "Açıklama": "Toz Keçesi P8 20/26.7/3.5 B1015-040-784",
+        "Fiyat": "2,30",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "53"
+    },
+    {
+        "Ana_Baslik": "OMEGAT MİL KEÇELERİ OMS-MR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "MR3505",
+        "Açıklama": "Omegat Keçe OMS-MR 35x47x7.2 B1015-732-446",
+        "Fiyat": "8,61",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "53"
+    },
+    {
+        "Ana_Baslik": "TAKIM KEÇELERİ E4",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "MR7105",
+        "Açıklama": "Mantar Keçe E4-10 20/27.3/5.5 0001-070-179",
+        "Fiyat": "13,56",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "53"
+    }
+]
+```
