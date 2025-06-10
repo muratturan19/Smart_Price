@@ -3,23 +3,47 @@ from __future__ import annotations
 import csv
 import json
 from pathlib import Path
-from typing import Any, Dict, List
+from typing import Any, Dict, List, Tuple
+
+
+def _parse_md_guide(path: Path) -> List[Dict[str, Any]]:
+    """Parse markdown guide at ``path`` into a list of entries."""
+    text = path.read_text(encoding="utf-8")
+    lines = text.splitlines()
+    sections: List[Tuple[str, List[str]]] = []
+    current: Tuple[str, List[str]] | None = None
+    for line in lines:
+        if line.startswith("## "):
+            if current:
+                sections.append(current)
+            current = (line[3:].strip(), [])
+        else:
+            if current:
+                current[1].append(line)
+    if current:
+        sections.append(current)
+    result = []
+    for title, body_lines in sections:
+        body = "\n".join(body_lines).strip()
+        result.append({"pdf": title, "page": None, "prompt": body})
+    return result
 
 from smart_price import config
+from .common_utils import detect_brand
 
 
 def load_extraction_guide(path: str | None = None) -> List[Dict[str, Any]]:
     """Return guide entries from ``path``.
 
     If ``path`` is ``None`` try ``config.EXTRACTION_GUIDE_PATH`` and fallback
-    to ``extraction_guide.csv`` or ``extraction_guide.json`` under the
-    repository root. Parsing errors result in an empty list.
+    to ``extraction_guide.md``, ``extraction_guide.csv`` or ``extraction_guide.json``
+    under the repository root. Parsing errors result in an empty list.
     """
     if path is None:
         path = str(getattr(config, "EXTRACTION_GUIDE_PATH", ""))
     if not path:
         root = Path(__file__).resolve().parents[2]
-        for name in ("extraction_guide.csv", "extraction_guide.json"):
+        for name in ("extraction_guide.md", "extraction_guide.csv", "extraction_guide.json"):
             candidate = root / name
             if candidate.exists():
                 path = str(candidate)
@@ -31,7 +55,11 @@ def load_extraction_guide(path: str | None = None) -> List[Dict[str, Any]]:
         if p.suffix.lower() == ".csv":
             with p.open(encoding="utf-8") as fh:
                 return list(csv.DictReader(fh))
-        return json.loads(p.read_text(encoding="utf-8"))
+        if p.suffix.lower() == ".json":
+            return json.loads(p.read_text(encoding="utf-8"))
+        if p.suffix.lower() in {".md", ".markdown"}:
+            return _parse_md_guide(p)
+        return []
     except Exception:
         return []
 
@@ -46,12 +74,21 @@ def prompts_for_pdf(pdf_name: str, path: str | None = None) -> Dict[int, str] | 
     if not guide:
         return None
     stem = Path(pdf_name).stem.lower()
+    stem_norm = stem.replace(" ", "")
+    brand = (detect_brand(pdf_name) or "").lower()
+    brand_norm = brand.replace(" ", "")
     mapping: Dict[int, str] = {}
     for row in guide:
         file_field = row.get("pdf") or row.get("file") or row.get("name")
         if not file_field:
             continue
-        if Path(file_field).stem.lower() != stem:
+        target = Path(str(file_field)).stem.lower()
+        target_norm = target.replace(" ", "")
+        if (
+            target_norm not in stem_norm
+            and target_norm not in brand_norm
+            and brand_norm not in target_norm
+        ):
             continue
         prompt = row.get("prompt")
         if not prompt:

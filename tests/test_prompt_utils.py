@@ -22,6 +22,13 @@ def test_load_extraction_guide_json(tmp_path):
     assert data == [{"pdf": "dummy.pdf", "page": 2, "prompt": "HI"}]
 
 
+def test_load_extraction_guide_md(tmp_path):
+    path = tmp_path / "guide.md"
+    path.write_text("# Guide\n\n## BRAND\nPrompt text\n")
+    data = prompt_utils.load_extraction_guide(str(path))
+    assert data == [{"pdf": "BRAND", "page": None, "prompt": "Prompt text"}]
+
+
 def test_load_extraction_guide_bad(tmp_path, monkeypatch):
     path = tmp_path / "bad.csv"
     path.write_text("not,really")
@@ -35,6 +42,13 @@ def test_prompts_for_pdf(tmp_path):
     path.write_text("pdf,page,prompt\ndummy.pdf,,ALL\ndummy.pdf,2,TWO\n")
     mapping = prompt_utils.prompts_for_pdf("dummy.pdf", str(path))
     assert mapping == {0: "ALL", 2: "TWO"}
+
+
+def test_prompts_for_pdf_md(tmp_path):
+    path = tmp_path / "guide.md"
+    path.write_text("# G\n\n## BRAND\nPrompt\n")
+    mapping = prompt_utils.prompts_for_pdf("BRAND_list.pdf", str(path))
+    assert mapping == {0: "Prompt"}
 
 
 def test_prompts_for_pdf_no_match(tmp_path):

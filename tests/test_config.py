@@ -52,7 +52,7 @@ def test_defaults(monkeypatch):
     assert cfg.BASE_REPO_URL.endswith("Smart_Price/main")
     assert cfg.DEFAULT_DB_URL == f"{cfg.BASE_REPO_URL}/Master_data_base/master.db"
     assert cfg.DEFAULT_IMAGE_BASE_URL == cfg.BASE_REPO_URL
-    assert cfg.EXTRACTION_GUIDE_PATH == root / "extraction_guide.csv"
+    assert cfg.EXTRACTION_GUIDE_PATH == root / "extraction_guide.md"
 
 
 def test_env_and_config_overrides(tmp_path, monkeypatch):
