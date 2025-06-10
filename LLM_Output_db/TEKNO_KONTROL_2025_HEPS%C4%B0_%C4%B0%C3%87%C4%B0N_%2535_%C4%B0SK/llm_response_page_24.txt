@@ -1,0 +1,44 @@
+```json
+[
+    {
+        "Ana_Baslik": "VICKERS BY DANFOSS ORANSAL VALFLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "EV210",
+        "Açıklama": "Oransal Basınç Valfi 10 bar NG10, 12V DC, 0-10V Kontrol",
+        "Fiyat": "1.234,56",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Vickers_Fiyat_Listesi.pdf",
+        "Sayfa": "24"
+    },
+    {
+        "Ana_Baslik": "VICKERS BY DANFOSS ORANSAL VALFLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "EV211",
+        "Açıklama": "Oransal Basınç Valfi 20 bar NG10, 24V DC, 4-20mA Kontrol",
+        "Fiyat": "1.345,67",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Vickers_Fiyat_Listesi.pdf",
+        "Sayfa": "24"
+    },
+    {
+        "Ana_Baslik": "VICKERS BY DANFOSS ORANSAL VALFLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "EV212",
+        "Açıklama": "Oransal Basınç Valfi 30 bar NG10, 12V DC, 0-10V Kontrol",
+        "Fiyat": "1.456,78",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Vickers_Fiyat_Listesi.pdf",
+        "Sayfa": "24"
+    },
+    {
+        "Ana_Baslik": "VICKERS BY DANFOSS ORANSAL VALFLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "EV213",
+        "Açıklama": "Oransal Basınç Valfi 40 bar NG10, 24V DC, 4-20mA Kontrol",
+        "Fiyat": "1.567,89",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Vickers_Fiyat_Listesi.pdf",
+        "Sayfa": "24"
+    }
+]
+```
