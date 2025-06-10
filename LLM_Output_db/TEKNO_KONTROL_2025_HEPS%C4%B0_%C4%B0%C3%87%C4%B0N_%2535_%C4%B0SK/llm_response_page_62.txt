@@ -1,0 +1,89 @@
+```json
+[
+    {
+        "Ana_Baslik": "HPC-WNB REGÜLATÖRLER",
+        "Alt_Baslik": "Giriş 32 Bar, Çıkış 30 Bar",
+        "Malzeme_Kodu": "H70050",
+        "Açıklama": "Regülatör R1/2\" 0.5-30 bar 2300 Basık. QTY=1 1/2x1/2\"",
+        "Fiyat": "87,00",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "62"
+    },
+    {
+        "Ana_Baslik": "HPC-WNB METAL KORUMALI YAĞLAYICILAR",
+        "Alt_Baslik": "max 10 Bar",
+        "Malzeme_Kodu": "H71050",
+        "Açıklama": "Yağlayıcı R1/2\" 1000 basık. QSL-04-QSL-04",
+        "Fiyat": "32,54",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "62"
+    },
+    {
+        "Ana_Baslik": "HPC-WNB PNÖMATİK ŞARTLANDIRICILAR",
+        "Alt_Baslik": "max 10 Bar",
+        "Malzeme_Kodu": "H73050",
+        "Açıklama": "Şartlandırıcı R1/2\" 6000 basık. QTY=1 1/2x1/2\"",
+        "Fiyat": "33,54",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "62"
+    },
+    {
+        "Ana_Baslik": "PNÖMATİK HORTUMLAR",
+        "Alt_Baslik": "POLIAMID RILSAN PA11+12",
+        "Malzeme_Kodu": "VA2060",
+        "Açıklama": "Promatik Hortum PA11-22*4",
+        "Fiyat": "0,92",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "62"
+    },
+    {
+        "Ana_Baslik": "POLİÜRETAN HORTUMLAR",
+        "Malzeme_Kodu": "HT0100",
+        "Açıklama": "Poliüretan Hortum 6.2*PU-04-25",
+        "Fiyat": "0,56",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "62"
+    },
+    {
+        "Ana_Baslik": "TEFLON HORTUMLAR",
+        "Malzeme_Kodu": "HT0300",
+        "Açıklama": "PTFE Teflon Hortum 2*4",
+        "Fiyat": "2,90",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "62"
+    },
+    {
+        "Ana_Baslik": "POLİÜRETAN SPİRAL HORTUMLAR",
+        "Malzeme_Kodu": "HT0200",
+        "Açıklama": "PU Spiral Hortum 5.0 UC EP5/5",
+        "Fiyat": "7,06",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "62"
+    },
+    {
+        "Ana_Baslik": "PNÖMATİK HORTUMLAR POLİETİLEN PE-4D",
+        "Malzeme_Kodu": "VA0100",
+        "Açıklama": "Promatik Hortum PE-4D 2*4",
+        "Fiyat": "0,32",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "62"
+    },
+    {
+        "Ana_Baslik": "SPİRAL HORTUMLAR POLİÜRETAN",
+        "Malzeme_Kodu": "VA2050",
+        "Açıklama": "Spiral Hortum PU 8*5 4",
+        "Fiyat": "20,64",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "62"
+    }
+]
+```
