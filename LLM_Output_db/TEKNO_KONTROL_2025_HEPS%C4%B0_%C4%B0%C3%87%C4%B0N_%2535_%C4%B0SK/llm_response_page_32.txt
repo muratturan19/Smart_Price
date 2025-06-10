@@ -1,0 +1,31 @@
+Üzgünüm, ancak PDF içeriğini doğrudan işleyemem. Ancak, sağladığınız görüntü üzerinden genel bir analiz yapabilirim. Görüntüdeki tabloyu inceleyerek, ürün bilgilerini JSON formatında nasıl yapılandırabileceğinizi gösterebilirim.
+
+Örnek JSON formatı:
+
+```json
+[
+  {
+    "Ana_Baslik": "DEĞİŞKEN DEBİLİ PALETLİ POMPALAR",
+    "Alt_Baslik": "BASINÇ DÜZENLİ",
+    "Malzeme_Kodu": "BE0105",
+    "Açıklama": "Paletli Pompa PV5-0.5R1F-10B Bar",
+    "Fiyat": "661,80",
+    "Para_Birimi": "EUR",
+    "Kaynak_Dosya": "Örnek Dosya Adı.pdf",
+    "Sayfa": "32"
+  },
+  {
+    "Ana_Baslik": "DEĞİŞKEN DEBİLİ PALETLİ POMPALAR",
+    "Alt_Baslik": "BASINÇ DÜZENLİ",
+    "Malzeme_Kodu": "BE0110",
+    "Açıklama": "Paletli Pompa PV5-1R1F-10B Bar",
+    "Fiyat": "703,32",
+    "Para_Birimi": "EUR",
+    "Kaynak_Dosya": "Örnek Dosya Adı.pdf",
+    "Sayfa": "32"
+  }
+  // Diğer ürünler...
+]
+```
+
+Bu formatı, PDF'deki her ürün satırı için doldurabilirsiniz. Her ürünün "Ana_Baslik", "Alt_Baslik", "Malzeme_Kodu", "Açıklama", "Fiyat", "Para_Birimi", "Kaynak_Dosya" ve "Sayfa" bilgilerini dikkatlice ayıklayarak JSON formatında düzenleyebilirsiniz.
