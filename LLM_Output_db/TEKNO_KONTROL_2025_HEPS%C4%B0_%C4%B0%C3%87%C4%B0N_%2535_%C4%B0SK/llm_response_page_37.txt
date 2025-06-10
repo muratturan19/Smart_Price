@@ -1,0 +1,594 @@
+```json
+[
+    {
+        "Ana_Baslik": "KÜREKLİ DİRSEK",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG2100",
+        "Açıklama": "Kürekli Dirsek 5000 1/8\"",
+        "Fiyat": "3,07",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Aignep_Fiyat_Listesi.pdf",
+        "Sayfa": "37"
+    },
+    {
+        "Ana_Baslik": "KÜREKLİ DİRSEK",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG2110",
+        "Açıklama": "Kürekli Dirsek 5000 1/4\"",
+        "Fiyat": "3,24",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Aignep_Fiyat_Listesi.pdf",
+        "Sayfa": "37"
+    },
+    {
+        "Ana_Baslik": "KÜREKLİ DİRSEK",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG2120",
+        "Açıklama": "Kürekli Dirsek 5000 3/8\"",
+        "Fiyat": "3,42",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Aignep_Fiyat_Listesi.pdf",
+        "Sayfa": "37"
+    },
+    {
+        "Ana_Baslik": "KÜREKLİ DİRSEK",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG2130",
+        "Açıklama": "Kürekli Dirsek 5000 1/2\"",
+        "Fiyat": "3,76",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Aignep_Fiyat_Listesi.pdf",
+        "Sayfa": "37"
+    },
+    {
+        "Ana_Baslik": "KÜREKLİ DİRSEK",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG2140",
+        "Açıklama": "Kürekli Dirsek 5000 3/4\"",
+        "Fiyat": "4,01",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Aignep_Fiyat_Listesi.pdf",
+        "Sayfa": "37"
+    },
+    {
+        "Ana_Baslik": "KÜREKLİ DİRSEK",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG2150",
+        "Açıklama": "Kürekli Dirsek 5000 1\"",
+        "Fiyat": "10,71",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Aignep_Fiyat_Listesi.pdf",
+        "Sayfa": "37"
+    },
+    {
+        "Ana_Baslik": "DİŞLİ VE BAĞLANTILAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG2300",
+        "Açıklama": "Y Bağlantı 6000 1/8\"",
+        "Fiyat": "2,11",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Aignep_Fiyat_Listesi.pdf",
+        "Sayfa": "37"
+    },
+    {
+        "Ana_Baslik": "DİŞLİ VE BAĞLANTILAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG2310",
+        "Açıklama": "Y Bağlantı 6000 1/4\"",
+        "Fiyat": "2,35",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Aignep_Fiyat_Listesi.pdf",
+        "Sayfa": "37"
+    },
+    {
+        "Ana_Baslik": "DİŞLİ VE BAĞLANTILAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG2320",
+        "Açıklama": "Y Bağlantı 6000 3/8\"",
+        "Fiyat": "2,58",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Aignep_Fiyat_Listesi.pdf",
+        "Sayfa": "37"
+    },
+    {
+        "Ana_Baslik": "DİŞLİ VE BAĞLANTILAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG2330",
+        "Açıklama": "Y Bağlantı 6000 1/2\"",
+        "Fiyat": "4,08",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Aignep_Fiyat_Listesi.pdf",
+        "Sayfa": "37"
+    },
+    {
+        "Ana_Baslik": "REDÜKSİYON",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG3500",
+        "Açıklama": "Redüksiyon 2060 1/8\"-1/8\"",
+        "Fiyat": "0,76",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Aignep_Fiyat_Listesi.pdf",
+        "Sayfa": "37"
+    },
+    {
+        "Ana_Baslik": "REDÜKSİYON",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG3510",
+        "Açıklama": "Redüksiyon 2060 1/4\"-1/8\"",
+        "Fiyat": "0,97",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Aignep_Fiyat_Listesi.pdf",
+        "Sayfa": "37"
+    },
+    {
+        "Ana_Baslik": "REDÜKSİYON",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG3520",
+        "Açıklama": "Redüksiyon 2060 3/8\"-1/8\"",
+        "Fiyat": "1,14",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Aignep_Fiyat_Listesi.pdf",
+        "Sayfa": "37"
+    },
+    {
+        "Ana_Baslik": "REDÜKSİYON",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG3530",
+        "Açıklama": "Redüksiyon 2060 3/8\"-1/4\"",
+        "Fiyat": "1,46",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Aignep_Fiyat_Listesi.pdf",
+        "Sayfa": "37"
+    },
+    {
+        "Ana_Baslik": "REDÜKSİYON",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG3540",
+        "Açıklama": "Redüksiyon 2060 1/2\"-1/8\"",
+        "Fiyat": "2,01",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Aignep_Fiyat_Listesi.pdf",
+        "Sayfa": "37"
+    },
+    {
+        "Ana_Baslik": "REDÜKSİYON",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG3550",
+        "Açıklama": "Redüksiyon 2060 1/2\"-1/4\"",
+        "Fiyat": "2,49",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Aignep_Fiyat_Listesi.pdf",
+        "Sayfa": "37"
+    },
+    {
+        "Ana_Baslik": "REDÜKSİYON",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG3560",
+        "Açıklama": "Redüksiyon 2060 1/2\"-3/8\"",
+        "Fiyat": "2,96",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Aignep_Fiyat_Listesi.pdf",
+        "Sayfa": "37"
+    },
+    {
+        "Ana_Baslik": "REDÜKSİYON",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG3570",
+        "Açıklama": "Redüksiyon 2060 3/4\"-1/8\"",
+        "Fiyat": "4,84",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Aignep_Fiyat_Listesi.pdf",
+        "Sayfa": "37"
+    },
+    {
+        "Ana_Baslik": "REDÜKSİYON",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG3580",
+        "Açıklama": "Redüksiyon 2060 3/4\"-1/4\"",
+        "Fiyat": "4,84",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Aignep_Fiyat_Listesi.pdf",
+        "Sayfa": "37"
+    },
+    {
+        "Ana_Baslik": "PNÖMATİK QUICK KAPLİNLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG4000",
+        "Açıklama": "Dişi Kaplin Erkek Dişli 1/8\"",
+        "Fiyat": "4,31",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Aignep_Fiyat_Listesi.pdf",
+        "Sayfa": "37"
+    },
+    {
+        "Ana_Baslik": "PNÖMATİK QUICK KAPLİNLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG4015",
+        "Açıklama": "Dişi Kaplin Erkek Dişli 1/4\"",
+        "Fiyat": "4,56",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Aignep_Fiyat_Listesi.pdf",
+        "Sayfa": "37"
+    },
+    {
+        "Ana_Baslik": "PNÖMATİK QUICK KAPLİNLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG4010",
+        "Açıklama": "Dişi Kaplin Erkek Dişli 3/8\"",
+        "Fiyat": "4,56",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Aignep_Fiyat_Listesi.pdf",
+        "Sayfa": "37"
+    },
+    {
+        "Ana_Baslik": "PNÖMATİK QUICK KAPLİNLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG4020",
+        "Açıklama": "Dişi Kaplin Erkek Dişli 1/2\"",
+        "Fiyat": "4,56",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Aignep_Fiyat_Listesi.pdf",
+        "Sayfa": "37"
+    },
+    {
+        "Ana_Baslik": "PNÖMATİK QUICK KAPLİNLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG4030",
+        "Açıklama": "Erkek Soket 1/8\"",
+        "Fiyat": "2,56",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Aignep_Fiyat_Listesi.pdf",
+        "Sayfa": "37"
+    },
+    {
+        "Ana_Baslik": "PNÖMATİK QUICK KAPLİNLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG4035",
+        "Açıklama": "Erkek Soket 1/4\"",
+        "Fiyat": "2,56",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Aignep_Fiyat_Listesi.pdf",
+        "Sayfa": "37"
+    },
+    {
+        "Ana_Baslik": "PNÖMATİK QUICK KAPLİNLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG4040",
+        "Açıklama": "Erkek Soket 3/8\"",
+        "Fiyat": "2,56",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Aignep_Fiyat_Listesi.pdf",
+        "Sayfa": "37"
+    },
+    {
+        "Ana_Baslik": "PNÖMATİK QUICK KAPLİNLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG4045",
+        "Açıklama": "Erkek Soket 1/2\"",
+        "Fiyat": "2,56",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Aignep_Fiyat_Listesi.pdf",
+        "Sayfa": "37"
+    },
+    {
+        "Ana_Baslik": "PNÖMATİK QUICK KAPLİNLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG4050",
+        "Açıklama": "Dişi Kaplin Dişi Dişli 1/8\"",
+        "Fiyat": "4,56",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Aignep_Fiyat_Listesi.pdf",
+        "Sayfa": "37"
+    },
+    {
+        "Ana_Baslik": "PNÖMATİK QUICK KAPLİNLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG4055",
+        "Açıklama": "Dişi Kaplin Dişi Dişli 1/4\"",
+        "Fiyat": "4,56",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Aignep_Fiyat_Listesi.pdf",
+        "Sayfa": "37"
+    },
+    {
+        "Ana_Baslik": "PNÖMATİK QUICK KAPLİNLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG4060",
+        "Açıklama": "Dişi Kaplin Dişi Dişli 3/8\"",
+        "Fiyat": "4,56",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Aignep_Fiyat_Listesi.pdf",
+        "Sayfa": "37"
+    },
+    {
+        "Ana_Baslik": "PNÖMATİK QUICK KAPLİNLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG4065",
+        "Açıklama": "Dişi Kaplin Dişi Dişli 1/2\"",
+        "Fiyat": "4,56",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Aignep_Fiyat_Listesi.pdf",
+        "Sayfa": "37"
+    },
+    {
+        "Ana_Baslik": "PNÖMATİK QUICK KAPLİNLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG4070",
+        "Açıklama": "Erkek Soket Hortum Uç 6x13,5",
+        "Fiyat": "2,56",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Aignep_Fiyat_Listesi.pdf",
+        "Sayfa": "37"
+    },
+    {
+        "Ana_Baslik": "PNÖMATİK QUICK KAPLİNLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG4075",
+        "Açıklama": "Erkek Soket Hortum Uç 8x16,5",
+        "Fiyat": "2,56",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Aignep_Fiyat_Listesi.pdf",
+        "Sayfa": "37"
+    },
+    {
+        "Ana_Baslik": "PNÖMATİK QUICK KAPLİNLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG4080",
+        "Açıklama": "Erkek Soket Hortum Uç 9x16,5",
+        "Fiyat": "2,56",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Aignep_Fiyat_Listesi.pdf",
+        "Sayfa": "37"
+    },
+    {
+        "Ana_Baslik": "PNÖMATİK QUICK KAPLİNLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG4085",
+        "Açıklama": "Erkek Soket Hortum Uç 10x16,5",
+        "Fiyat": "2,56",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Aignep_Fiyat_Listesi.pdf",
+        "Sayfa": "37"
+    },
+    {
+        "Ana_Baslik": "PNÖMATİK QUICK KAPLİNLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG4090",
+        "Açıklama": "Erkek Soket Hortum Uç 12x16,5",
+        "Fiyat": "2,56",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Aignep_Fiyat_Listesi.pdf",
+        "Sayfa": "37"
+    },
+    {
+        "Ana_Baslik": "PNÖMATİK QUICK KAPLİNLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG4095",
+        "Açıklama": "Erkek Soket Hortum Uç 16x16,5",
+        "Fiyat": "2,56",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Aignep_Fiyat_Listesi.pdf",
+        "Sayfa": "37"
+    },
+    {
+        "Ana_Baslik": "PNÖMATİK QUICK KAPLİNLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG4100",
+        "Açıklama": "Erkek Soket Hortum Uç 6x25,5",
+        "Fiyat": "2,56",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Aignep_Fiyat_Listesi.pdf",
+        "Sayfa": "37"
+    },
+    {
+        "Ana_Baslik": "PNÖMATİK QUICK KAPLİNLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG4105",
+        "Açıklama": "Erkek Soket Hortum Uç 8x25,5",
+        "Fiyat": "2,56",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Aignep_Fiyat_Listesi.pdf",
+        "Sayfa": "37"
+    },
+    {
+        "Ana_Baslik": "PNÖMATİK QUICK KAPLİNLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG4110",
+        "Açıklama": "Erkek Soket Hortum Uç 9x25,5",
+        "Fiyat": "2,56",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Aignep_Fiyat_Listesi.pdf",
+        "Sayfa": "37"
+    },
+    {
+        "Ana_Baslik": "PNÖMATİK QUICK KAPLİNLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG4115",
+        "Açıklama": "Erkek Soket Hortum Uç 10x25,5",
+        "Fiyat": "2,56",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Aignep_Fiyat_Listesi.pdf",
+        "Sayfa": "37"
+    },
+    {
+        "Ana_Baslik": "PNÖMATİK QUICK KAPLİNLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG4120",
+        "Açıklama": "Erkek Soket Hortum Uç 12x25,5",
+        "Fiyat": "2,56",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Aignep_Fiyat_Listesi.pdf",
+        "Sayfa": "37"
+    },
+    {
+        "Ana_Baslik": "SİNTER SUSTURUCU",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG4300",
+        "Açıklama": "Sinter Susturucu 1/8\"",
+        "Fiyat": "0,76",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Aignep_Fiyat_Listesi.pdf",
+        "Sayfa": "37"
+    },
+    {
+        "Ana_Baslik": "SİNTER SUSTURUCU",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG4310",
+        "Açıklama": "Sinter Susturucu 1/4\"",
+        "Fiyat": "1,02",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Aignep_Fiyat_Listesi.pdf",
+        "Sayfa": "37"
+    },
+    {
+        "Ana_Baslik": "SİNTER SUSTURUCU",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG4320",
+        "Açıklama": "Sinter Susturucu 3/8\"",
+        "Fiyat": "2,01",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Aignep_Fiyat_Listesi.pdf",
+        "Sayfa": "37"
+    },
+    {
+        "Ana_Baslik": "SİNTER SUSTURUCU",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG4330",
+        "Açıklama": "Sinter Susturucu 1/2\"",
+        "Fiyat": "3,76",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Aignep_Fiyat_Listesi.pdf",
+        "Sayfa": "37"
+    },
+    {
+        "Ana_Baslik": "SİNTER SUSTURUCU",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG4340",
+        "Açıklama": "Sinter Susturucu 3/4\"",
+        "Fiyat": "6,39",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Aignep_Fiyat_Listesi.pdf",
+        "Sayfa": "37"
+    },
+    {
+        "Ana_Baslik": "SİNTER SUSTURUCU",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG4350",
+        "Açıklama": "Sinter Susturucu 1\"",
+        "Fiyat": "13,31",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Aignep_Fiyat_Listesi.pdf",
+        "Sayfa": "37"
+    },
+    {
+        "Ana_Baslik": "SİNTER SUSTURUCU AYARLI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG4400",
+        "Açıklama": "Sinter Susturucu Ayarlı 1/8\"",
+        "Fiyat": "2,76",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Aignep_Fiyat_Listesi.pdf",
+        "Sayfa": "37"
+    },
+    {
+        "Ana_Baslik": "SİNTER SUSTURUCU AYARLI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG4410",
+        "Açıklama": "Sinter Susturucu Ayarlı 1/4\"",
+        "Fiyat": "2,01",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Aignep_Fiyat_Listesi.pdf",
+        "Sayfa": "37"
+    },
+    {
+        "Ana_Baslik": "SİNTER SUSTURUCU AYARLI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG4420",
+        "Açıklama": "Sinter Susturucu Ayarlı 3/8\"",
+        "Fiyat": "3,01",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Aignep_Fiyat_Listesi.pdf",
+        "Sayfa": "37"
+    },
+    {
+        "Ana_Baslik": "SİNTER SUSTURUCU AYARLI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG4430",
+        "Açıklama": "Sinter Susturucu Ayarlı 1/2\"",
+        "Fiyat": "3,76",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Aignep_Fiyat_Listesi.pdf",
+        "Sayfa": "37"
+    },
+    {
+        "Ana_Baslik": "SİNTER SUSTURUCU AYARLI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG4440",
+        "Açıklama": "Sinter Susturucu Ayarlı 3/4\"",
+        "Fiyat": "5,11",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Aignep_Fiyat_Listesi.pdf",
+        "Sayfa": "37"
+    },
+    {
+        "Ana_Baslik": "POROZ BRONZ DOKULU SUSTURUCU",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG4500",
+        "Açıklama": "Poroz Susturucu 1/8\"",
+        "Fiyat": "2,96",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Aignep_Fiyat_Listesi.pdf",
+        "Sayfa": "37"
+    },
+    {
+        "Ana_Baslik": "POROZ BRONZ DOKULU SUSTURUCU",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG4510",
+        "Açıklama": "Poroz Susturucu 1/4\"",
+        "Fiyat": "3,08",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Aignep_Fiyat_Listesi.pdf",
+        "Sayfa": "37"
+    },
+    {
+        "Ana_Baslik": "POROZ BRONZ DOKULU SUSTURUCU",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG4515",
+        "Açıklama": "Poroz Susturucu 3/8\"",
+        "Fiyat": "3,08",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Aignep_Fiyat_Listesi.pdf",
+        "Sayfa": "37"
+    },
+    {
+        "Ana_Baslik": "POROZ BRONZ DOKULU SUSTURUCU",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG4520",
+        "Açıklama": "Poroz Susturucu 1/2\"",
+        "Fiyat": "3,08",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Aignep_Fiyat_Listesi.pdf",
+        "Sayfa": "37"
+    },
+    {
+        "Ana_Baslik": "POROZ BRONZ DOKULU SUSTURUCU",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG4525",
+        "Açıklama": "Poroz Susturucu 3/4\"",
+        "Fiyat": "9,98",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Aignep_Fiyat_Listesi.pdf",
+        "Sayfa": "37"
+    },
+    {
+        "Ana_Baslik": "POROZ BRONZ DOKULU SUSTURUCU",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG4530",
+        "Açıklama": "Poroz Susturucu 1\"",
+        "Fiyat": "16,76",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Aignep_Fiyat_Listesi.pdf",
+        "Sayfa": "37"
+    }
+]
+```
