@@ -1,0 +1,104 @@
+```json
+[
+    {
+        "Ana_Baslik": "ÇİFT LAMA/BORU KELEPÇELERİ (ALÜMİNYUM ALICI SERİ)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "P831",
+        "Açıklama": "Alüminyum Kelepçe 6 mm ALC/P-16",
+        "Fiyat": "8,35",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "51"
+    },
+    {
+        "Ana_Baslik": "ÇİFT LAMA/BORU KELEPÇELERİ (ALÜMİNYUM ALICI SERİ)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "P832",
+        "Açıklama": "Alüminyum Kelepçe 8 mm ALC/P-18",
+        "Fiyat": "8,35",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "51"
+    },
+    {
+        "Ana_Baslik": "ÇİFT LAMA/BORU KELEPÇELERİ (ALÜMİNYUM ALICI SERİ)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "P833",
+        "Açıklama": "Alüminyum Kelepçe 10 mm ALC/P-10",
+        "Fiyat": "8,35",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "51"
+    },
+    {
+        "Ana_Baslik": "ÇİFT LAMA/BORU KELEPÇELERİ (ALÜMİNYUM ALICI SERİ)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "P834",
+        "Açıklama": "Alüminyum Kelepçe 12 mm ALC/P-12",
+        "Fiyat": "8,35",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "51"
+    },
+    {
+        "Ana_Baslik": "ÇİFT LAMA/BORU KELEPÇELERİ (ALÜMİNYUM ALICI SERİ)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "P835",
+        "Açıklama": "Alüminyum Kelepçe 16 mm ALC/P-16",
+        "Fiyat": "8,35",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "51"
+    },
+    {
+        "Ana_Baslik": "ÇİFT LAMA/BORU KELEPÇELERİ (ALÜMİNYUM ALICI SERİ)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "P836",
+        "Açıklama": "Alüminyum Kelepçe 20 mm ALC/P-20",
+        "Fiyat": "8,35",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "51"
+    },
+    {
+        "Ana_Baslik": "ÇİFT LAMA/BORU KELEPÇELERİ (ALÜMİNYUM ALICI SERİ)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "P837",
+        "Açıklama": "Alüminyum Kelepçe 25 mm ALC/P-25",
+        "Fiyat": "8,35",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "51"
+    },
+    {
+        "Ana_Baslik": "ÇİFT LAMA/BORU KELEPÇELERİ (ALÜMİNYUM ALICI SERİ)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "P838",
+        "Açıklama": "Alüminyum Kelepçe 30 mm ALC/P-30",
+        "Fiyat": "8,35",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "51"
+    },
+    {
+        "Ana_Baslik": "ÇİFT LAMA/BORU KELEPÇELERİ (ALÜMİNYUM ALICI SERİ)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "P839",
+        "Açıklama": "Alüminyum Kelepçe 35 mm ALC/P-35",
+        "Fiyat": "8,35",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "51"
+    },
+    {
+        "Ana_Baslik": "ÇİFT LAMA/BORU KELEPÇELERİ (ALÜMİNYUM ALICI SERİ)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "P840",
+        "Açıklama": "Alüminyum Kelepçe 40 mm ALC/P-40",
+        "Fiyat": "8,35",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "51"
+    }
+]
+```
