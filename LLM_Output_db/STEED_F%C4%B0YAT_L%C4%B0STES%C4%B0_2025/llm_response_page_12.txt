@@ -1,0 +1,74 @@
+```json
+[
+  {
+    "Malzeme_Kodu": "CZ2D-XAN",
+    "Açıklama": "",
+    "Kisa_Kod": "",
+    "Fiyat": "$58,63",
+    "Para_Birimi": "$",
+    "Marka": "STEED",
+    "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+    "Sayfa": 12,
+    "Record_Code": "STEED",
+    "Ana_Baslik": "PİLOT İLE AÇAN ÇEK VALF (SIZDIRMAZ PİLOT ODALI)",
+    "Alt_Baslik": "",
+    "Image_Path": ""
+  },
+  {
+    "Malzeme_Kodu": "CV2V-XAN",
+    "Açıklama": "",
+    "Kisa_Kod": "",
+    "Fiyat": "$151,32",
+    "Para_Birimi": "$",
+    "Marka": "STEED",
+    "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+    "Sayfa": 12,
+    "Record_Code": "STEED",
+    "Ana_Baslik": "SIZINTILI, PİLOT İLE AÇAN ÇEK VALF",
+    "Alt_Baslik": "",
+    "Image_Path": ""
+  },
+  {
+    "Malzeme_Kodu": "C01A-XAN",
+    "Açıklama": "",
+    "Kisa_Kod": "",
+    "Fiyat": "$65,14",
+    "Para_Birimi": "$",
+    "Marka": "STEED",
+    "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+    "Sayfa": 12,
+    "Record_Code": "STEED",
+    "Ana_Baslik": "PİLOT İLE KAPATAN ÇEK VALF",
+    "Alt_Baslik": "",
+    "Image_Path": ""
+  },
+  {
+    "Malzeme_Kodu": "C03D-XCN",
+    "Açıklama": "",
+    "Kisa_Kod": "",
+    "Fiyat": "$131,73",
+    "Para_Birimi": "$",
+    "Marka": "STEED",
+    "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+    "Sayfa": 12,
+    "Record_Code": "STEED",
+    "Ana_Baslik": "PİLOT İLE KAPATAN ÇEK VALF (COO) 120:1",
+    "Alt_Baslik": "",
+    "Image_Path": ""
+  },
+  {
+    "Malzeme_Kodu": "CS1X-XCN",
+    "Açıklama": "",
+    "Kisa_Kod": "",
+    "Fiyat": "FİYAT SORUNUZ",
+    "Para_Birimi": "",
+    "Marka": "STEED",
+    "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+    "Sayfa": 12,
+    "Record_Code": "STEED",
+    "Ana_Baslik": "VEYA VALFİ",
+    "Alt_Baslik": "",
+    "Image_Path": ""
+  }
+]
+```
