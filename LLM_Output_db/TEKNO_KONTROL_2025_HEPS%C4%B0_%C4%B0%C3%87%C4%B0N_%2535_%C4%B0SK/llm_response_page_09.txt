@@ -1,0 +1,64 @@
+```json
+[
+    {
+        "Ana_Baslik": "YÜKSEKLER (DER)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "BL000",
+        "Açıklama": "Yüksük Ø 6,5 315/450 Bar",
+        "Fiyat": "0,26",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "9"
+    },
+    {
+        "Ana_Baslik": "YÜKSEKLER (DER)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "BL001",
+        "Açıklama": "Yüksük Ø 8 315/450 Bar",
+        "Fiyat": "0,26",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "9"
+    },
+    {
+        "Ana_Baslik": "SOMUNLAR (LES)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "BL010",
+        "Açıklama": "Somun 6 L M12x1,5 315 Bar",
+        "Fiyat": "0,54",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "9"
+    },
+    {
+        "Ana_Baslik": "DÜZ RAKORLAR (GE)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "BL020",
+        "Açıklama": "Düz Rakor G 1/8\" x 6 315 Bar",
+        "Fiyat": "1,04",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "9"
+    },
+    {
+        "Ana_Baslik": "NİPEL BAĞLANTILAR (G) (Hidrolik)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "BL040",
+        "Açıklama": "Nipel 6 315 Bar",
+        "Fiyat": "2,54",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "9"
+    },
+    {
+        "Ana_Baslik": "T BAĞLANTILAR (TE)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "BL050",
+        "Açıklama": "T-Bağlantı 6 L 315 Bar",
+        "Fiyat": "6,61",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "9"
+    }
+]
+```
