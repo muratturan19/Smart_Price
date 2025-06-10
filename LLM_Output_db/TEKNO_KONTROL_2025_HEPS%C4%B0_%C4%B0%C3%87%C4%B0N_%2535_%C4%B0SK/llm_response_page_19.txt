@@ -1,0 +1,474 @@
+```json
+[
+    {
+        "Ana_Baslik": "QUICK KAPLİN HNV SERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA310",
+        "Açıklama": "Quick Kaplin Dişli HNV 1/4 GAS F",
+        "Fiyat": "7,82",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "19"
+    },
+    {
+        "Ana_Baslik": "QUICK KAPLİN HNV SERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA315",
+        "Açıklama": "Quick Kaplin Dişli HNV 3/8 GAS F",
+        "Fiyat": "8,26",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "19"
+    },
+    {
+        "Ana_Baslik": "QUICK KAPLİN HNV SERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA319",
+        "Açıklama": "Quick Kaplin Dişli HNV 1/2 GAS F",
+        "Fiyat": "8,82",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "19"
+    },
+    {
+        "Ana_Baslik": "QUICK KAPLİN HNV SERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA320",
+        "Açıklama": "Quick Kaplin Dişli HNV 3/4 GAS F",
+        "Fiyat": "9,34",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "19"
+    },
+    {
+        "Ana_Baslik": "QUICK KAPLİN HNV SERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA325",
+        "Açıklama": "Quick Kaplin Dişli HNV 1 GAS F",
+        "Fiyat": "10,44",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "19"
+    },
+    {
+        "Ana_Baslik": "QUICK KAPLİN HNV SERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA330",
+        "Açıklama": "Quick Kaplin Dişli HNV 1 1/4 GAS F",
+        "Fiyat": "22,06",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "19"
+    },
+    {
+        "Ana_Baslik": "QUICK KAPLİN HNV SERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA335",
+        "Açıklama": "Quick Kaplin Dişli HNV 1 1/2 GAS F",
+        "Fiyat": "29,32",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "19"
+    },
+    {
+        "Ana_Baslik": "RAKORLU KAPLİN BAĞLANTILI CVV SERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA340",
+        "Açıklama": "Rakorlu Kaplin Dişli CVV 1/4-18 NPTF",
+        "Fiyat": "5,42",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "19"
+    },
+    {
+        "Ana_Baslik": "RAKORLU KAPLİN BAĞLANTILI CVV SERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA345",
+        "Açıklama": "Rakorlu Kaplin Dişli CVV 3/8-18 NPTF",
+        "Fiyat": "6,14",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "19"
+    },
+    {
+        "Ana_Baslik": "RAKORLU KAPLİN BAĞLANTILI CVV SERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA350",
+        "Açıklama": "Rakorlu Kaplin Dişli CVV 1/2-14 NPTF",
+        "Fiyat": "6,52",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "19"
+    },
+    {
+        "Ana_Baslik": "RAKORLU KAPLİN BAĞLANTILI CVV SERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA355",
+        "Açıklama": "Rakorlu Kaplin Dişli CVV 3/4-14 NPTF",
+        "Fiyat": "7,46",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "19"
+    },
+    {
+        "Ana_Baslik": "RAKORLU KAPLİN BAĞLANTILI CVV SERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA360",
+        "Açıklama": "Rakorlu Kaplin Dişli CVV 1-11 1/2 NPTF",
+        "Fiyat": "8,54",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "19"
+    },
+    {
+        "Ana_Baslik": "QUICK KAPLİN HNV VITON",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA420",
+        "Açıklama": "Quick Kaplin Dişli HNV 1/4 GAS F V",
+        "Fiyat": "31,76",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "19"
+    },
+    {
+        "Ana_Baslik": "QUICK KAPLİN HNV VITON",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA425",
+        "Açıklama": "Quick Kaplin Dişli HNV 3/8 GAS F V",
+        "Fiyat": "37,32",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "19"
+    },
+    {
+        "Ana_Baslik": "QUICK KAPLİN HNV VITON",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA430",
+        "Açıklama": "Quick Kaplin Dişli HNV 1/2 GAS F V",
+        "Fiyat": "54,26",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "19"
+    },
+    {
+        "Ana_Baslik": "QUICK KAPLİN HNV VITON",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA435",
+        "Açıklama": "Quick Kaplin Dişli HNV 3/4 GAS F V",
+        "Fiyat": "29,32",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "19"
+    },
+    {
+        "Ana_Baslik": "PHNC QUICK KAPLİN",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA210",
+        "Açıklama": "Quick Kaplin Dişli HNV 1/4 GAS F",
+        "Fiyat": "7,82",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "19"
+    },
+    {
+        "Ana_Baslik": "PHNC QUICK KAPLİN",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA215",
+        "Açıklama": "Quick Kaplin Dişli HNV 3/8 GAS F",
+        "Fiyat": "8,26",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "19"
+    },
+    {
+        "Ana_Baslik": "PHNC QUICK KAPLİN",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA219",
+        "Açıklama": "Quick Kaplin Dişli HNV 1/2 GAS F",
+        "Fiyat": "8,82",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "19"
+    },
+    {
+        "Ana_Baslik": "PHNC QUICK KAPLİN",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA220",
+        "Açıklama": "Quick Kaplin Dişli HNV 3/4 GAS F",
+        "Fiyat": "9,34",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "19"
+    },
+    {
+        "Ana_Baslik": "PHNC QUICK KAPLİN",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA225",
+        "Açıklama": "Quick Kaplin Dişli HNV 1 GAS F",
+        "Fiyat": "10,44",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "19"
+    },
+    {
+        "Ana_Baslik": "PHNC QUICK KAPLİN",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA230",
+        "Açıklama": "Quick Kaplin Dişli HNV 1 1/4 GAS F",
+        "Fiyat": "22,06",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "19"
+    },
+    {
+        "Ana_Baslik": "PHNC QUICK KAPLİN",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA235",
+        "Açıklama": "Quick Kaplin Dişli HNV 1 1/2 GAS F",
+        "Fiyat": "29,32",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "19"
+    },
+    {
+        "Ana_Baslik": "KAPLİN BAĞLANTILAR FPH SERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA500",
+        "Açıklama": "Flat Face Coupling FPH03 1/4 GAS M",
+        "Fiyat": "27,64",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "19"
+    },
+    {
+        "Ana_Baslik": "KAPLİN BAĞLANTILAR FPH SERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA505",
+        "Açıklama": "Flat Face Coupling FPH06 3/8 GAS M",
+        "Fiyat": "29,76",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "19"
+    },
+    {
+        "Ana_Baslik": "KAPLİN BAĞLANTILAR FPH SERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA510",
+        "Açıklama": "Flat Face Coupling FPH10 1/2 GAS M",
+        "Fiyat": "31,92",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "19"
+    },
+    {
+        "Ana_Baslik": "KAPLİN BAĞLANTILAR FPH SERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA515",
+        "Açıklama": "Flat Face Coupling FPH12 3/4 GAS M",
+        "Fiyat": "37,04",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "19"
+    },
+    {
+        "Ana_Baslik": "KAPLİN BAĞLANTILAR FPH SERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA520",
+        "Açıklama": "Flat Face Coupling FPH16 1 GAS M",
+        "Fiyat": "47,56",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "19"
+    },
+    {
+        "Ana_Baslik": "KAPLİN BAĞLANTILAR FPH SERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA525",
+        "Açıklama": "Flat Face Coupling FPH20 1 1/4 GAS M",
+        "Fiyat": "57,96",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "19"
+    },
+    {
+        "Ana_Baslik": "KAPLİN BAĞLANTILAR FPH SERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA530",
+        "Açıklama": "Flat Face Coupling FPH25 1 1/2 GAS M",
+        "Fiyat": "67,56",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "19"
+    },
+    {
+        "Ana_Baslik": "KAPLİN BAĞLANTILAR FPH SERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA535",
+        "Açıklama": "Flat Face Coupling FPH30 2 GAS M",
+        "Fiyat": "97,56",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "19"
+    },
+    {
+        "Ana_Baslik": "KAPLİN BAĞLANTILAR FPH SERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA540",
+        "Açıklama": "Flat Face Coupling FPH35 2 1/2 GAS M",
+        "Fiyat": "117,56",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "19"
+    },
+    {
+        "Ana_Baslik": "KAPLİN BAĞLANTILAR FPH SERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA545",
+        "Açıklama": "Flat Face Coupling FPH40 3 GAS M",
+        "Fiyat": "157,56",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "19"
+    },
+    {
+        "Ana_Baslik": "QUICK KAPLİN ANV SERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA210",
+        "Açıklama": "Quick Kaplin Dişli ANV 1/4 GAS F",
+        "Fiyat": "7,82",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "19"
+    },
+    {
+        "Ana_Baslik": "QUICK KAPLİN ANV SERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA215",
+        "Açıklama": "Quick Kaplin Dişli ANV 3/8 GAS F",
+        "Fiyat": "8,26",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "19"
+    },
+    {
+        "Ana_Baslik": "QUICK KAPLİN ANV SERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA219",
+        "Açıklama": "Quick Kaplin Dişli ANV 1/2 GAS F",
+        "Fiyat": "8,82",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "19"
+    },
+    {
+        "Ana_Baslik": "QUICK KAPLİN ANV SERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA220",
+        "Açıklama": "Quick Kaplin Dişli ANV 3/4 GAS F",
+        "Fiyat": "9,34",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "19"
+    },
+    {
+        "Ana_Baslik": "QUICK KAPLİN ANV SERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA225",
+        "Açıklama": "Quick Kaplin Dişli ANV 1 GAS F",
+        "Fiyat": "10,44",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "19"
+    },
+    {
+        "Ana_Baslik": "QUICK KAPLİN ANV SERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA230",
+        "Açıklama": "Quick Kaplin Dişli ANV 1 1/4 GAS F",
+        "Fiyat": "22,06",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "19"
+    },
+    {
+        "Ana_Baslik": "QUICK KAPLİN ANV SERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA235",
+        "Açıklama": "Quick Kaplin Dişli ANV 1 1/2 GAS F",
+        "Fiyat": "29,32",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "19"
+    },
+    {
+        "Ana_Baslik": "KAPLİN KORUMA KAPAĞI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA710",
+        "Açıklama": "Koruma Kapağı TM 3/8",
+        "Fiyat": "1,26",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "19"
+    },
+    {
+        "Ana_Baslik": "KAPLİN KORUMA KAPAĞI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA715",
+        "Açıklama": "Koruma Kapağı TM 1/2",
+        "Fiyat": "1,46",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "19"
+    },
+    {
+        "Ana_Baslik": "KAPLİN KORUMA KAPAĞI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA720",
+        "Açıklama": "Koruma Kapağı TM 3/4",
+        "Fiyat": "1,96",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "19"
+    },
+    {
+        "Ana_Baslik": "KAPLİN KORUMA KAPAĞI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA725",
+        "Açıklama": "Koruma Kapağı TM 1",
+        "Fiyat": "2,46",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "19"
+    },
+    {
+        "Ana_Baslik": "KAPLİN KORUMA KAPAĞI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA730",
+        "Açıklama": "Koruma Kapağı TM 1 1/4",
+        "Fiyat": "3,04",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "19"
+    },
+    {
+        "Ana_Baslik": "KAPLİN KORUMA KAPAĞI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA735",
+        "Açıklama": "Koruma Kapağı TM 1 1/2",
+        "Fiyat": "3,04",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "19"
+    },
+    {
+        "Ana_Baslik": "KAPLİN KORUMA KAPAĞI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "FA740",
+        "Açıklama": "Koruma Kapağı TM 2",
+        "Fiyat": "5,06",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "19"
+    }
+]
+```
