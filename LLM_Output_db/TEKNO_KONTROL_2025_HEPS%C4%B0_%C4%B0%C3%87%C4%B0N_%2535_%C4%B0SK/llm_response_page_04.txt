@@ -1,0 +1,354 @@
+```json
+[
+    {
+        "Ana_Baslik": "TEKNO KONTROL",
+        "Alt_Baslik": "AKÜ DOLUM FİYATLARI",
+        "Malzeme_Kodu": "CL1005",
+        "Açıklama": "Balonlu Akü 7.5 LT 60-100 Bar",
+        "Fiyat": "117,72",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "4"
+    },
+    {
+        "Ana_Baslik": "TEKNO KONTROL",
+        "Alt_Baslik": "AKÜ DOLUM FİYATLARI",
+        "Malzeme_Kodu": "CL1005",
+        "Açıklama": "Balonlu Akü 7.5 LT 100-160 Bar",
+        "Fiyat": "129,44",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "4"
+    },
+    {
+        "Ana_Baslik": "TEKNO KONTROL",
+        "Alt_Baslik": "AKÜ DOLUM FİYATLARI",
+        "Malzeme_Kodu": "CL1005",
+        "Açıklama": "Balonlu Akü 7.5 LT 160-210 Bar",
+        "Fiyat": "147,27",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "4"
+    },
+    {
+        "Ana_Baslik": "TEKNO KONTROL",
+        "Alt_Baslik": "AKÜ DOLUM FİYATLARI",
+        "Malzeme_Kodu": "CL1005",
+        "Açıklama": "Balonlu Akü 7.5 LT 210-330 Bar",
+        "Fiyat": "214,16",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "4"
+    },
+    {
+        "Ana_Baslik": "TEKNO KONTROL",
+        "Alt_Baslik": "AKÜ DOLUM FİYATLARI",
+        "Malzeme_Kodu": "CL1005",
+        "Açıklama": "Balonlu Akü 25 LT 60-100 Bar",
+        "Fiyat": "236,34",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "4"
+    },
+    {
+        "Ana_Baslik": "TEKNO KONTROL",
+        "Alt_Baslik": "AKÜ DOLUM FİYATLARI",
+        "Malzeme_Kodu": "CL1005",
+        "Açıklama": "Balonlu Akü 25 LT 100-160 Bar",
+        "Fiyat": "243,98",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "4"
+    },
+    {
+        "Ana_Baslik": "TEKNO KONTROL",
+        "Alt_Baslik": "AKÜ DOLUM FİYATLARI",
+        "Malzeme_Kodu": "CL1005",
+        "Açıklama": "Balonlu Akü 25 LT 160-210 Bar",
+        "Fiyat": "302,16",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "4"
+    },
+    {
+        "Ana_Baslik": "TEKNO KONTROL",
+        "Alt_Baslik": "AKÜ DOLUM FİYATLARI",
+        "Malzeme_Kodu": "CL1005",
+        "Açıklama": "Balonlu Akü 25 LT 210-330 Bar",
+        "Fiyat": "323,36",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "4"
+    },
+    {
+        "Ana_Baslik": "TEKNO KONTROL",
+        "Alt_Baslik": "PARKER-OLAER AKÜ AKSESUARLARI",
+        "Malzeme_Kodu": "CL1500",
+        "Açıklama": "Akü Dolum Seti VG 5/32-5-1137",
+        "Fiyat": "57,33",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "4"
+    },
+    {
+        "Ana_Baslik": "TEKNO KONTROL",
+        "Alt_Baslik": "PARKER-OLAER AKÜ AKSESUARLARI",
+        "Malzeme_Kodu": "CL1500",
+        "Açıklama": "Akü Dolum Adaptörü VG",
+        "Fiyat": "13,24",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "4"
+    },
+    {
+        "Ana_Baslik": "TEKNO KONTROL",
+        "Alt_Baslik": "PARKER-OLAER AKÜ AKSESUARLARI",
+        "Malzeme_Kodu": "CL1500",
+        "Açıklama": "Akü Emniyet Bloğu VG",
+        "Fiyat": "79,92",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "4"
+    },
+    {
+        "Ana_Baslik": "TEKNO KONTROL",
+        "Alt_Baslik": "PARKER-OLAER AKÜ AKSESUARLARI",
+        "Malzeme_Kodu": "CL1500",
+        "Açıklama": "Akü Emniyet Bloğu BGU",
+        "Fiyat": "91,74",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "4"
+    },
+    {
+        "Ana_Baslik": "TEKNO KONTROL",
+        "Alt_Baslik": "PARKER-OLAER AKÜ AKSESUARLARI",
+        "Malzeme_Kodu": "CL1500",
+        "Açıklama": "Akü Kelepçesi 6 LT. A209/330490",
+        "Fiyat": "80,24",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "4"
+    },
+    {
+        "Ana_Baslik": "TEKNO KONTROL",
+        "Alt_Baslik": "PARKER-OLAER AKÜ AKSESUARLARI",
+        "Malzeme_Kodu": "CL1500",
+        "Açıklama": "Akü Kelepçesi 10-15 LT. A209/330490",
+        "Fiyat": "92,55",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "4"
+    },
+    {
+        "Ana_Baslik": "TEKNO KONTROL",
+        "Alt_Baslik": "PARKER-OLAER AKÜ AKSESUARLARI",
+        "Malzeme_Kodu": "CL1500",
+        "Açıklama": "Akü Koruma Ring 4-5-10-15-20lt 9228-9229/330490/330500",
+        "Fiyat": "95,74",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "4"
+    },
+    {
+        "Ana_Baslik": "TEKNO KONTROL",
+        "Alt_Baslik": "PARKER-OLAER AKÜ AKSESUARLARI",
+        "Malzeme_Kodu": "CL1500",
+        "Açıklama": "Akü emniyet bloğu SN-032-07143-1137-3306",
+        "Fiyat": "107,16",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "4"
+    },
+    {
+        "Ana_Baslik": "TEKNO KONTROL",
+        "Alt_Baslik": "PARKER-OLAER AKÜ AKSESUARLARI",
+        "Malzeme_Kodu": "CL1500",
+        "Açıklama": "Akü emniyet bloğu SN-032-07143-1137-3306",
+        "Fiyat": "187,11",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "4"
+    },
+    {
+        "Ana_Baslik": "TEKNO KONTROL",
+        "Alt_Baslik": "PARKER-OLAER AKÜ AKSESUARLARI",
+        "Malzeme_Kodu": "CL1500",
+        "Açıklama": "Akü Dolum Seti VG 5/32-5-1137",
+        "Fiyat": "57,33",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "4"
+    },
+    {
+        "Ana_Baslik": "TEKNO KONTROL",
+        "Alt_Baslik": "PARKER-OLAER AKÜ AKSESUARLARI",
+        "Malzeme_Kodu": "CL1500",
+        "Açıklama": "Akü Dolum Adaptörü VG",
+        "Fiyat": "13,24",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "4"
+    },
+    {
+        "Ana_Baslik": "TEKNO KONTROL",
+        "Alt_Baslik": "PARKER-OLAER AKÜ AKSESUARLARI",
+        "Malzeme_Kodu": "CL1500",
+        "Açıklama": "Akü Dolum Adaptörü BGU",
+        "Fiyat": "79,92",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "4"
+    },
+    {
+        "Ana_Baslik": "TEKNO KONTROL",
+        "Alt_Baslik": "PARKER-OLAER AKÜ AKSESUARLARI",
+        "Malzeme_Kodu": "CL1500",
+        "Açıklama": "Akü Emniyet Bloğu BGU",
+        "Fiyat": "91,74",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "4"
+    },
+    {
+        "Ana_Baslik": "TEKNO KONTROL",
+        "Alt_Baslik": "PARKER-OLAER AKÜ AKSESUARLARI",
+        "Malzeme_Kodu": "CL1500",
+        "Açıklama": "Akü Kelepçesi 6 LT. A209/330490",
+        "Fiyat": "80,24",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "4"
+    },
+    {
+        "Ana_Baslik": "TEKNO KONTROL",
+        "Alt_Baslik": "PARKER-OLAER AKÜ AKSESUARLARI",
+        "Malzeme_Kodu": "CL1500",
+        "Açıklama": "Akü Kelepçesi 10-15 LT. A209/330490",
+        "Fiyat": "92,55",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "4"
+    },
+    {
+        "Ana_Baslik": "TEKNO KONTROL",
+        "Alt_Baslik": "PARKER-OLAER AKÜ AKSESUARLARI",
+        "Malzeme_Kodu": "CL1500",
+        "Açıklama": "Akü Koruma Ring 4-5-10-15-20lt 9228-9229/330490/330500",
+        "Fiyat": "95,74",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "4"
+    },
+    {
+        "Ana_Baslik": "TEKNO KONTROL",
+        "Alt_Baslik": "PARKER-OLAER AKÜ AKSESUARLARI",
+        "Malzeme_Kodu": "CL1500",
+        "Açıklama": "Akü emniyet bloğu SN-032-07143-1137-3306",
+        "Fiyat": "107,16",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "4"
+    },
+    {
+        "Ana_Baslik": "TEKNO KONTROL",
+        "Alt_Baslik": "PARKER-OLAER AKÜ AKSESUARLARI",
+        "Malzeme_Kodu": "CL1500",
+        "Açıklama": "Akü emniyet bloğu SN-032-07143-1137-3306",
+        "Fiyat": "187,11",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "4"
+    },
+    {
+        "Ana_Baslik": "TEKNO KONTROL",
+        "Alt_Baslik": "PARKER-OLAER AKÜ AKSESUARLARI",
+        "Malzeme_Kodu": "CL1500",
+        "Açıklama": "Akü Dolum Seti VG 5/32-5-1137",
+        "Fiyat": "57,33",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "4"
+    },
+    {
+        "Ana_Baslik": "TEKNO KONTROL",
+        "Alt_Baslik": "PARKER-OLAER AKÜ AKSESUARLARI",
+        "Malzeme_Kodu": "CL1500",
+        "Açıklama": "Akü Dolum Adaptörü VG",
+        "Fiyat": "13,24",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "4"
+    },
+    {
+        "Ana_Baslik": "TEKNO KONTROL",
+        "Alt_Baslik": "PARKER-OLAER AKÜ AKSESUARLARI",
+        "Malzeme_Kodu": "CL1500",
+        "Açıklama": "Akü Dolum Adaptörü BGU",
+        "Fiyat": "79,92",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "4"
+    },
+    {
+        "Ana_Baslik": "TEKNO KONTROL",
+        "Alt_Baslik": "PARKER-OLAER AKÜ AKSESUARLARI",
+        "Malzeme_Kodu": "CL1500",
+        "Açıklama": "Akü Emniyet Bloğu BGU",
+        "Fiyat": "91,74",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "4"
+    },
+    {
+        "Ana_Baslik": "TEKNO KONTROL",
+        "Alt_Baslik": "PARKER-OLAER AKÜ AKSESUARLARI",
+        "Malzeme_Kodu": "CL1500",
+        "Açıklama": "Akü Kelepçesi 6 LT. A209/330490",
+        "Fiyat": "80,24",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "4"
+    },
+    {
+        "Ana_Baslik": "TEKNO KONTROL",
+        "Alt_Baslik": "PARKER-OLAER AKÜ AKSESUARLARI",
+        "Malzeme_Kodu": "CL1500",
+        "Açıklama": "Akü Kelepçesi 10-15 LT. A209/330490",
+        "Fiyat": "92,55",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "4"
+    },
+    {
+        "Ana_Baslik": "TEKNO KONTROL",
+        "Alt_Baslik": "PARKER-OLAER AKÜ AKSESUARLARI",
+        "Malzeme_Kodu": "CL1500",
+        "Açıklama": "Akü Koruma Ring 4-5-10-15-20lt 9228-9229/330490/330500",
+        "Fiyat": "95,74",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "4"
+    },
+    {
+        "Ana_Baslik": "TEKNO KONTROL",
+        "Alt_Baslik": "PARKER-OLAER AKÜ AKSESUARLARI",
+        "Malzeme_Kodu": "CL1500",
+        "Açıklama": "Akü emniyet bloğu SN-032-07143-1137-3306",
+        "Fiyat": "107,16",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "4"
+    },
+    {
+        "Ana_Baslik": "TEKNO KONTROL",
+        "Alt_Baslik": "PARKER-OLAER AKÜ AKSESUARLARI",
+        "Malzeme_Kodu": "CL1500",
+        "Açıklama": "Akü emniyet bloğu SN-032-07143-1137-3306",
+        "Fiyat": "187,11",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "4"
+    }
+]
+```
