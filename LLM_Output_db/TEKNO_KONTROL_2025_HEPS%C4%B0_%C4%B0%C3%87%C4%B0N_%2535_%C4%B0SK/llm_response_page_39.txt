@@ -1,0 +1,104 @@
+```json
+[
+  {
+    "Ana_Baslik": "NİKEL KAPLI PİRİNÇ NİPEL",
+    "Alt_Baslik": null,
+    "Malzeme_Kodu": "AG4004",
+    "Açıklama": "Nipel 1/8x6 mm",
+    "Fiyat": "2,20",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+    "Sayfa": "39"
+  },
+  {
+    "Ana_Baslik": "NİKEL KAPLI PİRİNÇ NİPEL",
+    "Alt_Baslik": null,
+    "Malzeme_Kodu": "AG4005",
+    "Açıklama": "Nipel 1/8x8 mm",
+    "Fiyat": "2,20",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+    "Sayfa": "39"
+  },
+  {
+    "Ana_Baslik": "NİKEL KAPLI PİRİNÇ NİPEL",
+    "Alt_Baslik": null,
+    "Malzeme_Kodu": "AG4010",
+    "Açıklama": "Nipel 1/8x10 mm",
+    "Fiyat": "2,20",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+    "Sayfa": "39"
+  },
+  {
+    "Ana_Baslik": "NİKEL KAPLI PİRİNÇ NİPEL",
+    "Alt_Baslik": null,
+    "Malzeme_Kodu": "AG4015",
+    "Açıklama": "Nipel 1/8x12 mm",
+    "Fiyat": "2,20",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+    "Sayfa": "39"
+  },
+  {
+    "Ana_Baslik": "NİKEL KAPLI PİRİNÇ NİPEL",
+    "Alt_Baslik": null,
+    "Malzeme_Kodu": "AG4020",
+    "Açıklama": "Nipel 1/8x14 mm",
+    "Fiyat": "2,20",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+    "Sayfa": "39"
+  },
+  {
+    "Ana_Baslik": "NİKEL KAPLI PİRİNÇ NİPEL",
+    "Alt_Baslik": null,
+    "Malzeme_Kodu": "AG4025",
+    "Açıklama": "Nipel 1/8x16 mm",
+    "Fiyat": "2,20",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+    "Sayfa": "39"
+  },
+  {
+    "Ana_Baslik": "NİKEL KAPLI PİRİNÇ NİPEL",
+    "Alt_Baslik": null,
+    "Malzeme_Kodu": "AG4030",
+    "Açıklama": "Nipel 1/8x18 mm",
+    "Fiyat": "2,20",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+    "Sayfa": "39"
+  },
+  {
+    "Ana_Baslik": "NİKEL KAPLI PİRİNÇ NİPEL",
+    "Alt_Baslik": null,
+    "Malzeme_Kodu": "AG4035",
+    "Açıklama": "Nipel 1/8x20 mm",
+    "Fiyat": "2,20",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+    "Sayfa": "39"
+  },
+  {
+    "Ana_Baslik": "NİKEL KAPLI PİRİNÇ NİPEL",
+    "Alt_Baslik": null,
+    "Malzeme_Kodu": "AG4040",
+    "Açıklama": "Nipel 1/8x22 mm",
+    "Fiyat": "2,20",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+    "Sayfa": "39"
+  },
+  {
+    "Ana_Baslik": "NİKEL KAPLI PİRİNÇ NİPEL",
+    "Alt_Baslik": null,
+    "Malzeme_Kodu": "AG4045",
+    "Açıklama": "Nipel 1/8x24 mm",
+    "Fiyat": "2,20",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+    "Sayfa": "39"
+  }
+]
+```
