@@ -1,0 +1,104 @@
+```json
+[
+    {
+        "Ana_Baslik": "EMNİYET CARTRIDGE VALFLERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "MC2006",
+        "Açıklama": "Basınç Emniyet VMD.06 20 lt/dak. 350 Bar",
+        "Fiyat": "22,42",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "47"
+    },
+    {
+        "Ana_Baslik": "EMNİYET CARTRIDGE VALFLERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "MC2008",
+        "Açıklama": "Basınç Emniyet VMD.08 40 lt/dak. 350 Bar",
+        "Fiyat": "27,06",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "47"
+    },
+    {
+        "Ana_Baslik": "EMNİYET CARTRIDGE VALFLERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "MC2010",
+        "Açıklama": "Basınç Emniyet VMD.10 80 lt/dak. 350 Bar",
+        "Fiyat": "37,64",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "47"
+    },
+    {
+        "Ana_Baslik": "HAT TİPİ BASINÇ EMNİYET VALFLERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "MC1006",
+        "Açıklama": "Basınç Emniyet VMD.06 20 lt/dak. 350 Bar",
+        "Fiyat": "37,06",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "47"
+    },
+    {
+        "Ana_Baslik": "HAT TİPİ BASINÇ EMNİYET VALFLERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "MC1008",
+        "Açıklama": "Basınç Emniyet VMD.08 40 lt/dak. 350 Bar",
+        "Fiyat": "45,04",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "47"
+    },
+    {
+        "Ana_Baslik": "HAT TİPİ BASINÇ EMNİYET VALFLERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "MC1010",
+        "Açıklama": "Basınç Emniyet VMD.10 80 lt/dak. 350 Bar",
+        "Fiyat": "51,06",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "47"
+    },
+    {
+        "Ana_Baslik": "HAT TİPİ BASINÇ EMNİYET VALFLERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "MC1012",
+        "Açıklama": "Basınç Emniyet VMD.12 120 lt/dak. 350 Bar",
+        "Fiyat": "60,54",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "47"
+    },
+    {
+        "Ana_Baslik": "HAT TİPİ BASINÇ EMNİYET VALFLERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "MC1016",
+        "Açıklama": "Basınç Emniyet VMD.16 160 lt/dak. 350 Bar",
+        "Fiyat": "72,42",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "47"
+    },
+    {
+        "Ana_Baslik": "HAT TİPİ BASINÇ EMNİYET VALFLERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "MC1020",
+        "Açıklama": "Basınç Emniyet VMD.20 320 lt/dak. 350 Bar",
+        "Fiyat": "112,54",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "47"
+    },
+    {
+        "Ana_Baslik": "HAT TİPİ BASINÇ EMNİYET VALFLERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "MC1025",
+        "Açıklama": "Basınç Emniyet VMD.25 320 lt/dak. 350 Bar",
+        "Fiyat": "230,64",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "47"
+    }
+]
+```
