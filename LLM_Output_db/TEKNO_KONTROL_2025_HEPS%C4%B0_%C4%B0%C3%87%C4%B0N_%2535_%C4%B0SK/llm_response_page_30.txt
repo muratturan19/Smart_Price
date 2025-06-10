@@ -1,0 +1,284 @@
+```json
+[
+    {
+        "Ana_Baslik": "EL POMPALARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "EN000",
+        "Açıklama": "El Pompası P-39 700 Bar",
+        "Fiyat": null,
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Enerpac Fiyat Listesi.pdf",
+        "Sayfa": "30"
+    },
+    {
+        "Ana_Baslik": "EL POMPALARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "EN001",
+        "Açıklama": "El Pompası P-77 700 Bar",
+        "Fiyat": null,
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Enerpac Fiyat Listesi.pdf",
+        "Sayfa": "30"
+    },
+    {
+        "Ana_Baslik": "EL POMPALARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "EN002",
+        "Açıklama": "El Pompası P-80 700 Bar",
+        "Fiyat": null,
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Enerpac Fiyat Listesi.pdf",
+        "Sayfa": "30"
+    },
+    {
+        "Ana_Baslik": "EL POMPALARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "EN003",
+        "Açıklama": "El Pompası P-392 700 Bar",
+        "Fiyat": null,
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Enerpac Fiyat Listesi.pdf",
+        "Sayfa": "30"
+    },
+    {
+        "Ana_Baslik": "EL POMPALARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "EN004",
+        "Açıklama": "El Pompası P-2282 700 Bar",
+        "Fiyat": null,
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Enerpac Fiyat Listesi.pdf",
+        "Sayfa": "30"
+    },
+    {
+        "Ana_Baslik": "HAVA TANDIRLI POMPALAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "EN010",
+        "Açıklama": "Turbo Hava Tandırı Pompa PATG-1102 N 700 Bar",
+        "Fiyat": null,
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Enerpac Fiyat Listesi.pdf",
+        "Sayfa": "30"
+    },
+    {
+        "Ana_Baslik": "HAVA TANDIRLI POMPALAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "EN011",
+        "Açıklama": "Hava Tandırı Pompa PA133 700 Bar",
+        "Fiyat": null,
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Enerpac Fiyat Listesi.pdf",
+        "Sayfa": "30"
+    },
+    {
+        "Ana_Baslik": "HAVA TANDIRLI POMPALAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "EN015",
+        "Açıklama": "Hava Tandırı Pompa XA11G 700 Bar",
+        "Fiyat": null,
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Enerpac Fiyat Listesi.pdf",
+        "Sayfa": "30"
+    },
+    {
+        "Ana_Baslik": "ELEKTRİKLİ POMPALAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "EN020",
+        "Açıklama": "Kompakt Elektrikli Pompa - 3.8 lt - 0.55 kW - PUJ-1101E 700 Bar",
+        "Fiyat": null,
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Enerpac Fiyat Listesi.pdf",
+        "Sayfa": "30"
+    },
+    {
+        "Ana_Baslik": "ELEKTRİKLİ POMPALAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "EN021",
+        "Açıklama": "Kompakt Elektrikli Pompa - 3.8 lt - 0.55 kW - PUJ-1401E 700 Bar",
+        "Fiyat": null,
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Enerpac Fiyat Listesi.pdf",
+        "Sayfa": "30"
+    },
+    {
+        "Ana_Baslik": "ÇİFT ETKİLİ SİLİNDİRLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "EN030",
+        "Açıklama": "Çift Etkili Silindir RR30 30 Ton/25 mm 700 Bar",
+        "Fiyat": null,
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Enerpac Fiyat Listesi.pdf",
+        "Sayfa": "30"
+    },
+    {
+        "Ana_Baslik": "ÇİFT ETKİLİ SİLİNDİRLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "EN032",
+        "Açıklama": "Çift Etkili Silindir RR50 50 Ton/51 mm 700 Bar",
+        "Fiyat": null,
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Enerpac Fiyat Listesi.pdf",
+        "Sayfa": "30"
+    },
+    {
+        "Ana_Baslik": "ÇİFT ETKİLİ SİLİNDİRLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "EN036",
+        "Açıklama": "Çift Etkili Silindir RR75 75 Ton/51 mm 700 Bar",
+        "Fiyat": null,
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Enerpac Fiyat Listesi.pdf",
+        "Sayfa": "30"
+    },
+    {
+        "Ana_Baslik": "TEK ETKİLİ SİLİNDİRLER",
+        "Alt_Baslik": "Tek Etkili Silindir RC",
+        "Malzeme_Kodu": "EN050",
+        "Açıklama": "Tek Etkili Silindir RC-50 5 Ton/16 mm 700 Bar",
+        "Fiyat": null,
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Enerpac Fiyat Listesi.pdf",
+        "Sayfa": "30"
+    },
+    {
+        "Ana_Baslik": "TEK ETKİLİ SİLİNDİRLER",
+        "Alt_Baslik": "Tek Etkili Silindir RC",
+        "Malzeme_Kodu": "EN051",
+        "Açıklama": "Tek Etkili Silindir RC-51 5 Ton/25 mm 700 Bar",
+        "Fiyat": null,
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Enerpac Fiyat Listesi.pdf",
+        "Sayfa": "30"
+    },
+    {
+        "Ana_Baslik": "TEK ETKİLİ SİLİNDİRLER",
+        "Alt_Baslik": "Tek Etkili Silindir RC",
+        "Malzeme_Kodu": "EN052",
+        "Açıklama": "Tek Etkili Silindir RC-53 10 Ton/25 mm 700 Bar",
+        "Fiyat": null,
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Enerpac Fiyat Listesi.pdf",
+        "Sayfa": "30"
+    },
+    {
+        "Ana_Baslik": "TEK ETKİLİ SİLİNDİRLER",
+        "Alt_Baslik": "Tek Etkili Silindir RC",
+        "Malzeme_Kodu": "EN053",
+        "Açıklama": "Tek Etkili Silindir RC-54 10 Ton/51 mm 700 Bar",
+        "Fiyat": null,
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Enerpac Fiyat Listesi.pdf",
+        "Sayfa": "30"
+    },
+    {
+        "Ana_Baslik": "TEK ETKİLİ SİLİNDİRLER",
+        "Alt_Baslik": "Tek Etkili Silindir RC",
+        "Malzeme_Kodu": "EN054",
+        "Açıklama": "Tek Etkili Silindir RC-55 10 Ton/76 mm 700 Bar",
+        "Fiyat": null,
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Enerpac Fiyat Listesi.pdf",
+        "Sayfa": "30"
+    },
+    {
+        "Ana_Baslik": "TEK ETKİLİ SİLİNDİRLER",
+        "Alt_Baslik": "Tek Etkili Silindir RC",
+        "Malzeme_Kodu": "EN055",
+        "Açıklama": "Tek Etkili Silindir RC-57 10 Ton/159 mm 700 Bar",
+        "Fiyat": null,
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Enerpac Fiyat Listesi.pdf",
+        "Sayfa": "30"
+    },
+    {
+        "Ana_Baslik": "MANOMETRELER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "EN060",
+        "Açıklama": "Manometre GP-10S",
+        "Fiyat": null,
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Enerpac Fiyat Listesi.pdf",
+        "Sayfa": "30"
+    },
+    {
+        "Ana_Baslik": "MANOMETRELER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "EN061",
+        "Açıklama": "Manometre GP-15S",
+        "Fiyat": null,
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Enerpac Fiyat Listesi.pdf",
+        "Sayfa": "30"
+    },
+    {
+        "Ana_Baslik": "MANOMETRELER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "EN062",
+        "Açıklama": "Manometre GP-25S",
+        "Fiyat": null,
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Enerpac Fiyat Listesi.pdf",
+        "Sayfa": "30"
+    },
+    {
+        "Ana_Baslik": "MANOMETRELER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "EN063",
+        "Açıklama": "Manometre GP-35S",
+        "Fiyat": null,
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Enerpac Fiyat Listesi.pdf",
+        "Sayfa": "30"
+    },
+    {
+        "Ana_Baslik": "MANOMETRELER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "EN064",
+        "Açıklama": "Manometre GP-50S",
+        "Fiyat": null,
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Enerpac Fiyat Listesi.pdf",
+        "Sayfa": "30"
+    },
+    {
+        "Ana_Baslik": "MANOMETRELER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "EN065",
+        "Açıklama": "Manometre 0-700 Bar",
+        "Fiyat": null,
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Enerpac Fiyat Listesi.pdf",
+        "Sayfa": "30"
+    },
+    {
+        "Ana_Baslik": "MANOMETRELER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "EN066",
+        "Açıklama": "Manometre 0-1000 Bar",
+        "Fiyat": null,
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Enerpac Fiyat Listesi.pdf",
+        "Sayfa": "30"
+    },
+    {
+        "Ana_Baslik": "MANOMETRELER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "EN067",
+        "Açıklama": "Manometre 0-1600 Bar",
+        "Fiyat": null,
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Enerpac Fiyat Listesi.pdf",
+        "Sayfa": "30"
+    },
+    {
+        "Ana_Baslik": "MANOMETRELER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "EN068",
+        "Açıklama": "Manometre 0-2500 Bar",
+        "Fiyat": null,
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Enerpac Fiyat Listesi.pdf",
+        "Sayfa": "30"
+    }
+]
+```
