@@ -1,0 +1,74 @@
+```json
+[
+    {
+        "Ana_Baslik": "VICKERS BY DANFOSS NGBE ÇİFT BOBİNLİ YÖN DENETİM VALFLERİ 350 Bar / 40 lt/dak.",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "EV010",
+        "Açıklama": "Yön Valf 4/3 K.M. 24 V DC DG4V3S2VMUCG 02-1092S",
+        "Fiyat": "1000",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Vickers Fiyat Listesi.pdf",
+        "Sayfa": "22"
+    },
+    {
+        "Ana_Baslik": "VICKERS BY DANFOSS NGBE ÇİFT BOBİNLİ YÖN DENETİM VALFLERİ 350 Bar / 40 lt/dak.",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "EV015",
+        "Açıklama": "Yön Valf 4/3 K.M. 110 V DC DG4V3S2VMUCG 02-1093S",
+        "Fiyat": "1050",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Vickers Fiyat Listesi.pdf",
+        "Sayfa": "22"
+    },
+    {
+        "Ana_Baslik": "VICKERS BY DANFOSS NGBE ÇİFT BOBİNLİ YÖN DENETİM VALFLERİ 350 Bar / 40 lt/dak.",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "EV020",
+        "Açıklama": "Yön Valf 4/3 K.M. 220 V DC DG4V3S2VMUCG 02-1094S",
+        "Fiyat": "1100",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Vickers Fiyat Listesi.pdf",
+        "Sayfa": "22"
+    },
+    {
+        "Ana_Baslik": "VICKERS BY DANFOSS NGBE ÇİFT BOBİNLİ YÖN DENETİM VALFLERİ 350 Bar / 40 lt/dak.",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "EV025",
+        "Açıklama": "Yön Valf 4/3 K.M. 380 V DC DG4V3S2VMUCG 02-1095S",
+        "Fiyat": "1150",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Vickers Fiyat Listesi.pdf",
+        "Sayfa": "22"
+    },
+    {
+        "Ana_Baslik": "VICKERS BY DANFOSS NGBE ÇİFT BOBİNLİ YÜKSEK GERİLİMLİ KONTROL YÖN DENETİM VALFLERİ 315 Bar / 80 lt/dak.",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "EV030",
+        "Açıklama": "Yön Valf 4/2 K.M. 24 V DC DG3V3XUMFHG 5297G",
+        "Fiyat": "1200",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Vickers Fiyat Listesi.pdf",
+        "Sayfa": "22"
+    },
+    {
+        "Ana_Baslik": "VICKERS BY DANFOSS NGBE TEK BOBİNLİ YÖN DENETİM VALFLERİ 315 Bar / 120 lt/dak.",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "EV035",
+        "Açıklama": "Yön Valf 4/2 Z.P.A. 24 V DC DG4V3S2VMUCG 6369H",
+        "Fiyat": "1250",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Vickers Fiyat Listesi.pdf",
+        "Sayfa": "22"
+    },
+    {
+        "Ana_Baslik": "VICKERS BY DANFOSS NGBE TEK BOBİNLİ YÖN DENETİM VALFLERİ 315 Bar / 120 lt/dak.",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "EV040",
+        "Açıklama": "Yön Valf 4/2 Z.P.A. 110 V DC DG4V3S2VMUCG 6370H",
+        "Fiyat": "1300",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Vickers Fiyat Listesi.pdf",
+        "Sayfa": "22"
+    }
+]
+```
