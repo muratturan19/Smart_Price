@@ -1,0 +1,104 @@
+```json
+[
+    {
+        "Ana_Baslik": "ROSS 3/2 TEK BOBİNLİ VALFLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS250",
+        "Açıklama": "Promatik Valf D4576K77-001 32/34 N.K. 220 VAC",
+        "Fiyat": "39,61",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "7"
+    },
+    {
+        "Ana_Baslik": "ROSS 3/2 TEK BOBİNLİ VALFLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS251",
+        "Açıklama": "Promatik Valf D4576K77-001 32/34 N.A. 24 VDC",
+        "Fiyat": "39,61",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "7"
+    },
+    {
+        "Ana_Baslik": "ROSS 3/2 TEK BOBİNLİ VALFLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS252",
+        "Açıklama": "Promatik Valf D4576K77-001 32/34 N.A. 220 VAC",
+        "Fiyat": "39,61",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "7"
+    },
+    {
+        "Ana_Baslik": "ROSS 3/2 TEK BOBİNLİ VALFLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS253",
+        "Açıklama": "Promatik Valf D4576K77-001 32/34 N.A. 24 VDC",
+        "Fiyat": "39,61",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "7"
+    },
+    {
+        "Ana_Baslik": "ROSS 3/2 TEK BOBİNLİ VALFLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS254",
+        "Açıklama": "D4576K77-001 32/34 N.K. 220 VAC",
+        "Fiyat": "37,70",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "7"
+    },
+    {
+        "Ana_Baslik": "ROSS 3/2 TEK BOBİNLİ VALFLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS255",
+        "Açıklama": "D4576K77-001 32/34 N.A. 24 VDC",
+        "Fiyat": "37,70",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "7"
+    },
+    {
+        "Ana_Baslik": "ROSS 3/2 TEK BOBİNLİ VALFLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS504",
+        "Açıklama": "D4576K77-001 32/34 N.A. 24 VDC",
+        "Fiyat": "41,68",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "7"
+    },
+    {
+        "Ana_Baslik": "ROSS 3/2 TEK BOBİNLİ VALFLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS505",
+        "Açıklama": "D4576K77-001 32/34 N.A. 24 VDC",
+        "Fiyat": "41,68",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "7"
+    },
+    {
+        "Ana_Baslik": "ROSS 3/2 TEK BOBİNLİ VALFLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS506",
+        "Açıklama": "D4576K77-001 32/34 N.A. 24 VDC",
+        "Fiyat": "41,68",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "7"
+    },
+    {
+        "Ana_Baslik": "ROSS 3/2 TEK BOBİNLİ VALFLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS507",
+        "Açıklama": "D4576K77-001 32/34 N.A. 24 VDC",
+        "Fiyat": "41,68",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "7"
+    }
+]
+```
