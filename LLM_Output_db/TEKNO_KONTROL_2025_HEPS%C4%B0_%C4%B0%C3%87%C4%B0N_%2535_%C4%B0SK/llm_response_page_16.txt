@@ -1,0 +1,354 @@
+```json
+[
+    {
+        "Ana_Baslik": "DÖNÜŞ FİLTRESİ 25 MİCRON KAĞIT ELEMANLI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OMT/HC/25/N",
+        "Açıklama": null,
+        "Fiyat": "28,50",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Unknown",
+        "Sayfa": "16"
+    },
+    {
+        "Ana_Baslik": "DÖNÜŞ FİLTRESİ 25 MİCRON KAĞIT ELEMANLI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OMT/HC/25/NA",
+        "Açıklama": null,
+        "Fiyat": "30,00",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Unknown",
+        "Sayfa": "16"
+    },
+    {
+        "Ana_Baslik": "DÖNÜŞ FİLTRESİ 25 MİCRON KAĞIT ELEMANLI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OMT/HC/25/N1",
+        "Açıklama": null,
+        "Fiyat": "31,50",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Unknown",
+        "Sayfa": "16"
+    },
+    {
+        "Ana_Baslik": "DÖNÜŞ FİLTRESİ 25 MİCRON KAĞIT ELEMANLI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OMT/HC/25/NA1",
+        "Açıklama": null,
+        "Fiyat": "34,00",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Unknown",
+        "Sayfa": "16"
+    },
+    {
+        "Ana_Baslik": "DÖNÜŞ FİLTRESİ 25 MİCRON KAĞIT ELEMANLI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OMT/HC/25/N2",
+        "Açıklama": null,
+        "Fiyat": "34,00",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Unknown",
+        "Sayfa": "16"
+    },
+    {
+        "Ana_Baslik": "DÖNÜŞ FİLTRESİ 25 MİCRON KAĞIT ELEMANLI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OMT/HC/25/NA2",
+        "Açıklama": null,
+        "Fiyat": "34,00",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Unknown",
+        "Sayfa": "16"
+    },
+    {
+        "Ana_Baslik": "DÖNÜŞ FİLTRESİ 25 MİCRON KAĞIT ELEMANLI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OMT/HC/25/N3",
+        "Açıklama": null,
+        "Fiyat": "64,00",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Unknown",
+        "Sayfa": "16"
+    },
+    {
+        "Ana_Baslik": "DÖNÜŞ FİLTRESİ 25 MİCRON KAĞIT ELEMANLI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OMT/HC/25/NA3",
+        "Açıklama": null,
+        "Fiyat": "64,00",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Unknown",
+        "Sayfa": "16"
+    },
+    {
+        "Ana_Baslik": "DÖNÜŞ FİLTRESİ 25 MİCRON KAĞIT ELEMANLI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OMT/HC/25/N4",
+        "Açıklama": null,
+        "Fiyat": "68,00",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Unknown",
+        "Sayfa": "16"
+    },
+    {
+        "Ana_Baslik": "DÖNÜŞ FİLTRESİ 25 MİCRON KAĞIT ELEMANLI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OMT/HC/25/NA4",
+        "Açıklama": null,
+        "Fiyat": "68,00",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Unknown",
+        "Sayfa": "16"
+    },
+    {
+        "Ana_Baslik": "DÖNÜŞ FİLTRESİ 25 MİCRON KAĞIT ELEMANLI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OMT/HC/25/N5",
+        "Açıklama": null,
+        "Fiyat": "113,00",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Unknown",
+        "Sayfa": "16"
+    },
+    {
+        "Ana_Baslik": "DÖNÜŞ FİLTRESİ 25 MİCRON KAĞIT ELEMANLI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OMT/HC/25/NA5",
+        "Açıklama": null,
+        "Fiyat": "113,00",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Unknown",
+        "Sayfa": "16"
+    },
+    {
+        "Ana_Baslik": "DÖNÜŞ FİLTRESİ 25 MİCRON FİBER ELEMANLI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OMT/HC/27/25/NA",
+        "Açıklama": null,
+        "Fiyat": "43,00",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Unknown",
+        "Sayfa": "16"
+    },
+    {
+        "Ana_Baslik": "DÖNÜŞ FİLTRESİ 25 MİCRON FİBER ELEMANLI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OMT/HC/27/25/N1",
+        "Açıklama": null,
+        "Fiyat": "43,00",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Unknown",
+        "Sayfa": "16"
+    },
+    {
+        "Ana_Baslik": "DÖNÜŞ FİLTRESİ 25 MİCRON FİBER ELEMANLI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OMT/HC/27/25/NA1",
+        "Açıklama": null,
+        "Fiyat": "46,00",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Unknown",
+        "Sayfa": "16"
+    },
+    {
+        "Ana_Baslik": "DÖNÜŞ FİLTRESİ 25 MİCRON FİBER ELEMANLI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OMT/HC/27/25/N2",
+        "Açıklama": null,
+        "Fiyat": "46,00",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Unknown",
+        "Sayfa": "16"
+    },
+    {
+        "Ana_Baslik": "DÖNÜŞ FİLTRESİ 25 MİCRON FİBER ELEMANLI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OMT/HC/27/25/NA2",
+        "Açıklama": null,
+        "Fiyat": "61,00",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Unknown",
+        "Sayfa": "16"
+    },
+    {
+        "Ana_Baslik": "DÖNÜŞ FİLTRESİ 25 MİCRON FİBER ELEMANLI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OMT/HC/27/25/N3",
+        "Açıklama": null,
+        "Fiyat": "61,00",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Unknown",
+        "Sayfa": "16"
+    },
+    {
+        "Ana_Baslik": "DÖNÜŞ FİLTRESİ 25 MİCRON FİBER ELEMANLI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OMT/HC/27/25/NA3",
+        "Açıklama": null,
+        "Fiyat": "64,00",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Unknown",
+        "Sayfa": "16"
+    },
+    {
+        "Ana_Baslik": "DÖNÜŞ FİLTRESİ 25 MİCRON FİBER ELEMANLI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OMT/HC/27/25/N4",
+        "Açıklama": null,
+        "Fiyat": "64,00",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Unknown",
+        "Sayfa": "16"
+    },
+    {
+        "Ana_Baslik": "DÖNÜŞ FİLTRESİ 25 MİCRON FİBER ELEMANLI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OMT/HC/27/25/NA4",
+        "Açıklama": null,
+        "Fiyat": "129,50",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Unknown",
+        "Sayfa": "16"
+    },
+    {
+        "Ana_Baslik": "DÖNÜŞ FİLTRESİ 25 MİCRON FİBER ELEMANLI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OMT/HC/27/25/N5",
+        "Açıklama": null,
+        "Fiyat": "129,50",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Unknown",
+        "Sayfa": "16"
+    },
+    {
+        "Ana_Baslik": "DÖNÜŞ FİLTRESİ 25 MİCRON FİBER ELEMANLI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "OMT/HC/27/25/NA5",
+        "Açıklama": null,
+        "Fiyat": "150,50",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Unknown",
+        "Sayfa": "16"
+    },
+    {
+        "Ana_Baslik": "BASINÇ FİLTRESİ 10 MİCRON FİBER ELEMANLI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "HT/HC/470/0R",
+        "Açıklama": null,
+        "Fiyat": "50,31",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Unknown",
+        "Sayfa": "16"
+    },
+    {
+        "Ana_Baslik": "BASINÇ FİLTRESİ 10 MİCRON FİBER ELEMANLI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "HT/HC/470/0N",
+        "Açıklama": null,
+        "Fiyat": "50,31",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Unknown",
+        "Sayfa": "16"
+    },
+    {
+        "Ana_Baslik": "BASINÇ FİLTRESİ 10 MİCRON FİBER ELEMANLI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "HT/HC/470/0R1",
+        "Açıklama": null,
+        "Fiyat": "143,14",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Unknown",
+        "Sayfa": "16"
+    },
+    {
+        "Ana_Baslik": "BASINÇ FİLTRESİ 10 MİCRON FİBER ELEMANLI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "HT/HC/470/0N1",
+        "Açıklama": null,
+        "Fiyat": "143,14",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Unknown",
+        "Sayfa": "16"
+    },
+    {
+        "Ana_Baslik": "BASINÇ FİLTRESİ 10 MİCRON FİBER ELEMANLI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "HT/HC/470/0R2",
+        "Açıklama": null,
+        "Fiyat": "164,00",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Unknown",
+        "Sayfa": "16"
+    },
+    {
+        "Ana_Baslik": "BASINÇ FİLTRESİ 10 MİCRON FİBER ELEMANLI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "HT/HC/470/0N2",
+        "Açıklama": null,
+        "Fiyat": "164,00",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Unknown",
+        "Sayfa": "16"
+    },
+    {
+        "Ana_Baslik": "BASINÇ FİLTRESİ 10 MİCRON FİBER ELEMANLI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "HP/HC/470/0R1",
+        "Açıklama": null,
+        "Fiyat": "188,14",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Unknown",
+        "Sayfa": "16"
+    },
+    {
+        "Ana_Baslik": "BASINÇ FİLTRESİ 10 MİCRON FİBER ELEMANLI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "HP/HC/470/0N1",
+        "Açıklama": null,
+        "Fiyat": "188,14",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Unknown",
+        "Sayfa": "16"
+    },
+    {
+        "Ana_Baslik": "BASINÇ FİLTRESİ 10 MİCRON FİBER ELEMANLI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "HP/HC/470/0R2",
+        "Açıklama": null,
+        "Fiyat": "207,64",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Unknown",
+        "Sayfa": "16"
+    },
+    {
+        "Ana_Baslik": "BASINÇ FİLTRESİ 10 MİCRON FİBER ELEMANLI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "HP/HC/470/0N2",
+        "Açıklama": null,
+        "Fiyat": "207,64",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Unknown",
+        "Sayfa": "16"
+    },
+    {
+        "Ana_Baslik": "BASINÇ FİLTRESİ 10 MİCRON FİBER ELEMANLI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "HP/HC/470/0R3",
+        "Açıklama": null,
+        "Fiyat": "621,31",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Unknown",
+        "Sayfa": "16"
+    },
+    {
+        "Ana_Baslik": "BASINÇ FİLTRESİ 10 MİCRON FİBER ELEMANLI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "HP/HC/470/0N3",
+        "Açıklama": null,
+        "Fiyat": "621,31",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Unknown",
+        "Sayfa": "16"
+    }
+]
+```
