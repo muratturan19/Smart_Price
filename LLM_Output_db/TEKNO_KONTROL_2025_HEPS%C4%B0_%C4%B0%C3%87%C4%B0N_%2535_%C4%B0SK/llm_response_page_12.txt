@@ -1,0 +1,154 @@
+```json
+[
+    {
+        "Ana_Baslik": "KÖR TAPALAR (VST)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "BL2200",
+        "Açıklama": "Kör Tapa 1/8",
+        "Fiyat": "2,15",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "12"
+    },
+    {
+        "Ana_Baslik": "KÖR TAPALAR (VST)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "BL2300",
+        "Açıklama": "Kör Tapa 1/4",
+        "Fiyat": "2,30",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "12"
+    },
+    {
+        "Ana_Baslik": "KÖR TAPALAR (VST)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "BL2400",
+        "Açıklama": "Kör Tapa 3/8",
+        "Fiyat": "2,35",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "12"
+    },
+    {
+        "Ana_Baslik": "KÖR TAPALAR (VST)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "BL2500",
+        "Açıklama": "Kör Tapa 1/2",
+        "Fiyat": "2,50",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "12"
+    },
+    {
+        "Ana_Baslik": "KÖR TAPALAR (VST)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "BL2600",
+        "Açıklama": "Kör Tapa 3/4",
+        "Fiyat": "3,05",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "12"
+    },
+    {
+        "Ana_Baslik": "KÖR TAPALAR (VST)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "BL2700",
+        "Açıklama": "Kör Tapa 1",
+        "Fiyat": "5,05",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "12"
+    },
+    {
+        "Ana_Baslik": "KÖR TAPALAR (VST)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "BL2800",
+        "Açıklama": "Kör Tapa 1 1/4",
+        "Fiyat": "10,04",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "12"
+    },
+    {
+        "Ana_Baslik": "KÖR TAPALAR (VST)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "BL2900",
+        "Açıklama": "Kör Tapa 1 1/2",
+        "Fiyat": "20,56",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "12"
+    },
+    {
+        "Ana_Baslik": "KAYNAK NİPELİ (ESV)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "BL2700",
+        "Açıklama": "Kaynak Nipeli 1/8 315 Bar",
+        "Fiyat": "11,60",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "12"
+    },
+    {
+        "Ana_Baslik": "KAYNAK NİPELİ (ESV)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "BL2770",
+        "Açıklama": "Kaynak Nipeli 1/4 315 Bar",
+        "Fiyat": "12,41",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "12"
+    },
+    {
+        "Ana_Baslik": "KAYNAK NİPELİ (ESV)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "BL2760",
+        "Açıklama": "Kaynak Nipeli 3/8 315 Bar",
+        "Fiyat": "13,16",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "12"
+    },
+    {
+        "Ana_Baslik": "KAYNAK NİPELİ (ESV)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "BL2750",
+        "Açıklama": "Kaynak Nipeli 1/2 315 Bar",
+        "Fiyat": "31,46",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "12"
+    },
+    {
+        "Ana_Baslik": "KAYNAK NİPELİ (ESV)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "BL2740",
+        "Açıklama": "Kaynak Nipeli 3/4 315 Bar",
+        "Fiyat": "37,04",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "12"
+    },
+    {
+        "Ana_Baslik": "KAYNAK NİPELİ (ESV)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "BL2730",
+        "Açıklama": "Kaynak Nipeli 1 315 Bar",
+        "Fiyat": "47,06",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "12"
+    },
+    {
+        "Ana_Baslik": "KAYNAK NİPELİ (ESV)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "BL2725",
+        "Açıklama": "Kaynak Nipeli 1 1/4 315 Bar",
+        "Fiyat": "67,04",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "12"
+    }
+]
+```
