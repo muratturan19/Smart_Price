@@ -1,0 +1,384 @@
+```json
+[
+    {
+        "Ana_Baslik": "AIGNEP FİLTRELER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG4000",
+        "Açıklama": "Filtre 3/8\"",
+        "Fiyat": "27,70",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "38"
+    },
+    {
+        "Ana_Baslik": "AIGNEP FİLTRELER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG4050",
+        "Açıklama": "Filtre 1/2\"",
+        "Fiyat": "30,32",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "38"
+    },
+    {
+        "Ana_Baslik": "AIGNEP FİLTRELER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG4100",
+        "Açıklama": "Filtre 3/4\"",
+        "Fiyat": "37,82",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "38"
+    },
+    {
+        "Ana_Baslik": "AIGNEP FİLTRELER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG4150",
+        "Açıklama": "Filtre 1\"",
+        "Fiyat": "47,02",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "38"
+    },
+    {
+        "Ana_Baslik": "AIGNEP REGÜLATÖRLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG5000",
+        "Açıklama": "Regülatör 3/8\"",
+        "Fiyat": "30,32",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "38"
+    },
+    {
+        "Ana_Baslik": "AIGNEP REGÜLATÖRLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG5050",
+        "Açıklama": "Regülatör 1/2\"",
+        "Fiyat": "33,84",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "38"
+    },
+    {
+        "Ana_Baslik": "AIGNEP REGÜLATÖRLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG5100",
+        "Açıklama": "Regülatör 3/4\"",
+        "Fiyat": "42,44",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "38"
+    },
+    {
+        "Ana_Baslik": "AIGNEP REGÜLATÖRLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG5150",
+        "Açıklama": "Regülatör 1\"",
+        "Fiyat": "63,64",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "38"
+    },
+    {
+        "Ana_Baslik": "AIGNEP YAĞLAYICILAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG6000",
+        "Açıklama": "Yağlayıcı 3/8\"",
+        "Fiyat": "32,76",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "38"
+    },
+    {
+        "Ana_Baslik": "AIGNEP YAĞLAYICILAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG6050",
+        "Açıklama": "Yağlayıcı 1/2\"",
+        "Fiyat": "34,56",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "38"
+    },
+    {
+        "Ana_Baslik": "AIGNEP YAĞLAYICILAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG6100",
+        "Açıklama": "Yağlayıcı 3/4\"",
+        "Fiyat": "44,64",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "38"
+    },
+    {
+        "Ana_Baslik": "AIGNEP YAĞLAYICILAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG6150",
+        "Açıklama": "Yağlayıcı 1\"",
+        "Fiyat": "61,02",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "38"
+    },
+    {
+        "Ana_Baslik": "AIGNEP FİLTRE-REGÜLATÖRLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG7000",
+        "Açıklama": "Filtre-Regülatör 3/8\"",
+        "Fiyat": "42,24",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "38"
+    },
+    {
+        "Ana_Baslik": "AIGNEP FİLTRE-REGÜLATÖRLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG7050",
+        "Açıklama": "Filtre-Regülatör 1/2\"",
+        "Fiyat": "47,76",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "38"
+    },
+    {
+        "Ana_Baslik": "AIGNEP FİLTRE-REGÜLATÖRLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG7100",
+        "Açıklama": "Filtre-Regülatör 3/4\"",
+        "Fiyat": "55,56",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "38"
+    },
+    {
+        "Ana_Baslik": "AIGNEP FİLTRE-REGÜLATÖRLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG7150",
+        "Açıklama": "Filtre-Regülatör 1\"",
+        "Fiyat": "88,64",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "38"
+    },
+    {
+        "Ana_Baslik": "AIGNEP ŞARTLANDIRICILAR 2'LI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG8000",
+        "Açıklama": "Şartlandırıcı 3/8\"",
+        "Fiyat": "61,06",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "38"
+    },
+    {
+        "Ana_Baslik": "AIGNEP ŞARTLANDIRICILAR 2'LI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG8050",
+        "Açıklama": "Şartlandırıcı 1/2\"",
+        "Fiyat": "65,64",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "38"
+    },
+    {
+        "Ana_Baslik": "AIGNEP ŞARTLANDIRICILAR 2'LI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG8100",
+        "Açıklama": "Şartlandırıcı 3/4\"",
+        "Fiyat": "82,64",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "38"
+    },
+    {
+        "Ana_Baslik": "AIGNEP ŞARTLANDIRICILAR 2'LI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG8150",
+        "Açıklama": "Şartlandırıcı 1\"",
+        "Fiyat": "165,36",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "38"
+    },
+    {
+        "Ana_Baslik": "AIGNEP ŞARTLANDIRICILAR 3'LU",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG8500",
+        "Açıklama": "Şartlandırıcı 3/8\"",
+        "Fiyat": "91,06",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "38"
+    },
+    {
+        "Ana_Baslik": "AIGNEP ŞARTLANDIRICILAR 3'LU",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG8550",
+        "Açıklama": "Şartlandırıcı 1/2\"",
+        "Fiyat": "102,64",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "38"
+    },
+    {
+        "Ana_Baslik": "AIGNEP ŞARTLANDIRICILAR 3'LU",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG8600",
+        "Açıklama": "Şartlandırıcı 3/4\"",
+        "Fiyat": "134,64",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "38"
+    },
+    {
+        "Ana_Baslik": "AIGNEP ŞARTLANDIRICILAR 3'LU",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG8650",
+        "Açıklama": "Şartlandırıcı 1\"",
+        "Fiyat": "197,42",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "38"
+    },
+    {
+        "Ana_Baslik": "AIGNEP ŞARTLANDIRICI VANASI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG9000",
+        "Açıklama": "Vana 3/8\"",
+        "Fiyat": "22,04",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "38"
+    },
+    {
+        "Ana_Baslik": "AIGNEP ŞARTLANDIRICI VANASI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG9050",
+        "Açıklama": "Vana 1/2\"",
+        "Fiyat": "27,06",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "38"
+    },
+    {
+        "Ana_Baslik": "AIGNEP ŞARTLANDIRICI VANASI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG9100",
+        "Açıklama": "Vana 3/4\"",
+        "Fiyat": "70,04",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "38"
+    },
+    {
+        "Ana_Baslik": "AIGNEP ŞARTLANDIRICI VANASI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG9150",
+        "Açıklama": "Vana 1\"",
+        "Fiyat": "84,16",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "38"
+    },
+    {
+        "Ana_Baslik": "AIGNEP ŞARTLANDIRICI VANASI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG9199",
+        "Açıklama": "Vana 1 1/4\"",
+        "Fiyat": "87,42",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "38"
+    },
+    {
+        "Ana_Baslik": "NİKEL KAPLİ KÜPİNG BAĞLANTILARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG4044",
+        "Açıklama": "Düz Rakor 1040 5-1/8\"",
+        "Fiyat": "1,26",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "38"
+    },
+    {
+        "Ana_Baslik": "NİKEL KAPLİ KÜPİNG BAĞLANTILARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG4110",
+        "Açıklama": "Düz Rakor 1040 6-1/8\"",
+        "Fiyat": "1,44",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "38"
+    },
+    {
+        "Ana_Baslik": "NİKEL KAPLİ KÜPİNG BAĞLANTILARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG4115",
+        "Açıklama": "Düz Rakor 1040 8-1/8\"",
+        "Fiyat": "1,44",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "38"
+    },
+    {
+        "Ana_Baslik": "NİKEL KAPLİ KÜPİNG BAĞLANTILARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG4400",
+        "Açıklama": "Düz Rakor 1040 10-1/8\"",
+        "Fiyat": "1,80",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "38"
+    },
+    {
+        "Ana_Baslik": "NİKEL KAPLİ KÜPİNG BAĞLANTILARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG4423",
+        "Açıklama": "Düz Rakor 1040 12-1/8\"",
+        "Fiyat": "2,60",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "38"
+    },
+    {
+        "Ana_Baslik": "NİKEL KAPLİ KÜPİNG BAĞLANTILARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG4424",
+        "Açıklama": "Düz Rakor 1040 15-1/8\"",
+        "Fiyat": "2,80",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "38"
+    },
+    {
+        "Ana_Baslik": "NİKEL KAPLİ KÜPİNG BAĞLANTILARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG4440",
+        "Açıklama": "Düz Rakor 1040 18-1/8\"",
+        "Fiyat": "2,80",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "38"
+    },
+    {
+        "Ana_Baslik": "NİKEL KAPLİ KÜPİNG BAĞLANTILARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG4443",
+        "Açıklama": "Düz Rakor 1040 22-1/8\"",
+        "Fiyat": "3,00",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "38"
+    },
+    {
+        "Ana_Baslik": "NİKEL KAPLİ KÜPİNG BAĞLANTILARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG4455",
+        "Açıklama": "Düz Rakor 1040 28-1/8\"",
+        "Fiyat": "3,30",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "38"
+    }
+]
+```
