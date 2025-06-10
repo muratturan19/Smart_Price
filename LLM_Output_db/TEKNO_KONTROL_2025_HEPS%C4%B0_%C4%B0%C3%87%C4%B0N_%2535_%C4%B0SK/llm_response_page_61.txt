@@ -1,0 +1,104 @@
+```json
+[
+    {
+        "Ana_Baslik": "DÜZ DİREK BAĞLANTILAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "HT4100",
+        "Açıklama": "Düz Direk 6 mm. PUL 06",
+        "Fiyat": "0,81",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "61"
+    },
+    {
+        "Ana_Baslik": "DÜZ DİREK BAĞLANTILAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "HT4200",
+        "Açıklama": "Düz Direk 8 mm. PUL 08",
+        "Fiyat": "0,81",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "61"
+    },
+    {
+        "Ana_Baslik": "DÜZ DİREK BAĞLANTILAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "HT4300",
+        "Açıklama": "Düz Direk 10 mm. PUL 10",
+        "Fiyat": "0,81",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "61"
+    },
+    {
+        "Ana_Baslik": "DÜZ DİREK BAĞLANTILAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "HT4400",
+        "Açıklama": "Düz Direk 12 mm. PUL 12",
+        "Fiyat": "0,81",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "61"
+    },
+    {
+        "Ana_Baslik": "DÜZ DİREK BAĞLANTILAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "HT4500",
+        "Açıklama": "Düz Direk 16 mm. PUL 16",
+        "Fiyat": "0,81",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "61"
+    },
+    {
+        "Ana_Baslik": "TE BAĞLANTILAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "HT5000",
+        "Açıklama": "Te Bağlantı 6 mm. PUT 06",
+        "Fiyat": "0,81",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "61"
+    },
+    {
+        "Ana_Baslik": "TE BAĞLANTILAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "HT5100",
+        "Açıklama": "Te Bağlantı 8 mm. PUT 08",
+        "Fiyat": "0,81",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "61"
+    },
+    {
+        "Ana_Baslik": "TE BAĞLANTILAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "HT5200",
+        "Açıklama": "Te Bağlantı 10 mm. PUT 10",
+        "Fiyat": "0,81",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "61"
+    },
+    {
+        "Ana_Baslik": "TE BAĞLANTILAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "HT5300",
+        "Açıklama": "Te Bağlantı 12 mm. PUT 12",
+        "Fiyat": "0,81",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "61"
+    },
+    {
+        "Ana_Baslik": "TE BAĞLANTILAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "HT5400",
+        "Açıklama": "Te Bağlantı 16 mm. PUT 16",
+        "Fiyat": "0,81",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "61"
+    }
+]
+```
