@@ -1,0 +1,114 @@
+```json
+[
+    {
+        "Ana_Baslik": "VICKERS BY DANFOSS PİLOT KUMANDALI BASINÇ EMNİYET VALFLERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "EV210",
+        "Açıklama": "VICKERS BY DANFOSS Pilot Kumandalı Emniyet Valf, 114 l/dak, 350 bar Acma Basınç aralığı: 7-140 bar, vida ayarlı",
+        "Fiyat": "C10-2-RG-10-S-0-0-3",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Vickers Fiyat Listesi.pdf",
+        "Sayfa": "28"
+    },
+    {
+        "Ana_Baslik": "VICKERS BY DANFOSS PİLOT KUMANDALI BASINÇ EMNİYET VALFLERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "EV215",
+        "Açıklama": "VICKERS BY DANFOSS Pilot Kumandalı Emniyet Valf, 114 l/dak, 350 bar Acma Basınç aralığı: 7-140 bar, vida ayarlı",
+        "Fiyat": "C10-2-RG-15-S-0-0-3",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Vickers Fiyat Listesi.pdf",
+        "Sayfa": "28"
+    },
+    {
+        "Ana_Baslik": "VICKERS BY DANFOSS PİLOT KUMANDALI BASINÇ EMNİYET VALFLERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "EV220",
+        "Açıklama": "VICKERS BY DANFOSS Pilot Kumandalı Emniyet Valf, 114 l/dak, 350 bar Acma Basınç aralığı: 7-140 bar, vida ayarlı",
+        "Fiyat": "C10-2-RG-20-S-0-0-3",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Vickers Fiyat Listesi.pdf",
+        "Sayfa": "28"
+    },
+    {
+        "Ana_Baslik": "VICKERS BY DANFOSS KARTUŞ ÇEK VALFLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "EV300",
+        "Açıklama": "VICKERS BY DANFOSS Çekvalf, 76 l/dak, 350 bar, A basıncı: 0.34 bar",
+        "Fiyat": "C-2-CV-3-4-0-00-0-5-00",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Vickers Fiyat Listesi.pdf",
+        "Sayfa": "28"
+    },
+    {
+        "Ana_Baslik": "VICKERS BY DANFOSS KARTUŞ ÇEK VALFLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "EV305",
+        "Açıklama": "VICKERS BY DANFOSS Çekvalf, 90 l/dak, 350 bar, A basıncı: 0.70 bar",
+        "Fiyat": "C-2-CV-6-0-0-0-0-0-0",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Vickers Fiyat Listesi.pdf",
+        "Sayfa": "28"
+    },
+    {
+        "Ana_Baslik": "VICKERS BY DANFOSS PİLOT KUMANDALI ÇEK VALFLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "EV510",
+        "Açıklama": "VICKERS BY DANFOSS Pilot Kumandalı Çek Valf 21 l/dak, 210 bar, A basıncı: 1.00 bar",
+        "Fiyat": "C-63-5-PC-2-0-5-0-15",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Vickers Fiyat Listesi.pdf",
+        "Sayfa": "28"
+    },
+    {
+        "Ana_Baslik": "VICKERS BY DANFOSS PİLOT KUMANDALI ÇEK VALFLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "EV515",
+        "Açıklama": "VICKERS BY DANFOSS Pilot Kumandalı Çek Valf 57 l/dak, 350 bar, A basıncı: 1.00 bar",
+        "Fiyat": "C-63-5-PC-2-0-5-0-30",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Vickers Fiyat Listesi.pdf",
+        "Sayfa": "28"
+    },
+    {
+        "Ana_Baslik": "VICKERS BY DANFOSS KISMA VALFLERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "EV610",
+        "Açıklama": "VICKERS BY DANFOSS Kısma Valfi, El kumandalı, çekvalfli, 0-63 l/dak, 210 bar",
+        "Fiyat": "C-16-2-R-3-0-0-0-0-0-5",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Vickers Fiyat Listesi.pdf",
+        "Sayfa": "28"
+    },
+    {
+        "Ana_Baslik": "VICKERS BY DANFOSS KISMA VALFLERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "EV615",
+        "Açıklama": "VICKERS BY DANFOSS Kısma Valfi, El kumandalı, çekvalfli, 0-63 l/dak, 210 bar",
+        "Fiyat": "C-16-2-R-3-0-0-0-0-0-5",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Vickers Fiyat Listesi.pdf",
+        "Sayfa": "28"
+    },
+    {
+        "Ana_Baslik": "VICKERS BY DANFOSS LOKOM VALFLERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "EV710",
+        "Açıklama": "VICKERS BY DANFOSS Yük dayanı Emniyet Valf 60 l/dak, 210 bar, Acma Basınç: 1.00 bar",
+        "Fiyat": "C-10-3-DP-2-0-1-PF-300",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Vickers Fiyat Listesi.pdf",
+        "Sayfa": "28"
+    },
+    {
+        "Ana_Baslik": "VICKERS BY DANFOSS LOKOM VALFLERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "EV715",
+        "Açıklama": "VICKERS BY DANFOSS Yük dayanı Emniyet Valf 80 l/dak, 210 bar, Acma Basınç: 1.00 bar",
+        "Fiyat": "C-10-3-DP-2-0-1-PF-300",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Vickers Fiyat Listesi.pdf",
+        "Sayfa": "28"
+    }
+]
+```
