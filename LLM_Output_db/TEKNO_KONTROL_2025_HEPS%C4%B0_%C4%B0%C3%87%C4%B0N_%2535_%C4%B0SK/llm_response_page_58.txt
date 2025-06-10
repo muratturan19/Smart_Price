@@ -1,0 +1,94 @@
+```json
+[
+    {
+        "Ana_Baslik": "DIN 2353 E UYGUN VOSS Tipi 90° DÜĞMELİ SOMUNLU HORTUM BAŞLIKLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "VW150",
+        "Açıklama": "Somunlu 90° Bağlantı 6L – M12x1.5 11221-03006",
+        "Fiyat": "2,30",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Örnek Fiyat Listesi.pdf",
+        "Sayfa": "58"
+    },
+    {
+        "Ana_Baslik": "DIN 2353 E UYGUN VOSS Tipi 90° DÜĞMELİ SOMUNLU HORTUM BAŞLIKLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "VW155",
+        "Açıklama": "Somunlu 90° Bağlantı 8L – M14x1.5 11221-03008",
+        "Fiyat": "2,50",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Örnek Fiyat Listesi.pdf",
+        "Sayfa": "58"
+    },
+    {
+        "Ana_Baslik": "DIN 2353 E UYGUN VOSS Tipi 90° DÜĞMELİ SOMUNLU HORTUM BAŞLIKLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "VW160",
+        "Açıklama": "Somunlu 90° Bağlantı 10L – M16x1.5 11221-03010",
+        "Fiyat": "2,80",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Örnek Fiyat Listesi.pdf",
+        "Sayfa": "58"
+    },
+    {
+        "Ana_Baslik": "3000 PSI DÜZ SAE FLANŞ HORTUM BAŞLIKLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "VW210",
+        "Açıklama": "SAE Düz Flanş Bağlantı 3/8\" – 3000 11491-12",
+        "Fiyat": "7,52",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Örnek Fiyat Listesi.pdf",
+        "Sayfa": "58"
+    },
+    {
+        "Ana_Baslik": "3000 PSI DÜZ SAE FLANŞ HORTUM BAŞLIKLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "VW215",
+        "Açıklama": "SAE Düz Flanş Bağlantı 1/2\" – 3000 11491-16",
+        "Fiyat": "7,77",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Örnek Fiyat Listesi.pdf",
+        "Sayfa": "58"
+    },
+    {
+        "Ana_Baslik": "6000 PSI DÜZ SAE FLANŞ HORTUM BAŞLIKLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "VW310",
+        "Açıklama": "SAE Düz Flanş Bağlantı 3/8\" – 6000 11491-12",
+        "Fiyat": "8,06",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Örnek Fiyat Listesi.pdf",
+        "Sayfa": "58"
+    },
+    {
+        "Ana_Baslik": "6000 PSI DÜZ SAE FLANŞ HORTUM BAŞLIKLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "VW315",
+        "Açıklama": "SAE Düz Flanş Bağlantı 1/2\" – 6000 11491-16",
+        "Fiyat": "10,12",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Örnek Fiyat Listesi.pdf",
+        "Sayfa": "58"
+    },
+    {
+        "Ana_Baslik": "3000 PSI 90° SAE FLANŞ HORTUM BAŞLIKLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "VW2000",
+        "Açıklama": "SAE 90° Flanş Bağlantı 3/8\" – 3000 11401-12/28",
+        "Fiyat": "7,57",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Örnek Fiyat Listesi.pdf",
+        "Sayfa": "58"
+    },
+    {
+        "Ana_Baslik": "3000 PSI 90° SAE FLANŞ HORTUM BAŞLIKLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "VW2005",
+        "Açıklama": "SAE 90° Flanş Bağlantı 1/2\" – 3000 11401-16/29",
+        "Fiyat": "12,57",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Örnek Fiyat Listesi.pdf",
+        "Sayfa": "58"
+    }
+]
+```
