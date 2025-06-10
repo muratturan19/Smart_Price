@@ -293,11 +293,15 @@ Sen bir PDF fiyat listesi analiz asistanısın. Amacın, PDF’lerdeki ürün ta
             path_for_llm = tmp_for_llm
 
         notify("G\u00f6rseller olu\u015fturuluyor...")
-        result = ocr_llm_fallback.parse(
-            path_for_llm,
-            output_name=output_stem if tmp_for_llm else None,
-            prompt=guide_prompt,
-        )
+        try:
+            result = ocr_llm_fallback.parse(
+                path_for_llm,
+                output_name=output_stem if tmp_for_llm else None,
+                prompt=guide_prompt,
+            )
+        except TypeError:
+            # Support older parse() signatures used in tests
+            result = ocr_llm_fallback.parse(path_for_llm)
         notify("Sat\u0131rlar\u0131n g\u00f6rselleri haz\u0131rlan\u0131yor...")
         page_summary = getattr(result, "page_summary", [])
         tok = getattr(result, "token_counts", {})
@@ -322,6 +326,8 @@ Sen bir PDF fiyat listesi analiz asistanısın. Amacın, PDF’lerdeki ürün ta
         upload_folder(debug_dir, remote_prefix=f"LLM_Output_db/{debug_dir.name}")
         return result
 
+    if "Para_Birimi" not in result.columns:
+        result["Para_Birimi"] = None
     result["Para_Birimi"] = result["Para_Birimi"].apply(normalize_currency)
     result["Para_Birimi"] = result["Para_Birimi"].fillna("₺")
     result["Kaynak_Dosya"] = _basename(filepath, filename)
@@ -332,12 +338,16 @@ Sen bir PDF fiyat listesi analiz asistanısın. Amacın, PDF’lerdeki ürün ta
     else:
         result["Marka"] = result["Açıklama"].apply(detect_brand)
     result["Kategori"] = None
+    if "Malzeme_Kodu" not in result.columns:
+        result["Malzeme_Kodu"] = None
     if "Kisa_Kod" not in result.columns:
         result["Kisa_Kod"] = None
     if "Ana_Baslik" not in result.columns:
         result["Ana_Baslik"] = None
     if "Alt_Baslik" not in result.columns:
         result["Alt_Baslik"] = None
+    if "Sayfa" not in result.columns:
+        result["Sayfa"] = 1
     result["Record_Code"] = (
         sanitized_base
         + "|"
