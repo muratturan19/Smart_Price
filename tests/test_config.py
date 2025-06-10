@@ -38,8 +38,8 @@ def test_defaults(monkeypatch):
         monkeypatch.delenv(name, raising=False)
     importlib.reload(cfg)
     root = Path(__file__).resolve().parent.parent
-    assert cfg.MASTER_EXCEL_PATH == root / "Master data base" / "master_dataset.xlsx"
-    assert cfg.MASTER_DB_PATH == root / "Master data base" / "master.db"
+    assert cfg.MASTER_EXCEL_PATH == root / "Master_data_base" / "master_dataset.xlsx"
+    assert cfg.MASTER_DB_PATH == root / "Master_data_base" / "master.db"
     assert cfg.IMAGE_DIR == root / "images"
     assert cfg.SALES_APP_DIR == root / "Sales App" / "sales_app"
     assert cfg.PRICE_APP_DIR == root / "Price App" / "smart_price"
