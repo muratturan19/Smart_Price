@@ -1,0 +1,1 @@
+Üzgünüm, görseldeki metni doğrudan okuyamıyorum. Ancak, PDF'deki tabloyu analiz etmek için OCR (Optik Karakter Tanıma) teknolojisini kullanarak metni çıkartabilir ve ardından belirttiğiniz kurallara göre JSON formatında yapılandırabilirim. Eğer metni sağlayabilirseniz, size daha fazla yardımcı olabilirim.
