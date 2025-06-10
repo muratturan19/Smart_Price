@@ -1,0 +1,114 @@
+```json
+[
+    {
+        "Ana_Baslik": "ROSS 95 ÇİFT TARAFLI PNÖMATİK UYARILI VALFLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS5440",
+        "Açıklama": "Pnömatik Valf D-5562K-1910",
+        "Fiyat": "74,37",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "8"
+    },
+    {
+        "Ana_Baslik": "ROSS 95 ÇİFT TARAFLI PNÖMATİK UYARILI VALFLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS5450",
+        "Açıklama": "Pnömatik Valf D-5562K-2910",
+        "Fiyat": "74,37",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "8"
+    },
+    {
+        "Ana_Baslik": "ROSS 95 ÇİFT TARAFLI PNÖMATİK UYARILI VALFLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS5460",
+        "Açıklama": "Pnömatik Valf D-5562K-3910",
+        "Fiyat": "74,37",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "8"
+    },
+    {
+        "Ana_Baslik": "ROSS 95 ÇİFT TARAFLI PNÖMATİK UYARILI VALFLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS5470",
+        "Açıklama": "Pnömatik Valf D-5562K-1017",
+        "Fiyat": "87,91",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "8"
+    },
+    {
+        "Ana_Baslik": "ROSS 95 ÇİFT TARAFLI PNÖMATİK UYARILI VALFLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS5480",
+        "Açıklama": "Pnömatik Valf D-5562K-3007",
+        "Fiyat": "87,91",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "8"
+    },
+    {
+        "Ana_Baslik": "ROSS 95 ÇİFT TARAFLI PNÖMATİK UYARILI VALFLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS5490",
+        "Açıklama": "Pnömatik Valf D-5562K-4007",
+        "Fiyat": "87,91",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "8"
+    },
+    {
+        "Ana_Baslik": "ROSS 95 ÇİFT TARAFLI PNÖMATİK UYARILI VALFLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS5500",
+        "Açıklama": "Pnömatik Valf D-5562K-1019",
+        "Fiyat": "110,01",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "8"
+    },
+    {
+        "Ana_Baslik": "ROSS 95 ÇİFT TARAFLI PNÖMATİK UYARILI VALFLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS5510",
+        "Açıklama": "Pnömatik Valf D-5562K-2019",
+        "Fiyat": "110,01",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "8"
+    },
+    {
+        "Ana_Baslik": "ROSS 95 ÇİFT TARAFLI PNÖMATİK UYARILI VALFLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS5520",
+        "Açıklama": "Pnömatik Valf D-5562K-3019",
+        "Fiyat": "110,01",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "8"
+    },
+    {
+        "Ana_Baslik": "ROSS 95 ÇİFT TARAFLI PNÖMATİK UYARILI VALFLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS5530",
+        "Açıklama": "Pnömatik Valf D-5562K-4019",
+        "Fiyat": "110,01",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "8"
+    },
+    {
+        "Ana_Baslik": "ROSS 95 ÇİFT TARAFLI PNÖMATİK UYARILI VALFLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS5540",
+        "Açıklama": "Pnömatik Valf D-5562K-1019",
+        "Fiyat": "130,01",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "8"
+    }
+]
+```
