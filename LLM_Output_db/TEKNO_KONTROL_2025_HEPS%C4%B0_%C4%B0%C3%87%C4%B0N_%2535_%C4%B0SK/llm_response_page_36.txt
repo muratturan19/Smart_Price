@@ -1,0 +1,434 @@
+```json
+[
+    {
+        "Ana_Baslik": "DÖNER DİREKLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG23040",
+        "Açıklama": "Döner Dirsek 1115 1/8-1/8",
+        "Fiyat": "2.13",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "36"
+    },
+    {
+        "Ana_Baslik": "DÖNER DİREKLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG23041",
+        "Açıklama": "Döner Dirsek 1115 1/4-1/8",
+        "Fiyat": "2.13",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "36"
+    },
+    {
+        "Ana_Baslik": "DÖNER DİREKLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG23042",
+        "Açıklama": "Döner Dirsek 1115 1/4-1/4",
+        "Fiyat": "2.13",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "36"
+    },
+    {
+        "Ana_Baslik": "DÖNER DİREKLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG23043",
+        "Açıklama": "Döner Dirsek 1115 3/8-1/4",
+        "Fiyat": "2.13",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "36"
+    },
+    {
+        "Ana_Baslik": "DÖNER DİREKLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG23044",
+        "Açıklama": "Döner Dirsek 1115 3/8-3/8",
+        "Fiyat": "2.13",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "36"
+    },
+    {
+        "Ana_Baslik": "DÖNER DİREKLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG23045",
+        "Açıklama": "Döner Dirsek 1115 1/2-3/8",
+        "Fiyat": "2.13",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "36"
+    },
+    {
+        "Ana_Baslik": "DÖNER DİREKLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG23046",
+        "Açıklama": "Döner Dirsek 1115 1/2-1/2",
+        "Fiyat": "2.13",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "36"
+    },
+    {
+        "Ana_Baslik": "TİP BAĞLANTILAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG23050",
+        "Açıklama": "Te Bağlantı 1250 6/2-6/2",
+        "Fiyat": "2.06",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "36"
+    },
+    {
+        "Ana_Baslik": "TİP BAĞLANTILAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG23051",
+        "Açıklama": "Te Bağlantı 1250 8/2-8/2",
+        "Fiyat": "2.06",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "36"
+    },
+    {
+        "Ana_Baslik": "TİP BAĞLANTILAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG23052",
+        "Açıklama": "Te Bağlantı 1250 8/3-8/3",
+        "Fiyat": "2.06",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "36"
+    },
+    {
+        "Ana_Baslik": "TİP BAĞLANTILAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG23053",
+        "Açıklama": "Te Bağlantı 1250 10/3-10/3",
+        "Fiyat": "2.06",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "36"
+    },
+    {
+        "Ana_Baslik": "TİP BAĞLANTILAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG23054",
+        "Açıklama": "Te Bağlantı 1250 10/4-10/4",
+        "Fiyat": "2.06",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "36"
+    },
+    {
+        "Ana_Baslik": "PRAKTİK ÇABUK BAĞLANTI ELEMANLARI 1000 SERİSİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG25020",
+        "Açıklama": "Dişli Dirsekler 1100 6/2-1/8",
+        "Fiyat": "2.06",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "36"
+    },
+    {
+        "Ana_Baslik": "PRAKTİK ÇABUK BAĞLANTI ELEMANLARI 1000 SERİSİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG25021",
+        "Açıklama": "Dişli Dirsekler 1100 6/4-1/8",
+        "Fiyat": "2.06",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "36"
+    },
+    {
+        "Ana_Baslik": "PRAKTİK ÇABUK BAĞLANTI ELEMANLARI 1000 SERİSİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG25022",
+        "Açıklama": "Dişli Dirsekler 1100 8/4-1/8",
+        "Fiyat": "2.06",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "36"
+    },
+    {
+        "Ana_Baslik": "PRAKTİK ÇABUK BAĞLANTI ELEMANLARI 1000 SERİSİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG25023",
+        "Açıklama": "Dişli Dirsekler 1100 8/6-1/8",
+        "Fiyat": "2.06",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "36"
+    },
+    {
+        "Ana_Baslik": "PRAKTİK ÇABUK BAĞLANTI ELEMANLARI 1000 SERİSİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG25024",
+        "Açıklama": "Dişli Dirsekler 1100 10/6-1/8",
+        "Fiyat": "2.06",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "36"
+    },
+    {
+        "Ana_Baslik": "PRAKTİK ÇABUK BAĞLANTI ELEMANLARI 1000 SERİSİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG25025",
+        "Açıklama": "Dişli Dirsekler 1100 10/8-1/4",
+        "Fiyat": "2.06",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "36"
+    },
+    {
+        "Ana_Baslik": "PRAKTİK ÇABUK BAĞLANTI ELEMANLARI 1000 SERİSİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG25026",
+        "Açıklama": "Dişli Dirsekler 1100 12/10-1/4",
+        "Fiyat": "2.06",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "36"
+    },
+    {
+        "Ana_Baslik": "TAMAMLAYICI MALZEMELER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG23060",
+        "Açıklama": "Nipel 2000 1/8",
+        "Fiyat": "0.86",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "36"
+    },
+    {
+        "Ana_Baslik": "TAMAMLAYICI MALZEMELER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG23061",
+        "Açıklama": "Nipel 2000 1/4",
+        "Fiyat": "0.86",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "36"
+    },
+    {
+        "Ana_Baslik": "TAMAMLAYICI MALZEMELER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG23062",
+        "Açıklama": "Nipel 2000 3/8",
+        "Fiyat": "1.24",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "36"
+    },
+    {
+        "Ana_Baslik": "TAMAMLAYICI MALZEMELER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG23063",
+        "Açıklama": "Nipel 2000 1/2",
+        "Fiyat": "2.06",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "36"
+    },
+    {
+        "Ana_Baslik": "TAMAMLAYICI MALZEMELER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG23064",
+        "Açıklama": "Nipel 2000 3/4",
+        "Fiyat": "2.06",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "36"
+    },
+    {
+        "Ana_Baslik": "TAMAMLAYICI MALZEMELER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG23065",
+        "Açıklama": "Nipel 2000 1",
+        "Fiyat": "3.74",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "36"
+    },
+    {
+        "Ana_Baslik": "MANŞONLAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG23080",
+        "Açıklama": "Manşon 3000 1/8",
+        "Fiyat": "0.76",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "36"
+    },
+    {
+        "Ana_Baslik": "MANŞONLAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG23090",
+        "Açıklama": "Manşon 3000 1/4",
+        "Fiyat": "1.06",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "36"
+    },
+    {
+        "Ana_Baslik": "MANŞONLAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG23100",
+        "Açıklama": "Manşon 3000 3/8",
+        "Fiyat": "1.56",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "36"
+    },
+    {
+        "Ana_Baslik": "MANŞONLAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG23110",
+        "Açıklama": "Manşon 3000 1/2",
+        "Fiyat": "2.06",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "36"
+    },
+    {
+        "Ana_Baslik": "MANŞONLAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG23120",
+        "Açıklama": "Manşon 3000 3/4",
+        "Fiyat": "2.06",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "36"
+    },
+    {
+        "Ana_Baslik": "MANŞONLAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG23130",
+        "Açıklama": "Manşon 3000 1",
+        "Fiyat": "2.06",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "36"
+    },
+    {
+        "Ana_Baslik": "DİŞLİ Tİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG30000",
+        "Açıklama": "Dişli Ti 4000 1/8",
+        "Fiyat": "2.06",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "36"
+    },
+    {
+        "Ana_Baslik": "DİŞLİ Tİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG30005",
+        "Açıklama": "Dişli Ti 4000 1/4",
+        "Fiyat": "2.06",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "36"
+    },
+    {
+        "Ana_Baslik": "DİŞLİ Tİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG30010",
+        "Açıklama": "Dişli Ti 4000 3/8",
+        "Fiyat": "2.06",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "36"
+    },
+    {
+        "Ana_Baslik": "DİŞLİ Tİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG30015",
+        "Açıklama": "Dişli Ti 4000 1/2",
+        "Fiyat": "2.06",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "36"
+    },
+    {
+        "Ana_Baslik": "DİŞLİ Tİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG30020",
+        "Açıklama": "Dişli Ti 4000 3/4",
+        "Fiyat": "2.06",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "36"
+    },
+    {
+        "Ana_Baslik": "DİŞLİ Tİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG30025",
+        "Açıklama": "Dişli Ti 4000 1",
+        "Fiyat": "2.06",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "36"
+    },
+    {
+        "Ana_Baslik": "DİŞLİ DİREKLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG31000",
+        "Açıklama": "Dişli Dirsek 5000 1/8",
+        "Fiyat": "2.06",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "36"
+    },
+    {
+        "Ana_Baslik": "DİŞLİ DİREKLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG31005",
+        "Açıklama": "Dişli Dirsek 5000 1/4",
+        "Fiyat": "2.06",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "36"
+    },
+    {
+        "Ana_Baslik": "DİŞLİ DİREKLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG31010",
+        "Açıklama": "Dişli Dirsek 5000 3/8",
+        "Fiyat": "2.06",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "36"
+    },
+    {
+        "Ana_Baslik": "DİŞLİ DİREKLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG31015",
+        "Açıklama": "Dişli Dirsek 5000 1/2",
+        "Fiyat": "2.06",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "36"
+    },
+    {
+        "Ana_Baslik": "DİŞLİ DİREKLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG31030",
+        "Açıklama": "Dişli Dirsek 5000 3/4",
+        "Fiyat": "2.06",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "36"
+    },
+    {
+        "Ana_Baslik": "DİŞLİ DİREKLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG31035",
+        "Açıklama": "Dişli Dirsek 5000 1",
+        "Fiyat": "2.06",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "36"
+    }
+]
+```
