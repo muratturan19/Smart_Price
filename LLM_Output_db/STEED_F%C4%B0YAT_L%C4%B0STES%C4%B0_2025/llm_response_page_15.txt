@@ -1,0 +1,534 @@
+```json
+{
+  "Malzeme_Kodu": "CB2C-LAN",
+  "Açıklama": "",
+  "Kisa_Kod": "",
+  "Fiyat": "108,88",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 15,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "3:1 PİLOT ORANLI YARI KISITLI KARŞI DENGE VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "CB2C-LBN",
+  "Açıklama": "",
+  "Kisa_Kod": "",
+  "Fiyat": "108,88",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 15,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "3:1 PİLOT ORANLI YARI KISITLI KARŞI DENGE VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "CB2C-LHN",
+  "Açıklama": "",
+  "Kisa_Kod": "",
+  "Fiyat": "108,88",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 15,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "3:1 PİLOT ORANLI YARI KISITLI KARŞI DENGE VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "CB2C-LUN",
+  "Açıklama": "",
+  "Kisa_Kod": "",
+  "Fiyat": "108,88",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 15,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "3:1 PİLOT ORANLI YARI KISITLI KARŞI DENGE VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "CB3C-LAN",
+  "Açıklama": "",
+  "Kisa_Kod": "",
+  "Fiyat": "147,97",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 15,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "3:1 PİLOT ORANLI YARI KISITLI KARŞI DENGE VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "CB3C-LBN",
+  "Açıklama": "",
+  "Kisa_Kod": "",
+  "Fiyat": "147,97",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 15,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "3:1 PİLOT ORANLI YARI KISITLI KARŞI DENGE VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "CB3C-LHN",
+  "Açıklama": "",
+  "Kisa_Kod": "",
+  "Fiyat": "147,97",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 15,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "3:1 PİLOT ORANLI YARI KISITLI KARŞI DENGE VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "CB3C-LUN",
+  "Açıklama": "",
+  "Kisa_Kod": "",
+  "Fiyat": "147,97",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 15,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "3:1 PİLOT ORANLI YARI KISITLI KARŞI DENGE VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "CB6C-LAN",
+  "Açıklama": "",
+  "Kisa_Kod": "",
+  "Fiyat": "307,10",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 15,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "3:1 PİLOT ORANLI YARI KISITLI KARŞI DENGE VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "CB6C-LBN",
+  "Açıklama": "",
+  "Kisa_Kod": "",
+  "Fiyat": "307,10",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 15,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "3:1 PİLOT ORANLI YARI KISITLI KARŞI DENGE VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "CB6C-LHN",
+  "Açıklama": "",
+  "Kisa_Kod": "",
+  "Fiyat": "307,10",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 15,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "3:1 PİLOT ORANLI YARI KISITLI KARŞI DENGE VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "CB6C-LUN",
+  "Açıklama": "",
+  "Kisa_Kod": "",
+  "Fiyat": "307,10",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 15,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "3:1 PİLOT ORANLI YARI KISITLI KARŞI DENGE VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "CB2D-LCN",
+  "Açıklama": "",
+  "Kisa_Kod": "",
+  "Fiyat": "108,88",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 15,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "4,5:1 PİLOT ORANLI YARI KISITLI KARŞI DENGE VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "CB2D-LHN",
+  "Açıklama": "",
+  "Kisa_Kod": "",
+  "Fiyat": "108,88",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 15,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "4,5:1 PİLOT ORANLI YARI KISITLI KARŞI DENGE VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "CB2D-LUN",
+  "Açıklama": "",
+  "Kisa_Kod": "",
+  "Fiyat": "108,88",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 15,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "4,5:1 PİLOT ORANLI YARI KISITLI KARŞI DENGE VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "CB3D-LCN",
+  "Açıklama": "",
+  "Kisa_Kod": "",
+  "Fiyat": "153,45",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 15,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "4,5:1 PİLOT ORANLI YARI KISITLI KARŞI DENGE VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "CB3D-LHN",
+  "Açıklama": "",
+  "Kisa_Kod": "",
+  "Fiyat": "153,45",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 15,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "4,5:1 PİLOT ORANLI YARI KISITLI KARŞI DENGE VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "CB3D-LUN",
+  "Açıklama": "",
+  "Kisa_Kod": "",
+  "Fiyat": "153,45",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 15,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "4,5:1 PİLOT ORANLI YARI KISITLI KARŞI DENGE VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "CB6D-LCN",
+  "Açıklama": "",
+  "Kisa_Kod": "",
+  "Fiyat": "307,10",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 15,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "4,5:1 PİLOT ORANLI YARI KISITLI KARŞI DENGE VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "CB6D-LHN",
+  "Açıklama": "",
+  "Kisa_Kod": "",
+  "Fiyat": "307,10",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 15,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "4,5:1 PİLOT ORANLI YARI KISITLI KARŞI DENGE VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "CB6D-LUN",
+  "Açıklama": "",
+  "Kisa_Kod": "",
+  "Fiyat": "307,10",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 15,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "4,5:1 PİLOT ORANLI YARI KISITLI KARŞI DENGE VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "CB6D-LUN",
+  "Açıklama": "",
+  "Kisa_Kod": "",
+  "Fiyat": "307,10",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 15,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "4,5:1 PİLOT ORANLI YARI KISITLI KARŞI DENGE VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "CB2E-LAN",
+  "Açıklama": "",
+  "Kisa_Kod": "",
+  "Fiyat": "108,88",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 15,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "3:1 PİLOT ORANLI KISITLI KARŞI DENGE VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "CB2E-LBN",
+  "Açıklama": "",
+  "Kisa_Kod": "",
+  "Fiyat": "108,88",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 15,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "3:1 PİLOT ORANLI KISITLI KARŞI DENGE VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "CB2E-LHN",
+  "Açıklama": "",
+  "Kisa_Kod": "",
+  "Fiyat": "108,88",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 15,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "3:1 PİLOT ORANLI KISITLI KARŞI DENGE VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "CB2E-LUN",
+  "Açıklama": "",
+  "Kisa_Kod": "",
+  "Fiyat": "108,88",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 15,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "3:1 PİLOT ORANLI KISITLI KARŞI DENGE VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "CB3E-LAN",
+  "Açıklama": "",
+  "Kisa_Kod": "",
+  "Fiyat": "153,45",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 15,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "3:1 PİLOT ORANLI KISITLI KARŞI DENGE VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "CB3E-LBN",
+  "Açıklama": "",
+  "Kisa_Kod": "",
+  "Fiyat": "153,45",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 15,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "3:1 PİLOT ORANLI KISITLI KARŞI DENGE VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "CB3E-LHN",
+  "Açıklama": "",
+  "Kisa_Kod": "",
+  "Fiyat": "153,45",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 15,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "3:1 PİLOT ORANLI KISITLI KARŞI DENGE VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "CB3E-LUN",
+  "Açıklama": "",
+  "Kisa_Kod": "",
+  "Fiyat": "153,45",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 15,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "3:1 PİLOT ORANLI KISITLI KARŞI DENGE VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "CB6E-LAN",
+  "Açıklama": "",
+  "Kisa_Kod": "",
+  "Fiyat": "307,10",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 15,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "3:1 PİLOT ORANLI KISITLI KARŞI DENGE VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "CB6E-LBN",
+  "Açıklama": "",
+  "Kisa_Kod": "",
+  "Fiyat": "307,10",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 15,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "3:1 PİLOT ORANLI KISITLI KARŞI DENGE VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "CB6E-LHN",
+  "Açıklama": "",
+  "Kisa_Kod": "",
+  "Fiyat": "307,10",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 15,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "3:1 PİLOT ORANLI KISITLI KARŞI DENGE VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "CB6E-LUN",
+  "Açıklama": "",
+  "Kisa_Kod": "",
+  "Fiyat": "307,10",
+  "Para_Birimi": "$",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 15,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "3:1 PİLOT ORANLI KISITLI KARŞI DENGE VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "CB8E-LAN",
+  "Açıklama": "",
+  "Kisa_Kod": "",
+  "Fiyat": "FİYAT SORUNUZ",
+  "Para_Birimi": "",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 15,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "3:1 PİLOT ORANLI KISITLI KARŞI DENGE VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "CB8E-LBN",
+  "Açıklama": "",
+  "Kisa_Kod": "",
+  "Fiyat": "FİYAT SORUNUZ",
+  "Para_Birimi": "",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 15,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "3:1 PİLOT ORANLI KISITLI KARŞI DENGE VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "CB8E-LHN",
+  "Açıklama": "",
+  "Kisa_Kod": "",
+  "Fiyat": "FİYAT SORUNUZ",
+  "Para_Birimi": "",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 15,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "3:1 PİLOT ORANLI KISITLI KARŞI DENGE VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "CB8E-LUN",
+  "Açıklama": "",
+  "Kisa_Kod": "",
+  "Fiyat": "FİYAT SORUNUZ",
+  "Para_Birimi": "",
+  "Marka": "STEED",
+  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+  "Sayfa": 15,
+  "Record_Code": "STEED",
+  "Ana_Baslik": "3:1 PİLOT ORANLI KISITLI KARŞI DENGE VALFİ",
+  "Alt_Baslik": "",
+  "Image_Path": ""
+}
+```
