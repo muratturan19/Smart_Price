@@ -1,0 +1,104 @@
+```json
+[
+  {
+    "Ana_Baslik": "TURAN DÖNER ELEMANLAR",
+    "Alt_Baslik": null,
+    "Malzeme_Kodu": "TR1001",
+    "Açıklama": "Döner Eleman GR-8-1/8 RH",
+    "Fiyat": "28,70",
+    "Para_Birimi": "EUR",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "17"
+  },
+  {
+    "Ana_Baslik": "TURAN DÖNER ELEMANLAR",
+    "Alt_Baslik": null,
+    "Malzeme_Kodu": "TR1002",
+    "Açıklama": "Döner Eleman GR-8-1/4 RH",
+    "Fiyat": "28,70",
+    "Para_Birimi": "EUR",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "17"
+  },
+  {
+    "Ana_Baslik": "TURAN DÖNER ELEMANLAR",
+    "Alt_Baslik": null,
+    "Malzeme_Kodu": "TR1003",
+    "Açıklama": "Döner Eleman GR-10-1/8 RH",
+    "Fiyat": "28,70",
+    "Para_Birimi": "EUR",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "17"
+  },
+  {
+    "Ana_Baslik": "TURAN DÖNER ELEMANLAR",
+    "Alt_Baslik": null,
+    "Malzeme_Kodu": "TR1004",
+    "Açıklama": "Döner Eleman GR-10-1/4 RH",
+    "Fiyat": "28,70",
+    "Para_Birimi": "EUR",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "17"
+  },
+  {
+    "Ana_Baslik": "TURAN DÖNER ELEMANLAR",
+    "Alt_Baslik": null,
+    "Malzeme_Kodu": "TR1005",
+    "Açıklama": "Döner Eleman GR-12-1/8 RH",
+    "Fiyat": "28,70",
+    "Para_Birimi": "EUR",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "17"
+  },
+  {
+    "Ana_Baslik": "TURAN DÖNER ELEMANLAR",
+    "Alt_Baslik": null,
+    "Malzeme_Kodu": "TR1006",
+    "Açıklama": "Döner Eleman GR-12-1/4 RH",
+    "Fiyat": "28,70",
+    "Para_Birimi": "EUR",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "17"
+  },
+  {
+    "Ana_Baslik": "TURAN DÖNER ELEMANLAR",
+    "Alt_Baslik": null,
+    "Malzeme_Kodu": "TR1007",
+    "Açıklama": "Döner Eleman GR-12-3/8 RH",
+    "Fiyat": "28,70",
+    "Para_Birimi": "EUR",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "17"
+  },
+  {
+    "Ana_Baslik": "TURAN DÖNER ELEMANLAR",
+    "Alt_Baslik": null,
+    "Malzeme_Kodu": "TR1008",
+    "Açıklama": "Döner Eleman GR-12-1/2 RH",
+    "Fiyat": "28,70",
+    "Para_Birimi": "EUR",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "17"
+  },
+  {
+    "Ana_Baslik": "TURAN DÖNER ELEMANLAR",
+    "Alt_Baslik": null,
+    "Malzeme_Kodu": "TR1009",
+    "Açıklama": "Döner Eleman GR-12-3/4 RH",
+    "Fiyat": "28,70",
+    "Para_Birimi": "EUR",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "17"
+  },
+  {
+    "Ana_Baslik": "TURAN DÖNER ELEMANLAR",
+    "Alt_Baslik": null,
+    "Malzeme_Kodu": "TR1010",
+    "Açıklama": "Döner Eleman GR-12-1 RH",
+    "Fiyat": "28,70",
+    "Para_Birimi": "EUR",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "17"
+  }
+]
+```
