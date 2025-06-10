@@ -1,0 +1,104 @@
+```json
+[
+    {
+        "Ana_Baslik": "INSERT DEAL YAĞLAYICILAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "D0700",
+        "Açıklama": "Yağlayıcı 1/2\" L1240",
+        "Fiyat": "85,11",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "43"
+    },
+    {
+        "Ana_Baslik": "INSERT DEAL YAĞLAYICILAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "D0701",
+        "Açıklama": "Yağlayıcı 3/4\" L1240",
+        "Fiyat": "113,16",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "43"
+    },
+    {
+        "Ana_Baslik": "INSERT DEAL YAĞLAYICILAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "D0702",
+        "Açıklama": "Yağlayıcı 1\" L1240",
+        "Fiyat": "151,18",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "43"
+    },
+    {
+        "Ana_Baslik": "INSERT DEAL YAĞLAYICILAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "D0703",
+        "Açıklama": "Yağlayıcı 1 1/4\" L1240",
+        "Fiyat": "198,22",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "43"
+    },
+    {
+        "Ana_Baslik": "INSERT DEAL YAĞLAYICILAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "D0704",
+        "Açıklama": "Yağlayıcı 1 1/2\" L1240",
+        "Fiyat": "251,26",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "43"
+    },
+    {
+        "Ana_Baslik": "INSERT DEAL TRANSPARAN FİLTRELER (5 mikron - 12 Bar)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "D0800",
+        "Açıklama": "Filtre 5 - Van Otomatik Boşaltmalı F1/4xF3/8-SB",
+        "Fiyat": "30,94",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "43"
+    },
+    {
+        "Ana_Baslik": "INSERT DEAL TRANSPARAN FİLTRELER (5 mikron - 12 Bar)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "D0801",
+        "Açıklama": "Filtre 5 - Van Otomatik Boşaltmalı F1/2xF3/8-SB",
+        "Fiyat": "40,11",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "43"
+    },
+    {
+        "Ana_Baslik": "INSERT DEAL TRANSPARAN FİLTRELER (5 mikron - 12 Bar)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "D0802",
+        "Açıklama": "Filtre 5 - Van Otomatik Boşaltmalı F1/2xF3/4-SB",
+        "Fiyat": "47,47",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "43"
+    },
+    {
+        "Ana_Baslik": "INSERT DEAL TRANSPARAN FİLTRELER (5 mikron - 12 Bar)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "D0803",
+        "Açıklama": "Filtre 5 - Van Otomatik Boşaltmalı F1/4xF3/8-SAI",
+        "Fiyat": "102,92",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "43"
+    },
+    {
+        "Ana_Baslik": "INSERT DEAL TRANSPARAN FİLTRELER (5 mikron - 12 Bar)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "D0805",
+        "Açıklama": "Filtre 5 - Van Otomatik Boşaltmalı F1/4xF3/8-SAI",
+        "Fiyat": "116,92",
+        "Para_Birimi": "EUR",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "43"
+    }
+]
+```
