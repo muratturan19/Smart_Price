@@ -1,0 +1,88 @@
+```json
+[
+    {
+        "Malzeme_Kodu": "JC-DPS-NS",
+        "Açıklama": "JC-DPS-NS (w/Pressure Transducer)",
+        "Kisa_Kod": "",
+        "Fiyat": "$401,73",
+        "Para_Birimi": "$",
+        "Marka": "STEED",
+        "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+        "Sayfa": 45,
+        "Record_Code": "STEED",
+        "Ana_Baslik": "BASINÇ SENSÖRÜ",
+        "Alt_Baslik": "",
+        "Image_Path": ""
+    },
+    {
+        "Malzeme_Kodu": "JC-P5",
+        "Açıklama": "JC-P5",
+        "Kisa_Kod": "",
+        "Fiyat": "$175,29",
+        "Para_Birimi": "$",
+        "Marka": "STEED",
+        "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+        "Sayfa": 45,
+        "Record_Code": "STEED",
+        "Ana_Baslik": "BASINÇ SENSÖRÜ",
+        "Alt_Baslik": "",
+        "Image_Path": ""
+    },
+    {
+        "Malzeme_Kodu": "MJCS-02A",
+        "Açıklama": "MJCS-02",
+        "Kisa_Kod": "",
+        "Fiyat": "$164,64",
+        "Para_Birimi": "$",
+        "Marka": "STEED",
+        "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+        "Sayfa": 45,
+        "Record_Code": "STEED",
+        "Ana_Baslik": "HİDROLİK MODÜLER BASINÇ ŞALTERİ",
+        "Alt_Baslik": "",
+        "Image_Path": ""
+    },
+    {
+        "Malzeme_Kodu": "MJCS-02W",
+        "Açıklama": "MJCS-02W",
+        "Kisa_Kod": "",
+        "Fiyat": "$317,33",
+        "Para_Birimi": "$",
+        "Marka": "STEED",
+        "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+        "Sayfa": 45,
+        "Record_Code": "STEED",
+        "Ana_Baslik": "HİDROLİK MODÜLER BASINÇ ŞALTERİ",
+        "Alt_Baslik": "",
+        "Image_Path": ""
+    },
+    {
+        "Malzeme_Kodu": "MJCS-03A",
+        "Açıklama": "MJCS-03",
+        "Kisa_Kod": "",
+        "Fiyat": "$195,02",
+        "Para_Birimi": "$",
+        "Marka": "STEED",
+        "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+        "Sayfa": 45,
+        "Record_Code": "STEED",
+        "Ana_Baslik": "HİDROLİK MODÜLER BASINÇ ŞALTERİ",
+        "Alt_Baslik": "",
+        "Image_Path": ""
+    },
+    {
+        "Malzeme_Kodu": "MJCS-02A-SC",
+        "Açıklama": "MJCS-02-SC",
+        "Kisa_Kod": "",
+        "Fiyat": "$178,14",
+        "Para_Birimi": "$",
+        "Marka": "STEED",
+        "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
+        "Sayfa": 45,
+        "Record_Code": "STEED",
+        "Ana_Baslik": "HİDROLİK MODÜLER BASINÇ ŞALTERİ",
+        "Alt_Baslik": "",
+        "Image_Path": ""
+    }
+]
+```
