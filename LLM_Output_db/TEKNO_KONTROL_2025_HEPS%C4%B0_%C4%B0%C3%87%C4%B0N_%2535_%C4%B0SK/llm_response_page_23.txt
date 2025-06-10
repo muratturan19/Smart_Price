@@ -1,0 +1,104 @@
+```json
+[
+    {
+        "Ana_Baslik": "VICKERS BY DANFOSS NG16 YÖN DENETİM VALFLERİ",
+        "Alt_Baslik": "350 Bar / 300 l/dak.",
+        "Malzeme_Kodu": "EV100",
+        "Açıklama": "Yön Valf NG16 4/2 24 V DC DG4V3T2AUMF10 02-137171",
+        "Fiyat": "",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Vickers_Fiyat_Listesi.pdf",
+        "Sayfa": "23"
+    },
+    {
+        "Ana_Baslik": "VICKERS BY DANFOSS NG16 YÖN DENETİM VALFLERİ",
+        "Alt_Baslik": "350 Bar / 300 l/dak.",
+        "Malzeme_Kodu": "EV105",
+        "Açıklama": "Yön Valf NG16 4/3 24 V DC DG4V3S2AUMF10 02-136942",
+        "Fiyat": "",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Vickers_Fiyat_Listesi.pdf",
+        "Sayfa": "23"
+    },
+    {
+        "Ana_Baslik": "VICKERS BY DANFOSS NG16 YÖN DENETİM VALFLERİ",
+        "Alt_Baslik": "350 Bar / 300 l/dak.",
+        "Malzeme_Kodu": "EV110",
+        "Açıklama": "Yön Valf NG16 4/3 24 V DC DG4V3S2AUMF10 02-136943",
+        "Fiyat": "",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Vickers_Fiyat_Listesi.pdf",
+        "Sayfa": "23"
+    },
+    {
+        "Ana_Baslik": "VICKERS BY DANFOSS NG16 YÖN DENETİM VALFLERİ",
+        "Alt_Baslik": "350 Bar / 300 l/dak.",
+        "Malzeme_Kodu": "EV115",
+        "Açıklama": "Yön Valf NG16 4/3 24 V DC DG4V3S2AUMF10 02-136944",
+        "Fiyat": "",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Vickers_Fiyat_Listesi.pdf",
+        "Sayfa": "23"
+    },
+    {
+        "Ana_Baslik": "VICKERS BY DANFOSS YÜK DENETİM VALFLERİ",
+        "Alt_Baslik": "",
+        "Malzeme_Kodu": "EV200",
+        "Açıklama": "DG4V3S Valf Bobin NG32 24 V DC 507628",
+        "Fiyat": "",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Vickers_Fiyat_Listesi.pdf",
+        "Sayfa": "23"
+    },
+    {
+        "Ana_Baslik": "VICKERS BY DANFOSS YÜK DENETİM VALFLERİ",
+        "Alt_Baslik": "",
+        "Malzeme_Kodu": "EV205",
+        "Açıklama": "DG4V3S Valf Bobin NG32 110 V AC 50Hz 507629",
+        "Fiyat": "",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Vickers_Fiyat_Listesi.pdf",
+        "Sayfa": "23"
+    },
+    {
+        "Ana_Baslik": "VICKERS BY DANFOSS YÜK DENETİM VALFLERİ",
+        "Alt_Baslik": "",
+        "Malzeme_Kodu": "EV210",
+        "Açıklama": "DG4V3S Valf Bobin NG32 220 V 50Hz 507630",
+        "Fiyat": "",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Vickers_Fiyat_Listesi.pdf",
+        "Sayfa": "23"
+    },
+    {
+        "Ana_Baslik": "VICKERS BY DANFOSS NG6 MODÜLER VALFLER",
+        "Alt_Baslik": "",
+        "Malzeme_Kodu": "EV300",
+        "Açıklama": "Modüler Emniyet Valfi P T 315 Bar DGMC3PT3BVM41 868620",
+        "Fiyat": "",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Vickers_Fiyat_Listesi.pdf",
+        "Sayfa": "23"
+    },
+    {
+        "Ana_Baslik": "VICKERS BY DANFOSS NG6 MODÜLER VALFLER",
+        "Alt_Baslik": "",
+        "Malzeme_Kodu": "EV305",
+        "Açıklama": "Modüler Emniyet Valfi A B T 315 Bar DGMC3PT3BVM41 868621",
+        "Fiyat": "",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Vickers_Fiyat_Listesi.pdf",
+        "Sayfa": "23"
+    },
+    {
+        "Ana_Baslik": "VICKERS BY DANFOSS NG6 MODÜLER VALFLER",
+        "Alt_Baslik": "",
+        "Malzeme_Kodu": "EV310",
+        "Açıklama": "Modüler Emniyet Valfi A B T 315 Bar DGMC3PT3BVM41 868622",
+        "Fiyat": "",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "Vickers_Fiyat_Listesi.pdf",
+        "Sayfa": "23"
+    }
+]
+```
