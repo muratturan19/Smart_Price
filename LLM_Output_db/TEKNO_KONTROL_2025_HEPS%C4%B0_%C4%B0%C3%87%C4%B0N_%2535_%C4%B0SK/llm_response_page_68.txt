@@ -3,8 +3,8 @@
     {
         "Ana_Baslik": "MINIPRESS BASINÇ ÖLÇME ELEMANLARI",
         "Alt_Baslik": null,
-        "Malzeme_Kodu": "BT1200",
-        "Açıklama": "Basınç Ölçme Rakoru M12*1.5*8* 31.10.13",
+        "Malzeme_Kodu": "BT200",
+        "Açıklama": "Basınç Ölçme Rakoru M12*1.5* 31.0*3",
         "Fiyat": "7,00",
         "Para_Birimi": "EUR",
         "Kaynak_Dosya": "Örnek Fiyat Listesi.pdf",
@@ -13,8 +13,8 @@
     {
         "Ana_Baslik": "MINIPRESS BASINÇ ÖLÇME ELEMANLARI",
         "Alt_Baslik": null,
-        "Malzeme_Kodu": "BT1210",
-        "Açıklama": "Basınç Ölçme Rakoru M16*2*8* 31.10.16",
+        "Malzeme_Kodu": "BT210",
+        "Açıklama": "Basınç Ölçme Rakoru M16*2* 31.0*6",
         "Fiyat": "7,00",
         "Para_Birimi": "EUR",
         "Kaynak_Dosya": "Örnek Fiyat Listesi.pdf",
@@ -23,8 +23,8 @@
     {
         "Ana_Baslik": "MINIPRESS BASINÇ ÖLÇME ELEMANLARI",
         "Alt_Baslik": null,
-        "Malzeme_Kodu": "BT1215",
-        "Açıklama": "Ölçme Rakoru G1/8* 31.10.25",
+        "Malzeme_Kodu": "BT215",
+        "Açıklama": "Ölçme Rakoru G1/4* 31.0*3",
         "Fiyat": "7,00",
         "Para_Birimi": "EUR",
         "Kaynak_Dosya": "Örnek Fiyat Listesi.pdf",
@@ -33,9 +33,9 @@
     {
         "Ana_Baslik": "MINIPRESS BASINÇ ÖLÇME ELEMANLARI",
         "Alt_Baslik": null,
-        "Malzeme_Kodu": "BT1130",
-        "Açıklama": "Manometre Rakoru M12*1.5*8* 20.33.38",
-        "Fiyat": "11,00",
+        "Malzeme_Kodu": "BT110",
+        "Açıklama": "Manometre Rakoru M12*1.5* 20.0*3.3",
+        "Fiyat": "7,00",
         "Para_Birimi": "EUR",
         "Kaynak_Dosya": "Örnek Fiyat Listesi.pdf",
         "Sayfa": "68"
@@ -43,9 +43,9 @@
     {
         "Ana_Baslik": "MINIPRESS BASINÇ ÖLÇME ELEMANLARI",
         "Alt_Baslik": null,
-        "Malzeme_Kodu": "BT1135",
-        "Açıklama": "Manometre Rakoru M16*2*8* 20.33.38",
-        "Fiyat": "11,00",
+        "Malzeme_Kodu": "BT115",
+        "Açıklama": "Manometre Rakoru M16*2* 20.0*3.3",
+        "Fiyat": "7,00",
         "Para_Birimi": "EUR",
         "Kaynak_Dosya": "Örnek Fiyat Listesi.pdf",
         "Sayfa": "68"
@@ -53,8 +53,8 @@
     {
         "Ana_Baslik": "MINIPRESS BASINÇ ÖLÇME ELEMANLARI",
         "Alt_Baslik": null,
-        "Malzeme_Kodu": "BT1250",
-        "Açıklama": "Hortum Ara Nipeli M16*2/M12*1.5* 02.14.10",
+        "Malzeme_Kodu": "BT120",
+        "Açıklama": "Hortum Ara Nipeli M16*2/M12*1.5* 02.0*1.0",
         "Fiyat": "7,00",
         "Para_Birimi": "EUR",
         "Kaynak_Dosya": "Örnek Fiyat Listesi.pdf",
@@ -63,9 +63,9 @@
     {
         "Ana_Baslik": "MINIPRESS BASINÇ ÖLÇME HORTUMLARI",
         "Alt_Baslik": null,
-        "Malzeme_Kodu": "BT3240",
-        "Açıklama": "Basınç Ölçme Hortumu M16*2*1/4* 500 mm.",
-        "Fiyat": "10,00",
+        "Malzeme_Kodu": "BT240",
+        "Açıklama": "Basınç Ölçme Hortumu M/F12*1.5* 600 mm.",
+        "Fiyat": "10,76",
         "Para_Birimi": "EUR",
         "Kaynak_Dosya": "Örnek Fiyat Listesi.pdf",
         "Sayfa": "68"
@@ -73,9 +73,9 @@
     {
         "Ana_Baslik": "MINIPRESS BASINÇ ÖLÇME HORTUMLARI",
         "Alt_Baslik": null,
-        "Malzeme_Kodu": "BT3240",
-        "Açıklama": "Basınç Ölçme Hortumu M16*2*1/4* 1000 mm.",
-        "Fiyat": "11,00",
+        "Malzeme_Kodu": "BT200",
+        "Açıklama": "Basınç Ölçme Hortumu M/F12*1.5* 1000 mm.",
+        "Fiyat": "11,76",
         "Para_Birimi": "EUR",
         "Kaynak_Dosya": "Örnek Fiyat Listesi.pdf",
         "Sayfa": "68"
@@ -83,9 +83,9 @@
     {
         "Ana_Baslik": "MINIPRESS BASINÇ ÖLÇME HORTUMLARI",
         "Alt_Baslik": null,
-        "Malzeme_Kodu": "BT3240",
-        "Açıklama": "Basınç Ölçme Hortumu M16*2*1/4* 1500 mm.",
-        "Fiyat": "12,00",
+        "Malzeme_Kodu": "BT204",
+        "Açıklama": "Basınç Ölçme Hortumu M/F12*1.5* 1500 mm.",
+        "Fiyat": "12,76",
         "Para_Birimi": "EUR",
         "Kaynak_Dosya": "Örnek Fiyat Listesi.pdf",
         "Sayfa": "68"
@@ -93,9 +93,9 @@
     {
         "Ana_Baslik": "MINIPRESS BASINÇ ÖLÇME HORTUMLARI",
         "Alt_Baslik": null,
-        "Malzeme_Kodu": "BT3240",
-        "Açıklama": "Basınç Ölçme Hortumu M16*2*1/4* 2000 mm.",
-        "Fiyat": "13,00",
+        "Malzeme_Kodu": "BT206",
+        "Açıklama": "Basınç Ölçme Hortumu M/F12*1.5* 2000 mm.",
+        "Fiyat": "13,76",
         "Para_Birimi": "EUR",
         "Kaynak_Dosya": "Örnek Fiyat Listesi.pdf",
         "Sayfa": "68"
@@ -103,9 +103,9 @@
     {
         "Ana_Baslik": "MINIPRESS BASINÇ ÖLÇME HORTUMLARI",
         "Alt_Baslik": null,
-        "Malzeme_Kodu": "BT3246",
-        "Açıklama": "Basınç Ölçme Hortumu M16*2*1/4* 800 mm.",
-        "Fiyat": "10,50",
+        "Malzeme_Kodu": "BT208",
+        "Açıklama": "Basınç Ölçme Hortumu M/F12*1.5* 4000 mm.",
+        "Fiyat": "19,50",
         "Para_Birimi": "EUR",
         "Kaynak_Dosya": "Örnek Fiyat Listesi.pdf",
         "Sayfa": "68"
@@ -113,8 +113,8 @@
     {
         "Ana_Baslik": "MINIPRESS BASINÇ ÖLÇME HORTUMLARI",
         "Alt_Baslik": null,
-        "Malzeme_Kodu": "BT3246",
-        "Açıklama": "Basınç Ölçme Seti M16*2 630 Bar",
+        "Malzeme_Kodu": "BT236",
+        "Açıklama": "Basınç Ölçme Seti M/F12*1.5* 630 Bar",
         "Fiyat": "193,50",
         "Para_Birimi": "EUR",
         "Kaynak_Dosya": "Örnek Fiyat Listesi.pdf",
@@ -123,8 +123,8 @@
     {
         "Ana_Baslik": "OLEOTECNICA SAE FLANŞ KEPLERİ",
         "Alt_Baslik": null,
-        "Malzeme_Kodu": "BT0300",
-        "Açıklama": "SAE Flanş Kepi 3000 PSI 1/2\"",
+        "Malzeme_Kodu": "BT030",
+        "Açıklama": "SAE Flanş Kepi 3000 PSI 1/2''",
         "Fiyat": "5,07",
         "Para_Birimi": "EUR",
         "Kaynak_Dosya": "Örnek Fiyat Listesi.pdf",
@@ -133,8 +133,8 @@
     {
         "Ana_Baslik": "OLEOTECNICA SAE FLANŞ KEPLERİ",
         "Alt_Baslik": null,
-        "Malzeme_Kodu": "BT0305",
-        "Açıklama": "SAE Flanş Kepi 3000 PSI 3/4\"",
+        "Malzeme_Kodu": "BT035",
+        "Açıklama": "SAE Flanş Kepi 3000 PSI 3/4''",
         "Fiyat": "5,07",
         "Para_Birimi": "EUR",
         "Kaynak_Dosya": "Örnek Fiyat Listesi.pdf",
@@ -143,8 +143,8 @@
     {
         "Ana_Baslik": "OLEOTECNICA SAE FLANŞ KEPLERİ",
         "Alt_Baslik": null,
-        "Malzeme_Kodu": "BT0310",
-        "Açıklama": "SAE Flanş Kepi 3000 PSI 1\"",
+        "Malzeme_Kodu": "BT040",
+        "Açıklama": "SAE Flanş Kepi 3000 PSI 1''",
         "Fiyat": "6,16",
         "Para_Birimi": "EUR",
         "Kaynak_Dosya": "Örnek Fiyat Listesi.pdf",
@@ -153,9 +153,9 @@
     {
         "Ana_Baslik": "OLEOTECNICA SAE FLANŞ KEPLERİ",
         "Alt_Baslik": null,
-        "Malzeme_Kodu": "BT0315",
-        "Açıklama": "SAE Flanş Kepi 3000 PSI 1 1/4\"",
-        "Fiyat": "6,71",
+        "Malzeme_Kodu": "BT050",
+        "Açıklama": "SAE Flanş Kepi 3000 PSI 1 1/4''",
+        "Fiyat": "6,76",
         "Para_Birimi": "EUR",
         "Kaynak_Dosya": "Örnek Fiyat Listesi.pdf",
         "Sayfa": "68"
@@ -163,8 +163,8 @@
     {
         "Ana_Baslik": "OLEOTECNICA SAE FLANŞ KEPLERİ",
         "Alt_Baslik": null,
-        "Malzeme_Kodu": "BT0320",
-        "Açıklama": "SAE Flanş Kepi 3000 PSI 1 1/2\"",
+        "Malzeme_Kodu": "BT055",
+        "Açıklama": "SAE Flanş Kepi 3000 PSI 1 1/2''",
         "Fiyat": "9,44",
         "Para_Birimi": "EUR",
         "Kaynak_Dosya": "Örnek Fiyat Listesi.pdf",
@@ -173,8 +173,8 @@
     {
         "Ana_Baslik": "OLEOTECNICA SAE FLANŞ KEPLERİ",
         "Alt_Baslik": null,
-        "Malzeme_Kodu": "BT0325",
-        "Açıklama": "SAE Flanş Kepi 3000 PSI 2\"",
+        "Malzeme_Kodu": "BT060",
+        "Açıklama": "SAE Flanş Kepi 3000 PSI 2''",
         "Fiyat": "12,01",
         "Para_Birimi": "EUR",
         "Kaynak_Dosya": "Örnek Fiyat Listesi.pdf",
@@ -183,8 +183,8 @@
     {
         "Ana_Baslik": "OLEOTECNICA SAE FLANŞ KEPLERİ",
         "Alt_Baslik": null,
-        "Malzeme_Kodu": "BT0400",
-        "Açıklama": "SAE Flanş Kepi 6000 PSI 1/2\"",
+        "Malzeme_Kodu": "BT205",
+        "Açıklama": "SAE Flanş Kepi 6000 PSI 1/2''",
         "Fiyat": "9,44",
         "Para_Birimi": "EUR",
         "Kaynak_Dosya": "Örnek Fiyat Listesi.pdf",
@@ -193,9 +193,9 @@
     {
         "Ana_Baslik": "OLEOTECNICA SAE FLANŞ KEPLERİ",
         "Alt_Baslik": null,
-        "Malzeme_Kodu": "BT0405",
-        "Açıklama": "SAE Flanş Kepi 6000 PSI 3/4\"",
-        "Fiyat": "9,44",
+        "Malzeme_Kodu": "BT210",
+        "Açıklama": "SAE Flanş Kepi 6000 PSI 3/4''",
+        "Fiyat": "12,01",
         "Para_Birimi": "EUR",
         "Kaynak_Dosya": "Örnek Fiyat Listesi.pdf",
         "Sayfa": "68"
@@ -203,9 +203,9 @@
     {
         "Ana_Baslik": "OLEOTECNICA SAE FLANŞ KEPLERİ",
         "Alt_Baslik": null,
-        "Malzeme_Kodu": "BT0410",
-        "Açıklama": "SAE Flanş Kepi 6000 PSI 1\"",
-        "Fiyat": "11,61",
+        "Malzeme_Kodu": "BT220",
+        "Açıklama": "SAE Flanş Kepi 6000 PSI 1''",
+        "Fiyat": "19,44",
         "Para_Birimi": "EUR",
         "Kaynak_Dosya": "Örnek Fiyat Listesi.pdf",
         "Sayfa": "68"
@@ -213,9 +213,9 @@
     {
         "Ana_Baslik": "OLEOTECNICA SAE FLANŞ KEPLERİ",
         "Alt_Baslik": null,
-        "Malzeme_Kodu": "BT0415",
-        "Açıklama": "SAE Flanş Kepi 6000 PSI 1 1/4\"",
-        "Fiyat": "11,61",
+        "Malzeme_Kodu": "BT225",
+        "Açıklama": "SAE Flanş Kepi 6000 PSI 1 1/4''",
+        "Fiyat": "31,64",
         "Para_Birimi": "EUR",
         "Kaynak_Dosya": "Örnek Fiyat Listesi.pdf",
         "Sayfa": "68"
@@ -223,9 +223,9 @@
     {
         "Ana_Baslik": "OLEOTECNICA SAE FLANŞ KEPLERİ",
         "Alt_Baslik": null,
-        "Malzeme_Kodu": "BT0420",
-        "Açıklama": "SAE Flanş Kepi 6000 PSI 1 1/2\"",
-        "Fiyat": "31,61",
+        "Malzeme_Kodu": "BT230",
+        "Açıklama": "SAE Flanş Kepi 6000 PSI 1 1/2''",
+        "Fiyat": "31,64",
         "Para_Birimi": "EUR",
         "Kaynak_Dosya": "Örnek Fiyat Listesi.pdf",
         "Sayfa": "68"
@@ -233,9 +233,9 @@
     {
         "Ana_Baslik": "OLEOTECNICA SAE FLANŞ KEPLERİ",
         "Alt_Baslik": null,
-        "Malzeme_Kodu": "BT0425",
-        "Açıklama": "SAE Flanş Kepi 6000 PSI 2\"",
-        "Fiyat": "31,61",
+        "Malzeme_Kodu": "BT235",
+        "Açıklama": "SAE Flanş Kepi 6000 PSI 2''",
+        "Fiyat": "110,19",
         "Para_Birimi": "EUR",
         "Kaynak_Dosya": "Örnek Fiyat Listesi.pdf",
         "Sayfa": "68"
@@ -243,18 +243,8 @@
     {
         "Ana_Baslik": "OLEOTECNICA SAE FLANŞ KEPLERİ",
         "Alt_Baslik": null,
-        "Malzeme_Kodu": "BT0430",
-        "Açıklama": "SAE Flanş Kepi 6000 PSI 2 1/2\"",
-        "Fiyat": "110,16",
-        "Para_Birimi": "EUR",
-        "Kaynak_Dosya": "Örnek Fiyat Listesi.pdf",
-        "Sayfa": "68"
-    },
-    {
-        "Ana_Baslik": "OLEOTECNICA SAE FLANŞ KEPLERİ",
-        "Alt_Baslik": null,
-        "Malzeme_Kodu": "BT0435",
-        "Açıklama": "SAE Flanş Kepi 6000 PSI 3\"",
+        "Malzeme_Kodu": "BT240",
+        "Açıklama": "SAE Flanş Kepi 6000 PSI 3''",
         "Fiyat": "143,51",
         "Para_Birimi": "EUR",
         "Kaynak_Dosya": "Örnek Fiyat Listesi.pdf",
