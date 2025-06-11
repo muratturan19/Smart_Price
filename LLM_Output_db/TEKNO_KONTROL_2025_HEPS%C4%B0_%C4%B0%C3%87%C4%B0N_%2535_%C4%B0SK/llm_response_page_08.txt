@@ -3,111 +3,571 @@
     {
         "Ana_Baslik": "ROSS 95 ÇİFT TARAFLI PNÖMATİK UYARILI VALFLER",
         "Alt_Baslik": null,
-        "Malzeme_Kodu": "RS5440",
+        "Malzeme_Kodu": "RS3540",
         "Açıklama": "Pnömatik Valf D-5562K-1910",
-        "Fiyat": "74,37",
+        "Fiyat": "74,87",
         "Para_Birimi": "€",
-        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Kaynak_Dosya": "example.pdf",
         "Sayfa": "8"
     },
     {
         "Ana_Baslik": "ROSS 95 ÇİFT TARAFLI PNÖMATİK UYARILI VALFLER",
         "Alt_Baslik": null,
-        "Malzeme_Kodu": "RS5450",
+        "Malzeme_Kodu": "RS4540",
         "Açıklama": "Pnömatik Valf D-5562K-2910",
-        "Fiyat": "74,37",
+        "Fiyat": "74,87",
         "Para_Birimi": "€",
-        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
-        "Sayfa": "8"
-    },
-    {
-        "Ana_Baslik": "ROSS 95 ÇİFT TARAFLI PNÖMATİK UYARILI VALFLER",
-        "Alt_Baslik": null,
-        "Malzeme_Kodu": "RS5460",
-        "Açıklama": "Pnömatik Valf D-5562K-3910",
-        "Fiyat": "74,37",
-        "Para_Birimi": "€",
-        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
-        "Sayfa": "8"
-    },
-    {
-        "Ana_Baslik": "ROSS 95 ÇİFT TARAFLI PNÖMATİK UYARILI VALFLER",
-        "Alt_Baslik": null,
-        "Malzeme_Kodu": "RS5470",
-        "Açıklama": "Pnömatik Valf D-5562K-1017",
-        "Fiyat": "87,91",
-        "Para_Birimi": "€",
-        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
-        "Sayfa": "8"
-    },
-    {
-        "Ana_Baslik": "ROSS 95 ÇİFT TARAFLI PNÖMATİK UYARILI VALFLER",
-        "Alt_Baslik": null,
-        "Malzeme_Kodu": "RS5480",
-        "Açıklama": "Pnömatik Valf D-5562K-3007",
-        "Fiyat": "87,91",
-        "Para_Birimi": "€",
-        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
-        "Sayfa": "8"
-    },
-    {
-        "Ana_Baslik": "ROSS 95 ÇİFT TARAFLI PNÖMATİK UYARILI VALFLER",
-        "Alt_Baslik": null,
-        "Malzeme_Kodu": "RS5490",
-        "Açıklama": "Pnömatik Valf D-5562K-4007",
-        "Fiyat": "87,91",
-        "Para_Birimi": "€",
-        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
-        "Sayfa": "8"
-    },
-    {
-        "Ana_Baslik": "ROSS 95 ÇİFT TARAFLI PNÖMATİK UYARILI VALFLER",
-        "Alt_Baslik": null,
-        "Malzeme_Kodu": "RS5500",
-        "Açıklama": "Pnömatik Valf D-5562K-1019",
-        "Fiyat": "110,01",
-        "Para_Birimi": "€",
-        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
-        "Sayfa": "8"
-    },
-    {
-        "Ana_Baslik": "ROSS 95 ÇİFT TARAFLI PNÖMATİK UYARILI VALFLER",
-        "Alt_Baslik": null,
-        "Malzeme_Kodu": "RS5510",
-        "Açıklama": "Pnömatik Valf D-5562K-2019",
-        "Fiyat": "110,01",
-        "Para_Birimi": "€",
-        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
-        "Sayfa": "8"
-    },
-    {
-        "Ana_Baslik": "ROSS 95 ÇİFT TARAFLI PNÖMATİK UYARILI VALFLER",
-        "Alt_Baslik": null,
-        "Malzeme_Kodu": "RS5520",
-        "Açıklama": "Pnömatik Valf D-5562K-3019",
-        "Fiyat": "110,01",
-        "Para_Birimi": "€",
-        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
-        "Sayfa": "8"
-    },
-    {
-        "Ana_Baslik": "ROSS 95 ÇİFT TARAFLI PNÖMATİK UYARILI VALFLER",
-        "Alt_Baslik": null,
-        "Malzeme_Kodu": "RS5530",
-        "Açıklama": "Pnömatik Valf D-5562K-4019",
-        "Fiyat": "110,01",
-        "Para_Birimi": "€",
-        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Kaynak_Dosya": "example.pdf",
         "Sayfa": "8"
     },
     {
         "Ana_Baslik": "ROSS 95 ÇİFT TARAFLI PNÖMATİK UYARILI VALFLER",
         "Alt_Baslik": null,
         "Malzeme_Kodu": "RS5540",
-        "Açıklama": "Pnömatik Valf D-5562K-1019",
-        "Fiyat": "130,01",
+        "Açıklama": "Pnömatik Valf D-5562K-3910",
+        "Fiyat": "74,87",
         "Para_Birimi": "€",
-        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "8"
+    },
+    {
+        "Ana_Baslik": "ROSS 95 ÇİFT TARAFLI PNÖMATİK UYARILI VALFLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS5740",
+        "Açıklama": "Pnömatik Valf D-5562K-1007",
+        "Fiyat": "87,76",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "8"
+    },
+    {
+        "Ana_Baslik": "ROSS 95 ÇİFT TARAFLI PNÖMATİK UYARILI VALFLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS5840",
+        "Açıklama": "Pnömatik Valf D-5562K-3007",
+        "Fiyat": "87,76",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "8"
+    },
+    {
+        "Ana_Baslik": "ROSS 95 ÇİFT TARAFLI PNÖMATİK UYARILI VALFLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS5940",
+        "Açıklama": "Pnömatik Valf D-5562K-4007",
+        "Fiyat": "87,76",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "8"
+    },
+    {
+        "Ana_Baslik": "ROSS 95 ÇİFT TARAFLI PNÖMATİK UYARILI VALFLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS4545",
+        "Açıklama": "Pnömatik Valf D-5562K-2019",
+        "Fiyat": "78,91",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "8"
+    },
+    {
+        "Ana_Baslik": "ROSS 95 ÇİFT TARAFLI PNÖMATİK UYARILI VALFLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS5545",
+        "Açıklama": "Pnömatik Valf D-5562K-3019",
+        "Fiyat": "78,91",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "8"
+    },
+    {
+        "Ana_Baslik": "ROSS 95 ÇİFT TARAFLI PNÖMATİK UYARILI VALFLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS5645",
+        "Açıklama": "Pnömatik Valf D-5562K-4019",
+        "Fiyat": "78,91",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "8"
+    },
+    {
+        "Ana_Baslik": "ROSS 95 ÇİFT TARAFLI PNÖMATİK UYARILI VALFLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS5666",
+        "Açıklama": "Pnömatik Valf D-5562K-3019",
+        "Fiyat": "110,01",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "8"
+    },
+    {
+        "Ana_Baslik": "ROSS 52 M5 VALF MANİFOLDLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS5500",
+        "Açıklama": "İkili Manifold M5 D1372 H01",
+        "Fiyat": "15,85",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "8"
+    },
+    {
+        "Ana_Baslik": "ROSS 52 M5 VALF MANİFOLDLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS5510",
+        "Açıklama": "Üçlü Manifold M5 D1373 H01",
+        "Fiyat": "22,52",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "8"
+    },
+    {
+        "Ana_Baslik": "ROSS 52 M5 VALF MANİFOLDLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS5515",
+        "Açıklama": "Dörtlü Manifold M5 D1374 H01",
+        "Fiyat": "27,52",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "8"
+    },
+    {
+        "Ana_Baslik": "ROSS 52 M5 VALF MANİFOLDLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS5520",
+        "Açıklama": "Beşli Manifold M5 D1375 H01",
+        "Fiyat": "31,41",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "8"
+    },
+    {
+        "Ana_Baslik": "ROSS 52 M5 VALF MANİFOLDLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS5525",
+        "Açıklama": "Altılı Manifold M5 D1376 H01",
+        "Fiyat": "31,41",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "8"
+    },
+    {
+        "Ana_Baslik": "ROSS 52 M5 VALF MANİFOLDLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS5530",
+        "Açıklama": "Yedili Manifold M5 D1377 H01",
+        "Fiyat": "40,41",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "8"
+    },
+    {
+        "Ana_Baslik": "ROSS 52 M5 VALF MANİFOLDLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS5535",
+        "Açıklama": "Sekizli Manifold M5 D1378 H01",
+        "Fiyat": "40,41",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "8"
+    },
+    {
+        "Ana_Baslik": "ROSS 52 M5 VALF MANİFOLDLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS5540",
+        "Açıklama": "Dokuzlu Manifold M5 D1379 H01",
+        "Fiyat": "47,11",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "8"
+    },
+    {
+        "Ana_Baslik": "ROSS 52 M5 VALF MANİFOLDLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS5545",
+        "Açıklama": "Onlu Manifold M5 D1380 H01",
+        "Fiyat": "52,01",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "8"
+    },
+    {
+        "Ana_Baslik": "ROSS 52 G1/8\" VALF MANİFOLDLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS5560",
+        "Açıklama": "İkili Manifold G1/8\" D1362 H01",
+        "Fiyat": "16,32",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "8"
+    },
+    {
+        "Ana_Baslik": "ROSS 52 G1/8\" VALF MANİFOLDLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS5565",
+        "Açıklama": "Üçlü Manifold G1/8\" D1363 H01",
+        "Fiyat": "23,52",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "8"
+    },
+    {
+        "Ana_Baslik": "ROSS 52 G1/8\" VALF MANİFOLDLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS5570",
+        "Açıklama": "Dörtlü Manifold G1/8\" D1364 H01",
+        "Fiyat": "31,41",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "8"
+    },
+    {
+        "Ana_Baslik": "ROSS 52 G1/8\" VALF MANİFOLDLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS5575",
+        "Açıklama": "Beşli Manifold G1/8\" D1365 H01",
+        "Fiyat": "31,41",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "8"
+    },
+    {
+        "Ana_Baslik": "ROSS 52 G1/8\" VALF MANİFOLDLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS5580",
+        "Açıklama": "Altılı Manifold G1/8\" D1366 H01",
+        "Fiyat": "31,41",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "8"
+    },
+    {
+        "Ana_Baslik": "ROSS 52 G1/8\" VALF MANİFOLDLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS5585",
+        "Açıklama": "Yedili Manifold G1/8\" D1367 H01",
+        "Fiyat": "40,41",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "8"
+    },
+    {
+        "Ana_Baslik": "ROSS 52 G1/8\" VALF MANİFOLDLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS5590",
+        "Açıklama": "Sekizli Manifold G1/8\" D1368 H01",
+        "Fiyat": "40,41",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "8"
+    },
+    {
+        "Ana_Baslik": "ROSS 52 G1/8\" VALF MANİFOLDLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS5595",
+        "Açıklama": "Dokuzlu Manifold G1/8\" D1369 H01",
+        "Fiyat": "44,64",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "8"
+    },
+    {
+        "Ana_Baslik": "ROSS 52 G1/8\" VALF MANİFOLDLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS5574",
+        "Açıklama": "Onlu Manifold G1/8\" D1400 H01",
+        "Fiyat": "52,11",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "8"
+    },
+    {
+        "Ana_Baslik": "ROSS 52 G1/4\" VALF MANİFOLDLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS5600",
+        "Açıklama": "İkili Manifold G1/4\" D1412 H01",
+        "Fiyat": "19,37",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "8"
+    },
+    {
+        "Ana_Baslik": "ROSS 52 G1/4\" VALF MANİFOLDLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS5610",
+        "Açıklama": "Üçlü Manifold G1/4\" D1413 H01",
+        "Fiyat": "30,46",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "8"
+    },
+    {
+        "Ana_Baslik": "ROSS 52 G1/4\" VALF MANİFOLDLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS5615",
+        "Açıklama": "Dörtlü Manifold G1/4\" D1414 H01",
+        "Fiyat": "35,34",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "8"
+    },
+    {
+        "Ana_Baslik": "ROSS 52 G1/4\" VALF MANİFOLDLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS5620",
+        "Açıklama": "Beşli Manifold G1/4\" D1415 H01",
+        "Fiyat": "41,67",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "8"
+    },
+    {
+        "Ana_Baslik": "ROSS 52 G1/4\" VALF MANİFOLDLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS5625",
+        "Açıklama": "Altılı Manifold G1/4\" D1416 H01",
+        "Fiyat": "41,67",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "8"
+    },
+    {
+        "Ana_Baslik": "ROSS 52 G1/4\" VALF MANİFOLDLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS5630",
+        "Açıklama": "Yedili Manifold G1/4\" D1417 H01",
+        "Fiyat": "43,46",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "8"
+    },
+    {
+        "Ana_Baslik": "ROSS 52 G1/4\" VALF MANİFOLDLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS5635",
+        "Açıklama": "Sekizli Manifold G1/4\" D1418 H01",
+        "Fiyat": "43,46",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "8"
+    },
+    {
+        "Ana_Baslik": "ROSS 52 G1/4\" VALF MANİFOLDLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS5640",
+        "Açıklama": "Dokuzlu Manifold G1/4\" D1419 H01",
+        "Fiyat": "49,41",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "8"
+    },
+    {
+        "Ana_Baslik": "ROSS 52 G1/4\" VALF MANİFOLDLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS5745",
+        "Açıklama": "Onlu Manifold G1/4\" D1420 H01",
+        "Fiyat": "49,41",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "8"
+    },
+    {
+        "Ana_Baslik": "ROSS 52 G3/8\" VALF MANİFOLDLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS5700",
+        "Açıklama": "İkili Manifold G3/8\" D1432 H01",
+        "Fiyat": "25,46",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "8"
+    },
+    {
+        "Ana_Baslik": "ROSS 52 G3/8\" VALF MANİFOLDLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS5705",
+        "Açıklama": "Üçlü Manifold G3/8\" D1433 H01",
+        "Fiyat": "42,52",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "8"
+    },
+    {
+        "Ana_Baslik": "ROSS 52 G3/8\" VALF MANİFOLDLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS5710",
+        "Açıklama": "Dörtlü Manifold G3/8\" D1434 H01",
+        "Fiyat": "42,52",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "8"
+    },
+    {
+        "Ana_Baslik": "ROSS 52 G3/8\" VALF MANİFOLDLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS5715",
+        "Açıklama": "Beşli Manifold G3/8\" D1435 H01",
+        "Fiyat": "49,46",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "8"
+    },
+    {
+        "Ana_Baslik": "ROSS 52 G3/8\" VALF MANİFOLDLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS5720",
+        "Açıklama": "Altılı Manifold G3/8\" D1436 H01",
+        "Fiyat": "49,46",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "8"
+    },
+    {
+        "Ana_Baslik": "ROSS 52 G3/8\" VALF MANİFOLDLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS5725",
+        "Açıklama": "Yedili Manifold G3/8\" D1437 H01",
+        "Fiyat": "69,76",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "8"
+    },
+    {
+        "Ana_Baslik": "ROSS 52 G3/8\" VALF MANİFOLDLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS5730",
+        "Açıklama": "Sekizli Manifold G3/8\" D1438 H01",
+        "Fiyat": "69,76",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "8"
+    },
+    {
+        "Ana_Baslik": "ROSS 52 G3/8\" VALF MANİFOLDLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS5735",
+        "Açıklama": "Dokuzlu Manifold G3/8\" D1439 H01",
+        "Fiyat": "75,07",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "8"
+    },
+    {
+        "Ana_Baslik": "ROSS 52 G3/8\" VALF MANİFOLDLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS5740",
+        "Açıklama": "Onlu Manifold G3/8\" D1440 H01",
+        "Fiyat": "100,16",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "8"
+    },
+    {
+        "Ana_Baslik": "ROSS 52 G3/8\" VALF MANİFOLDLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS5745",
+        "Açıklama": "Onlu Manifold G3/8\" D1440 H01",
+        "Fiyat": "52,11",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "8"
+    },
+    {
+        "Ana_Baslik": "ROSS 52 G1/2\" VALF MANİFOLDLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS5840",
+        "Açıklama": "İkili Manifold G1/2\" D1442 H01",
+        "Fiyat": "39,47",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "8"
+    },
+    {
+        "Ana_Baslik": "ROSS 52 G1/2\" VALF MANİFOLDLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS5810",
+        "Açıklama": "Üçlü Manifold G1/2\" D1443 H01",
+        "Fiyat": "59,36",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "8"
+    },
+    {
+        "Ana_Baslik": "ROSS 52 G1/2\" VALF MANİFOLDLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS5815",
+        "Açıklama": "Dörtlü Manifold G1/2\" D1444 H01",
+        "Fiyat": "69,76",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "8"
+    },
+    {
+        "Ana_Baslik": "ROSS 52 G1/2\" VALF MANİFOLDLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS5820",
+        "Açıklama": "Beşli Manifold G1/2\" D1445 H01",
+        "Fiyat": "77,51",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "8"
+    },
+    {
+        "Ana_Baslik": "ROSS 52 G1/2\" VALF MANİFOLDLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS5825",
+        "Açıklama": "Altılı Manifold G1/2\" D1446 H01",
+        "Fiyat": "77,51",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "8"
+    },
+    {
+        "Ana_Baslik": "ROSS 52 G1/2\" VALF MANİFOLDLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS5830",
+        "Açıklama": "Yedili Manifold G1/2\" D1447 H01",
+        "Fiyat": "110,01",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "8"
+    },
+    {
+        "Ana_Baslik": "ROSS 52 G1/2\" VALF MANİFOLDLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS5835",
+        "Açıklama": "Sekizli Manifold G1/2\" D1448 H01",
+        "Fiyat": "110,01",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "8"
+    },
+    {
+        "Ana_Baslik": "ROSS 52 G1/2\" VALF MANİFOLDLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS5840",
+        "Açıklama": "Dokuzlu Manifold G1/2\" D1449 H01",
+        "Fiyat": "144,64",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "8"
+    },
+    {
+        "Ana_Baslik": "ROSS 52 G1/2\" VALF MANİFOLDLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS5845",
+        "Açıklama": "Onlu Manifold G1/2\" D1450 H01",
+        "Fiyat": "144,64",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "8"
+    },
+    {
+        "Ana_Baslik": "ROSS 52 G1/2\" VALF MANİFOLDLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RS5846",
+        "Açıklama": "Onlu Manifold G1/2\" D1450 H01",
+        "Fiyat": "224,08",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "example.pdf",
         "Sayfa": "8"
     }
 ]
