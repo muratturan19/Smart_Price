@@ -11,7 +11,6 @@ readme = "README.md"
 requires-python = ">=3.8"
 dependencies = [
     "pandas",
-    "pdfplumber",
     "streamlit",
     "openpyxl",
     "xlrd",
