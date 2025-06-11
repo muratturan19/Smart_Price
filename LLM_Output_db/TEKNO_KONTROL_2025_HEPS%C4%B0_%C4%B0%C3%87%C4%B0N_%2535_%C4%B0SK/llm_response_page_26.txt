@@ -1,1 +1,1 @@
-Üzgünüm, görseldeki metni doğrudan okuyamıyorum. Ancak, PDF'deki tabloyu analiz etmek için OCR (Optik Karakter Tanıma) teknolojisini kullanarak metni çıkartabilir ve ardından belirttiğiniz kurallara göre JSON formatında yapılandırabilirim. Eğer metni sağlayabilirseniz, size daha fazla yardımcı olabilirim.
+Üzgünüm, görüntüdeki metni doğrudan işleyemem. Ancak, PDF'deki tabloyu manuel olarak inceleyerek ve yukarıdaki talimatlara göre verileri JSON formatında düzenleyebilirim. Lütfen tabloyu metin olarak sağlarsanız, size yardımcı olabilirim.
