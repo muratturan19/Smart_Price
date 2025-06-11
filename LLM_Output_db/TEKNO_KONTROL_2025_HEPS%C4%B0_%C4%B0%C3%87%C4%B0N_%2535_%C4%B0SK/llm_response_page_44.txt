@@ -1,1 +1,284 @@
-Üzgünüm, bu görüntüdeki metni doğrudan işleyemem. Ancak, görüntüdeki metni okuyarak veya bir OCR (Optik Karakter Tanıma) aracı kullanarak metni çıkarabilir ve ardından yukarıdaki talimatlara göre yapılandırabilirsiniz. Eğer metni sağlarsanız, JSON formatında nasıl düzenleyeceğiniz konusunda yardımcı olabilirim.
+```json
+[
+    {
+        "Ana_Baslik": "3 YOLLU KÜRESEL VANALAR (L Tipi)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RA1004",
+        "Açıklama": "Üç Yollu Küresel Vana 3/8\" 9V",
+        "Fiyat": "40,23",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "44"
+    },
+    {
+        "Ana_Baslik": "3 YOLLU KÜRESEL VANALAR (L Tipi)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RA1005",
+        "Açıklama": "Üç Yollu Küresel Vana 1/2\" 9V",
+        "Fiyat": "40,24",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "44"
+    },
+    {
+        "Ana_Baslik": "3 YOLLU KÜRESEL VANALAR (L Tipi)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RA1006",
+        "Açıklama": "Üç Yollu Küresel Vana 3/4\" 9V",
+        "Fiyat": "40,26",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "44"
+    },
+    {
+        "Ana_Baslik": "3 YOLLU KÜRESEL VANALAR (L Tipi)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RA1007",
+        "Açıklama": "Üç Yollu Küresel Vana 1\" 9V",
+        "Fiyat": "90,96",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "44"
+    },
+    {
+        "Ana_Baslik": "3 YOLLU KÜRESEL VANALAR (L Tipi)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RA1008",
+        "Açıklama": "Üç Yollu Küresel Vana 1 1/4\" 9V",
+        "Fiyat": "99,84",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "44"
+    },
+    {
+        "Ana_Baslik": "3 YOLLU KÜRESEL VANALAR (L Tipi)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RA1009",
+        "Açıklama": "Üç Yollu Küresel Vana 1 1/2\" 9V",
+        "Fiyat": "136,54",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "44"
+    },
+    {
+        "Ana_Baslik": "3 YOLLU KÜRESEL VANALAR (L Tipi)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RA1010",
+        "Açıklama": "Üç Yollu Küresel Vana 2\" 9V",
+        "Fiyat": "273,62",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "44"
+    },
+    {
+        "Ana_Baslik": "3 YOLLU KÜRESEL VANALAR (T Tipi)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RA2004",
+        "Açıklama": "Üç Yollu Küresel Vana 3/8\" 9V",
+        "Fiyat": "40,23",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "44"
+    },
+    {
+        "Ana_Baslik": "3 YOLLU KÜRESEL VANALAR (T Tipi)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RA2005",
+        "Açıklama": "Üç Yollu Küresel Vana 1/2\" 9V",
+        "Fiyat": "40,24",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "44"
+    },
+    {
+        "Ana_Baslik": "3 YOLLU KÜRESEL VANALAR (T Tipi)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RA2006",
+        "Açıklama": "Üç Yollu Küresel Vana 3/4\" 9V",
+        "Fiyat": "40,26",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "44"
+    },
+    {
+        "Ana_Baslik": "3 YOLLU KÜRESEL VANALAR (T Tipi)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RA2007",
+        "Açıklama": "Üç Yollu Küresel Vana 1\" 9V",
+        "Fiyat": "90,96",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "44"
+    },
+    {
+        "Ana_Baslik": "3 YOLLU KÜRESEL VANALAR (T Tipi)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RA2008",
+        "Açıklama": "Üç Yollu Küresel Vana 1 1/4\" 9V",
+        "Fiyat": "99,84",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "44"
+    },
+    {
+        "Ana_Baslik": "3 YOLLU KÜRESEL VANALAR (T Tipi)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RA2009",
+        "Açıklama": "Üç Yollu Küresel Vana 1 1/2\" 9V",
+        "Fiyat": "136,54",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "44"
+    },
+    {
+        "Ana_Baslik": "3 YOLLU KÜRESEL VANALAR (T Tipi)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RA2010",
+        "Açıklama": "Üç Yollu Küresel Vana 2\" 9V",
+        "Fiyat": "273,62",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "44"
+    },
+    {
+        "Ana_Baslik": "SU REGÜLATÖRLERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RA1120",
+        "Açıklama": "Su Regülatörü 3/8\" 601",
+        "Fiyat": "12,42",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "44"
+    },
+    {
+        "Ana_Baslik": "SU REGÜLATÖRLERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RA1123",
+        "Açıklama": "Su Regülatörü 1/2\" 601",
+        "Fiyat": "23,62",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "44"
+    },
+    {
+        "Ana_Baslik": "SU REGÜLATÖRLERİ (Manometre hariç)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RA1160",
+        "Açıklama": "Su Regülatörü - Manometre hariç 611F-3/8\"",
+        "Fiyat": "53,06",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "44"
+    },
+    {
+        "Ana_Baslik": "SU REGÜLATÖRLERİ (Manometre hariç)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RA1165",
+        "Açıklama": "Su Regülatörü - Manometre hariç 611F-1/2\"",
+        "Fiyat": "211,67",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "44"
+    },
+    {
+        "Ana_Baslik": "90° PİRİNÇ EMNİYET VALFLERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RA7000",
+        "Açıklama": "Emniyet Valfi 1/4\" 500015",
+        "Fiyat": "42,04",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "44"
+    },
+    {
+        "Ana_Baslik": "90° PİRİNÇ EMNİYET VALFLERİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RA7005",
+        "Açıklama": "Emniyet Valfi 1/4\" 500030",
+        "Fiyat": "42,04",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "44"
+    },
+    {
+        "Ana_Baslik": "GENEL AMAÇLI KÜRESEL VANALAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RA1204",
+        "Açıklama": "Küresel Vana 3/8\" JOY",
+        "Fiyat": "3,02",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "44"
+    },
+    {
+        "Ana_Baslik": "GENEL AMAÇLI KÜRESEL VANALAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RA1205",
+        "Açıklama": "Küresel Vana 1/2\" JOY",
+        "Fiyat": "3,56",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "44"
+    },
+    {
+        "Ana_Baslik": "GENEL AMAÇLI KÜRESEL VANALAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RA1210",
+        "Açıklama": "Küresel Vana 3/4\" JOY",
+        "Fiyat": "7,56",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "44"
+    },
+    {
+        "Ana_Baslik": "GENEL AMAÇLI KÜRESEL VANALAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RA1215",
+        "Açıklama": "Küresel Vana 1\" JOY",
+        "Fiyat": "13,64",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "44"
+    },
+    {
+        "Ana_Baslik": "MİNİ KÜRESEL VANALAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RA1270",
+        "Açıklama": "Mini Küresel Vana DÖK. - 1/8\"",
+        "Fiyat": "4,08",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "44"
+    },
+    {
+        "Ana_Baslik": "MİNİ KÜRESEL VANALAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RA1272",
+        "Açıklama": "Mini Küresel Vana DÖK. - 1/2\"",
+        "Fiyat": "4,08",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "44"
+    },
+    {
+        "Ana_Baslik": "DİK YAYLI ÇEKVALFLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RA3000",
+        "Açıklama": "Çek Valf 1/4\" 480",
+        "Fiyat": "10,54",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "44"
+    },
+    {
+        "Ana_Baslik": "DİK YAYLI ÇEKVALFLER",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "RA3100",
+        "Açıklama": "Çek Valf 1/2\" 480",
+        "Fiyat": "12,16",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "44"
+    }
+]
+```
