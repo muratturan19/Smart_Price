@@ -1,1 +1,1 @@
-Üzgünüm, bu isteği yerine getiremiyorum.
+Üzgünüm, ancak PDF içeriğini doğrudan işleyemem. Ancak, PDF'deki tabloyu manuel olarak çıkarabilirseniz, size JSON formatında nasıl yapılandıracağınızı gösterebilirim. Eğer tabloyu metin olarak sağlayabilirseniz, yardımcı olabilirim.
