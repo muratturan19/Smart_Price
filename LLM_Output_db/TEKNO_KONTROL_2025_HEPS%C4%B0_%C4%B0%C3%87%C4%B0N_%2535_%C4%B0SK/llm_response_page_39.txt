@@ -1,104 +1,344 @@
 ```json
 [
-  {
-    "Ana_Baslik": "NİKEL KAPLI PİRİNÇ NİPEL",
-    "Alt_Baslik": null,
-    "Malzeme_Kodu": "AG4004",
-    "Açıklama": "Nipel 1/8x6 mm",
-    "Fiyat": "2,20",
-    "Para_Birimi": "€",
-    "Kaynak_Dosya": "Fiyat_Listesi.pdf",
-    "Sayfa": "39"
-  },
-  {
-    "Ana_Baslik": "NİKEL KAPLI PİRİNÇ NİPEL",
-    "Alt_Baslik": null,
-    "Malzeme_Kodu": "AG4005",
-    "Açıklama": "Nipel 1/8x8 mm",
-    "Fiyat": "2,20",
-    "Para_Birimi": "€",
-    "Kaynak_Dosya": "Fiyat_Listesi.pdf",
-    "Sayfa": "39"
-  },
-  {
-    "Ana_Baslik": "NİKEL KAPLI PİRİNÇ NİPEL",
-    "Alt_Baslik": null,
-    "Malzeme_Kodu": "AG4010",
-    "Açıklama": "Nipel 1/8x10 mm",
-    "Fiyat": "2,20",
-    "Para_Birimi": "€",
-    "Kaynak_Dosya": "Fiyat_Listesi.pdf",
-    "Sayfa": "39"
-  },
-  {
-    "Ana_Baslik": "NİKEL KAPLI PİRİNÇ NİPEL",
-    "Alt_Baslik": null,
-    "Malzeme_Kodu": "AG4015",
-    "Açıklama": "Nipel 1/8x12 mm",
-    "Fiyat": "2,20",
-    "Para_Birimi": "€",
-    "Kaynak_Dosya": "Fiyat_Listesi.pdf",
-    "Sayfa": "39"
-  },
-  {
-    "Ana_Baslik": "NİKEL KAPLI PİRİNÇ NİPEL",
-    "Alt_Baslik": null,
-    "Malzeme_Kodu": "AG4020",
-    "Açıklama": "Nipel 1/8x14 mm",
-    "Fiyat": "2,20",
-    "Para_Birimi": "€",
-    "Kaynak_Dosya": "Fiyat_Listesi.pdf",
-    "Sayfa": "39"
-  },
-  {
-    "Ana_Baslik": "NİKEL KAPLI PİRİNÇ NİPEL",
-    "Alt_Baslik": null,
-    "Malzeme_Kodu": "AG4025",
-    "Açıklama": "Nipel 1/8x16 mm",
-    "Fiyat": "2,20",
-    "Para_Birimi": "€",
-    "Kaynak_Dosya": "Fiyat_Listesi.pdf",
-    "Sayfa": "39"
-  },
-  {
-    "Ana_Baslik": "NİKEL KAPLI PİRİNÇ NİPEL",
-    "Alt_Baslik": null,
-    "Malzeme_Kodu": "AG4030",
-    "Açıklama": "Nipel 1/8x18 mm",
-    "Fiyat": "2,20",
-    "Para_Birimi": "€",
-    "Kaynak_Dosya": "Fiyat_Listesi.pdf",
-    "Sayfa": "39"
-  },
-  {
-    "Ana_Baslik": "NİKEL KAPLI PİRİNÇ NİPEL",
-    "Alt_Baslik": null,
-    "Malzeme_Kodu": "AG4035",
-    "Açıklama": "Nipel 1/8x20 mm",
-    "Fiyat": "2,20",
-    "Para_Birimi": "€",
-    "Kaynak_Dosya": "Fiyat_Listesi.pdf",
-    "Sayfa": "39"
-  },
-  {
-    "Ana_Baslik": "NİKEL KAPLI PİRİNÇ NİPEL",
-    "Alt_Baslik": null,
-    "Malzeme_Kodu": "AG4040",
-    "Açıklama": "Nipel 1/8x22 mm",
-    "Fiyat": "2,20",
-    "Para_Birimi": "€",
-    "Kaynak_Dosya": "Fiyat_Listesi.pdf",
-    "Sayfa": "39"
-  },
-  {
-    "Ana_Baslik": "NİKEL KAPLI PİRİNÇ NİPEL",
-    "Alt_Baslik": null,
-    "Malzeme_Kodu": "AG4045",
-    "Açıklama": "Nipel 1/8x24 mm",
-    "Fiyat": "2,20",
-    "Para_Birimi": "€",
-    "Kaynak_Dosya": "Fiyat_Listesi.pdf",
-    "Sayfa": "39"
-  }
+    {
+        "Ana_Baslik": "NİKEL KAPLI PİRİNÇ NİPEL",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG4040",
+        "Açıklama": "Nipel 1/8x6 mm",
+        "Fiyat": "2,20",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "39"
+    },
+    {
+        "Ana_Baslik": "NİKEL KAPLI PİRİNÇ NİPEL",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG4050",
+        "Açıklama": "Nipel 1/8x8 mm",
+        "Fiyat": "2,20",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "39"
+    },
+    {
+        "Ana_Baslik": "NİKEL KAPLI PİRİNÇ NİPEL",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG4060",
+        "Açıklama": "Nipel 1/8x10 mm",
+        "Fiyat": "2,20",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "39"
+    },
+    {
+        "Ana_Baslik": "NİKEL KAPLI PİRİNÇ NİPEL",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG4070",
+        "Açıklama": "Nipel 1/8x12 mm",
+        "Fiyat": "2,20",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "39"
+    },
+    {
+        "Ana_Baslik": "NİKEL KAPLI PİRİNÇ NİPEL",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG4080",
+        "Açıklama": "Nipel 1/8x14 mm",
+        "Fiyat": "2,20",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "39"
+    },
+    {
+        "Ana_Baslik": "NİKEL KAPLI PİRİNÇ NİPEL",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG4090",
+        "Açıklama": "Nipel 1/8x16 mm",
+        "Fiyat": "2,20",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "39"
+    },
+    {
+        "Ana_Baslik": "NİKEL KAPLI PİRİNÇ NİPEL",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG4100",
+        "Açıklama": "Nipel 1/8x18 mm",
+        "Fiyat": "2,20",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "39"
+    },
+    {
+        "Ana_Baslik": "NİKEL KAPLI PİRİNÇ TE BAĞLANTILAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG6010",
+        "Açıklama": "Te Bağlantı 1/8x6 mm",
+        "Fiyat": "3,00",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "39"
+    },
+    {
+        "Ana_Baslik": "NİKEL KAPLI PİRİNÇ TE BAĞLANTILAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG6020",
+        "Açıklama": "Te Bağlantı 1/8x8 mm",
+        "Fiyat": "3,00",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "39"
+    },
+    {
+        "Ana_Baslik": "NİKEL KAPLI PİRİNÇ TE BAĞLANTILAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG6030",
+        "Açıklama": "Te Bağlantı 1/8x10 mm",
+        "Fiyat": "3,00",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "39"
+    },
+    {
+        "Ana_Baslik": "NİKEL KAPLI PİRİNÇ TE BAĞLANTILAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG6040",
+        "Açıklama": "Te Bağlantı 1/8x12 mm",
+        "Fiyat": "3,00",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "39"
+    },
+    {
+        "Ana_Baslik": "NİKEL KAPLI PİRİNÇ TE BAĞLANTILAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG6050",
+        "Açıklama": "Te Bağlantı 1/8x14 mm",
+        "Fiyat": "3,00",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "39"
+    },
+    {
+        "Ana_Baslik": "NİKEL KAPLI PİRİNÇ TE BAĞLANTILAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG6060",
+        "Açıklama": "Te Bağlantı 1/8x16 mm",
+        "Fiyat": "3,00",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "39"
+    },
+    {
+        "Ana_Baslik": "NİKEL KAPLI PİRİNÇ DİŞLİ DİREK BAĞLANTILAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG7010",
+        "Açıklama": "Dişli Dirsek 1/8x6 mm",
+        "Fiyat": "2,20",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "39"
+    },
+    {
+        "Ana_Baslik": "NİKEL KAPLI PİRİNÇ DİŞLİ DİREK BAĞLANTILAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG7020",
+        "Açıklama": "Dişli Dirsek 1/8x8 mm",
+        "Fiyat": "2,20",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "39"
+    },
+    {
+        "Ana_Baslik": "NİKEL KAPLI PİRİNÇ DİŞLİ DİREK BAĞLANTILAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG7030",
+        "Açıklama": "Dişli Dirsek 1/8x10 mm",
+        "Fiyat": "2,20",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "39"
+    },
+    {
+        "Ana_Baslik": "NİKEL KAPLI PİRİNÇ DİŞLİ DİREK BAĞLANTILAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG7040",
+        "Açıklama": "Dişli Dirsek 1/8x12 mm",
+        "Fiyat": "2,20",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "39"
+    },
+    {
+        "Ana_Baslik": "NİKEL KAPLI PİRİNÇ DİŞLİ DİREK BAĞLANTILAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG7050",
+        "Açıklama": "Dişli Dirsek 1/8x14 mm",
+        "Fiyat": "2,20",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "39"
+    },
+    {
+        "Ana_Baslik": "NİKEL KAPLI PİRİNÇ DİŞLİ DİREK BAĞLANTILAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG7060",
+        "Açıklama": "Dişli Dirsek 1/8x16 mm",
+        "Fiyat": "2,20",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "39"
+    },
+    {
+        "Ana_Baslik": "HAVA TABANCASI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG5000",
+        "Açıklama": "Hava Tabancası 342 100 mm",
+        "Fiyat": "18,50",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "39"
+    },
+    {
+        "Ana_Baslik": "HAVA TABANCASI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG5010",
+        "Açıklama": "Hava Tabancası 342 200 mm",
+        "Fiyat": "20,45",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "39"
+    },
+    {
+        "Ana_Baslik": "HAVA TABANCASI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG5015",
+        "Açıklama": "Hava Tabancası 342 300 mm",
+        "Fiyat": "22,01",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "39"
+    },
+    {
+        "Ana_Baslik": "METAL SERİ PİNOMATİK BAĞLANTI ELEMANLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG7010",
+        "Açıklama": "Düz Rakor 04-04 5/16\"OD",
+        "Fiyat": "1,90",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "39"
+    },
+    {
+        "Ana_Baslik": "METAL SERİ PİNOMATİK BAĞLANTI ELEMANLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG7020",
+        "Açıklama": "Düz Rakor 04-06 5/16\"OD",
+        "Fiyat": "1,90",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "39"
+    },
+    {
+        "Ana_Baslik": "METAL SERİ PİNOMATİK BAĞLANTI ELEMANLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG7030",
+        "Açıklama": "Düz Rakor 04-08 5/16\"OD",
+        "Fiyat": "1,90",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "39"
+    },
+    {
+        "Ana_Baslik": "METAL SERİ PİNOMATİK BAĞLANTI ELEMANLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG7040",
+        "Açıklama": "Düz Rakor 04-10 5/16\"OD",
+        "Fiyat": "1,90",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "39"
+    },
+    {
+        "Ana_Baslik": "METAL SERİ PİNOMATİK BAĞLANTI ELEMANLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG7050",
+        "Açıklama": "Düz Rakor 06-06 5/16\"OD",
+        "Fiyat": "1,90",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "39"
+    },
+    {
+        "Ana_Baslik": "METAL SERİ PİNOMATİK BAĞLANTI ELEMANLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG7060",
+        "Açıklama": "Düz Rakor 06-08 5/16\"OD",
+        "Fiyat": "1,90",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "39"
+    },
+    {
+        "Ana_Baslik": "METAL SERİ PİNOMATİK BAĞLANTI ELEMANLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG7070",
+        "Açıklama": "Düz Rakor 06-10 5/16\"OD",
+        "Fiyat": "1,90",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "39"
+    },
+    {
+        "Ana_Baslik": "METAL SERİ PİNOMATİK BAĞLANTI ELEMANLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG7080",
+        "Açıklama": "Düz Rakor 08-08 5/16\"OD",
+        "Fiyat": "1,90",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "39"
+    },
+    {
+        "Ana_Baslik": "METAL SERİ PİNOMATİK BAĞLANTI ELEMANLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG7090",
+        "Açıklama": "Düz Rakor 08-10 5/16\"OD",
+        "Fiyat": "1,90",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "39"
+    },
+    {
+        "Ana_Baslik": "METAL SERİ PİNOMATİK BAĞLANTI ELEMANLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG7100",
+        "Açıklama": "Düz Rakor 10-10 5/16\"OD",
+        "Fiyat": "1,90",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "39"
+    },
+    {
+        "Ana_Baslik": "METAL SERİ PİNOMATİK BAĞLANTI ELEMANLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG7110",
+        "Açıklama": "Düz Rakor 10-12 5/16\"OD",
+        "Fiyat": "1,90",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "39"
+    },
+    {
+        "Ana_Baslik": "METAL SERİ PİNOMATİK BAĞLANTI ELEMANLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG7120",
+        "Açıklama": "Düz Rakor 12-12 5/16\"OD",
+        "Fiyat": "1,90",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Sayfa": "39"
+    }
 ]
 ```
