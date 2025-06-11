@@ -13,7 +13,7 @@
     {
         "Ana_Baslik": "BAĞLANTI RAKORLARI",
         "Alt_Baslik": null,
-        "Malzeme_Kodu": "AG2106",
+        "Malzeme_Kodu": "AG2105",
         "Açıklama": "Otomatik Rakor 5000 1/4-1/4",
         "Fiyat": "1,37",
         "Para_Birimi": "€",
@@ -23,9 +23,19 @@
     {
         "Ana_Baslik": "BAĞLANTI RAKORLARI",
         "Alt_Baslik": null,
-        "Malzeme_Kodu": "AG2108",
+        "Malzeme_Kodu": "AG2106",
         "Açıklama": "Otomatik Rakor 5000 1/4-3/8",
-        "Fiyat": "1,37",
+        "Fiyat": "1,46",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Aignep_Fiyat_Listesi.pdf",
+        "Sayfa": "33"
+    },
+    {
+        "Ana_Baslik": "BAĞLANTI RAKORLARI",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "AG2107",
+        "Açıklama": "Otomatik Rakor 5000 1/4-1/2",
+        "Fiyat": "1,69",
         "Para_Birimi": "€",
         "Kaynak_Dosya": "Aignep_Fiyat_Listesi.pdf",
         "Sayfa": "33"
@@ -51,10 +61,10 @@
         "Sayfa": "33"
     },
     {
-        "Ana_Baslik": "DÖNER DİREK BAĞLANTILAR",
+        "Ana_Baslik": "DÖNER DİŞLİ BAĞLANTILAR",
         "Alt_Baslik": null,
         "Malzeme_Kodu": "AG7100",
-        "Açıklama": "Oto. Döner Direk 5011 1/4-1/8",
+        "Açıklama": "Oto. Döner Dişli 5011 1/4-1/8",
         "Fiyat": "2,85",
         "Para_Birimi": "€",
         "Kaynak_Dosya": "Aignep_Fiyat_Listesi.pdf",
