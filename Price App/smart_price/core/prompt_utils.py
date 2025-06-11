@@ -10,9 +10,16 @@ logger = logging.getLogger("smart_price")
 
 
 def _parse_md_guide(path: Path) -> List[Dict[str, Any]]:
-    """Parse markdown guide at ``path`` into a list of entries."""
+    """Parse ``extraction_guide.md`` into a list of prompt entries.
+
+    Each top level ``##`` heading represents a brand or PDF name. The
+    function extracts the text until the next heading while stripping code
+    blocks and sub-headings so that only the plain instructions remain.
+    """
+
     text = path.read_text(encoding="utf-8")
     lines = text.splitlines()
+
     sections: List[Tuple[str, List[str]]] = []
     current: Tuple[str, List[str]] | None = None
     for line in lines:
@@ -25,10 +32,26 @@ def _parse_md_guide(path: Path) -> List[Dict[str, Any]]:
                 current[1].append(line)
     if current:
         sections.append(current)
+
     result = []
     for title, body_lines in sections:
-        body = "\n".join(body_lines).strip()
+        cleaned: List[str] = []
+        in_code = False
+        for ln in body_lines:
+            lstripped = ln.lstrip()
+            if lstripped.startswith("```"):
+                in_code = not in_code
+                continue
+            if in_code:
+                continue
+            if lstripped.startswith("#"):
+                continue
+            if "JSON" in lstripped.upper():
+                break
+            cleaned.append(ln)
+        body = "\n".join(cleaned).strip()
         result.append({"pdf": title, "page": None, "prompt": body})
+
     return result
 
 from smart_price import config
