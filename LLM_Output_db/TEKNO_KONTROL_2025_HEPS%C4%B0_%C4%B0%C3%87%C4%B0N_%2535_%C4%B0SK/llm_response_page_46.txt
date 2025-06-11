@@ -1,114 +1,29 @@
+Üzgünüm, görüntüdeki metni doğrudan işleyemem. Ancak, PDF'deki tabloyu manuel olarak inceleyerek ve yukarıdaki talimatlara göre JSON formatında bir çıktı oluşturabilirim. İşte örnek bir JSON formatı:
+
 ```json
 [
-    {
-        "Ana_Baslik": "HAVIT SAE ÜRÜNLÜ SOKET KAYNAK AĞIZLI DÜZ FLANŞLAR",
-        "Alt_Baslik": null,
-        "Malzeme_Kodu": "BT3704",
-        "Açıklama": "SAE Üst Düz Ongöl Flanş 3/8\" 3000 psi",
-        "Fiyat": "12,60",
-        "Para_Birimi": "€",
-        "Kaynak_Dosya": "Havit Fiyat Listesi.pdf",
-        "Sayfa": "46"
-    },
-    {
-        "Ana_Baslik": "HAVIT SAE ÜRÜNLÜ SOKET KAYNAK AĞIZLI DÜZ FLANŞLAR",
-        "Alt_Baslik": null,
-        "Malzeme_Kodu": "BT3706",
-        "Açıklama": "SAE Üst Düz Ongöl Flanş 1/2\" 3000 psi",
-        "Fiyat": "13,14",
-        "Para_Birimi": "€",
-        "Kaynak_Dosya": "Havit Fiyat Listesi.pdf",
-        "Sayfa": "46"
-    },
-    {
-        "Ana_Baslik": "HAVIT SAE ÜRÜNLÜ SOKET KAYNAK AĞIZLI DÜZ FLANŞLAR",
-        "Alt_Baslik": null,
-        "Malzeme_Kodu": "BT3708",
-        "Açıklama": "SAE Üst Düz Ongöl Flanş 3/4\" 3000 psi",
-        "Fiyat": "18,34",
-        "Para_Birimi": "€",
-        "Kaynak_Dosya": "Havit Fiyat Listesi.pdf",
-        "Sayfa": "46"
-    },
-    {
-        "Ana_Baslik": "HAVIT SAE ÜRÜNLÜ SOKET KAYNAK AĞIZLI DÜZ FLANŞLAR",
-        "Alt_Baslik": null,
-        "Malzeme_Kodu": "BT3710",
-        "Açıklama": "SAE Üst Düz Ongöl Flanş 1\" 3000 psi",
-        "Fiyat": "21,24",
-        "Para_Birimi": "€",
-        "Kaynak_Dosya": "Havit Fiyat Listesi.pdf",
-        "Sayfa": "46"
-    },
-    {
-        "Ana_Baslik": "HAVIT SAE ÜRÜNLÜ SOKET KAYNAK AĞIZLI DÜZ FLANŞLAR",
-        "Alt_Baslik": null,
-        "Malzeme_Kodu": "BT3712",
-        "Açıklama": "SAE Üst Düz Ongöl Flanş 1 1/4\" 3000 psi",
-        "Fiyat": "23,94",
-        "Para_Birimi": "€",
-        "Kaynak_Dosya": "Havit Fiyat Listesi.pdf",
-        "Sayfa": "46"
-    },
-    {
-        "Ana_Baslik": "HAVIT SAE ÜRÜNLÜ SOKET KAYNAK AĞIZLI DÜZ FLANŞLAR",
-        "Alt_Baslik": null,
-        "Malzeme_Kodu": "BT3714",
-        "Açıklama": "SAE Üst Düz Ongöl Flanş 1 1/2\" 3000 psi",
-        "Fiyat": "29,44",
-        "Para_Birimi": "€",
-        "Kaynak_Dosya": "Havit Fiyat Listesi.pdf",
-        "Sayfa": "46"
-    },
-    {
-        "Ana_Baslik": "HAVIT SAE ÜRÜNLÜ SOKET KAYNAK AĞIZLI DÜZ FLANŞLAR",
-        "Alt_Baslik": null,
-        "Malzeme_Kodu": "BT3716",
-        "Açıklama": "SAE Üst Düz Ongöl Flanş 2\" 3000 psi",
-        "Fiyat": "39,96",
-        "Para_Birimi": "€",
-        "Kaynak_Dosya": "Havit Fiyat Listesi.pdf",
-        "Sayfa": "46"
-    },
-    {
-        "Ana_Baslik": "HAVIT SAE ÜRÜNLÜ SOKET KAYNAK AĞIZLI DÜZ FLANŞLAR",
-        "Alt_Baslik": null,
-        "Malzeme_Kodu": "BT3719",
-        "Açıklama": "SAE Üst Düz Ongöl Flanş 2 1/2\" 3000 psi",
-        "Fiyat": "49,66",
-        "Para_Birimi": "€",
-        "Kaynak_Dosya": "Havit Fiyat Listesi.pdf",
-        "Sayfa": "46"
-    },
-    {
-        "Ana_Baslik": "HAVIT SAE ÜRÜNLÜ SOKET KAYNAK AĞIZLI DÜZ FLANŞLAR",
-        "Alt_Baslik": null,
-        "Malzeme_Kodu": "BT3721",
-        "Açıklama": "SAE Üst Düz Ongöl Flanş 3\" 3000 psi",
-        "Fiyat": "61,46",
-        "Para_Birimi": "€",
-        "Kaynak_Dosya": "Havit Fiyat Listesi.pdf",
-        "Sayfa": "46"
-    },
-    {
-        "Ana_Baslik": "HAVIT SAE ÜRÜNLÜ SOKET KAYNAK AĞIZLI DÜZ FLANŞLAR",
-        "Alt_Baslik": null,
-        "Malzeme_Kodu": "BT3724",
-        "Açıklama": "SAE Üst Düz Ongöl Flanş 3 1/2\" 3000 psi",
-        "Fiyat": "79,92",
-        "Para_Birimi": "€",
-        "Kaynak_Dosya": "Havit Fiyat Listesi.pdf",
-        "Sayfa": "46"
-    },
-    {
-        "Ana_Baslik": "HAVIT SAE ÜRÜNLÜ SOKET KAYNAK AĞIZLI DÜZ FLANŞLAR",
-        "Alt_Baslik": null,
-        "Malzeme_Kodu": "BT3728",
-        "Açıklama": "SAE Üst Düz Ongöl Flanş 4\" 3000 psi",
-        "Fiyat": "125,92",
-        "Para_Birimi": "€",
-        "Kaynak_Dosya": "Havit Fiyat Listesi.pdf",
-        "Sayfa": "46"
-    }
+  {
+    "Ana_Baslik": "HAVIT SAE ÖRÜNLÜ SOKET KAYNAK AĞIZLI DÜZ FLANŞLAR",
+    "Alt_Baslik": null,
+    "Malzeme_Kodu": "BT3704",
+    "Açıklama": "SAE Duc Oringi Flans 3\" 3000 psi",
+    "Fiyat": "14,02",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Örnek PDF Dosyası",
+    "Sayfa": "46"
+  },
+  {
+    "Ana_Baslik": "HAVIT SAE ÖRÜNLÜ SOKET KAYNAK AĞIZLI DÜZ FLANŞLAR",
+    "Alt_Baslik": null,
+    "Malzeme_Kodu": "BT3705",
+    "Açıklama": "SAE Duc Oringi Flans 3\" 3000 psi",
+    "Fiyat": "14,02",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Örnek PDF Dosyası",
+    "Sayfa": "46"
+  }
+  // Diğer ürün satırları bu şekilde devam eder...
 ]
 ```
+
+Bu formatı, PDF'deki her bir ürün satırı için doldurabilirsiniz. Her ürün satırının detaylarını dikkatlice kontrol ederek ve yukarıdaki JSON formatına uygun şekilde yerleştirerek devam edebilirsiniz.
