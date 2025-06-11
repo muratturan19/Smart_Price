@@ -27,7 +27,7 @@ replace the placeholders before running the tools.
 Download Poppler for Windows (64-bit) and copy `pdftoppm.exe`,
 `pdftocairo.exe` and `pdfinfo.exe` into `poppler/bin`.
 
-PDF files are first scanned using **pdfplumber** to catch any obvious table rows.  When this phase yields at least `500` rows the expensive Vision+LLM step is skipped. Otherwise each page image is generated with **pdf2image** and sent to the model with a Turkish prompt.  If the model returns rows these replace the `pdfplumber` result; otherwise the parsed text from `pdfplumber` is used as a fallback.
+PDFs are converted to images and parsed directly with the Vision+LLM pipeline.
 
 ### LLM assistance
 
