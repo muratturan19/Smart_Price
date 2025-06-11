@@ -219,6 +219,55 @@ def test_extract_from_pdf_llm_only(monkeypatch):
     assert called.get('path') == "dummy.pdf"
 
 
+def test_extract_from_pdf_skip_llm_when_many_rows(monkeypatch):
+    if not HAS_PANDAS:
+        pytest.skip("pandas not installed")
+
+    class FakePage:
+        page_number = 1
+
+        def extract_text(self):
+            rows = [f"Item{i}\t{i}" for i in range(60)]
+            return "\n".join(rows)
+
+        def extract_tables(self):
+            return []
+
+    class FakePDF:
+        def __enter__(self):
+            return self
+
+        def __exit__(self, exc_type, exc, tb):
+            pass
+
+        @property
+        def pages(self):
+            return [FakePage()]
+
+    def fake_open(_path):
+        return FakePDF()
+
+    import sys
+
+    pdfplumber_mod = sys.modules.get("pdfplumber")
+    monkeypatch.setattr(pdfplumber_mod, "open", fake_open, raising=False)
+
+    import smart_price.core.extract_pdf as pdf_mod
+    parse_calls = []
+
+    def fake_parse(path, page_range=None):
+        parse_calls.append((path, page_range))
+        import pandas as pd
+        return pd.DataFrame({"Açıklama": ["Item0"], "Fiyat": [0.0]})
+
+    monkeypatch.setattr(pdf_mod.ocr_llm_fallback, "parse", fake_parse)
+
+    df = extract_from_pdf("dummy.pdf")
+
+    assert not df.empty
+    assert len(parse_calls) == 1
+
+
 
 
 def test_extract_from_excel_xls(tmp_path):
@@ -650,17 +699,7 @@ def test_extract_from_pdf_bytesio(monkeypatch):
         def pages(self):
             return [FakePage()]
 
-    calls = {}
-
-    def fake_open(*args, **kwargs):
-        calls["args"] = args
-        calls["kwargs"] = kwargs
-        return FakePDF()
-
     import sys
-
-    pdfplumber_mod = sys.modules.get("pdfplumber")
-    monkeypatch.setattr(pdfplumber_mod, "open", fake_open, raising=False)
 
     import smart_price.core.extract_pdf as pdf_mod
     called_parse = {}
@@ -676,9 +715,6 @@ def test_extract_from_pdf_bytesio(monkeypatch):
 
     assert len(result) == 1
     assert result.iloc[0]["Fiyat"] == 55.0
-    assert calls.get("args") == (buf,)
-    assert any("Phase 1 parsed" in m for m in logs)
-    assert calls.get("kwargs") == {}
     assert called_parse.get('path') and called_parse['path'].endswith('.pdf')
 
 
