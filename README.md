@@ -27,7 +27,7 @@ replace the placeholders before running the tools.
 Download Poppler for Windows (64-bit) and copy `pdftoppm.exe`,
 `pdftocairo.exe` and `pdfinfo.exe` into `poppler/bin`.
 
-PDF files are parsed entirely through GPT‑4o Vision. Each page image is generated with **pdf2image** and sent to the model with a Turkish prompt. The response contains structured JSON for the rows.
+PDF files are first scanned using **pdfplumber** to catch any obvious table rows.  The GPT‑4o Vision pipeline then runs for every file. Each page image is generated with **pdf2image** and sent to the model with a Turkish prompt.  If the model returns rows these replace the `pdfplumber` result; otherwise the parsed text from `pdfplumber` is used as a fallback.
 
 ### LLM assistance
 

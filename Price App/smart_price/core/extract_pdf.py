@@ -205,9 +205,6 @@ def extract_from_pdf(
         ]
         df = df.reindex(columns=cols, fill_value=None)
         notify(f"Phase 1 parsed {len(df)} rows")
-        if len(df) >= MIN_ROWS_PARSER:
-            notify(f"Finished {src} via pdfplumber with {len(df)} rows")
-            return validate_output_df(df)
         phase1_df = df
 
     def _llm_extract_from_image(text: str) -> list[dict]:
