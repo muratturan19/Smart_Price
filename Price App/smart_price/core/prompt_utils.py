@@ -6,6 +6,9 @@ from pathlib import Path
 from typing import Any, Dict, List, Tuple
 import logging
 
+from smart_price import config
+from .common_utils import detect_brand
+
 logger = logging.getLogger("smart_price")
 
 
@@ -45,19 +48,22 @@ def _parse_md_guide(path: Path) -> List[Dict[str, Any]]:
             if in_code:
                 continue
             if lstripped.startswith("###") or "JSON" in lstripped.upper():
-                break
+                if cleaned:
+                    break
+                continue
             if lstripped.startswith("#"):
+                if cleaned:
+                    break
                 continue
             if lstripped.startswith(('-', '*')):
                 lstripped = lstripped.lstrip('-*').strip()
-            cleaned.append(lstripped)
+            if lstripped:
+                cleaned.append(lstripped)
         body = "\n".join(cleaned).strip()
         result.append({"pdf": title, "page": None, "prompt": body})
 
     return result
 
-from smart_price import config
-from .common_utils import detect_brand
 
 
 def load_extraction_guide(path: str | None = None) -> List[Dict[str, Any]]:
