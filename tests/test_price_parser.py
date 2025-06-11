@@ -43,7 +43,7 @@ from smart_price.core.common_utils import detect_brand
 from smart_price.core.common_utils import split_code_description
 from smart_price.core.common_utils import gpt_clean_text
 from smart_price.core.extract_excel import extract_from_excel
-from smart_price.core.extract_pdf import extract_from_pdf
+from smart_price.core.extract_pdf import extract_from_pdf, MIN_ROWS_PARSER
 
 if HAS_PANDAS:
     from smart_price import streamlit_app
@@ -217,6 +217,55 @@ def test_extract_from_pdf_llm_only(monkeypatch):
 
     assert not df.empty
     assert called.get('path') == "dummy.pdf"
+
+
+def test_extract_from_pdf_skip_llm_when_many_rows(monkeypatch):
+    if not HAS_PANDAS:
+        pytest.skip("pandas not installed")
+
+    class FakePage:
+        page_number = 1
+
+        def extract_text(self):
+            return "\n".join(f"Item{i} 10" for i in range(MIN_ROWS_PARSER + 1))
+
+        def extract_tables(self):
+            return []
+
+    class FakePDF:
+        def __enter__(self):
+            return self
+
+        def __exit__(self, exc_type, exc, tb):
+            pass
+
+        @property
+        def pages(self):
+            return [FakePage()]
+
+    def fake_open(_path):
+        return FakePDF()
+
+    import sys
+
+    pdfplumber_mod = sys.modules.get("pdfplumber")
+    monkeypatch.setattr(pdfplumber_mod, "open", fake_open, raising=False)
+    import smart_price.core.extract_pdf as pdf_mod
+
+    called = False
+
+    def fake_parse(*_a, **_kw):
+        nonlocal called
+        called = True
+        import pandas as pd
+        return pd.DataFrame()
+
+    monkeypatch.setattr(pdf_mod.ocr_llm_fallback, "parse", fake_parse)
+
+    df = extract_from_pdf("dummy.pdf")
+
+    assert len(df) == MIN_ROWS_PARSER + 1
+    assert not called
 
 
 def test_extract_from_excel_xls(tmp_path):

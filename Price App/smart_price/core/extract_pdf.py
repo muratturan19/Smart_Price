@@ -206,6 +206,14 @@ def extract_from_pdf(
         df = df.reindex(columns=cols, fill_value=None)
         notify(f"Phase 1 parsed {len(df)} rows")
         phase1_df = df
+        if len(phase1_df) >= MIN_ROWS_PARSER:
+            duration = time.time() - total_start
+            notify(
+                f"Finished {src} via pdfplumber with {len(phase1_df)} rows"
+                f" (>= {MIN_ROWS_PARSER})"
+            )
+            set_output_subdir(None)
+            return validate_output_df(phase1_df)
 
     def _llm_extract_from_image(text: str) -> list[dict]:
         """Use a language model to extract product names and prices from OCR text."""
