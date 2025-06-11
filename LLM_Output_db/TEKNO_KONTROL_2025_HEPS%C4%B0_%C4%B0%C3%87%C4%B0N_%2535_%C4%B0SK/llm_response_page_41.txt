@@ -4,30 +4,30 @@
         "Ana_Baslik": "METAL YAN BACAK TİP BAĞLANTILAR",
         "Alt_Baslik": null,
         "Malzeme_Kodu": "AG0770",
-        "Açıklama": "Yan Bacak Tip Bağlantı, 05-18° 5723",
+        "Açıklama": "Yan Bacak Tip Bağlantı, Ø 8-18° 5725",
         "Fiyat": "3,16",
         "Para_Birimi": "€",
-        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Kaynak_Dosya": "example.pdf",
         "Sayfa": "41"
     },
     {
         "Ana_Baslik": "METAL ORTA BACAK TİP BAĞLANTILAR",
         "Alt_Baslik": null,
         "Malzeme_Kodu": "AG0771",
-        "Açıklama": "Orta Bacak Tip Bağlantı, 05-18° 5730",
+        "Açıklama": "Orta Bacak Tip Bağlantı, Ø 8-18° 5730",
         "Fiyat": "3,16",
         "Para_Birimi": "€",
-        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Kaynak_Dosya": "example.pdf",
         "Sayfa": "41"
     },
     {
-        "Ana_Baslik": "90° HIZ AYAR VALFLERİ",
+        "Ana_Baslik": "90° HZ AYAR VALFLERİ",
         "Alt_Baslik": null,
-        "Malzeme_Kodu": "AG0790",
+        "Malzeme_Kodu": "AG7906",
         "Açıklama": "500 Hz Ayar Valfi 5-18° 5750",
         "Fiyat": "15,04",
         "Para_Birimi": "€",
-        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Kaynak_Dosya": "example.pdf",
         "Sayfa": "41"
     },
     {
@@ -37,47 +37,27 @@
         "Açıklama": "Dar Soket (Siyah) 9-14123-0000",
         "Fiyat": "1,92",
         "Para_Birimi": "€",
-        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Kaynak_Dosya": "example.pdf",
         "Sayfa": "41"
     },
     {
         "Ana_Baslik": "NASS MAGNET (ALMAN) STANDART Ø 9 mm VALF BOBİNLERİ",
         "Alt_Baslik": null,
         "Malzeme_Kodu": "AB0005",
-        "Açıklama": "Promakil Valf Bobini 220 V AC 5 VA 0554-00-1-007093 108-030-035",
+        "Açıklama": "Prizmatik Valf Bobini 220 V AC 5 VA 0554-00-1-007093 108-030-035",
         "Fiyat": "4,25",
         "Para_Birimi": "€",
-        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
-        "Sayfa": "41"
-    },
-    {
-        "Ana_Baslik": "NASS MAGNET (ALMAN) STANDART VALF BOBİNLERİ",
-        "Alt_Baslik": null,
-        "Malzeme_Kodu": "AB0015",
-        "Açıklama": "Promakil Valf Bobini Ex 230V 220 VAC",
-        "Fiyat": "8,41",
-        "Para_Birimi": "€",
-        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
-        "Sayfa": "41"
-    },
-    {
-        "Ana_Baslik": "EXPROOF BOBİN KABLOSU",
-        "Alt_Baslik": null,
-        "Malzeme_Kodu": "AB0016",
-        "Açıklama": "Exproof Bobin Kablosu 220VAC, 220VDC 6-9mm",
-        "Fiyat": "75,36",
-        "Para_Birimi": "€",
-        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Kaynak_Dosya": "example.pdf",
         "Sayfa": "41"
     },
     {
         "Ana_Baslik": "TÜP ÇEKİRDEK GRUBU",
         "Alt_Baslik": null,
-        "Malzeme_Kodu": "S0X132",
-        "Açıklama": "Tüp Çekirdek Grubu 32-24 VDC",
+        "Malzeme_Kodu": "SOK312",
+        "Açıklama": "Tüp Çekirdek Grubu 32-32 VDC",
         "Fiyat": "12,19",
         "Para_Birimi": "€",
-        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
+        "Kaynak_Dosya": "example.pdf",
         "Sayfa": "41"
     }
 ]
