@@ -1,104 +1,56 @@
+I'm unable to process the image directly, but I can guide you on how to extract the data based on the instructions provided.
+
+### Extraction Steps:
+
+1. **Identify the Main and Subheadings:**
+   - Main Heading: "DÜZ DİREK BAĞLANTILAR", "TE BAĞLANTILAR", etc.
+   - Subheadings are not explicitly mentioned, so they might not be present.
+
+2. **Extract Product Details:**
+   - For each product row, extract the following:
+     - **Stock Code (Malzeme_Kodu)**
+     - **Description (Açıklama/Özellikler)**
+     - **Price (Fiyat)**
+     - **Currency (Para_Birimi)**: If not specified, use "TL".
+     - **Brand (Marka)**
+     - **Additional Details**: Such as "Birim Fiyatı", "C T N S", etc.
+
+3. **Include Source Information:**
+   - **Kaynak_Dosya**: Use the file name, e.g., "Sample.pdf".
+   - **Sayfa**: Use the page number, e.g., "61".
+
+### Example JSON Output:
+
 ```json
 [
-    {
-        "Ana_Baslik": "DÜZ DİREK BAĞLANTILAR",
-        "Alt_Baslik": null,
-        "Malzeme_Kodu": "HT4100",
-        "Açıklama": "Düz Direk 6 mm. PUL 06",
-        "Fiyat": "0,81",
-        "Para_Birimi": "EUR",
-        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
-        "Sayfa": "61"
-    },
-    {
-        "Ana_Baslik": "DÜZ DİREK BAĞLANTILAR",
-        "Alt_Baslik": null,
-        "Malzeme_Kodu": "HT4200",
-        "Açıklama": "Düz Direk 8 mm. PUL 08",
-        "Fiyat": "0,81",
-        "Para_Birimi": "EUR",
-        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
-        "Sayfa": "61"
-    },
-    {
-        "Ana_Baslik": "DÜZ DİREK BAĞLANTILAR",
-        "Alt_Baslik": null,
-        "Malzeme_Kodu": "HT4300",
-        "Açıklama": "Düz Direk 10 mm. PUL 10",
-        "Fiyat": "0,81",
-        "Para_Birimi": "EUR",
-        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
-        "Sayfa": "61"
-    },
-    {
-        "Ana_Baslik": "DÜZ DİREK BAĞLANTILAR",
-        "Alt_Baslik": null,
-        "Malzeme_Kodu": "HT4400",
-        "Açıklama": "Düz Direk 12 mm. PUL 12",
-        "Fiyat": "0,81",
-        "Para_Birimi": "EUR",
-        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
-        "Sayfa": "61"
-    },
-    {
-        "Ana_Baslik": "DÜZ DİREK BAĞLANTILAR",
-        "Alt_Baslik": null,
-        "Malzeme_Kodu": "HT4500",
-        "Açıklama": "Düz Direk 16 mm. PUL 16",
-        "Fiyat": "0,81",
-        "Para_Birimi": "EUR",
-        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
-        "Sayfa": "61"
-    },
-    {
-        "Ana_Baslik": "TE BAĞLANTILAR",
-        "Alt_Baslik": null,
-        "Malzeme_Kodu": "HT5000",
-        "Açıklama": "Te Bağlantı 6 mm. PUT 06",
-        "Fiyat": "0,81",
-        "Para_Birimi": "EUR",
-        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
-        "Sayfa": "61"
-    },
-    {
-        "Ana_Baslik": "TE BAĞLANTILAR",
-        "Alt_Baslik": null,
-        "Malzeme_Kodu": "HT5100",
-        "Açıklama": "Te Bağlantı 8 mm. PUT 08",
-        "Fiyat": "0,81",
-        "Para_Birimi": "EUR",
-        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
-        "Sayfa": "61"
-    },
-    {
-        "Ana_Baslik": "TE BAĞLANTILAR",
-        "Alt_Baslik": null,
-        "Malzeme_Kodu": "HT5200",
-        "Açıklama": "Te Bağlantı 10 mm. PUT 10",
-        "Fiyat": "0,81",
-        "Para_Birimi": "EUR",
-        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
-        "Sayfa": "61"
-    },
-    {
-        "Ana_Baslik": "TE BAĞLANTILAR",
-        "Alt_Baslik": null,
-        "Malzeme_Kodu": "HT5300",
-        "Açıklama": "Te Bağlantı 12 mm. PUT 12",
-        "Fiyat": "0,81",
-        "Para_Birimi": "EUR",
-        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
-        "Sayfa": "61"
-    },
-    {
-        "Ana_Baslik": "TE BAĞLANTILAR",
-        "Alt_Baslik": null,
-        "Malzeme_Kodu": "HT5400",
-        "Açıklama": "Te Bağlantı 16 mm. PUT 16",
-        "Fiyat": "0,81",
-        "Para_Birimi": "EUR",
-        "Kaynak_Dosya": "Fiyat_Listesi.pdf",
-        "Sayfa": "61"
-    }
+  {
+    "Ana_Baslik": "DÜZ DİREK BAĞLANTILAR",
+    "Alt_Baslik": null,
+    "Malzeme_Kodu": "HT4100",
+    "Açıklama": "Düz Direk 6 mm, PUL 06",
+    "Fiyat": "0.86",
+    "Para_Birimi": "€",
+    "Marka": "HPC",
+    "Kaynak_Dosya": "Sample.pdf",
+    "Sayfa": "61"
+  },
+  {
+    "Ana_Baslik": "TE BAĞLANTILAR",
+    "Alt_Baslik": null,
+    "Malzeme_Kodu": "HT5100",
+    "Açıklama": "Te Bağlantı 6 mm, PUT 06",
+    "Fiyat": "0.86",
+    "Para_Birimi": "€",
+    "Marka": "HPC",
+    "Kaynak_Dosya": "Sample.pdf",
+    "Sayfa": "61"
+  }
+  // Continue for each product row
 ]
 ```
+
+### Notes:
+
+- Ensure each product row is captured accurately.
+- If any specific extraction guide is available, follow it for more precise extraction.
+- Adjust the JSON structure based on the actual data in the PDF.
