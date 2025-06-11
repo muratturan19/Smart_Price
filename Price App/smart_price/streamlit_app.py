@@ -366,6 +366,7 @@ def merge_files(
     drop_mask = master[["Malzeme_Kodu", "Fiyat"]].isna().any(axis=1)
     dropped_preview = master[drop_mask].head().to_dict(orient="records")
     before_len = len(master)
+    before_master = master.copy()
     master.dropna(subset=["Malzeme_Kodu", "Fiyat"], inplace=True)
     logger.debug(
         "[merge] Filter sonrası: %d satır (drop edilen: %d satır)",
@@ -375,6 +376,16 @@ def merge_files(
     if before_len != len(master):
         logger.debug("[merge] Drop nedeni: subset=['Malzeme_Kodu', 'Fiyat']")
         logger.debug("[merge] Drop edilen ilk 5 satır: %s", dropped_preview)
+    if master.empty and before_len > 0 and before_master["Malzeme_Kodu"].isna().all():
+        logger.warning(
+            "[merge] Tüm satırlar 'Malzeme_Kodu' eksikliğinden dolayı atıldı; ilk satırlar: %s",
+            dropped_preview,
+        )
+        if update_status:
+            update_status(
+                "Malzeme_Kodu olmayan satırlar atlandı, sonuç boş",
+                "warning",
+            )
     if "Açıklama" in master.columns:
         master["Açıklama"] = (
             master["Açıklama"].astype(str).str.strip().str.upper()
