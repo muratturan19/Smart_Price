@@ -31,6 +31,26 @@
         "Sayfa": "11"
     },
     {
+        "Ana_Baslik": "TERS RAKORLAR (EVGE)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "BL1530",
+        "Açıklama": "Ters Rakor 12 LR 8/1\" 315 Bar",
+        "Fiyat": "5,24",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "conexa_fiyat_listesi.pdf",
+        "Sayfa": "11"
+    },
+    {
+        "Ana_Baslik": "TERS RAKORLAR (EVGE)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "BL1540",
+        "Açıklama": "Ters Rakor 14 LR 8/1\" 315 Bar",
+        "Fiyat": "5,24",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "conexa_fiyat_listesi.pdf",
+        "Sayfa": "11"
+    },
+    {
         "Ana_Baslik": "ORTA BACAK TERS TE (EVT)",
         "Alt_Baslik": null,
         "Malzeme_Kodu": "BL1600",
@@ -45,7 +65,7 @@
         "Alt_Baslik": null,
         "Malzeme_Kodu": "BL1610",
         "Açıklama": "Orta Bacak Te EVT 8 L 8/1 315 Bar",
-        "Fiyat": "7,52",
+        "Fiyat": "6,36",
         "Para_Birimi": "€",
         "Kaynak_Dosya": "conexa_fiyat_listesi.pdf",
         "Sayfa": "11"
@@ -55,7 +75,7 @@
         "Alt_Baslik": null,
         "Malzeme_Kodu": "BL1800",
         "Açıklama": "Yan Bacak Te EVL 6 L 8/1 315 Bar",
-        "Fiyat": "8,04",
+        "Fiyat": "8,02",
         "Para_Birimi": "€",
         "Kaynak_Dosya": "conexa_fiyat_listesi.pdf",
         "Sayfa": "11"
@@ -65,27 +85,27 @@
         "Alt_Baslik": null,
         "Malzeme_Kodu": "BL1810",
         "Açıklama": "Yan Bacak Te EVL 8 L 8/1 315 Bar",
-        "Fiyat": "9,20",
+        "Fiyat": "8,02",
         "Para_Birimi": "€",
         "Kaynak_Dosya": "conexa_fiyat_listesi.pdf",
         "Sayfa": "11"
     },
     {
-        "Ana_Baslik": "KAVURALAR (K)",
+        "Ana_Baslik": "KAVRAKLAR (K)",
         "Alt_Baslik": null,
         "Malzeme_Kodu": "BL1200",
-        "Açıklama": "Kavuş K 10 L 315 Bar",
+        "Açıklama": "Kavrak K 10 L 315 Bar",
         "Fiyat": "24,76",
         "Para_Birimi": "€",
         "Kaynak_Dosya": "conexa_fiyat_listesi.pdf",
         "Sayfa": "11"
     },
     {
-        "Ana_Baslik": "KAVURALAR (K)",
+        "Ana_Baslik": "KAVRAKLAR (K)",
         "Alt_Baslik": null,
         "Malzeme_Kodu": "BL1210",
-        "Açıklama": "Kavuş K 12 L 315 Bar",
-        "Fiyat": "29,04",
+        "Açıklama": "Kavrak K 12 L 315 Bar",
+        "Fiyat": "24,76",
         "Para_Birimi": "€",
         "Kaynak_Dosya": "conexa_fiyat_listesi.pdf",
         "Sayfa": "11"
@@ -94,7 +114,7 @@
         "Ana_Baslik": "MANOMETRE RAKORLARI (MAV)",
         "Alt_Baslik": null,
         "Malzeme_Kodu": "BL2200",
-        "Açıklama": "Manometre Rakoru 6 LR 8/1\" 315 Bar",
+        "Açıklama": "Manometre Rakoru 6 LR 8/1 315 Bar",
         "Fiyat": "3,02",
         "Para_Birimi": "€",
         "Kaynak_Dosya": "conexa_fiyat_listesi.pdf",
@@ -104,7 +124,7 @@
         "Ana_Baslik": "MANOMETRE RAKORLARI (MAV)",
         "Alt_Baslik": null,
         "Malzeme_Kodu": "BL2210",
-        "Açıklama": "Manometre Rakoru 8 LR 8/1\" 315 Bar",
+        "Açıklama": "Manometre Rakoru 8 LR 8/1 315 Bar",
         "Fiyat": "3,02",
         "Para_Birimi": "€",
         "Kaynak_Dosya": "conexa_fiyat_listesi.pdf",
@@ -131,21 +151,21 @@
         "Sayfa": "11"
     },
     {
-        "Ana_Baslik": "PERDE GEÇİŞ DİREĞİ (P)",
+        "Ana_Baslik": "PİPET GEÇİŞ DİREĞİ (P)",
         "Alt_Baslik": null,
         "Malzeme_Kodu": "BL2500",
         "Açıklama": "P. Geçiş Direği 10 L 315 Bar",
-        "Fiyat": "8,04",
+        "Fiyat": "8,02",
         "Para_Birimi": "€",
         "Kaynak_Dosya": "conexa_fiyat_listesi.pdf",
         "Sayfa": "11"
     },
     {
-        "Ana_Baslik": "PERDE GEÇİŞ DİREĞİ (P)",
+        "Ana_Baslik": "PİPET GEÇİŞ DİREĞİ (P)",
         "Alt_Baslik": null,
         "Malzeme_Kodu": "BL2510",
         "Açıklama": "P. Geçiş Direği 12 L 315 Bar",
-        "Fiyat": "9,20",
+        "Fiyat": "8,02",
         "Para_Birimi": "€",
         "Kaynak_Dosya": "conexa_fiyat_listesi.pdf",
         "Sayfa": "11"
