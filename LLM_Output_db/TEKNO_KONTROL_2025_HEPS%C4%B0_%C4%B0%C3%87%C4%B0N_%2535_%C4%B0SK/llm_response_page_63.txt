@@ -15,7 +15,7 @@
         "Alt_Baslik": null,
         "Malzeme_Kodu": "MM0020",
         "Açıklama": "Solenoid Valf G1/2 3 Bar -10/+90°C",
-        "Fiyat": "74,14",
+        "Fiyat": "79,92",
         "Para_Birimi": "€",
         "Kaynak_Dosya": "Unknown",
         "Sayfa": "63"
@@ -25,7 +25,7 @@
         "Alt_Baslik": null,
         "Malzeme_Kodu": "MM0030",
         "Açıklama": "Solenoid Valf G3/4 3 Bar -10/+90°C",
-        "Fiyat": "92,56",
+        "Fiyat": "99,14",
         "Para_Birimi": "€",
         "Kaynak_Dosya": "Unknown",
         "Sayfa": "63"
@@ -35,7 +35,7 @@
         "Alt_Baslik": null,
         "Malzeme_Kodu": "MM0040",
         "Açıklama": "Solenoid Valf G1 3 Bar -10/+90°C",
-        "Fiyat": "110,98",
+        "Fiyat": "122,00",
         "Para_Birimi": "€",
         "Kaynak_Dosya": "Unknown",
         "Sayfa": "63"
@@ -45,7 +45,7 @@
         "Alt_Baslik": null,
         "Malzeme_Kodu": "MM0050",
         "Açıklama": "Solenoid Valf G1 1/4 3 Bar -10/+90°C",
-        "Fiyat": "221,96",
+        "Fiyat": "201,00",
         "Para_Birimi": "€",
         "Kaynak_Dosya": "Unknown",
         "Sayfa": "63"
@@ -54,8 +54,8 @@
         "Ana_Baslik": "GENEL MAKSAT SOLENOİD VALFLER (2/2 N.KAPALI)",
         "Alt_Baslik": null,
         "Malzeme_Kodu": "MM0060",
-        "Açıklama": "Solenoid Valf Dn20 3 Bar -10/+90°C",
-        "Fiyat": "221,96",
+        "Açıklama": "Solenoid Valf G1 1/2 3 Bar -10/+90°C",
+        "Fiyat": "224,00",
         "Para_Birimi": "€",
         "Kaynak_Dosya": "Unknown",
         "Sayfa": "63"
@@ -64,28 +64,8 @@
         "Ana_Baslik": "GENEL MAKSAT SOLENOİD VALFLER (2/2 N.KAPALI)",
         "Alt_Baslik": null,
         "Malzeme_Kodu": "MM0070",
-        "Açıklama": "Solenoid Valf Dn25 3 Bar -10/+90°C",
-        "Fiyat": "332,94",
-        "Para_Birimi": "€",
-        "Kaynak_Dosya": "Unknown",
-        "Sayfa": "63"
-    },
-    {
-        "Ana_Baslik": "GENEL MAKSAT SOLENOİD VALFLER (2/2 N.KAPALI)",
-        "Alt_Baslik": null,
-        "Malzeme_Kodu": "MM0080",
-        "Açıklama": "Solenoid Valf Dn32 3 Bar -10/+90°C",
-        "Fiyat": "332,94",
-        "Para_Birimi": "€",
-        "Kaynak_Dosya": "Unknown",
-        "Sayfa": "63"
-    },
-    {
-        "Ana_Baslik": "GENEL MAKSAT SOLENOİD VALFLER (2/2 N.KAPALI)",
-        "Alt_Baslik": null,
-        "Malzeme_Kodu": "MM0090",
-        "Açıklama": "Solenoid Valf Dn40 3 Bar -10/+90°C",
-        "Fiyat": "704,56",
+        "Açıklama": "Solenoid Valf G2 3 Bar -10/+90°C",
+        "Fiyat": "374,00",
         "Para_Birimi": "€",
         "Kaynak_Dosya": "Unknown",
         "Sayfa": "63"
@@ -94,8 +74,8 @@
         "Ana_Baslik": "BUHAR VE SICAK SU İÇİN SOLENOİD VALFLER (2/2 N.KAPALI)",
         "Alt_Baslik": null,
         "Malzeme_Kodu": "MM0120",
-        "Açıklama": "Solenoid Valf Dn8 7 Bar -10/+180°C",
-        "Fiyat": "90,84",
+        "Açıklama": "Solenoid Valf D287 3 Bar -10/+180°C",
+        "Fiyat": "90,00",
         "Para_Birimi": "€",
         "Kaynak_Dosya": "Unknown",
         "Sayfa": "63"
@@ -104,8 +84,8 @@
         "Ana_Baslik": "BUHAR VE SICAK SU İÇİN SOLENOİD VALFLER (2/2 N.KAPALI)",
         "Alt_Baslik": null,
         "Malzeme_Kodu": "MM0130",
-        "Açıklama": "Solenoid Valf Dn10 7 Bar -10/+180°C",
-        "Fiyat": "90,84",
+        "Açıklama": "Solenoid Valf D388 3 Bar -10/+180°C",
+        "Fiyat": "90,00",
         "Para_Birimi": "€",
         "Kaynak_Dosya": "Unknown",
         "Sayfa": "63"
@@ -114,8 +94,8 @@
         "Ana_Baslik": "BUHAR VE SICAK SU İÇİN SOLENOİD VALFLER (2/2 N.KAPALI)",
         "Alt_Baslik": null,
         "Malzeme_Kodu": "MM0140",
-        "Açıklama": "Solenoid Valf Dn15 7 Bar -10/+180°C",
-        "Fiyat": "104,96",
+        "Açıklama": "Solenoid Valf D488K 3 Bar -10/+180°C",
+        "Fiyat": "104,00",
         "Para_Birimi": "€",
         "Kaynak_Dosya": "Unknown",
         "Sayfa": "63"
@@ -124,8 +104,8 @@
         "Ana_Baslik": "BUHAR VE SICAK SU İÇİN SOLENOİD VALFLER (2/2 N.KAPALI)",
         "Alt_Baslik": null,
         "Malzeme_Kodu": "MM0150",
-        "Açıklama": "Solenoid Valf Dn20 7 Bar -10/+180°C",
-        "Fiyat": "104,96",
+        "Açıklama": "Solenoid Valf D588K 3 Bar -10/+180°C",
+        "Fiyat": "113,00",
         "Para_Birimi": "€",
         "Kaynak_Dosya": "Unknown",
         "Sayfa": "63"
@@ -134,158 +114,8 @@
         "Ana_Baslik": "BUHAR VE SICAK SU İÇİN SOLENOİD VALFLER (2/2 N.KAPALI)",
         "Alt_Baslik": null,
         "Malzeme_Kodu": "MM0160",
-        "Açıklama": "Solenoid Valf Dn25 7 Bar -10/+180°C",
-        "Fiyat": "113,14",
-        "Para_Birimi": "€",
-        "Kaynak_Dosya": "Unknown",
-        "Sayfa": "63"
-    },
-    {
-        "Ana_Baslik": "YAKIT SOLENOİD VALFLERİ",
-        "Alt_Baslik": null,
-        "Malzeme_Kodu": "MM0170",
-        "Açıklama": "Solenoid Valf 2/2 N.K. Dn6 30 Bar -30/+140°C",
-        "Fiyat": "87,54",
-        "Para_Birimi": "€",
-        "Kaynak_Dosya": "Unknown",
-        "Sayfa": "63"
-    },
-    {
-        "Ana_Baslik": "YAKIT SOLENOİD VALFLERİ",
-        "Alt_Baslik": null,
-        "Malzeme_Kodu": "MM0175",
-        "Açıklama": "Solenoid Valf 2/2 N.K. Dn20 30 Bar -30/+140°C",
-        "Fiyat": "215,61",
-        "Para_Birimi": "€",
-        "Kaynak_Dosya": "Unknown",
-        "Sayfa": "63"
-    },
-    {
-        "Ana_Baslik": "YAKIT SOLENOİD VALFLERİ",
-        "Alt_Baslik": null,
-        "Malzeme_Kodu": "MM0176",
-        "Açıklama": "Solenoid Valf 2/2 N.A. Dn20 30 Bar -30/+140°C",
-        "Fiyat": "215,61",
-        "Para_Birimi": "€",
-        "Kaynak_Dosya": "Unknown",
-        "Sayfa": "63"
-    },
-    {
-        "Ana_Baslik": "YAKIT SOLENOİD VALFLERİ",
-        "Alt_Baslik": null,
-        "Malzeme_Kodu": "MM0178",
-        "Açıklama": "Solenoid Valf 2/2 N.A. Dn25 30 Bar -20/+140°C",
-        "Fiyat": "331,71",
-        "Para_Birimi": "€",
-        "Kaynak_Dosya": "Unknown",
-        "Sayfa": "63"
-    },
-    {
-        "Ana_Baslik": "PASLANMAZ ÇELİK PİSTONLU VANALAR",
-        "Alt_Baslik": null,
-        "Malzeme_Kodu": "MM0205",
-        "Açıklama": "Pistonlu Vana - N.K. PN6 205 1/4\" -10/+180°C",
-        "Fiyat": "164,64",
-        "Para_Birimi": "€",
-        "Kaynak_Dosya": "Unknown",
-        "Sayfa": "63"
-    },
-    {
-        "Ana_Baslik": "PASLANMAZ ÇELİK PİSTONLU VANALAR",
-        "Alt_Baslik": null,
-        "Malzeme_Kodu": "MM0206",
-        "Açıklama": "Pistonlu Vana - N.K. PN6 205 3/8\" -10/+180°C",
-        "Fiyat": "164,64",
-        "Para_Birimi": "€",
-        "Kaynak_Dosya": "Unknown",
-        "Sayfa": "63"
-    },
-    {
-        "Ana_Baslik": "PASLANMAZ ÇELİK PİSTONLU VANALAR",
-        "Alt_Baslik": null,
-        "Malzeme_Kodu": "MM0207",
-        "Açıklama": "Pistonlu Vana - N.K. PN6 205 1/2\" -10/+180°C",
-        "Fiyat": "164,64",
-        "Para_Birimi": "€",
-        "Kaynak_Dosya": "Unknown",
-        "Sayfa": "63"
-    },
-    {
-        "Ana_Baslik": "PASLANMAZ ÇELİK PİSTONLU VANALAR",
-        "Alt_Baslik": null,
-        "Malzeme_Kodu": "MM0208",
-        "Açıklama": "Pistonlu Vana - N.K. PN6 210 3/4\" -10/+180°C",
-        "Fiyat": "180,56",
-        "Para_Birimi": "€",
-        "Kaynak_Dosya": "Unknown",
-        "Sayfa": "63"
-    },
-    {
-        "Ana_Baslik": "PASLANMAZ ÇELİK PİSTONLU VANALAR",
-        "Alt_Baslik": null,
-        "Malzeme_Kodu": "MM0209",
-        "Açıklama": "Pistonlu Vana - N.K. PN6 210 1\" -10/+180°C",
-        "Fiyat": "180,56",
-        "Para_Birimi": "€",
-        "Kaynak_Dosya": "Unknown",
-        "Sayfa": "63"
-    },
-    {
-        "Ana_Baslik": "PASLANMAZ ÇELİK PİSTONLU VANALAR",
-        "Alt_Baslik": null,
-        "Malzeme_Kodu": "MM0210",
-        "Açıklama": "Pistonlu Vana - N.K. PN6 210 1 1/4\" -10/+180°C",
-        "Fiyat": "180,56",
-        "Para_Birimi": "€",
-        "Kaynak_Dosya": "Unknown",
-        "Sayfa": "63"
-    },
-    {
-        "Ana_Baslik": "PASLANMAZ ÇELİK PİSTONLU VANALAR",
-        "Alt_Baslik": null,
-        "Malzeme_Kodu": "MM0211",
-        "Açıklama": "Pistonlu Vana - N.K. PN6 210 1 1/2\" -10/+180°C",
-        "Fiyat": "180,56",
-        "Para_Birimi": "€",
-        "Kaynak_Dosya": "Unknown",
-        "Sayfa": "63"
-    },
-    {
-        "Ana_Baslik": "PASLANMAZ ÇELİK PİSTONLU VANALAR",
-        "Alt_Baslik": null,
-        "Malzeme_Kodu": "MM0212",
-        "Açıklama": "Pistonlu Vana - N.K. PN6 210 2\" -10/+180°C",
-        "Fiyat": "180,56",
-        "Para_Birimi": "€",
-        "Kaynak_Dosya": "Unknown",
-        "Sayfa": "63"
-    },
-    {
-        "Ana_Baslik": "PASLANMAZ ÇELİK PİSTONLU VANALAR",
-        "Alt_Baslik": null,
-        "Malzeme_Kodu": "MM0213",
-        "Açıklama": "Pistonlu Vana - N.K. PN6 210 2 1/2\" -10/+180°C",
-        "Fiyat": "180,56",
-        "Para_Birimi": "€",
-        "Kaynak_Dosya": "Unknown",
-        "Sayfa": "63"
-    },
-    {
-        "Ana_Baslik": "PASLANMAZ ÇELİK PİSTONLU VANALAR",
-        "Alt_Baslik": null,
-        "Malzeme_Kodu": "MM0214",
-        "Açıklama": "Pistonlu Vana - N.K. PN6 210 3\" -10/+180°C",
-        "Fiyat": "180,56",
-        "Para_Birimi": "€",
-        "Kaynak_Dosya": "Unknown",
-        "Sayfa": "63"
-    },
-    {
-        "Ana_Baslik": "PASLANMAZ ÇELİK PİSTONLU VANALAR",
-        "Alt_Baslik": null,
-        "Malzeme_Kodu": "MM0215",
-        "Açıklama": "Pistonlu Vana - N.K. PN6 210 4\" -10/+180°C",
-        "Fiyat": "180,56",
+        "Açıklama": "Solenoid Valf D687 3 Bar -10/+180°C",
+        "Fiyat": "113,00",
         "Para_Birimi": "€",
         "Kaynak_Dosya": "Unknown",
         "Sayfa": "63"
