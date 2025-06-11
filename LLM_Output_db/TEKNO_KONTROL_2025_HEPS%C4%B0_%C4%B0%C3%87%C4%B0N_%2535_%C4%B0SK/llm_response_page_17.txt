@@ -1,104 +1,324 @@
 ```json
 [
-  {
-    "Ana_Baslik": "TURAN DÖNER ELEMANLAR",
-    "Alt_Baslik": null,
-    "Malzeme_Kodu": "TR1001",
-    "Açıklama": "Döner Eleman GR-8-1/8 RH",
-    "Fiyat": "28,70",
-    "Para_Birimi": "EUR",
-    "Kaynak_Dosya": "Fiyat Listesi.pdf",
-    "Sayfa": "17"
-  },
-  {
-    "Ana_Baslik": "TURAN DÖNER ELEMANLAR",
-    "Alt_Baslik": null,
-    "Malzeme_Kodu": "TR1002",
-    "Açıklama": "Döner Eleman GR-8-1/4 RH",
-    "Fiyat": "28,70",
-    "Para_Birimi": "EUR",
-    "Kaynak_Dosya": "Fiyat Listesi.pdf",
-    "Sayfa": "17"
-  },
-  {
-    "Ana_Baslik": "TURAN DÖNER ELEMANLAR",
-    "Alt_Baslik": null,
-    "Malzeme_Kodu": "TR1003",
-    "Açıklama": "Döner Eleman GR-10-1/8 RH",
-    "Fiyat": "28,70",
-    "Para_Birimi": "EUR",
-    "Kaynak_Dosya": "Fiyat Listesi.pdf",
-    "Sayfa": "17"
-  },
-  {
-    "Ana_Baslik": "TURAN DÖNER ELEMANLAR",
-    "Alt_Baslik": null,
-    "Malzeme_Kodu": "TR1004",
-    "Açıklama": "Döner Eleman GR-10-1/4 RH",
-    "Fiyat": "28,70",
-    "Para_Birimi": "EUR",
-    "Kaynak_Dosya": "Fiyat Listesi.pdf",
-    "Sayfa": "17"
-  },
-  {
-    "Ana_Baslik": "TURAN DÖNER ELEMANLAR",
-    "Alt_Baslik": null,
-    "Malzeme_Kodu": "TR1005",
-    "Açıklama": "Döner Eleman GR-12-1/8 RH",
-    "Fiyat": "28,70",
-    "Para_Birimi": "EUR",
-    "Kaynak_Dosya": "Fiyat Listesi.pdf",
-    "Sayfa": "17"
-  },
-  {
-    "Ana_Baslik": "TURAN DÖNER ELEMANLAR",
-    "Alt_Baslik": null,
-    "Malzeme_Kodu": "TR1006",
-    "Açıklama": "Döner Eleman GR-12-1/4 RH",
-    "Fiyat": "28,70",
-    "Para_Birimi": "EUR",
-    "Kaynak_Dosya": "Fiyat Listesi.pdf",
-    "Sayfa": "17"
-  },
-  {
-    "Ana_Baslik": "TURAN DÖNER ELEMANLAR",
-    "Alt_Baslik": null,
-    "Malzeme_Kodu": "TR1007",
-    "Açıklama": "Döner Eleman GR-12-3/8 RH",
-    "Fiyat": "28,70",
-    "Para_Birimi": "EUR",
-    "Kaynak_Dosya": "Fiyat Listesi.pdf",
-    "Sayfa": "17"
-  },
-  {
-    "Ana_Baslik": "TURAN DÖNER ELEMANLAR",
-    "Alt_Baslik": null,
-    "Malzeme_Kodu": "TR1008",
-    "Açıklama": "Döner Eleman GR-12-1/2 RH",
-    "Fiyat": "28,70",
-    "Para_Birimi": "EUR",
-    "Kaynak_Dosya": "Fiyat Listesi.pdf",
-    "Sayfa": "17"
-  },
-  {
-    "Ana_Baslik": "TURAN DÖNER ELEMANLAR",
-    "Alt_Baslik": null,
-    "Malzeme_Kodu": "TR1009",
-    "Açıklama": "Döner Eleman GR-12-3/4 RH",
-    "Fiyat": "28,70",
-    "Para_Birimi": "EUR",
-    "Kaynak_Dosya": "Fiyat Listesi.pdf",
-    "Sayfa": "17"
-  },
-  {
-    "Ana_Baslik": "TURAN DÖNER ELEMANLAR",
-    "Alt_Baslik": null,
-    "Malzeme_Kodu": "TR1010",
-    "Açıklama": "Döner Eleman GR-12-1 RH",
-    "Fiyat": "28,70",
-    "Para_Birimi": "EUR",
-    "Kaynak_Dosya": "Fiyat Listesi.pdf",
-    "Sayfa": "17"
-  }
+    {
+        "Ana_Baslik": "TURAN DÖNER ELEMANLAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "TR1001",
+        "Açıklama": "Döner Eleman GR-8-1/8\" RH",
+        "Fiyat": "28,70",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "17"
+    },
+    {
+        "Ana_Baslik": "TURAN DÖNER ELEMANLAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "TR1002",
+        "Açıklama": "Döner Eleman GR-8-1/4\" RH",
+        "Fiyat": "28,70",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "17"
+    },
+    {
+        "Ana_Baslik": "TURAN DÖNER ELEMANLAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "TR1003",
+        "Açıklama": "Döner Eleman GR-10-1/8\" RH",
+        "Fiyat": "28,70",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "17"
+    },
+    {
+        "Ana_Baslik": "TURAN DÖNER ELEMANLAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "TR1004",
+        "Açıklama": "Döner Eleman GR-10-1/4\" RH",
+        "Fiyat": "28,70",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "17"
+    },
+    {
+        "Ana_Baslik": "TURAN DÖNER ELEMANLAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "TR1005",
+        "Açıklama": "Döner Eleman GR-12-1/8\" RH",
+        "Fiyat": "28,70",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "17"
+    },
+    {
+        "Ana_Baslik": "TURAN DÖNER ELEMANLAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "TR1006",
+        "Açıklama": "Döner Eleman GR-12-1/4\" RH",
+        "Fiyat": "28,70",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "17"
+    },
+    {
+        "Ana_Baslik": "TURAN İKİ KANALLI DÖNER ELEMANLAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "TR1050",
+        "Açıklama": "İki Kanallı Döner Eleman GR 3/8-3/8\"",
+        "Fiyat": "989,41",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "17"
+    },
+    {
+        "Ana_Baslik": "TURAN İKİ KANALLI DÖNER ELEMANLAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "TR1051",
+        "Açıklama": "İki Kanallı Döner Eleman GR 3/8-3/4\"",
+        "Fiyat": "989,41",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "17"
+    },
+    {
+        "Ana_Baslik": "TURAN İKİ KANALLI DÖNER ELEMANLAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "TR1052",
+        "Açıklama": "İki Kanallı Döner Eleman GR 3/4-3/4\"",
+        "Fiyat": "1.052,64",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "17"
+    },
+    {
+        "Ana_Baslik": "TURAN İKİ KANALLI DÖNER ELEMANLAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "TR1053",
+        "Açıklama": "İki Kanallı Döner Eleman GR 1-1/2-1/2\"",
+        "Fiyat": "1.617,64",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "17"
+    },
+    {
+        "Ana_Baslik": "TURAN İKİ KANALLI DÖNER ELEMANLAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "TR1054",
+        "Açıklama": "İki Kanallı Döner Eleman GR 1-1/2-3/4\"",
+        "Fiyat": "2.157,64",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "17"
+    },
+    {
+        "Ana_Baslik": "TURAN DÖRT KANALLI DÖNER ELEMANLAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "TR1060",
+        "Açıklama": "Dört Kanallı Döner Eleman GRV 3/8-3/8\"",
+        "Fiyat": "2.851,64",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "17"
+    },
+    {
+        "Ana_Baslik": "TURAN DÖRT KANALLI DÖNER ELEMANLAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "TR1061",
+        "Açıklama": "Dört Kanallı Döner Eleman GRV 1/2-1/2\"",
+        "Fiyat": "2.901,64",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "17"
+    },
+    {
+        "Ana_Baslik": "TURAN BUHAR DÖNER ELEMANLAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "TR1100",
+        "Açıklama": "Buhar Döner Eleman HTP 1/8\" RH",
+        "Fiyat": "574,66",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "17"
+    },
+    {
+        "Ana_Baslik": "TURAN BUHAR DÖNER ELEMANLAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "TR1101",
+        "Açıklama": "Buhar Döner Eleman HTP 1/4\" RH",
+        "Fiyat": "574,66",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "17"
+    },
+    {
+        "Ana_Baslik": "TURAN BUHAR DÖNER ELEMANLAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "TR1102",
+        "Açıklama": "Buhar Döner Eleman HTP 3/8\" RH",
+        "Fiyat": "574,66",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "17"
+    },
+    {
+        "Ana_Baslik": "TURAN BUHAR DÖNER ELEMANLAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "TR1103",
+        "Açıklama": "Buhar Döner Eleman HTP 1/2\" RH",
+        "Fiyat": "574,66",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "17"
+    },
+    {
+        "Ana_Baslik": "TURAN BUHAR DÖNER ELEMANLAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "TR1104",
+        "Açıklama": "Buhar Döner Eleman HTP 3/4\" RH",
+        "Fiyat": "1.249,16",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "17"
+    },
+    {
+        "Ana_Baslik": "TURAN BUHAR DÖNER ELEMANLAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "TR1105",
+        "Açıklama": "Buhar Döner Eleman HTP 1\" RH",
+        "Fiyat": "1.249,16",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "17"
+    },
+    {
+        "Ana_Baslik": "TURAN KIZGIN YAĞ DÖNER ELEMANLAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "TR1200",
+        "Açıklama": "Kızgın Yağ Döner Eleman HTP 20 1/8\" RH",
+        "Fiyat": "872,00",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "17"
+    },
+    {
+        "Ana_Baslik": "TURAN KIZGIN YAĞ DÖNER ELEMANLAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "TR1201",
+        "Açıklama": "Kızgın Yağ Döner Eleman HTP 20 1/4\" RH",
+        "Fiyat": "872,00",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "17"
+    },
+    {
+        "Ana_Baslik": "TURAN KIZGIN YAĞ DÖNER ELEMANLAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "TR1202",
+        "Açıklama": "Kızgın Yağ Döner Eleman HTP 25 1/8\" RH",
+        "Fiyat": "905,70",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "17"
+    },
+    {
+        "Ana_Baslik": "TURAN KIZGIN YAĞ DÖNER ELEMANLAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "TR1203",
+        "Açıklama": "Kızgın Yağ Döner Eleman HTP 25 1/4\" RH",
+        "Fiyat": "905,70",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "17"
+    },
+    {
+        "Ana_Baslik": "TURAN KIZGIN YAĞ DÖNER ELEMANLAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "TR1204",
+        "Açıklama": "Kızgın Yağ Döner Eleman HTP 32 1/8\" RH",
+        "Fiyat": "1.122,76",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "17"
+    },
+    {
+        "Ana_Baslik": "TURAN KIZGIN YAĞ DÖNER ELEMANLAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "TR1205",
+        "Açıklama": "Kızgın Yağ Döner Eleman HTP 32 1/4\" RH",
+        "Fiyat": "1.122,76",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "17"
+    },
+    {
+        "Ana_Baslik": "TURAN KIZGIN YAĞ DÖNER ELEMANLAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "TR1206",
+        "Açıklama": "Kızgın Yağ Döner Eleman HTP 40 1/2\" RH",
+        "Fiyat": "1.499,13",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "17"
+    },
+    {
+        "Ana_Baslik": "TURAN YAĞ VE HAVA DÖNER ELEMANLAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "TR1220",
+        "Açıklama": "Yağ ve Hava Döner Eleman GSN 90 1/4\"",
+        "Fiyat": "318,76",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "17"
+    },
+    {
+        "Ana_Baslik": "TURAN YAĞ VE HAVA DÖNER ELEMANLAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "TR1221",
+        "Açıklama": "Yağ ve Hava Döner Eleman GSN 90 3/8\"",
+        "Fiyat": "318,76",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "17"
+    },
+    {
+        "Ana_Baslik": "TURAN YAĞ VE HAVA DÖNER ELEMANLAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "TR1222",
+        "Açıklama": "Yağ ve Hava Döner Eleman GSN 90 1/2\"",
+        "Fiyat": "318,76",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "17"
+    },
+    {
+        "Ana_Baslik": "TURAN YAĞ VE HAVA DÖNER ELEMANLAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "TR1223",
+        "Açıklama": "Yağ ve Hava Döner Eleman GSN 90 3/4\"",
+        "Fiyat": "451,64",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "17"
+    },
+    {
+        "Ana_Baslik": "TURAN YAĞ VE HAVA DÖNER ELEMANLAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "TR1224",
+        "Açıklama": "Yağ ve Hava Döner Eleman GSN 90 1\"",
+        "Fiyat": "451,64",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "17"
+    },
+    {
+        "Ana_Baslik": "TURAN YAĞ VE HAVA DÖNER ELEMANLAR",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "TR1225",
+        "Açıklama": "Yağ ve Hava Döner Eleman GSN 137 1/2\"",
+        "Fiyat": "831,00",
+        "Para_Birimi": "TL",
+        "Kaynak_Dosya": "example.pdf",
+        "Sayfa": "17"
+    }
 ]
 ```
