@@ -304,3 +304,48 @@ def log_metric(
         writer.writerow(
             [datetime.utcnow().isoformat(), event, n_pages, f"{elapsed:.2f}"]
         )
+
+
+EXTRACTION_FIELDS = [
+    "Malzeme_Kodu",
+    "Açıklama",
+    "Kisa_Kod",
+    "Fiyat",
+    "Para_Birimi",
+    "Marka",
+    "Kaynak_Dosya",
+    "Sayfa",
+    "Record_Code",
+    "Ana_Baslik",
+    "Alt_Baslik",
+    "Image_Path",
+]
+
+
+def validate_output_df(df):
+    """Return ``df`` cleaned according to ``EXTRACTION_FIELDS``."""
+    import pandas as pd
+
+    if df is None or not hasattr(df, "copy") or not hasattr(df, "columns"):
+        return pd.DataFrame(columns=EXTRACTION_FIELDS)
+
+    result = df.copy()
+
+    if "Fiyat" in result.columns:
+        result["Fiyat"] = result["Fiyat"].apply(normalize_price)
+
+    if "Para_Birimi" not in result.columns:
+        result["Para_Birimi"] = None
+    result["Para_Birimi"] = result["Para_Birimi"].apply(normalize_currency)
+    result["Para_Birimi"] = result["Para_Birimi"].fillna("₺")
+
+    for col in EXTRACTION_FIELDS:
+        if col not in result.columns:
+            result[col] = None
+    cleaned = result[EXTRACTION_FIELDS]
+    if hasattr(df, "__dict__") and hasattr(cleaned, "__dict__"):
+        for attr in ("page_summary", "token_counts"):
+            if hasattr(df, attr):
+                object.__setattr__(cleaned, attr, getattr(df, attr))
+
+    return cleaned
