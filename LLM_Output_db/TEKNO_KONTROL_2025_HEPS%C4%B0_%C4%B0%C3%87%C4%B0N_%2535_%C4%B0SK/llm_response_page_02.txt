@@ -4,161 +4,151 @@
         "Ana_Baslik": "KÜRESEL VANALAR (BKH-BKHQ)",
         "Alt_Baslik": null,
         "Malzeme_Kodu": "BKH015",
-        "Açıklama": "Küresel Vana BKH 1/4\" 500 Bar",
+        "Açıklama": "Küresel Vana BKH 1/2\" 500 Bar",
         "Fiyat": "32,09 €",
         "Para_Birimi": "€",
         "Kaynak_Dosya": "MHA ZENTGRAF Fiyat Listesi.pdf",
-        "Sayfa": "2"
+        "Sayfa": "1"
     },
     {
         "Ana_Baslik": "KÜRESEL VANALAR (BKH-BKHQ)",
         "Alt_Baslik": null,
         "Malzeme_Kodu": "BKH020",
-        "Açıklama": "Küresel Vana BKH 3/8\" 500 Bar",
+        "Açıklama": "Küresel Vana BKH 3/4\" 500 Bar",
         "Fiyat": "32,09 €",
         "Para_Birimi": "€",
         "Kaynak_Dosya": "MHA ZENTGRAF Fiyat Listesi.pdf",
-        "Sayfa": "2"
+        "Sayfa": "1"
     },
     {
         "Ana_Baslik": "KÜRESEL VANALAR (BKH-BKHQ)",
         "Alt_Baslik": null,
         "Malzeme_Kodu": "BKH025",
-        "Açıklama": "Küresel Vana BKH 1/2\" 500 Bar",
-        "Fiyat": "32,09 €",
+        "Açıklama": "Küresel Vana BKH 1\" 500 Bar",
+        "Fiyat": "41,92 €",
         "Para_Birimi": "€",
         "Kaynak_Dosya": "MHA ZENTGRAF Fiyat Listesi.pdf",
-        "Sayfa": "2"
+        "Sayfa": "1"
     },
     {
         "Ana_Baslik": "KÜRESEL VANALAR (BKH-BKHQ)",
         "Alt_Baslik": null,
         "Malzeme_Kodu": "BKH032",
-        "Açıklama": "Küresel Vana BKH 3/4\" 500 Bar",
-        "Fiyat": "41,92 €",
+        "Açıklama": "Küresel Vana BKH 1 1/4\" 500 Bar",
+        "Fiyat": "61,64 €",
         "Para_Birimi": "€",
         "Kaynak_Dosya": "MHA ZENTGRAF Fiyat Listesi.pdf",
-        "Sayfa": "2"
+        "Sayfa": "1"
     },
     {
         "Ana_Baslik": "KÜRESEL VANALAR (BKH-BKHQ)",
         "Alt_Baslik": null,
         "Malzeme_Kodu": "BKH040",
-        "Açıklama": "Küresel Vana BKH 1\" 500 Bar",
-        "Fiyat": "41,92 €",
+        "Açıklama": "Küresel Vana BKH 1 1/2\" 500 Bar",
+        "Fiyat": "81,36 €",
         "Para_Birimi": "€",
         "Kaynak_Dosya": "MHA ZENTGRAF Fiyat Listesi.pdf",
-        "Sayfa": "2"
+        "Sayfa": "1"
     },
     {
         "Ana_Baslik": "KÜRESEL VANALAR (BKH-BKHQ)",
         "Alt_Baslik": null,
         "Malzeme_Kodu": "BKH050",
-        "Açıklama": "Küresel Vana BKH 1 1/4\" 315 Bar",
-        "Fiyat": "91,64 €",
+        "Açıklama": "Küresel Vana BKH 2\" 500 Bar",
+        "Fiyat": "101,68 €",
         "Para_Birimi": "€",
         "Kaynak_Dosya": "MHA ZENTGRAF Fiyat Listesi.pdf",
-        "Sayfa": "2"
+        "Sayfa": "1"
     },
     {
         "Ana_Baslik": "KÜRESEL VANALAR (BKH-BKHQ)",
         "Alt_Baslik": null,
         "Malzeme_Kodu": "BKH065",
-        "Açıklama": "Küresel Vana BKH 1 1/2\" 315 Bar",
-        "Fiyat": "301,86 €",
+        "Açıklama": "Küresel Vana BKH 2 1/2\" 315 Bar",
+        "Fiyat": "301,68 €",
         "Para_Birimi": "€",
         "Kaynak_Dosya": "MHA ZENTGRAF Fiyat Listesi.pdf",
-        "Sayfa": "2"
+        "Sayfa": "1"
     },
     {
         "Ana_Baslik": "KÜRESEL VANALAR (BKH-BKHQ)",
         "Alt_Baslik": null,
         "Malzeme_Kodu": "BKH080",
-        "Açıklama": "Küresel Vana BKH 2\" 315 Bar",
-        "Fiyat": "401,86 €",
+        "Açıklama": "Küresel Vana BKH 3\" 315 Bar",
+        "Fiyat": "401,68 €",
         "Para_Birimi": "€",
         "Kaynak_Dosya": "MHA ZENTGRAF Fiyat Listesi.pdf",
-        "Sayfa": "2"
+        "Sayfa": "1"
     },
     {
         "Ana_Baslik": "KÜRESEL VANALAR (BKH-BKHQ)",
         "Alt_Baslik": null,
         "Malzeme_Kodu": "BKH100",
-        "Açıklama": "Küresel Vana BKH 2 1/2\" 315 Bar",
-        "Fiyat": "501,86 €",
+        "Açıklama": "Küresel Vana BKH 4\" 315 Bar",
+        "Fiyat": "501,68 €",
         "Para_Birimi": "€",
         "Kaynak_Dosya": "MHA ZENTGRAF Fiyat Listesi.pdf",
-        "Sayfa": "2"
-    },
-    {
-        "Ana_Baslik": "KÜRESEL VANALAR (BKH-BKHQ)",
-        "Alt_Baslik": null,
-        "Malzeme_Kodu": "BKH125",
-        "Açıklama": "Küresel Vana BKH 3\" 315 Bar",
-        "Fiyat": "601,86 €",
-        "Para_Birimi": "€",
-        "Kaynak_Dosya": "MHA ZENTGRAF Fiyat Listesi.pdf",
-        "Sayfa": "2"
+        "Sayfa": "1"
     },
     {
         "Ana_Baslik": "SAE FLANŞLI KÜRESEL VANALAR",
         "Alt_Baslik": null,
         "Malzeme_Kodu": "BKH015",
-        "Açıklama": "SAE Flanş Küresel Vana 1/2\"-3000",
+        "Açıklama": "SAE Flanş Küresel Vana 1/2\" 3000",
         "Fiyat": "Fiyat isteyiniz",
         "Para_Birimi": "TL",
         "Kaynak_Dosya": "MHA ZENTGRAF Fiyat Listesi.pdf",
-        "Sayfa": "2"
+        "Sayfa": "1"
     },
     {
         "Ana_Baslik": "SAE FLANŞLI KÜRESEL VANALAR",
         "Alt_Baslik": null,
         "Malzeme_Kodu": "BKH020",
-        "Açıklama": "SAE Flanş Küresel Vana 3/4\"-3000",
+        "Açıklama": "SAE Flanş Küresel Vana 3/4\" 3000",
         "Fiyat": "Fiyat isteyiniz",
         "Para_Birimi": "TL",
         "Kaynak_Dosya": "MHA ZENTGRAF Fiyat Listesi.pdf",
-        "Sayfa": "2"
+        "Sayfa": "1"
     },
     {
         "Ana_Baslik": "SAE FLANŞLI KÜRESEL VANALAR",
         "Alt_Baslik": null,
         "Malzeme_Kodu": "BKH025",
-        "Açıklama": "SAE Flanş Küresel Vana 1\"-3000",
+        "Açıklama": "SAE Flanş Küresel Vana 1\" 3000",
         "Fiyat": "Fiyat isteyiniz",
         "Para_Birimi": "TL",
         "Kaynak_Dosya": "MHA ZENTGRAF Fiyat Listesi.pdf",
-        "Sayfa": "2"
+        "Sayfa": "1"
     },
     {
         "Ana_Baslik": "SAE FLANŞLI KÜRESEL VANALAR",
         "Alt_Baslik": null,
         "Malzeme_Kodu": "BKH032",
-        "Açıklama": "SAE Flanş Küresel Vana 1 1/4\"-3000",
+        "Açıklama": "SAE Flanş Küresel Vana 1 1/4\" 3000",
         "Fiyat": "Fiyat isteyiniz",
         "Para_Birimi": "TL",
         "Kaynak_Dosya": "MHA ZENTGRAF Fiyat Listesi.pdf",
-        "Sayfa": "2"
+        "Sayfa": "1"
     },
     {
         "Ana_Baslik": "SAE FLANŞLI KÜRESEL VANALAR",
         "Alt_Baslik": null,
         "Malzeme_Kodu": "BKH040",
-        "Açıklama": "SAE Flanş Küresel Vana 1 1/2\"-3000",
+        "Açıklama": "SAE Flanş Küresel Vana 1 1/2\" 3000",
         "Fiyat": "Fiyat isteyiniz",
         "Para_Birimi": "TL",
         "Kaynak_Dosya": "MHA ZENTGRAF Fiyat Listesi.pdf",
-        "Sayfa": "2"
+        "Sayfa": "1"
     },
     {
         "Ana_Baslik": "SAE FLANŞLI KÜRESEL VANALAR",
         "Alt_Baslik": null,
         "Malzeme_Kodu": "BKH050",
-        "Açıklama": "SAE Flanş Küresel Vana 2\"-3000",
+        "Açıklama": "SAE Flanş Küresel Vana 2\" 3000",
         "Fiyat": "Fiyat isteyiniz",
         "Para_Birimi": "TL",
         "Kaynak_Dosya": "MHA ZENTGRAF Fiyat Listesi.pdf",
-        "Sayfa": "2"
+        "Sayfa": "1"
     }
 ]
 ```
