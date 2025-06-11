@@ -36,6 +36,7 @@ from .common_utils import (
     safe_json_parse,
     log_metric,
 )
+from .prompt_utils import prompts_for_pdf
 from .debug_utils import save_debug, save_debug_image, set_output_subdir
 from .token_utils import (
     num_tokens_from_messages,
@@ -160,6 +161,13 @@ def parse(
     total_input_tokens = 0
     total_output_tokens = 0
 
+    if prompt is None:
+        prompt = prompts_for_pdf(pdf_path)
+        if prompt:
+            logger.info("Prompt matched via Extraction Guide")
+        else:
+            logger.info("Fallback prompt will be used")
+
     try:
         from pdf2image import convert_from_path  # type: ignore
     except Exception as exc:  # pragma: no cover - optional deps missing
@@ -265,6 +273,11 @@ def parse(
                 "OpenAI request for page %d took %.2fs", idx, time.time() - api_start
             )
             content = resp.choices[0].message.content
+            logger.debug(
+                "LLM response for page %d (truncated): %s",
+                idx,
+                (content or "")[:200],
+            )
             total_output_tokens += num_tokens_from_text(content or "", model_name)
             save_debug("llm_response", idx, content or "")
         except Exception as exc:  # pragma: no cover - request errors

@@ -145,6 +145,8 @@ def extract_from_pdf_agentic(
             for line in text.splitlines():
                 # Allow both whitespace and ':' separated values
                 cells = [c.strip() for c in re.split(r"\s{2,}|\t|:\s*", line) if c.strip()]
+                if len(cells) <= 1 and " " in line:
+                    cells = [c.strip() for c in line.split(" ") if c.strip()]
                 if not cells:
                     continue
 

@@ -83,8 +83,9 @@ def big_alert(message: str, *, level: str = "info", icon: str | None = None) -> 
     else:
         icon_b64 = icons.ICONS.get(level, icons.INFO_ICON_B64)
 
+    get_opt = getattr(st, "get_option", lambda _n: None)
     try:
-        theme = st.get_option("theme") or {}
+        theme = get_opt("theme") or {}
     except RuntimeError:
         theme = {}
     text_colour = theme.get("textColor", "#262730")
