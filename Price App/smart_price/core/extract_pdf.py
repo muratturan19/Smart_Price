@@ -323,7 +323,12 @@ Sen bir PDF fiyat listesi analiz asistanısın. Amacın, PDF’lerdeki ürün ta
             Path(os.getenv("SMART_PRICE_DEBUG_DIR", "LLM_Output_db")) / output_stem
         )
         set_output_subdir(None)
-        upload_folder(debug_dir, remote_prefix=f"LLM_Output_db/{debug_dir.name}")
+        notify("Debug klasörü GitHub'a yükleniyor...")
+        ok = upload_folder(debug_dir, remote_prefix=f"LLM_Output_db/{debug_dir.name}")
+        if ok:
+            notify("Debug klasörü yüklendi")
+        else:
+            notify("GitHub upload başarısız", "warning")
         return result
 
     if "Para_Birimi" not in result.columns:
@@ -385,5 +390,10 @@ Sen bir PDF fiyat listesi analiz asistanısın. Amacın, PDF’lerdeki ürün ta
     cleanup()
     debug_dir = Path(os.getenv("SMART_PRICE_DEBUG_DIR", "LLM_Output_db")) / output_stem
     set_output_subdir(None)
-    upload_folder(debug_dir, remote_prefix=f"LLM_Output_db/{debug_dir.name}")
+    notify("Debug klasörü GitHub'a yükleniyor...")
+    ok = upload_folder(debug_dir, remote_prefix=f"LLM_Output_db/{debug_dir.name}")
+    if ok:
+        notify("Debug klasörü yüklendi")
+    else:
+        notify("GitHub upload başarısız", "warning")
     return result_df
