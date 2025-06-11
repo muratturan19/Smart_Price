@@ -6,7 +6,7 @@
         "Malzeme_Kodu": "BL1600",
         "Açıklama": "Çek Valf G 1/8 315 Bar",
         "Fiyat": "20,40",
-        "Para_Birimi": "EUR",
+        "Para_Birimi": "€",
         "Kaynak_Dosya": "Conexa Fiyat Listesi.pdf",
         "Sayfa": "13"
     },
@@ -16,7 +16,7 @@
         "Malzeme_Kodu": "BL1610",
         "Açıklama": "Çek Valf G 1/4 315 Bar",
         "Fiyat": "20,40",
-        "Para_Birimi": "EUR",
+        "Para_Birimi": "€",
         "Kaynak_Dosya": "Conexa Fiyat Listesi.pdf",
         "Sayfa": "13"
     },
@@ -26,7 +26,7 @@
         "Malzeme_Kodu": "BL1620",
         "Açıklama": "Çek Valf G 3/8 315 Bar",
         "Fiyat": "23,45",
-        "Para_Birimi": "EUR",
+        "Para_Birimi": "€",
         "Kaynak_Dosya": "Conexa Fiyat Listesi.pdf",
         "Sayfa": "13"
     },
@@ -36,7 +36,7 @@
         "Malzeme_Kodu": "BL1630",
         "Açıklama": "Çek Valf G 1/2 315 Bar",
         "Fiyat": "27,01",
-        "Para_Birimi": "EUR",
+        "Para_Birimi": "€",
         "Kaynak_Dosya": "Conexa Fiyat Listesi.pdf",
         "Sayfa": "13"
     },
@@ -46,7 +46,7 @@
         "Malzeme_Kodu": "BL1640",
         "Açıklama": "Çek Valf G 3/4 315 Bar",
         "Fiyat": "32,07",
-        "Para_Birimi": "EUR",
+        "Para_Birimi": "€",
         "Kaynak_Dosya": "Conexa Fiyat Listesi.pdf",
         "Sayfa": "13"
     },
@@ -56,7 +56,7 @@
         "Malzeme_Kodu": "BL1650",
         "Açıklama": "Çek Valf G 1 315 Bar",
         "Fiyat": "39,24",
-        "Para_Birimi": "EUR",
+        "Para_Birimi": "€",
         "Kaynak_Dosya": "Conexa Fiyat Listesi.pdf",
         "Sayfa": "13"
     },
@@ -66,7 +66,7 @@
         "Malzeme_Kodu": "BL1660",
         "Açıklama": "Çek Valf G 1 1/4 315 Bar",
         "Fiyat": "42,46",
-        "Para_Birimi": "EUR",
+        "Para_Birimi": "€",
         "Kaynak_Dosya": "Conexa Fiyat Listesi.pdf",
         "Sayfa": "13"
     },
@@ -76,7 +76,7 @@
         "Malzeme_Kodu": "BL1670",
         "Açıklama": "Çek Valf G 1 1/2 315 Bar",
         "Fiyat": "48,74",
-        "Para_Birimi": "EUR",
+        "Para_Birimi": "€",
         "Kaynak_Dosya": "Conexa Fiyat Listesi.pdf",
         "Sayfa": "13"
     },
@@ -85,8 +85,38 @@
         "Alt_Baslik": null,
         "Malzeme_Kodu": "BL1680",
         "Açıklama": "Çek Valf G 2 315 Bar",
-        "Fiyat": "66,16",
-        "Para_Birimi": "EUR",
+        "Fiyat": "80,66",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Conexa Fiyat Listesi.pdf",
+        "Sayfa": "13"
+    },
+    {
+        "Ana_Baslik": "ÇİK VALFLER (RHD)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "BL1690",
+        "Açıklama": "Çek Valf G 2 1/2 315 Bar",
+        "Fiyat": "97,16",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Conexa Fiyat Listesi.pdf",
+        "Sayfa": "13"
+    },
+    {
+        "Ana_Baslik": "ÇİK VALFLER (RHD)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "BL1700",
+        "Açıklama": "Çek Valf G 3 315 Bar",
+        "Fiyat": "119,44",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Conexa Fiyat Listesi.pdf",
+        "Sayfa": "13"
+    },
+    {
+        "Ana_Baslik": "ÇİK VALFLER (RHD)",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "BL1710",
+        "Açıklama": "Çek Valf G 4 315 Bar",
+        "Fiyat": "152,01",
+        "Para_Birimi": "€",
         "Kaynak_Dosya": "Conexa Fiyat Listesi.pdf",
         "Sayfa": "13"
     },
@@ -96,7 +126,7 @@
         "Malzeme_Kodu": "BL1700",
         "Açıklama": "Çek Valf G 1/8 315 Bar",
         "Fiyat": "20,70",
-        "Para_Birimi": "EUR",
+        "Para_Birimi": "€",
         "Kaynak_Dosya": "Conexa Fiyat Listesi.pdf",
         "Sayfa": "13"
     },
@@ -106,7 +136,7 @@
         "Malzeme_Kodu": "BL1710",
         "Açıklama": "Çek Valf G 1/4 315 Bar",
         "Fiyat": "20,70",
-        "Para_Birimi": "EUR",
+        "Para_Birimi": "€",
         "Kaynak_Dosya": "Conexa Fiyat Listesi.pdf",
         "Sayfa": "13"
     },
@@ -115,8 +145,8 @@
         "Alt_Baslik": null,
         "Malzeme_Kodu": "BL1720",
         "Açıklama": "Çek Valf G 3/8 315 Bar",
-        "Fiyat": "23,45",
-        "Para_Birimi": "EUR",
+        "Fiyat": "22,02",
+        "Para_Birimi": "€",
         "Kaynak_Dosya": "Conexa Fiyat Listesi.pdf",
         "Sayfa": "13"
     },
@@ -125,8 +155,8 @@
         "Alt_Baslik": null,
         "Malzeme_Kodu": "BL1730",
         "Açıklama": "Çek Valf G 1/2 315 Bar",
-        "Fiyat": "27,01",
-        "Para_Birimi": "EUR",
+        "Fiyat": "25,94",
+        "Para_Birimi": "€",
         "Kaynak_Dosya": "Conexa Fiyat Listesi.pdf",
         "Sayfa": "13"
     },
@@ -136,7 +166,7 @@
         "Malzeme_Kodu": "BL1740",
         "Açıklama": "Çek Valf G 3/4 315 Bar",
         "Fiyat": "32,07",
-        "Para_Birimi": "EUR",
+        "Para_Birimi": "€",
         "Kaynak_Dosya": "Conexa Fiyat Listesi.pdf",
         "Sayfa": "13"
     },
@@ -145,8 +175,8 @@
         "Alt_Baslik": null,
         "Malzeme_Kodu": "BL1750",
         "Açıklama": "Çek Valf G 1 315 Bar",
-        "Fiyat": "39,24",
-        "Para_Birimi": "EUR",
+        "Fiyat": "42,60",
+        "Para_Birimi": "€",
         "Kaynak_Dosya": "Conexa Fiyat Listesi.pdf",
         "Sayfa": "13"
     },
@@ -155,8 +185,8 @@
         "Alt_Baslik": null,
         "Malzeme_Kodu": "BL1760",
         "Açıklama": "Çek Valf G 1 1/4 315 Bar",
-        "Fiyat": "42,46",
-        "Para_Birimi": "EUR",
+        "Fiyat": "48,74",
+        "Para_Birimi": "€",
         "Kaynak_Dosya": "Conexa Fiyat Listesi.pdf",
         "Sayfa": "13"
     },
@@ -165,8 +195,8 @@
         "Alt_Baslik": null,
         "Malzeme_Kodu": "BL1770",
         "Açıklama": "Çek Valf G 1 1/2 315 Bar",
-        "Fiyat": "48,74",
-        "Para_Birimi": "EUR",
+        "Fiyat": "71,54",
+        "Para_Birimi": "€",
         "Kaynak_Dosya": "Conexa Fiyat Listesi.pdf",
         "Sayfa": "13"
     },
@@ -175,8 +205,38 @@
         "Alt_Baslik": null,
         "Malzeme_Kodu": "BL1780",
         "Açıklama": "Çek Valf G 2 315 Bar",
-        "Fiyat": "66,16",
-        "Para_Birimi": "EUR",
+        "Fiyat": "77,12",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Conexa Fiyat Listesi.pdf",
+        "Sayfa": "13"
+    },
+    {
+        "Ana_Baslik": "DİŞLİ ÇİK VALFLER (RHV) İÇTEN SOMUNLU",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "BL1790",
+        "Açıklama": "Çek Valf G 2 1/2 315 Bar",
+        "Fiyat": "117,87",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Conexa Fiyat Listesi.pdf",
+        "Sayfa": "13"
+    },
+    {
+        "Ana_Baslik": "DİŞLİ ÇİK VALFLER (RHV) İÇTEN SOMUNLU",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "BL1800",
+        "Açıklama": "Çek Valf G 3 315 Bar",
+        "Fiyat": "184,12",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Conexa Fiyat Listesi.pdf",
+        "Sayfa": "13"
+    },
+    {
+        "Ana_Baslik": "DİŞLİ ÇİK VALFLER (RHV) İÇTEN SOMUNLU",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "BL1810",
+        "Açıklama": "Çek Valf G 4 315 Bar",
+        "Fiyat": "153,52",
+        "Para_Birimi": "€",
         "Kaynak_Dosya": "Conexa Fiyat Listesi.pdf",
         "Sayfa": "13"
     },
@@ -186,7 +246,7 @@
         "Malzeme_Kodu": "BL1800",
         "Açıklama": "Çek Valf G 1/8 315 Bar",
         "Fiyat": "20,70",
-        "Para_Birimi": "EUR",
+        "Para_Birimi": "€",
         "Kaynak_Dosya": "Conexa Fiyat Listesi.pdf",
         "Sayfa": "13"
     },
@@ -196,7 +256,7 @@
         "Malzeme_Kodu": "BL1810",
         "Açıklama": "Çek Valf G 1/4 315 Bar",
         "Fiyat": "20,70",
-        "Para_Birimi": "EUR",
+        "Para_Birimi": "€",
         "Kaynak_Dosya": "Conexa Fiyat Listesi.pdf",
         "Sayfa": "13"
     },
@@ -205,8 +265,8 @@
         "Alt_Baslik": null,
         "Malzeme_Kodu": "BL1820",
         "Açıklama": "Çek Valf G 3/8 315 Bar",
-        "Fiyat": "23,45",
-        "Para_Birimi": "EUR",
+        "Fiyat": "22,02",
+        "Para_Birimi": "€",
         "Kaynak_Dosya": "Conexa Fiyat Listesi.pdf",
         "Sayfa": "13"
     },
@@ -215,8 +275,8 @@
         "Alt_Baslik": null,
         "Malzeme_Kodu": "BL1830",
         "Açıklama": "Çek Valf G 1/2 315 Bar",
-        "Fiyat": "27,01",
-        "Para_Birimi": "EUR",
+        "Fiyat": "25,94",
+        "Para_Birimi": "€",
         "Kaynak_Dosya": "Conexa Fiyat Listesi.pdf",
         "Sayfa": "13"
     },
@@ -226,7 +286,7 @@
         "Malzeme_Kodu": "BL1840",
         "Açıklama": "Çek Valf G 3/4 315 Bar",
         "Fiyat": "32,07",
-        "Para_Birimi": "EUR",
+        "Para_Birimi": "€",
         "Kaynak_Dosya": "Conexa Fiyat Listesi.pdf",
         "Sayfa": "13"
     },
@@ -235,8 +295,8 @@
         "Alt_Baslik": null,
         "Malzeme_Kodu": "BL1850",
         "Açıklama": "Çek Valf G 1 315 Bar",
-        "Fiyat": "39,24",
-        "Para_Birimi": "EUR",
+        "Fiyat": "42,60",
+        "Para_Birimi": "€",
         "Kaynak_Dosya": "Conexa Fiyat Listesi.pdf",
         "Sayfa": "13"
     },
@@ -245,8 +305,8 @@
         "Alt_Baslik": null,
         "Malzeme_Kodu": "BL1860",
         "Açıklama": "Çek Valf G 1 1/4 315 Bar",
-        "Fiyat": "42,46",
-        "Para_Birimi": "EUR",
+        "Fiyat": "48,74",
+        "Para_Birimi": "€",
         "Kaynak_Dosya": "Conexa Fiyat Listesi.pdf",
         "Sayfa": "13"
     },
@@ -255,8 +315,8 @@
         "Alt_Baslik": null,
         "Malzeme_Kodu": "BL1870",
         "Açıklama": "Çek Valf G 1 1/2 315 Bar",
-        "Fiyat": "48,74",
-        "Para_Birimi": "EUR",
+        "Fiyat": "71,54",
+        "Para_Birimi": "€",
         "Kaynak_Dosya": "Conexa Fiyat Listesi.pdf",
         "Sayfa": "13"
     },
@@ -265,8 +325,38 @@
         "Alt_Baslik": null,
         "Malzeme_Kodu": "BL1880",
         "Açıklama": "Çek Valf G 2 315 Bar",
-        "Fiyat": "66,16",
-        "Para_Birimi": "EUR",
+        "Fiyat": "77,12",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Conexa Fiyat Listesi.pdf",
+        "Sayfa": "13"
+    },
+    {
+        "Ana_Baslik": "DİŞLİ ÇİK VALFLER (RHV) SOMUNSUZ DİŞLİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "BL1890",
+        "Açıklama": "Çek Valf G 2 1/2 315 Bar",
+        "Fiyat": "117,87",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Conexa Fiyat Listesi.pdf",
+        "Sayfa": "13"
+    },
+    {
+        "Ana_Baslik": "DİŞLİ ÇİK VALFLER (RHV) SOMUNSUZ DİŞLİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "BL1900",
+        "Açıklama": "Çek Valf G 3 315 Bar",
+        "Fiyat": "184,12",
+        "Para_Birimi": "€",
+        "Kaynak_Dosya": "Conexa Fiyat Listesi.pdf",
+        "Sayfa": "13"
+    },
+    {
+        "Ana_Baslik": "DİŞLİ ÇİK VALFLER (RHV) SOMUNSUZ DİŞLİ",
+        "Alt_Baslik": null,
+        "Malzeme_Kodu": "BL1910",
+        "Açıklama": "Çek Valf G 4 315 Bar",
+        "Fiyat": "153,52",
+        "Para_Birimi": "€",
         "Kaynak_Dosya": "Conexa Fiyat Listesi.pdf",
         "Sayfa": "13"
     }
