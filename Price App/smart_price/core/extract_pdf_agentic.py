@@ -133,6 +133,8 @@ def extract_from_pdf_agentic(
         current_header: list[str] | None = None
 
         for idx, ch in enumerate(doc.chunks, 1):  # chunk_type fark etmeksizin
+            if getattr(ch, "chunk_type", "") != "table_row":
+                continue
             text = getattr(ch, "text", "")
             if not text:
                 text = " ".join(
