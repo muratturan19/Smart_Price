@@ -525,6 +525,14 @@ def test_extract_from_pdf_default_currency(monkeypatch):
     pdfplumber_mod = sys.modules.get("pdfplumber")
     monkeypatch.setattr(pdfplumber_mod, "open", fake_open, raising=False)
 
+    import smart_price.core.extract_pdf as pdf_mod
+    called = {}
+    def fake_parse(path, page_range=None, **_kw):
+        called["path"] = path
+        import pandas as pd
+        return pd.DataFrame({"Açıklama": ["ItemA"], "Fiyat": [100.0]})
+    monkeypatch.setattr(pdf_mod.ocr_llm_fallback, "parse", fake_parse)
+
     result = extract_from_pdf("dummy.pdf")
     assert len(result) == 1
     assert result.iloc[0]["Para_Birimi"] == "₺"
@@ -544,6 +552,7 @@ def test_extract_from_pdf_default_currency(monkeypatch):
         "Image_Path",
     ]
     assert result.columns.tolist() == expected_cols
+    assert called.get("path") == "dummy.pdf"
 
 
 def test_extract_from_pdf_table_headers(monkeypatch):
@@ -584,6 +593,14 @@ def test_extract_from_pdf_table_headers(monkeypatch):
     pdfplumber_mod = sys.modules.get("pdfplumber")
     monkeypatch.setattr(pdfplumber_mod, "open", fake_open, raising=False)
 
+    import smart_price.core.extract_pdf as pdf_mod
+    called = {}
+    def fake_parse(path, page_range=None, **_kw):
+        called["path"] = path
+        import pandas as pd
+        return pd.DataFrame({"Açıklama": ["Elma", "Armut"], "Fiyat": [1000.50, 2500.75]})
+    monkeypatch.setattr(pdf_mod.ocr_llm_fallback, "parse", fake_parse)
+
     result = extract_from_pdf("dummy.pdf")
     assert len(result) == 2
     assert result.iloc[0]["Fiyat"] == 1000.50
@@ -603,6 +620,7 @@ def test_extract_from_pdf_table_headers(monkeypatch):
         "Image_Path",
     ]
     assert result.columns.tolist() == expected_cols
+    assert called.get("path") == "dummy.pdf"
 
 
 def test_extract_from_pdf_bytesio(monkeypatch):
@@ -642,6 +660,14 @@ def test_extract_from_pdf_bytesio(monkeypatch):
     pdfplumber_mod = sys.modules.get("pdfplumber")
     monkeypatch.setattr(pdfplumber_mod, "open", fake_open, raising=False)
 
+    import smart_price.core.extract_pdf as pdf_mod
+    called_parse = {}
+    def fake_parse(path, page_range=None, **_kw):
+        called_parse['path'] = path
+        import pandas as pd
+        return pd.DataFrame({"Açıklama": ["ItemZ"], "Fiyat": [55.0]})
+    monkeypatch.setattr(pdf_mod.ocr_llm_fallback, "parse", fake_parse)
+
     buf = io.BytesIO(b"pdf")
     logs = []
     result = extract_from_pdf(buf, filename="dummy.pdf", log=logs.append)
@@ -651,6 +677,7 @@ def test_extract_from_pdf_bytesio(monkeypatch):
     assert calls.get("args") == (buf,)
     assert any("Phase 1 parsed" in m for m in logs)
     assert calls.get("kwargs") == {}
+    assert called_parse.get('path') and called_parse['path'].endswith('.pdf')
 
 
 def test_merge_files_casts_to_string(monkeypatch):
