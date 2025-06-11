@@ -1,1 +1,644 @@
-Üzgünüm, ancak PDF içeriğini doğrudan işleyemem. Ancak, PDF'deki tabloyu manuel olarak inceleyip, yukarıdaki talimatlara göre JSON formatında bir çıktı oluşturabilirim. Lütfen tabloyu metin olarak sağlarsanız, size yardımcı olabilirim.
+```json
+[
+  {
+    "Ana_Baslik": "SCHEFFER ALMAN MALI KOMPAKT TEK TELLİ HİDROLİK HORTUMLAR",
+    "Alt_Baslik": null,
+    "Malzeme_Kodu": "SP210",
+    "Açıklama": "Kompakt Tek Telli Hidrolik Hortum 3/8\"DN10 TSC-EN857 330 Bar",
+    "Fiyat": "6,02",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "57"
+  },
+  {
+    "Ana_Baslik": "SCHEFFER ALMAN MALI KOMPAKT TEK TELLİ HİDROLİK HORTUMLAR",
+    "Alt_Baslik": null,
+    "Malzeme_Kodu": "SP215",
+    "Açıklama": "Kompakt Tek Telli Hidrolik Hortum 1/2\"DN12 TSC-EN857 275 Bar",
+    "Fiyat": "4,04",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "57"
+  },
+  {
+    "Ana_Baslik": "SCHEFFER ALMAN MALI KOMPAKT TEK TELLİ HİDROLİK HORTUMLAR",
+    "Alt_Baslik": null,
+    "Malzeme_Kodu": "SP220",
+    "Açıklama": "Kompakt Tek Telli Hidrolik Hortum 5/8\"DN16 TSC-EN857 225 Bar",
+    "Fiyat": "3,70",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "57"
+  },
+  {
+    "Ana_Baslik": "SCHEFFER ALMAN MALI KOMPAKT TEK TELLİ HİDROLİK HORTUMLAR",
+    "Alt_Baslik": null,
+    "Malzeme_Kodu": "SP225",
+    "Açıklama": "Kompakt Tek Telli Hidrolik Hortum 3/4\"DN19 TSC-EN857 225 Bar",
+    "Fiyat": "5,01",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "57"
+  },
+  {
+    "Ana_Baslik": "SCHEFFER ALMAN MALI KOMPAKT TEK TELLİ HİDROLİK HORTUMLAR",
+    "Alt_Baslik": null,
+    "Malzeme_Kodu": "SP230",
+    "Açıklama": "Kompakt Tek Telli Hidrolik Hortum 1\"DN25 TSC-EN857 200 Bar",
+    "Fiyat": "7,06",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "57"
+  },
+  {
+    "Ana_Baslik": "SCHEFFER ALMAN MALI KOMPAKT İKİ TELLİ HİDROLİK HORTUMLAR",
+    "Alt_Baslik": null,
+    "Malzeme_Kodu": "SP240",
+    "Açıklama": "Kompakt İki Telli Hidrolik Hortum 1/4\"DN06 25C-EN857",
+    "Fiyat": "6,02",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "57"
+  },
+  {
+    "Ana_Baslik": "SCHEFFER ALMAN MALI KOMPAKT İKİ TELLİ HİDROLİK HORTUMLAR",
+    "Alt_Baslik": null,
+    "Malzeme_Kodu": "SP245",
+    "Açıklama": "Kompakt İki Telli Hidrolik Hortum 5/16\"DN08 25C-EN857",
+    "Fiyat": "6,02",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "57"
+  },
+  {
+    "Ana_Baslik": "SCHEFFER ALMAN MALI KOMPAKT İKİ TELLİ HİDROLİK HORTUMLAR",
+    "Alt_Baslik": null,
+    "Malzeme_Kodu": "SP250",
+    "Açıklama": "Kompakt İki Telli Hidrolik Hortum 3/8\"DN10 25C-EN857",
+    "Fiyat": "7,42",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "57"
+  },
+  {
+    "Ana_Baslik": "SCHEFFER ALMAN MALI KOMPAKT İKİ TELLİ HİDROLİK HORTUMLAR",
+    "Alt_Baslik": null,
+    "Malzeme_Kodu": "SP260",
+    "Açıklama": "Kompakt İki Telli Hidrolik Hortum 1/2\"DN12 25C-EN857",
+    "Fiyat": "7,42",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "57"
+  },
+  {
+    "Ana_Baslik": "SCHEFFER ALMAN MALI KOMPAKT İKİ TELLİ HİDROLİK HORTUMLAR",
+    "Alt_Baslik": null,
+    "Malzeme_Kodu": "SP265",
+    "Açıklama": "Kompakt İki Telli Hidrolik Hortum 5/8\"DN16 25C-EN857",
+    "Fiyat": "9,27",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "57"
+  },
+  {
+    "Ana_Baslik": "SCHEFFER ALMAN MALI KOMPAKT İKİ TELLİ HİDROLİK HORTUMLAR",
+    "Alt_Baslik": null,
+    "Malzeme_Kodu": "SP270",
+    "Açıklama": "Kompakt İki Telli Hidrolik Hortum 3/4\"DN19 25C-EN857",
+    "Fiyat": "12,04",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "57"
+  },
+  {
+    "Ana_Baslik": "TEK TELLİ (1SN) VE İKİ TELLİ (2SN) SOMTAŞ® TIP HORTUM SOKETLERİ",
+    "Alt_Baslik": "VOSSNIKEL",
+    "Malzeme_Kodu": "VW000",
+    "Açıklama": "Hortum Soket 3/8 13011-08",
+    "Fiyat": "0,84",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "57"
+  },
+  {
+    "Ana_Baslik": "TEK TELLİ (1SN) VE İKİ TELLİ (2SN) SOMTAŞ® TIP HORTUM SOKETLERİ",
+    "Alt_Baslik": "VOSSNIKEL",
+    "Malzeme_Kodu": "VW005",
+    "Açıklama": "Hortum Soket 3/8 13011-10",
+    "Fiyat": "0,84",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "57"
+  },
+  {
+    "Ana_Baslik": "TEK TELLİ (1SN) VE İKİ TELLİ (2SN) SOMTAŞ® TIP HORTUM SOKETLERİ",
+    "Alt_Baslik": "VOSSNIKEL",
+    "Malzeme_Kodu": "VW010",
+    "Açıklama": "Hortum Soket 3/8 13011-12",
+    "Fiyat": "1,04",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "57"
+  },
+  {
+    "Ana_Baslik": "TEK TELLİ (1SN) VE İKİ TELLİ (2SN) SOMTAŞ® TIP HORTUM SOKETLERİ",
+    "Alt_Baslik": "VOSSNIKEL",
+    "Malzeme_Kodu": "VW015",
+    "Açıklama": "Hortum Soket 3/8 13011-13",
+    "Fiyat": "1,04",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "57"
+  },
+  {
+    "Ana_Baslik": "TEK TELLİ (1SN) VE İKİ TELLİ (2SN) SOMTAŞ® TIP HORTUM SOKETLERİ",
+    "Alt_Baslik": "VOSSNIKEL",
+    "Malzeme_Kodu": "VW020",
+    "Açıklama": "Hortum Soket 3/8 13011-16",
+    "Fiyat": "1,14",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "57"
+  },
+  {
+    "Ana_Baslik": "TEK TELLİ (1SN) VE İKİ TELLİ (2SN) SOMTAŞ® TIP HORTUM SOKETLERİ",
+    "Alt_Baslik": "VOSSNIKEL",
+    "Malzeme_Kodu": "VW025",
+    "Açıklama": "Hortum Soket 3/8 13011-20",
+    "Fiyat": "1,14",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "57"
+  },
+  {
+    "Ana_Baslik": "TEK TELLİ (1SN) VE İKİ TELLİ (2SN) SOMTAŞ® TIP HORTUM SOKETLERİ",
+    "Alt_Baslik": "VOSSNIKEL",
+    "Malzeme_Kodu": "VW030",
+    "Açıklama": "Hortum Soket 3/8 13011-25",
+    "Fiyat": "1,14",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "57"
+  },
+  {
+    "Ana_Baslik": "TEK TELLİ (1SN) VE İKİ TELLİ (2SN) SOMTAŞ® TIP HORTUM SOKETLERİ",
+    "Alt_Baslik": "VOSSNIKEL",
+    "Malzeme_Kodu": "VW035",
+    "Açıklama": "Hortum Soket 3/8 13011-32",
+    "Fiyat": "1,14",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "57"
+  },
+  {
+    "Ana_Baslik": "TEK TELLİ (1SN) VE İKİ TELLİ (2SN) SOMTAŞ® TIP HORTUM SOKETLERİ",
+    "Alt_Baslik": "VOSSNIKEL",
+    "Malzeme_Kodu": "VW040",
+    "Açıklama": "Hortum Soket 3/8 13011-40",
+    "Fiyat": "1,14",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "57"
+  },
+  {
+    "Ana_Baslik": "TEK TELLİ (1SN) VE İKİ TELLİ (2SN) SOMTAŞ® TIP HORTUM SOKETLERİ",
+    "Alt_Baslik": "VOSSNIKEL",
+    "Malzeme_Kodu": "VW045",
+    "Açıklama": "Hortum Soket 3/8 13011-50",
+    "Fiyat": "1,14",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "57"
+  },
+  {
+    "Ana_Baslik": "DÖRT TELLİ (4SP) SOMTAŞ® TIP HORTUM SOKETLERİ",
+    "Alt_Baslik": "VOSSNIKEL",
+    "Malzeme_Kodu": "VW050",
+    "Açıklama": "Hortum Soket 3/4 15011-06",
+    "Fiyat": "1,44",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "57"
+  },
+  {
+    "Ana_Baslik": "DÖRT TELLİ (4SP) SOMTAŞ® TIP HORTUM SOKETLERİ",
+    "Alt_Baslik": "VOSSNIKEL",
+    "Malzeme_Kodu": "VW055",
+    "Açıklama": "Hortum Soket 3/4 15011-08",
+    "Fiyat": "1,44",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "57"
+  },
+  {
+    "Ana_Baslik": "DÖRT TELLİ (4SP) SOMTAŞ® TIP HORTUM SOKETLERİ",
+    "Alt_Baslik": "VOSSNIKEL",
+    "Malzeme_Kodu": "VW060",
+    "Açıklama": "Hortum Soket 3/4 15011-10",
+    "Fiyat": "1,44",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "57"
+  },
+  {
+    "Ana_Baslik": "DÖRT TELLİ (4SP) SOMTAŞ® TIP HORTUM SOKETLERİ",
+    "Alt_Baslik": "VOSSNIKEL",
+    "Malzeme_Kodu": "VW065",
+    "Açıklama": "Hortum Soket 3/4 15011-12",
+    "Fiyat": "2,10",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "57"
+  },
+  {
+    "Ana_Baslik": "DÖRT TELLİ (4SP) SOMTAŞ® TIP HORTUM SOKETLERİ",
+    "Alt_Baslik": "VOSSNIKEL",
+    "Malzeme_Kodu": "VW070",
+    "Açıklama": "Hortum Soket 3/4 15011-16",
+    "Fiyat": "2,10",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "57"
+  },
+  {
+    "Ana_Baslik": "DÖRT TELLİ (4SP) SOMTAŞ® TIP HORTUM SOKETLERİ",
+    "Alt_Baslik": "VOSSNIKEL",
+    "Malzeme_Kodu": "VW075",
+    "Açıklama": "Hortum Soket 3/4 15011-20",
+    "Fiyat": "2,10",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "57"
+  },
+  {
+    "Ana_Baslik": "DÖRT TELLİ (4SP) SOMTAŞ® TIP HORTUM SOKETLERİ",
+    "Alt_Baslik": "VOSSNIKEL",
+    "Malzeme_Kodu": "VW080",
+    "Açıklama": "Hortum Soket 3/4 15011-25",
+    "Fiyat": "2,10",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "57"
+  },
+  {
+    "Ana_Baslik": "DÖRT TELLİ (4SP) SOMTAŞ® TIP HORTUM SOKETLERİ",
+    "Alt_Baslik": "VOSSNIKEL",
+    "Malzeme_Kodu": "VW085",
+    "Açıklama": "Hortum Soket 3/4 15011-32",
+    "Fiyat": "7,06",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "57"
+  },
+  {
+    "Ana_Baslik": "DÖRT TELLİ (4SP) SOMTAŞ® TIP HORTUM SOKETLERİ",
+    "Alt_Baslik": "VOSSNIKEL",
+    "Malzeme_Kodu": "VW090",
+    "Açıklama": "Hortum Soket 3/4 15011-40",
+    "Fiyat": "7,06",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "57"
+  },
+  {
+    "Ana_Baslik": "DÖRT TELLİ (4SP) SOMTAŞ® TIP HORTUM SOKETLERİ",
+    "Alt_Baslik": "VOSSNIKEL",
+    "Malzeme_Kodu": "VW095",
+    "Açıklama": "Hortum Soket 3/4 15011-50",
+    "Fiyat": "7,06",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "57"
+  },
+  {
+    "Ana_Baslik": "DÖRT TELLİ (4SH) SOMTAŞ® TIP HORTUM SOKETLERİ",
+    "Alt_Baslik": "VOSSNIKEL",
+    "Malzeme_Kodu": "VW100",
+    "Açıklama": "Hortum Soket 3/4 15542-06",
+    "Fiyat": "7,16",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "57"
+  },
+  {
+    "Ana_Baslik": "DÖRT TELLİ (4SH) SOMTAŞ® TIP HORTUM SOKETLERİ",
+    "Alt_Baslik": "VOSSNIKEL",
+    "Malzeme_Kodu": "VW105",
+    "Açıklama": "Hortum Soket 3/4 15542-08",
+    "Fiyat": "7,16",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "57"
+  },
+  {
+    "Ana_Baslik": "DÖRT TELLİ (4SH) SOMTAŞ® TIP HORTUM SOKETLERİ",
+    "Alt_Baslik": "VOSSNIKEL",
+    "Malzeme_Kodu": "VW110",
+    "Açıklama": "Hortum Soket 3/4 15542-10",
+    "Fiyat": "7,16",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "57"
+  },
+  {
+    "Ana_Baslik": "DÖRT TELLİ (4SH) SOMTAŞ® TIP HORTUM SOKETLERİ",
+    "Alt_Baslik": "VOSSNIKEL",
+    "Malzeme_Kodu": "VW115",
+    "Açıklama": "Hortum Soket 3/4 15542-12",
+    "Fiyat": "9,27",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "57"
+  },
+  {
+    "Ana_Baslik": "DÖRT TELLİ (4SH) SOMTAŞ® TIP HORTUM SOKETLERİ",
+    "Alt_Baslik": "VOSSNIKEL",
+    "Malzeme_Kodu": "VW120",
+    "Açıklama": "Hortum Soket 3/4 15542-16",
+    "Fiyat": "9,27",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "57"
+  },
+  {
+    "Ana_Baslik": "DÖRT TELLİ (4SH) SOMTAŞ® TIP HORTUM SOKETLERİ",
+    "Alt_Baslik": "VOSSNIKEL",
+    "Malzeme_Kodu": "VW125",
+    "Açıklama": "Hortum Soket 3/4 15542-20",
+    "Fiyat": "23,54",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "57"
+  },
+  {
+    "Ana_Baslik": "2SN 225' E UYGUN VOSS TIPİ 24° STANDART O-HALKA SOMUNLU HORTUM BAŞLIKLARI",
+    "Alt_Baslik": "VOSSNIKEL",
+    "Malzeme_Kodu": "VW1005",
+    "Açıklama": "Düz Somunlu Bağlantı 1/4 24° – M12*1.5 11241-0005",
+    "Fiyat": "1,90",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "57"
+  },
+  {
+    "Ana_Baslik": "2SN 225' E UYGUN VOSS TIPİ 24° STANDART O-HALKA SOMUNLU HORTUM BAŞLIKLARI",
+    "Alt_Baslik": "VOSSNIKEL",
+    "Malzeme_Kodu": "VW1010",
+    "Açıklama": "Düz Somunlu Bağlantı 5/16 24° – M14*1.5 11241-0006",
+    "Fiyat": "1,90",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "57"
+  },
+  {
+    "Ana_Baslik": "2SN 225' E UYGUN VOSS TIPİ 24° STANDART O-HALKA SOMUNLU HORTUM BAŞLIKLARI",
+    "Alt_Baslik": "VOSSNIKEL",
+    "Malzeme_Kodu": "VW1015",
+    "Açıklama": "Düz Somunlu Bağlantı 3/8 24° – M16*1.5 11241-0008",
+    "Fiyat": "2,10",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "57"
+  },
+  {
+    "Ana_Baslik": "2SN 225' E UYGUN VOSS TIPİ 24° STANDART O-HALKA SOMUNLU HORTUM BAŞLIKLARI",
+    "Alt_Baslik": "VOSSNIKEL",
+    "Malzeme_Kodu": "VW1020",
+    "Açıklama": "Düz Somunlu Bağlantı 1/2 24° – M18*1.5 11241-0010",
+    "Fiyat": "2,10",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "57"
+  },
+  {
+    "Ana_Baslik": "2SN 225' E UYGUN VOSS TIPİ 24° STANDART O-HALKA SOMUNLU HORTUM BAŞLIKLARI",
+    "Alt_Baslik": "VOSSNIKEL",
+    "Malzeme_Kodu": "VW1025",
+    "Açıklama": "Düz Somunlu Bağlantı 5/8 24° – M22*1.5 11241-0012",
+    "Fiyat": "2,10",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "57"
+  },
+  {
+    "Ana_Baslik": "2SN 225' E UYGUN VOSS TIPİ 24° STANDART O-HALKA SOMUNLU HORTUM BAŞLIKLARI",
+    "Alt_Baslik": "VOSSNIKEL",
+    "Malzeme_Kodu": "VW1030",
+    "Açıklama": "Düz Somunlu Bağlantı 3/4 24° – M27*1.5 11241-0016",
+    "Fiyat": "2,10",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "57"
+  },
+  {
+    "Ana_Baslik": "2SN 225' E UYGUN VOSS TIPİ 24° STANDART O-HALKA SOMUNLU HORTUM BAŞLIKLARI",
+    "Alt_Baslik": "VOSSNIKEL",
+    "Malzeme_Kodu": "VW1035",
+    "Açıklama": "Düz Somunlu Bağlantı 1 24° – M33*2 11241-0020",
+    "Fiyat": "2,10",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "57"
+  },
+  {
+    "Ana_Baslik": "2SN 225' E UYGUN VOSS TIPİ 24° STANDART O-HALKA SOMUNLU HORTUM BAŞLIKLARI",
+    "Alt_Baslik": "VOSSNIKEL",
+    "Malzeme_Kodu": "VW1040",
+    "Açıklama": "Düz Somunlu Bağlantı 1 1/4 24° – M42*2 11241-0025",
+    "Fiyat": "2,10",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "57"
+  },
+  {
+    "Ana_Baslik": "2SN 225' E UYGUN VOSS TIPİ 24° STANDART O-HALKA SOMUNLU HORTUM BAŞLIKLARI",
+    "Alt_Baslik": "VOSSNIKEL",
+    "Malzeme_Kodu": "VW1045",
+    "Açıklama": "Düz Somunlu Bağlantı 1 1/2 24° – M48*2 11241-0030",
+    "Fiyat": "2,10",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "57"
+  },
+  {
+    "Ana_Baslik": "2SN 225' E UYGUN VOSS TIPİ 24° STANDART O-HALKA SOMUNLU HORTUM BAŞLIKLARI",
+    "Alt_Baslik": "VOSSNIKEL",
+    "Malzeme_Kodu": "VW1050",
+    "Açıklama": "Düz Somunlu Bağlantı 2 24° – M60*2 11241-0036",
+    "Fiyat": "2,10",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "57"
+  },
+  {
+    "Ana_Baslik": "2SN 225' E UYGUN VOSS TIPİ 24° STANDART O-HALKA SOMUNLU HORTUM BAŞLIKLARI",
+    "Alt_Baslik": "VOSSNIKEL",
+    "Malzeme_Kodu": "VW1055",
+    "Açıklama": "Düz Somunlu Bağlantı 1/4 385 – M12*1.5 11241-4005",
+    "Fiyat": "6,02",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "57"
+  },
+  {
+    "Ana_Baslik": "2SN 225' E UYGUN VOSS TIPİ 24° STANDART O-HALKA SOMUNLU HORTUM BAŞLIKLARI",
+    "Alt_Baslik": "VOSSNIKEL",
+    "Malzeme_Kodu": "VW1060",
+    "Açıklama": "Düz Somunlu Bağlantı 5/16 385 – M14*1.5 11241-4006",
+    "Fiyat": "6,02",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "57"
+  },
+  {
+    "Ana_Baslik": "2SN 225' E UYGUN VOSS TIPİ 24° STANDART O-HALKA SOMUNLU HORTUM BAŞLIKLARI",
+    "Alt_Baslik": "VOSSNIKEL",
+    "Malzeme_Kodu": "VW1065",
+    "Açıklama": "Düz Somunlu Bağlantı 3/8 385 – M16*1.5 11241-4008",
+    "Fiyat": "6,02",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "57"
+  },
+  {
+    "Ana_Baslik": "2SN 225' E UYGUN VOSS TIPİ 24° STANDART O-HALKA SOMUNLU HORTUM BAŞLIKLARI",
+    "Alt_Baslik": "VOSSNIKEL",
+    "Malzeme_Kodu": "VW1070",
+    "Açıklama": "Düz Somunlu Bağlantı 1/2 385 – M18*1.5 11241-4010",
+    "Fiyat": "6,02",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "57"
+  },
+  {
+    "Ana_Baslik": "2SN 225' E UYGUN VOSS TIPİ 24° STANDART O-HALKA SOMUNLU HORTUM BAŞLIKLARI",
+    "Alt_Baslik": "VOSSNIKEL",
+    "Malzeme_Kodu": "VW1075",
+    "Açıklama": "Düz Somunlu Bağlantı 5/8 385 – M22*1.5 11241-4012",
+    "Fiyat": "6,02",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "57"
+  },
+  {
+    "Ana_Baslik": "2SN 225' E UYGUN VOSS TIPİ 24° STANDART O-HALKA SOMUNLU HORTUM BAŞLIKLARI",
+    "Alt_Baslik": "VOSSNIKEL",
+    "Malzeme_Kodu": "VW1080",
+    "Açıklama": "Düz Somunlu Bağlantı 3/4 385 – M27*1.5 11241-4016",
+    "Fiyat": "6,02",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "57"
+  },
+  {
+    "Ana_Baslik": "2SN 225' E UYGUN VOSS TIPİ 24° STANDART O-HALKA SOMUNLU HORTUM BAŞLIKLARI",
+    "Alt_Baslik": "VOSSNIKEL",
+    "Malzeme_Kodu": "VW1085",
+    "Açıklama": "Düz Somunlu Bağlantı 1 385 – M33*2 11241-4020",
+    "Fiyat": "6,02",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "57"
+  },
+  {
+    "Ana_Baslik": "2SN 225' E UYGUN VOSS TIPİ 24° STANDART O-HALKA SOMUNLU HORTUM BAŞLIKLARI",
+    "Alt_Baslik": "VOSSNIKEL",
+    "Malzeme_Kodu": "VW1090",
+    "Açıklama": "Düz Somunlu Bağlantı 1 1/4 385 – M42*2 11241-4025",
+    "Fiyat": "6,02",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "57"
+  },
+  {
+    "Ana_Baslik": "2SN 225' E UYGUN VOSS TIPİ 24° STANDART O-HALKA SOMUNLU HORTUM BAŞLIKLARI",
+    "Alt_Baslik": "VOSSNIKEL",
+    "Malzeme_Kodu": "VW1095",
+    "Açıklama": "Düz Somunlu Bağlantı 1 1/2 385 – M48*2 11241-4030",
+    "Fiyat": "6,02",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "57"
+  },
+  {
+    "Ana_Baslik": "2SN 225' E UYGUN VOSS TIPİ 24° STANDART O-HALKA SOMUNLU HORTUM BAŞLIKLARI",
+    "Alt_Baslik": "VOSSNIKEL",
+    "Malzeme_Kodu": "VW1100",
+    "Açıklama": "Düz Somunlu Bağlantı 2 385 – M60*2 11241-4036",
+    "Fiyat": "6,02",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "57"
+  },
+  {
+    "Ana_Baslik": "2SN 225' E UYGUN VOSS TIPİ 24° STANDART O-HALKA SOMUNLU HORTUM BAŞLIKLARI",
+    "Alt_Baslik": "VOSSNIKEL",
+    "Malzeme_Kodu": "VW1105",
+    "Açıklama": "Düz Somunlu Bağlantı 1/4 385 – M12*1.5 11241-0005",
+    "Fiyat": "2,10",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "57"
+  },
+  {
+    "Ana_Baslik": "2SN 225' E UYGUN VOSS TIPİ 24° STANDART O-HALKA SOMUNLU HORTUM BAŞLIKLARI",
+    "Alt_Baslik": "VOSSNIKEL",
+    "Malzeme_Kodu": "VW1110",
+    "Açıklama": "Düz Somunlu Bağlantı 5/16 385 – M14*1.5 11241-0006",
+    "Fiyat": "2,10",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "57"
+  },
+  {
+    "Ana_Baslik": "2SN 225' E UYGUN VOSS TIPİ 24° STANDART O-HALKA SOMUNLU HORTUM BAŞLIKLARI",
+    "Alt_Baslik": "VOSSNIKEL",
+    "Malzeme_Kodu": "VW1115",
+    "Açıklama": "Düz Somunlu Bağlantı 3/8 385 – M16*1.5 11241-0008",
+    "Fiyat": "2,10",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "57"
+  },
+  {
+    "Ana_Baslik": "2SN 225' E UYGUN VOSS TIPİ 24° STANDART O-HALKA SOMUNLU HORTUM BAŞLIKLARI",
+    "Alt_Baslik": "VOSSNIKEL",
+    "Malzeme_Kodu": "VW1120",
+    "Açıklama": "Düz Somunlu Bağlantı 1/2 385 – M18*1.5 11241-0010",
+    "Fiyat": "2,10",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "57"
+  },
+  {
+    "Ana_Baslik": "2SN 225' E UYGUN VOSS TIPİ 24° STANDART O-HALKA SOMUNLU HORTUM BAŞLIKLARI",
+    "Alt_Baslik": "VOSSNIKEL",
+    "Malzeme_Kodu": "VW1125",
+    "Açıklama": "Düz Somunlu Bağlantı 5/8 385 – M22*1.5 11241-0012",
+    "Fiyat": "2,10",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "57"
+  },
+  {
+    "Ana_Baslik": "2SN 225' E UYGUN VOSS TIPİ 24° STANDART O-HALKA SOMUNLU HORTUM BAŞLIKLARI",
+    "Alt_Baslik": "VOSSNIKEL",
+    "Malzeme_Kodu": "VW1130",
+    "Açıklama": "Düz Somunlu Bağlantı 3/4 385 – M27*1.5 11241-0016",
+    "Fiyat": "2,10",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "57"
+  },
+  {
+    "Ana_Baslik": "2SN 225' E UYGUN VOSS TIPİ 24° STANDART O-HALKA SOMUNLU HORTUM BAŞLIKLARI",
+    "Alt_Baslik": "VOSSNIKEL",
+    "Malzeme_Kodu": "VW1135",
+    "Açıklama": "Düz Somunlu Bağlantı 1 385 – M33*2 11241-0020",
+    "Fiyat": "2,10",
+    "Para_Birimi": "€",
+    "Kaynak_Dosya": "Fiyat Listesi.pdf",
+    "Sayfa": "57"
+  }
+]
+```
