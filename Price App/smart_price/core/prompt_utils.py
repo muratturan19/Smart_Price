@@ -44,11 +44,13 @@ def _parse_md_guide(path: Path) -> List[Dict[str, Any]]:
                 continue
             if in_code:
                 continue
+            if lstripped.startswith("###") or "JSON" in lstripped.upper():
+                break
             if lstripped.startswith("#"):
                 continue
-            if "JSON" in lstripped.upper():
-                break
-            cleaned.append(ln)
+            if lstripped.startswith(('-', '*')):
+                lstripped = lstripped.lstrip('-*').strip()
+            cleaned.append(lstripped)
         body = "\n".join(cleaned).strip()
         result.append({"pdf": title, "page": None, "prompt": body})
 
