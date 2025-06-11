@@ -233,69 +233,7 @@ def extract_from_pdf(
         excerpt = text[:200].replace("\n", " ")
         logger.debug("Using model %s on text excerpt: %r", model_name, excerpt)
 
-        prompt = """
-Sen bir PDF fiyat listesi analiz asistanısın. Amacın, PDF’lerdeki ürün tablosu/ürün satırlarını ve bunların üst başlıklarını tam olarak, eksiksiz ve yapısal şekilde çıkarmaktır.
-
-**Çalışma Akışın:**
-
-1. **Her PDF için, özel extraction talimatları olup olmadığını kontrol etmelisin:**
-    - Sistemde “extraction_guide” adında bir referans dosyası olabilir.
-    - Eğer bu dosya mevcutsa ve işlediğin PDF’ye (veya sayfa/alanına) ait özel bir extraction promptu/talimatı varsa, önce bu talimata uygun şekilde çıkarım yap.
-    - Eğer dosyada talimat bulunamazsa veya extraction_guide dosyası hiç yoksa, aşağıdaki _Genel Extraction Talimatları_ ile devam et.
-
-2. **Dosya veya talimat yoksa, hata verme; genel kurallarla standart extraction yap.**
-
----
-
-### **Genel Extraction Talimatları:**
-
-- Her ürün satırının;
-    - Hangi ana başlık altında olduğunu (“Ana_Baslik”)
-    - Hangi alt başlık altında olduğunu (“Alt_Baslik” – varsa)
-    - Ürün kodu, fiyatı, açıklaması/özellikleri, varsa adet, birim, para birimi, kutu adedi, marka gibi tüm alanlarını
-    - PDF dosya adı (“Kaynak_Dosya”) ve sayfa numarasını (“Sayfa”)
-    açık şekilde ayrıştır.
-
-- Tablo başlıklarını, alt başlıkları, genel açıklamaları **veri satırı olarak alma**;
-  sadece gerçek ürün satırlarını çıkart.
-
-- Çıktı formatın JSON dizi olacak.
-  Her veri satırı için:
-    - Ana_Baslik (zorunlu)
-    - Alt_Baslik (varsa, zorunlu değil)
-    - Malzeme_Kodu (zorunlu)
-    - Açıklama/Özellikler (varsa)
-    - Fiyat (zorunlu)
-    - Para_Birimi (yoksa “TL” yaz)
-    - Kaynak_Dosya
-    - Sayfa
-    - (Varsa ek alanlar: Adet, Birim, Marka, Kutu_Adedi...)
-
----
-
-### **Extraction_guide Kullanımı:**
-- extraction_guide adlı dosya varsa, PDF başlığına veya dosya adına uygun talimatı uygula.
-- Bulamazsan veya extraction_guide yoksa, bu prompttaki _Genel Extraction Talimatları_ ile çalış.
-
----
-
-### **Çıktı Örneği:**
-
-```
-[
-  {
-    "Ana_Baslik": "IE3 ALÜMİNYUM GÖVDELİ IEC 3~FAZLI ASENKRON ELEKTRİK MOTORLARI",
-    "Alt_Baslik": "2k-3000 d/dak",
-    "Malzeme_Kodu": "3MAS 80MA2",
-    "Açıklama": "0.55 KW",
-    "Fiyat": "110,00",
-    "Para_Birimi": "USD",
-    "Kaynak_Dosya": "Omega Motor Fiyat Listesi 2025.pdf",
-    "Sayfa": "14"
-  }
-]
-```
-        """
+        prompt = ocr_llm_fallback.DEFAULT_PROMPT
 
         save_debug("llm_prompt", 1, prompt)
 

@@ -182,7 +182,7 @@ def test_llm_prompt_and_clean(monkeypatch):
 
     result = func('sample')
     assert cleaned == ['[{"name":"A","price":"4"}]']
-    assert 'Extraction_guide Kullanımı' in captured_prompt[0]
+    assert captured_prompt[0] == ep.ocr_llm_fallback.DEFAULT_PROMPT
     assert result == [{
         'Malzeme_Adi': 'A',
         'Fiyat': 4.0,
