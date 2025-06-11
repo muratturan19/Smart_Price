@@ -77,6 +77,7 @@ def big_alert(message: str, *, level: str = "info", icon: str | None = None) -> 
     # parameter was removed in newer Streamlit versions.  To maintain the custom
     # HTML formatting we always use ``st.markdown``.
 
+    import streamlit as st
     if icon:
         with open(icon, "rb") as img_file:
             icon_b64 = base64.b64encode(img_file.read()).decode("utf-8")

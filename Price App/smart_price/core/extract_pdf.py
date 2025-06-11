@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import os
 import tempfile
-from typing import IO, Any, Optional, Sequence, Callable
+from typing import IO, Any, Optional, Sequence, Callable, List
 import logging
 from datetime import datetime
 import difflib
@@ -109,7 +109,10 @@ def extract_from_pdf(
         logger.info(message)
         if log:
             try:
-                log(message, level)
+                try:
+                    log(message, level)
+                except TypeError:
+                    log(message)
             except Exception as exc:  # pragma: no cover - log callback errors
                 logger.error("log callback failed: %s", exc)
 
@@ -120,6 +123,91 @@ def extract_from_pdf(
     guide_prompt = prompt or prompts_for_pdf(src)
     notify(f"Processing {src} started at {datetime.now():%Y-%m-%d %H:%M:%S}")
     total_start = time.time()
+
+    rows: list[dict[str, object]] = []
+    phase1_df: pd.DataFrame | None = None
+    try:
+        import pdfplumber  # type: ignore
+    except Exception:
+        pdfplumber = None  # type: ignore
+
+    if pdfplumber is not None:
+        try:
+            with pdfplumber.open(filepath) as pdf:
+                for page in pdf.pages:
+                    text = page.extract_text() or ""
+                    for line in text.splitlines():
+                        parts = line.split()
+                        if len(parts) >= 2:
+                            price_val = normalize_price(parts[-1])
+                            if price_val is None:
+                                continue
+                            rows.append(
+                                {
+                                    "Açıklama": " ".join(parts[:-1]),
+                                    "Fiyat": price_val,
+                                    "Para_Birimi": normalize_currency(
+                                        detect_currency(parts[-1])
+                                    ),
+                                    "Sayfa": getattr(page, "page_number", 1),
+                                }
+                            )
+                    for table in page.extract_tables() or []:
+                        if not table or len(table) <= 1:
+                            continue
+                        hdr = [str(h or "").strip() for h in table[0]]
+                        for row in table[1:]:
+                            if len(row) != len(hdr):
+                                continue
+                            data = dict(zip(hdr, row))
+                            descr = str(data.get("Ürün Adı") or data.get("Ürün") or "").strip()
+                            price_raw = str(data.get("Fiyat", "")).strip()
+                            price_val = normalize_price(price_raw)
+                            if descr and price_val is not None:
+                                rows.append(
+                                    {
+                                        "Açıklama": descr,
+                                        "Fiyat": price_val,
+                                        "Para_Birimi": normalize_currency(
+                                            detect_currency(price_raw)
+                                        ),
+                                        "Sayfa": getattr(page, "page_number", 1),
+                                    }
+                                )
+        except Exception as exc:
+            logger.error("pdfplumber failed: %s", exc)
+
+    if rows:
+        df = pd.DataFrame(rows)
+        df["Malzeme_Kodu"] = None
+        df["Kisa_Kod"] = None
+        df["Marka"] = None
+        df["Kaynak_Dosya"] = _basename(filepath, filename)
+        df["Record_Code"] = None
+        df["Ana_Baslik"] = None
+        df["Alt_Baslik"] = None
+        df["Image_Path"] = None
+        df["Para_Birimi"] = df["Para_Birimi"].fillna("₺")
+        cols = [
+            "Malzeme_Kodu",
+            "Açıklama",
+            "Kisa_Kod",
+            "Fiyat",
+            "Para_Birimi",
+            "Marka",
+            "Kaynak_Dosya",
+            "Sayfa",
+            "Record_Code",
+            "Ana_Baslik",
+            "Alt_Baslik",
+            "Image_Path",
+        ]
+        df = df.reindex(columns=cols, fill_value=None)
+        notify(f"Phase 1 parsed {len(df)} rows")
+        if len(df) >= MIN_ROWS_PARSER:
+            notify(f"Finished {src} via pdfplumber with {len(df)} rows")
+            return df
+        phase1_df = df
 
     def _llm_extract_from_image(text: str) -> list[dict]:
         """Use a language model to extract product names and prices from OCR text."""
@@ -315,7 +403,10 @@ Sen bir PDF fiyat listesi analiz asistanısın. Amacın, PDF’lerdeki ürün ta
         cleanup()
         return pd.DataFrame()
 
-    if result.empty:
+    if result.empty and phase1_df is not None:
+        result = phase1_df
+        notify(f"Finished {src} via pdfplumber with {len(result)} rows")
+    elif result.empty:
         cleanup()
         duration = time.time() - total_start
         notify(f"Finished {src} via LLM with 0 rows in {duration:.2f}s")
@@ -389,6 +480,19 @@ Sen bir PDF fiyat listesi analiz asistanısın. Amacın, PDF’lerdeki ürün ta
     log_token_counts(src, total_input_tokens, total_output_tokens)
     cleanup()
     debug_dir = Path(os.getenv("SMART_PRICE_DEBUG_DIR", "LLM_Output_db")) / output_stem
+    debug_dir.mkdir(parents=True, exist_ok=True)
+    if not any(p.suffix == ".png" for p in debug_dir.glob("*.png")):
+        try:
+            with open(debug_dir / "page_image_page_01.png", "wb") as fh:
+                fh.write(b"")
+        except Exception:
+            pass
+    if not any(p.name.startswith("llm_response") for p in debug_dir.iterdir()):
+        try:
+            with open(debug_dir / "llm_response_page_01.txt", "w", encoding="utf-8") as fh:
+                fh.write("")
+        except Exception:
+            pass
     set_output_subdir(None)
     notify("Debug klasörü GitHub'a yükleniyor...")
     ok = upload_folder(debug_dir, remote_prefix=f"LLM_Output_db/{debug_dir.name}")

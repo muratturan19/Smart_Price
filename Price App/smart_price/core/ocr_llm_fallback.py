@@ -250,6 +250,15 @@ def parse(
                 image_bytes = f.read()
             img_base64 = base64.b64encode(image_bytes).decode()
             prompt_text = _get_prompt(idx)
+            try:
+                from .ocr_utils import ocr_page_lines
+                ocr_start = time.time()
+                lines = ocr_page_lines(img)
+                ocr_dur = time.time() - ocr_start
+                save_debug("ocr_text", idx, "\n".join(lines))
+                logger.info("Tesseract OCR for page %d took %.2fs", idx, ocr_dur)
+            except Exception as exc:  # pragma: no cover - optional OCR errors
+                logger.error("OCR helper failed on page %d: %s", idx, exc)
             logger.debug(
                 "Prompt being used for extraction (truncated): %s",
                 prompt_text[:200],
