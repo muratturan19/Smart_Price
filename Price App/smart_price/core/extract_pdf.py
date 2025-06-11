@@ -33,6 +33,7 @@ from .common_utils import (
     detect_brand,
     gpt_clean_text,
     safe_json_parse,
+    validate_output_df,
 )
 import time
 from . import ocr_llm_fallback
@@ -206,7 +207,7 @@ def extract_from_pdf(
         notify(f"Phase 1 parsed {len(df)} rows")
         if len(df) >= MIN_ROWS_PARSER:
             notify(f"Finished {src} via pdfplumber with {len(df)} rows")
-            return df
+            return validate_output_df(df)
         phase1_df = df
 
     def _llm_extract_from_image(text: str) -> list[dict]:
@@ -420,7 +421,7 @@ Sen bir PDF fiyat listesi analiz asistanısın. Amacın, PDF’lerdeki ürün ta
             notify("Debug klasörü yüklendi")
         else:
             notify("GitHub upload başarısız", "warning")
-        return result
+        return validate_output_df(result)
 
     if "Para_Birimi" not in result.columns:
         result["Para_Birimi"] = None
@@ -500,4 +501,4 @@ Sen bir PDF fiyat listesi analiz asistanısın. Amacın, PDF’lerdeki ürün ta
         notify("Debug klasörü yüklendi")
     else:
         notify("GitHub upload başarısız", "warning")
-    return result_df
+    return validate_output_df(result_df)
