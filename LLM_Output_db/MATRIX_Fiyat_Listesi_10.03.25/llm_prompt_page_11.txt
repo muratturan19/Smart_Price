@@ -1,0 +1,17 @@
+Olası kolon başlıkları; kodlar: ürün kodu, urun kodu, malzeme kodu, malzeme, stok kodu, kod, tip, ref no, ref., ürün ref, ürün tip, product code, part no, item name, item no, item number, item #, kısa kod, kisa kod, short code, shortcode, kısa ürün kodu; açıklamalar: description, ürün açıklaması, ürün adı, açıklama, aciklama, özellikler, detay, product name, explanation; fiyatlar: fiyat, birim fiyat, liste fiyatı, price, unit price, list price, tutar; para birimleri: para birimi, currency; ana başlıklar: ana başlık, ana baslik, ana_baslik; alt başlıklar: alt başlık, alt baslik, alt_baslik.
+**Ana_Baslik:** Her sayfanın en üst sağ köşesindeki ana başlık (ör: `320 Series`)
+**Alt_Baslik:**
+Tablo blok başlığındaki mavi veya kalın/kutulu başlık (ör: `Model 321 | 3/2 | NC - NO`, `OPTIONS`, `ACCESSORIES`)
+Tabloda başlık yoksa Alt_Baslik boş bırakılır.
+**Malzeme_Kodu:** Tablodaki PART NUMBER hücresindeki değer.
+**Açıklama:**
+Konfigürasyon/opsiyonun satır açıklaması veya satır başındaki teknik metin.
+(Örneğin: `3/2 I NC I 28 l/min @ 6 bar I 0-8 bar I 24 VDC I NBR I IP52 Pico-Spox type male connector I subplate mounting`)
+**Fiyat:** Tablodaki EUR sütunundaki değer (örn: 40,00)
+**Para_Birimi:** Her zaman `"EUR"`
+**Marka:** `"MATRIX"`
+**Kaynak_Dosya:** `"MATRIX Fiyat Listesi 10.03.25.pdf"`
+**Sayfa:** Ürünün bulunduğu sayfa numarası (örn: 1)
+**Record_Code:** `"MATRIX"`
+**Kisa_Kod, Image_Path:** Eğer tablo veya satırda açıkça verilmemişse boş bırak.
+Sonuçları JSON formatında döndür.
