@@ -1,0 +1,14 @@
+{
+    "Ana_Baslik": "720 Series",
+    "Alt_Baslik": "Model 721 1/2 | 3/2 | NC - NO",
+    "Malzeme_Kodu": "H X 7 2 1 1 0 2 C 2 I 2",
+    "Açıklama": "2/2 I NC I 100 l/min I 48 bar I 24 VDC I ED 100% I IP62 500mm AWG24 tin-plated terminals I NBR I *",
+    "Fiyat": "71,00",
+    "Para_Birimi": "EUR",
+    "Marka": "MATRIX",
+    "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+    "Sayfa": 5,
+    "Record_Code": "MATRIX",
+    "Kisa_Kod": "",
+    "Image_Path": ""
+}
