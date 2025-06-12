@@ -26,8 +26,18 @@ def _debug_dir() -> Path:
     return path
 
 
+def _text_debug_dir() -> Path:
+    root = Path(os.getenv("SMART_PRICE_TEXT_DIR", "LLM_Text_db"))
+    path = root / _subdir if _subdir else root
+    try:
+        path.mkdir(parents=True, exist_ok=True)
+    except Exception as exc:  # pragma: no cover - optional debug failures
+        logger.debug("debug text dir creation failed: %s", exc)
+    return path
+
+
 def save_debug(prefix: str, page: int, content: str) -> None:
-    dir_path = _debug_dir()
+    dir_path = _text_debug_dir()
     file_path = dir_path / f"{prefix}_page_{page:02d}.txt"
     try:
         with open(file_path, "w", encoding="utf-8") as fh:

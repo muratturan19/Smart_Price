@@ -409,9 +409,16 @@ def parse(
     log_metric("parse_pdf", len(page_summary), total_dur)
     log_token_counts(pdf_path, total_input_tokens, total_output_tokens)
     debug_dir = Path(os.getenv("SMART_PRICE_DEBUG_DIR", "LLM_Output_db")) / output_name
+    text_dir = Path(os.getenv("SMART_PRICE_TEXT_DIR", "LLM_Text_db")) / output_name
+    debug_dir.mkdir(parents=True, exist_ok=True)
+    text_dir.mkdir(parents=True, exist_ok=True)
     set_output_subdir(None)
     logger.info("Debug klasörü GitHub'a yükleniyor...")
-    ok = upload_folder(debug_dir, remote_prefix=f"LLM_Output_db/{debug_dir.name}")
+    ok = upload_folder(
+        debug_dir,
+        remote_prefix=f"LLM_Output_db/{debug_dir.name}",
+        file_extensions=[".png"],
+    )
     if ok:
         logger.info("Debug klasörü yüklendi")
     else:

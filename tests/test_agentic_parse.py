@@ -231,7 +231,10 @@ def test_agentic_debug_output(monkeypatch, tmp_path):
     monkeypatch.setitem(sys.modules, "agentic_doc.common", common_mod)
 
     monkeypatch.setenv("ADE_DEBUG", "1")
-    monkeypatch.setenv("SMART_PRICE_DEBUG_DIR", str(tmp_path))
+    img_root = tmp_path / "imgs"
+    txt_root = tmp_path / "txt"
+    monkeypatch.setenv("SMART_PRICE_DEBUG_DIR", str(img_root))
+    monkeypatch.setenv("SMART_PRICE_TEXT_DIR", str(txt_root))
 
     mod = importlib.import_module("smart_price.core.extract_pdf_agentic")
     importlib.reload(mod)
@@ -239,7 +242,7 @@ def test_agentic_debug_output(monkeypatch, tmp_path):
     df = mod.extract_from_pdf_agentic("dummy.pdf")
     assert not df.empty
 
-    folder = tmp_path / "dummy"
+    folder = txt_root / "dummy"
     debug_files = list(folder.glob("ade_chunk_page_*.txt"))
     assert debug_files, "no debug files"
     first_content = debug_files[0].read_text()

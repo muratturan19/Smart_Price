@@ -190,8 +190,9 @@ tools run. Open this file with a text editor or use commands such as
 
 Verbose details such as the chosen LLM model, prompt length and the raw
 response returned by the OpenAI API are logged automatically. Per page images
-and JSON responses are written to the `LLM_Output_db` directory under a
-subfolder matching the processed PDF name.
+are written to the `LLM_Output_db` directory while the JSON responses are saved
+under `LLM_Text_db` (override with `SMART_PRICE_TEXT_DIR`). Each processed PDF
+uses its own subfolder.
 
 #### Debug information
 
@@ -202,12 +203,15 @@ The log records extra details to help trace each step:
 - page numbers for processed pages
 - a snippet of the prompt sent to the LLM
 - and the first items parsed from the response.
-- per-page debug files stored under `LLM_Output_db/<PDF adı>` (set
+- per-page debug images stored under `LLM_Output_db/<PDF adı>` (set
   `SMART_PRICE_DEBUG_DIR` to override the location)
+- per-page LLM responses stored under `LLM_Text_db/<PDF adı>` (set
+  `SMART_PRICE_TEXT_DIR` to override the location)
 Debug images can be downloaded directly from GitHub using a URL like
 `https://raw.githubusercontent.com/<owner>/<repo>/main/LLM_Output_db/<PDF adı>/page_image_page_<NN>.png`.
 Note that the `LLM_Output_db` folder sits at the repository root; **do not**
-prefix the path with `Master_data_base`.
+prefix the path with `Master_data_base`. Only the images in this folder are
+uploaded automatically; text files remain in `LLM_Text_db`.
  - set `GITHUB_REPO` and `GITHUB_TOKEN` to automatically push each debug
    directory and the files under `Master_data_base/` (including
    `master_dataset.xlsx` and `master.db`) to the configured repository
