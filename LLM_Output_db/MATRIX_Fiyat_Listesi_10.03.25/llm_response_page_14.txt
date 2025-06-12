@@ -1,0 +1,14 @@
+{
+    "Ana_Baslik": "750 Series",
+    "Alt_Baslik": "Model 758 multi-function 1 x 4/3 2 NC, 2 x 2/2 NC, 2 x 2/2 NO inverted flow",
+    "Malzeme_Kodu": "H X 7 5 8 8 2 R R I 2",
+    "Açıklama": "50 l/min @ 6 bar I 48 l/min @ 12 VDC I 100% I NCs I IP52/IP65 Integrated Easy Connection System (ECS) I NBR I *",
+    "Fiyat": "315,40",
+    "Para_Birimi": "EUR",
+    "Marka": "MATRIX",
+    "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+    "Sayfa": 14,
+    "Record_Code": "MATRIX",
+    "Kisa_Kod": "",
+    "Image_Path": ""
+}
