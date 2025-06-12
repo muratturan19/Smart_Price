@@ -1,10 +1,10 @@
 {
-    "data": [
+    "records": [
         {
             "Ana_Baslik": "880 Series",
             "Alt_Baslik": "Model 881 1/2 | 2 NC",
             "Malzeme_Kodu": "D R X 8 8 1 1 0 3 C 2 X X",
-            "Açıklama": "2/2 NC 1 300 l/min @ 6 bar I 0-8 bar I 24 VDC speed-up 15 I IP62 500mm AWG24 tin-plated terminals NBR I *",
+            "Açıklama": "2/2 NC | 300 l/min @ 6 bar I 0-8 bar I 24 VDC speed-up 15 I IP62 500mm AWG24 tin-plated terminals NBR I *",
             "Fiyat": "186,40",
             "Para_Birimi": "EUR",
             "Marka": "MATRIX",
@@ -17,8 +17,8 @@
         {
             "Ana_Baslik": "880 Series",
             "Alt_Baslik": "Model 881 1/2 | 2 NC",
-            "Malzeme_Kodu": "D R X 8 8 1 0 3 C 2 C 2 V V",
-            "Açıklama": "2/2 NC 1 300 l/min @ 6 bar I 0-8 bar I 24 VDC integrated ISO2 speed-up driver I IP62 500mm AWG24 tin-plated terminals NBR I *",
+            "Malzeme_Kodu": "D R X 8 8 1 0 3 C 2 V V",
+            "Açıklama": "2/2 NC | 300 l/min @ 6 bar I 0-8 bar I 24 VDC integrated ISO2 speed-up driver I IP62 500mm AWG24 tin-plated terminals NBR I *",
             "Fiyat": "356,60",
             "Para_Birimi": "EUR",
             "Marka": "MATRIX",
@@ -32,7 +32,7 @@
             "Ana_Baslik": "880 Series",
             "Alt_Baslik": "Model 881 1/2 | 2 NC",
             "Malzeme_Kodu": "D R X 8 8 1 0 3 C 2 W W",
-            "Açıklama": "2/2 NC 1 300 l/min @ 6 bar I 0-8 bar I 24 VDC integrated ISO2 speed-up driver I IP67 500mm AWG24 tin-plated terminals NBR I *",
+            "Açıklama": "2/2 NC | 300 l/min @ 6 bar I 0-8 bar I 24 VDC integrated ISO2 speed-up driver I IP67 500mm AWG24 tin-plated terminals NBR I *",
             "Fiyat": "356,60",
             "Para_Birimi": "EUR",
             "Marka": "MATRIX",
@@ -45,8 +45,8 @@
         {
             "Ana_Baslik": "880 Series",
             "Alt_Baslik": "Model 882 1/2 | 2 NC",
-            "Malzeme_Kodu": "D R X 8 8 2 2 0 3 C 2 X X",
-            "Açıklama": "2/2 NC 1 150 l/min @ 6 bar I 0-8 bar I 2 independent electric ctrls I 24 VDC speed-up 15 I IP62 500mm AWG24 tin-plated terminals NBR I *",
+            "Malzeme_Kodu": "D R X 8 8 2 0 3 C 2 X X",
+            "Açıklama": "2/2 NC | 150 l/min @ 6 bar I 0-8 bar I 2 independent electric ctrls I 24 VDC speed-up 15 I IP62 500mm AWG24 tin-plated terminals NBR I *",
             "Fiyat": "144,20",
             "Para_Birimi": "EUR",
             "Marka": "MATRIX",
@@ -59,8 +59,22 @@
         {
             "Ana_Baslik": "880 Series",
             "Alt_Baslik": "Model 882 1/2 | 2 NC",
-            "Malzeme_Kodu": "D R X 8 8 2 2 0 3 C 2 W W",
-            "Açıklama": "2/2 NC 1 125 l/min @ 6 bar I 0-8 bar I 2 independent electric ctrls I 24 VDC speed-up 15 I IP67 500mm AWG24 tin-plated terminals NBR I *",
+            "Malzeme_Kodu": "D R X 8 8 2 0 3 C 2 V X",
+            "Açıklama": "2/2 NC | 150 l/min @ 6 bar I 0-8 bar I 2 independent electric ctrls I 24 VDC speed-up 17 I IP62 500mm AWG24 tin-plated terminals NBR I *",
+            "Fiyat": "144,20",
+            "Para_Birimi": "EUR",
+            "Marka": "MATRIX",
+            "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+            "Sayfa": 18,
+            "Record_Code": "MATRIX",
+            "Kisa_Kod": "",
+            "Image_Path": ""
+        },
+        {
+            "Ana_Baslik": "880 Series",
+            "Alt_Baslik": "Model 882 1/2 | 2 NC",
+            "Malzeme_Kodu": "D R X 8 8 2 0 3 C 2 W X",
+            "Açıklama": "2/2 NC | 125 l/min @ 6 bar I 2 x 12 I 8 bar I 2 independent electric ctrls I 24 VDC speed-up 15 I IP62 500mm AWG24 tin-plated terminals NBR I *",
             "Fiyat": "144,20",
             "Para_Birimi": "EUR",
             "Marka": "MATRIX",
