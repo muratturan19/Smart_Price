@@ -11,6 +11,9 @@ pip install .
 pip install .[agentic]  # optional AgenticDE support
 ```
 
+The helper modules under `src/utils` are included automatically when
+installing from the repository.
+
 `tkinter` must also be available. It is typically included with many Python distributions but may require a separate installation on some systems.
 
 Smart_Price supports **Python 3.8** through **3.12**.

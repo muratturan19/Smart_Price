@@ -22,7 +22,7 @@ dependencies = [
 ]
 
 [tool.setuptools.packages.find]
-where = ["Price App", "Sales App"]
+where = ["Price App", "Sales App", "src"]
 
 [project.optional-dependencies]
 agentic = [
