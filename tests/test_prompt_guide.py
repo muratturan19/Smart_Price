@@ -35,7 +35,8 @@ def _run_extract(tmp_path, guide_content, filename="dummy.pdf"):
 
 def test_guide_hit(monkeypatch, tmp_path):
     prompt = _run_extract(tmp_path, "pdf,page,prompt\ndummy.pdf,1,HELLO\n")
-    assert prompt == {1: prompt_utils.RAW_HEADER_HINT + "\nHELLO"}
+    expected = prompt_utils.RAW_HEADER_HINT + "\nHELLO\nSonuçları JSON formatında döndür."
+    assert prompt == {1: expected}
 
 
 def test_guide_miss(monkeypatch, tmp_path):

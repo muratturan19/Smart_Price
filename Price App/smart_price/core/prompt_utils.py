@@ -157,6 +157,8 @@ def prompts_for_pdf(pdf_name: str, path: str | None = None) -> Dict[int, str] | 
         prompt = row.get("prompt")
         if not prompt:
             continue
+        if "json" not in prompt.lower():
+            prompt = prompt.rstrip() + "\nSonuçları JSON formatında döndür."
         page_val = row.get("page")
         if matched_name is None:
             matched_name = Path(str(file_field)).stem

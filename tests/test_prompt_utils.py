@@ -44,8 +44,8 @@ def test_prompts_for_pdf(tmp_path):
     assert mapping is not None
     assert mapping[0].startswith(prompt_utils.RAW_HEADER_HINT)
     assert mapping[2].startswith(prompt_utils.RAW_HEADER_HINT)
-    assert mapping[0].endswith("ALL")
-    assert mapping[2].endswith("TWO")
+    assert mapping[0].splitlines()[-1] == "Sonuçları JSON formatında döndür."
+    assert mapping[2].splitlines()[-1] == "Sonuçları JSON formatında döndür."
 
 
 def test_prompts_for_pdf_md(tmp_path):
@@ -55,7 +55,7 @@ def test_prompts_for_pdf_md(tmp_path):
     assert mapping is not None
     assert list(mapping.keys()) == [0]
     assert mapping[0].startswith(prompt_utils.RAW_HEADER_HINT)
-    assert mapping[0].endswith("Prompt")
+    assert mapping[0].splitlines()[-1] == "Sonuçları JSON formatında döndür."
 
 
 def test_prompts_for_pdf_no_match(tmp_path):
@@ -73,4 +73,12 @@ def test_parse_md_guide_stops_at_json(tmp_path):
     assert len(data) == 1
     prompt = data[0]["prompt"]
     assert "foo" not in prompt and "bar" not in prompt
+
+
+def test_prompts_append_json_hint(tmp_path):
+    path = tmp_path / "guide.csv"
+    path.write_text("pdf,page,prompt\ndummy.pdf,,Some instructions\n")
+    mapping = prompt_utils.prompts_for_pdf("dummy.pdf", str(path))
+    assert mapping is not None
+    assert mapping[0].splitlines()[-1] == "Sonuçları JSON formatında döndür."
 
