@@ -38,6 +38,7 @@ Alan yoksa boş bırak.
   "Alt_Baslik": "",
   "Image_Path": ""
 }
+```
 
 Dikkat!
 PDF’deki tablo ve alan başlıkları çok farklı şekillerde yazılmış olabilir. Aşağıdaki tüm ifadeler benzer anlama gelir ve ilgili alan başlığına eşlenmelidir:
@@ -164,6 +165,7 @@ Aşağıdaki tüm alanları **her ürün satırı için** eksiksiz üret (yoksa 
   "Alt_Baslik": "Model 321 | 3/2 | NC - NO",  // veya "OPTIONS", "ACCESSORIES" (blok başlığı)
   "Image_Path": ""
 }
+```
 
 Dikkat!
 PDF’deki tablo ve alan başlıkları çok farklı şekillerde yazılmış olabilir. Aşağıdaki tüm ifadeler benzer anlama gelir ve ilgili alan başlığına eşlenmelidir:
@@ -244,6 +246,7 @@ Aşağıdaki her alanı **her ürün satırı için** doldur (yoksa boş bırak)
   "Alt_Baslik": "Monofaze Motorlar",
   "Image_Path": ""
 }
+```
 
 Dikkat!
 PDF’deki tablo ve alan başlıkları çok farklı şekillerde yazılmış olabilir. Aşağıdaki tüm ifadeler benzer anlama gelir ve ilgili alan başlığına eşlenmelidir:
@@ -312,6 +315,7 @@ Her ürün satırı için doldurulacak alanlar:
   "Alt_Baslik2": "",
   "Image_Path": ""
 }
+```
 Dikkat!
 PDF’deki tablo ve alan başlıkları çok farklı şekillerde yazılmış olabilir. Aşağıdaki tüm ifadeler benzer anlama gelir ve ilgili alan başlığına eşlenmelidir:
 •	Malzeme_Kodu: ürün kodu, urun kodu, malzeme kodu, malzeme, stok kodu, kod, tip, ref no, ref., ürün ref, ürün tip, product code, part no, item name, item no, item number, item , ürün adı
@@ -377,6 +381,7 @@ Her ürün satırı için çıkarılacak alanlar:
   "Alt_Baslik": "",
   "Image_Path": ""
 }
+```
 
 Dikkat!
 PDF’deki tablo ve alan başlıkları çok farklı şekillerde yazılmış olabilir. Aşağıdaki tüm ifadeler benzer anlama gelir ve ilgili alan başlığına eşlenmelidir:
