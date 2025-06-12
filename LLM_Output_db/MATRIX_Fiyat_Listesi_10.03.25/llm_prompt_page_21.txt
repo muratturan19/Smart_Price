@@ -14,3 +14,4 @@ Konfigürasyon/opsiyonun satır açıklaması veya satır başındaki teknik met
 **Sayfa:** Ürünün bulunduğu sayfa numarası (örn: 1)
 **Record_Code:** `"MATRIX"`
 **Kisa_Kod, Image_Path:** Eğer tablo veya satırda açıkça verilmemişse boş bırak.
+Sonuçları JSON formatında döndür.
