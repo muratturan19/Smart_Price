@@ -38,6 +38,7 @@ Alan yoksa boş bırak.
   "Alt_Baslik": "",
   "Image_Path": ""
 }
+
 Dikkat!
 PDF’deki tablo ve alan başlıkları çok farklı şekillerde yazılmış olabilir. Aşağıdaki tüm ifadeler benzer anlama gelir ve ilgili alan başlığına eşlenmelidir:
 •	Malzeme_Kodu: ürün kodu, urun kodu, malzeme kodu, malzeme, stok kodu, kod, tip, ref no, ref., ürün ref, ürün tip, product code, part no, item name, item no, item number, item , ürün adı
@@ -51,9 +52,10 @@ Kurallar:
 •	Tablodaki her ürün satırını, hiçbirini atlamadan, eksiksiz ve ayrı bir JSON objesi olarak çıkar.
 •	Sadece başlıkları, alt başlıkları veya açıklama satırlarını dahil etme; sadece gerçek ürün satırlarını çıkar.
 •	Sonuçları JSON formatında döndür.
-________________________________________
+
 Her başlık için doğru alan eşleşmesini yap. Hiçbir ürünü veya satırı atlama. Yalnızca istenen alanlar ve ürün satırları çıktıda yer almalı.
 
+---
 
 ## ESMAKSAN FİYAT LİSTESİ
 
@@ -118,8 +120,10 @@ Kurallar:
 •	Tablodaki her ürün satırını, hiçbirini atlamadan, eksiksiz ve ayrı bir JSON objesi olarak çıkar.
 •	Sadece başlıkları, alt başlıkları veya açıklama satırlarını dahil etme; sadece gerçek ürün satırlarını çıkar.
 •	Sonuçları JSON formatında döndür.
-________________________________________
+
 Her başlık için doğru alan eşleşmesini yap. Hiçbir ürünü veya satırı atlama. Yalnızca istenen alanlar ve ürün satırları çıktıda yer almalı.
+
+---
 
 ## MATRIX Fiyat Listesi
 
@@ -160,6 +164,7 @@ Aşağıdaki tüm alanları **her ürün satırı için** eksiksiz üret (yoksa 
   "Alt_Baslik": "Model 321 | 3/2 | NC - NO",  // veya "OPTIONS", "ACCESSORIES" (blok başlığı)
   "Image_Path": ""
 }
+
 Dikkat!
 PDF’deki tablo ve alan başlıkları çok farklı şekillerde yazılmış olabilir. Aşağıdaki tüm ifadeler benzer anlama gelir ve ilgili alan başlığına eşlenmelidir:
 •	Malzeme_Kodu: ürün kodu, urun kodu, malzeme kodu, malzeme, stok kodu, kod, tip, ref no, ref., ürün ref, ürün tip, product code, part no, item name, item no, item number, item , ürün adı
@@ -173,7 +178,7 @@ Kurallar:
 •	Tablodaki her ürün satırını, hiçbirini atlamadan, eksiksiz ve ayrı bir JSON objesi olarak çıkar.
 •	Sadece başlıkları, alt başlıkları veya açıklama satırlarını dahil etme; sadece gerçek ürün satırlarını çıkar.
 •	Sonuçları JSON formatında döndür.
-________________________________________
+
 Her başlık için doğru alan eşleşmesini yap. Hiçbir ürünü veya satırı atlama. Yalnızca istenen alanlar ve ürün satırları çıktıda yer almalı.
 
 Ekstra Kural ve Notlar
@@ -188,6 +193,7 @@ Sadece fiyat ve ürün kodu olan satırlar için çıkarım yap.
 Her yeni sayfa veya tablo blok başlığı gördüğünde (ör: OPTIONS, ACCESSORIES), yeni Alt_Baslik ile devam et.
 Ana_Baslik sayfanın en üst sağ köşesi ile değişiyorsa ona göre güncelle.
 
+---
 
 ## GAMAK Fiyat Listesi (Örnek: 1 Fazlı Asenkron Motorlar PDF’i)
 
@@ -202,7 +208,6 @@ Ana_Baslik sayfanın en üst sağ köşesi ile değişiyorsa ona göre güncelle
   bu yeni başlık **Alt_Baslik** olarak değerlendirilir; Ana_Baslik aynen kalır.
 - Bir ürünün ait olduğu başlık grubu **daima yukarıya bakarak belirlenir**.
 
----
 
 ### Alanlar
 
@@ -221,7 +226,6 @@ Aşağıdaki her alanı **her ürün satırı için** doldur (yoksa boş bırak)
 - Alt_Baslik: Hemen altındaki büyük/grup başlık veya ürün tablosunun hemen üstündeki teknik başlık (örn: “Monofaze Motorlar” veya “DAİMİ KONDANSATÖRLÜ MOTORLAR”)
 - Image_Path: (Yoksa boş bırak)
 
----
 
 ### JSON Çıktı Formatı
 
@@ -254,8 +258,10 @@ Kurallar:
 •	Tablodaki her ürün satırını, hiçbirini atlamadan, eksiksiz ve ayrı bir JSON objesi olarak çıkar.
 •	Sadece başlıkları, alt başlıkları veya açıklama satırlarını dahil etme; sadece gerçek ürün satırlarını çıkar.
 •	Sonuçları JSON formatında döndür.
-________________________________________
+
 Her başlık için doğru alan eşleşmesini yap. Hiçbir ürünü veya satırı atlama. Yalnızca istenen alanlar ve ürün satırları çıktıda yer almalı.
+
+---
 
 ## Omega Motor Tüm Fiyat Listeleri
 
@@ -268,7 +274,6 @@ Her başlık için doğru alan eşleşmesini yap. Hiçbir ürünü veya satırı
 - Her tablo satırı bir ürün kaydıdır.
 - Eğer ürün satırı için birden fazla fiyat veya varyant varsa, aynı Malzeme_Kodu için fiyatları `-` ile ayırarak yaz.
 
----
 
 ### Alanlar
 
@@ -288,7 +293,6 @@ Her ürün satırı için doldurulacak alanlar:
 - Alt_Baslik2: (örn: “ALÜMİNYUM GÖVDELİ KOMPAKT MOTORLAR”)
 - Image_Path: (yoksa boş bırak)
 
----
 
 ### JSON Çıktı Örneği
 
@@ -321,8 +325,10 @@ Kurallar:
 •	Tablodaki her ürün satırını, hiçbirini atlamadan, eksiksiz ve ayrı bir JSON objesi olarak çıkar.
 •	Sadece başlıkları, alt başlıkları veya açıklama satırlarını dahil etme; sadece gerçek ürün satırlarını çıkar.
 •	Sonuçları JSON formatında döndür.
-________________________________________
+
 Her başlık için doğru alan eşleşmesini yap. Hiçbir ürünü veya satırı atlama. Yalnızca istenen alanlar ve ürün satırları çıktıda yer almalı.
+
+---
 
 ## Rekorsan-Fiyat Listesi
 
@@ -335,7 +341,6 @@ Her başlık için doğru alan eşleşmesini yap. Hiçbir ürünü veya satırı
 - Kolonlar: Malzeme Kodu, Hortum Ölçüsü, Somun Ölçüsü, Fiyat [TL], Kutu Adedi
 - Kisa_Kod, Image_Path ve ek alanlar yoksa boş bırakılır.
 
----
 
 ### Alanlar
 
@@ -354,7 +359,6 @@ Her ürün satırı için çıkarılacak alanlar:
 - Alt_Baslik: (“” — her zaman boş)
 - Image_Path: (yoksa boş bırak)
 
----
 
 ### JSON Çıktı Örneği
 
@@ -387,5 +391,5 @@ Kurallar:
 •	Tablodaki her ürün satırını, hiçbirini atlamadan, eksiksiz ve ayrı bir JSON objesi olarak çıkar.
 •	Sadece başlıkları, alt başlıkları veya açıklama satırlarını dahil etme; sadece gerçek ürün satırlarını çıkar.
 •	Sonuçları JSON formatında döndür.
-________________________________________
+
 Her başlık için doğru alan eşleşmesini yap. Hiçbir ürünü veya satırı atlama. Yalnızca istenen alanlar ve ürün satırları çıktıda yer almalı.
