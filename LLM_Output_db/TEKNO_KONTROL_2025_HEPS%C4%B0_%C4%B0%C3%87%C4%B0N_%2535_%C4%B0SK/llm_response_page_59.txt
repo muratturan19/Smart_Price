@@ -1,1 +1,0 @@
-Üzgünüm, ancak PDF içeriğini doğrudan analiz edemem. Ancak, PDF'deki tabloyu manuel olarak inceleyip, yukarıdaki talimatlara göre JSON formatında bir çıktı oluşturabilirim. Lütfen tabloyu metin olarak sağlarsanız, size yardımcı olabilirim.
