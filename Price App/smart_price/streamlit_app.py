@@ -407,11 +407,10 @@ def save_master_dataset(
             existing = pd.DataFrame()
 
     if mode == "Güncelleme" and not existing.empty:
-        for col in ("Marka", "Yil", "Kaynak_Dosya"):
-            if col in df.columns and col in existing.columns:
-                values = df[col].dropna().unique()
-                if len(values):
-                    existing = existing[~existing[col].isin(values)]
+        if "Kaynak_Dosya" in df.columns and "Kaynak_Dosya" in existing.columns:
+            values = df["Kaynak_Dosya"].dropna().unique()
+            if len(values):
+                existing = existing[~existing["Kaynak_Dosya"].isin(values)]
 
         if "Kaynak_Dosya" in df.columns:
             for src in df["Kaynak_Dosya"].dropna().unique():
