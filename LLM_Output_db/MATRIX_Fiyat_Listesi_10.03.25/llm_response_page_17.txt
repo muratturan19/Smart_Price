@@ -1,0 +1,16 @@
+{
+    "Ana_Baslik": "860 Series",
+    "Alt_Baslik": "Model 861 | 2/2 | NC | PCM proportional flowrate",
+    "Malzeme_Kodu": "P X 8 6 1 9 E 4 C 2",
+    "Açıklama": "2/2 I NC I 752 l/min @ 6 bar I 0-6 bar I 24V VDC speed-up I Integrated Easy Connection System I n.9 indg. ctrls I HNBR I PCM 6 bit 64 levels",
+    "Fiyat": "612,00",
+    "Para_Birimi": "EUR",
+    "Marka": "MATRIX",
+    "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+    "Sayfa": 17,
+    "Record_Code": "MATRIX",
+    "Kisa_Kod": "",
+    "Image_Path": ""
+}
+  
+  
