@@ -34,11 +34,12 @@ def _run_extract(tmp_path, guide_content, filename="dummy.pdf"):
 
 
 def test_guide_hit(monkeypatch, tmp_path):
+    monkeypatch.setattr(prompt_utils, "get_prompt_for_file", lambda n: "P1")
     prompt = _run_extract(tmp_path, "pdf,page,prompt\ndummy.pdf,1,HELLO\n")
-    expected = prompt_utils.RAW_HEADER_HINT + "\nHELLO\nSonuçları JSON formatında döndür."
-    assert prompt == {1: expected}
+    assert prompt == "P1"
 
 
 def test_guide_miss(monkeypatch, tmp_path):
+    monkeypatch.setattr(prompt_utils, "get_prompt_for_file", lambda n: "P2")
     prompt = _run_extract(tmp_path, "pdf,page,prompt\nother.pdf,1,HELLO\n")
-    assert prompt is None
+    assert prompt == "P2"

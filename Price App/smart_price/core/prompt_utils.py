@@ -7,7 +7,7 @@ from typing import Any, Dict, List, Tuple
 import logging
 
 from smart_price import config
-from .common_utils import detect_brand
+from utils.prompt_builder import get_prompt_for_file
 from .extract_excel import (
     _RAW_CODE_HEADERS,
     _RAW_DESC_HEADERS,
@@ -124,51 +124,6 @@ def load_extraction_guide(path: str | None = None) -> List[Dict[str, Any]]:
         return []
 
 
-def prompts_for_pdf(pdf_name: str, path: str | None = None) -> Dict[int, str] | None:
-    """Return page prompts for ``pdf_name`` from the guide.
-
-    The returned mapping may contain a ``0`` key representing a default prompt
-    for all pages.
-    """
-    guide = load_extraction_guide(path)
-    if not guide:
-        logger.info("Extraction Guide not found; using fallback prompt.")
-        return None
-    stem = Path(pdf_name).stem.lower()
-    stem_norm = stem.replace(" ", "")
-    brand = (detect_brand(pdf_name) or "").lower()
-    brand_norm = brand.replace(" ", "")
-    mapping: Dict[int, str] = {}
-    matched_name: str | None = None
-    for row in guide:
-        file_field = row.get("pdf") or row.get("file") or row.get("name")
-        if not file_field:
-            continue
-        target = Path(str(file_field)).stem.lower()
-        target_norm = target.replace(" ", "")
-        if (
-            target_norm not in stem_norm
-            and target_norm not in brand_norm
-            and brand_norm not in target_norm
-        ):
-            continue
-        prompt = row.get("prompt")
-        if not prompt:
-            continue
-        if "json" not in prompt.lower():
-            prompt = prompt.rstrip() + "\nSonuçları JSON formatında döndür."
-        page_val = row.get("page")
-        if matched_name is None:
-            matched_name = Path(str(file_field)).stem
-        if page_val in (None, "", "null"):
-            mapping[0] = RAW_HEADER_HINT + "\n" + prompt
-        else:
-            try:
-                mapping[int(page_val)] = RAW_HEADER_HINT + "\n" + prompt
-            except (ValueError, TypeError):
-                continue
-    if mapping:
-        logger.info("Extraction Guide matched: %s", matched_name)
-    else:
-        logger.info("Extraction Guide not matched; using fallback prompt.")
-    return mapping or None
+def prompts_for_pdf(pdf_name: str) -> str:
+    """DEPRECATED – use :func:`utils.prompt_builder.get_prompt_for_file`."""
+    return get_prompt_for_file(pdf_name)

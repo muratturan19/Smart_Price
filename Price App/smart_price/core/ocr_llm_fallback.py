@@ -36,7 +36,8 @@ from .common_utils import (
     safe_json_parse,
     log_metric,
 )
-from .prompt_utils import prompts_for_pdf, RAW_HEADER_HINT
+from utils.prompt_builder import get_prompt_for_file
+from .prompt_utils import RAW_HEADER_HINT
 from .debug_utils import save_debug, save_debug_image, set_output_subdir
 from .token_utils import (
     num_tokens_from_messages,
@@ -158,11 +159,7 @@ def parse(
     total_output_tokens = 0
 
     if prompt is None:
-        prompt = prompts_for_pdf(pdf_path)
-        if prompt:
-            logger.info("Prompt matched via Extraction Guide")
-        else:
-            logger.info("Fallback prompt will be used")
+        prompt = get_prompt_for_file(Path(pdf_path).name)
 
     try:
         from pdf2image import convert_from_path  # type: ignore
