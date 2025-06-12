@@ -1,0 +1,14 @@
+{
+    "Ana_Baslik": "450 Series",
+    "Alt_Baslik": "Model 458 S type | 2/2 | NC | Integrated equalized semi-circular nozzles",
+    "Malzeme_Kodu": "MX458S0CC2",
+    "Açıklama": "2/2 I NC I 100 l/min @ 6 bar I 8-12 bar I 24/5 VDC speed-up I IP62 500mm AWG24 tin-plated terminals I n.8 independent ctrls I NBR I",
+    "Fiyat": "428,00",
+    "Para_Birimi": "EUR",
+    "Marka": "MATRIX",
+    "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+    "Sayfa": 3,
+    "Record_Code": "MATRIX",
+    "Kisa_Kod": "",
+    "Image_Path": ""
+}
