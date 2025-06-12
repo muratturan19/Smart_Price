@@ -12,3 +12,5 @@
     "Kisa_Kod": "",
     "Image_Path": ""
 }
+  
+  
