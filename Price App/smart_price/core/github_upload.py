@@ -78,6 +78,12 @@ def upload_folder(
         try:
             resp = _api_request("GET", f"{url}?ref={branch}", token)
             sha = resp.get("sha")
+        except error.HTTPError as exc:  # pragma: no cover - network errors
+            if exc.code == 404:
+                sha = None
+            else:
+                logger.error("Failed to fetch existing file %s: %s", repo_path, exc)
+                sha = None
         except Exception as exc:  # pragma: no cover - network errors
             logger.error("Failed to fetch existing file %s: %s", repo_path, exc)
             sha = None

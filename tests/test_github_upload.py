@@ -1,5 +1,7 @@
 import os
 import types
+import logging
+from urllib import error
 from pathlib import Path
 
 from smart_price.core.github_upload import (
@@ -72,4 +74,32 @@ def test_delete_github_folder(monkeypatch):
     assert "My_folder" in calls[0][1]
     assert "%20" not in calls[0][1]
     assert calls[1][0] == "DELETE"
+
+
+def test_upload_folder_404_no_error(monkeypatch, tmp_path, caplog):
+    folder = tmp_path / "Omega"
+    folder.mkdir()
+    f = folder / "page.txt"
+    f.write_text("x")
+
+    calls = []
+
+    def fake_api(method, url, token, data=None):
+        calls.append(method)
+        if method == "GET":
+            raise error.HTTPError(url, 404, "Not Found", None, None)
+        return {}
+
+    monkeypatch.setattr(
+        "smart_price.core.github_upload._api_request", fake_api
+    )
+    monkeypatch.setenv("GITHUB_REPO", "owner/repo")
+    monkeypatch.setenv("GITHUB_TOKEN", "tok")
+
+    with caplog.at_level(logging.ERROR, logger="smart_price"):
+        upload_folder(folder, remote_prefix=f"LLM_Output_db/{folder.name}")
+
+    assert calls[0] == "GET"
+    assert "PUT" in calls
+    assert not caplog.records
 
