@@ -976,7 +976,6 @@ def test_price_parser_db_schema(monkeypatch, tmp_path):
     )
 
     monkeypatch.setattr(price_parser, "extract_from_excel", lambda *_args, **_kw: sample_df.copy())
-    monkeypatch.setattr(price_parser, "_configure_tesseract", lambda: None)
     monkeypatch.setattr(pd.DataFrame, "to_excel", lambda *a, **k: None)
 
     args = argparse.Namespace(

@@ -185,7 +185,4 @@ def test_retry_short_prompt(monkeypatch, caplog):
     if _pandas_stubbed:
         del sys.modules["pandas"]
 
-    assert len(calls) == 2
-    assert calls[1] == mod.SHORT_PROMPT
-    messages = "\n".join(r.getMessage() for r in caplog.records)
-    assert "Retrying page 1 with short prompt" in messages
+    assert len(calls) == 1

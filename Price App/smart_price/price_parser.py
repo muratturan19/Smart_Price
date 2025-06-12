@@ -4,7 +4,6 @@ import os
 import sqlite3
 import logging
 import pandas as pd
-import pytesseract
 import shutil
 from dotenv import load_dotenv
 
@@ -15,39 +14,6 @@ from smart_price.core.logger import init_logging
 
 logger = logging.getLogger("smart_price")
 
-def _configure_tesseract() -> None:
-    _configure_poppler()
-    """Configure pytesseract paths and log available languages.
-
-    ``pytesseract`` relies on ``tesseract`` being available on the system
-    ``PATH``.  If ``TESSDATA_PREFIX`` is already defined it is preserved.
-    ``shutil.which`` is used to locate ``tesseract``; the Windows fallback
-    paths are only applied when detection fails.
-    """
-    cmd = shutil.which("tesseract")
-    if cmd:
-        pytesseract.pytesseract.tesseract_cmd = cmd
-        if "TESSDATA_PREFIX" not in os.environ:
-            guessed = os.path.join(os.path.dirname(cmd), "tessdata")
-            if os.path.isdir(guessed):
-                os.environ["TESSDATA_PREFIX"] = guessed
-    else:  # Fallback for Windows bundles/tests
-        os.environ.setdefault("TESSDATA_PREFIX", str(config.TESSDATA_PREFIX))
-        pytesseract.pytesseract.tesseract_cmd = str(config.TESSERACT_CMD)
-    try:
-        langs = (
-            pytesseract.get_languages(config="")
-            if hasattr(pytesseract, "get_languages")
-            else []
-        )
-        logger.info("Available Tesseract languages: %s", langs)
-        if "tur" not in langs:
-            logger.error(
-                "Tesseract language model 'tur' not found. "
-                "Please install or copy the model into the tessdata folder."
-            )
-    except Exception as exc:  # pragma: no cover - unexpected errors
-        logger.error("Tesseract language query failed: %s", exc)
 
 def _configure_poppler() -> None:
     """Ensure bundled Poppler binaries are on ``PATH``."""
@@ -103,7 +69,6 @@ def main() -> None:
         except FileNotFoundError:
             print(f"Log file not found: {log_file}")
         return
-    _configure_tesseract()
     _configure_poppler()
     os.makedirs(os.path.dirname(args.output), exist_ok=True)
     os.makedirs(os.path.dirname(args.db), exist_ok=True)

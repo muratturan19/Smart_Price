@@ -15,8 +15,6 @@ pip install .[agentic]  # optional AgenticDE support
 
 Smart_Price supports **Python 3.8** through **3.12**.
 
-The tools attempt to locate the `tesseract` executable automatically using `shutil.which`. If `TESSDATA_PREFIX` is already defined it is respected, otherwise the location of the bundled language files is guessed from the executable path. When `tesseract` cannot be found a Windows default of `D:\Program Files\Tesseract-OCR` is used.
-
 The Poppler utilities `pdftoppm.exe`, `pdftocairo.exe` and `pdfinfo.exe` are
 also required for PDF processing. The repository only contains placeholder
 files in the `poppler/bin` directory, so download the real executables and
@@ -102,10 +100,10 @@ lists placed there (for example an initial `master_dataset.xlsx`) are available
 once the executable is launched.  It also adds the `logo` folder to ensure
 the images used by the interface are packaged together with the `.streamlit`
 configuration folder.  The resulting binary will appear in the `dist` folder.
-Both Poppler and Tesseract binaries are bundled from the `poppler/bin` folder
-so the resulting EXE runs without additional dependencies. Place the actual
-`pdftoppm.exe`, `pdftocairo.exe` and `pdfinfo.exe` files there first.  If you
-store these tools elsewhere edit `POPPLERDIR` (and set `TESSERACT_CMD` if needed) in
+The Poppler binaries are bundled from the `poppler/bin` folder so the resulting
+EXE runs without additional dependencies. Place the actual `pdftoppm.exe`,
+`pdftocairo.exe` and `pdfinfo.exe` files there first. If you store these tools
+elsewhere edit `POPPLERDIR` in
 `build_windows_exe.bat` to point to the correct paths.  The batch file
 collects all Streamlit resources so the executable launches without a
 `PackageNotFoundError` for the `streamlit` distribution. The launcher script

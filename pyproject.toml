@@ -15,7 +15,6 @@ dependencies = [
     "openpyxl",
     "xlrd",
     "pdf2image",
-    "pytesseract",
     "openai>=1.0",
     "tiktoken",
     "python-dotenv",
