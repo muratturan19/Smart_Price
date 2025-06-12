@@ -1,9 +1,9 @@
 {
-    "Ana_Baslik": "320 Series",
-    "Alt_Baslik": "Model 758 1/2 - 3/2 I NC - NO",
+    "Ana_Baslik": "758 Series",
+    "Alt_Baslik": "Model 758 I 2/2 – 3/2 I NC - NO",
     "Malzeme_Kodu": "H X 7 5 8 8 2 C 2 I 2",
-    "Açıklama": "2 NC I 180 l/min @ 6 bar I 8-14 bar I 24 VDC I ECS I NBR I IP65/IP67 integrated Easy Connection System (ECS) I NBR I *",
-    "Fiyat": "309,60",
+    "Açıklama": "2/2 NC I 150 l/min @ 6 bar I 8-14 bar I 24 VDC I ED=100% I N.8 ctrls I IP65/IP67 integrated Easy Connection System (ECS) I NBR I *",
+    "Fiyat": "296,80",
     "Para_Birimi": "EUR",
     "Marka": "MATRIX",
     "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
