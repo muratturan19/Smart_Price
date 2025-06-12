@@ -1,154 +1,40 @@
-```json
-[
-  {
-    "Malzeme_Kodu": "3MGS 160MA2",
-    "Açıklama": "2k-3000 d/dak.",
-    "Kisa_Kod": "",
-    "Fiyat": "899,00",
-    "Para_Birimi": "USD",
-    "Marka": "OMEGA MOTOR",
-    "Kaynak_Dosya": "Omega Motor Tüm Fiyat Listeleri Mart 2025.pdf",
-    "Sayfa": 1,
-    "Record_Code": "OMEGA",
-    "Ana_Baslik": "IE3",
-    "Alt_Baslik": "PİK DÖKÜM GÖVDELİ IEC 3~FAZLI ASENKRON ELEKTRİK MOTORLARI",
-    "Alt_Baslik2": "",
-    "Image_Path": ""
-  },
-  {
-    "Malzeme_Kodu": "3MGS 160MB2",
-    "Açıklama": "2k-3000 d/dak.",
-    "Kisa_Kod": "",
-    "Fiyat": "1.008,00",
-    "Para_Birimi": "USD",
-    "Marka": "OMEGA MOTOR",
-    "Kaynak_Dosya": "Omega Motor Tüm Fiyat Listeleri Mart 2025.pdf",
-    "Sayfa": 1,
-    "Record_Code": "OMEGA",
-    "Ana_Baslik": "IE3",
-    "Alt_Baslik": "PİK DÖKÜM GÖVDELİ IEC 3~FAZLI ASENKRON ELEKTRİK MOTORLARI",
-    "Alt_Baslik2": "",
-    "Image_Path": ""
-  },
-  {
-    "Malzeme_Kodu": "3MGS 160LA2",
-    "Açıklama": "2k-3000 d/dak.",
-    "Kisa_Kod": "",
-    "Fiyat": "1.110,00",
-    "Para_Birimi": "USD",
-    "Marka": "OMEGA MOTOR",
-    "Kaynak_Dosya": "Omega Motor Tüm Fiyat Listeleri Mart 2025.pdf",
-    "Sayfa": 1,
-    "Record_Code": "OMEGA",
-    "Ana_Baslik": "IE3",
-    "Alt_Baslik": "PİK DÖKÜM GÖVDELİ IEC 3~FAZLI ASENKRON ELEKTRİK MOTORLARI",
-    "Alt_Baslik2": "",
-    "Image_Path": ""
-  },
-  {
-    "Malzeme_Kodu": "3MGS 180MA2",
-    "Açıklama": "2k-3000 d/dak.",
-    "Kisa_Kod": "",
-    "Fiyat": "1.427,00",
-    "Para_Birimi": "USD",
-    "Marka": "OMEGA MOTOR",
-    "Kaynak_Dosya": "Omega Motor Tüm Fiyat Listeleri Mart 2025.pdf",
-    "Sayfa": 1,
-    "Record_Code": "OMEGA",
-    "Ana_Baslik": "IE3",
-    "Alt_Baslik": "PİK DÖKÜM GÖVDELİ IEC 3~FAZLI ASENKRON ELEKTRİK MOTORLARI",
-    "Alt_Baslik2": "",
-    "Image_Path": ""
-  },
-  {
-    "Malzeme_Kodu": "3MGS 200LA2",
-    "Açıklama": "2k-3000 d/dak.",
-    "Kisa_Kod": "",
-    "Fiyat": "2.096,00",
-    "Para_Birimi": "USD",
-    "Marka": "OMEGA MOTOR",
-    "Kaynak_Dosya": "Omega Motor Tüm Fiyat Listeleri Mart 2025.pdf",
-    "Sayfa": 1,
-    "Record_Code": "OMEGA",
-    "Ana_Baslik": "IE3",
-    "Alt_Baslik": "PİK DÖKÜM GÖVDELİ IEC 3~FAZLI ASENKRON ELEKTRİK MOTORLARI",
-    "Alt_Baslik2": "",
-    "Image_Path": ""
-  },
-  {
-    "Malzeme_Kodu": "3MGS 200LB2",
-    "Açıklama": "2k-3000 d/dak.",
-    "Kisa_Kod": "",
-    "Fiyat": "2.260,00",
-    "Para_Birimi": "USD",
-    "Marka": "OMEGA MOTOR",
-    "Kaynak_Dosya": "Omega Motor Tüm Fiyat Listeleri Mart 2025.pdf",
-    "Sayfa": 1,
-    "Record_Code": "OMEGA",
-    "Ana_Baslik": "IE3",
-    "Alt_Baslik": "PİK DÖKÜM GÖVDELİ IEC 3~FAZLI ASENKRON ELEKTRİK MOTORLARI",
-    "Alt_Baslik2": "",
-    "Image_Path": ""
-  },
-  {
-    "Malzeme_Kodu": "3MGS 225MA2",
-    "Açıklama": "2k-3000 d/dak.",
-    "Kisa_Kod": "",
-    "Fiyat": "2.633,00",
-    "Para_Birimi": "USD",
-    "Marka": "OMEGA MOTOR",
-    "Kaynak_Dosya": "Omega Motor Tüm Fiyat Listeleri Mart 2025.pdf",
-    "Sayfa": 1,
-    "Record_Code": "OMEGA",
-    "Ana_Baslik": "IE3",
-    "Alt_Baslik": "PİK DÖKÜM GÖVDELİ IEC 3~FAZLI ASENKRON ELEKTRİK MOTORLARI",
-    "Alt_Baslik2": "",
-    "Image_Path": ""
-  },
-  {
-    "Malzeme_Kodu": "3MGS 250MA2",
-    "Açıklama": "2k-3000 d/dak.",
-    "Kisa_Kod": "",
-    "Fiyat": "3.667,00",
-    "Para_Birimi": "USD",
-    "Marka": "OMEGA MOTOR",
-    "Kaynak_Dosya": "Omega Motor Tüm Fiyat Listeleri Mart 2025.pdf",
-    "Sayfa": 1,
-    "Record_Code": "OMEGA",
-    "Ana_Baslik": "IE3",
-    "Alt_Baslik": "PİK DÖKÜM GÖVDELİ IEC 3~FAZLI ASENKRON ELEKTRİK MOTORLARI",
-    "Alt_Baslik2": "",
-    "Image_Path": ""
-  },
-  {
-    "Malzeme_Kodu": "3MGS 280SA2",
-    "Açıklama": "2k-3000 d/dak.",
-    "Kisa_Kod": "",
-    "Fiyat": "-",
-    "Para_Birimi": "USD",
-    "Marka": "OMEGA MOTOR",
-    "Kaynak_Dosya": "Omega Motor Tüm Fiyat Listeleri Mart 2025.pdf",
-    "Sayfa": 1,
-    "Record_Code": "OMEGA",
-    "Ana_Baslik": "IE3",
-    "Alt_Baslik": "PİK DÖKÜM GÖVDELİ IEC 3~FAZLI ASENKRON ELEKTRİK MOTORLARI",
-    "Alt_Baslik2": "",
-    "Image_Path": ""
-  },
-  {
-    "Malzeme_Kodu": "3MGS 280MA2",
-    "Açıklama": "2k-3000 d/dak.",
-    "Kisa_Kod": "",
-    "Fiyat": "-",
-    "Para_Birimi": "USD",
-    "Marka": "OMEGA MOTOR",
-    "Kaynak_Dosya": "Omega Motor Tüm Fiyat Listeleri Mart 2025.pdf",
-    "Sayfa": 1,
-    "Record_Code": "OMEGA",
-    "Ana_Baslik": "IE3",
-    "Alt_Baslik": "PİK DÖKÜM GÖVDELİ IEC 3~FAZLI ASENKRON ELEKTRİK MOTORLARI",
-    "Alt_Baslik2": "",
-    "Image_Path": ""
-  }
-]
+```plaintext
+Ana_Baslik: IE3
+Alt_Baslik: PİK DÖKÜM GÖVDELİ IEC 3~FAZLI ASENKRON ELEKTRİK MOTORLARI
+Açıklama: B3 kurulum düzeninde, tam kapalı IP55, S1 sürekli çalışma, IC411 yüzeyden soğutmalı, F izolasyon sınıfı, IE3 premium verimli, sincap kafesli, pik döküm gövdeli elektrik motorları
+
+GÜÇ_kW | Malzeme_Kodu | Fiyat
+7,5    | 3MGS 160M2  | 899,00
+11     | 3MGS 160MB2 | 1.008,00
+15     | 3MGS 160LA2 | 1.110,00
+18,5   | 3MGS 180MA2 | 1.427,00
+22     | 3MGS 200LA2 | 2.096,00
+30     | 3MGS 200LB2 | 2.260,00
+37     | 3MGS 225MA2 | 2.633,00
+45     | 3MGS 250MA2 | 3.667,00
+75     | 3MGS 280SA2 | -
+90     | 3MGS 280MA2 | -
+110    | 3MGS 315SA2 | -
+132    | 3MGS 315MA2 | -
+160    | 3MGS 315MB2 | -
+185    | 3MGS 315MC2 | -
+200    | 3MGS 315MD2 | -
+250    | 3MGS 355MA2 | 13.636,00
+315    | 3MGS 355MB2 | 15.356,00
+355    | 3MGS 355MC2 | 16.373,00
+400    | 3MGS 355LA2 | 18.524,00
+450    | 3MGS 355LB2 | 20.642,00
+500    | 3MGS 355LC2 | 23.018,00
+560    | 3MGS 355LD2 | 28.402,00
+
+Alt_Baslik: PİK DÖKÜM GÖVDELİ KOMPAKT MOTORLAR
+
+GÜÇ_kW | Malzeme_Kodu | Fiyat
+18,5   | 3MGS 160LK2  | 1.335,00
+22     | 3MGS 180LK2  | 1.909,00
+37     | 3MGS 200LK2  | 2.512,00
+45     | 3MGS 225MK2  | 3.362,00
+75     | 3MGS 250MK2  | -
+110    | 3MGS 280MK2  | -
+160    | 3MGS 315LK2  | 13.227,00
 ```
