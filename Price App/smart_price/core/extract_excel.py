@@ -51,10 +51,12 @@ _RAW_CODE_HEADERS = [
 _RAW_DESC_HEADERS = [
     "description",
     "ürün açıklaması",
+    "ürün adı",
     "açıklama",
     "aciklama",
     "özellikler",
     "detay",
+    "product name",
     "explanation",
 ]
 
@@ -199,7 +201,7 @@ def extract_from_excel(
             engine = "xlrd"
         xls = pd.ExcelFile(filepath, engine=engine)
         for sheet in xls.sheet_names:
-            df = pd.read_excel(xls, sheet_name=sheet, engine=engine)
+            df = pd.read_excel(xls, sheet_name=sheet, engine=engine, dtype=str)
             if df.empty:
                 continue
             code_col, short_col, desc_col, price_col, currency_col = find_columns_in_excel(df)
@@ -214,6 +216,9 @@ def extract_from_excel(
                 if header in norm_cols:
                     sub_col = df.columns[norm_cols.index(header)]
                     break
+            if not code_col and desc_col and price_col and price_col in df.columns:
+                df["_dummy_code"] = None
+                code_col = "_dummy_code"
             if code_col and price_col and price_col in df.columns and code_col in df.columns:
                 cols = []
                 if code_col and code_col in df.columns:
@@ -280,6 +285,11 @@ def extract_from_excel(
     combined = pd.concat(all_data, ignore_index=True)
     logger.debug("[%s] DataFrame oluşturuldu: %d satır", src, len(combined))
     combined["Fiyat"] = combined["Fiyat_Ham"].apply(normalize_price)
+    if "Malzeme_Kodu" in combined.columns:
+        try:
+            combined["Malzeme_Kodu"] = combined["Malzeme_Kodu"].astype("string")
+        except Exception:
+            pass
     if "Kisa_Kod" not in combined.columns:
         combined["Kisa_Kod"] = None
     if "Malzeme_Kodu" not in combined.columns:
@@ -332,7 +342,6 @@ def extract_from_excel(
         tmp_df.empty
         or "Malzeme_Kodu" not in tmp_df.columns
         or "Fiyat" not in tmp_df.columns
-        or tmp_df["Malzeme_Kodu"].isna().all()
         or tmp_df["Fiyat"].isna().all()
     ):
         return pd.DataFrame()
