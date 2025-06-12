@@ -1,10 +1,10 @@
 {
     "data": [
         {
-            "Ana_Baslik": "Model 894 1/2/2 I NC",
-            "Alt_Baslik": "CONFIGURATIONS",
-            "Malzeme_Kodu": "M X 8 9 4 0 4 0 C 2 4",
-            "Açıklama": "2/2 I NC I 100 l/min @ 8 bar x 1.2 bar 24 VDC speed-up I 27 IP52 500mm AWG24 tin-plated n 4 ctrls (2 coils each) I NBR I",
+            "Ana_Baslik": "894 1/2/2 I NC",
+            "Alt_Baslik": "Model 894 1/2/2 I NC",
+            "Malzeme_Kodu": "M X 8 9 4 8 0 0 C 2 4",
+            "Açıklama": "2/2 I NC 100 l/min @ 8 bar x 1/8 24 bar I 24 VDC speed-up I 27 IP52 500mm AWG24 tin-plated 1 n8 crts (2 n8 coils each) I NBR I",
             "Fiyat": "320,20",
             "Para_Birimi": "EUR",
             "Marka": "MATRIX",
@@ -15,10 +15,10 @@
             "Image_Path": ""
         },
         {
-            "Ana_Baslik": "Model 894 1/2/2 I NC",
-            "Alt_Baslik": "CONFIGURATIONS",
-            "Malzeme_Kodu": "M X 8 9 4 0 4 0 C 2 5",
-            "Açıklama": "2/2 I NC I 100 l/min @ 8 bar x 1.2 bar 24 VDC speed-up I 27 IP52 500mm AWG24 tin-plated n 4 ctrls (2 coils each) I NBR I",
+            "Ana_Baslik": "894 1/2/2 I NC",
+            "Alt_Baslik": "Model 894 1/2/2 I NC",
+            "Malzeme_Kodu": "M X 8 9 4 8 0 0 C 2 2",
+            "Açıklama": "2/2 I NC 100 l/min @ 8 bar x 1/8 24 bar I 24 VDC speed-up I 27 IP52 500mm AWG24 tin-plated 1 n4 crts (2 n8 coils each) I NBR I",
             "Fiyat": "328,60",
             "Para_Birimi": "EUR",
             "Marka": "MATRIX",
@@ -29,10 +29,10 @@
             "Image_Path": ""
         },
         {
-            "Ana_Baslik": "Model 894 1/2/2 I NC",
-            "Alt_Baslik": "CONFIGURATIONS",
-            "Malzeme_Kodu": "M X 8 9 4 0 4 0 C 2 6",
-            "Açıklama": "2/2 I NC I 100 l/min @ 8 bar x 1.2 bar 24 VDC speed-up I 27 IP52 500mm AWG24 tin-plated n 4 ctrls (2 coils each) I NBR I",
+            "Ana_Baslik": "894 1/2/2 I NC",
+            "Alt_Baslik": "Model 894 1/2/2 I NC",
+            "Malzeme_Kodu": "M X 8 9 4 8 0 0 C 2 6",
+            "Açıklama": "2/2 I NC 100 l/min @ 8 bar x 1/8 24 bar I 24 VDC speed-up I 27 IP52 500mm AWG24 tin-plated 1 n8 crts (2 n8 coils each) I NBR I",
             "Fiyat": "328,60",
             "Para_Birimi": "EUR",
             "Marka": "MATRIX",
@@ -43,7 +43,21 @@
             "Image_Path": ""
         },
         {
-            "Ana_Baslik": "Model 894 1/2/2 I NC",
+            "Ana_Baslik": "894 1/2/2 I NC",
+            "Alt_Baslik": "Model 894 1/2/2 I NC",
+            "Malzeme_Kodu": "M X 8 9 4 8 0 0 C 2 2",
+            "Açıklama": "2/2 I NC 130 l/min @ 8 bar x 1/8 24 bar I 24 VDC speed-up I 27 IP52 500mm AWG24 tin-plated 1 n8 crts (2 n8 coils each) I NBR I",
+            "Fiyat": "358,40",
+            "Para_Birimi": "EUR",
+            "Marka": "MATRIX",
+            "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+            "Sayfa": 21,
+            "Record_Code": "MATRIX",
+            "Kisa_Kod": "",
+            "Image_Path": ""
+        },
+        {
+            "Ana_Baslik": "894 1/2/2 I NC",
             "Alt_Baslik": "OPTIONS",
             "Malzeme_Kodu": "H",
             "Açıklama": "NBR seals",
@@ -57,7 +71,7 @@
             "Image_Path": ""
         },
         {
-            "Ana_Baslik": "Model 894 1/2/2 I NC",
+            "Ana_Baslik": "894 1/2/2 I NC",
             "Alt_Baslik": "OPTIONS",
             "Malzeme_Kodu": "I",
             "Açıklama": "Manifold mounting inlet interface design w/o inlet push-in fitting (fastening threads standard pitch 26mm, 36mm optional)",
