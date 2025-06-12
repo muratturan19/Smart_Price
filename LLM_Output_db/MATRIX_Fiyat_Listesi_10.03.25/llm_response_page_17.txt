@@ -1,50 +1,14 @@
-```json
 {
-  "Malzeme_Kodu": "PX8619E4C2",
-  "Açıklama": "2/2 I NC I 152 l/min @ 6 bar I 0-6 bar I 24V VDC speed-up I Integrated Easy Connection System I n.9 indige, ctrls I HNBR I PCM 6 bit 64 levels",
-  "Kisa_Kod": "",
-  "Fiyat": "612,00",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 17,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "860 Series",
-  "Alt_Baslik": "Model 861 | 2/2 | NC I PCM proportional flowrate",
-  "Image_Path": ""
+    "Ana_Baslik": "860 Series",
+    "Alt_Baslik": "Model 861 | 2/2 | NC | PCM proportional flowrate",
+    "Malzeme_Kodu": "P X 8 6 1 9 E 4 C 2",
+    "Açıklama": "2/2 I NC I 752 l/min @ 6 bar I 0-6 bar I 24V VDC speed-up I Integrated Easy Connection System I n.9 indige, ctrls I HNBR I PCM 6 bit 64 levels",
+    "Fiyat": "612,00",
+    "Para_Birimi": "EUR",
+    "Marka": "MATRIX",
+    "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+    "Sayfa": 17,
+    "Record_Code": "MATRIX",
+    "Kisa_Kod": "",
+    "Image_Path": ""
 }
-```
-
-```json
-{
-  "Malzeme_Kodu": "QX8619E4C2",
-  "Açıklama": "2/2 I NC I 500 l/min @ 6 bar I 0-6 bar I 24V VDC speed-up I Integrated Easy Connection System I n.9 indige, ctrls I HNBR I PCM 8 bit 256 levels",
-  "Kisa_Kod": "",
-  "Fiyat": "804,00",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 17,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "860 Series",
-  "Alt_Baslik": "Model 861 | 2/2 | NC I PCM proportional flowrate",
-  "Image_Path": ""
-}
-```
-
-```json
-{
-  "Malzeme_Kodu": "868.843B",
-  "Açıklama": "Easy Connection System (ECS) wiring kit I IP52 AWG24 500mm tin-plated terminals I n.9 ctrls I Inclusive of installation hardware and o-rings",
-  "Kisa_Kod": "",
-  "Fiyat": "29,80",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 17,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "860 Series",
-  "Alt_Baslik": "ACCESSORIES",
-  "Image_Path": ""
-}
-```
