@@ -1,0 +1,576 @@
+```json
+{
+  "Malzeme_Kodu": "H X 7 5 1 1 0 2 C 2 J 2",
+  "Açıklama": "2/2 I NC I 420 l/min @ 6 bar I 1-14 bar I 12 VDC I 100% I N1 I cr1 IP52 500mm AWG20 with tin-plated terminals I NBR I *",
+  "Kisa_Kod": "",
+  "Fiyat": "307,40",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 6,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "750 Series",
+  "Alt_Baslik": "Model 751 2/2 – 3/2 I NC - NO",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "H X 7 5 1 1 0 2 C 2 J 4",
+  "Açıklama": "2/2 I NC I 420 l/min @ 6 bar I 1-14 bar I 12 VDC I 100% I N1 I cr1 IP52 500mm AWG20 with tin-plated terminals I NBR I *",
+  "Kisa_Kod": "",
+  "Fiyat": "307,40",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 6,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "750 Series",
+  "Alt_Baslik": "Model 751 2/2 – 3/2 I NC - NO",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "H X 7 5 1 1 0 2 C 2 J 9",
+  "Açıklama": "2/2 I NC I 1420 l/min @ 6 bar I 1-14 bar I 24 VDC I 100% I N1 I cr1 IP52 500mm AWG20 with tin-plated terminals I NBR I *",
+  "Kisa_Kod": "",
+  "Fiyat": "307,40",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 6,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "750 Series",
+  "Alt_Baslik": "Model 751 2/2 – 3/2 I NC - NO",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "H X 7 5 1 1 0 2 C 2 K 3",
+  "Açıklama": "2/2 I NC I 1420 l/min @ 6 bar I 1-14 bar I 24 VDC I 100% I N1 I cr1 IP52 500mm AWG20 with tin-plated terminals I NBR I *",
+  "Kisa_Kod": "",
+  "Fiyat": "333,00",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 6,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "750 Series",
+  "Alt_Baslik": "Model 751 2/2 – 3/2 I NC - NO",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "H X 7 5 1 1 0 2 C 2 K 4",
+  "Açıklama": "2/2 I NC I 1420 l/min @ 6 bar I 1-14 bar I 24 VDC I 100% I N1 I cr1 IP52 500mm AWG20 with tin-plated terminals I NBR I *",
+  "Kisa_Kod": "",
+  "Fiyat": "333,00",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 6,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "750 Series",
+  "Alt_Baslik": "Model 751 2/2 – 3/2 I NC - NO",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "B X 7 5 1 1 0 2 C 2 J 2",
+  "Açıklama": "2/2 I NC I 600 l/min @ 6 bar I 1-14 bar I 24 VDC I 100% I N1 I cr1 IP52 500mm AWG20 with tin-plated terminals I NBR I *",
+  "Kisa_Kod": "",
+  "Fiyat": "322,40",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 6,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "750 Series",
+  "Alt_Baslik": "Model 751 2/2 – 3/2 I NC - NO",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "B X 7 5 1 1 0 2 C 2 J 4",
+  "Açıklama": "2/2 I NC I 600 l/min @ 6 bar I 1-14 bar I 24 VDC I 100% I N1 I cr1 IP52 500mm AWG20 with tin-plated terminals I NBR I *",
+  "Kisa_Kod": "",
+  "Fiyat": "322,40",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 6,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "750 Series",
+  "Alt_Baslik": "Model 751 2/2 – 3/2 I NC - NO",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "B X 7 5 1 1 0 2 C 2 J 9",
+  "Açıklama": "2/2 I NC I 600 l/min @ 6 bar I 1-14 bar I 24 VDC I 100% I N1 I cr1 IP52 500mm AWG20 with tin-plated terminals I NBR I *",
+  "Kisa_Kod": "",
+  "Fiyat": "322,40",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 6,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "750 Series",
+  "Alt_Baslik": "Model 751 2/2 – 3/2 I NC - NO",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "B X 7 5 1 1 0 2 C 2 K 3",
+  "Açıklama": "2/2 I NC I 600 l/min @ 6 bar I 1-14 bar I 24 VDC I 100% I N1 I cr1 IP52 500mm AWG20 with tin-plated terminals I NBR I *",
+  "Kisa_Kod": "",
+  "Fiyat": "347,80",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 6,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "750 Series",
+  "Alt_Baslik": "Model 751 2/2 – 3/2 I NC - NO",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "B X 7 5 1 1 0 2 C 2 K 4",
+  "Açıklama": "2/2 I NC I 600 l/min @ 6 bar I 1-14 bar I 24 VDC I 100% I N1 I cr1 IP52 500mm AWG20 with tin-plated terminals I NBR I *",
+  "Kisa_Kod": "",
+  "Fiyat": "347,80",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 6,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "750 Series",
+  "Alt_Baslik": "Model 751 2/2 – 3/2 I NC - NO",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "M X 7 5 1 1 0 2 C 2 J 7",
+  "Açıklama": "2/2 I NC I 700 l/min @ 6 bar I 1-14 bar I 24 VDC I N1 I cr1 IP52 500mm AWG20 with tin-plated terminals I NBR I *",
+  "Kisa_Kod": "",
+  "Fiyat": "335,00",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 6,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "750 Series",
+  "Alt_Baslik": "Model 751 2/2 – 3/2 I NC - NO",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "M X 7 5 1 1 0 2 C 2 K 3",
+  "Açıklama": "2/2 I NC I 700 l/min @ 6 bar I 1-14 bar I 24 VDC I N1 I cr1 IP52 500mm AWG20 with tin-plated terminals I NBR I *",
+  "Kisa_Kod": "",
+  "Fiyat": "364,80",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 6,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "750 Series",
+  "Alt_Baslik": "Model 751 2/2 – 3/2 I NC - NO",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "M X 7 5 1 1 0 2 C 2 K 4",
+  "Açıklama": "2/2 I NC I 700 l/min @ 6 bar I 1-14 bar I 24 VDC I N1 I cr1 IP52 500mm AWG20 with tin-plated terminals I NBR I *",
+  "Kisa_Kod": "",
+  "Fiyat": "364,80",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 6,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "750 Series",
+  "Alt_Baslik": "Model 751 2/2 – 3/2 I NC - NO",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "H",
+  "Açıklama": "NBR seals",
+  "Kisa_Kod": "",
+  "Fiyat": "39,20",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 6,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "750 Series",
+  "Alt_Baslik": "OPTIONS",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "K",
+  "Açıklama": "FKM seals",
+  "Kisa_Kod": "",
+  "Fiyat": "40,80",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 6,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "750 Series",
+  "Alt_Baslik": "OPTIONS",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "2",
+  "Açıklama": "N2 independent electric controls IP52 500mm AWG20 with tin-plated terminals",
+  "Kisa_Kod": "",
+  "Fiyat": "17,00",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 6,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "750 Series",
+  "Alt_Baslik": "OPTIONS",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "4",
+  "Açıklama": "N4 independent electric controls IP65 500mm AWG20 with tin-plated terminals",
+  "Kisa_Kod": "",
+  "Fiyat": "21,20",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 6,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "750 Series",
+  "Alt_Baslik": "OPTIONS",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "8",
+  "Açıklama": "N8 independent electric controls IP50 500mm AWG26 with tin-plated terminals",
+  "Kisa_Kod": "",
+  "Fiyat": "25,60",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 6,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "750 Series",
+  "Alt_Baslik": "OPTIONS",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "E",
+  "Açıklama": "N2 independent electric controls IP52/65 integrated Easy Connection System (ECS)",
+  "Kisa_Kod": "",
+  "Fiyat": "42,40",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 6,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "750 Series",
+  "Alt_Baslik": "OPTIONS",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "F",
+  "Açıklama": "N4 independent electric controls IP52/65 integrated Easy Connection System (ECS)",
+  "Kisa_Kod": "",
+  "Fiyat": "42,40",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 6,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "750 Series",
+  "Alt_Baslik": "OPTIONS",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "G",
+  "Açıklama": "N8 independent electric controls with surge voltage suppressor (common 12V / 24V) IP52/65 integrated Easy Connection System (ECS) only",
+  "Kisa_Kod": "",
+  "Fiyat": "46,80",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 6,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "750 Series",
+  "Alt_Baslik": "OPTIONS",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "868.870C",
+  "Açıklama": "Easy Connection System (ECS) wiring kit IP52 500mm AWG24 N1 A controls I Tin-plated terminals",
+  "Kisa_Kod": "",
+  "Fiyat": "18,40",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 6,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "750 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "868.871D",
+  "Açıklama": "Easy Connection System (ECS) wiring kit IP52 500mm AWG24 N1 A controls I Tin-plated terminals",
+  "Kisa_Kod": "",
+  "Fiyat": "18,40",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 6,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "750 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "868.872E",
+  "Açıklama": "Easy Connection System (ECS) wiring kit IP52 500mm AWG24 N1 A controls I Tin-plated terminals",
+  "Kisa_Kod": "",
+  "Fiyat": "34,40",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 6,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "750 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "868.873F",
+  "Açıklama": "Easy Connection System (ECS) wiring kit IP52 1000mm AWG24 N1 A controls I Tin-plated terminals",
+  "Kisa_Kod": "",
+  "Fiyat": "19,80",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 6,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "750 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "868.874H",
+  "Açıklama": "Easy Connection System (ECS) wiring kit IP52 1000mm AWG24 N1 A controls I Tin-plated terminals",
+  "Kisa_Kod": "",
+  "Fiyat": "19,80",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 6,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "750 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "868.875J",
+  "Açıklama": "Easy Connection System (ECS) wiring kit IP52 1000mm AWG24 N1 A controls I Tin-plated terminals",
+  "Kisa_Kod": "",
+  "Fiyat": "19,80",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 6,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "750 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "868.876K",
+  "Açıklama": "Easy Connection System (ECS) wiring kit IP52 1000mm AWG24 N1 A controls I Tin-plated terminals",
+  "Kisa_Kod": "",
+  "Fiyat": "21,20",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 6,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "750 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "868.877X",
+  "Açıklama": "Easy Connection System (ECS) wiring kit IP52 1000mm AWG24 N1 A controls I Tin-plated terminals",
+  "Kisa_Kod": "",
+  "Fiyat": "44,60",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 6,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "750 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "868.845D",
+  "Açıklama": "Easy Connection System (ECS) wiring kit IP52 3000mm AWG24 N1 A controls I Tin-plated terminals",
+  "Kisa_Kod": "",
+  "Fiyat": "27,20",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 6,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "750 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "868.890M",
+  "Açıklama": "Easy Connection System (ECS) wiring kit IP52 3000mm AWG24 N1 A controls I Tin-plated terminals",
+  "Kisa_Kod": "",
+  "Fiyat": "27,20",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 6,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "750 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "868.881N",
+  "Açıklama": "Easy Connection System (ECS) wiring kit IP65 3000mm AWG24 N1 A controls I Tin-plated terminals",
+  "Kisa_Kod": "",
+  "Fiyat": "53,00",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 6,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "750 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "868.851J",
+  "Açıklama": "Easy Connection System (ECS) wiring kit IP65 1000mm AWG26 P I N4 A controls I Tin-plated terminals",
+  "Kisa_Kod": "",
+  "Fiyat": "54,00",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 6,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "750 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "868.850Y",
+  "Açıklama": "Easy Connection System (ECS) wiring kit IP65 1000mm AWG26 P I N4 A controls I Tin-plated terminals",
+  "Kisa_Kod": "",
+  "Fiyat": "51,00",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 6,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "750 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "868.847E",
+  "Açıklama": "Easy Connection System (ECS) wiring kit IP65 1000mm AWG24 PUR I N1 A controls I Tin-plated terminals",
+  "Kisa_Kod": "",
+  "Fiyat": "38,20",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 6,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "750 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "869.961C",
+  "Açıklama": "Easy Connection System (ECS) wiring kit IP65 1000mm AWG24 PUR I N1 A controls I Tin-plated terminals",
+  "Kisa_Kod": "",
+  "Fiyat": "38,20",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 6,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "750 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "869.841L",
+  "Açıklama": "Easy Connection System (ECS) wiring kit IP65 1000mm AWG24 PUR I N1 A controls I Tin-plated terminals",
+  "Kisa_Kod": "",
+  "Fiyat": "63,60",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 6,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "750 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "868.854M",
+  "Açıklama": "Easy Connection System (ECS) wiring kit IP65 2000mm AWG24 PUR I N1 A controls I Tin-plated terminals",
+  "Kisa_Kod": "",
+  "Fiyat": "40,40",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 6,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "750 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "868.852X",
+  "Açıklama": "Easy Connection System (ECS) wiring kit IP65 2000mm AWG24 PUR I N1 A controls I Tin-plated terminals",
+  "Kisa_Kod": "",
+  "Fiyat": "65,80",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 6,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "750 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "868.848G",
+  "Açıklama": "Easy Connection System (ECS) wiring kit IP65 2000mm AWG24 PUR I N1 A controls I Tin-plated terminals",
+  "Kisa_Kod": "",
+  "Fiyat": "40,40",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 6,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "750 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "868.883P",
+  "Açıklama": "Easy Connection System (ECS) wiring kit IP65 2000mm AWG24 PUR I N4 A controls I Tin-plated terminals",
+  "Kisa_Kod": "",
+  "Fiyat": "46,80",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 6,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "750 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+```
