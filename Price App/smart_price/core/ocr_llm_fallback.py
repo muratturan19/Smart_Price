@@ -36,7 +36,7 @@ from .common_utils import (
     safe_json_parse,
     log_metric,
 )
-from .prompt_utils import prompts_for_pdf
+from .prompt_utils import prompts_for_pdf, RAW_HEADER_HINT
 from .debug_utils import save_debug, save_debug_image, set_output_subdir
 from .token_utils import (
     num_tokens_from_messages,
@@ -203,9 +203,10 @@ def parse(
     model_name = os.getenv("OPENAI_MODEL", "gpt-4o")
 
     def _get_prompt(page: int) -> str:
+        fallback = RAW_HEADER_HINT + "\n" + DEFAULT_PROMPT
         if isinstance(prompt, dict):
-            return prompt.get(page, prompt.get(0, DEFAULT_PROMPT))
-        return prompt if prompt is not None else DEFAULT_PROMPT
+            return prompt.get(page, prompt.get(0, fallback))
+        return prompt if prompt is not None else fallback
 
     rows: list[dict[str, object]] = []
     page_summary: list[dict[str, object]] = []

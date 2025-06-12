@@ -8,6 +8,34 @@ import logging
 
 from smart_price import config
 from .common_utils import detect_brand
+from .extract_excel import (
+    _RAW_CODE_HEADERS,
+    _RAW_DESC_HEADERS,
+    _RAW_SHORT_HEADERS,
+    _RAW_PRICE_HEADERS,
+    _RAW_CURRENCY_HEADERS,
+    _RAW_MAIN_HEADERS,
+    _RAW_SUB_HEADERS,
+)
+
+# Concise hint listing all possible raw column headers that may appear in Excel
+# or PDF tables. This is added to LLM prompts so it knows which column labels to
+# look out for when parsing tabular data.
+RAW_HEADER_HINT = (
+    "Olası kolon başlıkları; kodlar: "
+    + ", ".join(_RAW_CODE_HEADERS + _RAW_SHORT_HEADERS)
+    + "; açıklamalar: "
+    + ", ".join(_RAW_DESC_HEADERS)
+    + "; fiyatlar: "
+    + ", ".join(_RAW_PRICE_HEADERS)
+    + "; para birimleri: "
+    + ", ".join(_RAW_CURRENCY_HEADERS)
+    + "; ana başlıklar: "
+    + ", ".join(_RAW_MAIN_HEADERS)
+    + "; alt başlıklar: "
+    + ", ".join(_RAW_SUB_HEADERS)
+    + "."
+)
 
 logger = logging.getLogger("smart_price")
 
@@ -133,10 +161,10 @@ def prompts_for_pdf(pdf_name: str, path: str | None = None) -> Dict[int, str] | 
         if matched_name is None:
             matched_name = Path(str(file_field)).stem
         if page_val in (None, "", "null"):
-            mapping[0] = prompt
+            mapping[0] = RAW_HEADER_HINT + "\n" + prompt
         else:
             try:
-                mapping[int(page_val)] = prompt
+                mapping[int(page_val)] = RAW_HEADER_HINT + "\n" + prompt
             except (ValueError, TypeError):
                 continue
     if mapping:
