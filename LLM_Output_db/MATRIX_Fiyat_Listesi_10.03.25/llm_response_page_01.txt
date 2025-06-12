@@ -1,1 +1,14 @@
-Üzgünüm, ancak bu belgeyi işleyemem. Başka bir konuda yardımcı olabilir miyim?
+{
+    "Ana_Baslik": "2025 Pricelist",
+    "Alt_Baslik": "",
+    "Malzeme_Kodu": "",
+    "Açıklama": "",
+    "Fiyat": "",
+    "Para_Birimi": "EUR",
+    "Marka": "MATRIX",
+    "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+    "Sayfa": 1,
+    "Record_Code": "MATRIX",
+    "Kisa_Kod": "",
+    "Image_Path": ""
+}
