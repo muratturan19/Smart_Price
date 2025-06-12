@@ -1,441 +1,74 @@
-```json
 {
-  "Malzeme_Kodu": "H X 7 2 1 1 0 2 C 2 J 2",
-  "Açıklama": "2/2 I NC I 50 l/min I 48 I bar I 24 VDC I ED 100% I IP62 500mm AWG24 tin-plated terminals I NBR I *",
-  "Kisa_Kod": "",
-  "Fiyat": "71,00",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 5,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "720 Series",
-  "Alt_Baslik": "Model 721 | 2/2 - 3/2 | NC - NO",
-  "Image_Path": ""
+    "data": [
+        {
+            "Ana_Baslik": "720 Series",
+            "Alt_Baslik": "Model 721 1/2 | 3/2 | NC - NO",
+            "Malzeme_Kodu": "H X 7 2 1 1 0 2 C 2 J 2",
+            "Açıklama": "2/2 I NC I 50 l/min I 48 bar I 12 VDC I ED 100% I IP62 500mm AWG24 tin-plated terminals I NBR I *",
+            "Fiyat": "71,00",
+            "Para_Birimi": "EUR",
+            "Marka": "MATRIX",
+            "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+            "Sayfa": 5,
+            "Record_Code": "MATRIX",
+            "Kisa_Kod": "",
+            "Image_Path": ""
+        },
+        {
+            "Ana_Baslik": "720 Series",
+            "Alt_Baslik": "Model 721 1/2 | 3/2 | NC - NO",
+            "Malzeme_Kodu": "H X 7 2 1 1 0 2 C 2 J 4",
+            "Açıklama": "2/2 I NC I 50 l/min I 48 bar I 24 VDC I ED 100% I IP62 500mm AWG24 tin-plated terminals I NBR I *",
+            "Fiyat": "71,00",
+            "Para_Birimi": "EUR",
+            "Marka": "MATRIX",
+            "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+            "Sayfa": 5,
+            "Record_Code": "MATRIX",
+            "Kisa_Kod": "",
+            "Image_Path": ""
+        },
+        {
+            "Ana_Baslik": "720 Series",
+            "Alt_Baslik": "Model 721 1/2 | 3/2 | NC - NO",
+            "Malzeme_Kodu": "H X 7 2 1 1 0 2 C 2 X X",
+            "Açıklama": "2/2 I NC I 50 l/min I 48 bar I 24/5 VDC current speed-up I IP62 500mm AWG24 tin-plated terminals I NBR I *",
+            "Fiyat": "75,60",
+            "Para_Birimi": "EUR",
+            "Marka": "MATRIX",
+            "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+            "Sayfa": 5,
+            "Record_Code": "MATRIX",
+            "Kisa_Kod": "",
+            "Image_Path": ""
+        },
+        {
+            "Ana_Baslik": "720 Series",
+            "Alt_Baslik": "OPTIONS",
+            "Malzeme_Kodu": "H",
+            "Açıklama": "HNB seals",
+            "Fiyat": "5,00",
+            "Para_Birimi": "EUR",
+            "Marka": "MATRIX",
+            "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+            "Sayfa": 5,
+            "Record_Code": "MATRIX",
+            "Kisa_Kod": "",
+            "Image_Path": ""
+        },
+        {
+            "Ana_Baslik": "720 Series",
+            "Alt_Baslik": "ACCESSORIES",
+            "Malzeme_Kodu": "861.332E",
+            "Açıklama": "720 Series 2 positions manifold kit I anodized AL (natural) I Supplied with installation hardware, 8mm inlet fitting, silencer and seals",
+            "Fiyat": "75,40",
+            "Para_Birimi": "EUR",
+            "Marka": "MATRIX",
+            "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+            "Sayfa": 5,
+            "Record_Code": "MATRIX",
+            "Kisa_Kod": "",
+            "Image_Path": ""
+        }
+    ]
 }
-```
-
-```json
-{
-  "Malzeme_Kodu": "H X 7 2 1 1 0 2 C 2 J 4",
-  "Açıklama": "2/2 I NC I 50 l/min I 48 I bar I 24 VDC I ED 100% I IP65 250mm AWG24 tin-plated terminals I NBR I *",
-  "Kisa_Kod": "",
-  "Fiyat": "71,00",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 5,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "720 Series",
-  "Alt_Baslik": "Model 721 | 2/2 - 3/2 | NC - NO",
-  "Image_Path": ""
-}
-```
-
-```json
-{
-  "Malzeme_Kodu": "H X 7 2 1 1 0 2 C 2 J 7",
-  "Açıklama": "2/2 I NC I 50 l/min I 48 I bar I 24 VDC I ED 100% I IP62 500mm AWG24 tin-plated terminals I NBR I *",
-  "Kisa_Kod": "",
-  "Fiyat": "71,00",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 5,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "720 Series",
-  "Alt_Baslik": "Model 721 | 2/2 - 3/2 | NC - NO",
-  "Image_Path": ""
-}
-```
-
-```json
-{
-  "Malzeme_Kodu": "H X 7 2 1 1 0 2 C 2 X X",
-  "Açıklama": "2/2 I NC I 50 l/min I 48 I bar I 24 VDC I ED 100% I IP65 250mm AWG24 tin-plated terminals I NBR I *",
-  "Kisa_Kod": "",
-  "Fiyat": "75,60",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 5,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "720 Series",
-  "Alt_Baslik": "Model 721 | 2/2 - 3/2 | NC - NO",
-  "Image_Path": ""
-}
-```
-
-```json
-{
-  "Malzeme_Kodu": "B X 7 2 1 0 2 C 2 G K",
-  "Açıklama": "2/2 I NC I 100 l/min I 48 I bar I 24 VDC I ED 100% I IP62 500mm AWG24 tin-plated terminals I NBR I *",
-  "Kisa_Kod": "",
-  "Fiyat": "75,60",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 5,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "720 Series",
-  "Alt_Baslik": "Model 721 | 2/2 - 3/2 | NC - NO",
-  "Image_Path": ""
-}
-```
-
-```json
-{
-  "Malzeme_Kodu": "B X 7 2 1 0 2 C 2 J 2",
-  "Açıklama": "2/2 I NC I 100 l/min I 48 I bar I 24 VDC I ED 100% I IP65 250mm AWG24 tin-plated terminals I NBR I *",
-  "Kisa_Kod": "",
-  "Fiyat": "75,60",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 5,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "720 Series",
-  "Alt_Baslik": "Model 721 | 2/2 - 3/2 | NC - NO",
-  "Image_Path": ""
-}
-```
-
-```json
-{
-  "Malzeme_Kodu": "B X 7 2 1 0 2 C 2 J 4",
-  "Açıklama": "2/2 I NC I 100 l/min I 48 I bar I 24 VDC I ED 100% I IP62 500mm AWG24 tin-plated terminals I NBR I *",
-  "Kisa_Kod": "",
-  "Fiyat": "75,60",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 5,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "720 Series",
-  "Alt_Baslik": "Model 721 | 2/2 - 3/2 | NC - NO",
-  "Image_Path": ""
-}
-```
-
-```json
-{
-  "Malzeme_Kodu": "B X 7 2 1 0 2 C 2 J 7",
-  "Açıklama": "2/2 I NC I 100 l/min I 48 I bar I 24 VDC I ED 100% I IP65 250mm AWG24 tin-plated terminals I NBR I *",
-  "Kisa_Kod": "",
-  "Fiyat": "75,60",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 5,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "720 Series",
-  "Alt_Baslik": "Model 721 | 2/2 - 3/2 | NC - NO",
-  "Image_Path": ""
-}
-```
-
-```json
-{
-  "Malzeme_Kodu": "B X 7 2 1 0 2 C 2 X X",
-  "Açıklama": "2/2 I NC I 100 l/min I 48 I bar I 24 VDC I ED 100% I IP62 500mm AWG24 tin-plated terminals I NBR I *",
-  "Kisa_Kod": "",
-  "Fiyat": "84,80",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 5,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "720 Series",
-  "Alt_Baslik": "Model 721 | 2/2 - 3/2 | NC - NO",
-  "Image_Path": ""
-}
-```
-
-```json
-{
-  "Malzeme_Kodu": "M X 7 2 1 0 2 C 2 J 7",
-  "Açıklama": "2/2 I NC I 100 l/min I 48 I bar I 24 VDC I ED 100% I IP65 250mm AWG24 tin-plated terminals I NBR I *",
-  "Kisa_Kod": "",
-  "Fiyat": "80,60",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 5,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "720 Series",
-  "Alt_Baslik": "Model 721 | 2/2 - 3/2 | NC - NO",
-  "Image_Path": ""
-}
-```
-
-```json
-{
-  "Malzeme_Kodu": "M X 7 2 1 0 2 C 2 J 9",
-  "Açıklama": "2/2 I NC I 100 l/min I 48 I bar I 24 VDC I ED 100% I IP62 500mm AWG24 tin-plated terminals I NBR I *",
-  "Kisa_Kod": "",
-  "Fiyat": "94,40",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 5,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "720 Series",
-  "Alt_Baslik": "Model 721 | 2/2 - 3/2 | NC - NO",
-  "Image_Path": ""
-}
-```
-
-```json
-{
-  "Malzeme_Kodu": "M X 7 2 1 0 2 C 2 K K",
-  "Açıklama": "2/2 I NC I 100 l/min I 48 I bar I 24 VDC I ED 100% I IP62 500mm AWG24 tin-plated terminals I NBR I *",
-  "Kisa_Kod": "",
-  "Fiyat": "94,40",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 5,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "720 Series",
-  "Alt_Baslik": "Model 721 | 2/2 - 3/2 | NC - NO",
-  "Image_Path": ""
-}
-```
-
-```json
-{
-  "Malzeme_Kodu": "H",
-  "Açıklama": "HNB seals",
-  "Kisa_Kod": "",
-  "Fiyat": "5,00",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 5,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "720 Series",
-  "Alt_Baslik": "OPTIONS",
-  "Image_Path": ""
-}
-```
-
-```json
-{
-  "Malzeme_Kodu": "F",
-  "Açıklama": "Subplate / manifold mounting (w/o push-in fittings) I NBR seals",
-  "Kisa_Kod": "",
-  "Fiyat": "5,00",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 5,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "720 Series",
-  "Alt_Baslik": "OPTIONS",
-  "Image_Path": ""
-}
-```
-
-```json
-{
-  "Malzeme_Kodu": "J",
-  "Açıklama": "Subplate / manifold mounting (w/o push-in fittings) I HNBR seals",
-  "Kisa_Kod": "",
-  "Fiyat": "5,00",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 5,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "720 Series",
-  "Alt_Baslik": "OPTIONS",
-  "Image_Path": ""
-}
-```
-
-```json
-{
-  "Malzeme_Kodu": "K",
-  "Açıklama": "FPM seals",
-  "Kisa_Kod": "",
-  "Fiyat": "5,20",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 5,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "720 Series",
-  "Alt_Baslik": "OPTIONS",
-  "Image_Path": ""
-}
-```
-
-```json
-{
-  "Malzeme_Kodu": "A",
-  "Açıklama": "IP62 100mm AWG24 IST PH2 type connector",
-  "Kisa_Kod": "",
-  "Fiyat": "5,00",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 5,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "720 Series",
-  "Alt_Baslik": "OPTIONS",
-  "Image_Path": ""
-}
-```
-
-```json
-{
-  "Malzeme_Kodu": "B",
-  "Açıklama": "IP62 500mm AWG24 IST PH2 type connector",
-  "Kisa_Kod": "",
-  "Fiyat": "5,00",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 5,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "720 Series",
-  "Alt_Baslik": "OPTIONS",
-  "Image_Path": ""
-}
-```
-
-```json
-{
-  "Malzeme_Kodu": "P",
-  "Açıklama": "P67 M 8 2 pins integrated connector",
-  "Kisa_Kod": "",
-  "Fiyat": "7,40",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 5,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "720 Series",
-  "Alt_Baslik": "OPTIONS",
-  "Image_Path": ""
-}
-```
-
-```json
-{
-  "Malzeme_Kodu": "Q",
-  "Açıklama": "P67 M 8 3 pins integrated connector (with GND)",
-  "Kisa_Kod": "",
-  "Fiyat": "7,80",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 5,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "720 Series",
-  "Alt_Baslik": "OPTIONS",
-  "Image_Path": ""
-}
-```
-
-```json
-{
-  "Malzeme_Kodu": "861.332E",
-  "Açıklama": "720 Series 2 positions manifold kit I anodized AL (natural) I Supplied with installation hardware, 8mm inlet fitting, silencer and seals",
-  "Kisa_Kod": "",
-  "Fiyat": "75,40",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 5,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "720 Series",
-  "Alt_Baslik": "ACCESSORIES",
-  "Image_Path": ""
-}
-```
-
-```json
-{
-  "Malzeme_Kodu": "861.310I",
-  "Açıklama": "720 Series 4 positions manifold kit I anodized AL (natural) I Supplied with installation hardware, 8mm inlet fitting, silencer and seals",
-  "Kisa_Kod": "",
-  "Fiyat": "102,40",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 5,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "720 Series",
-  "Alt_Baslik": "ACCESSORIES",
-  "Image_Path": ""
-}
-```
-
-```json
-{
-  "Malzeme_Kodu": "861.321T",
-  "Açıklama": "720 Series 8 positions manifold kit I anodized AL (natural) I Supplied with installation hardware, 8mm inlet fitting, silencer and seals",
-  "Kisa_Kod": "",
-  "Fiyat": "202,00",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 5,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "720 Series",
-  "Alt_Baslik": "ACCESSORIES",
-  "Image_Path": ""
-}
-```
-
-```json
-{
-  "Malzeme_Kodu": "861.919T",
-  "Açıklama": "720 Series 2 positions 3/2 manifold kit I anodized AL (natural) I Supplied with installation hardware, 8mm inlet fitting, silencer and seals",
-  "Kisa_Kod": "",
-  "Fiyat": "59,40",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 5,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "720 Series",
-  "Alt_Baslik": "ACCESSORIES",
-  "Image_Path": ""
-}
-```
-
-```json
-{
-  "Malzeme_Kodu": "903.160V",
-  "Açıklama": "3 pins M8x1 female cable I 2000mm I IP67 I PUR I Suitable for 3 pins I (F) and 2 pins I (E) I M8 integrated connector",
-  "Kisa_Kod": "",
-  "Fiyat": "25,60",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 5,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "720 Series",
-  "Alt_Baslik": "ACCESSORIES",
-  "Image_Path": ""
-}
-```
-
-```json
-{
-  "Malzeme_Kodu": "903.161Z",
-  "Açıklama": "3 pins M8x1 female cable I 1500mm I IP67 I PUR I Suitable for 3 pins I (F) and 2 pins I (E) I M8 integrated connector",
-  "Kisa_Kod": "",
-  "Fiyat": "34,00",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 5,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "720 Series",
-  "Alt_Baslik": "ACCESSORIES",
-  "Image_Path": ""
-}
-```
