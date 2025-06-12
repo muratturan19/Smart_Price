@@ -75,13 +75,11 @@ def _parse_md_guide(path: Path) -> List[Dict[str, Any]]:
                 continue
             if in_code:
                 continue
-            if lstripped.startswith("###") or "JSON" in lstripped.upper():
-                if cleaned:
-                    break
+            if lstripped.startswith("###"):
+                continue
+            if "JSON" in lstripped.upper():
                 continue
             if lstripped.startswith("#"):
-                if cleaned:
-                    break
                 continue
             if lstripped.startswith(('-', '*')):
                 lstripped = lstripped.lstrip('-*').strip()

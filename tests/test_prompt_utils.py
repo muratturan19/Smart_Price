@@ -64,15 +64,17 @@ def test_prompts_for_pdf_no_match(tmp_path):
     assert prompt_utils.prompts_for_pdf("dummy.pdf", str(path)) is None
 
 
-def test_parse_md_guide_stops_at_json(tmp_path):
+def test_parse_md_guide_skips_json_but_continues(tmp_path):
     path = tmp_path / "guide.md"
     path.write_text(
-        "# G\n\n## BRAND\n- Inst1\n### Çıktı Formatı\n```json\n{\n  \"foo\": \"bar\"\n}\n```"
+        "# G\n\n## BRAND\n- Inst1\n### Çıktı Formatı\n```json\n{\n  \"foo\": \"bar\"\n}\n```\nSonraki satır"
     )
     data = prompt_utils.load_extraction_guide(str(path))
     assert len(data) == 1
     prompt = data[0]["prompt"]
     assert "foo" not in prompt and "bar" not in prompt
+    assert "Inst1" in prompt
+    assert "Sonraki satır" in prompt
 
 
 def test_prompts_append_json_hint(tmp_path):
