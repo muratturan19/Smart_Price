@@ -1,0 +1,506 @@
+```json
+{
+  "Malzeme_Kodu": "D C X 3 2 1 1 8 4 C 3 0 6",
+  "Açıklama": "3/2 I NC I 28 l/min @ 6 bar I 0-6 bar I 6 VDC I NBR I IP52 Pico-Spox type male connector I subplate mounting",
+  "Kisa_Kod": "",
+  "Fiyat": "40,00",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 2,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "Model 321 | 3/2 | NC - NO",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "D C X 3 2 1 1 8 C 3 1 2",
+  "Açıklama": "3/2 I NC I 28 l/min @ 6 bar I 0-8 bar I 12 VDC I NBR I IP52 Pico-Spox type male connector I subplate mounting",
+  "Kisa_Kod": "",
+  "Fiyat": "40,00",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 2,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "Model 321 | 3/2 | NC - NO",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "D C X 3 2 1 1 8 C 3 2 4",
+  "Açıklama": "3/2 I NC I 28 l/min @ 6 bar I 0-8 bar I 24 VDC I NBR I IP52 Pico-Spox type male connector I subplate mounting",
+  "Kisa_Kod": "",
+  "Fiyat": "40,00",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 2,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "Model 321 | 3/2 | NC - NO",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "D C X 3 2 1 1 8 C 3 K K",
+  "Açıklama": "3/2 I NC I 28 l/min @ 6 bar I 0-8 bar I 24/5 VDC special up NBR I IP52 Pico-Spox type male connector I subplate mounting",
+  "Kisa_Kod": "",
+  "Fiyat": "44,20",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 2,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "Model 321 | 3/2 | NC - NO",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "D",
+  "Açıklama": "NO (Normally Open)",
+  "Kisa_Kod": "",
+  "Fiyat": "7,40",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 2,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "OPTIONS",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "K",
+  "Açıklama": "FKM seals",
+  "Kisa_Kod": "",
+  "Fiyat": "7,40",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 2,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "OPTIONS",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "021.481F",
+  "Açıklama": "IP52 Pico-Spox type female wiring kit 1000 mm I AWG28 tinned-plated terminals",
+  "Kisa_Kod": "",
+  "Fiyat": "6,40",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 2,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "021.259R",
+  "Açıklama": "IP52 Pico-Spox type female wiring kit with rubber dust protection cover I 1000 mm I AWG28 tinned-plated terminals",
+  "Kisa_Kod": "",
+  "Fiyat": "9,00",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 2,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "021.482G",
+  "Açıklama": "IP52 Pico-Spox type female wiring kit 1300 mm I AWG28 tinned-plated terminals",
+  "Kisa_Kod": "",
+  "Fiyat": "6,60",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 2,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "021.457H",
+  "Açıklama": "IP52 Pico-Spox type female wiring kit with rubber dust protection cover I 1300 mm I AWG28 tinned-plated terminals",
+  "Kisa_Kod": "",
+  "Fiyat": "9,20",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 2,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "021.327H",
+  "Açıklama": "IP52 Pico-Spox type female wiring kit 1500 mm I AWG28 tinned-plated terminals",
+  "Kisa_Kod": "",
+  "Fiyat": "6,80",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 2,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "021.260S",
+  "Açıklama": "IP52 Pico-Spox type female wiring kit with rubber dust protection cover I 1500 mm I AWG28 tinned-plated terminals",
+  "Kisa_Kod": "",
+  "Fiyat": "9,40",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 2,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "021.519G",
+  "Açıklama": "IP52 Pico-Spox type female wiring kit 1700 mm I AWG28 tinned-plated terminals",
+  "Kisa_Kod": "",
+  "Fiyat": "9,70",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 2,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "021.518A",
+  "Açıklama": "IP52 Pico-Spox type female wiring kit with rubber dust protection cover I 2000 mm I AWG28 tinned-plated terminals",
+  "Kisa_Kod": "",
+  "Fiyat": "9,60",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 2,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "021.788A",
+  "Açıklama": "IP52 Pico-Spox type female wiring kit 1000 mm I AWG28 tinned-plated terminals",
+  "Kisa_Kod": "",
+  "Fiyat": "8,20",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 2,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "021.156O",
+  "Açıklama": "IP52 Pico-Spox type female wiring kit 1000 mm I AWG28 tinned-plated terminals",
+  "Kisa_Kod": "",
+  "Fiyat": "10,60",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 2,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "021.211V",
+  "Açıklama": "IP52 Pico-Spox type female wiring kit 2000 mm I AWG28 tinned-plated terminals",
+  "Kisa_Kod": "",
+  "Fiyat": "11,20",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 2,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "021.228M",
+  "Açıklama": "IP52 Pico-Spox type female wiring kit 3000 mm I AWG28 tinned-plated terminals",
+  "Kisa_Kod": "",
+  "Fiyat": "13,60",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 2,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "021.485J",
+  "Açıklama": "IP52 Pico-Spox type female wiring kit 5000 mm I AWG28 tinned-plated terminals",
+  "Kisa_Kod": "",
+  "Fiyat": "19,60",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 2,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "021.484L",
+  "Açıklama": "IP52 Pico-Spox type female wiring kit with rubber dust protection cover I 5000 mm I AWG28 tinned-plated terminals",
+  "Kisa_Kod": "",
+  "Fiyat": "22,20",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 2,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "021.227L",
+  "Açıklama": "Rubber dust protection cover for Pico-Spox type wiring kits",
+  "Kisa_Kod": "",
+  "Fiyat": "2,60",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 2,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "021.350E",
+  "Açıklama": "1 pos. 3/2 individual subplate kit (AL) with nipples I supplied with installation hardware",
+  "Kisa_Kod": "",
+  "Fiyat": "34,00",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 2,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "021.351F",
+  "Açıklama": "2 pos. 3/2 individual subplate kit (AL) with nipples I supplied with installation hardware",
+  "Kisa_Kod": "",
+  "Fiyat": "30,60",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 2,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "021.244C",
+  "Açıklama": "1 pos. 3/2 individual subplate kit (AL) with push-in fittings and silencer I supplied with installation hardware T shape",
+  "Kisa_Kod": "",
+  "Fiyat": "39,60",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 2,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "021.284Q",
+  "Açıklama": "2 pos. 3/2 individual subplate kit (AL) with push-in fittings and silencer I supplied with installation hardware T shape",
+  "Kisa_Kod": "",
+  "Fiyat": "34,00",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 2,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "021.352G",
+  "Açıklama": "2 pos. 3/2 multiple subplate kit (AL) with push-in fittings and silencer I supplied with installation hardware",
+  "Kisa_Kod": "",
+  "Fiyat": "53,00",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 2,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "021.353H",
+  "Açıklama": "3 pos. 3/2 multiple subplate kit (AL) with push-in fittings I supplied with installation hardware",
+  "Kisa_Kod": "",
+  "Fiyat": "46,80",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 2,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "021.265X",
+  "Açıklama": "4 pos. 3/2 multiple subplate kit (AL) with push-in fittings and silencer I supplied with installation hardware",
+  "Kisa_Kod": "",
+  "Fiyat": "89,20",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 2,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "021.354I",
+  "Açıklama": "4 pos. 3/2 multiple subplate kit (AL) with push-in fittings I supplied with installation hardware",
+  "Kisa_Kod": "",
+  "Fiyat": "80,60",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 2,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "021.266V",
+  "Açıklama": "6 pos. 3/2 multiple subplate kit (AL) with push-in fittings and silencer I supplied with installation hardware",
+  "Kisa_Kod": "",
+  "Fiyat": "112,40",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 2,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "021.355J",
+  "Açıklama": "6 pos. 3/2 multiple subplate kit (AL) with push-in fittings I supplied with installation hardware",
+  "Kisa_Kod": "",
+  "Fiyat": "104,00",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 2,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "021.356K",
+  "Açıklama": "8 pos. 3/2 multiple subplate kit (AL) with push-in fittings and silencer I supplied with installation hardware",
+  "Kisa_Kod": "",
+  "Fiyat": "182,40",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 2,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "021.357L",
+  "Açıklama": "8 pos. 3/2 multiple subplate kit (AL) with push-in fittings I supplied with installation hardware",
+  "Kisa_Kod": "",
+  "Fiyat": "169,60",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 2,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "021.267U",
+  "Açıklama": "10 pos. 3/2 multiple subplate kit (AL) with push-in fittings I supplied with installation hardware",
+  "Kisa_Kod": "",
+  "Fiyat": "229,00",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 2,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "021.288U",
+  "Açıklama": "10 pos. 3/2 multiple subplate kit (AL) with push-in fittings and silencer I supplied with installation hardware",
+  "Kisa_Kod": "",
+  "Fiyat": "218,40",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 2,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "021.303J",
+  "Açıklama": "7/2 or 3/2 individual blindplate for subplate empty seats sealing kit I supplied with installation hardware and seals",
+  "Kisa_Kod": "",
+  "Fiyat": "10,60",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 2,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+```
