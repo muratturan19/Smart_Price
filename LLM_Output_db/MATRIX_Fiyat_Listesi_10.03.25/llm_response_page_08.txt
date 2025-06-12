@@ -1,0 +1,744 @@
+```json
+{
+  "Malzeme_Kodu": "868.870C",
+  "Açıklama": "Easy Connection System (ECS) wiring kit | IP52 500mm AWG24 IN A controls I Tin-plated terminals",
+  "Kisa_Kod": "",
+  "Fiyat": "18,40",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 8,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "868.871D",
+  "Açıklama": "Easy Connection System (ECS) wiring kit | IP52 900mm AWG24 IN A controls I Tin-plated terminals",
+  "Kisa_Kod": "",
+  "Fiyat": "18,40",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 8,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "868.872E",
+  "Açıklama": "Easy Connection System (ECS) wiring kit | IP52 500mm AWG22 IN A controls I Tin-plated terminals",
+  "Kisa_Kod": "",
+  "Fiyat": "34,40",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 8,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "868.873F",
+  "Açıklama": "Easy Connection System (ECS) wiring kit | IP52 900mm AWG22 IN A controls I Tin-plated terminals",
+  "Kisa_Kod": "",
+  "Fiyat": "19,80",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 8,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "868.874G",
+  "Açıklama": "Easy Connection System (ECS) wiring kit | IP52 1000mm AWG22 IN A controls I Tin-plated terminals",
+  "Kisa_Kod": "",
+  "Fiyat": "19,80",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 8,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "868.875H",
+  "Açıklama": "Easy Connection System (ECS) wiring kit | IP52 1000mm AWG21 IN A controls I Tin-plated terminals",
+  "Kisa_Kod": "",
+  "Fiyat": "19,80",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 8,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "868.877J",
+  "Açıklama": "Easy Connection System (ECS) wiring kit | IP52 2000mm AWG21 IN A controls I Tin-plated terminals",
+  "Kisa_Kod": "",
+  "Fiyat": "38,20",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 8,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "868.874G",
+  "Açıklama": "Easy Connection System (ECS) wiring kit | IP52 1000mm AWG21 IN A controls I Tin-plated terminals",
+  "Kisa_Kod": "",
+  "Fiyat": "21,20",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 8,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "868.876K",
+  "Açıklama": "Easy Connection System (ECS) wiring kit | IP52 2000mm AWG21 IN A controls I Tin-plated terminals",
+  "Kisa_Kod": "",
+  "Fiyat": "21,20",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 8,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "868.878K",
+  "Açıklama": "Easy Connection System (ECS) wiring kit | IP52 2000mm AWG21 IN A controls I Tin-plated terminals",
+  "Kisa_Kod": "",
+  "Fiyat": "44,60",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 8,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "868.845D",
+  "Açıklama": "Easy Connection System (ECS) wiring kit | IP65 3000mm AWG21 IN A controls I Tin-plated terminals",
+  "Kisa_Kod": "",
+  "Fiyat": "27,20",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 8,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "868.880M",
+  "Açıklama": "Easy Connection System (ECS) wiring kit | IP65 3000mm AWG21 IN A controls I Tin-plated terminals",
+  "Kisa_Kod": "",
+  "Fiyat": "27,20",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 8,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "868.881N",
+  "Açıklama": "Easy Connection System (ECS) wiring kit | IP65 3000mm AWG21 IN A controls I Tin-plated terminals",
+  "Kisa_Kod": "",
+  "Fiyat": "53,00",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 8,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "868.851J",
+  "Açıklama": "Easy Connection System (ECS) wiring kit | IP65 1000mm AWG24 PVC IN A controls I Tin-plated terminals",
+  "Kisa_Kod": "",
+  "Fiyat": "34,00",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 8,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "868.850V",
+  "Açıklama": "Easy Connection System (ECS) wiring kit | IP65 1000mm AWG24 PVC IN A controls I Tin-plated terminals",
+  "Kisa_Kod": "",
+  "Fiyat": "51,00",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 8,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "868.847F",
+  "Açıklama": "Easy Connection System (ECS) wiring kit | IP65 1000mm AWG24 PUR IN A controls I Tin-plated terminals",
+  "Kisa_Kod": "",
+  "Fiyat": "38,20",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 8,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "869.916I",
+  "Açıklama": "Easy Connection System (ECS) wiring kit | IP65 1000mm AWG24 PUR IN A controls I Tin-plated terminals",
+  "Kisa_Kod": "",
+  "Fiyat": "38,20",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 8,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "869.841L",
+  "Açıklama": "Easy Connection System (ECS) wiring kit | IP65 1000mm AWG24 PUR IN A controls I Tin-plated terminals",
+  "Kisa_Kod": "",
+  "Fiyat": "63,60",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 8,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "868.854M",
+  "Açıklama": "Easy Connection System (ECS) wiring kit | IP65 3000mm AWG24 PVC IN A controls I Tin-plated terminals",
+  "Kisa_Kod": "",
+  "Fiyat": "40,40",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 8,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "868.852X",
+  "Açıklama": "Easy Connection System (ECS) wiring kit | IP65 3000mm AWG24 PVC IN A controls I Tin-plated terminals",
+  "Kisa_Kod": "",
+  "Fiyat": "65,80",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 8,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "868.846G",
+  "Açıklama": "Easy Connection System (ECS) wiring kit | IP65 3000mm AWG24 PUR IN A controls I Tin-plated terminals",
+  "Kisa_Kod": "",
+  "Fiyat": "46,80",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 8,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "868.883P",
+  "Açıklama": "Easy Connection System (ECS) wiring kit | IP65 3000mm AWG24 PUR IN A controls I Tin-plated terminals",
+  "Kisa_Kod": "",
+  "Fiyat": "46,80",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 8,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "868.855R",
+  "Açıklama": "Easy Connection System (ECS) wiring kit | IP65 3000mm AWG24 PUR IN A controls I Tin-plated terminals",
+  "Kisa_Kod": "",
+  "Fiyat": "76,80",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 8,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "868.855N",
+  "Açıklama": "Easy Connection System (ECS) wiring kit | IP65 3000mm AWG24 PUR IN A controls I Tin-plated terminals",
+  "Kisa_Kod": "",
+  "Fiyat": "48,80",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 8,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "868.853L",
+  "Açıklama": "Easy Connection System (ECS) wiring kit | IP65 3000mm AWG24 PUR IN B controls I Tin-plated terminals",
+  "Kisa_Kod": "",
+  "Fiyat": "82,80",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 8,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "868.849H",
+  "Açıklama": "Easy Connection System (ECS) wiring kit | IP65 3000mm AWG24 PUR IN B controls I Tin-plated terminals",
+  "Kisa_Kod": "",
+  "Fiyat": "55,20",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 8,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "869.917J",
+  "Açıklama": "Easy Connection System (ECS) wiring kit | IP65 3000mm AWG24 PUR IN B controls I Tin-plated terminals",
+  "Kisa_Kod": "",
+  "Fiyat": "55,20",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 8,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "869.819P",
+  "Açıklama": "Easy Connection System (ECS) wiring kit | IP65 4000mm AWG24 PUR IN B controls I Tin-plated terminals",
+  "Kisa_Kod": "",
+  "Fiyat": "99,40",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 8,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "869.908A",
+  "Açıklama": "Easy Connection System (ECS) wiring kit | IP65 4000mm AWG24 PUR IN B controls I Tin-plated terminals",
+  "Kisa_Kod": "",
+  "Fiyat": "59,40",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 8,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "869.918K",
+  "Açıklama": "Easy Connection System (ECS) wiring kit | IP65 4000mm AWG24 PUR IN B controls I Tin-plated terminals",
+  "Kisa_Kod": "",
+  "Fiyat": "101,80",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 8,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "868.384A",
+  "Açıklama": "Easy Connection System (ECS) wiring kit | IP65 4000mm AWG24 PUR IN B controls I Tin-plated terminals",
+  "Kisa_Kod": "",
+  "Fiyat": "68,80",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 8,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "868.868S",
+  "Açıklama": "Easy Connection System (ECS) wiring kit | IP65 4000mm AWG24 PUR IN B controls I Tin-plated terminals",
+  "Kisa_Kod": "",
+  "Fiyat": "110,40",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 8,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "868.950E",
+  "Açıklama": "750 Series air supply manifold kit 12 I positions I Supplied with installation hardware, fittings and seals",
+  "Kisa_Kod": "",
+  "Fiyat": "114,60",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 8,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "868.951F",
+  "Açıklama": "750 Series air supply manifold kit 14 I positions I Supplied with installation hardware, fittings and seals",
+  "Kisa_Kod": "",
+  "Fiyat": "131,60",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 8,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "868.952G",
+  "Açıklama": "750 Series air supply manifold kit 16 I positions I Supplied with installation hardware, fittings and seals",
+  "Kisa_Kod": "",
+  "Fiyat": "148,40",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 8,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "868.953H",
+  "Açıklama": "750 Series air supply manifold kit 15 I positions I Supplied with installation hardware, fittings and seals",
+  "Kisa_Kod": "",
+  "Fiyat": "176,00",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 8,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "868.954J",
+  "Açıklama": "750 Series air supply manifold kit 6 I positions I Supplied with installation hardware, fittings and seals",
+  "Kisa_Kod": "",
+  "Fiyat": "193,00",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 8,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "868.955I",
+  "Açıklama": "750 Series air supply manifold kit 7 I positions I Supplied with installation hardware, fittings and seals",
+  "Kisa_Kod": "",
+  "Fiyat": "216,40",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 8,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "868.956X",
+  "Açıklama": "750 Series air supply manifold kit 8 I positions I Supplied with installation hardware, fittings and seals",
+  "Kisa_Kod": "",
+  "Fiyat": "233,20",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 8,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "869.308X",
+  "Açıklama": "750 Series stainless steel mounting bracket kit for IP52 versions",
+  "Kisa_Kod": "",
+  "Fiyat": "15,80",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 8,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "869.314E",
+  "Açıklama": "750 Series stainless steel mounting bracket kit for IP52/ECS versions",
+  "Kisa_Kod": "",
+  "Fiyat": "15,80",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 8,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "ACCESSORIES",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "H X 7 5 4 4 2 C 2 1 2",
+  "Açıklama": "2/2 I NC I 100 l/min @ 6 bar x 4 l/min @ 4 bar 12 VDC I ED 100% IN A4 ctrls I IP52/IP65 integrated Easy Connection System (ECS) I NBR I *",
+  "Kisa_Kod": "",
+  "Fiyat": "290,60",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 8,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "Model 754 | 2/2 - 3/2 I NC - NO",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "H X 7 5 4 4 2 C 2 2 2",
+  "Açıklama": "2/2 I NC I 100 l/min @ 6 bar x 4 l/min @ 4 bar 12 VDC I ED 100% IN A4 ctrls I IP52/IP65 integrated Easy Connection System (ECS) I NBR I *",
+  "Kisa_Kod": "",
+  "Fiyat": "290,60",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 8,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "Model 754 | 2/2 - 3/2 I NC - NO",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "H X 7 5 4 4 2 C 2 1 X",
+  "Açıklama": "2/2 I NC I 100 l/min @ 6 bar x 4 l/min @ 4 bar 24 VDC speed-up 100 ms I IN A4 ctrls I IP52/IP65 integrated Easy Connection System (ECS) I NBR I *",
+  "Kisa_Kod": "",
+  "Fiyat": "290,60",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 8,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "Model 754 | 2/2 - 3/2 I NC - NO",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "H X 7 5 4 4 2 C 2 2 X",
+  "Açıklama": "2/2 I NC I 100 l/min @ 6 bar x 4 l/min @ 4 bar 24 VDC speed-up 100 ms I IN A4 ctrls I IP52/IP65 integrated Easy Connection System (ECS) I NBR I *",
+  "Kisa_Kod": "",
+  "Fiyat": "290,60",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 8,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "Model 754 | 2/2 - 3/2 I NC - NO",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "H X 7 5 4 4 2 C 2 X X",
+  "Açıklama": "2/2 I NC I 100 l/min @ 6 bar x 4 l/min @ 4 bar 24 VDC speed-up 100 ms I IN A4 ctrls I IP52/IP65 integrated Easy Connection System (ECS) I NBR I *",
+  "Kisa_Kod": "",
+  "Fiyat": "311,80",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 8,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "Model 754 | 2/2 - 3/2 I NC - NO",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "B X 7 5 4 4 2 C 2 1 2",
+  "Açıklama": "2/2 I NC I 100 l/min @ 6 bar x 4 l/min @ 4 bar 12 VDC I ED 100% IN A4 ctrls I IP52/IP65 integrated Easy Connection System (ECS) I NBR I *",
+  "Kisa_Kod": "",
+  "Fiyat": "301,20",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 8,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "Model 754 | 2/2 - 3/2 I NC - NO",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "B X 7 5 4 4 2 C 2 2 2",
+  "Açıklama": "2/2 I NC I 100 l/min @ 6 bar x 4 l/min @ 4 bar 12 VDC I ED 100% IN A4 ctrls I IP52/IP65 integrated Easy Connection System (ECS) I NBR I *",
+  "Kisa_Kod": "",
+  "Fiyat": "301,20",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 8,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "Model 754 | 2/2 - 3/2 I NC - NO",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "B X 7 5 4 4 2 C 2 1 X",
+  "Açıklama": "2/2 I NC I 100 l/min @ 6 bar x 4 l/min @ 4 bar 24 VDC speed-up 100 ms I IN A4 ctrls I IP52/IP65 integrated Easy Connection System (ECS) I NBR I *",
+  "Kisa_Kod": "",
+  "Fiyat": "324,40",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 8,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "Model 754 | 2/2 - 3/2 I NC - NO",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "B X 7 5 4 4 2 C 2 2 X",
+  "Açıklama": "2/2 I NC I 100 l/min @ 6 bar x 4 l/min @ 4 bar 24 VDC speed-up 100 ms I IN A4 ctrls I IP52/IP65 integrated Easy Connection System (ECS) I NBR I *",
+  "Kisa_Kod": "",
+  "Fiyat": "324,40",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 8,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "Model 754 | 2/2 - 3/2 I NC - NO",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "B X 7 5 4 4 2 C 2 X X",
+  "Açıklama": "2/2 I NC I 100 l/min @ 6 bar x 4 l/min @ 4 bar 24 VDC speed-up 100 ms I IN A4 ctrls I IP52/IP65 integrated Easy Connection System (ECS) I NBR I *",
+  "Kisa_Kod": "",
+  "Fiyat": "311,80",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 8,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "Model 754 | 2/2 - 3/2 I NC - NO",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "M X 7 5 4 4 2 C 2 1 X",
+  "Açıklama": "2/2 I NC I 200 l/min @ 6 bar x 4 l/min @ 4 bar 24 VDC speed-up 100 ms I IN A4 ctrls I IP52/IP65 integrated Easy Connection System (ECS) I NBR I *",
+  "Kisa_Kod": "",
+  "Fiyat": "339,20",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 8,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "Model 754 | 2/2 - 3/2 I NC - NO",
+  "Image_Path": ""
+}
+{
+  "Malzeme_Kodu": "M X 7 5 4 4 2 C 2 X X",
+  "Açıklama": "2/2 I NC I 200 l/min @ 6 bar x 4 l/min @ 4 bar 24 VDC speed-up 100 ms I IN A4 ctrls I IP52/IP65 integrated Easy Connection System (ECS) I NBR I *",
+  "Kisa_Kod": "",
+  "Fiyat": "339,20",
+  "Para_Birimi": "EUR",
+  "Marka": "MATRIX",
+  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+  "Sayfa": 8,
+  "Record_Code": "MATRIX",
+  "Ana_Baslik": "320 Series",
+  "Alt_Baslik": "Model 754 | 2/2 - 3/2 I NC - NO",
+  "Image_Path": ""
+}
+```
