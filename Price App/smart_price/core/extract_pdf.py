@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import os
 import tempfile
-from typing import IO, Any, Optional, Sequence, Callable, List
+from typing import IO, Any, Optional, Sequence, Callable
 import logging
 from datetime import datetime
 import difflib
@@ -261,12 +261,17 @@ def extract_from_pdf(
         cleanup()
         duration = time.time() - total_start
         notify(f"Finished {src} via LLM with 0 rows in {duration:.2f}s")
-        debug_dir = (
-            Path(os.getenv("SMART_PRICE_DEBUG_DIR", "LLM_Output_db")) / output_stem
-        )
+        debug_dir = Path(os.getenv("SMART_PRICE_DEBUG_DIR", "LLM_Output_db")) / output_stem
+        text_dir = Path(os.getenv("SMART_PRICE_TEXT_DIR", "LLM_Text_db")) / output_stem
+        debug_dir.mkdir(parents=True, exist_ok=True)
+        text_dir.mkdir(parents=True, exist_ok=True)
         set_output_subdir(None)
         notify("Debug klasörü GitHub'a yükleniyor...")
-        ok = upload_folder(debug_dir, remote_prefix=f"LLM_Output_db/{debug_dir.name}")
+        ok = upload_folder(
+            debug_dir,
+            remote_prefix=f"LLM_Output_db/{debug_dir.name}",
+            file_extensions=[".png"],
+        )
         if ok:
             notify("Debug klasörü yüklendi")
         else:
@@ -331,22 +336,28 @@ def extract_from_pdf(
     log_token_counts(src, total_input_tokens, total_output_tokens)
     cleanup()
     debug_dir = Path(os.getenv("SMART_PRICE_DEBUG_DIR", "LLM_Output_db")) / output_stem
+    text_dir = Path(os.getenv("SMART_PRICE_TEXT_DIR", "LLM_Text_db")) / output_stem
     debug_dir.mkdir(parents=True, exist_ok=True)
+    text_dir.mkdir(parents=True, exist_ok=True)
     if not any(p.suffix == ".png" for p in debug_dir.glob("*.png")):
         try:
             with open(debug_dir / "page_image_page_01.png", "wb") as fh:
                 fh.write(b"")
         except Exception:
             pass
-    if not any(p.name.startswith("llm_response") for p in debug_dir.iterdir()):
+    if not any(p.name.startswith("llm_response") for p in text_dir.iterdir()):
         try:
-            with open(debug_dir / "llm_response_page_01.txt", "w", encoding="utf-8") as fh:
+            with open(text_dir / "llm_response_page_01.txt", "w", encoding="utf-8") as fh:
                 fh.write("")
         except Exception:
             pass
     set_output_subdir(None)
     notify("Debug klasörü GitHub'a yükleniyor...")
-    ok = upload_folder(debug_dir, remote_prefix=f"LLM_Output_db/{debug_dir.name}")
+    ok = upload_folder(
+        debug_dir,
+        remote_prefix=f"LLM_Output_db/{debug_dir.name}",
+        file_extensions=[".png"],
+    )
     if ok:
         notify("Debug klasörü yüklendi")
     else:

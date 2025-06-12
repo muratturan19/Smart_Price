@@ -699,7 +699,6 @@ def test_extract_from_pdf_bytesio(monkeypatch):
         def pages(self):
             return [FakePage()]
 
-    import sys
 
     import smart_price.core.extract_pdf as pdf_mod
     called_parse = {}
@@ -881,15 +880,19 @@ def test_llm_debug_files(monkeypatch, tmp_path):
 
     monkeypatch.setattr(pdf_mod.ocr_llm_fallback, "parse", fake_parse)
 
-    monkeypatch.setenv("SMART_PRICE_DEBUG_DIR", str(tmp_path))
+    img_root = tmp_path / "imgs"
+    txt_root = tmp_path / "txt"
+    monkeypatch.setenv("SMART_PRICE_DEBUG_DIR", str(img_root))
+    monkeypatch.setenv("SMART_PRICE_TEXT_DIR", str(txt_root))
 
     df = extract_from_pdf("dummy.pdf")
 
-    folder = tmp_path / "dummy"
+    img_folder = img_root / "dummy"
+    txt_folder = txt_root / "dummy"
 
     assert not df.empty
-    assert any(p.suffix == ".png" for p in folder.iterdir())
-    assert any(p.name.startswith("llm_response") for p in folder.iterdir())
+    assert any(p.suffix == ".png" for p in img_folder.iterdir())
+    assert any(p.name.startswith("llm_response") for p in txt_folder.iterdir())
 
 
 def test_extract_from_pdf_llm_sets_page_added(monkeypatch):

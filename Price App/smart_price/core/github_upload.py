@@ -34,7 +34,12 @@ def _sanitize_repo_path(path: str) -> str:
     return quote(safe, safe="/")
 
 
-def upload_folder(path: Path, *, remote_prefix: str | None = None) -> bool:
+def upload_folder(
+    path: Path,
+    *,
+    remote_prefix: str | None = None,
+    file_extensions: list[str] | None = None,
+) -> bool:
     """Upload ``path`` to a GitHub repository.
 
     Parameters
@@ -45,8 +50,9 @@ def upload_folder(path: Path, *, remote_prefix: str | None = None) -> bool:
         Folder prefix for uploaded files.  When ``None`` (default), files are
         placed under ``"LLM_Output_db/<path.name>"`` in the repository.
 
-    Requires ``GITHUB_REPO`` and ``GITHUB_TOKEN`` environment variables. Set
-    ``GITHUB_BRANCH`` to push to a branch other than ``main``.
+    Only files matching ``file_extensions`` are uploaded when the list is
+    provided. Requires ``GITHUB_REPO`` and ``GITHUB_TOKEN`` environment
+    variables. Set ``GITHUB_BRANCH`` to push to a branch other than ``main``.
     """
     repo = os.getenv("GITHUB_REPO")
     token = os.getenv("GITHUB_TOKEN")
@@ -61,6 +67,8 @@ def upload_folder(path: Path, *, remote_prefix: str | None = None) -> bool:
     success = True
     for file_path in path.rglob("*"):
         if not file_path.is_file():
+            continue
+        if file_extensions is not None and file_path.suffix.lower() not in file_extensions:
             continue
         repo_path = Path(remote_prefix) / file_path.relative_to(path)
         url_path = _sanitize_repo_path(repo_path.as_posix())
