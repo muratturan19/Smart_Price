@@ -1,8 +1,8 @@
 {
     "Ana_Baslik": "Model 754 1/3",
     "Alt_Baslik": "CONFIGURATIONS",
-    "Malzeme_Kodu": "H K 7 5 4 8 E D 2 1 2",
-    "Açıklama": "3/3 I Out/NC I 5 l/min I 10 bar I 24 VDC I ED 100% I N.B. cr/s IP52/IP65 integrated Easy Connection System (ECS) I NBR I *",
+    "Malzeme_Kodu": "H K 7 5 4 8 1 2 D 2 2",
+    "Açıklama": "3/3 I Out/NC I Exh. 50 l/min I 0-4 bar I 12 VDC I ED 100% I N.B. cr/s IP52/IP65 integrated Easy Connection System (ECS) I NBR I *",
     "Fiyat": "316,00",
     "Para_Birimi": "EUR",
     "Marka": "MATRIX",
