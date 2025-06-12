@@ -1,14 +1,46 @@
 {
-    "Ana_Baslik": "750 Series",
-    "Alt_Baslik": "Model 758 | 5/2",
-    "Malzeme_Kodu": "H X 7 5 8 4 2 E 5 2 5",
-    "Açıklama": "5/2 I N4 I NO + NC I 500 l/min I 4-8 bar I 24 VDC I 100% N.R. I ch.1/2/5 IP25/IP65 integrated Easy Connection System (ECS) I NBR I *",
-    "Fiyat": "381,60",
-    "Para_Birimi": "EUR",
-    "Marka": "MATRIX",
-    "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-    "Sayfa": 13,
-    "Record_Code": "MATRIX",
-    "Kisa_Kod": "",
-    "Image_Path": ""
+    "data": [
+        {
+            "Ana_Baslik": "750 Series",
+            "Alt_Baslik": "Model 758 | 5/2",
+            "Malzeme_Kodu": "H X 7 5 8 4 2 E 5 2 5",
+            "Açıklama": "5/2 I N4 I NO - A I NC 100 l/min I 4-8 bar I 24 VDC I 100% N. c.trips I IP52/IP65 integrated Easy Connection System (ECS) I NBR I *",
+            "Fiyat": "381,60",
+            "Para_Birimi": "EUR",
+            "Marka": "MATRIX",
+            "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+            "Sayfa": 13,
+            "Record_Code": "MATRIX",
+            "Kisa_Kod": "",
+            "Image_Path": ""
+        },
+        {
+            "Ana_Baslik": "750 Series",
+            "Alt_Baslik": "OPTIONS",
+            "Malzeme_Kodu": "H",
+            "Açıklama": "HNBR seals",
+            "Fiyat": "39,20",
+            "Para_Birimi": "EUR",
+            "Marka": "MATRIX",
+            "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+            "Sayfa": 13,
+            "Record_Code": "MATRIX",
+            "Kisa_Kod": "",
+            "Image_Path": ""
+        },
+        {
+            "Ana_Baslik": "750 Series",
+            "Alt_Baslik": "ACCESSORIES",
+            "Malzeme_Kodu": "868.871B",
+            "Açıklama": "Easy Connection System (ECS) wiring kit IP52 500mm AWG24 I N4 controls I Tin-plated terminals",
+            "Fiyat": "18,40",
+            "Para_Birimi": "EUR",
+            "Marka": "MATRIX",
+            "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+            "Sayfa": 13,
+            "Record_Code": "MATRIX",
+            "Kisa_Kod": "",
+            "Image_Path": ""
+        }
+    ]
 }
