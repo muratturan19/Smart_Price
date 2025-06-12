@@ -34,7 +34,7 @@ from smart_price.core.extract_pdf_agentic import extract_from_pdf_agentic
 from smart_price import config
 from smart_price.core.logger import init_logging
 from smart_price.core.github_upload import upload_folder, delete_github_folder
-from smart_price.core.common_utils import normalize_currency
+from smart_price.core.common_utils import normalize_currency, normalize_price
 
 logger = logging.getLogger("smart_price")
 
@@ -324,7 +324,7 @@ def merge_files(
     master = standardize_column_names(master)
     logger.debug("[merge] Raw merged rows: %d", len(master))
     if "Fiyat" in master.columns:
-        master["Fiyat"] = pd.to_numeric(master["Fiyat"], errors="coerce")
+        master["Fiyat"] = master["Fiyat"].apply(normalize_price)
     else:
         logger.warning("[merge] 'Fiyat' column missing after merge; columns: %s", list(master.columns))
         master["Fiyat"] = pd.NA
