@@ -1,268 +1,102 @@
-```json
 {
-  "Malzeme_Kodu": "MX894402C2J",
-  "Açıklama": "2/2 NC I 100 l/min @ 8 bar x 1/8 2 bar I 24 VDC speed-up I 29 I IP52 500mm AWG24 tin-plated n 4 crts (n.2 coils each) I NBR I",
-  "Kisa_Kod": "",
-  "Fiyat": "320,20",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 21,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "894 1/2/2 NC",
-  "Alt_Baslik": "Model 894 1/2/2 NC",
-  "Image_Path": ""
+    "data": [
+        {
+            "Ana_Baslik": "Model 894 1/2/2 I NC",
+            "Alt_Baslik": "CONFIGURATIONS",
+            "Malzeme_Kodu": "M X 8 9 4 8 0 0 C 2 4",
+            "Açıklama": "2/2 I NC I 100 l/min @ 8 bar x 1/8 2 bar 24 VDC speed-up I 27 IP52 500mm AWG24 tin-plated n 4 ctrls (n 2 coils each) I NBR I",
+            "Fiyat": "320,20",
+            "Para_Birimi": "EUR",
+            "Marka": "MATRIX",
+            "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+            "Sayfa": 21,
+            "Record_Code": "MATRIX",
+            "Kisa_Kod": "",
+            "Image_Path": ""
+        },
+        {
+            "Ana_Baslik": "Model 894 1/2/2 I NC",
+            "Alt_Baslik": "CONFIGURATIONS",
+            "Malzeme_Kodu": "M X 8 9 4 8 0 0 C 2 2",
+            "Açıklama": "2/2 I NC I 100 l/min @ 8 bar x 1/8 2 bar 24 VDC speed-up I 27 IP52 500mm AWG24 tin-plated n 4 ctrls (n 2 coils each) I NBR I",
+            "Fiyat": "328,60",
+            "Para_Birimi": "EUR",
+            "Marka": "MATRIX",
+            "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+            "Sayfa": 21,
+            "Record_Code": "MATRIX",
+            "Kisa_Kod": "",
+            "Image_Path": ""
+        },
+        {
+            "Ana_Baslik": "Model 894 1/2/2 I NC",
+            "Alt_Baslik": "CONFIGURATIONS",
+            "Malzeme_Kodu": "M X 8 9 4 8 0 0 C 2 6",
+            "Açıklama": "2/2 I NC I 100 l/min @ 8 bar x 1/8 2 bar 24 VDC speed-up I 27 IP52 500mm AWG24 tin-plated n 4 ctrls (n 2 coils each) I NBR I",
+            "Fiyat": "328,60",
+            "Para_Birimi": "EUR",
+            "Marka": "MATRIX",
+            "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+            "Sayfa": 21,
+            "Record_Code": "MATRIX",
+            "Kisa_Kod": "",
+            "Image_Path": ""
+        },
+        {
+            "Ana_Baslik": "Model 894 1/2/2 I NC",
+            "Alt_Baslik": "OPTIONS",
+            "Malzeme_Kodu": "H",
+            "Açıklama": "NBR seals",
+            "Fiyat": "39,20",
+            "Para_Birimi": "EUR",
+            "Marka": "MATRIX",
+            "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+            "Sayfa": 21,
+            "Record_Code": "MATRIX",
+            "Kisa_Kod": "",
+            "Image_Path": ""
+        },
+        {
+            "Ana_Baslik": "Model 898 1/2/2 I NC",
+            "Alt_Baslik": "CONFIGURATIONS",
+            "Malzeme_Kodu": "M X 8 9 8 0 0 C 2 4",
+            "Açıklama": "2/2 I NC I 100 l/min @ 8 bar x 1/8 2 bar 24 VDC speed-up I 27 IP52 500mm AWG24 tin-plated n 8 ctrls I NBR I",
+            "Fiyat": "333,00",
+            "Para_Birimi": "EUR",
+            "Marka": "MATRIX",
+            "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+            "Sayfa": 21,
+            "Record_Code": "MATRIX",
+            "Kisa_Kod": "",
+            "Image_Path": ""
+        },
+        {
+            "Ana_Baslik": "Model 898 1/2/2 I NC",
+            "Alt_Baslik": "CONFIGURATIONS",
+            "Malzeme_Kodu": "M X 8 9 8 0 0 C 2 2",
+            "Açıklama": "2/2 I NC I 100 l/min @ 8 bar x 1/8 2 bar 24 VDC speed-up I 27 IP52 500mm AWG24 tin-plated n 8 ctrls I NBR I",
+            "Fiyat": "343,60",
+            "Para_Birimi": "EUR",
+            "Marka": "MATRIX",
+            "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+            "Sayfa": 21,
+            "Record_Code": "MATRIX",
+            "Kisa_Kod": "",
+            "Image_Path": ""
+        },
+        {
+            "Ana_Baslik": "Model 898 1/2/2 I NC",
+            "Alt_Baslik": "OPTIONS",
+            "Malzeme_Kodu": "H",
+            "Açıklama": "NBR seals",
+            "Fiyat": "39,20",
+            "Para_Birimi": "EUR",
+            "Marka": "MATRIX",
+            "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+            "Sayfa": 21,
+            "Record_Code": "MATRIX",
+            "Kisa_Kod": "",
+            "Image_Path": ""
+        }
+    ]
 }
-{
-  "Malzeme_Kodu": "MX894402C2K",
-  "Açıklama": "2/2 NC I 100 l/min @ 8 bar x 1/8 2 bar I 24 VDC speed-up I 29 I IP52 500mm AWG24 tin-plated n 4 crts (n.2 coils each) I NBR I",
-  "Kisa_Kod": "",
-  "Fiyat": "328,60",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 21,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "894 1/2/2 NC",
-  "Alt_Baslik": "Model 894 1/2/2 NC",
-  "Image_Path": ""
-}
-{
-  "Malzeme_Kodu": "MX894402C2L",
-  "Açıklama": "2/2 NC I 100 l/min @ 8 bar x 1/8 2 bar I 24 VDC speed-up I 29 I IP52 500mm AWG24 tin-plated n 4 crts (n.2 coils each) I NBR I",
-  "Kisa_Kod": "",
-  "Fiyat": "328,60",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 21,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "894 1/2/2 NC",
-  "Alt_Baslik": "Model 894 1/2/2 NC",
-  "Image_Path": ""
-}
-{
-  "Malzeme_Kodu": "MX894402C2M",
-  "Açıklama": "2/2 NC I 100 l/min @ 8 bar x 1/8 2 bar I 24 VDC speed-up I 29 I IP52 500mm AWG24 tin-plated n 4 crts (n.2 coils each) I NBR I",
-  "Kisa_Kod": "",
-  "Fiyat": "341,40",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 21,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "894 1/2/2 NC",
-  "Alt_Baslik": "Model 894 1/2/2 NC",
-  "Image_Path": ""
-}
-{
-  "Malzeme_Kodu": "MX894402C2N",
-  "Açıklama": "2/2 NC I 100 l/min @ 8 bar x 1/8 2 bar I 24 VDC speed-up I 29 I IP52 500mm AWG24 tin-plated n 4 crts (n.2 coils each) I NBR I",
-  "Kisa_Kod": "",
-  "Fiyat": "341,40",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 21,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "894 1/2/2 NC",
-  "Alt_Baslik": "Model 894 1/2/2 NC",
-  "Image_Path": ""
-}
-{
-  "Malzeme_Kodu": "MX894402C2P",
-  "Açıklama": "2/2 NC I 100 l/min @ 8 bar x 1/8 2 bar I 24 VDC speed-up I 29 I IP52 500mm AWG24 tin-plated n 4 crts (n.2 coils each) I NBR I",
-  "Kisa_Kod": "",
-  "Fiyat": "381,60",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 21,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "894 1/2/2 NC",
-  "Alt_Baslik": "Model 894 1/2/2 NC",
-  "Image_Path": ""
-}
-{
-  "Malzeme_Kodu": "MX894402C2Q",
-  "Açıklama": "2/2 NC I 100 l/min @ 8 bar x 1/8 2 bar I 24 VDC speed-up I 29 I IP52 500mm AWG24 tin-plated n 4 crts (n.2 coils each) I NBR I",
-  "Kisa_Kod": "",
-  "Fiyat": "358,40",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 21,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "894 1/2/2 NC",
-  "Alt_Baslik": "Model 894 1/2/2 NC",
-  "Image_Path": ""
-}
-{
-  "Malzeme_Kodu": "MX894402C2R",
-  "Açıklama": "2/2 NC I 100 l/min @ 8 bar x 1/8 2 bar I 24 VDC speed-up I 29 I IP52 500mm AWG24 tin-plated n 4 crts (n.2 coils each) I NBR I",
-  "Kisa_Kod": "",
-  "Fiyat": "358,40",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 21,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "894 1/2/2 NC",
-  "Alt_Baslik": "Model 894 1/2/2 NC",
-  "Image_Path": ""
-}
-{
-  "Malzeme_Kodu": "OX894402C2",
-  "Açıklama": "2/2 NC I 110 l/min @ 8 bar x 1/4 2 bar I 24 VDC speed-up I 27 I IP52 500mm AWG24 tin-plated n 4 crts (n.2 coils each) I NBR I",
-  "Kisa_Kod": "",
-  "Fiyat": "400,80",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 21,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "894 1/2/2 NC",
-  "Alt_Baslik": "Model 894 1/2/2 NC",
-  "Image_Path": ""
-}
-{
-  "Malzeme_Kodu": "H",
-  "Açıklama": "NBR seals",
-  "Kisa_Kod": "",
-  "Fiyat": "39,20",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 21,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "894 1/2/2 NC",
-  "Alt_Baslik": "OPTIONS",
-  "Image_Path": ""
-}
-{
-  "Malzeme_Kodu": "I",
-  "Açıklama": "Manifold mounting inlet interface design w/o inlet push-in fitting (fastening threads standard pitch 26mm, 36mm optional)",
-  "Kisa_Kod": "",
-  "Fiyat": "31,40",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 21,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "894 1/2/2 NC",
-  "Alt_Baslik": "OPTIONS",
-  "Image_Path": ""
-}
-{
-  "Malzeme_Kodu": "J",
-  "Açıklama": "NBR seals I Manifold mounting inlet interface design w/o inlet push-in fitting (fastening threads standard pitch 26mm, 36mm optional)",
-  "Kisa_Kod": "",
-  "Fiyat": "70,40",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 21,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "894 1/2/2 NC",
-  "Alt_Baslik": "OPTIONS",
-  "Image_Path": ""
-}
-{
-  "Malzeme_Kodu": "8",
-  "Açıklama": "n.8 crts I Multi-flow (n.4 / n.2 levels) outlet I IP52 500mm AWG24 with tin-plated terminals 11 I 8 wires (n.8 crts n.3 common GND)",
-  "Kisa_Kod": "",
-  "Fiyat": "128,50",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 21,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "894 1/2/2 NC",
-  "Alt_Baslik": "OPTIONS",
-  "Image_Path": ""
-}
-{
-  "Malzeme_Kodu": "5",
-  "Açıklama": "IP52 100mm AWG24 integrated wires with tin-plated terminals 11 I 4 crts I 5 wires (n.4 crts n.1 common GND)",
-  "Kisa_Kod": "",
-  "Fiyat": "38,00",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 21,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "894 1/2/2 NC",
-  "Alt_Baslik": "OPTIONS",
-  "Image_Path": ""
-}
-{
-  "Malzeme_Kodu": "3",
-  "Açıklama": "IP52 500mm AWG24 integrated wires with tin-plated terminals 11 I 5 wires (n.8 crts n.3 common GND) I Sub-D 15 male connector I n.8 crts only",
-  "Kisa_Kod": "",
-  "Fiyat": "51,00",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 21,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "894 1/2/2 NC",
-  "Alt_Baslik": "OPTIONS",
-  "Image_Path": ""
-}
-{
-  "Malzeme_Kodu": "P",
-  "Açıklama": "IP52 500mm multi-polar integrated PUR cables (x4) with AWG24 tin-plated terminals 11 I 8 wires (n.8 crts n.3 common GND) I n.8 crts only",
-  "Kisa_Kod": "",
-  "Fiyat": "68,80",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 21,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "894 1/2/2 NC",
-  "Alt_Baslik": "OPTIONS",
-  "Image_Path": ""
-}
-{
-  "Malzeme_Kodu": "R",
-  "Açıklama": "IP20 500mm AWG24 integrated wires with tin-plated terminals I 16 wires (n.8 crts n.8 independent GND) I n.8 crts only",
-  "Kisa_Kod": "",
-  "Fiyat": "25,50",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 21,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "894 1/2/2 NC",
-  "Alt_Baslik": "OPTIONS",
-  "Image_Path": ""
-}
-{
-  "Malzeme_Kodu": "S",
-  "Açıklama": "IP20 500mm multi-polar integrated PUR cables (x4) with AWG24 tin-plated terminals I 16 wires (n.8 crts n.8 independent GND) I n.8 crts only",
-  "Kisa_Kod": "",
-  "Fiyat": "68,80",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 21,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "894 1/2/2 NC",
-  "Alt_Baslik": "OPTIONS",
-  "Image_Path": ""
-}
-{
-  "Malzeme_Kodu": "",
-  "Açıklama": "Internal PCB protective resin encapsulation against water/moisture contamination with specific inlet interface design",
-  "Kisa_Kod": "",
-  "Fiyat": "34,00",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 21,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "894 1/2/2 NC",
-  "Alt_Baslik": "OPTIONS",
-  "Image_Path": ""
-}
-```
