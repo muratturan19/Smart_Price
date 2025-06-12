@@ -1,0 +1,14 @@
+{
+    "Ana_Baslik": "580 Series",
+    "Alt_Baslik": "Model 588 | 2/2 | NC",
+    "Malzeme_Kodu": "0X5888DC2KK",
+    "Açıklama": "2/2 I NC I 170 l/min @ 6 bar I 8 x 0.5 bar I 24V5 VDC speed-up I IP62 500mm AWG20 tin-plated terminals I n.8 independent ctrl.s I FKM I",
+    "Fiyat": "356,20",
+    "Para_Birimi": "EUR",
+    "Marka": "MATRIX",
+    "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+    "Sayfa": 4,
+    "Record_Code": "MATRIX",
+    "Kisa_Kod": "",
+    "Image_Path": ""
+}
