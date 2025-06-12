@@ -7,11 +7,37 @@
                birleşik prompt döndürür.
 """
 from __future__ import annotations
-import functools, re, unicodedata
+import functools, re, unicodedata, os
 from pathlib import Path
 from typing import Dict, Tuple
 
-GUIDE_PATH = Path(__file__).resolve().parents[2] / "extraction_guide.md"
+def _resolve_guide_path() -> Path:
+    """Return extraction guide path using environment and sensible fallbacks."""
+    tried: list[Path] = []
+
+    env_path = os.getenv("PRICE_GUIDE_PATH")
+    if env_path:
+        p = Path(env_path)
+        tried.append(p)
+        if p.exists():
+            return p
+
+    p = Path.cwd() / "extraction_guide.md"
+    tried.append(p)
+    if p.exists():
+        return p
+
+    p = Path(__file__).resolve().parents[2] / "extraction_guide.md"
+    tried.append(p)
+    if p.exists():
+        return p
+
+    hint = ", ".join(str(t) for t in tried)
+    raise FileNotFoundError(
+        f"extraction_guide.md not found. Tried: {hint}"
+    )
+
+GUIDE_PATH = _resolve_guide_path()
 
 class _GuideCache:
     def __init__(self):
@@ -22,9 +48,11 @@ class _GuideCache:
         self.default_block = ""
         self._loaded = False
 
-    def load(self, md_path: Path = GUIDE_PATH):
+    def load(self, md_path: Path | None = None):
         if self._loaded:
             return
+        if md_path is None:
+            md_path = GUIDE_PATH
         if not md_path.exists():
             raise FileNotFoundError(md_path)
         text = md_path.read_text(encoding="utf-8").replace("\r\n", "\n")
