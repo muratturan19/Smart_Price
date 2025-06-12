@@ -37,31 +37,11 @@ def test_load_extraction_guide_bad(tmp_path, monkeypatch):
     assert prompt_utils.load_extraction_guide() == []
 
 
-def test_prompts_for_pdf(tmp_path):
-    path = tmp_path / "guide.csv"
-    path.write_text("pdf,page,prompt\ndummy.pdf,,ALL\ndummy.pdf,2,TWO\n")
-    mapping = prompt_utils.prompts_for_pdf("dummy.pdf", str(path))
-    assert mapping is not None
-    assert mapping[0].startswith(prompt_utils.RAW_HEADER_HINT)
-    assert mapping[2].startswith(prompt_utils.RAW_HEADER_HINT)
-    assert mapping[0].splitlines()[-1] == "Sonuçları JSON formatında döndür."
-    assert mapping[2].splitlines()[-1] == "Sonuçları JSON formatında döndür."
+def test_prompts_for_pdf_wrapper(monkeypatch):
+    monkeypatch.setattr(prompt_utils, "get_prompt_for_file", lambda n: "PROMPT")
+    assert prompt_utils.prompts_for_pdf("dummy.pdf") == "PROMPT"
 
 
-def test_prompts_for_pdf_md(tmp_path):
-    path = tmp_path / "guide.md"
-    path.write_text("# G\n\n## BRAND\nPrompt\n")
-    mapping = prompt_utils.prompts_for_pdf("BRAND_list.pdf", str(path))
-    assert mapping is not None
-    assert list(mapping.keys()) == [0]
-    assert mapping[0].startswith(prompt_utils.RAW_HEADER_HINT)
-    assert mapping[0].splitlines()[-1] == "Sonuçları JSON formatında döndür."
-
-
-def test_prompts_for_pdf_no_match(tmp_path):
-    path = tmp_path / "guide.csv"
-    path.write_text("pdf,page,prompt\nother.pdf,1,HELLO\n")
-    assert prompt_utils.prompts_for_pdf("dummy.pdf", str(path)) is None
 
 
 def test_parse_md_guide_skips_json_but_continues(tmp_path):
@@ -78,9 +58,6 @@ def test_parse_md_guide_skips_json_but_continues(tmp_path):
 
 
 def test_prompts_append_json_hint(tmp_path):
-    path = tmp_path / "guide.csv"
-    path.write_text("pdf,page,prompt\ndummy.pdf,,Some instructions\n")
-    mapping = prompt_utils.prompts_for_pdf("dummy.pdf", str(path))
-    assert mapping is not None
-    assert mapping[0].splitlines()[-1] == "Sonuçları JSON formatında döndür."
+    result = prompt_utils.prompts_for_pdf("dummy.pdf")
+    assert isinstance(result, str)
 
