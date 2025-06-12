@@ -1,1 +1,0 @@
-Üzgünüm, bu görüntüdeki metni doğrudan işleyemem. Ancak, PDF dosyasındaki tabloyu analiz etmek için OCR (Optik Karakter Tanıma) yazılımı kullanarak metni çıkartabilir ve ardından yukarıdaki talimatlara göre yapılandırabilirsiniz. Eğer metni sağlarsanız, JSON formatında yapılandırmanıza yardımcı olabilirim.
