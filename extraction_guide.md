@@ -1,400 +1,129 @@
-# Extraction Guide
+# LLM PDF Price List Extraction \u2013 Unified Guide (v2, 13\u202fJun\u202f2025)
+
+> **IMPORTANT**: Section\u00a00 applies to **every** prompt. Brand sections only add or override details.
 
 ---
 
-## STEED FİYAT LİSTESİ
+## 0 \u00b7 GLOBAL OUTPUT CONTRACT  \(\u1f7e5\u00a0MUST FOLLOW\)
 
-- **Her kalın ve büyük punto başlık**: `Ana_Baslik` (alt başlık yok, `Alt_Baslik` her zaman boş)
-- Her ürün satırı için şu alanları çıkar:
-  - Malzeme_Kodu
-  - Açıklama
-  - Kisa_Kod
-  - Fiyat
-  - Para_Birimi
-  - Marka (her zaman "STEED")
-  - Kaynak_Dosya (her zaman "Steed Fiyat Listesi 2025")
-  - Sayfa
-  - Record_Code (her zaman "STEED")
-  - Ana_Baslik
-  - Alt_Baslik (her zaman boş)
-  - Image_Path
+1. **Always produce JSON**. Your first instruction sentence MUST include the word **"JSON"**.
+2. Wrap every result in a single root object with the key **`"products"`**:
 
-**Kural:**  
-Alan yoksa boş bırak.  
-Çıktı şu formatta olacak:
+   ```json
+   {
+     "products": [
+       { \u2026one product object\u2026 }
+     ]
+   }
+   ```
 
-```json
-{
-  "Malzeme_Kodu": "...",
-  "Açıklama": "...",
-  "Kisa_Kod": "...",
-  "Fiyat": "...",
-  "Para_Birimi": "...",
-  "Marka": "STEED",
-  "Kaynak_Dosya": "Steed Fiyat Listesi 2025",
-  "Sayfa": ...,
-  "Record_Code": "STEED",
-  "Ana_Baslik": "...",
-  "Alt_Baslik": "",
-  "Image_Path": ""
-}
+   Return an *array* even if there is only **one** product.
+3. Fields for every product object *(leave blank when not available)*:
+
+   * `Malzeme_Kodu`
+   * `A\u00e7\u0131klama`
+   * `Kisa_Kod`
+   * `Fiyat`
+   * `Para_Birimi`
+   * `Marka`
+   * `Kaynak_Dosya`
+   * `Sayfa`
+   * `Record_Code`
+   * `Ana_Baslik`
+   * `Alt_Baslik`
+   * `Alt_Baslik2` *(optional; only when explicitly defined below)*
+   * `Image_Path`
+4. **Cleaning\u00a0& Validation**
+
+   * Strip *all* whitespace in `Malzeme_Kodu` \(e.g. `"M X 4 5 8S"` \u2192 `"MX458S"`\).
+   * Preserve decimal separators exactly as printed.
+   * Do **not** invent values; leave unknown fields `""`.
+   * The final JSON must pass `json.loads()` and satisfy the above schema.
+
+---
+
+## 1 \u00b7 UNIVERSAL SYNONYM MAP
+
+| Canonical\u00a0Field   | Accept any of these header texts                                                                                                                           |
+| ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Malzeme\_Kodu** | \u00fcr\u00fcn kodu, urun kodu, malzeme kodu, malzeme, stok kodu, kod, tip, ref no, ref., \u00fcr\u00fcn ref, \u00fcr\u00fcn tip, product code, part no, item name, item no, item number |
+| **Kisa\_Kod**     | kisa kod, short code, shortcode, k\u0131sa \u00fcr\u00fcn kodu                                                                                                            |
+| **A\u00e7\u0131klama**      | description, \u00fcr\u00fcn a\u00e7\u0131klamas\u0131, a\u00e7\u0131klama, aciklama, \u00f6zellikler, detay, product name, explanation                                                             |
+| **Fiyat**         | fiyat, birim fiyat, liste fiyat\u0131, price, unit price, list price, tutar                                                                                     |
+| **Para\_Birimi**  | para birimi, currency                                                                                                                                      |
+| **Ana\_Baslik**   | ana ba\u015fl\u0131k, ana baslik, ana\_baslik                                                                                                                        |
+| **Alt\_Baslik**   | alt ba\u015fl\u0131k, alt baslik, alt\_baslik                                                                                                                        |
+
+For any synonym **not** listed here, map it to the closest canonical field following the same logic.
+
+---
+
+## 2 \u00b7 GENERAL EXTRACTION RULES
+
+1. **Do not drop rows**: extract every real product row appearing in a table.
+2. Exclude pure header / sub-\u2011header / footnote / image rows.
+3. `Ana_Baslik` & `Alt_Baslik` must be populated for every product, using nearest visual headers as defined per brand.
+4. For tables split across pages, continue using the last valid headers until a new header appears.
+5. When a price list contains multiple currencies, set the value found in the currency column; otherwise use the brand default.
+
+---
+
+## 3 \u00b7 BRAND\u2011SPECIFIC PROMPTS
+
+Only the **differences** from Sections\u00a00\u20112 are listed below.
+
+### 3.1 STEED
+
+* Constants: `Marka = "STEED"`, `Kaynak_Dosya = "Steed Fiyat Listesi\u00a02025"`, `Record_Code = "STEED"`
+* `Ana_Baslik`: every bold, large heading on the page.
+  `Alt_Baslik`: always `""`.
+
+### 3.2 ESMAKSAN
+
+* Constants: `Marka = "ESMAKSAN"`, `Kaynak_Dosya = "ESMAKSAN\u00a02025\u00a0MART\u00a0F\u0130YAT\u00a0L\u0130STES\u0130.pdf"`, `Record_Code = "ESMAKSAN"`
+* `Ana_Baslik`: topmost large heading per page.
+  `Alt_Baslik`: title of each table block if present, else `""`.
+
+### 3.3 MATRIX
+
+* Constants: `Marka = "MATRIX"`, `Kaynak_Dosya = "MATRIX Fiyat Listesi\u00a010.03.25.pdf"`, `Record_Code = "MATRIX"`, `Para_Birimi = "EUR"`
+* `Ana_Baslik`: page-header series name (e.g. `"320\u00a0Series"`).
+* `Alt_Baslik`: table block title (e.g. `"Model\u00a0321\u00a0|\u00a03/2\u00a0|\u00a0NC\u00a0-\u00a0NO"`, `"OPTIONS"`, `"ACCESSORIES"`). Blank if none.
+
+### 3.4 GAMAK
+
+* Constants: `Marka = "GAMAK"`, `Kaynak_Dosya`: PDF file name, `Record_Code = "GAMAK"`, `Para_Birimi = "\u20ba"`
+* Header hierarchy: largest page title \u279c `Ana_Baslik`; second-level bold header \u279c `Alt_Baslik`.
+
+### 3.5 OMEGA MOTOR
+
+* Constants: `Marka = "OMEGA MOTOR"`, `Kaynak_Dosya = "Omega Motor T\u00fcm Fiyat Listeleri\u00a0Mart\u00a02025.pdf"`, `Record_Code = "OMEGA"`, `Para_Birimi = "USD"`
+* Supports optional `Alt_Baslik2` when an additional speed/material line exists directly under `Alt_Baslik`.
+
+### 3.6 REKORSAN
+
+* Constants: `Marka = "REKORSAN"`, `Kaynak_Dosya = "Rekorsan-Fiyat Listesi-27.01.2025.pdf"`, `Record_Code = "REKORSAN"`, `Para_Birimi = "\u20ba"`
+* `Alt_Baslik` is **always** `""`.
+
+---
+
+## 4 \u00b7 DEFAULT / FALLBACK PROMPT
+
+Use when the PDF filename does **not** match any brand section above.
+
+1. Identify the two highest-level visual headings: first \u2192 `Ana_Baslik`; second \u2192 `Alt_Baslik` (may be `""`).
+2. Detect currency symbol for `Para_Birimi`; default to `""` if none.
+3. Leave `Marka`, `Record_Code`, and `Kaynak_Dosya` as `""`.
+4. Follow Sections\u00a00\u20112 for all other rules.
+
+---
+
+## 5 \u00b7 RETURN STATEMENT TEMPLATE (insert verbatim at the end of every prompt)
+
+```
+A\u015fa\u011f\u0131daki y\u00f6nergeleri izle ve \u00e7\u0131kt\u0131y\u0131 **JSON** format\u0131nda, k\u00f6k anahtar\u0131 "products" olan tek bir nesne olarak d\u00f6nd\u00fcr.
 ```
 
-Dikkat!
-PDF’deki tablo ve alan başlıkları çok farklı şekillerde yazılmış olabilir. Aşağıdaki tüm ifadeler benzer anlama gelir ve ilgili alan başlığına eşlenmelidir:
-•	Malzeme_Kodu: ürün kodu, urun kodu, malzeme kodu, malzeme, stok kodu, kod, tip, ref no, ref., ürün ref, ürün tip, product code, part no, item name, item no, item number, item , ürün adı
-•	Kısa_Kod: kisa kod, short code, shortcode, kısa ürün kodu
-•	Açıklama/Özellikler: description, ürün açıklaması, açıklama, aciklama, özellikler, detay, product name, explanation
-•	Fiyat: fiyat, birim fiyat, liste fiyatı, price, unit price, list price, tutar
-•	Para_Birimi: para birimi, currency
-•	Ana_Baslik: ana başlık, ana baslik, ana_baslik
-•	Alt_Baslik: alt başlık, alt baslik, alt_baslik
-Kurallar:
-•	Tablodaki her ürün satırını, hiçbirini atlamadan, eksiksiz ve ayrı bir JSON objesi olarak çıkar.
-•	Sadece başlıkları, alt başlıkları veya açıklama satırlarını dahil etme; sadece gerçek ürün satırlarını çıkar.
-•	Sonuçları JSON formatında döndür.
-
-Her başlık için doğru alan eşleşmesini yap. Hiçbir ürünü veya satırı atlama. Yalnızca istenen alanlar ve ürün satırları çıktıda yer almalı.
-
 ---
 
-## ESMAKSAN FİYAT LİSTESİ
-
-En üstteki büyük, kalın başlık: Ana_Baslik
-
-Ürün bloklarının/tablolarının başlığı varsa: Alt_Baslik, yoksa boş
-
-Her ürün satırı için şu alanları çıkar:
-
-Malzeme_Kodu
-
-Açıklama
-
-Kisa_Kod
-
-Fiyat
-
-Para_Birimi
-
-Marka (her zaman "ESMAKSAN")
-
-Kaynak_Dosya (her zaman "ESMAKSAN 2025 MART FİYAT LİSTESİ.pdf")
-
-Sayfa
-
-Record_Code (her zaman "ESMAKSAN")
-
-Ana_Baslik
-
-Alt_Baslik
-
-Image_Path
-
-Kural:
-Alan yoksa boş bırak.
-Çıktı şu formatta olacak:
-
-{
-  "Malzeme_Kodu": "...",
-  "Açıklama": "...",
-  "Kisa_Kod": "...",
-  "Fiyat": "...",
-  "Para_Birimi": "...",
-  "Marka": "ESMAKSAN",
-  "Kaynak_Dosya": "ESMAKSAN 2025 MART FİYAT LİSTESİ.pdf",
-  "Sayfa": ...,
-  "Record_Code": "ESMAKSAN",
-  "Ana_Baslik": "...",
-  "Alt_Baslik": "...",
-  "Image_Path": ""
-}
-Dikkat!
-PDF’deki tablo ve alan başlıkları çok farklı şekillerde yazılmış olabilir. Aşağıdaki tüm ifadeler benzer anlama gelir ve ilgili alan başlığına eşlenmelidir:
-•	Malzeme_Kodu: ürün kodu, urun kodu, malzeme kodu, malzeme, stok kodu, kod, tip, ref no, ref., ürün ref, ürün tip, product code, part no, item name, item no, item number, item , ürün adı
-•	Kısa_Kod: kisa kod, short code, shortcode, kısa ürün kodu
-•	Açıklama/Özellikler: description, ürün açıklaması, açıklama, aciklama, özellikler, detay, product name, explanation
-•	Fiyat: fiyat, birim fiyat, liste fiyatı, price, unit price, list price, tutar
-•	Para_Birimi: para birimi, currency
-•	Ana_Baslik: ana başlık, ana baslik, ana_baslik
-•	Alt_Baslik: alt başlık, alt baslik, alt_baslik
-Kurallar:
-•	Tablodaki her ürün satırını, hiçbirini atlamadan, eksiksiz ve ayrı bir JSON objesi olarak çıkar.
-•	Sadece başlıkları, alt başlıkları veya açıklama satırlarını dahil etme; sadece gerçek ürün satırlarını çıkar.
-•	Sonuçları JSON formatında döndür.
-
-Her başlık için doğru alan eşleşmesini yap. Hiçbir ürünü veya satırı atlama. Yalnızca istenen alanlar ve ürün satırları çıktıda yer almalı.
-
----
-
-## MATRIX Fiyat Listesi
-
-### Genel Kural
-
-- **Ana_Baslik:** Her sayfanın en üst sağ köşesindeki ana başlık (ör: `320 Series`)
-- **Alt_Baslik:**  
-  - Tablo blok başlığındaki mavi veya kalın/kutulu başlık (ör: `Model 321 | 3/2 | NC - NO`, `OPTIONS`, `ACCESSORIES`)
-  - Tabloda başlık yoksa Alt_Baslik boş bırakılır.
-- **Malzeme_Kodu:** Tablodaki PART NUMBER hücresindeki değer.
-- **Açıklama:**  
-  - Konfigürasyon/opsiyonun satır açıklaması veya satır başındaki teknik metin.
-  - (Örneğin: `3/2 I NC I 28 l/min @ 6 bar I 0-8 bar I 24 VDC I NBR I IP52 Pico-Spox type male connector I subplate mounting`)
-- **Fiyat:** Tablodaki EUR sütunundaki değer (örn: 40,00)
-- **Para_Birimi:** Her zaman `"EUR"`
-- **Marka:** `"MATRIX"`
-- **Kaynak_Dosya:** `"MATRIX Fiyat Listesi 10.03.25.pdf"`
-- **Sayfa:** Ürünün bulunduğu sayfa numarası (örn: 1)
-- **Record_Code:** `"MATRIX"`
-- **Kisa_Kod, Image_Path:** Eğer tablo veya satırda açıkça verilmemişse boş bırak.
-
-### Çıktı Formatı
-
-Aşağıdaki tüm alanları **her ürün satırı için** eksiksiz üret (yoksa boş bırak):
-
-```json
-{
-  "Malzeme_Kodu": "...",
-  "Açıklama": "...",
-  "Kisa_Kod": "",
-  "Fiyat": "...",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": ...,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "320 Series",
-  "Alt_Baslik": "Model 321 | 3/2 | NC - NO",  // veya "OPTIONS", "ACCESSORIES" (blok başlığı)
-  "Image_Path": ""
-}
-```
-
-Dikkat!
-PDF’deki tablo ve alan başlıkları çok farklı şekillerde yazılmış olabilir. Aşağıdaki tüm ifadeler benzer anlama gelir ve ilgili alan başlığına eşlenmelidir:
-•	Malzeme_Kodu: ürün kodu, urun kodu, malzeme kodu, malzeme, stok kodu, kod, tip, ref no, ref., ürün ref, ürün tip, product code, part no, item name, item no, item number, item , ürün adı
-•	Kısa_Kod: kisa kod, short code, shortcode, kısa ürün kodu
-•	Açıklama/Özellikler: description, ürün açıklaması, açıklama, aciklama, özellikler, detay, product name, explanation
-•	Fiyat: fiyat, birim fiyat, liste fiyatı, price, unit price, list price, tutar
-•	Para_Birimi: para birimi, currency
-•	Ana_Baslik: ana başlık, ana baslik, ana_baslik
-•	Alt_Baslik: alt başlık, alt baslik, alt_baslik
-Kurallar:
-•	Tablodaki her ürün satırını, hiçbirini atlamadan, eksiksiz ve ayrı bir JSON objesi olarak çıkar.
-•	Sadece başlıkları, alt başlıkları veya açıklama satırlarını dahil etme; sadece gerçek ürün satırlarını çıkar.
-•	Sonuçları JSON formatında döndür.
-
-Her başlık için doğru alan eşleşmesini yap. Hiçbir ürünü veya satırı atlama. Yalnızca istenen alanlar ve ürün satırları çıktıda yer almalı.
-
-Ekstra Kural ve Notlar
-Eğer herhangi bir alan ürün için mevcut değilse boş bırak.
-
-Her ürün satırında Ana_Baslik ve Alt_Baslik mutlaka yer almalı.
-
-Diğer tüm başlık, dipnot veya görsel satırları atla.
-
-Sadece fiyat ve ürün kodu olan satırlar için çıkarım yap.
-
-Her yeni sayfa veya tablo blok başlığı gördüğünde (ör: OPTIONS, ACCESSORIES), yeni Alt_Baslik ile devam et.
-Ana_Baslik sayfanın en üst sağ köşesi ile değişiyorsa ona göre güncelle.
-
----
-
-## GAMAK Fiyat Listesi (Örnek: 1 Fazlı Asenkron Motorlar PDF’i)
-
-### Başlık Hiyerarşisi ve Kuralı
-
-- PDF’de, **görsel olarak tam sayfa oluşturulmuş büyük başlıklarda**:
-    - İlk ve en büyük puntolu, vurgulu başlık **Ana_Baslik** (örn: “1 Fazlı Asenkron Motorlar”)
-    - Hemen altındaki, çoğu zaman şerit veya kutu gibi gözüken başlık **Alt_Baslik** (örn: “Monofaze Motorlar”)
-- Bir ürün tablosu veya fiyat listesi, bu kapaktan 1 veya birkaç sayfa sonra başlasa bile,  
-  **hemen üzerinde yeni başlık yoksa**, yukarıdan en yakın bu görsel başlıklar (Ana_Baslik + Alt_Baslik) kullanılır.
-- Eğer ürün tablosunun hemen üstünde farklı bir teknik/grup başlığı (örn: “DAİMİ KONDANSATÖRLÜ MOTORLAR” veya “2 KUTUP 3000 d/d”) varsa,  
-  bu yeni başlık **Alt_Baslik** olarak değerlendirilir; Ana_Baslik aynen kalır.
-- Bir ürünün ait olduğu başlık grubu **daima yukarıya bakarak belirlenir**.
-
-
-### Alanlar
-
-Aşağıdaki her alanı **her ürün satırı için** doldur (yoksa boş bırak):
-
-- Malzeme_Kodu: Ürün/model kodu (ör: “M22D 71 M 2a”)
-- Açıklama: Varsa ürün açıklaması veya teknik satır (genellikle boş)
-- Kisa_Kod: (Yoksa boş bırak)
-- Fiyat: Ürün fiyatı (ör: “3.605”)
-- Para_Birimi: “₺”
-- Marka: “GAMAK”
-- Kaynak_Dosya: (PDF dosya adı, ör: “MERA MOTOR-GAMAK 2025.pdf”)
-- Sayfa: Ürünün yer aldığı sayfa no
-- Record_Code: “GAMAK”
-- Ana_Baslik: En büyük, görsel başlık (örn: “1 Fazlı Asenkron Motorlar”)
-- Alt_Baslik: Hemen altındaki büyük/grup başlık veya ürün tablosunun hemen üstündeki teknik başlık (örn: “Monofaze Motorlar” veya “DAİMİ KONDANSATÖRLÜ MOTORLAR”)
-- Image_Path: (Yoksa boş bırak)
-
-
-### JSON Çıktı Formatı
-
-```json
-{
-  "Malzeme_Kodu": "M22D 71 M 2a",
-  "Açıklama": "",
-  "Kisa_Kod": "",
-  "Fiyat": "3.605",
-  "Para_Birimi": "₺",
-  "Marka": "GAMAK",
-  "Kaynak_Dosya": "MERA MOTOR-GAMAK 2025.pdf",
-  "Sayfa": 2,
-  "Record_Code": "GAMAK",
-  "Ana_Baslik": "1 Fazlı Asenkron Motorlar",
-  "Alt_Baslik": "Monofaze Motorlar",
-  "Image_Path": ""
-}
-```
-
-Dikkat!
-PDF’deki tablo ve alan başlıkları çok farklı şekillerde yazılmış olabilir. Aşağıdaki tüm ifadeler benzer anlama gelir ve ilgili alan başlığına eşlenmelidir:
-•	Malzeme_Kodu: ürün kodu, urun kodu, malzeme kodu, malzeme, stok kodu, kod, tip, ref no, ref., ürün ref, ürün tip, product code, part no, item name, item no, item number, item , ürün adı
-•	Kısa_Kod: kisa kod, short code, shortcode, kısa ürün kodu
-•	Açıklama/Özellikler: description, ürün açıklaması, açıklama, aciklama, özellikler, detay, product name, explanation
-•	Fiyat: fiyat, birim fiyat, liste fiyatı, price, unit price, list price, tutar
-•	Para_Birimi: para birimi, currency
-•	Ana_Baslik: ana başlık, ana baslik, ana_baslik
-•	Alt_Baslik: alt başlık, alt baslik, alt_baslik
-Kurallar:
-•	Tablodaki her ürün satırını, hiçbirini atlamadan, eksiksiz ve ayrı bir JSON objesi olarak çıkar.
-•	Sadece başlıkları, alt başlıkları veya açıklama satırlarını dahil etme; sadece gerçek ürün satırlarını çıkar.
-•	Sonuçları JSON formatında döndür.
-
-Her başlık için doğru alan eşleşmesini yap. Hiçbir ürünü veya satırı atlama. Yalnızca istenen alanlar ve ürün satırları çıktıda yer almalı.
-
----
-
-## Omega Motor Tüm Fiyat Listeleri
-
-### Başlık Yapısı ve Kuralı
-
-- Her ürün tablosunun üstünde yer alan ana başlıklar doğrudan kullanılır.
-    - En büyük, vurgulu başlık **Ana_Baslik** (ör: “IE3”, “IE4”)
-    - Hemen altında genellikle kalın veya büyük puntolu olarak yazan, gövde/malzeme ve motor türünü belirten ifade **Alt_Baslik** (ör: “ALÜMİNYUM GÖVDELİ IEC 3~FAZLI ASENKRON ELEKTRİK MOTORLARI”, “PİK DÖKÜM GÖVDELİ”)
-- Alt başlığın hemen altında teknik tanım veya hız grubu (örn: “2k-3000 d/dak.”, “4k-1500 d/dak.”, “6k-1000 d/dak.”) varsa, bu **Alt_Baslik2** veya **Açıklama** alanında ayrıca belirtilir.
-- Her tablo satırı bir ürün kaydıdır.
-- Eğer ürün satırı için birden fazla fiyat veya varyant varsa, aynı Malzeme_Kodu için fiyatları `-` ile ayırarak yaz.
-
-
-### Alanlar
-
-Her ürün satırı için doldurulacak alanlar:
-
-- Malzeme_Kodu: Model kodu (ör: “3MAS 80MA2”)
-- Açıklama: (örn: “2k-3000 d/dak.” gibi hız/grup bilgisi, yoksa boş bırak)
-- Kisa_Kod: (yoksa boş bırak)
-- Fiyat: Fiyat (ör: “128,00”)
-- Para_Birimi: “USD”
-- Marka: “OMEGA MOTOR”
-- Kaynak_Dosya: “Omega Motor Tüm Fiyat Listeleri Mart 2025.pdf”
-- Sayfa: Ürünün olduğu sayfa no
-- Record_Code: “OMEGA”
-- Ana_Baslik: (ör: “IE3”)
-- Alt_Baslik: (ör: “ALÜMİNYUM GÖVDELİ IEC 3~FAZLI ASENKRON ELEKTRİK MOTORLARI” veya “PİK DÖKÜM GÖVDELİ”)
-- Alt_Baslik2: (örn: “ALÜMİNYUM GÖVDELİ KOMPAKT MOTORLAR”)
-- Image_Path: (yoksa boş bırak)
-
-
-### JSON Çıktı Örneği
-
-```json
-{
-  "Malzeme_Kodu": "3MAS 80MA2",
-  "Açıklama": "2k-3000 d/dak.",
-  "Kisa_Kod": "",
-  "Fiyat": "110,00",
-  "Para_Birimi": "USD",
-  "Marka": "OMEGA MOTOR",
-  "Kaynak_Dosya": "Omega Motor Tüm Fiyat Listeleri Mart 2025.pdf",
-  "Sayfa": 1,
-  "Record_Code": "OMEGA",
-  "Ana_Baslik": "IE3",
-  "Alt_Baslik": "ALÜMİNYUM GÖVDELİ IEC 3~FAZLI ASENKRON ELEKTRİK MOTORLARI",
-  "Alt_Baslik2": "",
-  "Image_Path": ""
-}
-```
-Dikkat!
-PDF’deki tablo ve alan başlıkları çok farklı şekillerde yazılmış olabilir. Aşağıdaki tüm ifadeler benzer anlama gelir ve ilgili alan başlığına eşlenmelidir:
-•	Malzeme_Kodu: ürün kodu, urun kodu, malzeme kodu, malzeme, stok kodu, kod, tip, ref no, ref., ürün ref, ürün tip, product code, part no, item name, item no, item number, item , ürün adı
-•	Kısa_Kod: kisa kod, short code, shortcode, kısa ürün kodu
-•	Açıklama/Özellikler: description, ürün açıklaması, açıklama, aciklama, özellikler, detay, product name, explanation
-•	Fiyat: fiyat, birim fiyat, liste fiyatı, price, unit price, list price, tutar
-•	Para_Birimi: para birimi, currency
-•	Ana_Baslik: ana başlık, ana baslik, ana_baslik
-•	Alt_Baslik: alt başlık, alt baslik, alt_baslik
-Kurallar:
-•	Tablodaki her ürün satırını, hiçbirini atlamadan, eksiksiz ve ayrı bir JSON objesi olarak çıkar.
-•	Sadece başlıkları, alt başlıkları veya açıklama satırlarını dahil etme; sadece gerçek ürün satırlarını çıkar.
-•	Sonuçları JSON formatında döndür.
-
-Her başlık için doğru alan eşleşmesini yap. Hiçbir ürünü veya satırı atlama. Yalnızca istenen alanlar ve ürün satırları çıktıda yer almalı.
-
----
-
-## Rekorsan-Fiyat Listesi
-
-### Başlık ve Kural
-
-- Her ürün tablosunun üstündeki blok başlık **Ana_Baslik** olarak alınır:
-    - Örn: “BSP İÇE HAVŞA DÜZ HORTUM RAKORLARI” veya “BSP İÇE HAVŞA 90° HORTUM RAKORLARI”
-- **Alt_Baslik** kullanılmaz; her zaman boş bırakılır.
-- Tablodaki her satır bir ürün kaydıdır.
-- Kolonlar: Malzeme Kodu, Hortum Ölçüsü, Somun Ölçüsü, Fiyat [TL], Kutu Adedi
-- Kisa_Kod, Image_Path ve ek alanlar yoksa boş bırakılır.
-
-
-### Alanlar
-
-Her ürün satırı için çıkarılacak alanlar:
-
-- Malzeme_Kodu: (ör: “RK-0613-RİSD”)
-- Açıklama: (yoksa boş bırak)
-- Kisa_Kod: (yoksa boş bırak)
-- Fiyat: (ör: “42,21”)
-- Para_Birimi: “₺”
-- Marka: “REKORSAN”
-- Kaynak_Dosya: “Rekorsan-Fiyat Listesi-27.01.2025.pdf”
-- Sayfa: Ürünün olduğu sayfa no
-- Record_Code: “REKORSAN”
-- Ana_Baslik: Tablonun üstündeki başlık (örn: “BSP İÇE HAVŞA DÜZ HORTUM RAKORLARI”)
-- Alt_Baslik: (“” — her zaman boş)
-- Image_Path: (yoksa boş bırak)
-
-
-### JSON Çıktı Örneği
-
-```json
-{
-  "Malzeme_Kodu": "RK-0613-RİSD",
-  "Açıklama": "",
-  "Kisa_Kod": "",
-  "Fiyat": "42,21",
-  "Para_Birimi": "₺",
-  "Marka": "REKORSAN",
-  "Kaynak_Dosya": "Rekorsan-Fiyat Listesi-27.01.2025.pdf",
-  "Sayfa": 1,
-  "Record_Code": "REKORSAN",
-  "Ana_Baslik": "BSP İÇE HAVŞA DÜZ HORTUM RAKORLARI",
-  "Alt_Baslik": "",
-  "Image_Path": ""
-}
-```
-
-Dikkat!
-PDF’deki tablo ve alan başlıkları çok farklı şekillerde yazılmış olabilir. Aşağıdaki tüm ifadeler benzer anlama gelir ve ilgili alan başlığına eşlenmelidir:
-•	Malzeme_Kodu: ürün kodu, urun kodu, malzeme kodu, malzeme, stok kodu, kod, tip, ref no, ref., ürün ref, ürün tip, product code, part no, item name, item no, item number, item , ürün adı
-•	Kısa_Kod: kisa kod, short code, shortcode, kısa ürün kodu
-•	Açıklama/Özellikler: description, ürün açıklaması, açıklama, aciklama, özellikler, detay, product name, explanation
-•	Fiyat: fiyat, birim fiyat, liste fiyatı, price, unit price, list price, tutar
-•	Para_Birimi: para birimi, currency
-•	Ana_Baslik: ana başlık, ana baslik, ana_baslik
-•	Alt_Baslik: alt başlık, alt baslik, alt_baslik
-Kurallar:
-•	Tablodaki her ürün satırını, hiçbirini atlamadan, eksiksiz ve ayrı bir JSON objesi olarak çıkar.
-•	Sadece başlıkları, alt başlıkları veya açıklama satırlarını dahil etme; sadece gerçek ürün satırlarını çıkar.
-•	Sonuçları JSON formatında döndür.
-
-Her başlık için doğru alan eşleşmesini yap. Hiçbir ürünü veya satırı atlama. Yalnızca istenen alanlar ve ürün satırları çıktıda yer almalı.
+**End of Guide (v2 \u2013 13\u202fJun\u202f2025)**
