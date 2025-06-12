@@ -1,5 +1,5 @@
 {
-    "Ana_Baslik": "2025 Pricelist",
+    "Ana_Baslik": "",
     "Alt_Baslik": "",
     "Malzeme_Kodu": "",
     "Açıklama": "",
