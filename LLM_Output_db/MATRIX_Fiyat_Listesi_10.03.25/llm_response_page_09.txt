@@ -1,5 +1,5 @@
 {
-    "Ana_Baslik": "320 Series",
+    "Ana_Baslik": "",
     "Alt_Baslik": "OPTIONS",
     "Malzeme_Kodu": "H",
     "Açıklama": "Pressure range 0-4 bar",
