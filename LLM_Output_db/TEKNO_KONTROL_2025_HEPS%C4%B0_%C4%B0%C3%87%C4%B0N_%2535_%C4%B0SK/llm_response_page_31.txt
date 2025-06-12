@@ -1,1 +1,0 @@
-Üzgünüm, bu görüntüdeki metni doğrudan işleyemem. Ancak, PDF dosyasındaki tabloyu analiz etmek için metni manuel olarak çıkarabilir ve ardından belirttiğiniz formatta JSON çıktısı oluşturabilirim. Eğer metni sağlarsanız, size yardımcı olabilirim.
