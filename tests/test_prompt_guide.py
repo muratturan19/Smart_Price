@@ -7,6 +7,7 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")
 
 from smart_price import config
 import smart_price.core.extract_pdf as pdf_mod
+from smart_price.core import prompt_utils
 
 
 class DummyResult:
@@ -34,7 +35,7 @@ def _run_extract(tmp_path, guide_content, filename="dummy.pdf"):
 
 def test_guide_hit(monkeypatch, tmp_path):
     prompt = _run_extract(tmp_path, "pdf,page,prompt\ndummy.pdf,1,HELLO\n")
-    assert prompt == {1: "HELLO"}
+    assert prompt == {1: prompt_utils.RAW_HEADER_HINT + "\nHELLO"}
 
 
 def test_guide_miss(monkeypatch, tmp_path):

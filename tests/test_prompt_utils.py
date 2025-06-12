@@ -41,14 +41,21 @@ def test_prompts_for_pdf(tmp_path):
     path = tmp_path / "guide.csv"
     path.write_text("pdf,page,prompt\ndummy.pdf,,ALL\ndummy.pdf,2,TWO\n")
     mapping = prompt_utils.prompts_for_pdf("dummy.pdf", str(path))
-    assert mapping == {0: "ALL", 2: "TWO"}
+    assert mapping is not None
+    assert mapping[0].startswith(prompt_utils.RAW_HEADER_HINT)
+    assert mapping[2].startswith(prompt_utils.RAW_HEADER_HINT)
+    assert mapping[0].endswith("ALL")
+    assert mapping[2].endswith("TWO")
 
 
 def test_prompts_for_pdf_md(tmp_path):
     path = tmp_path / "guide.md"
     path.write_text("# G\n\n## BRAND\nPrompt\n")
     mapping = prompt_utils.prompts_for_pdf("BRAND_list.pdf", str(path))
-    assert mapping == {0: "Prompt"}
+    assert mapping is not None
+    assert list(mapping.keys()) == [0]
+    assert mapping[0].startswith(prompt_utils.RAW_HEADER_HINT)
+    assert mapping[0].endswith("Prompt")
 
 
 def test_prompts_for_pdf_no_match(tmp_path):
