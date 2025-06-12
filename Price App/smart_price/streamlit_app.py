@@ -9,7 +9,6 @@ import pandas as pd
 import logging
 import io
 import sys
-import pytesseract
 import shutil
 import sqlite3
 from pathlib import Path
@@ -208,37 +207,6 @@ def inject_style() -> None:
     st.markdown(css, unsafe_allow_html=True)
 
 
-def _configure_tesseract() -> None:
-    """Configure pytesseract paths and log available languages.
-
-    ``shutil.which`` is used to locate ``tesseract``.  If ``TESSDATA_PREFIX`` is
-    already defined the value is left untouched.  Default Windows paths are only
-    applied when detection fails.
-    """
-    cmd = shutil.which("tesseract")
-    if cmd:
-        pytesseract.pytesseract.tesseract_cmd = cmd
-        if "TESSDATA_PREFIX" not in os.environ:
-            guess = os.path.join(os.path.dirname(cmd), "tessdata")
-            if os.path.isdir(guess):
-                os.environ["TESSDATA_PREFIX"] = guess
-    else:  # Fallback for Windows bundles/tests
-        os.environ.setdefault("TESSDATA_PREFIX", str(config.TESSDATA_PREFIX))
-        pytesseract.pytesseract.tesseract_cmd = str(config.TESSERACT_CMD)
-    try:
-        langs = (
-            pytesseract.get_languages(config="")
-            if hasattr(pytesseract, "get_languages")
-            else []
-        )
-        logger.info("Available Tesseract languages: %s", langs)
-        if "tur" not in langs:
-            logger.error(
-                "Tesseract language model 'tur' not found. "
-                "Please install or copy the model into the tessdata folder."
-            )
-    except Exception as exc:  # pragma: no cover - unexpected errors
-        logger.error("Tesseract language query failed: %s", exc)
 
 
 def _configure_poppler() -> None:
@@ -746,7 +714,6 @@ PAGES = {
 
 def main():
     init_logging(config.LOG_PATH)
-    _configure_tesseract()
     _configure_poppler()
     st.set_page_config(layout="wide")
 
@@ -776,7 +743,6 @@ def main():
 def cli() -> None:
     """Entry point to launch the Streamlit application."""
     init_logging(config.LOG_PATH)
-    _configure_tesseract()
     _configure_poppler()
     from streamlit.web import cli as stcli
 

@@ -58,13 +58,6 @@ DEFAULT_PROMPT = (
     "Para birimi yoksa TL yaz."
 )
 
-SHORT_PROMPT = (
-    "PDF'deki ürün satırlarını JSON dizi olarak çıkart. "
-    "Her satır için Malzeme_Kodu, Açıklama, Fiyat, Para_Birimi, "
-    "Ana_Baslik, Alt_Baslik ve Sayfa alanlarını döndür. "
-    "Para birimi yoksa TL yaz."
-)
-
 
 def _range_bounds(pages: Sequence[int] | range | None) -> tuple[int | None, int | None]:
     """Return first and last page numbers from ``pages``."""
@@ -191,15 +184,6 @@ def parse(
                 image_bytes = f.read()
             img_base64 = base64.b64encode(image_bytes).decode()
             prompt_text = _get_prompt(idx)
-            try:
-                from .ocr_utils import ocr_page_lines
-                ocr_start = time.time()
-                lines = ocr_page_lines(img)
-                ocr_dur = time.time() - ocr_start
-                save_debug("ocr_text", idx, "\n".join(lines))
-                logger.info("Tesseract OCR for page %d took %.2fs", idx, ocr_dur)
-            except Exception as exc:  # pragma: no cover - optional OCR errors
-                logger.error("OCR helper failed on page %d: %s", idx, exc)
             logger.debug(
                 "Prompt being used for extraction (truncated): %s",
                 prompt_text[:200],
@@ -252,56 +236,10 @@ def parse(
         cleaned = gpt_clean_text(content) if content else "[]"
         items = safe_json_parse(cleaned)
         if items is None:
-            logger.info("Retrying page %d with short prompt", idx)
-            try:
-                prompt_text = SHORT_PROMPT
-                logger.debug(
-                    "Prompt being used for extraction (truncated): %s",
-                    prompt_text[:200],
-                )
-                total_input_tokens += num_tokens_from_messages(
-                    [{"role": "user", "content": prompt_text}], model_name
-                )
-                api_start = time.time()
-                resp = openai.chat.completions.create(
-                    model=model_name,
-                    messages=[
-                        {
-                            "role": "user",
-                            "content": [
-                                {"type": "text", "text": prompt_text},
-                                {
-                                    "type": "image_url",
-                                    "image_url": {"url": "data:image/png;base64," + img_base64},
-                                },
-                            ],
-                        }
-                    ],
-                    temperature=0,
-                )
-                logger.info(
-                    "OpenAI request for page %d retry took %.2fs", idx, time.time() - api_start
-                )
-                content = resp.choices[0].message.content
-                logger.debug(
-                    "LLM response for page %d retry (truncated): %s",
-                    idx,
-                    (content or "")[:200],
-                )
-                total_output_tokens += num_tokens_from_text(content or "", model_name)
-                save_debug("llm_response_retry", idx, content or "")
-            except Exception as exc:  # pragma: no cover - request errors
-                logger.error("OpenAI request failed on page %d (retry): %s", idx, exc)
-                status = "error"
-                note = str(exc)
-                content = None
-            cleaned = gpt_clean_text(content) if content else "[]"
-            items = safe_json_parse(cleaned)
-            if items is None:
-                logger.error("LLM JSON parse failed on page %d", idx)
-                status = "error"
-                note = "parse error"
-                items = []
+            logger.error("LLM JSON parse failed on page %d", idx)
+            status = "error"
+            note = "parse error"
+            items = []
 
         items = items if isinstance(items, list) else [items]
         for item in items:
