@@ -1,526 +1,74 @@
-```json
 {
-  "Malzeme_Kodu": "D R X 8 8 1 1 0 3 C 2 X X",
-  "Açıklama": "2/2 I NC I 300 l/min @ 6 bar I 0-8 bar I 24 VDC speed-up 15 I IP62 500mm AWG24 tin-plated terminals NBR I *",
-  "Kisa_Kod": "",
-  "Fiyat": "186,40",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 18,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "880 Series",
-  "Alt_Baslik": "Model 881 1/2 | 2 NC",
-  "Image_Path": ""
+    "data": [
+        {
+            "Ana_Baslik": "880 Series",
+            "Alt_Baslik": "Model 881 1/2 | 2 NC",
+            "Malzeme_Kodu": "D R X 8 8 1 1 0 3 C 2 X X",
+            "Açıklama": "2/2 NC 1 300 l/min @ 6 bar I 0-8 bar I 24 VDC speed-up 15 I IP62 500mm AWG24 tin-plated terminals NBR I *",
+            "Fiyat": "186,40",
+            "Para_Birimi": "EUR",
+            "Marka": "MATRIX",
+            "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+            "Sayfa": 18,
+            "Record_Code": "MATRIX",
+            "Kisa_Kod": "",
+            "Image_Path": ""
+        },
+        {
+            "Ana_Baslik": "880 Series",
+            "Alt_Baslik": "Model 881 1/2 | 2 NC",
+            "Malzeme_Kodu": "D R X 8 8 1 0 3 C 2 C 2 V V",
+            "Açıklama": "2/2 NC 1 300 l/min @ 6 bar I 0-8 bar I 24 VDC integrated ISO2 speed-up driver I IP62 500mm AWG24 tin-plated terminals NBR I *",
+            "Fiyat": "356,60",
+            "Para_Birimi": "EUR",
+            "Marka": "MATRIX",
+            "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+            "Sayfa": 18,
+            "Record_Code": "MATRIX",
+            "Kisa_Kod": "",
+            "Image_Path": ""
+        },
+        {
+            "Ana_Baslik": "880 Series",
+            "Alt_Baslik": "OPTIONS",
+            "Malzeme_Kodu": "H",
+            "Açıklama": "HNBR seals",
+            "Fiyat": "9,80",
+            "Para_Birimi": "EUR",
+            "Marka": "MATRIX",
+            "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+            "Sayfa": 18,
+            "Record_Code": "MATRIX",
+            "Kisa_Kod": "",
+            "Image_Path": ""
+        },
+        {
+            "Ana_Baslik": "880 Series",
+            "Alt_Baslik": "ACCESSORIES",
+            "Malzeme_Kodu": "903.160V",
+            "Açıklama": "3 pins M8x1 female cable 1200mm I IP67 I PUR",
+            "Fiyat": "25,60",
+            "Para_Birimi": "EUR",
+            "Marka": "MATRIX",
+            "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+            "Sayfa": 18,
+            "Record_Code": "MATRIX",
+            "Kisa_Kod": "",
+            "Image_Path": ""
+        },
+        {
+            "Ana_Baslik": "880 Series",
+            "Alt_Baslik": "Model 882 1/2 | 2 NC",
+            "Malzeme_Kodu": "D R X 8 8 2 2 0 3 C 2 X X",
+            "Açıklama": "2/2 NC 1 150 l/min @ 6 bar I 0-8 bar I 2 independent electric ctrls I 24 VDC speed-up 15 I IP62 500mm AWG24 tin-plated terminals NBR I *",
+            "Fiyat": "144,20",
+            "Para_Birimi": "EUR",
+            "Marka": "MATRIX",
+            "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
+            "Sayfa": 18,
+            "Record_Code": "MATRIX",
+            "Kisa_Kod": "",
+            "Image_Path": ""
+        }
+    ]
 }
-```
-
-```json
-{
-  "Malzeme_Kodu": "D R X 8 8 1 0 3 C 2 X X",
-  "Açıklama": "2/2 I NC I 300 l/min @ 6 bar I 0-8 bar I 24 VDC speed-up 17 I IP62 500mm AWG24 tin-plated terminals NBR I *",
-  "Kisa_Kod": "",
-  "Fiyat": "186,40",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 18,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "880 Series",
-  "Alt_Baslik": "Model 881 1/2 | 2 NC",
-  "Image_Path": ""
-}
-```
-
-```json
-{
-  "Malzeme_Kodu": "D R X 8 8 1 0 3 C 2 V V",
-  "Açıklama": "2/2 I NC I 300 l/min @ 6 bar I 0-8 bar I 24 VDC integrated ISO3 speed-up driver I IP62 500mm AWG24 tin-plated terminals NBR I *",
-  "Kisa_Kod": "",
-  "Fiyat": "356,60",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 18,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "880 Series",
-  "Alt_Baslik": "Model 881 1/2 | 2 NC",
-  "Image_Path": ""
-}
-```
-
-```json
-{
-  "Malzeme_Kodu": "D R X 8 8 1 1 0 3 C 2 V V",
-  "Açıklama": "2/2 I NC I 300 l/min @ 6 bar I 0-8 bar I 24 VDC integrated ISO2 speed-up driver I IP62 500mm AWG24 tin-plated terminals NBR I *",
-  "Kisa_Kod": "",
-  "Fiyat": "356,60",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 18,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "880 Series",
-  "Alt_Baslik": "Model 881 1/2 | 2 NC",
-  "Image_Path": ""
-}
-```
-
-```json
-{
-  "Malzeme_Kodu": "D R X 8 8 1 0 3 C 2 W W",
-  "Açıklama": "2/2 I NC I 430 l/min @ 6 bar I 0-8 bar I 24 VDC integrated ISO3 speed-up driver I IP62 500mm AWG24 tin-plated terminals NBR I *",
-  "Kisa_Kod": "",
-  "Fiyat": "356,60",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 18,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "880 Series",
-  "Alt_Baslik": "Model 881 1/2 | 2 NC",
-  "Image_Path": ""
-}
-```
-
-```json
-{
-  "Malzeme_Kodu": "D R X 8 8 1 1 0 3 C 2 W W",
-  "Açıklama": "2/2 I NC I 430 l/min @ 6 bar I 0-8 bar I 24 VDC integrated ISO2 speed-up driver I IP62 500mm AWG24 tin-plated terminals NBR I *",
-  "Kisa_Kod": "",
-  "Fiyat": "356,60",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 18,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "880 Series",
-  "Alt_Baslik": "Model 881 1/2 | 2 NC",
-  "Image_Path": ""
-}
-```
-
-```json
-{
-  "Malzeme_Kodu": "H",
-  "Açıklama": "HNBR seals",
-  "Kisa_Kod": "",
-  "Fiyat": "9,80",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 18,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "880 Series",
-  "Alt_Baslik": "OPTIONS",
-  "Image_Path": ""
-}
-```
-
-```json
-{
-  "Malzeme_Kodu": "A",
-  "Açıklama": "IP62 100mm I AWG24 integrated wires I Tin-plated terminals",
-  "Kisa_Kod": "",
-  "Fiyat": "5,00",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 18,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "880 Series",
-  "Alt_Baslik": "OPTIONS",
-  "Image_Path": ""
-}
-```
-
-```json
-{
-  "Malzeme_Kodu": "B",
-  "Açıklama": "IP62 100mm I AWG24 integrated wires I JST PH-2 connector",
-  "Kisa_Kod": "",
-  "Fiyat": "5,00",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 18,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "880 Series",
-  "Alt_Baslik": "OPTIONS",
-  "Image_Path": ""
-}
-```
-
-```json
-{
-  "Malzeme_Kodu": "C",
-  "Açıklama": "IP67 I M8 integrated connector I (X) I (X) I (X) I (X) I (W) I configurations only",
-  "Kisa_Kod": "",
-  "Fiyat": "7,40",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 18,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "880 Series",
-  "Alt_Baslik": "OPTIONS",
-  "Image_Path": ""
-}
-```
-
-```json
-{
-  "Malzeme_Kodu": "E",
-  "Açıklama": "IP67 I M8 integrated connector with (D) I (X) I (X) I (X) I (X) I configurations only I Not available for n. 2 independent electric controls option I 2 I",
-  "Kisa_Kod": "",
-  "Fiyat": "7,80",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 18,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "880 Series",
-  "Alt_Baslik": "OPTIONS",
-  "Image_Path": ""
-}
-```
-
-```json
-{
-  "Malzeme_Kodu": "F",
-  "Açıklama": "2 I 2 independent electric controls I Multi-flow configuration I DXX I XX I K I 150 - 150 l/min or DXX I XX I 215 - 215 l/min only",
-  "Kisa_Kod": "",
-  "Fiyat": "6,00",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 18,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "880 Series",
-  "Alt_Baslik": "OPTIONS",
-  "Image_Path": ""
-}
-```
-
-```json
-{
-  "Malzeme_Kodu": "903.160V",
-  "Açıklama": "3 pins M8x1 female cable l 2000mm I IP67 I PUR",
-  "Kisa_Kod": "",
-  "Fiyat": "25,60",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 18,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "880 Series",
-  "Alt_Baslik": "ACCESSORIES",
-  "Image_Path": ""
-}
-```
-
-```json
-{
-  "Malzeme_Kodu": "903.161V",
-  "Açıklama": "3 pins M8x1 female cable l 5000mm I IP67 I PUR",
-  "Kisa_Kod": "",
-  "Fiyat": "34,00",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 18,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "880 Series",
-  "Alt_Baslik": "ACCESSORIES",
-  "Image_Path": ""
-}
-```
-
-```json
-{
-  "Malzeme_Kodu": "998.219A",
-  "Açıklama": "3 pins M8x1 female cable l 2000mm I IP67 I PUR I 90°",
-  "Kisa_Kod": "",
-  "Fiyat": "31,80",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 18,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "880 Series",
-  "Alt_Baslik": "ACCESSORIES",
-  "Image_Path": ""
-}
-```
-
-```json
-{
-  "Malzeme_Kodu": "998.230M",
-  "Açıklama": "3 pins M8x1 female cable l 5000mm I IP67 I PUR I 90°",
-  "Kisa_Kod": "",
-  "Fiyat": "40,40",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 18,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "880 Series",
-  "Alt_Baslik": "ACCESSORIES",
-  "Image_Path": ""
-}
-```
-
-```json
-{
-  "Malzeme_Kodu": "841.046Q",
-  "Açıklama": "Aluminum interface kit with inlet / outlet push-in fittings I Inclusive of installation hardware and o-rings",
-  "Kisa_Kod": "",
-  "Fiyat": "59,40",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 18,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "880 Series",
-  "Alt_Baslik": "ACCESSORIES",
-  "Image_Path": ""
-}
-```
-
-```json
-{
-  "Malzeme_Kodu": "841.050C",
-  "Açıklama": "880 Series 4 positions anodized (natural) manifold kit I Supplied with installation hardware, fittings and seals",
-  "Kisa_Kod": "",
-  "Fiyat": "148,40",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 18,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "880 Series",
-  "Alt_Baslik": "ACCESSORIES",
-  "Image_Path": ""
-}
-```
-
-```json
-{
-  "Malzeme_Kodu": "841.051D",
-  "Açıklama": "880 Series 8 positions anodized (natural) manifold kit I Supplied with installation hardware, fittings and seals",
-  "Kisa_Kod": "",
-  "Fiyat": "246,00",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 18,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "880 Series",
-  "Alt_Baslik": "ACCESSORIES",
-  "Image_Path": ""
-}
-```
-
-```json
-{
-  "Malzeme_Kodu": "D R X 8 8 2 2 0 3 C 2 X X",
-  "Açıklama": "2/2 I NC I 150 l/min @ 6 bar I 0-8 bar I 2 independent electric ctrls I 24 VDC speed-up 15 I IP62 500mm AWG24 tin-plated terminals NBR I *",
-  "Kisa_Kod": "",
-  "Fiyat": "144,20",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 18,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "880 Series",
-  "Alt_Baslik": "Model 882 2/2 | 2 NC",
-  "Image_Path": ""
-}
-```
-
-```json
-{
-  "Malzeme_Kodu": "D R X 8 8 2 2 0 3 C 2 Y X",
-  "Açıklama": "2/2 I NC I 150 l/min @ 6 bar I 0-8 bar I 2 independent electric ctrls I 24 VDC speed-up 17 I IP62 500mm AWG24 tin-plated terminals NBR I *",
-  "Kisa_Kod": "",
-  "Fiyat": "144,20",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 18,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "880 Series",
-  "Alt_Baslik": "Model 882 2/2 | 2 NC",
-  "Image_Path": ""
-}
-```
-
-```json
-{
-  "Malzeme_Kodu": "D R X 8 8 2 2 0 3 C 2 Z X",
-  "Açıklama": "2/2 I NC I 125 l/min @ 6 bar I 0-8 bar I 2 independent electric ctrls I 24 VDC speed-up 15 I IP62 500mm AWG24 tin-plated terminals NBR I *",
-  "Kisa_Kod": "",
-  "Fiyat": "144,20",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 18,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "880 Series",
-  "Alt_Baslik": "Model 882 2/2 | 2 NC",
-  "Image_Path": ""
-}
-```
-
-```json
-{
-  "Malzeme_Kodu": "H",
-  "Açıklama": "HNBR seals",
-  "Kisa_Kod": "",
-  "Fiyat": "9,80",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 18,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "880 Series",
-  "Alt_Baslik": "OPTIONS",
-  "Image_Path": ""
-}
-```
-
-```json
-{
-  "Malzeme_Kodu": "1",
-  "Açıklama": "IP67 I M8 integrated connector",
-  "Kisa_Kod": "",
-  "Fiyat": "7,40",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 18,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "880 Series",
-  "Alt_Baslik": "OPTIONS",
-  "Image_Path": ""
-}
-```
-
-```json
-{
-  "Malzeme_Kodu": "903.160V",
-  "Açıklama": "3 pins M8x1 female cable l 2000mm I IP67 I PUR",
-  "Kisa_Kod": "",
-  "Fiyat": "25,60",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 18,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "880 Series",
-  "Alt_Baslik": "ACCESSORIES",
-  "Image_Path": ""
-}
-```
-
-```json
-{
-  "Malzeme_Kodu": "903.161V",
-  "Açıklama": "3 pins M8x1 female cable l 5000mm I IP67 I PUR",
-  "Kisa_Kod": "",
-  "Fiyat": "34,00",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 18,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "880 Series",
-  "Alt_Baslik": "ACCESSORIES",
-  "Image_Path": ""
-}
-```
-
-```json
-{
-  "Malzeme_Kodu": "998.219A",
-  "Açıklama": "3 pins M8x1 female cable l 2000mm I IP67 I PUR I 90°",
-  "Kisa_Kod": "",
-  "Fiyat": "31,80",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 18,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "880 Series",
-  "Alt_Baslik": "ACCESSORIES",
-  "Image_Path": ""
-}
-```
-
-```json
-{
-  "Malzeme_Kodu": "998.230M",
-  "Açıklama": "3 pins M8x1 female cable l 5000mm I IP67 I PUR I 90°",
-  "Kisa_Kod": "",
-  "Fiyat": "40,40",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 18,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "880 Series",
-  "Alt_Baslik": "ACCESSORIES",
-  "Image_Path": ""
-}
-```
-
-```json
-{
-  "Malzeme_Kodu": "841.046Q",
-  "Açıklama": "Aluminum interface kit with inlet / outlet push-in fittings I Inclusive of installation hardware and o-rings",
-  "Kisa_Kod": "",
-  "Fiyat": "59,40",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 18,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "880 Series",
-  "Alt_Baslik": "ACCESSORIES",
-  "Image_Path": ""
-}
-```
-
-```json
-{
-  "Malzeme_Kodu": "841.050C",
-  "Açıklama": "880 Series 4 positions anodized (natural) manifold kit I Supplied with installation hardware, fittings and seals",
-  "Kisa_Kod": "",
-  "Fiyat": "148,40",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 18,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "880 Series",
-  "Alt_Baslik": "ACCESSORIES",
-  "Image_Path": ""
-}
-```
-
-```json
-{
-  "Malzeme_Kodu": "841.051D",
-  "Açıklama": "880 Series 8 positions anodized (natural) manifold kit I Supplied with installation hardware, fittings and seals",
-  "Kisa_Kod": "",
-  "Fiyat": "246,00",
-  "Para_Birimi": "EUR",
-  "Marka": "MATRIX",
-  "Kaynak_Dosya": "MATRIX Fiyat Listesi 10.03.25.pdf",
-  "Sayfa": 18,
-  "Record_Code": "MATRIX",
-  "Ana_Baslik": "880 Series",
-  "Alt_Baslik": "ACCESSORIES",
-  "Image_Path": ""
-}
-```
