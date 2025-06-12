@@ -1,259 +1,75 @@
-```json
-[
-  {
-    "Malzeme_Kodu": "3MAS 80MA2",
-    "Açıklama": "2k-3000 d/dak.",
-    "Kisa_Kod": "",
-    "Fiyat": "156,00",
-    "Para_Birimi": "USD",
-    "Marka": "OMEGA MOTOR",
-    "Kaynak_Dosya": "Omega Motor Tüm Fiyat Listeleri Mart 2025.pdf",
-    "Sayfa": 1,
-    "Record_Code": "OMEGA",
-    "Ana_Baslik": "IE4",
-    "Alt_Baslik": "ALÜMİNYUM GÖVDELİ IEC 3~FAZLI ASENKRON ELEKTRİK MOTORLARI",
-    "Alt_Baslik2": "",
-    "Image_Path": ""
-  },
-  {
-    "Malzeme_Kodu": "3MAS 80MB2",
-    "Açıklama": "2k-3000 d/dak.",
-    "Kisa_Kod": "",
-    "Fiyat": "164,00",
-    "Para_Birimi": "USD",
-    "Marka": "OMEGA MOTOR",
-    "Kaynak_Dosya": "Omega Motor Tüm Fiyat Listeleri Mart 2025.pdf",
-    "Sayfa": 1,
-    "Record_Code": "OMEGA",
-    "Ana_Baslik": "IE4",
-    "Alt_Baslik": "ALÜMİNYUM GÖVDELİ IEC 3~FAZLI ASENKRON ELEKTRİK MOTORLARI",
-    "Alt_Baslik2": "",
-    "Image_Path": ""
-  },
-  {
-    "Malzeme_Kodu": "3MAS 90SA2",
-    "Açıklama": "2k-3000 d/dak.",
-    "Kisa_Kod": "",
-    "Fiyat": "186,00",
-    "Para_Birimi": "USD",
-    "Marka": "OMEGA MOTOR",
-    "Kaynak_Dosya": "Omega Motor Tüm Fiyat Listeleri Mart 2025.pdf",
-    "Sayfa": 1,
-    "Record_Code": "OMEGA",
-    "Ana_Baslik": "IE4",
-    "Alt_Baslik": "ALÜMİNYUM GÖVDELİ IEC 3~FAZLI ASENKRON ELEKTRİK MOTORLARI",
-    "Alt_Baslik2": "",
-    "Image_Path": ""
-  },
-  {
-    "Malzeme_Kodu": "3MAS 90LA2",
-    "Açıklama": "2k-3000 d/dak.",
-    "Kisa_Kod": "",
-    "Fiyat": "216,00",
-    "Para_Birimi": "USD",
-    "Marka": "OMEGA MOTOR",
-    "Kaynak_Dosya": "Omega Motor Tüm Fiyat Listeleri Mart 2025.pdf",
-    "Sayfa": 1,
-    "Record_Code": "OMEGA",
-    "Ana_Baslik": "IE4",
-    "Alt_Baslik": "ALÜMİNYUM GÖVDELİ IEC 3~FAZLI ASENKRON ELEKTRİK MOTORLARI",
-    "Alt_Baslik2": "",
-    "Image_Path": ""
-  },
-  {
-    "Malzeme_Kodu": "3MAS 100LA2",
-    "Açıklama": "2k-3000 d/dak.",
-    "Kisa_Kod": "",
-    "Fiyat": "279,00",
-    "Para_Birimi": "USD",
-    "Marka": "OMEGA MOTOR",
-    "Kaynak_Dosya": "Omega Motor Tüm Fiyat Listeleri Mart 2025.pdf",
-    "Sayfa": 1,
-    "Record_Code": "OMEGA",
-    "Ana_Baslik": "IE4",
-    "Alt_Baslik": "ALÜMİNYUM GÖVDELİ IEC 3~FAZLI ASENKRON ELEKTRİK MOTORLARI",
-    "Alt_Baslik2": "",
-    "Image_Path": ""
-  },
-  {
-    "Malzeme_Kodu": "3MAS 112MA2",
-    "Açıklama": "2k-3000 d/dak.",
-    "Kisa_Kod": "",
-    "Fiyat": "355,00",
-    "Para_Birimi": "USD",
-    "Marka": "OMEGA MOTOR",
-    "Kaynak_Dosya": "Omega Motor Tüm Fiyat Listeleri Mart 2025.pdf",
-    "Sayfa": 1,
-    "Record_Code": "OMEGA",
-    "Ana_Baslik": "IE4",
-    "Alt_Baslik": "ALÜMİNYUM GÖVDELİ IEC 3~FAZLI ASENKRON ELEKTRİK MOTORLARI",
-    "Alt_Baslik2": "",
-    "Image_Path": ""
-  },
-  {
-    "Malzeme_Kodu": "3MAS 132SA2",
-    "Açıklama": "2k-3000 d/dak.",
-    "Kisa_Kod": "",
-    "Fiyat": "503,00",
-    "Para_Birimi": "USD",
-    "Marka": "OMEGA MOTOR",
-    "Kaynak_Dosya": "Omega Motor Tüm Fiyat Listeleri Mart 2025.pdf",
-    "Sayfa": 1,
-    "Record_Code": "OMEGA",
-    "Ana_Baslik": "IE4",
-    "Alt_Baslik": "ALÜMİNYUM GÖVDELİ IEC 3~FAZLI ASENKRON ELEKTRİK MOTORLARI",
-    "Alt_Baslik2": "",
-    "Image_Path": ""
-  },
-  {
-    "Malzeme_Kodu": "3MAS 132SB2",
-    "Açıklama": "2k-3000 d/dak.",
-    "Kisa_Kod": "",
-    "Fiyat": "541,00",
-    "Para_Birimi": "USD",
-    "Marka": "OMEGA MOTOR",
-    "Kaynak_Dosya": "Omega Motor Tüm Fiyat Listeleri Mart 2025.pdf",
-    "Sayfa": 1,
-    "Record_Code": "OMEGA",
-    "Ana_Baslik": "IE4",
-    "Alt_Baslik": "ALÜMİNYUM GÖVDELİ IEC 3~FAZLI ASENKRON ELEKTRİK MOTORLARI",
-    "Alt_Baslik2": "",
-    "Image_Path": ""
-  },
-  {
-    "Malzeme_Kodu": "3MAS 160MA2",
-    "Açıklama": "2k-3000 d/dak.",
-    "Kisa_Kod": "",
-    "Fiyat": "961,00",
-    "Para_Birimi": "USD",
-    "Marka": "OMEGA MOTOR",
-    "Kaynak_Dosya": "Omega Motor Tüm Fiyat Listeleri Mart 2025.pdf",
-    "Sayfa": 1,
-    "Record_Code": "OMEGA",
-    "Ana_Baslik": "IE4",
-    "Alt_Baslik": "ALÜMİNYUM GÖVDELİ IEC 3~FAZLI ASENKRON ELEKTRİK MOTORLARI",
-    "Alt_Baslik2": "",
-    "Image_Path": ""
-  },
-  {
-    "Malzeme_Kodu": "3MAS 160MB2",
-    "Açıklama": "2k-3000 d/dak.",
-    "Kisa_Kod": "",
-    "Fiyat": "1.045,00",
-    "Para_Birimi": "USD",
-    "Marka": "OMEGA MOTOR",
-    "Kaynak_Dosya": "Omega Motor Tüm Fiyat Listeleri Mart 2025.pdf",
-    "Sayfa": 1,
-    "Record_Code": "OMEGA",
-    "Ana_Baslik": "IE4",
-    "Alt_Baslik": "ALÜMİNYUM GÖVDELİ IEC 3~FAZLI ASENKRON ELEKTRİK MOTORLARI",
-    "Alt_Baslik2": "",
-    "Image_Path": ""
-  },
-  {
-    "Malzeme_Kodu": "3MAS 160LA2",
-    "Açıklama": "2k-3000 d/dak.",
-    "Kisa_Kod": "",
-    "Fiyat": "1.138,00",
-    "Para_Birimi": "USD",
-    "Marka": "OMEGA MOTOR",
-    "Kaynak_Dosya": "Omega Motor Tüm Fiyat Listeleri Mart 2025.pdf",
-    "Sayfa": 1,
-    "Record_Code": "OMEGA",
-    "Ana_Baslik": "IE4",
-    "Alt_Baslik": "ALÜMİNYUM GÖVDELİ IEC 3~FAZLI ASENKRON ELEKTRİK MOTORLARI",
-    "Alt_Baslik2": "",
-    "Image_Path": ""
-  },
-  {
-    "Malzeme_Kodu": "3MAS 180MA2",
-    "Açıklama": "2k-3000 d/dak.",
-    "Kisa_Kod": "",
-    "Fiyat": "1.418,00",
-    "Para_Birimi": "USD",
-    "Marka": "OMEGA MOTOR",
-    "Kaynak_Dosya": "Omega Motor Tüm Fiyat Listeleri Mart 2025.pdf",
-    "Sayfa": 1,
-    "Record_Code": "OMEGA",
-    "Ana_Baslik": "IE4",
-    "Alt_Baslik": "ALÜMİNYUM GÖVDELİ IEC 3~FAZLI ASENKRON ELEKTRİK MOTORLARI",
-    "Alt_Baslik2": "",
-    "Image_Path": ""
-  },
-  {
-    "Malzeme_Kodu": "3MAS 200LA2",
-    "Açıklama": "2k-3000 d/dak.",
-    "Kisa_Kod": "",
-    "Fiyat": "2.043,00",
-    "Para_Birimi": "USD",
-    "Marka": "OMEGA MOTOR",
-    "Kaynak_Dosya": "Omega Motor Tüm Fiyat Listeleri Mart 2025.pdf",
-    "Sayfa": 1,
-    "Record_Code": "OMEGA",
-    "Ana_Baslik": "IE4",
-    "Alt_Baslik": "ALÜMİNYUM GÖVDELİ IEC 3~FAZLI ASENKRON ELEKTRİK MOTORLARI",
-    "Alt_Baslik2": "",
-    "Image_Path": ""
-  },
-  {
-    "Malzeme_Kodu": "3MAS 200LB2",
-    "Açıklama": "2k-3000 d/dak.",
-    "Kisa_Kod": "",
-    "Fiyat": "2.209,00",
-    "Para_Birimi": "USD",
-    "Marka": "OMEGA MOTOR",
-    "Kaynak_Dosya": "Omega Motor Tüm Fiyat Listeleri Mart 2025.pdf",
-    "Sayfa": 1,
-    "Record_Code": "OMEGA",
-    "Ana_Baslik": "IE4",
-    "Alt_Baslik": "ALÜMİNYUM GÖVDELİ IEC 3~FAZLI ASENKRON ELEKTRİK MOTORLARI",
-    "Alt_Baslik2": "",
-    "Image_Path": ""
-  },
-  {
-    "Malzeme_Kodu": "3MAS 225MA2",
-    "Açıklama": "2k-3000 d/dak.",
-    "Kisa_Kod": "",
-    "Fiyat": "2.566,00",
-    "Para_Birimi": "USD",
-    "Marka": "OMEGA MOTOR",
-    "Kaynak_Dosya": "Omega Motor Tüm Fiyat Listeleri Mart 2025.pdf",
-    "Sayfa": 1,
-    "Record_Code": "OMEGA",
-    "Ana_Baslik": "IE4",
-    "Alt_Baslik": "ALÜMİNYUM GÖVDELİ IEC 3~FAZLI ASENKRON ELEKTRİK MOTORLARI",
-    "Alt_Baslik2": "",
-    "Image_Path": ""
-  },
-  {
-    "Malzeme_Kodu": "3MAS 250MA2",
-    "Açıklama": "2k-3000 d/dak.",
-    "Kisa_Kod": "",
-    "Fiyat": "3.842,00",
-    "Para_Birimi": "USD",
-    "Marka": "OMEGA MOTOR",
-    "Kaynak_Dosya": "Omega Motor Tüm Fiyat Listeleri Mart 2025.pdf",
-    "Sayfa": 1,
-    "Record_Code": "OMEGA",
-    "Ana_Baslik": "IE4",
-    "Alt_Baslik": "ALÜMİNYUM GÖVDELİ IEC 3~FAZLI ASENKRON ELEKTRİK MOTORLARI",
-    "Alt_Baslik2": "",
-    "Image_Path": ""
-  },
-  {
-    "Malzeme_Kodu": "3MAS 250MK2",
-    "Açıklama": "2k-3000 d/dak.",
-    "Kisa_Kod": "",
-    "Fiyat": "4.601,00",
-    "Para_Birimi": "USD",
-    "Marka": "OMEGA MOTOR",
-    "Kaynak_Dosya": "Omega Motor Tüm Fiyat Listeleri Mart 2025.pdf",
-    "Sayfa": 1,
-    "Record_Code": "OMEGA",
-    "Ana_Baslik": "IE4",
-    "Alt_Baslik": "ALÜMİNYUM GÖVDELİ KOMPAKT MOTORLAR",
-    "Alt_Baslik2": "",
-    "Image_Path": ""
-  }
-]
+```plaintext
+Ana_Baslik: IE4
+Alt_Baslik: ALÜMİNYUM GÖVDELİ IEC 3~FAZLI ASENKRON ELEKTRİK MOTORLARI
+Alt_Baslik2: B3 kurulumu düzeninde, tam kapalı IP55, S1 sürekli çalışma, IC411 yüzeyden soğutmalı, F izolasyon sınıfı, IE4 süper premium verimli, sincap kafesli, alüminyum gövdeli elektrik motorları
+
+GÜÇ_kW: 0.55
+Malzeme_Kodu: 3MAS 80MA2
+Fiyat: 156,00
+
+GÜÇ_kW: 0.75
+Malzeme_Kodu: 3MAS 80MB2
+Fiyat: 164,00
+
+GÜÇ_kW: 1.1
+Malzeme_Kodu: 3MAS 90SA2
+Fiyat: 186,00
+
+GÜÇ_kW: 1.5
+Malzeme_Kodu: 3MAS 90LA2
+Fiyat: 216,00
+
+GÜÇ_kW: 2.2
+Malzeme_Kodu: 3MAS 100LA2
+Fiyat: 279,00
+
+GÜÇ_kW: 3
+Malzeme_Kodu: 3MAS 112MA2
+Fiyat: 355,00
+
+GÜÇ_kW: 4
+Malzeme_Kodu: 3MAS 132SA2
+Fiyat: 503,00
+
+GÜÇ_kW: 5.5
+Malzeme_Kodu: 3MAS 132SB2
+Fiyat: 541,00
+
+GÜÇ_kW: 7.5
+Malzeme_Kodu: 3MAS 160MA2
+Fiyat: 961,00
+
+GÜÇ_kW: 11
+Malzeme_Kodu: 3MAS 160MB2
+Fiyat: 1.045,00
+
+GÜÇ_kW: 15
+Malzeme_Kodu: 3MAS 160LA2
+Fiyat: 1.138,00
+
+GÜÇ_kW: 18.5
+Malzeme_Kodu: 3MAS 180MA2
+Fiyat: 1.418,00
+
+GÜÇ_kW: 22
+Malzeme_Kodu: 3MAS 200LA2
+Fiyat: 2.043,00
+
+GÜÇ_kW: 30
+Malzeme_Kodu: 3MAS 200LB2
+Fiyat: 2.209,00
+
+GÜÇ_kW: 37
+Malzeme_Kodu: 3MAS 225MA2
+Fiyat: 2.566,00
+
+GÜÇ_kW: 45
+Malzeme_Kodu: 3MAS 250MA2
+Fiyat: 3.842,00
+
+Ana_Baslik: ALÜMİNYUM GÖVDELİ KOMPAKT MOTORLAR
+
+GÜÇ_kW: 75
+Malzeme_Kodu: 3MAS 250MK2
+Fiyat: 4.601,00
 ```
