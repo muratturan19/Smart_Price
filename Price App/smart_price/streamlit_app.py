@@ -391,6 +391,12 @@ def merge_files(
     if "Malzeme_Kodu" not in master.columns:
         logger.warning("[merge] 'Malzeme_Kodu' column missing after merge")
         master["Malzeme_Kodu"] = None
+    # Diagnostic logging before dropping rows
+    logger.warning(f"[merge] DF column names: {master.columns.tolist()}")
+    logger.warning(
+        f"[merge] DF Malzeme_Kodu sample: "
+        f"{master['Malzeme_Kodu'].dropna().head(5).tolist() if 'Malzeme_Kodu' in master.columns else 'COLUMN NOT FOUND'}"
+    )
     drop_mask = master[["Malzeme_Kodu", "Fiyat"]].isna().any(axis=1)
     dropped_preview = master[drop_mask].head().to_dict(orient="records")
     before_len = len(master)
