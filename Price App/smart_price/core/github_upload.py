@@ -96,7 +96,8 @@ def upload_folder(
         url_path = _sanitize_repo_path(repo_path.as_posix())
         url = f"https://api.github.com/repos/{repo}/contents/{url_path}"
         with open(file_path, "rb") as fh:
-            content = base64.b64encode(fh.read()).decode("ascii")
+            raw = fh.read()
+        content = base64.b64encode(raw).decode("ascii")
         try:
             resp = _api_request("GET", f"{url}?ref={branch}", token, timeout=timeout)
             sha = resp.get("sha")
@@ -114,6 +115,30 @@ def upload_folder(
             data["sha"] = sha
         try:
             _api_request("PUT", url, token, data, timeout=timeout)
+        except error.HTTPError as exc:  # pragma: no cover - network errors
+            if exc.code == 409:
+                try:
+                    resp = _api_request(
+                        "GET", f"{url}?ref={branch}", token, timeout=timeout
+                    )
+                    new_sha = resp.get("sha")
+                    existing = resp.get("content")
+                    if existing:
+                        existing_bytes = base64.b64decode(existing)
+                        if existing_bytes == raw:
+                            continue
+                    if new_sha and new_sha != data.get("sha"):
+                        data["sha"] = new_sha
+                        _api_request("PUT", url, token, data, timeout=timeout)
+                        continue
+                except Exception as exc2:  # pragma: no cover - network errors
+                    logger.error(
+                        "Conflict resolution for %s failed: %s", repo_path, exc2
+                    )
+                    success = False
+                    continue
+            logger.error("Failed to upload %s: %s", repo_path, exc)
+            success = False
         except Exception as exc:  # pragma: no cover - network errors
             logger.error("Failed to upload %s: %s", repo_path, exc)
             success = False
