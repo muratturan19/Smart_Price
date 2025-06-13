@@ -1,5 +1,5 @@
 """Streamlit application for querying the master price dataset."""
-import io
+
 import os
 import logging
 import sqlite3
@@ -11,6 +11,7 @@ import streamlit as st
 from pathlib import Path
 import sys
 from smart_price.ui_utils import img_to_base64, logo_overlay
+from smart_price.config import DEFAULT_DB_URL, DEFAULT_IMAGE_BASE_URL
 
 ROOT = Path(__file__).resolve().parents[2]
 left_logo_url = ROOT / "logo" / "dp_Seffaf_logo.PNG"
@@ -22,13 +23,10 @@ def resource_path(relative: str) -> str:
     base_path = getattr(sys, "_MEIPASS", Path(__file__).parent)
     return str(Path(base_path) / relative)
 
-from smart_price.config import DEFAULT_DB_URL, DEFAULT_IMAGE_BASE_URL
 
 PAGE_IMAGE_EXT = ".jpg"
 
 logger = logging.getLogger("sales_app")
-
-
 
 
 def _load_dataset(url: str) -> pd.DataFrame:
@@ -90,9 +88,7 @@ def search_page(df: pd.DataFrame) -> None:
     query = st.text_input("Malzeme kodu veya adı")
     keyword = st.text_input("Anahtar kelime")
     brand = (
-        st.selectbox(
-            "Marka", [""] + sorted(df["Marka"].dropna().unique().tolist())
-        )
+        st.selectbox("Marka", [""] + sorted(df["Marka"].dropna().unique().tolist()))
         if "Marka" in df.columns
         else ""
     )
@@ -118,6 +114,8 @@ def search_page(df: pd.DataFrame) -> None:
         else ""
     )
 
+    show_imgs = st.checkbox("Satır önizlemelerini göster", value=False)
+
     if not any([query, keyword, brand, main_header, sub_header, category]):
         st.info("Aramak için kriter girin")
         return
@@ -130,9 +128,7 @@ def search_page(df: pd.DataFrame) -> None:
         ]
     if keyword:
         mask = filtered.apply(
-            lambda r: r.astype(str)
-            .str.contains(keyword, case=False, na=False)
-            .any(),
+            lambda r: r.astype(str).str.contains(keyword, case=False, na=False).any(),
             axis=1,
         )
         filtered = filtered[mask]
@@ -146,10 +142,11 @@ def search_page(df: pd.DataFrame) -> None:
         filtered = filtered[filtered["Kategori"] == category]
 
     st.write(f"{len(filtered)} kayıt bulundu")
-    styled = filtered.style.format({'Fiyat': '{:,.2f}'})
+    styled = filtered.style.format({"Fiyat": "{:,.2f}"})
     st.dataframe(styled, hide_index=True, use_container_width=True)
 
     if not filtered.empty:
+
         def _fmt(idx: int) -> str:
             row = filtered.loc[idx]
             return f"{row['Açıklama']} ({row['Malzeme_Kodu']})"
@@ -161,8 +158,7 @@ def search_page(df: pd.DataFrame) -> None:
         )
         row = filtered.loc[selected]
         st.metric(
-            label="Fiyat",
-            value=f"{row.get('Fiyat')} {row.get('Para_Birimi','')}"
+            label="Fiyat", value=f"{row.get('Fiyat')} {row.get('Para_Birimi','')}"
         )
         img_path = row.get("Image_Path") or row.get("image_path")
         base = os.getenv("IMAGE_BASE_URL", DEFAULT_IMAGE_BASE_URL).rstrip("/")
@@ -188,7 +184,7 @@ def search_page(df: pd.DataFrame) -> None:
                             f"{base}/LLM_Output_db/{folder}/"
                             f"page_image_page_{page_num:02d}{PAGE_IMAGE_EXT}"
                         )
-        if img_url:
+        if show_imgs and img_url:
             try:
                 resp = requests.get(img_url)
                 resp.raise_for_status()
