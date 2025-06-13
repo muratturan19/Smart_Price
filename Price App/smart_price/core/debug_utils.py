@@ -66,13 +66,7 @@ def save_debug_image(prefix: str, page: int, image: Image.Image) -> Optional[Pat
     dir_path = _debug_dir()
     file_path = dir_path / f"{prefix}_page_{page:02d}.jpg"
     try:
-        image.save(
-            file_path,
-            format="JPEG",
-            quality=80,
-            optimize=True,
-            progressive=True,
-        )
+        image.save(file_path, format="JPEG")
     except Exception as exc:  # pragma: no cover - debug file failures
         logger.debug("debug image write failed for %s: %s", file_path, exc)
     return file_path
