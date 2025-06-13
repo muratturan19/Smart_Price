@@ -525,7 +525,7 @@ def save_master_dataset(
             },
             inplace=True,
         )
-        for col in [
+        columns = [
             "material_code",
             "description",
             "price",
@@ -541,28 +541,11 @@ def save_master_dataset(
             "main_header",
             "sub_header",
             "category",
-        ]:
+        ]
+        for col in columns:
             if col not in db_df.columns:
                 db_df[col] = None
-        db_df = db_df[
-            [
-                "material_code",
-                "description",
-                "price",
-                "unit",
-                "box_count",
-                "price_currency",
-                "source_file",
-                "source_page",
-                "image_path",
-                "record_code",
-                "year",
-            "brand",
-            "main_header",
-            "sub_header",
-            "category",
-        ]
-        ]
+        db_df = db_df[columns]
         db_df.to_sql("prices", conn, if_exists="replace", index=False)
     conn.close()
 
