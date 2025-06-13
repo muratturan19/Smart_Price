@@ -1,12 +1,13 @@
 import os
 import sys
 
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "src")))
+# Ensure Price App package is on path
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "Price App")))
 
 from pathlib import Path
 import importlib
 
-import utils.prompt_builder as pb
+import smart_price.utils.prompt_builder as pb
 
 def test_matrix_slug():
     prompt = pb.get_prompt_for_file("MATRIX Fiyat Listesi 10.03.25.pdf")
