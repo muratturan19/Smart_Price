@@ -537,6 +537,8 @@ def parse(
     text_dir = Path(os.getenv("SMART_PRICE_TEXT_DIR", "LLM_Text_db")) / output_name
     debug_dir.mkdir(parents=True, exist_ok=True)
     text_dir.mkdir(parents=True, exist_ok=True)
+    if DEBUG:
+        threading.Thread(target=upload_folder, args=(debug_dir,), daemon=True).start()
     set_output_subdir(None)
     logger.info("Debug klasörü GitHub'a yükleniyor...")
     ok = upload_folder(
