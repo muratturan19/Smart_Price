@@ -7,12 +7,16 @@ Akıllı Fiyat Asistanı
 The required Python packages are listed in `pyproject.toml`. Install them together with this project using `pip`:
 
 ```bash
-pip install .
-pip install .[agentic]  # optional AgenticDE support
+pip install -e .
+# or
+pip install smart-price
 ```
 
-The helper modules under `utils` are included automatically when
-installing from the repository.
+Utilities live under `smart_price.utils`.
+
+```python
+from smart_price.utils.prompt_builder import get_prompt_for_file
+```
 
 `tkinter` must also be available. It is typically included with many Python distributions but may require a separate installation on some systems.
 
