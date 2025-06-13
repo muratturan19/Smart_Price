@@ -40,9 +40,6 @@ if 'dotenv' not in sys.modules:
     dotenv_stub.load_dotenv = lambda: None
     sys.modules['dotenv'] = dotenv_stub
 
-# Ensure repo root is on path for project imports
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
-
 import smart_price.core.extract_pdf as ep  # noqa: E402
 from smart_price.core.extract_pdf import extract_from_pdf  # noqa: E402
 

@@ -1,12 +1,7 @@
-import os
 import sys
 import types
 import importlib
 import logging
-
-# Ensure repo root is on path
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
-
 
 def _import_module(monkeypatch):
     """Import extract_excel with minimal stubs if pandas is missing."""

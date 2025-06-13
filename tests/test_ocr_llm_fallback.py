@@ -20,9 +20,6 @@ dotenv_stub = types.ModuleType('dotenv')
 dotenv_stub.load_dotenv = lambda *_args, **_kw: None
 sys.modules['dotenv'] = dotenv_stub
 
-# Ensure repo root is on path for imports
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
-
 openai_calls = {}
 
 def _setup_openai(monkeypatch):

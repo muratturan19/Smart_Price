@@ -1,8 +1,4 @@
-import os
-import sys
 import json
-
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 from smart_price.core import prompt_utils
 from smart_price import config
