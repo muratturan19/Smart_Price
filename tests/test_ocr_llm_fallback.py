@@ -33,7 +33,10 @@ def _setup_openai(monkeypatch):
             choices=[types.SimpleNamespace(message=types.SimpleNamespace(content='[]'))]
         )
     chat_stub = types.SimpleNamespace(completions=types.SimpleNamespace(create=create))
-    openai_stub = types.SimpleNamespace(chat=chat_stub)
+    openai_stub = types.SimpleNamespace(
+        chat=chat_stub,
+        api_requestor=types.SimpleNamespace(_DEFAULT_NUM_RETRIES=None),
+    )
     monkeypatch.setitem(sys.modules, 'openai', openai_stub)
     monkeypatch.setenv('OPENAI_API_KEY', 'x')
     monkeypatch.setenv('MAX_RETRY_WAIT_TIME', '0')
@@ -107,7 +110,8 @@ def test_openai_max_retries_env(monkeypatch):
 
     mod.parse("dummy.pdf")
 
-    assert openai_calls.get("max_retries") == 5
+    openai_mod = sys.modules["openai"]
+    assert openai_mod.api_requestor._DEFAULT_NUM_RETRIES == 5
 
 
 def test_openai_max_retries_default(monkeypatch):
@@ -126,7 +130,8 @@ def test_openai_max_retries_default(monkeypatch):
 
     mod.parse("dummy.pdf")
 
-    assert openai_calls.get("max_retries") == 0
+    openai_mod = sys.modules["openai"]
+    assert openai_mod.api_requestor._DEFAULT_NUM_RETRIES == 0
 
 
 def test_parse_parallel_execution(monkeypatch):
