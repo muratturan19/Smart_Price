@@ -38,6 +38,9 @@ from smart_price.core.common_utils import normalize_currency, normalize_price
 
 logger = logging.getLogger("smart_price")
 
+# Number of pages to process before showing progress information
+BATCH_SIZE = 5
+
 
 def standardize_column_names(df: pd.DataFrame) -> pd.DataFrame:
     """Return ``df`` with common column name variants normalised."""
@@ -291,6 +294,7 @@ def merge_files(
     """
     extracted = []
     token_totals: dict[str, dict[str, int]] = {}
+    total_rows = 0
     total = len(uploaded_files)
     for idx, up_file in enumerate(uploaded_files, start=1):
         if update_status:
@@ -298,9 +302,29 @@ def merge_files(
         if update_progress:
             update_progress((idx - 1) / total)
 
+        page_idx = 0
+        total_pages: int | None = None
+        last_prog = 0.0
+
         def page_prog(v: float) -> None:
+            nonlocal page_idx, total_pages, last_prog, total_rows
             if update_progress:
                 update_progress(((idx - 1) + v) / total)
+            if v <= last_prog:
+                return
+            page_idx += 1
+            last_prog = v
+            if total_pages is None and v:
+                try:
+                    total_pages = round(1 / v)
+                except Exception:
+                    total_pages = None
+            if page_idx % BATCH_SIZE == 0 or (
+                total_pages is not None and page_idx == total_pages
+            ):
+                st.info(
+                    f"\U0001F680 {page_idx} sayfa işlendi, toplam {total_rows} satır bulundu."
+                )
 
         name = up_file.name.lower()
         bytes_data = io.BytesIO(up_file.read())
@@ -329,6 +353,7 @@ def merge_files(
                 update_status("veri çıkarılamadı", "warning")
         else:
             extracted.append(df)
+            total_rows += len(df)
             tok = getattr(df, "token_counts", None)
             if tok:
                 token_totals[up_file.name] = tok
