@@ -35,6 +35,7 @@ def _setup_openai(monkeypatch):
     openai_stub = types.SimpleNamespace(chat=chat_stub)
     monkeypatch.setitem(sys.modules, 'openai', openai_stub)
     monkeypatch.setenv('OPENAI_API_KEY', 'x')
+    monkeypatch.setenv('MAX_RETRY_WAIT_TIME', '0')
 
 class FakeImage:
     def __init__(self, data=b'img'):
@@ -309,7 +310,8 @@ def test_retry_limit(monkeypatch):
     openai_stub = types.SimpleNamespace(chat=chat_stub)
     monkeypatch.setitem(sys.modules, "openai", openai_stub)
     monkeypatch.setenv("OPENAI_API_KEY", "x")
-    monkeypatch.setenv("SMART_PRICE_MAX_RETRIES", "1")
+    monkeypatch.setenv("MAX_RETRIES", "1")
+    monkeypatch.setenv("MAX_RETRY_WAIT_TIME", "0")
 
     _pandas_stubbed = False
     try:
