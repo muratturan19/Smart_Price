@@ -1,4 +1,5 @@
 import logging
+import base64
 from urllib import error
 import pytest
 
@@ -139,4 +140,36 @@ def test_api_request_timeout_env(monkeypatch):
 
     _api_request("GET", "http://example", "tok")
     assert captured["timeout"] == 12
+
+
+def test_upload_folder_conflict(monkeypatch, tmp_path, caplog):
+    folder = tmp_path / "conflict"
+    folder.mkdir()
+    f = folder / "page.txt"
+    f.write_text("same")
+
+    calls = []
+    step = {"n": 0}
+
+    def fake_api(method, url, token, data=None, timeout=None):
+        calls.append(method)
+        if method == "GET":
+            if step["n"] == 0:
+                step["n"] = 1
+                return {"sha": "old"}
+            return {"sha": "new", "content": base64.b64encode(b"same").decode("ascii")}
+        if method == "PUT" and step["n"] == 1:
+            step["n"] = 2
+            raise error.HTTPError(url, 409, "Conflict", None, None)
+        return {}
+
+    monkeypatch.setattr("smart_price.core.github_upload._api_request", fake_api)
+    monkeypatch.setenv("GITHUB_REPO", "owner/repo")
+    monkeypatch.setenv("GITHUB_TOKEN", "tok")
+
+    with caplog.at_level(logging.ERROR, logger="smart_price"):
+        assert upload_folder(folder, remote_prefix=f"LLM_Output_db/{folder.name}")
+
+    assert calls == ["GET", "PUT", "GET"]
+    assert not caplog.records
 

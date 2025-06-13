@@ -246,6 +246,8 @@ uploaded automatically; text files remain in `LLM_Text_db`.
    If these variables are not set the upload is skipped gracefully.
  - set `GITHUB_HTTP_TIMEOUT` to change the HTTP timeout for GitHub API
    requests in seconds (defaults to `30`).
+ - uploads automatically retry on HTTP 409 conflicts using the
+   latest file SHA and skip unchanged files.
 
 ### Resetting the dataset
 
