@@ -1,5 +1,6 @@
 __pycache__/
 *.pyc
 LLM_Output_db/
+LLM_Text_db/
 
 debug/**/*.jpg
