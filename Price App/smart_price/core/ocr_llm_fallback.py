@@ -36,7 +36,7 @@ from .common_utils import (
     safe_json_parse,
     log_metric,
 )
-from utils.prompt_builder import get_prompt_for_file
+from smart_price.utils.prompt_builder import get_prompt_for_file
 from .prompt_utils import RAW_HEADER_HINT
 from .debug_utils import save_debug, save_debug_image, set_output_subdir
 from .token_utils import (

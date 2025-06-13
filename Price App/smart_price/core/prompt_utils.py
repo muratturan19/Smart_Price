@@ -7,7 +7,7 @@ from typing import Any, Dict, List, Tuple
 import logging
 
 from smart_price import config
-from utils.prompt_builder import get_prompt_for_file
+from smart_price.utils.prompt_builder import get_prompt_for_file
 from .extract_excel import (
     _RAW_CODE_HEADERS,
     _RAW_DESC_HEADERS,
@@ -125,5 +125,5 @@ def load_extraction_guide(path: str | None = None) -> List[Dict[str, Any]]:
 
 
 def prompts_for_pdf(pdf_name: str) -> str:
-    """DEPRECATED – use :func:`utils.prompt_builder.get_prompt_for_file`."""
+    """DEPRECATED – use :func:`smart_price.utils.prompt_builder.get_prompt_for_file`."""
     return get_prompt_for_file(pdf_name)
