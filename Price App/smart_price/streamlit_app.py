@@ -291,6 +291,7 @@ def merge_files(
     update_dataframe:
         Optional callable receiving the merged DataFrame after each file.
     """
+    logger.info("==> BEGIN merge_files count=%s", len(uploaded_files))
     extracted = []
     token_totals: dict[str, dict[str, int]] = {}
     total_rows = 0
@@ -300,6 +301,7 @@ def merge_files(
             update_status("Dosya y\u00fckleniyor, l\u00fctfen bekleyin...", "info")
         if update_progress:
             update_progress((idx - 1) / total)
+        logger.info("==> FILE %s processing start", up_file.name)
 
         page_idx = 0
         total_pages: int | None = None
@@ -433,6 +435,7 @@ def merge_files(
     if hasattr(master, "__dict__"):
         object.__setattr__(master, "token_totals", token_totals)
         object.__setattr__(master, "total_tokens", total_tokens)
+    logger.info("==> END merge_files rows=%s", len(master))
     return master
 
 

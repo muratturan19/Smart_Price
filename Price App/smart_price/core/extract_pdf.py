@@ -261,6 +261,7 @@ def extract_from_pdf(
                 path_for_llm,
                 output_name=output_stem if tmp_for_llm else None,
                 prompt=guide_prompt,
+                page_range=range(1, 4),
                 progress_callback=progress_callback,
             )
         except TypeError:
@@ -269,9 +270,10 @@ def extract_from_pdf(
                     path_for_llm,
                     output_name=output_stem if tmp_for_llm else None,
                     prompt=guide_prompt,
+                    page_range=range(1, 4),
                 )
             except TypeError:
-                result = ocr_llm_fallback.parse(path_for_llm)
+                result = ocr_llm_fallback.parse(path_for_llm, page_range=range(1, 4))
         logger.info("==> END vision_loop rows=%s", len(result))
         logger.info(
             "==> END images_from_pdf pages=%s",
