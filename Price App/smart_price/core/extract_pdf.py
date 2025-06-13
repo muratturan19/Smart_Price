@@ -43,6 +43,8 @@ from .prompt_utils import prompts_for_pdf
 from .token_utils import log_token_counts
 from .github_upload import upload_folder, _sanitize_repo_path
 
+PAGE_IMAGE_EXT = ".jpg"
+
 MIN_CODE_RATIO = 0.70
 CODE_RE = re.compile(r"^([A-ZÇĞİÖŞÜ0-9][A-ZÇĞİÖŞÜ0-9\-/]{1,})", re.I)
 
@@ -270,7 +272,7 @@ def extract_from_pdf(
         ok = upload_folder(
             debug_dir,
             remote_prefix=f"LLM_Output_db/{debug_dir.name}",
-            file_extensions=[".jpg"],
+            file_extensions=[PAGE_IMAGE_EXT],
         )
         if ok:
             notify("Debug klasörü yüklendi")
@@ -308,7 +310,7 @@ def extract_from_pdf(
         + (result.groupby("Sayfa").cumcount() + 1).astype(str)
     )
     result["Image_Path"] = result["Sayfa"].apply(
-        lambda page_num: f"LLM_Output_db/{sanitized_base}/page_image_page_{int(page_num):02d}.jpg"
+        lambda page_num: f"LLM_Output_db/{sanitized_base}/page_image_page_{int(page_num):02d}{PAGE_IMAGE_EXT}"
     )
     cols = [
         "Malzeme_Kodu",
@@ -339,9 +341,9 @@ def extract_from_pdf(
     text_dir = Path(os.getenv("SMART_PRICE_TEXT_DIR", "LLM_Text_db")) / output_stem
     debug_dir.mkdir(parents=True, exist_ok=True)
     text_dir.mkdir(parents=True, exist_ok=True)
-    if not any(p.suffix == ".jpg" for p in debug_dir.glob("*.jpg")):
+    if not any(p.suffix == PAGE_IMAGE_EXT for p in debug_dir.glob(f"*{PAGE_IMAGE_EXT}")):
         try:
-            with open(debug_dir / "page_image_page_01.jpg", "wb") as fh:
+            with open(debug_dir / f"page_image_page_01{PAGE_IMAGE_EXT}", "wb") as fh:
                 fh.write(b"")
         except Exception:
             pass
@@ -356,7 +358,7 @@ def extract_from_pdf(
     ok = upload_folder(
         debug_dir,
         remote_prefix=f"LLM_Output_db/{debug_dir.name}",
-        file_extensions=[".jpg"],
+        file_extensions=[PAGE_IMAGE_EXT],
     )
     if ok:
         notify("Debug klasörü yüklendi")

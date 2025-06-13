@@ -24,6 +24,8 @@ def resource_path(relative: str) -> str:
 
 from smart_price.config import DEFAULT_DB_URL, DEFAULT_IMAGE_BASE_URL
 
+PAGE_IMAGE_EXT = ".jpg"
+
 logger = logging.getLogger("sales_app")
 
 
@@ -184,7 +186,7 @@ def search_page(df: pd.DataFrame) -> None:
                     if page_num is not None:
                         img_url = (
                             f"{base}/LLM_Output_db/{folder}/"
-                            f"page_image_page_{page_num:02d}.jpg"
+                            f"page_image_page_{page_num:02d}{PAGE_IMAGE_EXT}"
                         )
         if img_url:
             try:
