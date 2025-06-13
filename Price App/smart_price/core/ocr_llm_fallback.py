@@ -136,6 +136,7 @@ def parse(
     *,
     output_name: str | None = None,
     prompt: str | dict[int, str] | None = None,
+    dpi: int | None = None,
 ) -> pd.DataFrame:
     """Parse ``pdf_path`` using GPT-4o vision.
 
@@ -148,6 +149,9 @@ def parse(
     output_name : str, optional
         Name of the debug output directory under ``LLM_Output_db``.  Defaults
         to ``Path(pdf_path).stem``.
+    dpi : int, optional
+        Resolution used when converting PDF pages to images. Overrides the
+        ``SMART_PRICE_PDF_DPI`` environment variable. Defaults to ``150``.
     """
 
     if output_name is None:
@@ -168,7 +172,12 @@ def parse(
         return pd.DataFrame()
 
     try:
-        kwargs = {"dpi": 300}
+        dpi_val = dpi if dpi is not None else os.getenv("SMART_PRICE_PDF_DPI")
+        try:
+            dpi_val = int(dpi_val) if dpi_val is not None else 150
+        except Exception:
+            dpi_val = 150
+        kwargs = {"dpi": dpi_val}
         first, last = _range_bounds(page_range)
         if first is not None:
             kwargs["first_page"] = first
