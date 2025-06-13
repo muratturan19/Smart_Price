@@ -350,6 +350,14 @@ def merge_files(
                 update_status(f"veri çıkarılamadı: {exc}", "error")
             df = pd.DataFrame()
 
+        try:  # pragma: no cover - diagnostic logging
+            sample = df.head() if hasattr(df, "head") else (df[:5] if isinstance(df, list) else df)
+            if hasattr(sample, "to_dict"):
+                sample = sample.to_dict(orient="records")
+            logger.warning("[debug] merge_files head for %s: %s", up_file.name, sample)
+        except Exception as exc:
+            logger.warning("[debug] merge_files head logging failed: %s", exc)
+
         if df.empty:
             if update_status:
                 update_status("veri çıkarılamadı", "warning")
@@ -381,6 +389,27 @@ def merge_files(
         update_progress(1.0)
 
     master = pd.concat(extracted, ignore_index=True)
+    try:  # pragma: no cover - diagnostic logging
+        col = None
+        if hasattr(master, "get"):
+            col = master.get("Malzeme_Kodu")
+        if col is None and "Malzeme_Kodu" in getattr(master, "columns", []):
+            col = master["Malzeme_Kodu"]
+        sample = None
+        if col is not None:
+            if hasattr(col, "dropna"):
+                col = col.dropna()
+            if hasattr(col, "head"):
+                col = col.head()
+            if hasattr(col, "tolist"):
+                sample = col.tolist()
+            elif isinstance(col, (list, tuple)):
+                sample = list(col)[:5]
+            else:
+                sample = str(col)
+        logger.warning("[debug] merge_files concat Malzeme_Kodu sample: %s", sample)
+    except Exception as exc:
+        logger.warning("[debug] merge_files concat logging failed: %s", exc)
     master = standardize_column_names(master)
     logger.debug("[merge] Raw merged rows: %d", len(master))
     if "Fiyat" in master.columns:
