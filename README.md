@@ -215,7 +215,7 @@ The log records extra details to help trace each step:
 - per-page LLM responses stored under `LLM_Text_db/<PDF adı>` (set
   `SMART_PRICE_TEXT_DIR` to override the location)
 Debug images can be downloaded directly from GitHub using a URL like
-`https://raw.githubusercontent.com/<owner>/<repo>/main/LLM_Output_db/<PDF adı>/page_image_page_<NN>.png`.
+`https://raw.githubusercontent.com/<owner>/<repo>/main/LLM_Output_db/<PDF adı>/page_image_page_<NN>.jpg`.
 Note that the `LLM_Output_db` folder sits at the repository root; **do not**
 prefix the path with `Master_data_base`. Only the images in this folder are
 uploaded automatically; text files remain in `LLM_Text_db`.

@@ -889,7 +889,7 @@ def test_llm_debug_files(monkeypatch, tmp_path):
     txt_folder = txt_root / "dummy"
 
     assert not df.empty
-    assert any(p.suffix == ".png" for p in img_folder.iterdir())
+    assert any(p.suffix == ".jpg" for p in img_folder.iterdir())
     assert any(p.name.startswith("llm_response") for p in txt_folder.iterdir())
 
 
@@ -968,7 +968,7 @@ def test_price_parser_db_schema(monkeypatch, tmp_path):
             "Para_Birimi": ["₺"],
             "Kaynak_Dosya": ["src.xlsx"],
             "Sayfa": [1],
-            "Image_Path": ["img.png"],
+            "Image_Path": ["img.jpg"],
             "Record_Code": ["R1"],
             "Yil": [2024],
             "Marka": ["Brand"],
@@ -1022,7 +1022,7 @@ def test_price_parser_db_schema(monkeypatch, tmp_path):
         "₺",
         "src.xlsx",
         1,
-        "img.png",
+        "img.jpg",
         "R1",
         2024,
         "Brand",

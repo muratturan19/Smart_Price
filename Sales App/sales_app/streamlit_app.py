@@ -184,7 +184,7 @@ def search_page(df: pd.DataFrame) -> None:
                     if page_num is not None:
                         img_url = (
                             f"{base}/LLM_Output_db/{folder}/"
-                            f"page_image_page_{page_num:02d}.png"
+                            f"page_image_page_{page_num:02d}.jpg"
                         )
         if img_url:
             try:

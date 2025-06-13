@@ -227,8 +227,14 @@ def parse(
         tmp_path = img_path
         created_tmp = False
         if tmp_path is None:
-            tmp = tempfile.NamedTemporaryFile(delete=False, suffix=".png")
-            img.save(tmp.name, format="PNG")
+            tmp = tempfile.NamedTemporaryFile(delete=False, suffix=".jpg")
+            img.save(
+                tmp.name,
+                format="JPEG",
+                quality=80,
+                optimize=True,
+                progressive=True,
+            )
             tmp.close()
             tmp_path = Path(tmp.name)
             created_tmp = True
@@ -256,7 +262,7 @@ def parse(
                             {
                                 "type": "image_url",
                                 "image_url": {
-                                    "url": "data:image/png;base64," + img_base64
+                                    "url": "data:image/jpeg;base64," + img_base64
                                 },
                             },
                         ],
@@ -414,7 +420,7 @@ def parse(
     ok = upload_folder(
         debug_dir,
         remote_prefix=f"LLM_Output_db/{debug_dir.name}",
-        file_extensions=[".png"],
+        file_extensions=[".jpg"],
     )
     if ok:
         logger.info("Debug klasörü yüklendi")

@@ -270,7 +270,7 @@ def extract_from_pdf(
         ok = upload_folder(
             debug_dir,
             remote_prefix=f"LLM_Output_db/{debug_dir.name}",
-            file_extensions=[".png"],
+            file_extensions=[".jpg"],
         )
         if ok:
             notify("Debug klasörü yüklendi")
@@ -308,7 +308,7 @@ def extract_from_pdf(
         + (result.groupby("Sayfa").cumcount() + 1).astype(str)
     )
     result["Image_Path"] = result["Sayfa"].apply(
-        lambda page_num: f"LLM_Output_db/{sanitized_base}/page_image_page_{int(page_num):02d}.png"
+        lambda page_num: f"LLM_Output_db/{sanitized_base}/page_image_page_{int(page_num):02d}.jpg"
     )
     cols = [
         "Malzeme_Kodu",
@@ -339,9 +339,9 @@ def extract_from_pdf(
     text_dir = Path(os.getenv("SMART_PRICE_TEXT_DIR", "LLM_Text_db")) / output_stem
     debug_dir.mkdir(parents=True, exist_ok=True)
     text_dir.mkdir(parents=True, exist_ok=True)
-    if not any(p.suffix == ".png" for p in debug_dir.glob("*.png")):
+    if not any(p.suffix == ".jpg" for p in debug_dir.glob("*.jpg")):
         try:
-            with open(debug_dir / "page_image_page_01.png", "wb") as fh:
+            with open(debug_dir / "page_image_page_01.jpg", "wb") as fh:
                 fh.write(b"")
         except Exception:
             pass
@@ -356,7 +356,7 @@ def extract_from_pdf(
     ok = upload_folder(
         debug_dir,
         remote_prefix=f"LLM_Output_db/{debug_dir.name}",
-        file_extensions=[".png"],
+        file_extensions=[".jpg"],
     )
     if ok:
         notify("Debug klasörü yüklendi")
