@@ -2,6 +2,9 @@ import os
 import re
 from pathlib import Path
 from typing import Optional
+import logging
+
+logger = logging.getLogger("smart_price")
 
 
 def normalize_price(price_str: Optional[str], *, style: str = "eu") -> Optional[float]:
@@ -330,6 +333,29 @@ def validate_output_df(df):
         return pd.DataFrame(columns=EXTRACTION_FIELDS)
 
     result = df.copy()
+    try:  # pragma: no cover - diagnostic logging
+        sample = None
+        cols = getattr(df, "columns", None)
+        if isinstance(cols, (list, tuple)) and "Malzeme_Kodu" in cols:
+            col = df["Malzeme_Kodu"]
+        elif isinstance(df, dict) and "Malzeme_Kodu" in df:
+            col = df["Malzeme_Kodu"]
+        else:
+            col = None
+        if col is not None:
+            if hasattr(col, "dropna"):
+                col = col.dropna()
+            if hasattr(col, "head"):
+                col = col.head()
+            if hasattr(col, "tolist"):
+                sample = col.tolist()
+            elif isinstance(col, (list, tuple)):
+                sample = list(col)[:5]
+            else:
+                sample = str(col)
+        logger.warning("[debug] validate_output_df Malzeme_Kodu sample: %s", sample)
+    except Exception as exc:
+        logger.warning("[debug] validate_output_df logging failed: %s", exc)
 
     if "Fiyat" in result.columns:
         result["Fiyat"] = result["Fiyat"].apply(normalize_price)
