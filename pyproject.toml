@@ -21,8 +21,10 @@ dependencies = [
     "jsonschema>=4.22.0",
 ]
 
-[tool.setuptools.packages.find]
-where = ["Price App", "Sales App", "src"]
+[tool.setuptools]
+package-dir = {"" = "Price App"}
+packages = ["smart_price", "sales_app"]
+include-package-data = true
 
 [project.optional-dependencies]
 agentic = [
