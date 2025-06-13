@@ -153,6 +153,7 @@ def split_image_vertically(image: "Image") -> list["Image"]:
         mid = int(width / 2)
         left = crop((0, 0, mid, height))
         right = crop((mid, 0, width, height))
+        logger.info("image split vertically width=%s height=%s", width, height)
         return [left, right]
     return [image]
 
@@ -184,6 +185,7 @@ def parse(
         Callback receiving a float ``0-1`` progress value after each page.
     """
 
+    logger.info("==> BEGIN parse %s", pdf_path)
     if output_name is None:
         output_name = Path(pdf_path).stem
 
@@ -426,6 +428,7 @@ def parse(
     workers = int(os.getenv("SMART_PRICE_LLM_WORKERS", "5"))
     if len(images) <= 2:
         workers = 1
+    logger.info("==> BEGIN vision_loop")
     tasks = deque((i, img) for i, img in enumerate(images, start=1))
     results = []
     retry_counts: dict[int, int] = {}
@@ -446,11 +449,13 @@ def parse(
                     if count < config.MAX_RETRIES:
                         retry_counts[idx] = count + 1
                         delay = min(2 ** count, config.MAX_RETRY_WAIT_TIME)
+                        logger.info("retry page %d attempt %d delay %.1fs", idx, count + 1, delay)
                         if delay > 0:
                             time.sleep(delay)
                         if count == 0:
                             halves = split_image_vertically(task[1])
                             if len(halves) > 1:
+                                logger.info("split page %d for retry", idx)
                                 for half in reversed(halves):
                                     tasks.appendleft((task[0], half))
                                 split_pages.add(idx)
@@ -464,6 +469,7 @@ def parse(
                     if idx in split_pages:
                         summary["note"] += " (split)"
                     rows_out = []
+                    logger.warning("page %d failed after %d retries", idx, count)
                 else:
                     if retry_counts.get(idx):
                         if idx in split_pages:
@@ -479,6 +485,7 @@ def parse(
                         pass
 
     results.sort(key=lambda r: r[0])
+    logger.info("==> END vision_loop rows=%s", sum(len(r[1]) for r in results))
     for _idx, rows_out, summary in results:
         rows.extend(rows_out)
         page_summary.append(summary)
@@ -555,4 +562,5 @@ def parse(
             progress_callback(1.0)
         except Exception:
             pass
+    logger.info("==> END parse %s", pdf_path)
     return df
