@@ -151,7 +151,12 @@ def extract_from_pdf(
             notify("LLM returned no data")
             return []
 
-        client = OpenAI(api_key=api_key)
+        try:
+            openai_max_retries = int(os.getenv("OPENAI_MAX_RETRIES", "0"))
+        except Exception:
+            openai_max_retries = 0
+
+        client = OpenAI(api_key=api_key, max_retries=openai_max_retries)
 
         model_name = os.getenv("OPENAI_MODEL", "gpt-4o")
         excerpt = text[:200].replace("\n", " ")
@@ -170,6 +175,7 @@ def extract_from_pdf(
                 model=model_name,
                 messages=[{"role": "user", "content": prompt}],
                 temperature=0.2,
+                max_retries=openai_max_retries,
             )
             logger.info("OpenAI request took %.2fs", time.time() - start_llm)
             time.sleep(0.5)

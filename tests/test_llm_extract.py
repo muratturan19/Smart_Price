@@ -75,7 +75,13 @@ class DummyResp:
         self.choices = [types.SimpleNamespace(message=types.SimpleNamespace(content=content))]
 
 
-def _setup_openai(monkeypatch, content, captured_model=None, captured_prompt=None):
+def _setup_openai(
+    monkeypatch,
+    content,
+    captured_model=None,
+    captured_prompt=None,
+    captured_client_kwargs=None,
+):
     def create(**_kwargs):
         if captured_model is not None:
             captured_model.append(_kwargs.get('model'))
@@ -92,6 +98,8 @@ def _setup_openai(monkeypatch, content, captured_model=None, captured_prompt=Non
     )
 
     def openai_constructor(**_kwargs):
+        if captured_client_kwargs is not None:
+            captured_client_kwargs.append(_kwargs)
         return client_stub
 
     openai_stub = types.SimpleNamespace(OpenAI=openai_constructor)
@@ -198,4 +206,24 @@ def test_llm_extract_mismatched_quotes(monkeypatch):
         'Fiyat': 5.0,
         'Para_Birimi': '$'
     }]
+
+
+def test_llm_openai_max_retries_env(monkeypatch):
+    logs = []
+    func = _get_llm_func(logs.append)
+    client_args = []
+    _setup_openai(monkeypatch, '[]', captured_client_kwargs=client_args)
+    monkeypatch.setenv('OPENAI_MAX_RETRIES', '3')
+    func('ignored')
+    assert client_args[0].get('max_retries') == 3
+
+
+def test_llm_openai_max_retries_default(monkeypatch):
+    logs = []
+    func = _get_llm_func(logs.append)
+    client_args = []
+    _setup_openai(monkeypatch, '[]', captured_client_kwargs=client_args)
+    monkeypatch.delenv('OPENAI_MAX_RETRIES', raising=False)
+    func('ignored')
+    assert client_args[0].get('max_retries') == 0
 
