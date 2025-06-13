@@ -194,6 +194,15 @@ relative to the directory from which you launch the app. The success
 message shows the full paths of these files and notes whether a GitHub
 upload was attempted.
 
+### Interface workflow
+
+1. Click **"Dosyaları İşle"** after uploading your files.
+2. Review the displayed dataframe to verify the extracted rows.
+3. Click **"Master Veriyi Kaydet"** to write `master_dataset.xlsx` and
+   `master.db` inside the `Master_data_base` folder. The same button
+   also triggers the optional GitHub upload when credentials are
+   configured.
+
 ### Logging
 
 Both the CLI and the Streamlit interface create a log file at
