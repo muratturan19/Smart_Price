@@ -39,6 +39,7 @@
    * Preserve decimal separators exactly as printed.
    * Do **not** invent values; leave unknown fields `""`.
    * The final JSON must pass `json.loads()` and satisfy the above schema.
+   * Part number hücresindeki tüm alfasayısal parçaları boşluksuz birleştir (ör. `M X B 9 9 ... → MXB9910...`).
 
 ---
 
