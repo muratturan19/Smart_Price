@@ -53,6 +53,8 @@ if TYPE_CHECKING:  # pragma: no cover - type hints only
 
 logger = logging.getLogger("smart_price")
 
+DEBUG = os.getenv("SMART_PRICE_DEBUG", "1") == "1"
+
 DEFAULT_PROMPT = """
 Sen bir PDF fiyat listesi analiz asistanısın. Amacın, PDF’lerdeki ürün tablosu/ürün satırlarını ve bunların üst başlıklarını tam olarak, eksiksiz ve yapısal şekilde çıkarmaktır.
 
@@ -285,7 +287,10 @@ def parse(
         status = "success"
         note = None
         retry = False
-        img_path = save_debug_image("page_image", idx, img)
+        if DEBUG:
+            img_path = save_debug_image("page_image", idx, img)
+        else:
+            img_path = None
         tmp_path = img_path
         created_tmp = False
         if tmp_path is None:
@@ -305,7 +310,8 @@ def parse(
                 image_bytes = f.read()
             img_base64 = base64.b64encode(image_bytes).decode()
             prompt_text = _get_prompt(idx)
-            save_debug("llm_prompt", idx, prompt_text)
+            if DEBUG:
+                save_debug("llm_prompt", idx, prompt_text)
             logger.debug(
                 "Prompt being used for extraction (truncated): %s",
                 prompt_text[:200],
@@ -344,7 +350,8 @@ def parse(
                 (content or "")[:200],
             )
             total_output_tokens += num_tokens_from_text(content or "", model_name)
-            save_debug("llm_response", idx, content or "")
+            if DEBUG:
+                save_debug("llm_response", idx, content or "")
         except timeout_errors as exc:  # pragma: no cover - request errors
             logger.error("OpenAI request timed out on page %d: %s", idx, exc)
             status = "error"
