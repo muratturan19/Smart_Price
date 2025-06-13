@@ -1,4 +1,3 @@
-import json
 
 from smart_price.core import prompt_utils
 from smart_price import config

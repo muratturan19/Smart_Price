@@ -1,4 +1,3 @@
-import sys
 
 import pandas as pd
 from smart_price.core.common_utils import validate_output_df, EXTRACTION_FIELDS

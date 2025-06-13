@@ -1,4 +1,3 @@
-import sys
 
 from smart_price.core.common_utils import safe_json_parse
 
