@@ -38,7 +38,8 @@ right_logo_url = ROOT / "logo" / "sadece_dp_seffaf.PNG"
 logger = logging.getLogger("smart_price")
 
 # Number of pages to process before showing progress information
-BATCH_SIZE = 5
+# Can be overridden using the ``SP_PROGRESS_BATCH_SIZE`` environment variable.
+BATCH_SIZE = int(os.getenv("SP_PROGRESS_BATCH_SIZE", "5"))
 
 
 def standardize_column_names(df: pd.DataFrame) -> pd.DataFrame:
