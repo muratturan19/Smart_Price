@@ -246,6 +246,10 @@ ruff check .
 pytest
 ```
 
+The test suite expects packages such as `pandas`, `openai` and `pdf2image` to
+be installed. Minimal stubs are provided when these are absent so most tests
+still run, but a few checks will fail without the real dependencies.
+
 Install the optional extras for full coverage:
 
 ```bash
