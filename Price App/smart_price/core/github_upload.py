@@ -2,6 +2,7 @@ import base64
 import json
 import logging
 import os
+import time
 from pathlib import Path
 from urllib import request, error
 from urllib.parse import quote
@@ -54,6 +55,9 @@ def upload_folder(
     provided. Requires ``GITHUB_REPO`` and ``GITHUB_TOKEN`` environment
     variables. Set ``GITHUB_BRANCH`` to push to a branch other than ``main``.
     """
+    count = len(list(path.rglob("*")))
+    logger.info("==> upload_folder %s files=%s", path, count)
+
     repo = os.getenv("GITHUB_REPO")
     token = os.getenv("GITHUB_TOKEN")
     branch = os.getenv("GITHUB_BRANCH", "main")
@@ -65,7 +69,11 @@ def upload_folder(
         return False
 
     success = True
+    start_time = time.time()
     for file_path in path.rglob("*"):
+        if time.time() - start_time > 300:
+            logger.error("upload_folder aborted (timeout)")
+            break
         if not file_path.is_file():
             continue
         if file_extensions is not None and file_path.suffix.lower() not in file_extensions:
