@@ -11,6 +11,8 @@ pip install -e .
 # or
 pip install smart-price
 ```
+This project uses explicit package mappings in `pyproject.toml`, so the
+editable install works on Windows and other platforms.
 
 Utilities live under `smart_price.utils`.
 
