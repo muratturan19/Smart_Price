@@ -44,7 +44,9 @@ and how to return the rows as JSON with fields like *Malzeme_Kodu*, *Fiyat*,
 *Açıklama*, *Adet*, *Birim*, *Para_Birimi*, *Marka* and *Kutu_Adedi*. Provide an
 `OPENAI_API_KEY` environment variable or a `.env` file containing the key to
 enable this step. Optionally set `OPENAI_MODEL` to override the default
-`gpt-4o` model. The Vision API is queried with a temperature of `0`.
+`gpt-4o` model. Set `OPENAI_MAX_RETRIES` to limit automatic retries by
+the OpenAI client (defaults to `0`). The Vision API is queried with a
+temperature of `0`.
 
 ### Agentic document extraction
 

@@ -26,6 +26,7 @@ sys.modules['dotenv'] = dotenv_stub
 openai_calls = {}
 
 def _setup_openai(monkeypatch):
+    openai_calls.clear()
     def create(**kwargs):
         openai_calls.update(kwargs)
         return types.SimpleNamespace(
@@ -88,6 +89,44 @@ def test_parse_sends_bytes_and_cleans_tmp(monkeypatch):
     assert first_msg['content'][1]['image_url']['url'].startswith(f'data:image/{mime};base64,')
     for path in temp_paths:
         assert not os.path.exists(path)
+
+
+def test_openai_max_retries_env(monkeypatch):
+    def fake_convert(_path, **_kwargs):
+        return [FakeImage()]
+
+    pdf2image_stub = types.SimpleNamespace(convert_from_path=fake_convert)
+    monkeypatch.setitem(sys.modules, "pdf2image", pdf2image_stub)
+
+    _setup_openai(monkeypatch)
+    monkeypatch.setenv("OPENAI_MAX_RETRIES", "5")
+
+    import importlib
+    import smart_price.core.ocr_llm_fallback as mod
+    importlib.reload(mod)
+
+    mod.parse("dummy.pdf")
+
+    assert openai_calls.get("max_retries") == 5
+
+
+def test_openai_max_retries_default(monkeypatch):
+    def fake_convert(_path, **_kwargs):
+        return [FakeImage()]
+
+    pdf2image_stub = types.SimpleNamespace(convert_from_path=fake_convert)
+    monkeypatch.setitem(sys.modules, "pdf2image", pdf2image_stub)
+
+    _setup_openai(monkeypatch)
+    monkeypatch.delenv("OPENAI_MAX_RETRIES", raising=False)
+
+    import importlib
+    import smart_price.core.ocr_llm_fallback as mod
+    importlib.reload(mod)
+
+    mod.parse("dummy.pdf")
+
+    assert openai_calls.get("max_retries") == 0
 
 
 def test_parse_parallel_execution(monkeypatch):

@@ -241,6 +241,10 @@ def parse(
         return pd.DataFrame()
 
     model_name = os.getenv("OPENAI_MODEL", "gpt-4o")
+    try:
+        openai_max_retries = int(os.getenv("OPENAI_MAX_RETRIES", "0"))
+    except Exception:
+        openai_max_retries = 0
 
     def _get_prompt(page: int) -> str:
         fallback = RAW_HEADER_HINT + "\n" + DEFAULT_PROMPT
@@ -325,6 +329,7 @@ def parse(
                 response_format={"type": "json_object"},
                 temperature=0,
                 timeout=120,
+                max_retries=openai_max_retries,
             )
             logger.info(
                 "OpenAI request for page %d took %.2fs", idx, time.time() - api_start
