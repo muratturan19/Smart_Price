@@ -155,6 +155,11 @@ def extract_from_pdf(
             openai_max_retries = int(os.getenv("OPENAI_MAX_RETRIES", "0"))
         except Exception:
             openai_max_retries = 0
+        try:  # pragma: no cover - openai may not expose this attr
+            import openai as _openai
+            _openai.api_requestor._DEFAULT_NUM_RETRIES = openai_max_retries
+        except Exception:
+            pass
 
         client = OpenAI(api_key=api_key, max_retries=openai_max_retries)
 
@@ -175,7 +180,6 @@ def extract_from_pdf(
                 model=model_name,
                 messages=[{"role": "user", "content": prompt}],
                 temperature=0.2,
-                max_retries=openai_max_retries,
             )
             logger.info("OpenAI request took %.2fs", time.time() - start_llm)
             time.sleep(0.5)
