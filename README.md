@@ -86,11 +86,13 @@ MAX_RETRY_WAIT_TIME=30
 # Logging style for retries: log_msg, inline_block or none
 RETRY_LOGGING_STYLE=log_msg
 ```
-
 These values configure the internal `agentic_doc` Settings object.  The
 optimal numbers depend on your API rate limit and document size. The same
 `MAX_RETRIES` and `MAX_RETRY_WAIT_TIME` variables control how often the
 fallback OCR+LLM parser re-attempts timed out requests.
+
+Use ``SP_PROGRESS_BATCH_SIZE`` to change how many PDF pages the
+Streamlit interface processes before showing a progress message (default ``5``).
 
 ``agentic_doc.parse`` now returns a list of ``ParsedDocument`` objects. The
 tools use the first item in that list. When an extraction guide provides
