@@ -56,13 +56,13 @@ class _GuideCache:
         if not md_path.exists():
             raise FileNotFoundError(md_path)
         text = md_path.read_text(encoding="utf-8").replace("\r\n", "\n")
-        self.global_block   = self._section(text, r"##\s*0[\s\S]+?---")
-        self.synonym_block  = self._section(text, r"##\s*1[\s\S]+?---")
-        self.generic_block  = self._section(text, r"##\s*2[\s\S]+?---")
+        self.global_block   = self._section(text, r"##\s*0[\s\S]+?\n---\n")
+        self.synonym_block  = self._section(text, r"##\s*1[\s\S]+?\n---\n")
+        self.generic_block  = self._section(text, r"##\s*2[\s\S]+?\n---\n")
         pattern = re.compile(r"###\s*3\.\d+\s+([^\n]+)\n([\s\S]+?)(?=\n###\s*3\.|\n##\s*4\s*·|\Z)")
         for m in pattern.finditer(text):
             self.brand_blocks[m[1].strip()] = m[2].strip()
-        self.default_block = self._section(text, r"##\s*4[\s\S]+?---")
+        self.default_block = self._section(text, r"##\s*4[\s\S]+?\n---\n")
         self._loaded = True
 
     @staticmethod

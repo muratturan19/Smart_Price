@@ -31,3 +31,12 @@ def test_guide_path_default(monkeypatch):
     monkeypatch.delenv("PRICE_GUIDE_PATH", raising=False)
     mod = importlib.reload(pb)
     assert mod.GUIDE_PATH == repo_root / "extraction_guide.md"
+
+
+def test_synonym_block_in_prompt(monkeypatch):
+    repo_root = Path(__file__).resolve().parent.parent
+    guide = repo_root / "extraction_guide.md"
+    monkeypatch.setenv("PRICE_GUIDE_PATH", str(guide))
+    mod = importlib.reload(pb)
+    prompt = mod.get_prompt_for_file("dummy.pdf")
+    assert "accept any of these header texts" in prompt.lower()
