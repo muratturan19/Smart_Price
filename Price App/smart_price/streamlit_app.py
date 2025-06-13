@@ -340,6 +340,7 @@ def merge_files(
                 except Exception:
                     pass
 
+        logger.info("==> FILE %s extraction done rows=%s", up_file.name, len(df))
         if update_progress:
             update_progress(idx / total)
 
@@ -665,10 +666,12 @@ def upload_page():
             return
         try:
             with st.spinner("Kaydediliyor..."):
+                logger.info("==> BEGIN save_master_dataset")
                 excel_path, db_path, upload_result = save_master_dataset(
                     df,
                     mode=st.session_state.get("upload_mode", "Yeni fiyat listesi"),
                 )
+                logger.info("==> END save_master_dataset")
         except Exception as exc:  # pragma: no cover - UI feedback only
             big_alert(f"Kaydetme hatası: {exc}", level="error")
         else:
