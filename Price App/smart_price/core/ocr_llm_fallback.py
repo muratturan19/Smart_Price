@@ -52,6 +52,8 @@ if TYPE_CHECKING:  # pragma: no cover - type hints only
 
 logger = logging.getLogger("smart_price")
 
+MAX_RETRIES = int(os.getenv("SMART_PRICE_MAX_RETRIES", "1"))
+
 DEFAULT_PROMPT = """
 Sen bir PDF fiyat listesi analiz asistanısın. Amacın, PDF’lerdeki ürün tablosu/ürün satırlarını ve bunların üst başlıklarını tam olarak, eksiksiz ve yapısal şekilde çıkarmaktır.
 
@@ -399,18 +401,24 @@ def parse(
                 task = futures.pop(fut)
                 idx, rows_out, summary, retry = fut.result()
                 if retry:
-                    retry_counts[idx] = retry_counts.get(idx, 0) + 1
-                    tasks.append(task)
+                    count = retry_counts.get(idx, 0)
+                    if count < MAX_RETRIES:
+                        retry_counts[idx] = count + 1
+                        tasks.append(task)
+                        continue
+                    summary["status"] = "error"
+                    summary["note"] = "gave up"
+                    rows_out = []
                 else:
                     if retry_counts.get(idx):
                         summary["note"] = "timeout retry"
-                    results.append((idx, rows_out, summary))
-                    processed_pages += 1
-                    if progress_callback and total_pages:
-                        try:
-                            progress_callback(processed_pages / total_pages)
-                        except Exception:
-                            pass
+                results.append((idx, rows_out, summary))
+                processed_pages += 1
+                if progress_callback and total_pages:
+                    try:
+                        progress_callback(processed_pages / total_pages)
+                    except Exception:
+                        pass
 
     results.sort(key=lambda r: r[0])
     for _idx, rows_out, summary in results:
