@@ -7,7 +7,10 @@
                birleşik prompt döndürür.
 """
 from __future__ import annotations
-import functools, re, unicodedata, os
+import functools
+import re
+import unicodedata
+import os
 from pathlib import Path
 from typing import Dict, Tuple
 
@@ -72,7 +75,9 @@ class _GuideCache:
 
 @functools.lru_cache(maxsize=1)
 def _guide() -> _GuideCache:
-    g = _GuideCache(); g.load(); return g
+    g = _GuideCache()
+    g.load()
+    return g
 
 def _slug(t: str) -> str:
     t = unicodedata.normalize("NFKD", t).encode("ascii","ignore").decode()

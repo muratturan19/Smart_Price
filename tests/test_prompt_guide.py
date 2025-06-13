@@ -1,5 +1,3 @@
-import sys
-import types
 
 from smart_price import config
 import smart_price.core.extract_pdf as pdf_mod

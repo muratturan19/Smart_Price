@@ -11,7 +11,7 @@ if not hasattr(dotenv_stub, 'find_dotenv'):
     dotenv_stub.find_dotenv = lambda *_args, **_kw: ''
 sys.modules['dotenv'] = dotenv_stub
 
-import smart_price.config as cfg
+import smart_price.config as cfg  # noqa: E402
 
 
 def test_defaults(monkeypatch):

@@ -1,4 +1,3 @@
-import os
 import sqlite3
 import sys
 import types
@@ -37,7 +36,7 @@ if 'requests' not in sys.modules:
     req_stub = types.ModuleType('requests')
     req_stub.get = lambda *_a, **_k: None
     sys.modules['requests'] = req_stub
-from sales_app import streamlit_app
+from sales_app import streamlit_app  # noqa: E402
 
 
 def test_load_dataset_renames(tmp_path, monkeypatch):

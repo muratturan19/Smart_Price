@@ -1,27 +1,19 @@
 import os
-from dotenv import load_dotenv
-
-project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".env"))
-load_dotenv(dotenv_path=project_root)
-
-import streamlit as st
-import pandas as pd
-import logging
 import io
-import sys
+import logging
 import shutil
 import sqlite3
+import sys
 from pathlib import Path
 from typing import Callable, Optional
+
 import base64
+import pandas as pd
+import streamlit as st
+from dotenv import load_dotenv
 
 from smart_price import icons
 from smart_price.ui_utils import img_to_base64
-
-ROOT = Path(__file__).resolve().parents[2]
-left_logo_url = ROOT / "logo" / "dp_Seffaf_logo.PNG"
-right_logo_url = ROOT / "logo" / "sadece_dp_seffaf.PNG"
-
 from smart_price.core.extract_excel import (
     extract_from_excel,
     _norm_header,
@@ -35,6 +27,13 @@ from smart_price import config
 from smart_price.core.logger import init_logging
 from smart_price.core.github_upload import upload_folder, delete_github_folder
 from smart_price.core.common_utils import normalize_currency, normalize_price
+
+project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".env"))
+load_dotenv(dotenv_path=project_root)
+
+ROOT = Path(__file__).resolve().parents[2]
+left_logo_url = ROOT / "logo" / "dp_Seffaf_logo.PNG"
+right_logo_url = ROOT / "logo" / "sadece_dp_seffaf.PNG"
 
 logger = logging.getLogger("smart_price")
 
@@ -107,14 +106,14 @@ def big_alert(message: str, *, level: str = "info", icon: str | None = None) -> 
 
 def inject_style() -> None:
     """Inject the global CSS used across the application."""
-    css = f"""
+    css = """
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
-    html, body, [class*="css"]  {{
+    html, body, [class*="css"]  {
         font-family: 'Inter', sans-serif;
-    }}
+    }
 
-    .app-header {{
+    .app-header {
         position: relative;
         display: flex;
         justify-content: center;
@@ -122,66 +121,66 @@ def inject_style() -> None:
         padding: 0.75rem 1rem;
         background: var(--secondary-background-color);
         border-bottom: 1px solid #ccc;
-    }}
+    }
 
-    .header-title {{
+    .header-title {
         margin: 0;
         font-size: clamp(1.8rem, 3vw, 2.6rem);
         font-weight: 700;
         text-align: center;
-    }}
+    }
 
-    .header-logo {{
+    .header-logo {
         height: clamp(70px, 10vw, 100px);
         padding: 0.25rem;
-    }}
+    }
 
-    .header-logo.left {{
+    .header-logo.left {
         position: absolute;
         left: 1rem;
-    }}
+    }
 
-    .header-logo.right {{
+    .header-logo.right {
         position: absolute;
         right: 1rem;
-    }}
+    }
 
-    .card {{
+    .card {
         background: linear-gradient(135deg, #ffffff, #f7f7f9);
         border-radius: 8px;
         box-shadow: 0 2px 6px rgba(0,0,0,0.05);
         padding: 1rem;
         margin-bottom: 1rem;
-    }}
+    }
 
-    .stButton button, .stDownloadButton button {{
+    .stButton button, .stDownloadButton button {
         background: #002060;
         color: #fff;
         border: none;
         padding: 0.4rem 1rem;
         border-radius: 6px;
         box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }}
-    .stButton button:hover, .stDownloadButton button:hover {{
+    }
+    .stButton button:hover, .stDownloadButton button:hover {
         background: #013080;
-    }}
+    }
 
-    input, textarea, select {{
+    input, textarea, select {
         border-radius: 4px !important;
         border: 1px solid #ccc !important;
         padding: 0.4rem !important;
-    }}
-    input:focus, textarea:focus, select:focus {{
+    }
+    input:focus, textarea:focus, select:focus {
         border-color: #002060 !important;
         box-shadow: 0 0 0 3px rgba(0,32,96,0.2) !important;
-    }}
+    }
 
-    .uploaded-list {{
+    .uploaded-list {
         list-style: none;
         padding-left: 0;
         margin: 0.5rem 0 1rem 0;
-    }}
-    .uploaded-list li {{
+    }
+    .uploaded-list li {
         background: #fff;
         border-radius: 6px;
         box-shadow: 0 1px 3px rgba(0,0,0,0.1);
@@ -189,22 +188,22 @@ def inject_style() -> None:
         margin-bottom: 0.5rem;
         display: flex;
         align-items: center;
-    }}
-    .uploaded-list img {{
+    }
+    .uploaded-list img {
         height: 40px;
         width: auto;
         margin-right: 0.5rem;
         border-radius: 4px;
-    }}
+    }
 
-    @media (max-width: 768px) {{
-        .header-title {{
+    @media (max-width: 768px) {
+        .header-title {
             font-size: 1.5rem;
-        }}
-        .header-logo {{
+        }
+        .header-logo {
             height: 60px;
-        }}
-    }}
+        }
+    }
     </style>
     """
     st.markdown(css, unsafe_allow_html=True)
@@ -728,7 +727,6 @@ def search_page():
             except RuntimeError:
                 theme = {}
             header_colour = theme.get("primaryColor", "#002060")
-            text_colour = theme.get("textColor", "#262730")
 
             styled = results.style.set_table_styles(
                 {

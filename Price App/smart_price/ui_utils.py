@@ -6,7 +6,7 @@ from pathlib import Path
 from typing import TYPE_CHECKING, Union
 
 if TYPE_CHECKING:  # pragma: no cover - hint for type checkers
-    import streamlit as st
+    pass
 
 from . import config
 
