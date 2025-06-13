@@ -85,7 +85,9 @@ RETRY_LOGGING_STYLE=log_msg
 ```
 
 These values configure the internal `agentic_doc` Settings object.  The
-optimal numbers depend on your API rate limit and document size.
+optimal numbers depend on your API rate limit and document size. The same
+`MAX_RETRIES` and `MAX_RETRY_WAIT_TIME` variables control how often the
+fallback OCR+LLM parser re-attempts timed out requests.
 
 ``agentic_doc.parse`` now returns a list of ``ParsedDocument`` objects. The
 tools use the first item in that list. When an extraction guide provides

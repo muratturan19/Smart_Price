@@ -53,8 +53,6 @@ if TYPE_CHECKING:  # pragma: no cover - type hints only
 
 logger = logging.getLogger("smart_price")
 
-MAX_RETRIES = int(os.getenv("SMART_PRICE_MAX_RETRIES", "1"))
-
 DEFAULT_PROMPT = """
 Sen bir PDF fiyat listesi analiz asistanısın. Amacın, PDF’lerdeki ürün tablosu/ürün satırlarını ve bunların üst başlıklarını tam olarak, eksiksiz ve yapısal şekilde çıkarmaktır.
 
@@ -428,8 +426,11 @@ def parse(
                 idx, rows_out, summary, retry = fut.result()
                 if retry:
                     count = retry_counts.get(idx, 0)
-                    if count < MAX_RETRIES:
+                    if count < config.MAX_RETRIES:
                         retry_counts[idx] = count + 1
+                        delay = min(2 ** count, config.MAX_RETRY_WAIT_TIME)
+                        if delay > 0:
+                            time.sleep(delay)
                         if count == 0:
                             halves = split_image_vertically(task[1])
                             if len(halves) > 1:
