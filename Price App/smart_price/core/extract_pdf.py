@@ -244,6 +244,8 @@ def extract_from_pdf(
             path_for_llm = tmp_for_llm
 
         notify("G\u00f6rseller olu\u015fturuluyor...")
+        logger.info("==> BEGIN images_from_pdf")
+        logger.info("==> BEGIN vision_loop")
         try:
             result = ocr_llm_fallback.parse(
                 path_for_llm,
@@ -260,6 +262,11 @@ def extract_from_pdf(
                 )
             except TypeError:
                 result = ocr_llm_fallback.parse(path_for_llm)
+        logger.info("==> END vision_loop rows=%s", len(result))
+        logger.info(
+            "==> END images_from_pdf pages=%s",
+            len(getattr(result, "page_summary", [])),
+        )
         notify("Sat\u0131rlar\u0131n g\u00f6rselleri haz\u0131rlan\u0131yor...")
         page_summary = getattr(result, "page_summary", [])
         tok = getattr(result, "token_counts", {})
@@ -283,11 +290,13 @@ def extract_from_pdf(
         text_dir.mkdir(parents=True, exist_ok=True)
         set_output_subdir(None)
         notify("Debug klasörü GitHub'a yükleniyor...")
+        logger.info("==> BEGIN upload_debug")
         ok = upload_folder(
             debug_dir,
             remote_prefix=f"LLM_Output_db/{debug_dir.name}",
             file_extensions=[PAGE_IMAGE_EXT],
         )
+        logger.info("==> END upload_debug ok=%s", ok)
         if ok:
             notify("Debug klasörü yüklendi")
         else:
@@ -369,11 +378,13 @@ def extract_from_pdf(
             pass
     set_output_subdir(None)
     notify("Debug klasörü GitHub'a yükleniyor...")
+    logger.info("==> BEGIN upload_debug")
     ok = upload_folder(
         debug_dir,
         remote_prefix=f"LLM_Output_db/{debug_dir.name}",
         file_extensions=[PAGE_IMAGE_EXT],
     )
+    logger.info("==> END upload_debug ok=%s", ok)
     if ok:
         notify("Debug klasörü yüklendi")
     else:
