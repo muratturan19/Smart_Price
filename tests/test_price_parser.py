@@ -838,6 +838,40 @@ def test_merge_files_dedup_by_code_and_price(monkeypatch):
     assert list(result["Ana_Baslik"]) == ["T1", "T2", "T3"]
 
 
+def test_merge_files_all_missing_code_warning(monkeypatch, caplog):
+    if not HAS_PANDAS:
+        pytest.skip("pandas not installed")
+    import pandas as pd
+    import logging
+
+    df = pd.DataFrame(
+        {
+            "Açıklama": ["X", "Y"],
+            "Fiyat": [1.0, 2.0],
+            "Kaynak_Dosya": ["src.xlsx", "src.xlsx"],
+            "Marka": ["Brand", "Brand"],
+        }
+    )
+    object.__setattr__(df, "page_summary", [{"page_number": 1, "rows": 2}])
+
+    monkeypatch.setattr(streamlit_app, "extract_from_excel_file", lambda *a, **k: df.copy())
+
+    class FakeUpload:
+        def __init__(self, name):
+            self.name = name
+
+        def read(self):
+            return b"data"
+
+    with caplog.at_level(logging.WARNING, logger="smart_price"):
+        result = streamlit_app.merge_files([FakeUpload("src.xlsx")])
+
+    assert result.empty
+    messages = "\n".join(r.getMessage() for r in caplog.records)
+    assert "kaynak=src.xlsx" in messages
+    assert "marka=Brand" in messages
+
+
 def test_llm_debug_files(monkeypatch, tmp_path):
     if not HAS_PANDAS:
         pytest.skip("pandas not installed")

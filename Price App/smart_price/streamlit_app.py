@@ -367,6 +367,9 @@ def merge_files(
                     pass
 
         logger.info("==> FILE %s extraction done rows=%s", up_file.name, len(df))
+        page_summary = getattr(df, "page_summary", None)
+        if page_summary is not None:
+            logger.info("[merge] page_summary=%s", page_summary)
         if update_progress:
             update_progress(idx / total)
 
@@ -401,10 +404,25 @@ def merge_files(
         logger.debug("[merge] Drop nedeni: subset=['Malzeme_Kodu', 'Fiyat']")
         logger.debug("[merge] Drop edilen ilk 5 satır: %s", dropped_preview)
     if master.empty and before_len > 0 and before_master["Malzeme_Kodu"].isna().all():
+        sources = (
+            before_master.get("Kaynak_Dosya", pd.Series(dtype=str))
+            .dropna()
+            .unique()
+        )
+        brands = (
+            before_master.get("Marka", pd.Series(dtype=str))
+            .dropna()
+            .unique()
+        )
         logger.warning(
-            "[merge] Tüm satırlar 'Malzeme_Kodu' eksikliğinden dolayı atıldı; ilk satırlar: %s",
+            "[merge] Tüm satırlar 'Malzeme_Kodu' eksikliğinden dolayı atıldı; kaynak=%s marka=%s; ilk satırlar: %s",
+            ", ".join(map(str, sources)) or "N/A",
+            ", ".join(map(str, brands)) or "N/A",
             dropped_preview,
         )
+        summary = getattr(before_master, "page_summary", None)
+        if summary is not None:
+            logger.warning("[merge] page_summary=%s", summary)
         if update_status:
             update_status(
                 "Malzeme_Kodu olmayan satırlar atlandı, sonuç boş",
