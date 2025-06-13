@@ -227,6 +227,16 @@ def parse(
     lock = threading.Lock()
     running = 0
 
+    timeout_errors: tuple[type[Exception], ...] = (TimeoutError,)
+    api_timeout = getattr(openai, "APITimeoutError", None)
+    if isinstance(api_timeout, type) and issubclass(api_timeout, BaseException):
+        timeout_errors += (api_timeout,)
+    err_mod = getattr(openai, "error", None)
+    if err_mod is not None:
+        err_timeout = getattr(err_mod, "Timeout", None)
+        if isinstance(err_timeout, type) and issubclass(err_timeout, BaseException):
+            timeout_errors += (err_timeout,)
+
     def process_page(args: tuple[int, "Image.Image"]):
         nonlocal running, total_input_tokens, total_output_tokens
         idx, img = args
@@ -300,7 +310,7 @@ def parse(
             )
             total_output_tokens += num_tokens_from_text(content or "", model_name)
             save_debug("llm_response", idx, content or "")
-        except TimeoutError as exc:  # pragma: no cover - request errors
+        except timeout_errors as exc:  # pragma: no cover - request errors
             logger.error("OpenAI request timed out on page %d: %s", idx, exc)
             status = "error"
             note = "timeout"
