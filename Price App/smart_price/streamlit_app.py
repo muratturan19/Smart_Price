@@ -241,6 +241,7 @@ def extract_from_pdf_file(
     *,
     file_name: str | None = None,
     status_log: Optional[Callable[[str, str], None]] = None,
+    progress_callback: Optional[Callable[[float], None]] = None,
     method: str = "LLM (Vision)",
 ) -> pd.DataFrame:
     """Wrapper around :func:`smart_price.core.extract_pdf.extract_from_pdf`.
@@ -253,13 +254,24 @@ def extract_from_pdf_file(
         Optional file name used for logging/debugging.
     status_log:
         Optional callable used for status updates.
+    progress_callback:
+        Optional progress callback passed through to PDF extraction.
     method:
         Extraction method. When ``"AgenticDE"`` the ``agentic_doc`` pipeline is
         used. Defaults to ``"LLM (Vision)"``.
     """
     if method == "AgenticDE":
-        return extract_from_pdf_agentic(file, filename=file_name, log=status_log)
-    return extract_from_pdf(file, filename=file_name, log=status_log)
+        return extract_from_pdf_agentic(
+            file,
+            filename=file_name,
+            log=status_log,
+        )
+    return extract_from_pdf(
+        file,
+        filename=file_name,
+        log=status_log,
+        progress_callback=progress_callback,
+    )
 
 
 def merge_files(
@@ -267,9 +279,16 @@ def merge_files(
     *,
     update_status: Optional[Callable[[str, str], None]] = None,
     update_progress: Optional[Callable[[float], None]] = None,
+    update_dataframe: Optional[Callable[[pd.DataFrame], None]] = None,
     method: str = "LLM (Vision)",
 ):
-    """Extract and merge uploaded files with optional progress callbacks."""
+    """Extract and merge uploaded files with optional progress callbacks.
+
+    Parameters
+    ----------
+    update_dataframe:
+        Optional callable receiving the merged DataFrame after each file.
+    """
     extracted = []
     token_totals: dict[str, dict[str, int]] = {}
     total = len(uploaded_files)
@@ -278,6 +297,10 @@ def merge_files(
             update_status("Dosya y\u00fckleniyor, l\u00fctfen bekleyin...", "info")
         if update_progress:
             update_progress((idx - 1) / total)
+
+        def page_prog(v: float) -> None:
+            if update_progress:
+                update_progress(((idx - 1) + v) / total)
 
         name = up_file.name.lower()
         bytes_data = io.BytesIO(up_file.read())
@@ -292,6 +315,7 @@ def merge_files(
                     bytes_data,
                     file_name=up_file.name,
                     status_log=update_status,
+                    progress_callback=page_prog,
                     method=method,
                 )
         except Exception as exc:
@@ -310,6 +334,11 @@ def merge_files(
                 token_totals[up_file.name] = tok
             if update_status:
                 update_status(f"{len(df)} kayıt bulundu", "info")
+            if update_dataframe:
+                try:
+                    update_dataframe(pd.concat(extracted, ignore_index=True))
+                except Exception:
+                    pass
 
         if update_progress:
             update_progress(idx / total)
@@ -583,6 +612,7 @@ def upload_page():
         with st.spinner("Dosyalar işleniyor..."):
             status_box = st.empty()
             progress_bar = st.progress(0.0)
+            df_placeholder = st.empty()
 
             def show_status(msg: str, level: str = "info") -> None:
                 if level == "success":
@@ -597,6 +627,7 @@ def upload_page():
                     files,
                     update_status=show_status,
                     update_progress=lambda v: progress_bar.progress(v),
+                    update_dataframe=lambda d: df_placeholder.dataframe(d, use_container_width=True),
                     method=method,
                 )
             except Exception as exc:
