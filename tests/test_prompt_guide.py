@@ -1,10 +1,6 @@
 import sys
 import types
 
-# Ensure repo root on path
-import os
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
-
 from smart_price import config
 import smart_price.core.extract_pdf as pdf_mod
 from smart_price.core import prompt_utils

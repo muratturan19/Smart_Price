@@ -1,12 +1,7 @@
 import os
-import sys
 import sqlite3
+import sys
 import types
-
-root_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-sys.path.insert(0, root_dir)
-sys.path.insert(0, os.path.join(root_dir, "Price App"))
-sys.path.insert(0, os.path.join(root_dir, "Sales App"))
 
 _pandas_stubbed = False
 try:  # pragma: no cover - pandas may not be installed

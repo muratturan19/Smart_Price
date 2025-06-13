@@ -10,10 +10,6 @@ try:
     HAS_PANDAS = True
 except ModuleNotFoundError:  # pragma: no cover - optional dep
     HAS_PANDAS = False
-
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
-
-
 @pytest.mark.skipif(not HAS_PANDAS, reason="pandas not installed")
 def test_agentic_pdf_columns(monkeypatch):
     header = ["Malzeme_Kodu", "Açıklama", "Fiyat"]

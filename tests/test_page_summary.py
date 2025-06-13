@@ -1,4 +1,3 @@
-import os
 import sys
 import types
 import pytest
@@ -19,7 +18,6 @@ dotenv_stub.load_dotenv = lambda *_args, **_kw: None
 sys.modules['dotenv'] = dotenv_stub
 
 # Ensure repo root is on path
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 try:
     import pandas as pd  # noqa: F401

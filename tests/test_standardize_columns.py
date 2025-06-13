@@ -1,9 +1,6 @@
-import os
 import sys
 import types
 import pytest
-
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 try:
     import pandas as pd  # noqa: F401
