@@ -213,6 +213,7 @@ def parse(
             kwargs["first_page"] = first
         if last is not None:
             kwargs["last_page"] = last
+        logger.info("==> BEGIN images_from_pdf")
         start_convert = time.time()
         images = convert_from_path(
             pdf_path, poppler_path=str(config.POPPLER_PATH), **kwargs
@@ -222,6 +223,7 @@ def parse(
             time.time() - start_convert,
             len(images),
         )
+        logger.info("==> END images_from_pdf pages=%s", len(images))
         total_pages = len(images)
         processed_pages = 0
     except Exception as exc:  # pragma: no cover - conversion errors
