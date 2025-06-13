@@ -47,11 +47,11 @@
 
 | Canonical Field   | Accept any of these header texts                                                                                                                           |
 | ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Malzeme\_Kodu** | ürün kodu, urun kodu, malzeme kodu, malzeme, stok kodu, kod, tip, ref no, ref., ürün ref, ürün tip, product code, part no, item name, item no, item number |
+| **Malzeme\_Kodu** | ürün kodu, urun kodu, malzeme kodu, malzeme, stok kodu, kod, tip, ref no, ref., ürün ref, ürün tip, product code, part number, part no, item name, item no, item number |
 | **Kisa\_Kod**     | kisa kod, short code, shortcode, kısa ürün kodu                                                                                                            |
 | **Açıklama**      | description, ürün açıklaması, açıklama, aciklama, özellikler, detay, product name, explanation                                                             |
 | **Fiyat**         | fiyat, birim fiyat, liste fiyatı, price, unit price, list price, tutar                                                                                     |
-| **Para\_Birimi**  | para birimi, currency                                                                                                                                      |
+| **Para_Birimi**  | para birimi, currency, eur, usd, try, gbp                                                                                                                                      |
 | **Ana\_Baslik**   | ana başlık, ana baslik, ana\_baslik                                                                                                                        |
 | **Alt\_Baslik**   | alt başlık, alt baslik, alt\_baslik                                                                                                                        |
 
@@ -90,6 +90,8 @@ Only the **differences** from Sections 0‑2 are listed below.
 * Constants: `Marka = "MATRIX"`, `Kaynak_Dosya = "MATRIX Fiyat Listesi 10.03.25.pdf"`, `Record_Code = "MATRIX"`, `Para_Birimi = "EUR"`
 * `Ana_Baslik`: page-header series name (e.g. `"320 Series"`).
 * `Alt_Baslik`: table block title (e.g. `"Model 321 | 3/2 | NC - NO"`, `"OPTIONS"`, `"ACCESSORIES"`). Blank if none.
+* If the right-header (e.g. "320 Series") repeats on following pages, keep the previous Ana_Baslik until a new right-header appears.
+* Treat "OPTIONS" and "ACCESSORIES" captions as valid Alt_Baslik values; extract rows beneath them exactly like CONFIGURATIONS.
 
 ### 3.4 GAMAK
 
