@@ -22,7 +22,7 @@ dependencies = [
 ]
 
 [tool.setuptools]
-package-dir = {"" = "Price App"}
+package-dir = { "smart_price" = "Price App/smart_price", "sales_app" = "Sales App/sales_app" }
 packages = ["smart_price", "sales_app"]
 include-package-data = true
 
