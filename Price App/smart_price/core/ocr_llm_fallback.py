@@ -6,6 +6,7 @@ import os
 import time
 import threading
 from concurrent.futures import ThreadPoolExecutor, Future, wait, FIRST_COMPLETED
+from collections import deque
 from typing import Iterable, Sequence, TYPE_CHECKING, Callable
 
 try:
@@ -130,6 +131,30 @@ def _range_bounds(pages: Sequence[int] | range | None) -> tuple[int | None, int 
             return None, None
         start, end = min(seq), max(seq)
     return start, end
+
+
+def split_image_vertically(image: "Image") -> list["Image"]:
+    """Return left and right halves of ``image``.
+
+    Parameters
+    ----------
+    image : PIL Image
+        Image to split vertically.
+
+    Returns
+    -------
+    list of Image
+        ``[left, right]`` halves of the original image.
+    """
+    crop = getattr(image, "crop", None)
+    size = getattr(image, "size", None)
+    if callable(crop) and size:
+        width, height = size
+        mid = int(width / 2)
+        left = crop((0, 0, mid, height))
+        right = crop((mid, 0, width, height))
+        return [left, right]
+    return [image]
 
 
 def parse(
@@ -386,15 +411,16 @@ def parse(
     workers = int(os.getenv("SMART_PRICE_LLM_WORKERS", "5"))
     if len(images) <= 2:
         workers = 1
-    tasks = [(i, img) for i, img in enumerate(images, start=1)]
+    tasks = deque((i, img) for i, img in enumerate(images, start=1))
     results = []
     retry_counts: dict[int, int] = {}
+    split_pages: set[int] = set()
 
     with ThreadPoolExecutor(max_workers=workers) as ex:
         futures: dict[Future, tuple[int, "Image.Image"]] = {}
         while tasks or futures:
             while tasks and len(futures) < workers:
-                task = tasks.pop(0)
+                task = tasks.popleft()
                 futures[ex.submit(process_page, task)] = task
             done, _ = wait(futures.keys(), return_when=FIRST_COMPLETED)
             for fut in done:
@@ -404,14 +430,28 @@ def parse(
                     count = retry_counts.get(idx, 0)
                     if count < MAX_RETRIES:
                         retry_counts[idx] = count + 1
-                        tasks.append(task)
+                        if count == 0:
+                            halves = split_image_vertically(task[1])
+                            if len(halves) > 1:
+                                for half in reversed(halves):
+                                    tasks.appendleft((task[0], half))
+                                split_pages.add(idx)
+                            else:
+                                tasks.append(task)
+                        else:
+                            tasks.append(task)
                         continue
                     summary["status"] = "error"
                     summary["note"] = "gave up"
+                    if idx in split_pages:
+                        summary["note"] += " (split)"
                     rows_out = []
                 else:
                     if retry_counts.get(idx):
-                        summary["note"] = "timeout retry"
+                        if idx in split_pages:
+                            summary["note"] = "timeout split"
+                        else:
+                            summary["note"] = "timeout retry"
                 results.append((idx, rows_out, summary))
                 processed_pages += 1
                 if progress_callback and total_pages:

@@ -335,3 +335,71 @@ def test_retry_limit(monkeypatch):
     assert calls == ["call", "call"]
     assert summary and summary[0]["status"] == "error"
     assert summary and summary[0]["note"] == "gave up"
+
+
+def test_timeout_split(monkeypatch):
+    cropping: list[tuple[int, int, int, int]] = []
+
+    class FakeImage:
+        def __init__(self, w: int = 10, h: int = 10):
+            self.size = (w, h)
+
+        def crop(self, box):
+            cropping.append(box)
+            w = box[2] - box[0]
+            h = box[3] - box[1]
+            return FakeImage(w, h)
+
+        def save(self, path, format=None):
+            with open(path, "wb") as f:
+                f.write(b"img")
+
+    def fake_convert(_path, **_kwargs):
+        return [FakeImage()]
+
+    pdf2image_stub = types.SimpleNamespace(convert_from_path=fake_convert)
+    monkeypatch.setitem(sys.modules, "pdf2image", pdf2image_stub)
+
+    calls: list[str] = []
+
+    def create(**_kwargs):
+        calls.append("call")
+        if len(calls) == 1:
+            raise TimeoutError("boom")
+        return types.SimpleNamespace(
+            choices=[types.SimpleNamespace(message=types.SimpleNamespace(content="[]"))]
+        )
+
+    chat_stub = types.SimpleNamespace(completions=types.SimpleNamespace(create=create))
+    openai_stub = types.SimpleNamespace(chat=chat_stub)
+    monkeypatch.setitem(sys.modules, "openai", openai_stub)
+    monkeypatch.setenv("OPENAI_API_KEY", "x")
+
+    _pandas_stubbed = False
+    try:
+        import pandas as pd  # noqa: F401
+    except ModuleNotFoundError:
+        pd = types.ModuleType("pandas")
+        sys.modules["pandas"] = pd
+
+        class FakeDF(list):
+            pass
+
+        pd.DataFrame = FakeDF
+        _pandas_stubbed = True
+
+    import importlib
+    import smart_price.core.ocr_llm_fallback as mod
+    importlib.reload(mod)
+
+    df = mod.parse("dummy.pdf")
+    summary = getattr(df, "page_summary", None)
+
+    if _pandas_stubbed:
+        del sys.modules["pandas"]
+
+    assert len(cropping) == 2
+    assert len(calls) == 3
+    assert summary and len(summary) == 2
+    assert summary[0]["note"] == "timeout split"
+    assert summary[1]["note"] == "timeout split"
