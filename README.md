@@ -190,9 +190,12 @@ records are saved.
 From the interface you can upload Excel/PDF price lists and search the
 resulting master dataset. When you save the merged data it writes both
 `Master_data_base/master_dataset.xlsx` and `Master_data_base/master.db`
-relative to the directory from which you launch the app. The success
-message shows the full paths of these files and notes whether a GitHub
-upload was attempted.
+relative to the directory from which you launch the app. Set
+`MASTER_EXCEL_PATH` and `MASTER_DB_PATH` to change these locations when
+running from an installed or packaged version, pointing them at a
+writable directory. The defaults resolve to the project folder when
+running from source. The success message shows the full paths of the
+saved files and notes whether a GitHub upload was attempted.
 
 ### Interface workflow
 
