@@ -6,6 +6,8 @@ import time
 import threading
 import logging
 
+from smart_price.core.extract_pdf import PAGE_IMAGE_EXT
+
 # Provide minimal stubs for optional deps before importing project code
 if 'PIL' not in sys.modules:
     pil_stub = types.ModuleType('PIL')
@@ -80,7 +82,8 @@ def test_parse_sends_bytes_and_cleans_tmp(monkeypatch):
 
     assert 'images' not in openai_calls
     first_msg = openai_calls['messages'][0]
-    assert first_msg['content'][1]['image_url']['url'].startswith('data:image/jpeg;base64,')
+    mime = "jpeg" if PAGE_IMAGE_EXT in {".jpg", ".jpeg"} else PAGE_IMAGE_EXT.lstrip(".")
+    assert first_msg['content'][1]['image_url']['url'].startswith(f'data:image/{mime};base64,')
     for path in temp_paths:
         assert not os.path.exists(path)
 
