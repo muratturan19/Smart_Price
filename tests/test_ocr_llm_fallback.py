@@ -183,3 +183,51 @@ def test_retry_short_prompt(monkeypatch, caplog):
         del sys.modules["pandas"]
 
     assert len(calls) == 1
+
+
+def test_timeout_retry(monkeypatch):
+    def fake_convert(_path, **_kwargs):
+        return [FakeImage()]
+
+    pdf2image_stub = types.SimpleNamespace(convert_from_path=fake_convert)
+    monkeypatch.setitem(sys.modules, "pdf2image", pdf2image_stub)
+
+    calls: list[str] = []
+
+    def create(**_kwargs):
+        if not calls:
+            calls.append("first")
+            raise TimeoutError("boom")
+        calls.append("second")
+        return types.SimpleNamespace(
+            choices=[types.SimpleNamespace(message=types.SimpleNamespace(content="[]"))]
+        )
+
+    chat_stub = types.SimpleNamespace(completions=types.SimpleNamespace(create=create))
+    openai_stub = types.SimpleNamespace(chat=chat_stub)
+    monkeypatch.setitem(sys.modules, "openai", openai_stub)
+    monkeypatch.setenv("OPENAI_API_KEY", "x")
+
+    _pandas_stubbed = False
+    try:
+        import pandas as pd  # noqa: F401
+    except ModuleNotFoundError:
+        pd = types.ModuleType("pandas")
+        sys.modules["pandas"] = pd
+        _pandas_stubbed = True
+    if not hasattr(pd, "DataFrame"):
+        pd.DataFrame = lambda *args, **kwargs: args[0]
+        _pandas_stubbed = True
+
+    import importlib
+    import smart_price.core.ocr_llm_fallback as mod
+    importlib.reload(mod)
+
+    df = mod.parse("dummy.pdf")
+    summary = getattr(df, "page_summary", None)
+
+    if _pandas_stubbed:
+        del sys.modules["pandas"]
+
+    assert calls == ["first", "second"]
+    assert summary and summary[0]["note"] == "timeout retry"

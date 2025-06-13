@@ -5,7 +5,7 @@ import logging
 import os
 import time
 import threading
-from concurrent.futures import ThreadPoolExecutor
+from concurrent.futures import ThreadPoolExecutor, Future, wait, FIRST_COMPLETED
 from typing import Iterable, Sequence, TYPE_CHECKING
 
 try:
@@ -232,6 +232,7 @@ def parse(
         page_rows: list[dict[str, object]] = []
         status = "success"
         note = None
+        retry = False
         img_path = save_debug_image("page_image", idx, img)
         tmp_path = img_path
         created_tmp = False
@@ -279,6 +280,7 @@ def parse(
                 ],
                 response_format={"type": "json_object"},
                 temperature=0,
+                timeout=120,
             )
             logger.info(
                 "OpenAI request for page %d took %.2fs", idx, time.time() - api_start
@@ -291,6 +293,12 @@ def parse(
             )
             total_output_tokens += num_tokens_from_text(content or "", model_name)
             save_debug("llm_response", idx, content or "")
+        except TimeoutError as exc:  # pragma: no cover - request errors
+            logger.error("OpenAI request timed out on page %d: %s", idx, exc)
+            status = "error"
+            note = "timeout"
+            content = None
+            retry = True
         except Exception as exc:  # pragma: no cover - request errors
             logger.error("OpenAI request failed on page %d: %s", idx, exc)
             status = "error"
@@ -354,16 +362,32 @@ def parse(
             running -= 1
             current = running
         logger.info("LLM request end page %d (running=%d, %.2fs)", idx, current, dur)
-        return idx, page_rows, summary
+        return idx, page_rows, summary, retry
 
     workers = int(os.getenv("SMART_PRICE_LLM_WORKERS", "5"))
     if len(images) <= 2:
         workers = 1
+    tasks = [(i, img) for i, img in enumerate(images, start=1)]
+    results = []
+    retry_counts: dict[int, int] = {}
+
     with ThreadPoolExecutor(max_workers=workers) as ex:
-        futures = [
-            ex.submit(process_page, (i, img)) for i, img in enumerate(images, start=1)
-        ]
-        results = [f.result() for f in futures]
+        futures: dict[Future, tuple[int, "Image.Image"]] = {}
+        while tasks or futures:
+            while tasks and len(futures) < workers:
+                task = tasks.pop(0)
+                futures[ex.submit(process_page, task)] = task
+            done, _ = wait(futures.keys(), return_when=FIRST_COMPLETED)
+            for fut in done:
+                task = futures.pop(fut)
+                idx, rows_out, summary, retry = fut.result()
+                if retry:
+                    retry_counts[idx] = retry_counts.get(idx, 0) + 1
+                    tasks.append(task)
+                else:
+                    if retry_counts.get(idx):
+                        summary["note"] = "timeout retry"
+                    results.append((idx, rows_out, summary))
 
     results.sort(key=lambda r: r[0])
     for _idx, rows_out, summary in results:
