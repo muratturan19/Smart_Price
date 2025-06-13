@@ -229,6 +229,8 @@ uploaded automatically; text files remain in `LLM_Text_db`.
    `master_dataset.xlsx` and `master.db`) to the configured repository
    under their respective folders (optionally specify `GITHUB_BRANCH`).
    If these variables are not set the upload is skipped gracefully.
+ - set `GITHUB_HTTP_TIMEOUT` to change the HTTP timeout for GitHub API
+   requests in seconds (defaults to `30`).
 
 ### Resetting the dataset
 

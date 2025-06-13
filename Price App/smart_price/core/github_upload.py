@@ -5,12 +5,25 @@ import os
 import time
 from pathlib import Path
 from urllib import request, error
+from typing import Optional
 from urllib.parse import quote
 
 logger = logging.getLogger("smart_price")
 
 
-def _api_request(method: str, url: str, token: str, data: dict | None = None) -> dict:
+def _api_request(
+    method: str,
+    url: str,
+    token: str,
+    data: dict | None = None,
+    *,
+    timeout: Optional[float] = None,
+) -> dict:
+    if timeout is None:
+        try:
+            timeout = float(os.getenv("GITHUB_HTTP_TIMEOUT", "30"))
+        except ValueError:
+            timeout = 30.0
     req = request.Request(url, method=method)
     req.add_header("Authorization", f"token {token}")
     req.add_header("Accept", "application/vnd.github+json")
@@ -19,7 +32,7 @@ def _api_request(method: str, url: str, token: str, data: dict | None = None) ->
         req.add_header("Content-Type", "application/json")
         req.data = payload
     try:
-        with request.urlopen(req) as resp:
+        with request.urlopen(req, timeout=timeout) as resp:
             text = resp.read().decode("utf-8")
         return json.loads(text) if text else {}
     except error.HTTPError as exc:  # pragma: no cover - network errors
@@ -40,6 +53,7 @@ def upload_folder(
     *,
     remote_prefix: str | None = None,
     file_extensions: list[str] | None = None,
+    timeout: Optional[float] = None,
 ) -> bool:
     """Upload ``path`` to a GitHub repository.
 
@@ -84,7 +98,7 @@ def upload_folder(
         with open(file_path, "rb") as fh:
             content = base64.b64encode(fh.read()).decode("ascii")
         try:
-            resp = _api_request("GET", f"{url}?ref={branch}", token)
+            resp = _api_request("GET", f"{url}?ref={branch}", token, timeout=timeout)
             sha = resp.get("sha")
         except error.HTTPError as exc:  # pragma: no cover - network errors
             if exc.code == 404:
@@ -99,14 +113,14 @@ def upload_folder(
         if sha:
             data["sha"] = sha
         try:
-            _api_request("PUT", url, token, data)
+            _api_request("PUT", url, token, data, timeout=timeout)
         except Exception as exc:  # pragma: no cover - network errors
             logger.error("Failed to upload %s: %s", repo_path, exc)
             success = False
     return success
 
 
-def delete_github_folder(path: str) -> bool:
+def delete_github_folder(path: str, *, timeout: Optional[float] = None) -> bool:
     """Delete all files under ``path`` in the configured GitHub repository."""
 
     repo = os.getenv("GITHUB_REPO")
@@ -119,7 +133,7 @@ def delete_github_folder(path: str) -> bool:
     path = _sanitize_repo_path(path)
     base_url = f"https://api.github.com/repos/{repo}/contents/{path}"
     try:
-        contents = _api_request("GET", f"{base_url}?ref={branch}", token)
+        contents = _api_request("GET", f"{base_url}?ref={branch}", token, timeout=timeout)
     except Exception as exc:  # pragma: no cover - network errors
         logger.error("Failed to list GitHub folder %s: %s", path, exc)
         return False
@@ -130,7 +144,7 @@ def delete_github_folder(path: str) -> bool:
     success = True
     for item in contents:
         if item.get("type") == "dir":
-            if not delete_github_folder(item.get("path", "")):
+            if not delete_github_folder(item.get("path", ""), timeout=timeout):
                 success = False
             continue
         sha = item.get("sha")
@@ -142,7 +156,7 @@ def delete_github_folder(path: str) -> bool:
         )
         data = {"message": f"Delete {file_path}", "sha": sha, "branch": branch}
         try:
-            _api_request("DELETE", file_url, token, data)
+            _api_request("DELETE", file_url, token, data, timeout=timeout)
         except Exception as exc:  # pragma: no cover - network errors
             logger.error("Failed to delete %s: %s", file_path, exc)
             success = False

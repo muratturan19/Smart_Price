@@ -1,13 +1,12 @@
-import os
-import types
 import logging
 from urllib import error
-from pathlib import Path
+import pytest
 
 from smart_price.core.github_upload import (
     _sanitize_repo_path,
     upload_folder,
     delete_github_folder,
+    _api_request,
 )
 
 
@@ -31,7 +30,7 @@ def test_upload_folder_encodes_url(tmp_path, monkeypatch):
 
     calls = []
 
-    def fake_api(method, url, token, data=None):
+    def fake_api(method, url, token, data=None, timeout=None):
         calls.append(url)
         return {}
 
@@ -50,7 +49,7 @@ def test_upload_folder_encodes_url(tmp_path, monkeypatch):
 def test_delete_github_folder(monkeypatch):
     calls = []
 
-    def fake_api(method, url, token, data=None):
+    def fake_api(method, url, token, data=None, timeout=None):
         calls.append((method, url))
         if method == "GET":
             return [
@@ -84,7 +83,7 @@ def test_upload_folder_404_no_error(monkeypatch, tmp_path, caplog):
 
     calls = []
 
-    def fake_api(method, url, token, data=None):
+    def fake_api(method, url, token, data=None, timeout=None):
         calls.append(method)
         if method == "GET":
             raise error.HTTPError(url, 404, "Not Found", None, None)
@@ -102,4 +101,42 @@ def test_upload_folder_404_no_error(monkeypatch, tmp_path, caplog):
     assert calls[0] == "GET"
     assert "PUT" in calls
     assert not caplog.records
+
+
+def test_api_request_timeout(monkeypatch):
+    def fake_open(_req, timeout=None):
+        raise TimeoutError("boom")
+
+    monkeypatch.setattr(
+        "smart_price.core.github_upload.request.urlopen", fake_open
+    )
+
+    with pytest.raises(TimeoutError):
+        _api_request("GET", "http://example", "tok", timeout=0.01)
+
+
+def test_api_request_timeout_env(monkeypatch):
+    captured = {}
+
+    class Resp:
+        def __enter__(self):
+            return self
+
+        def __exit__(self, exc_type, exc, tb):
+            pass
+
+        def read(self):
+            return b"{}"
+
+    def fake_open(_req, timeout=None):
+        captured["timeout"] = timeout
+        return Resp()
+
+    monkeypatch.setattr(
+        "smart_price.core.github_upload.request.urlopen", fake_open
+    )
+    monkeypatch.setenv("GITHUB_HTTP_TIMEOUT", "12")
+
+    _api_request("GET", "http://example", "tok")
+    assert captured["timeout"] == 12
 
