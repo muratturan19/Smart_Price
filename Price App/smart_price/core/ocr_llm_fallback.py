@@ -6,7 +6,7 @@ import os
 import time
 import threading
 from concurrent.futures import ThreadPoolExecutor, Future, wait, FIRST_COMPLETED
-from typing import Iterable, Sequence, TYPE_CHECKING
+from typing import Iterable, Sequence, TYPE_CHECKING, Callable
 
 try:
     from dotenv import load_dotenv, find_dotenv
@@ -137,6 +137,7 @@ def parse(
     output_name: str | None = None,
     prompt: str | dict[int, str] | None = None,
     dpi: int | None = None,
+    progress_callback: Callable[[float], None] | None = None,
 ) -> pd.DataFrame:
     """Parse ``pdf_path`` using GPT-4o vision.
 
@@ -152,6 +153,8 @@ def parse(
     dpi : int, optional
         Resolution used when converting PDF pages to images. Overrides the
         ``SMART_PRICE_PDF_DPI`` environment variable. Defaults to ``150``.
+    progress_callback : callable, optional
+        Callback receiving a float ``0-1`` progress value after each page.
     """
 
     if output_name is None:
@@ -161,6 +164,8 @@ def parse(
     total_start = time.time()
     total_input_tokens = 0
     total_output_tokens = 0
+    total_pages = 0
+    processed_pages = 0
 
     if prompt is None:
         prompt = get_prompt_for_file(Path(pdf_path).name)
@@ -192,6 +197,8 @@ def parse(
             time.time() - start_convert,
             len(images),
         )
+        total_pages = len(images)
+        processed_pages = 0
     except Exception as exc:  # pragma: no cover - conversion errors
         logger.error("pdf2image failed for %s: %s", pdf_path, exc)
         return pd.DataFrame()
@@ -388,6 +395,12 @@ def parse(
                     if retry_counts.get(idx):
                         summary["note"] = "timeout retry"
                     results.append((idx, rows_out, summary))
+                    processed_pages += 1
+                    if progress_callback and total_pages:
+                        try:
+                            progress_callback(processed_pages / total_pages)
+                        except Exception:
+                            pass
 
     results.sort(key=lambda r: r[0])
     for _idx, rows_out, summary in results:
@@ -459,4 +472,9 @@ def parse(
         logger.info("Debug klasörü yüklendi")
     else:
         logger.warning("GitHub upload başarısız")
+    if progress_callback and total_pages:
+        try:
+            progress_callback(1.0)
+        except Exception:
+            pass
     return df

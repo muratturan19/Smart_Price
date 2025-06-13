@@ -101,8 +101,15 @@ def extract_from_pdf(
     filename: str | None = None,
     log: Optional[Callable[[str, str], None]] = None,
     prompt: str | dict[int, str] | None = None,
+    progress_callback: Callable[[float], None] | None = None,
 ) -> pd.DataFrame:
-    """Extract product information from a PDF file."""
+    """Extract product information from a PDF file.
+
+    Parameters
+    ----------
+    progress_callback : callable, optional
+        Receives ``0-1`` progress updates for each processed page.
+    """
     page_summary: list[dict[str, object]] = []
     TOKEN_ACCUM["input"] = 0
     TOKEN_ACCUM["output"] = 0
@@ -242,10 +249,17 @@ def extract_from_pdf(
                 path_for_llm,
                 output_name=output_stem if tmp_for_llm else None,
                 prompt=guide_prompt,
+                progress_callback=progress_callback,
             )
         except TypeError:
-            # Support older parse() signatures used in tests
-            result = ocr_llm_fallback.parse(path_for_llm)
+            try:
+                result = ocr_llm_fallback.parse(
+                    path_for_llm,
+                    output_name=output_stem if tmp_for_llm else None,
+                    prompt=guide_prompt,
+                )
+            except TypeError:
+                result = ocr_llm_fallback.parse(path_for_llm)
         notify("Sat\u0131rlar\u0131n g\u00f6rselleri haz\u0131rlan\u0131yor...")
         page_summary = getattr(result, "page_summary", [])
         tok = getattr(result, "token_counts", {})
