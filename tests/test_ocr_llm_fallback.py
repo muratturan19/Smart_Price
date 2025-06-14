@@ -509,7 +509,7 @@ def test_timeout_split(monkeypatch):
     if _pandas_stubbed:
         del sys.modules["pandas"]
 
-    assert len(cropping) == 2
+    assert cropping == [(0, 0, 10, 5), (0, 5, 10, 10)]
     assert len(calls) == 3
     assert summary and len(summary) == 2
     assert summary[0]["note"] == "timeout split"
