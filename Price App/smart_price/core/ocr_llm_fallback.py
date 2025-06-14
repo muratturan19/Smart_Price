@@ -6,6 +6,8 @@ import logging
 import os
 from concurrent.futures import ThreadPoolExecutor
 from typing import Iterable, Sequence, TYPE_CHECKING, Callable
+import asyncio
+import inspect
 
 try:
     from dotenv import load_dotenv, find_dotenv
@@ -203,12 +205,26 @@ def parse(
     total_pages = len(images)
 
     try:
-        from openai import OpenAI
+        import openai as _openai
     except Exception as exc:
         logger.error("OpenAI import failed: %s", exc)
         return pd.DataFrame()
 
-    client = OpenAI(
+    client_cls = getattr(_openai, "OpenAI", None) or getattr(_openai, "AsyncOpenAI", None)
+    if client_cls is None:
+        logger.error("OpenAI client not available")
+        return pd.DataFrame()
+
+    try:
+        openai_max_retries = int(os.getenv("OPENAI_MAX_RETRIES", "0"))
+    except Exception:
+        openai_max_retries = 0
+    try:
+        _openai.api_requestor._DEFAULT_NUM_RETRIES = openai_max_retries
+    except Exception:
+        pass
+
+    client = client_cls(
         api_key=os.getenv("OPENAI_API_KEY"),
         timeout=_get_openai_timeout(),
     )
@@ -222,11 +238,20 @@ def parse(
 
     def process_page(args: tuple[int, "Image.Image"]):
         idx, img = args
-        try:
-            buf = io.BytesIO()
-            img.save(buf, format="JPEG")
-            data = base64.b64encode(buf.getvalue()).decode()
+
+        def _send(image: "Image.Image") -> list[dict]:
+            tmp = tempfile.NamedTemporaryFile(delete=False, suffix=".jpg")
+            try:
+                image.save(tmp.name, format="JPEG")
+                data = base64.b64encode(Path(tmp.name).read_bytes()).decode()
+            finally:
+                try:
+                    tmp.close()
+                    os.unlink(tmp.name)
+                except Exception:
+                    pass
             prompt_text = _get_prompt(idx)
+            logger.info("LLM request start page %d", idx)
             resp = client.chat.completions.create(
                 model=model_name,
                 messages=[
@@ -241,23 +266,73 @@ def parse(
                 response_format={"type": "json_object"},
                 temperature=0,
             )
+            if inspect.iscoroutine(resp):
+                resp = asyncio.run(resp)
             content = resp.choices[0].message.content or "[]"
+            items = safe_json_parse(gpt_clean_text(content))
+            if isinstance(items, dict) and "products" in items:
+                items = items.get("products")
+            if not isinstance(items, list):
+                items = [] if items is None else [items]
+            for it in items:
+                if isinstance(it, dict):
+                    it.setdefault("Sayfa", idx)
+            return items
+
+        error_types = (TimeoutError,)
+        openai_error = getattr(_openai, "error", None)
+        if openai_error is not None:
+            error_types = error_types + (
+                getattr(_openai, "APITimeoutError", TimeoutError),
+                getattr(openai_error, "Timeout", TimeoutError),
+                getattr(openai_error, "APIConnectionError", TimeoutError),
+            )
+
+        try:
+            rows = _send(img)
+            status = "success" if rows else "empty"
+            summary = {"page_number": idx, "rows": len(rows), "status": status}
+            return idx, rows, summary
+        except error_types as exc:
+            logger.error("LLM request failed on page %d: %s", idx, exc)
+            parts = split_image_horizontally(img)
+            if len(parts) > 1:
+                all_rows: list[dict] = []
+                page_summaries: list[dict[str, object]] = []
+                for _part in parts:
+                    try:
+                        r = _send(_part)
+                        state = "success" if r else "empty"
+                        page_summaries.append({"page_number": idx, "rows": len(r), "status": state, "note": "timeout split"})
+                        all_rows.extend(r)
+                    except Exception as exc2:
+                        logger.error("LLM request failed on page %d: %s", idx, exc2)
+                        page_summaries.append({"page_number": idx, "rows": 0, "status": "error", "note": "timeout split"})
+                return idx, all_rows, page_summaries
+            max_retries = getattr(config, "MAX_RETRIES", 0)
+            attempts = 0
+            while attempts < max_retries:
+                attempts += 1
+                try:
+                    rows = _send(img)
+                    note = "timeout retry"
+                    summary = {"page_number": idx, "rows": len(rows), "status": "success", "note": note}
+                    return idx, rows, summary
+                except error_types as exc2:
+                    logger.error("LLM request failed on page %d: %s", idx, exc2)
+            return idx, [], {"page_number": idx, "rows": 0, "status": "error", "note": "gave up"}
         except Exception as exc:
             logger.error("LLM request failed on page %d: %s", idx, exc)
             return idx, [], {"page_number": idx, "rows": 0, "status": "error", "note": str(exc)}
 
-        items = safe_json_parse(gpt_clean_text(content))
-        if isinstance(items, dict) and "products" in items:
-            items = items.get("products")
-        if not isinstance(items, list):
-            items = [] if items is None else [items]
-        for item in items:
-            if isinstance(item, dict):
-                item.setdefault("Sayfa", idx)
-        summary = {"page_number": idx, "rows": len(items), "status": "success"}
-        return idx, items, summary
-
-    workers = min(5, len(images)) or 1
+    try:
+        env_workers = int(os.getenv("SMART_PRICE_LLM_WORKERS", "0"))
+    except Exception:
+        env_workers = 0
+    if env_workers:
+        workers = env_workers
+    else:
+        workers = min(5, len(images)) or 1
     rows: list[dict[str, object]] = []
     page_summary: list[dict[str, object]] = []
     with ThreadPoolExecutor(max_workers=workers) as ex:
@@ -265,7 +340,10 @@ def parse(
         for fut in futures:
             idx, page_rows, summary = fut.result()
             rows.extend(page_rows)
-            page_summary.append(summary)
+            if isinstance(summary, list):
+                page_summary.extend(summary)
+            else:
+                page_summary.append(summary)
             if progress_callback and total_pages:
                 try:
                     progress_callback(idx / total_pages)
