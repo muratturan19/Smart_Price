@@ -27,7 +27,7 @@ openai_calls = {}
 
 def _setup_openai(monkeypatch):
     openai_calls.clear()
-    def create(**kwargs):
+    async def create(**kwargs):
         openai_calls.update(kwargs)
         return types.SimpleNamespace(
             choices=[types.SimpleNamespace(message=types.SimpleNamespace(content='[]'))]
@@ -37,6 +37,7 @@ def _setup_openai(monkeypatch):
         chat=chat_stub,
         api_requestor=types.SimpleNamespace(_DEFAULT_NUM_RETRIES=None),
     )
+    openai_stub.AsyncOpenAI = lambda *a, **kw: openai_stub
     monkeypatch.setitem(sys.modules, 'openai', openai_stub)
     monkeypatch.setenv('OPENAI_API_KEY', 'x')
     monkeypatch.setenv('MAX_RETRY_WAIT_TIME', '0')
@@ -145,7 +146,7 @@ def test_parse_parallel_execution(monkeypatch):
     running = 0
     concurrency = []
 
-    def create(**_kwargs):
+    async def create(**_kwargs):
         nonlocal running
         with lock:
             running += 1
@@ -159,6 +160,7 @@ def test_parse_parallel_execution(monkeypatch):
 
     chat_stub = types.SimpleNamespace(completions=types.SimpleNamespace(create=create))
     openai_stub = types.SimpleNamespace(chat=chat_stub)
+    openai_stub.AsyncOpenAI = lambda *a, **kw: openai_stub
     monkeypatch.setitem(sys.modules, 'openai', openai_stub)
     monkeypatch.setenv('OPENAI_API_KEY', 'x')
 
@@ -194,7 +196,7 @@ def test_retry_short_prompt(monkeypatch, caplog):
 
     calls = []
 
-    def create(**kwargs):
+    async def create(**kwargs):
         text = kwargs["messages"][0]["content"][0]["text"]
         calls.append(text)
         if len(calls) == 1:
@@ -207,6 +209,7 @@ def test_retry_short_prompt(monkeypatch, caplog):
 
     chat_stub = types.SimpleNamespace(completions=types.SimpleNamespace(create=create))
     openai_stub = types.SimpleNamespace(chat=chat_stub)
+    openai_stub.AsyncOpenAI = lambda *a, **kw: openai_stub
     monkeypatch.setitem(sys.modules, "openai", openai_stub)
     monkeypatch.setenv("OPENAI_API_KEY", "x")
 
@@ -243,7 +246,7 @@ def test_timeout_retry(monkeypatch):
 
     calls: list[str] = []
 
-    def create(**_kwargs):
+    async def create(**_kwargs):
         if not calls:
             calls.append("first")
             raise TimeoutError("boom")
@@ -254,6 +257,7 @@ def test_timeout_retry(monkeypatch):
 
     chat_stub = types.SimpleNamespace(completions=types.SimpleNamespace(create=create))
     openai_stub = types.SimpleNamespace(chat=chat_stub)
+    openai_stub.AsyncOpenAI = lambda *a, **kw: openai_stub
     monkeypatch.setitem(sys.modules, "openai", openai_stub)
     monkeypatch.setenv("OPENAI_API_KEY", "x")
 
@@ -294,7 +298,7 @@ def test_api_timeout_retry(monkeypatch):
 
     calls: list[str] = []
 
-    def create(**_kwargs):
+    async def create(**_kwargs):
         if not calls:
             calls.append("first")
             raise FakeAPITimeoutError("boom")
@@ -309,6 +313,7 @@ def test_api_timeout_retry(monkeypatch):
         APITimeoutError=FakeAPITimeoutError,
         error=types.SimpleNamespace(Timeout=FakeAPITimeoutError),
     )
+    openai_stub.AsyncOpenAI = lambda *a, **kw: openai_stub
     monkeypatch.setitem(sys.modules, "openai", openai_stub)
     monkeypatch.setenv("OPENAI_API_KEY", "x")
 
@@ -346,12 +351,13 @@ def test_retry_limit(monkeypatch):
 
     calls: list[str] = []
 
-    def create(**_kwargs):
+    async def create(**_kwargs):
         calls.append("call")
         raise TimeoutError("boom")
 
     chat_stub = types.SimpleNamespace(completions=types.SimpleNamespace(create=create))
     openai_stub = types.SimpleNamespace(chat=chat_stub)
+    openai_stub.AsyncOpenAI = lambda *a, **kw: openai_stub
     monkeypatch.setitem(sys.modules, "openai", openai_stub)
     monkeypatch.setenv("OPENAI_API_KEY", "x")
     monkeypatch.setenv("MAX_RETRIES", "1")
@@ -408,7 +414,7 @@ def test_timeout_split(monkeypatch):
 
     calls: list[str] = []
 
-    def create(**_kwargs):
+    async def create(**_kwargs):
         calls.append("call")
         if len(calls) == 1:
             raise TimeoutError("boom")
@@ -418,6 +424,7 @@ def test_timeout_split(monkeypatch):
 
     chat_stub = types.SimpleNamespace(completions=types.SimpleNamespace(create=create))
     openai_stub = types.SimpleNamespace(chat=chat_stub)
+    openai_stub.AsyncOpenAI = lambda *a, **kw: openai_stub
     monkeypatch.setitem(sys.modules, "openai", openai_stub)
     monkeypatch.setenv("OPENAI_API_KEY", "x")
 

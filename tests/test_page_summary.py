@@ -75,10 +75,11 @@ def test_ocr_llm_fallback_summary(monkeypatch):
         '[{"Malzeme_Kodu":"A","Açıklama":"X","Fiyat":"1"}]',
         '[]'
     ]
-    def create(**kwargs):
+    async def create(**kwargs):
         content = contents.pop(0)
         return types.SimpleNamespace(choices=[types.SimpleNamespace(message=types.SimpleNamespace(content=content))])
     openai_stub = types.SimpleNamespace(chat=types.SimpleNamespace(completions=types.SimpleNamespace(create=create)))
+    openai_stub.AsyncOpenAI = lambda *a, **kw: openai_stub
     monkeypatch.setitem(sys.modules, 'openai', openai_stub)
     monkeypatch.setenv('OPENAI_API_KEY', 'x')
 
