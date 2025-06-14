@@ -336,12 +336,24 @@ def validate_output_df(df):
     try:  # pragma: no cover - diagnostic logging
         sample = None
         cols = getattr(df, "columns", None)
-        if isinstance(cols, (list, tuple)) and "Malzeme_Kodu" in cols:
-            col = df["Malzeme_Kodu"]
-        elif isinstance(df, dict) and "Malzeme_Kodu" in df:
-            col = df["Malzeme_Kodu"]
-        else:
-            col = None
+        col = None
+        key = None
+        # look for common variants of the "Malzeme_Kodu" column header
+        if isinstance(cols, (list, tuple)):
+            for c in cols:
+                if str(c).replace(" ", "_").lower() == "malzeme_kodu":
+                    key = c
+                    break
+            if key is not None:
+                col = df[key]
+        elif isinstance(df, dict):
+            for c in df.keys():
+                if str(c).replace(" ", "_").lower() == "malzeme_kodu":
+                    key = c
+                    break
+            if key is not None:
+                col = df[key]
+
         if col is not None:
             if hasattr(col, "dropna"):
                 col = col.dropna()
@@ -353,6 +365,11 @@ def validate_output_df(df):
                 sample = list(col)[:5]
             else:
                 sample = str(col)
+        else:
+            if isinstance(cols, (list, tuple)):
+                sample = f"columns: {list(cols)}"
+            elif isinstance(df, dict):
+                sample = f"columns: {list(df.keys())}"
         logger.warning("[debug] validate_output_df Malzeme_Kodu sample: %s", sample)
     except Exception as exc:
         logger.warning("[debug] validate_output_df logging failed: %s", exc)
