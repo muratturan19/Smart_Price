@@ -294,6 +294,22 @@ def parse(
         if isinstance(err_conn, type) and issubclass(err_conn, BaseException):
             connection_errors += (err_conn,)
 
+    rate_limit_errors: tuple[type[Exception], ...] = ()
+    rl_err = getattr(openai, "RateLimitError", None)
+    if isinstance(rl_err, type) and issubclass(rl_err, BaseException):
+        rate_limit_errors += (rl_err,)
+    if err_mod is not None:
+        rl_mod = getattr(err_mod, "RateLimitError", None)
+        if isinstance(rl_mod, type) and issubclass(rl_mod, BaseException):
+            rate_limit_errors += (rl_mod,)
+    api_status = getattr(openai, "APIStatusError", None)
+    if isinstance(api_status, type) and issubclass(api_status, BaseException):
+        rate_limit_errors += (api_status,)
+    if err_mod is not None:
+        api_status_mod = getattr(err_mod, "APIStatusError", None)
+        if isinstance(api_status_mod, type) and issubclass(api_status_mod, BaseException):
+            rate_limit_errors += (api_status_mod,)
+
     def process_page(args: tuple[int, "Image.Image"]):
         nonlocal running, total_input_tokens, total_output_tokens
         idx, img = args
@@ -385,6 +401,15 @@ def parse(
             logger.error("OpenAI connection error on page %d: %s", idx, exc)
             status = "error"
             note = "connection error"
+            content = None
+            retry = True
+        except rate_limit_errors as exc:  # pragma: no cover - throttling
+            code = getattr(exc, "status", getattr(exc, "status_code", None))
+            if code not in (None, 429) and "RateLimitError" not in exc.__class__.__name__:
+                raise
+            logger.error("OpenAI rate limit on page %d: %s", idx, exc)
+            status = "error"
+            note = "rate limit"
             content = None
             retry = True
         except Exception as exc:  # pragma: no cover - request errors
