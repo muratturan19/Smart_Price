@@ -41,6 +41,7 @@ def _setup_openai(monkeypatch):
     monkeypatch.setitem(sys.modules, 'openai', openai_stub)
     monkeypatch.setenv('OPENAI_API_KEY', 'x')
     monkeypatch.setenv('MAX_RETRY_WAIT_TIME', '0')
+    monkeypatch.setenv('RETRY_DELAY_BASE', '0')
 
 class FakeImage:
     def __init__(self, data=b'img'):
@@ -163,6 +164,7 @@ def test_parse_parallel_execution(monkeypatch):
     openai_stub.AsyncOpenAI = lambda *a, **kw: openai_stub
     monkeypatch.setitem(sys.modules, 'openai', openai_stub)
     monkeypatch.setenv('OPENAI_API_KEY', 'x')
+    monkeypatch.setenv('RETRY_DELAY_BASE', '0')
 
     _pandas_stubbed = False
     try:
@@ -212,6 +214,7 @@ def test_retry_short_prompt(monkeypatch, caplog):
     openai_stub.AsyncOpenAI = lambda *a, **kw: openai_stub
     monkeypatch.setitem(sys.modules, "openai", openai_stub)
     monkeypatch.setenv("OPENAI_API_KEY", "x")
+    monkeypatch.setenv('RETRY_DELAY_BASE', '0')
 
     _pandas_stubbed = False
     try:
@@ -316,6 +319,7 @@ def test_api_timeout_retry(monkeypatch):
     openai_stub.AsyncOpenAI = lambda *a, **kw: openai_stub
     monkeypatch.setitem(sys.modules, "openai", openai_stub)
     monkeypatch.setenv("OPENAI_API_KEY", "x")
+    monkeypatch.setenv('RETRY_DELAY_BASE', '0')
 
     _pandas_stubbed = False
     try:
@@ -372,6 +376,7 @@ def test_connection_error_retry(monkeypatch):
     openai_stub.AsyncOpenAI = lambda *a, **kw: openai_stub
     monkeypatch.setitem(sys.modules, "openai", openai_stub)
     monkeypatch.setenv("OPENAI_API_KEY", "x")
+    monkeypatch.setenv('RETRY_DELAY_BASE', '0')
 
     _pandas_stubbed = False
     try:
@@ -420,6 +425,7 @@ def test_retry_limit(monkeypatch):
     monkeypatch.setenv("OPENAI_API_KEY", "x")
     monkeypatch.setenv("MAX_RETRIES", "1")
     monkeypatch.setenv("MAX_RETRY_WAIT_TIME", "0")
+    monkeypatch.setenv('RETRY_DELAY_BASE', '0')
 
     _pandas_stubbed = False
     try:

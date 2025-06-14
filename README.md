@@ -83,13 +83,16 @@ MAX_WORKERS=2
 MAX_RETRIES=80
 # Maximum wait time per retry in seconds
 MAX_RETRY_WAIT_TIME=30
+# Base wait time for exponential backoff in seconds
+RETRY_DELAY_BASE=1.0
 # Logging style for retries: log_msg, inline_block or none
 RETRY_LOGGING_STYLE=log_msg
 ```
 These values configure the internal `agentic_doc` Settings object.  The
 optimal numbers depend on your API rate limit and document size. The same
-`MAX_RETRIES` and `MAX_RETRY_WAIT_TIME` variables control how often the
-fallback OCR+LLM parser re-attempts timed out or connection-error requests.
+`MAX_RETRIES`, `MAX_RETRY_WAIT_TIME` and `RETRY_DELAY_BASE` control how often
+and how quickly the fallback OCR+LLM parser re-attempts timed out or
+connection-error requests.
 
 Use ``SP_PROGRESS_BATCH_SIZE`` to change how many PDF pages the
 Streamlit interface processes before showing a progress message (default ``5``).
