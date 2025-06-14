@@ -477,7 +477,10 @@ def parse(
                     count = retry_counts.get(idx, 0)
                     if count < config.MAX_RETRIES:
                         retry_counts[idx] = count + 1
-                        delay = min(2 ** count, config.MAX_RETRY_WAIT_TIME)
+                        delay = min(
+                            config.RETRY_DELAY_BASE * 2 ** count,
+                            config.MAX_RETRY_WAIT_TIME,
+                        )
                         logger.info("retry page %d attempt %d delay %.1fs", idx, count + 1, delay)
                         if delay > 0:
                             time.sleep(delay)

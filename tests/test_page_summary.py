@@ -82,6 +82,7 @@ def test_ocr_llm_fallback_summary(monkeypatch):
     openai_stub.AsyncOpenAI = lambda *a, **kw: openai_stub
     monkeypatch.setitem(sys.modules, 'openai', openai_stub)
     monkeypatch.setenv('OPENAI_API_KEY', 'x')
+    monkeypatch.setenv('RETRY_DELAY_BASE', '0')
 
     import importlib
     import smart_price.core.ocr_llm_fallback as mod
