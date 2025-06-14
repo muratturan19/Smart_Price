@@ -79,7 +79,7 @@ variables in your `.env` file:
 BATCH_SIZE=4
 # Worker threads per file
 MAX_WORKERS=2
-# Retry attempts for intermittent failures
+# Retry attempts for intermittent failures (default 3)
 MAX_RETRIES=80
 # Maximum wait time per retry in seconds
 MAX_RETRY_WAIT_TIME=30
@@ -93,6 +93,9 @@ optimal numbers depend on your API rate limit and document size. The same
 `MAX_RETRIES`, `MAX_RETRY_WAIT_TIME` and `RETRY_DELAY_BASE` control how often
 and how quickly the fallback OCR+LLM parser re-attempts timed out or
 connection-error requests.
+
+The config module sets `MAX_RETRIES` to 3 by default. Set `MAX_RETRIES` or
+`SMART_PRICE_MAX_RETRIES` in your environment to override this value.
 
 Use ``SP_PROGRESS_BATCH_SIZE`` to change how many PDF pages the
 Streamlit interface processes before showing a progress message (default ``5``).

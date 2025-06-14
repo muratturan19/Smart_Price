@@ -70,7 +70,9 @@ def test_parse_sends_bytes_and_cleans_tmp(monkeypatch):
         _pandas_stubbed = True
 
     import importlib
+    import smart_price.config as conf
     import smart_price.core.ocr_llm_fallback as mod
+    importlib.reload(conf)
     importlib.reload(mod)
     assert hasattr(mod.pd, "DataFrame")
 
@@ -107,7 +109,9 @@ def test_openai_max_retries_env(monkeypatch):
     monkeypatch.setenv("OPENAI_MAX_RETRIES", "5")
 
     import importlib
+    import smart_price.config as conf
     import smart_price.core.ocr_llm_fallback as mod
+    importlib.reload(conf)
     importlib.reload(mod)
 
     mod.parse("dummy.pdf")
@@ -127,7 +131,9 @@ def test_openai_max_retries_default(monkeypatch):
     monkeypatch.delenv("OPENAI_MAX_RETRIES", raising=False)
 
     import importlib
+    import smart_price.config as conf
     import smart_price.core.ocr_llm_fallback as mod
+    importlib.reload(conf)
     importlib.reload(mod)
 
     mod.parse("dummy.pdf")
@@ -178,7 +184,9 @@ def test_parse_parallel_execution(monkeypatch):
         _pandas_stubbed = True
 
     import importlib
+    import smart_price.config as conf
     import smart_price.core.ocr_llm_fallback as mod
+    importlib.reload(conf)
     importlib.reload(mod)
 
     mod.parse('dummy.pdf')
@@ -228,7 +236,9 @@ def test_retry_short_prompt(monkeypatch, caplog):
         _pandas_stubbed = True
 
     import importlib
+    import smart_price.config as conf
     import smart_price.core.ocr_llm_fallback as mod
+    importlib.reload(conf)
     importlib.reload(mod)
 
     with caplog.at_level(logging.INFO, logger="smart_price"):
@@ -276,7 +286,9 @@ def test_timeout_retry(monkeypatch):
         _pandas_stubbed = True
 
     import importlib
+    import smart_price.config as conf
     import smart_price.core.ocr_llm_fallback as mod
+    importlib.reload(conf)
     importlib.reload(mod)
 
     df = mod.parse("dummy.pdf")
@@ -333,7 +345,9 @@ def test_api_timeout_retry(monkeypatch):
         _pandas_stubbed = True
 
     import importlib
+    import smart_price.config as conf
     import smart_price.core.ocr_llm_fallback as mod
+    importlib.reload(conf)
     importlib.reload(mod)
 
     df = mod.parse("dummy.pdf")
@@ -392,7 +406,9 @@ def test_connection_error_retry(monkeypatch):
         _pandas_stubbed = True
 
     import importlib
+    import smart_price.config as conf
     import smart_price.core.ocr_llm_fallback as mod
+    importlib.reload(conf)
     importlib.reload(mod)
 
     df = mod.parse("dummy.pdf")
@@ -439,7 +455,9 @@ def test_retry_limit(monkeypatch):
         _pandas_stubbed = True
 
     import importlib
+    import smart_price.config as conf
     import smart_price.core.ocr_llm_fallback as mod
+    importlib.reload(conf)
     importlib.reload(mod)
 
     df = mod.parse("dummy.pdf")
@@ -506,7 +524,9 @@ def test_timeout_split(monkeypatch):
         _pandas_stubbed = True
 
     import importlib
+    import smart_price.config as conf
     import smart_price.core.ocr_llm_fallback as mod
+    importlib.reload(conf)
     importlib.reload(mod)
 
     df = mod.parse("dummy.pdf")
