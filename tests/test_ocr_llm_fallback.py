@@ -342,6 +342,64 @@ def test_api_timeout_retry(monkeypatch):
     assert summary and summary[0]["note"] == "timeout retry"
 
 
+def test_connection_error_retry(monkeypatch):
+    def fake_convert(_path, **_kwargs):
+        return [FakeImage()]
+
+    pdf2image_stub = types.SimpleNamespace(convert_from_path=fake_convert)
+    monkeypatch.setitem(sys.modules, "pdf2image", pdf2image_stub)
+
+    class FakeConnError(Exception):
+        pass
+
+    calls: list[str] = []
+
+    async def create(**_kwargs):
+        if not calls:
+            calls.append("first")
+            raise FakeConnError("boom")
+        calls.append("second")
+        return types.SimpleNamespace(
+            choices=[types.SimpleNamespace(message=types.SimpleNamespace(content="[]"))]
+        )
+
+    chat_stub = types.SimpleNamespace(completions=types.SimpleNamespace(create=create))
+    openai_stub = types.SimpleNamespace(
+        chat=chat_stub,
+        APIConnectionError=FakeConnError,
+        error=types.SimpleNamespace(APIConnectionError=FakeConnError),
+    )
+    openai_stub.AsyncOpenAI = lambda *a, **kw: openai_stub
+    monkeypatch.setitem(sys.modules, "openai", openai_stub)
+    monkeypatch.setenv("OPENAI_API_KEY", "x")
+
+    _pandas_stubbed = False
+    try:
+        import pandas as pd  # noqa: F401
+    except ModuleNotFoundError:
+        pd = types.ModuleType("pandas")
+        sys.modules["pandas"] = pd
+
+        class FakeDF(list):
+            pass
+
+        pd.DataFrame = FakeDF
+        _pandas_stubbed = True
+
+    import importlib
+    import smart_price.core.ocr_llm_fallback as mod
+    importlib.reload(mod)
+
+    df = mod.parse("dummy.pdf")
+    summary = getattr(df, "page_summary", None)
+
+    if _pandas_stubbed:
+        del sys.modules["pandas"]
+
+    assert calls == ["first", "second"]
+    assert summary and summary[0]["note"] == "timeout retry"
+
+
 def test_retry_limit(monkeypatch):
     def fake_convert(_path, **_kwargs):
         return [FakeImage()]

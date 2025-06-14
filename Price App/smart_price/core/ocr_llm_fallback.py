@@ -285,6 +285,15 @@ def parse(
         if isinstance(err_timeout, type) and issubclass(err_timeout, BaseException):
             timeout_errors += (err_timeout,)
 
+    connection_errors: tuple[type[Exception], ...] = (ConnectionError,)
+    api_connection = getattr(openai, "APIConnectionError", None)
+    if isinstance(api_connection, type) and issubclass(api_connection, BaseException):
+        connection_errors += (api_connection,)
+    if err_mod is not None:
+        err_conn = getattr(err_mod, "APIConnectionError", None)
+        if isinstance(err_conn, type) and issubclass(err_conn, BaseException):
+            connection_errors += (err_conn,)
+
     def process_page(args: tuple[int, "Image.Image"]):
         nonlocal running, total_input_tokens, total_output_tokens
         idx, img = args
@@ -370,6 +379,12 @@ def parse(
             logger.error("OpenAI request timed out on page %d: %s", idx, exc)
             status = "error"
             note = "timeout"
+            content = None
+            retry = True
+        except connection_errors as exc:  # pragma: no cover - connection issues
+            logger.error("OpenAI connection error on page %d: %s", idx, exc)
+            status = "error"
+            note = "connection error"
             content = None
             retry = True
         except Exception as exc:  # pragma: no cover - request errors
