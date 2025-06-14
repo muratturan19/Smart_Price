@@ -1,14 +1,11 @@
 from __future__ import annotations
 
 import base64
+import io
 import logging
 import os
-import time
-import threading
-from concurrent.futures import ThreadPoolExecutor, Future, wait, FIRST_COMPLETED
-from collections import deque
+from concurrent.futures import ThreadPoolExecutor
 from typing import Iterable, Sequence, TYPE_CHECKING, Callable
-import asyncio
 
 try:
     from dotenv import load_dotenv, find_dotenv
@@ -159,6 +156,8 @@ def split_image_horizontally(image: "Image") -> list["Image"]:
     return [image]
 
 
+
+
 def parse(
     pdf_path: str,
     page_range: Iterable[int] | range | None = None,
@@ -168,100 +167,41 @@ def parse(
     dpi: int | None = None,
     progress_callback: Callable[[float], None] | None = None,
 ) -> pd.DataFrame:
-    """Parse ``pdf_path`` using GPT-4o vision.
-
-    Parameters
-    ----------
-    pdf_path : str
-        Path to the PDF file to parse.
-    page_range : iterable of int or range, optional
-        Pages to include when converting the PDF to images.
-    output_name : str, optional
-        Name of the debug output directory under ``LLM_Output_db``.  Defaults
-        to ``Path(pdf_path).stem``.
-    dpi : int, optional
-        Resolution used when converting PDF pages to images. Overrides the
-        ``SMART_PRICE_PDF_DPI`` environment variable. Defaults to ``150``.
-    progress_callback : callable, optional
-        Callback receiving a float ``0-1`` progress value after each page.
-    """
+    """Parse ``pdf_path`` using a minimal Vision+LLM pipeline."""
 
     logger.info("==> BEGIN parse %s", pdf_path)
     if output_name is None:
         output_name = Path(pdf_path).stem
 
     set_output_subdir(output_name)
-    total_start = time.time()
-    total_input_tokens = 0
-    total_output_tokens = 0
-    total_pages = 0
-    processed_pages = 0
 
     if prompt is None:
         prompt = get_prompt_for_file(Path(pdf_path).name)
 
     try:
         from pdf2image import convert_from_path  # type: ignore
-    except Exception as exc:  # pragma: no cover - optional deps missing
+    except Exception as exc:
         logger.error("pdf2image unavailable: %s", exc)
         return pd.DataFrame()
 
-    try:
-        dpi_val = dpi if dpi is not None else os.getenv("SMART_PRICE_PDF_DPI")
-        try:
-            dpi_val = int(dpi_val) if dpi_val is not None else 150
-        except Exception:
-            dpi_val = 150
-        kwargs = {"dpi": dpi_val}
-        first, last = _range_bounds(page_range)
-        if first is not None:
-            kwargs["first_page"] = first
-        if last is not None:
-            kwargs["last_page"] = last
-        logger.info("==> BEGIN images_from_pdf")
-        start_convert = time.time()
-        images = convert_from_path(
-            pdf_path, poppler_path=str(config.POPPLER_PATH), **kwargs
-        )
-        logger.info(
-            "pdf2image.convert_from_path took %.2fs for %d pages",
-            time.time() - start_convert,
-            len(images),
-        )
-        logger.info("==> END images_from_pdf pages=%s", len(images))
-        total_pages = len(images)
-        processed_pages = 0
-    except Exception as exc:  # pragma: no cover - conversion errors
-        logger.error("pdf2image failed for %s: %s", pdf_path, exc)
-        return pd.DataFrame()
-
-    api_key = os.getenv("OPENAI_API_KEY")
-    if api_key:
-        os.environ.setdefault("OPENAI_API_KEY", api_key)
+    dpi_val = int(dpi) if dpi is not None else 150
+    kwargs: dict[str, int] = {"dpi": dpi_val}
+    first, last = _range_bounds(page_range)
+    if first is not None:
+        kwargs["first_page"] = first
+    if last is not None:
+        kwargs["last_page"] = last
+    images = convert_from_path(pdf_path, poppler_path=str(config.POPPLER_PATH), **kwargs)
+    total_pages = len(images)
 
     try:
-        import openai
-    except Exception as exc:  # pragma: no cover - import errors
+        from openai import OpenAI
+    except Exception as exc:
         logger.error("OpenAI import failed: %s", exc)
         return pd.DataFrame()
 
+    client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
     model_name = os.getenv("OPENAI_MODEL", "gpt-4o")
-    try:
-        openai_max_retries = int(os.getenv("OPENAI_MAX_RETRIES", "0"))
-    except Exception:
-        openai_max_retries = 0
-    try:
-        openai_request_timeout = float(os.getenv("OPENAI_REQUEST_TIMEOUT", "120"))
-    except Exception:
-        openai_request_timeout = 120.0
-    try:  # pragma: no cover - openai may not expose this attr
-        openai.api_requestor._DEFAULT_NUM_RETRIES = openai_max_retries
-    except Exception:
-        pass
-    client = openai.AsyncOpenAI(
-        max_retries=openai_max_retries,
-        timeout=openai_request_timeout,
-    )
 
     def _get_prompt(page: int) -> str:
         fallback = RAW_HEADER_HINT + "\n" + DEFAULT_PROMPT
@@ -269,356 +209,62 @@ def parse(
             return prompt.get(page, prompt.get(0, fallback))
         return prompt if prompt is not None else fallback
 
-    rows: list[dict[str, object]] = []
-    page_summary: list[dict[str, object]] = []
-
-    lock = threading.Lock()
-    running = 0
-
-    timeout_errors: tuple[type[Exception], ...] = (TimeoutError, asyncio.TimeoutError)
-    api_timeout = getattr(openai, "APITimeoutError", None)
-    if isinstance(api_timeout, type) and issubclass(api_timeout, BaseException):
-        timeout_errors += (api_timeout,)
-    err_mod = getattr(openai, "error", None)
-    if err_mod is not None:
-        err_timeout = getattr(err_mod, "Timeout", None)
-        if isinstance(err_timeout, type) and issubclass(err_timeout, BaseException):
-            timeout_errors += (err_timeout,)
-
-    connection_errors: tuple[type[Exception], ...] = (ConnectionError,)
-    api_connection = getattr(openai, "APIConnectionError", None)
-    if isinstance(api_connection, type) and issubclass(api_connection, BaseException):
-        connection_errors += (api_connection,)
-    if err_mod is not None:
-        err_conn = getattr(err_mod, "APIConnectionError", None)
-        if isinstance(err_conn, type) and issubclass(err_conn, BaseException):
-            connection_errors += (err_conn,)
-
-    rate_limit_errors: tuple[type[Exception], ...] = ()
-    rl_err = getattr(openai, "RateLimitError", None)
-    if isinstance(rl_err, type) and issubclass(rl_err, BaseException):
-        rate_limit_errors += (rl_err,)
-    if err_mod is not None:
-        rl_mod = getattr(err_mod, "RateLimitError", None)
-        if isinstance(rl_mod, type) and issubclass(rl_mod, BaseException):
-            rate_limit_errors += (rl_mod,)
-    api_status = getattr(openai, "APIStatusError", None)
-    if isinstance(api_status, type) and issubclass(api_status, BaseException):
-        rate_limit_errors += (api_status,)
-    if err_mod is not None:
-        api_status_mod = getattr(err_mod, "APIStatusError", None)
-        if isinstance(api_status_mod, type) and issubclass(api_status_mod, BaseException):
-            rate_limit_errors += (api_status_mod,)
-
     def process_page(args: tuple[int, "Image.Image"]):
-        nonlocal running, total_input_tokens, total_output_tokens
         idx, img = args
-        start = time.time()
-        with lock:
-            running += 1
-            current = running
-        logger.info("LLM request start page %d (running=%d)", idx, current)
-
-        page_rows: list[dict[str, object]] = []
-        status = "success"
-        note = None
-        retry = False
-        if DEBUG:
-            img_path = save_debug_image("page_image", idx, img)
-        else:
-            img_path = None
-        tmp_path = img_path
-        created_tmp = False
-        if tmp_path is None:
-            tmp = tempfile.NamedTemporaryFile(delete=False, suffix=".jpg")
-            img.save(
-                tmp.name,
-                format="JPEG",
-                quality=80,
-                optimize=True,
-                progressive=True,
-            )
-            tmp.close()
-            tmp_path = Path(tmp.name)
-            created_tmp = True
         try:
-            with open(tmp_path, "rb") as f:
-                image_bytes = f.read()
-            img_base64 = base64.b64encode(image_bytes).decode()
+            buf = io.BytesIO()
+            img.save(buf, format="JPEG")
+            data = base64.b64encode(buf.getvalue()).decode()
             prompt_text = _get_prompt(idx)
-            if DEBUG:
-                save_debug("llm_prompt", idx, prompt_text)
-            logger.debug(
-                "Prompt being used for extraction (truncated): %s",
-                prompt_text[:200],
+            resp = client.chat.completions.create(
+                model=model_name,
+                messages=[
+                    {
+                        "role": "user",
+                        "content": [
+                            {"type": "text", "text": prompt_text},
+                            {"type": "image_url", "image_url": {"url": "data:image/jpeg;base64," + data}},
+                        ],
+                    }
+                ],
+                response_format={"type": "json_object"},
+                temperature=0,
             )
-            total_input_tokens += num_tokens_from_messages(
-                [{"role": "user", "content": prompt_text}], model_name
-            )
-            api_start = time.time()
-            async def _do_request() -> object:
-                return await client.chat.completions.create(
-                    model=model_name,
-                    messages=[
-                        {
-                            "role": "user",
-                            "content": [
-                                {"type": "text", "text": prompt_text},
-                                {
-                                    "type": "image_url",
-                                    "image_url": {
-                                        "url": "data:image/jpeg;base64," + img_base64
-                                    },
-                                },
-                            ],
-                        }
-                    ],
-                    response_format={"type": "json_object"},
-                    temperature=0,
-                    timeout=openai_request_timeout,
-                )
+            content = resp.choices[0].message.content or "[]"
+        except Exception as exc:
+            logger.error("LLM request failed on page %d: %s", idx, exc)
+            return idx, [], {"page_number": idx, "rows": 0, "status": "error", "note": str(exc)}
 
-            resp = asyncio.run(_do_request())
-            logger.info(
-                "OpenAI request for page %d took %.2fs", idx, time.time() - api_start
-            )
-            content = resp.choices[0].message.content
-            logger.debug(
-                "LLM response for page %d (truncated): %s",
-                idx,
-                (content or "")[:200],
-            )
-            total_output_tokens += num_tokens_from_text(content or "", model_name)
-            if DEBUG:
-                save_debug("llm_response", idx, content or "")
-        except timeout_errors as exc:  # pragma: no cover - request errors
-            logger.error("OpenAI request timed out on page %d: %s", idx, exc)
-            status = "error"
-            note = "timeout"
-            content = None
-            retry = True
-        except connection_errors as exc:  # pragma: no cover - connection issues
-            logger.error("OpenAI connection error on page %d: %s", idx, exc)
-            status = "error"
-            note = "connection error"
-            content = None
-            retry = True
-        except rate_limit_errors as exc:  # pragma: no cover - throttling
-            code = getattr(exc, "status", getattr(exc, "status_code", None))
-            if code not in (None, 429) and "RateLimitError" not in exc.__class__.__name__:
-                raise
-            logger.error("OpenAI rate limit on page %d: %s", idx, exc)
-            status = "error"
-            note = "rate limit"
-            content = None
-            retry = True
-        except Exception as exc:  # pragma: no cover - request errors
-            logger.error("OpenAI request failed on page %d: %s", idx, exc)
-            status = "error"
-            note = str(exc)
-            content = None
-        finally:
-            if created_tmp:
-                try:
-                    os.remove(tmp_path)
-                except Exception as exc:  # pragma: no cover - cleanup errors
-                    logger.debug("temp file cleanup failed: %s", exc)
-
-        cleaned = gpt_clean_text(content) if content else "[]"
-        items = safe_json_parse(cleaned)
+        items = safe_json_parse(gpt_clean_text(content))
         if isinstance(items, dict) and "products" in items:
             items = items.get("products")
-        if items is None:
-            logger.error("LLM JSON parse failed on page %d", idx)
-            status = "error"
-            note = "parse error"
-            items = []
-
-        items = items if isinstance(items, list) else [items]
+        if not isinstance(items, list):
+            items = [] if items is None else [items]
         for item in items:
-            if not isinstance(item, dict):
-                continue
-            code = item.get("Malzeme_Kodu") or item.get("Malzeme Kodu")
-            descr = item.get("Açıklama")
-            main_title = item.get("Ana_Baslik") or item.get("Ana Baslik")
-            sub_title = item.get("Alt_Baslik") or item.get("Alt Baslik")
-            price_raw = str(item.get("Fiyat", "")).strip()
-            kutu_adedi = item.get("Kutu_Adedi") or item.get("Kutu Adedi")
-            para_birimi = item.get("Para_Birimi") or item.get("Para Birimi")
-            if para_birimi is None:
-                para_birimi = detect_currency(price_raw)
-            para_birimi = normalize_currency(para_birimi)
-            page_rows.append(
-                {
-                    "Malzeme_Kodu": code,
-                    "Açıklama": descr,
-                    "Ana_Baslik": main_title,
-                    "Alt_Baslik": sub_title,
-                    "Fiyat": normalize_price(price_raw),
-                    "Birim": item.get("Birim"),
-                    "Kutu_Adedi": kutu_adedi,
-                    "Para_Birimi": para_birimi,
-                    "Sayfa": idx,
-                }
-            )
+            if isinstance(item, dict):
+                item.setdefault("Sayfa", idx)
+        summary = {"page_number": idx, "rows": len(items), "status": "success"}
+        return idx, items, summary
 
-        added = len(page_rows)
-        if status == "success" and added == 0:
-            status = "empty"
-
-        summary = {
-            "page_number": idx,
-            "rows": added,
-            "status": status,
-            "note": note,
-        }
-        dur = time.time() - start
-        with lock:
-            running -= 1
-            current = running
-        logger.info("LLM request end page %d (running=%d, %.2fs)", idx, current, dur)
-        return idx, page_rows, summary, retry
-
-    workers = int(os.getenv("SMART_PRICE_LLM_WORKERS", "5"))
-    if len(images) <= 2:
-        workers = 1
-    logger.info("vision_loop workers=%s timeout=%s", workers, openai_request_timeout)
-    logger.info("==> BEGIN vision_loop")
-    tasks = deque((i, img) for i, img in enumerate(images, start=1))
-    results = []
-    retry_counts: dict[int, int] = {}
-    split_pages: set[int] = set()
-
+    workers = min(5, len(images)) or 1
+    rows: list[dict[str, object]] = []
+    page_summary: list[dict[str, object]] = []
     with ThreadPoolExecutor(max_workers=workers) as ex:
-        futures: dict[Future, tuple[int, "Image.Image"]] = {}
-        while tasks or futures:
-            while tasks and len(futures) < workers:
-                task = tasks.popleft()
-                futures[ex.submit(process_page, task)] = task
-            done, _ = wait(futures.keys(), return_when=FIRST_COMPLETED)
-            for fut in done:
-                task = futures.pop(fut)
-                idx, rows_out, summary, retry = fut.result()
-                if retry:
-                    count = retry_counts.get(idx, 0)
-                    if count < config.MAX_RETRIES:
-                        retry_counts[idx] = count + 1
-                        delay = min(
-                            config.RETRY_DELAY_BASE * 2 ** count,
-                            config.MAX_RETRY_WAIT_TIME,
-                        )
-                        logger.info("retry page %d attempt %d delay %.1fs", idx, count + 1, delay)
-                        if delay > 0:
-                            time.sleep(delay)
-                        if count == 0:
-                            halves = split_image_horizontally(task[1])
-                            if len(halves) > 1:
-                                logger.info("split page %d for retry", idx)
-                                for half in reversed(halves):
-                                    tasks.appendleft((task[0], half))
-                                split_pages.add(idx)
-                            else:
-                                tasks.append(task)
-                        else:
-                            tasks.append(task)
-                        continue
-                    summary["status"] = "error"
-                    summary["note"] = "gave up"
-                    if idx in split_pages:
-                        summary["note"] += " (split)"
-                    rows_out = []
-                    logger.warning("page %d failed after %d retries", idx, count)
-                else:
-                    if retry_counts.get(idx):
-                        if idx in split_pages:
-                            summary["note"] = "timeout split"
-                        else:
-                            summary["note"] = "timeout retry"
-                results.append((idx, rows_out, summary))
-                processed_pages += 1
-                if progress_callback and total_pages:
-                    try:
-                        progress_callback(processed_pages / total_pages)
-                    except Exception:
-                        pass
-
-    results.sort(key=lambda r: r[0])
-    logger.info("==> END vision_loop rows=%s", sum(len(r[1]) for r in results))
-    for _idx, rows_out, summary in results:
-        rows.extend(rows_out)
-        page_summary.append(summary)
-
-    logger.debug(
-        "[%s] LLM Vision output: %d rows extracted from PDF",
-        pdf_path,
-        len(rows),
-    )
+        futures = [ex.submit(process_page, (i, img)) for i, img in enumerate(images, start=1)]
+        for fut in futures:
+            idx, page_rows, summary = fut.result()
+            rows.extend(page_rows)
+            page_summary.append(summary)
+            if progress_callback and total_pages:
+                try:
+                    progress_callback(idx / total_pages)
+                except Exception:
+                    pass
 
     df = pd.DataFrame(rows)
-    try:
-        row_count = len(df)
-    except Exception:
-        row_count = len(rows)
-    logger.debug("[%s] DataFrame oluşturuldu: %d satır", pdf_path, row_count)
-    if hasattr(df, "columns"):
-        if "Para_Birimi" not in df.columns:
-            df["Para_Birimi"] = None
-        df["Para_Birimi"] = df["Para_Birimi"].apply(normalize_currency)
-        df["Para_Birimi"] = df["Para_Birimi"].fillna("₺")
-    if hasattr(df, "columns"):
-        if "Ana_Baslik" not in df.columns:
-            df["Ana_Baslik"] = None
-        if "Alt_Baslik" not in df.columns:
-            df["Alt_Baslik"] = None
-    if hasattr(df, "columns") and "Kutu_Adedi" in getattr(df, "columns", []):
-        try:
-            df["Kutu_Adedi"] = df["Kutu_Adedi"].astype("string")
-        except Exception:  # pragma: no cover - DataFrame stub
-            pass
-    if hasattr(df, "empty") and not df.empty:
-        base = Path(pdf_path).stem
-        df["Record_Code"] = (
-            base
-            + "|"
-            + df["Sayfa"].astype(str)
-            + "|"
-            + (df.groupby("Sayfa").cumcount() + 1).astype(str)
-        )
     if hasattr(df, "__dict__"):
         object.__setattr__(df, "page_summary", page_summary)
-        object.__setattr__(
-            df,
-            "token_counts",
-            {
-                "input": total_input_tokens,
-                "output": total_output_tokens,
-            },
-        )
-    total_dur = time.time() - total_start
-    logger.info("Finished %s with %d rows in %.2fs", pdf_path, len(df), total_dur)
-    log_metric("parse_pdf", len(page_summary), total_dur)
-    log_token_counts(pdf_path, total_input_tokens, total_output_tokens)
-    debug_dir = Path(os.getenv("SMART_PRICE_DEBUG_DIR", "LLM_Output_db")) / output_name
-    text_dir = Path(os.getenv("SMART_PRICE_TEXT_DIR", "LLM_Text_db")) / output_name
-    debug_dir.mkdir(parents=True, exist_ok=True)
-    text_dir.mkdir(parents=True, exist_ok=True)
-    if DEBUG:
-        threading.Thread(target=upload_folder, args=(debug_dir,), daemon=True).start()
+
     set_output_subdir(None)
-    logger.info("Debug klasörü GitHub'a yükleniyor...")
-    ok = upload_folder(
-        debug_dir,
-        remote_prefix=f"LLM_Output_db/{debug_dir.name}",
-        file_extensions=[".jpg"],
-    )
-    if ok:
-        logger.info("Debug klasörü yüklendi")
-    else:
-        logger.warning("GitHub upload başarısız")
-    if progress_callback and total_pages:
-        try:
-            progress_callback(1.0)
-        except Exception:
-            pass
     logger.info("==> END parse %s", pdf_path)
     return df
