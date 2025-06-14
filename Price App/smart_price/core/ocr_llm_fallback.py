@@ -53,6 +53,14 @@ logger = logging.getLogger("smart_price")
 
 DEBUG = os.getenv("SMART_PRICE_DEBUG", "1") == "1"
 
+
+def _get_openai_timeout() -> float:
+    """Return ``OpenAI`` request timeout in seconds."""
+    try:
+        return float(os.getenv("OPENAI_REQUEST_TIMEOUT", "120"))
+    except Exception:
+        return 120.0
+
 DEFAULT_PROMPT = """
 Sen bir PDF fiyat listesi analiz asistanısın. Amacın, PDF’lerdeki ürün tablosu/ürün satırlarını ve bunların üst başlıklarını tam olarak, eksiksiz ve yapısal şekilde çıkarmaktır.
 
@@ -200,7 +208,10 @@ def parse(
         logger.error("OpenAI import failed: %s", exc)
         return pd.DataFrame()
 
-    client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+    client = OpenAI(
+        api_key=os.getenv("OPENAI_API_KEY"),
+        timeout=_get_openai_timeout(),
+    )
     model_name = os.getenv("OPENAI_MODEL", "gpt-4o")
 
     def _get_prompt(page: int) -> str:
