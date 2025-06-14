@@ -482,6 +482,7 @@ def parse(
     workers = int(os.getenv("SMART_PRICE_LLM_WORKERS", "5"))
     if len(images) <= 2:
         workers = 1
+    logger.info("vision_loop workers=%s timeout=%s", workers, openai_request_timeout)
     logger.info("==> BEGIN vision_loop")
     tasks = deque((i, img) for i, img in enumerate(images, start=1))
     results = []
