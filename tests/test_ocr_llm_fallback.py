@@ -540,3 +540,63 @@ def test_timeout_split(monkeypatch):
     assert summary and len(summary) == 2
     assert summary[0]["note"] == "timeout split"
     assert summary[1]["note"] == "timeout split"
+
+
+def test_openai_request_timeout(monkeypatch):
+    def fake_convert(_path, **_kwargs):
+        return [FakeImage()]
+
+    pdf2image_stub = types.SimpleNamespace(convert_from_path=fake_convert)
+    monkeypatch.setitem(sys.modules, "pdf2image", pdf2image_stub)
+
+    _setup_openai(monkeypatch)
+    monkeypatch.setenv("OPENAI_REQUEST_TIMEOUT", "42")
+    openai_mod = sys.modules["openai"]
+    captured = {}
+
+    def _ctor(*_a, **kw):
+        captured.update(kw)
+        return openai_mod
+
+    monkeypatch.setattr(openai_mod, "AsyncOpenAI", _ctor)
+
+    import importlib
+    import smart_price.config as conf
+    import smart_price.core.ocr_llm_fallback as mod
+    importlib.reload(conf)
+    importlib.reload(mod)
+
+    mod.parse("dummy.pdf")
+
+    assert captured.get("timeout") == 42.0
+
+
+def test_llm_workers_env(monkeypatch):
+    def fake_convert(_path, **_kwargs):
+        return [FakeImage(), FakeImage(), FakeImage()]
+
+    pdf2image_stub = types.SimpleNamespace(convert_from_path=fake_convert)
+    monkeypatch.setitem(sys.modules, "pdf2image", pdf2image_stub)
+
+    _setup_openai(monkeypatch)
+    monkeypatch.setenv("SMART_PRICE_LLM_WORKERS", "1")
+
+    import importlib
+    import smart_price.config as conf
+    import smart_price.core.ocr_llm_fallback as mod
+    importlib.reload(conf)
+    importlib.reload(mod)
+
+    captured = {}
+    from concurrent.futures import ThreadPoolExecutor as RealExecutor
+
+    class CaptureExecutor(RealExecutor):
+        def __init__(self, *a, **kw):
+            captured["max_workers"] = kw.get("max_workers") if "max_workers" in kw else (a[0] if a else None)
+            super().__init__(*a, **kw)
+
+    monkeypatch.setattr(mod, "ThreadPoolExecutor", CaptureExecutor)
+
+    mod.parse("dummy.pdf")
+
+    assert captured.get("max_workers") == 1
