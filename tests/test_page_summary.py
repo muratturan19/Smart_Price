@@ -80,6 +80,7 @@ def test_ocr_llm_fallback_summary(monkeypatch):
         return types.SimpleNamespace(choices=[types.SimpleNamespace(message=types.SimpleNamespace(content=content))])
     openai_stub = types.SimpleNamespace(chat=types.SimpleNamespace(completions=types.SimpleNamespace(create=create)))
     openai_stub.AsyncOpenAI = lambda *a, **kw: openai_stub
+    openai_stub.OpenAI = openai_stub.AsyncOpenAI
     monkeypatch.setitem(sys.modules, 'openai', openai_stub)
     monkeypatch.setenv('OPENAI_API_KEY', 'x')
     monkeypatch.setenv('RETRY_DELAY_BASE', '0')
