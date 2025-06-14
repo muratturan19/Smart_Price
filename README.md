@@ -298,3 +298,6 @@ interpreted when header detection fails.
 Errors raised by ``agentic_doc`` now log the HTTP status code, full response
 text and exception details to help diagnose rate limit, authentication or
 parsing issues.
+The fallback OCR+LLM parser logs ``rate limit`` when the OpenAI client
+returns status code ``429`` so that retries due to throttling are visible in
+the log.
