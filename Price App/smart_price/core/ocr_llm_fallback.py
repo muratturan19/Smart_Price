@@ -378,7 +378,7 @@ def parse(
                     timeout=openai_request_timeout,
                 )
 
-            resp = asyncio.run(asyncio.wait_for(_do_request(), openai_request_timeout))
+            resp = asyncio.run(_do_request())
             logger.info(
                 "OpenAI request for page %d took %.2fs", idx, time.time() - api_start
             )
