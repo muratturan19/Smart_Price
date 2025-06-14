@@ -49,6 +49,16 @@ enable this step. Optionally set `OPENAI_MODEL` to override the default
 request itself no longer passes a `max_retries` argument and the Vision
 API is queried with a temperature of `0`.
 
+Set `OPENAI_REQUEST_TIMEOUT` to change how long the client waits for a
+response in seconds (defaults to `120`). Use `SMART_PRICE_LLM_WORKERS`
+to control how many pages are processed concurrently (defaults to `5`).
+Example `.env` values:
+
+```bash
+OPENAI_REQUEST_TIMEOUT=360
+SMART_PRICE_LLM_WORKERS=5
+```
+
 ### Agentic document extraction
 
 Install the optional `agentic` extra (or install `agentic-doc` separately)
