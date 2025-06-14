@@ -189,6 +189,8 @@ def extract_from_pdf(
             try:
                 cleaned = gpt_clean_text(content)
                 items = safe_json_parse(cleaned)
+                if isinstance(items, dict) and "products" in items:
+                    items = items.get("products")
                 if items is None:
                     raise ValueError("parse failed")
                 logger.debug("First parsed items: %r", items[:2])

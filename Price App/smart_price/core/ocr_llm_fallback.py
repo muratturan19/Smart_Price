@@ -374,6 +374,8 @@ def parse(
 
         cleaned = gpt_clean_text(content) if content else "[]"
         items = safe_json_parse(cleaned)
+        if isinstance(items, dict) and "products" in items:
+            items = items.get("products")
         if items is None:
             logger.error("LLM JSON parse failed on page %d", idx)
             status = "error"
