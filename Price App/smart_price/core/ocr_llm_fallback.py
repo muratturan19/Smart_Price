@@ -134,28 +134,28 @@ def _range_bounds(pages: Sequence[int] | range | None) -> tuple[int | None, int 
     return start, end
 
 
-def split_image_vertically(image: "Image") -> list["Image"]:
-    """Return left and right halves of ``image``.
+def split_image_horizontally(image: "Image") -> list["Image"]:
+    """Return top and bottom halves of ``image``.
 
     Parameters
     ----------
     image : PIL Image
-        Image to split vertically.
+        Image to split horizontally.
 
     Returns
     -------
     list of Image
-        ``[left, right]`` halves of the original image.
+        ``[top, bottom]`` halves of the original image.
     """
     crop = getattr(image, "crop", None)
     size = getattr(image, "size", None)
     if callable(crop) and size:
         width, height = size
-        mid = int(width / 2)
-        left = crop((0, 0, mid, height))
-        right = crop((mid, 0, width, height))
-        logger.info("image split vertically width=%s height=%s", width, height)
-        return [left, right]
+        mid = int(height / 2)
+        top = crop((0, 0, width, mid))
+        bottom = crop((0, mid, width, height))
+        logger.info("image split horizontally width=%s height=%s", width, height)
+        return [top, bottom]
     return [image]
 
 
@@ -482,7 +482,7 @@ def parse(
                         if delay > 0:
                             time.sleep(delay)
                         if count == 0:
-                            halves = split_image_vertically(task[1])
+                            halves = split_image_horizontally(task[1])
                             if len(halves) > 1:
                                 logger.info("split page %d for retry", idx)
                                 for half in reversed(halves):
