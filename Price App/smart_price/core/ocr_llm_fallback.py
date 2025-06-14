@@ -8,6 +8,7 @@ import threading
 from concurrent.futures import ThreadPoolExecutor, Future, wait, FIRST_COMPLETED
 from collections import deque
 from typing import Iterable, Sequence, TYPE_CHECKING, Callable
+import asyncio
 
 try:
     from dotenv import load_dotenv, find_dotenv
@@ -249,10 +250,18 @@ def parse(
         openai_max_retries = int(os.getenv("OPENAI_MAX_RETRIES", "0"))
     except Exception:
         openai_max_retries = 0
+    try:
+        openai_request_timeout = float(os.getenv("OPENAI_REQUEST_TIMEOUT", "120"))
+    except Exception:
+        openai_request_timeout = 120.0
     try:  # pragma: no cover - openai may not expose this attr
         openai.api_requestor._DEFAULT_NUM_RETRIES = openai_max_retries
     except Exception:
         pass
+    client = openai.AsyncOpenAI(
+        max_retries=openai_max_retries,
+        timeout=openai_request_timeout,
+    )
 
     def _get_prompt(page: int) -> str:
         fallback = RAW_HEADER_HINT + "\n" + DEFAULT_PROMPT
@@ -266,7 +275,7 @@ def parse(
     lock = threading.Lock()
     running = 0
 
-    timeout_errors: tuple[type[Exception], ...] = (TimeoutError,)
+    timeout_errors: tuple[type[Exception], ...] = (TimeoutError, asyncio.TimeoutError)
     api_timeout = getattr(openai, "APITimeoutError", None)
     if isinstance(api_timeout, type) and issubclass(api_timeout, BaseException):
         timeout_errors += (api_timeout,)
@@ -322,26 +331,29 @@ def parse(
                 [{"role": "user", "content": prompt_text}], model_name
             )
             api_start = time.time()
-            resp = openai.chat.completions.create(
-                model=model_name,
-                messages=[
-                    {
-                        "role": "user",
-                        "content": [
-                            {"type": "text", "text": prompt_text},
-                            {
-                                "type": "image_url",
-                                "image_url": {
-                                    "url": "data:image/jpeg;base64," + img_base64
+            async def _do_request() -> object:
+                return await client.chat.completions.create(
+                    model=model_name,
+                    messages=[
+                        {
+                            "role": "user",
+                            "content": [
+                                {"type": "text", "text": prompt_text},
+                                {
+                                    "type": "image_url",
+                                    "image_url": {
+                                        "url": "data:image/jpeg;base64," + img_base64
+                                    },
                                 },
-                            },
-                        ],
-                    }
-                ],
-                response_format={"type": "json_object"},
-                temperature=0,
-                timeout=120,
-            )
+                            ],
+                        }
+                    ],
+                    response_format={"type": "json_object"},
+                    temperature=0,
+                    timeout=openai_request_timeout,
+                )
+
+            resp = asyncio.run(asyncio.wait_for(_do_request(), openai_request_timeout))
             logger.info(
                 "OpenAI request for page %d took %.2fs", idx, time.time() - api_start
             )
