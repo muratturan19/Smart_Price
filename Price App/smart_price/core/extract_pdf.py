@@ -184,6 +184,18 @@ def extract_from_pdf(
                 messages=[{"role": "user", "content": prompt}],
                 temperature=0.2,
             )
+            usage = getattr(resp, "usage", None)
+            if usage:
+                in_tok = getattr(usage, "prompt_tokens", 0)
+                out_tok = getattr(usage, "completion_tokens", 0)
+                TOKEN_ACCUM["input"] += in_tok
+                TOKEN_ACCUM["output"] += out_tok
+                logger.info(
+                    "LLM token usage - input=%d output=%d total=%d",
+                    in_tok,
+                    out_tok,
+                    in_tok + out_tok,
+                )
             logger.info("OpenAI request took %.2fs", time.time() - start_llm)
             time.sleep(0.5)
             content = resp.choices[0].message.content
