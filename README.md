@@ -43,7 +43,7 @@ describing how to detect column headers such as *Ürün*, *Ürün Kodu* and *Pri
 and how to return the rows as JSON with fields like *Malzeme_Kodu*, *Fiyat*,
 *Açıklama*, *Adet*, *Birim*, *Para_Birimi*, *Marka* and *Kutu_Adedi*. Provide an
 `OPENAI_API_KEY` environment variable or a `.env` file containing the key to
-enable this step. Optionally set `OPENAI_MODEL` to override the default
+enable this step. If the variable is missing the `parse()` function logs an error and raises `ValueError("OPENAI_API_KEY not set")`. Optionally set `OPENAI_MODEL` to override the default
 `gpt-4o` model. Set `OPENAI_MAX_RETRIES` to update
 `openai.api_requestor._DEFAULT_NUM_RETRIES` (defaults to `0`). The
 request itself no longer passes a `max_retries` argument and the Vision
