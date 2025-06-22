@@ -202,6 +202,8 @@ def parse(
     if last is not None:
         kwargs["last_page"] = last
     images = convert_from_path(pdf_path, poppler_path=str(config.POPPLER_PATH), **kwargs)
+    logger.info("pdf2image pages=%s", len(images))
+    page_start = first if first is not None else 1
     total_pages = len(images)
 
     try:
@@ -243,6 +245,7 @@ def parse(
 
     def process_page(args: tuple[int, "Image.Image"]):
         idx, img = args
+        page_num = page_start + idx - 1
 
         def _send(image: "Image.Image") -> list[dict]:
             tmp = tempfile.NamedTemporaryFile(delete=False, suffix=".jpg")
@@ -255,8 +258,8 @@ def parse(
                     os.unlink(tmp.name)
                 except Exception:
                     pass
-            prompt_text = _get_prompt(idx)
-            logger.info("LLM request start page %d", idx)
+            prompt_text = _get_prompt(page_num)
+            logger.info("LLM request start page %d", page_num)
             resp = client.chat.completions.create(
                 model=model_name,
                 messages=[
@@ -281,7 +284,7 @@ def parse(
                 items = [] if items is None else [items]
             for it in items:
                 if isinstance(it, dict):
-                    it.setdefault("Sayfa", idx)
+                    it.setdefault("Sayfa", page_num)
             return items
 
         error_types = (TimeoutError,)
@@ -296,10 +299,10 @@ def parse(
         try:
             rows = _send(img)
             status = "success" if rows else "empty"
-            summary = {"page_number": idx, "rows": len(rows), "status": status}
+            summary = {"page_number": page_num, "rows": len(rows), "status": status}
             return idx, rows, summary
         except error_types as exc:
-            logger.error("LLM request failed on page %d: %s", idx, exc)
+            logger.error("LLM request failed on page %d: %s", page_num, exc)
             parts = split_image_horizontally(img)
             if len(parts) > 1:
                 all_rows: list[dict] = []
@@ -308,11 +311,11 @@ def parse(
                     try:
                         r = _send(_part)
                         state = "success" if r else "empty"
-                        page_summaries.append({"page_number": idx, "rows": len(r), "status": state, "note": "timeout split"})
+                        page_summaries.append({"page_number": page_num, "rows": len(r), "status": state, "note": "timeout split"})
                         all_rows.extend(r)
                     except Exception as exc2:
-                        logger.error("LLM request failed on page %d: %s", idx, exc2)
-                        page_summaries.append({"page_number": idx, "rows": 0, "status": "error", "note": "timeout split"})
+                        logger.error("LLM request failed on page %d: %s", page_num, exc2)
+                        page_summaries.append({"page_number": page_num, "rows": 0, "status": "error", "note": "timeout split"})
                 return idx, all_rows, page_summaries
             max_retries = getattr(config, "MAX_RETRIES", 0)
             attempts = 0
@@ -321,14 +324,14 @@ def parse(
                 try:
                     rows = _send(img)
                     note = "timeout retry"
-                    summary = {"page_number": idx, "rows": len(rows), "status": "success", "note": note}
+                    summary = {"page_number": page_num, "rows": len(rows), "status": "success", "note": note}
                     return idx, rows, summary
                 except error_types as exc2:
-                    logger.error("LLM request failed on page %d: %s", idx, exc2)
-            return idx, [], {"page_number": idx, "rows": 0, "status": "error", "note": "gave up"}
+                    logger.error("LLM request failed on page %d: %s", page_num, exc2)
+            return idx, [], {"page_number": page_num, "rows": 0, "status": "error", "note": "gave up"}
         except Exception as exc:
-            logger.error("LLM request failed on page %d: %s", idx, exc)
-            return idx, [], {"page_number": idx, "rows": 0, "status": "error", "note": str(exc)}
+            logger.error("LLM request failed on page %d: %s", page_num, exc)
+            return idx, [], {"page_number": page_num, "rows": 0, "status": "error", "note": str(exc)}
 
     try:
         env_workers = int(os.getenv("SMART_PRICE_LLM_WORKERS", "0"))
