@@ -173,10 +173,6 @@ def test_parse_parallel_execution(monkeypatch):
     openai_stub = types.SimpleNamespace(chat=chat_stub)
     openai_stub.AsyncOpenAI = lambda *a, **kw: openai_stub
     openai_stub.OpenAI = openai_stub.AsyncOpenAI
-    openai_stub.OpenAI = openai_stub.AsyncOpenAI
-    openai_stub.OpenAI = openai_stub.AsyncOpenAI
-    openai_stub.OpenAI = openai_stub.AsyncOpenAI
-    openai_stub.OpenAI = openai_stub.AsyncOpenAI
     monkeypatch.setitem(sys.modules, 'openai', openai_stub)
     monkeypatch.setenv('OPENAI_API_KEY', 'x')
     monkeypatch.setenv('RETRY_DELAY_BASE', '0')
