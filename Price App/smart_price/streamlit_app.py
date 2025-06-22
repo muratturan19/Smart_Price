@@ -706,7 +706,8 @@ def upload_page():
         pages = f"{int(start_page)}-{int(end_page)}"
 
     st.markdown(
-        "Yalnızca belirli sayfaları analiz etmek istiyorsanız aralık girin. Örn: 2 – 5"
+        "Belirli sayfaları analiz etmek için aralık girin. "
+        "Örn: 2–5, sadece bu sayfalar işlenir"
     )
 
     files = st.file_uploader(
