@@ -5,6 +5,7 @@ import types
 import time
 import threading
 import logging
+import pytest
 
 from smart_price.core.extract_pdf import PAGE_IMAGE_EXT
 
@@ -144,6 +145,26 @@ def test_openai_max_retries_default(monkeypatch):
 
     openai_mod = sys.modules["openai"]
     assert openai_mod.api_requestor._DEFAULT_NUM_RETRIES == 0
+
+
+def test_parse_missing_api_key(monkeypatch):
+    def fake_convert(_path, **_kwargs):
+        return [FakeImage()]
+
+    pdf2image_stub = types.SimpleNamespace(convert_from_path=fake_convert)
+    monkeypatch.setitem(sys.modules, "pdf2image", pdf2image_stub)
+
+    _setup_openai(monkeypatch)
+    monkeypatch.delenv("OPENAI_API_KEY", raising=False)
+
+    import importlib
+    import smart_price.config as conf
+    import smart_price.core.ocr_llm_fallback as mod
+    importlib.reload(conf)
+    importlib.reload(mod)
+
+    with pytest.raises(ValueError):
+        mod.parse("dummy.pdf")
 
 
 def test_parse_parallel_execution(monkeypatch):
