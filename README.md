@@ -110,6 +110,9 @@ The config module sets `MAX_RETRIES` to 3 by default. Set `MAX_RETRIES` or
 Use ``SP_PROGRESS_BATCH_SIZE`` to change how many PDF pages the
 Streamlit interface processes before showing a progress message (default ``5``).
 
+Specify a subset of pages with the ``--pages`` CLI option or the
+``page_range`` argument of ``extract_from_pdf``.
+
 ``agentic_doc.parse`` now returns a list of ``ParsedDocument`` objects. The
 tools use the first item in that list. When an extraction guide provides
 page prompts for a PDF file these prompts are forwarded to
@@ -160,6 +163,15 @@ Extract prices from files on the command line and save the merged result using t
 ```bash
 smart-price-parser data/list.xlsx another.pdf -o merged_prices.xlsx
 ```
+
+Limit the processed pages with the ``--pages`` option:
+
+```bash
+smart-price-parser catalog.pdf --pages 1-3,5 -o out.xlsx
+```
+
+The underlying ``extract_from_pdf`` function also accepts a
+``page_range`` argument for programmatic use.
 
 The parser writes its results to `output/` by default. Set `OUTPUT_DIR` to
 change this location or specify `OUTPUT_EXCEL`, `OUTPUT_DB` and `OUTPUT_LOG`

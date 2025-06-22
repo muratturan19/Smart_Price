@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import os
 import tempfile
-from typing import IO, Any, Optional, Sequence, Callable
+from typing import IO, Any, Optional, Sequence, Callable, Iterable
 import logging
 from datetime import datetime
 import difflib
@@ -102,6 +102,7 @@ def extract_from_pdf(
     log: Optional[Callable[[str, str], None]] = None,
     prompt: str | dict[int, str] | None = None,
     progress_callback: Callable[[float], None] | None = None,
+    page_range: Iterable[int] | range | None = None,
 ) -> pd.DataFrame:
     """Extract product information from a PDF file.
 
@@ -109,6 +110,8 @@ def extract_from_pdf(
     ----------
     progress_callback : callable, optional
         Receives ``0-1`` progress updates for each processed page.
+    page_range : iterable of int or range, optional
+        Restrict parsing to specific pages. ``None`` processes all pages.
     """
     page_summary: list[dict[str, object]] = []
     TOKEN_ACCUM["input"] = 0
@@ -263,7 +266,7 @@ def extract_from_pdf(
                 path_for_llm,
                 output_name=output_stem if tmp_for_llm else None,
                 prompt=guide_prompt,
-                page_range=range(1, 4),
+                page_range=page_range,
                 progress_callback=progress_callback,
             )
         except TypeError:
@@ -272,10 +275,10 @@ def extract_from_pdf(
                     path_for_llm,
                     output_name=output_stem if tmp_for_llm else None,
                     prompt=guide_prompt,
-                    page_range=range(1, 4),
+                    page_range=page_range,
                 )
             except TypeError:
-                result = ocr_llm_fallback.parse(path_for_llm, page_range=range(1, 4))
+                result = ocr_llm_fallback.parse(path_for_llm, page_range=page_range)
         logger.info("==> END vision_loop rows=%s", len(result))
         logger.info(
             "==> END images_from_pdf pages=%s",

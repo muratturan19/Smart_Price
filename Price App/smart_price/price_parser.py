@@ -10,6 +10,7 @@ from dotenv import load_dotenv
 from smart_price import config
 from smart_price.core.extract_excel import extract_from_excel
 from smart_price.core.extract_pdf import extract_from_pdf
+
 from smart_price.core.logger import init_logging
 
 logger = logging.getLogger("smart_price")
@@ -23,6 +24,29 @@ def _configure_poppler() -> None:
         str(config.POPPLER_PATH),
         os.environ.get("PATH", "")
     ])
+
+
+def _parse_page_range(spec: str) -> list[int]:
+    """Return list of page numbers defined by ``spec``."""
+    pages: set[int] = set()
+    for part in spec.split(','):
+        part = part.strip()
+        if not part:
+            continue
+        if '-' in part:
+            start_s, end_s = part.split('-', 1)
+            try:
+                start = int(start_s)
+                end = int(end_s)
+            except ValueError:
+                continue
+            pages.update(range(start, end + 1))
+        else:
+            try:
+                pages.add(int(part))
+            except ValueError:
+                continue
+    return sorted(pages)
 
 
 
@@ -53,6 +77,10 @@ def parse_args() -> argparse.Namespace:
         action="store_true",
         help="Display the most recent log and exit",
     )
+    parser.add_argument(
+        "--pages",
+        help="Page numbers or ranges, e.g. '1-3,5'",
+    )
     return parser.parse_args()
 
 
@@ -70,6 +98,8 @@ def main() -> None:
             print(f"Log file not found: {log_file}")
         return
     _configure_poppler()
+    pages_arg = getattr(args, "pages", None)
+    page_range = _parse_page_range(pages_arg) if pages_arg else None
     os.makedirs(os.path.dirname(args.output), exist_ok=True)
     os.makedirs(os.path.dirname(args.db), exist_ok=True)
     os.makedirs(os.path.dirname(args.log), exist_ok=True)
@@ -82,7 +112,7 @@ def main() -> None:
             if ext in ('.xlsx', '.xls'):
                 df = extract_from_excel(path)
             elif ext == '.pdf':
-                df = extract_from_pdf(path)
+                df = extract_from_pdf(path, page_range=page_range)
             else:
                 logger.info("Skipping unsupported file: %s", name)
                 continue
