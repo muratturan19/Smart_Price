@@ -111,7 +111,8 @@ Use ``SP_PROGRESS_BATCH_SIZE`` to change how many PDF pages the
 Streamlit interface processes before showing a progress message (default ``5``).
 
 Specify a subset of pages with the ``--pages`` CLI option or the
-``page_range`` argument of ``extract_from_pdf``.
+``page_range`` argument of ``extract_from_pdf``. Use ``--pages all``
+to process every page.
 
 ``agentic_doc.parse`` now returns a list of ``ParsedDocument`` objects. The
 tools use the first item in that list. When an extraction guide provides
@@ -168,6 +169,7 @@ Limit the processed pages with the ``--pages`` option:
 
 ```bash
 smart-price-parser catalog.pdf --pages 1-3,5 -o out.xlsx
+smart-price-parser catalog.pdf --pages all -o out.xlsx
 ```
 
 The underlying ``extract_from_pdf`` function also accepts a
