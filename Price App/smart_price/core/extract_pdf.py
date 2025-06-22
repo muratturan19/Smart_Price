@@ -357,6 +357,11 @@ def extract_from_pdf(
         result["Alt_Baslik"] = None
     if "Sayfa" not in result.columns:
         result["Sayfa"] = 1
+    result["Sayfa"] = (
+        pd.to_numeric(result["Sayfa"], errors="coerce")
+        .fillna(1)
+        .astype(int)
+    )
     result["Record_Code"] = (
         sanitized_base
         + "|"
