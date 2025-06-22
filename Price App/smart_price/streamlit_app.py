@@ -677,17 +677,38 @@ def upload_page():
         ["LLM (Vision)", "AgenticDE"],
         key="pdf_method",
     )
-    page_mode = st.selectbox(
-        "PDF sayfaları",
-        ["Tüm sayfalar", "Sayfa aralığı"],
-        key="pdf_page_mode",
-    )
+    col_mode, col_start, col_end = st.columns([2, 1, 1])
+    with col_mode:
+        page_mode = st.selectbox(
+            "PDF sayfaları",
+            ["Tüm sayfalar", "Sayfa aralığı"],
+            key="pdf_page_mode",
+        )
     pages = None
+    start_page = end_page = None
     if page_mode == "Sayfa aralığı":
-        pages = st.text_input(
-            "Sayfa aralığı (örn. 11-27)",
-            key="pdf_page_range",
-        ).strip() or None
+        with col_start:
+            start_page = st.number_input(
+                "Başlangıç",
+                min_value=1,
+                step=1,
+                format="%d",
+                key="pdf_page_start",
+            )
+        with col_end:
+            end_page = st.number_input(
+                "Bitiş",
+                min_value=1,
+                step=1,
+                format="%d",
+                key="pdf_page_end",
+            )
+        pages = f"{int(start_page)}-{int(end_page)}"
+
+    st.markdown(
+        "Yalnızca belirli sayfaları analiz etmek istiyorsanız aralık girin. Örn: 2 – 5"
+    )
+
     files = st.file_uploader(
         "Excel veya PDF dosyalarını seçin",
         type=["xlsx", "xls", "pdf"],
