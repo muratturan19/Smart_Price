@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import os
+import logging
 from pathlib import Path
 
 try:
@@ -33,6 +34,9 @@ _DEFAULT_EXTRACTION_GUIDE = _REPO_ROOT / "extraction_guide.md"
 _DEFAULT_TESSERACT_CMD = Path(r"D:\\Program Files\\Tesseract-OCR\\tesseract.exe")
 _DEFAULT_TESSDATA_PREFIX = Path(r"D:\\Program Files\\Tesseract-OCR\\tessdata")
 _DEFAULT_POPPLER_PATH = Path(__file__).resolve().parents[2] / "poppler" / "bin"
+
+# Logger used for configuration warnings
+logger = logging.getLogger("smart_price")
 
 # Default remote repository for the public demo data
 _DEFAULT_BASE_REPO_URL = (
@@ -105,6 +109,18 @@ __all__ = [
     "RETRY_DELAY_BASE",
     "load_config",
 ]
+
+
+def _check_poppler_bins() -> None:
+    """Verify essential Poppler binaries are present."""
+    required = ["pdftoppm.exe", "pdftocairo.exe", "pdfinfo.exe"]
+    missing = [f for f in required if not (POPPLER_PATH / f).is_file()]
+    if missing:
+        logger.error(
+            "Missing Poppler executables: %s in %s. See README.md 'Poppler setup' section.",
+            ", ".join(missing),
+            POPPLER_PATH,
+        )
 
 
 def load_config() -> None:
@@ -185,6 +201,8 @@ def load_config() -> None:
     LOGO_TOP = os.getenv("LOGO_TOP", config.get("LOGO_TOP", _DEFAULT_LOGO_TOP))
     LOGO_RIGHT = os.getenv("LOGO_RIGHT", config.get("LOGO_RIGHT", _DEFAULT_LOGO_RIGHT))
     LOGO_OPACITY = float(os.getenv("LOGO_OPACITY", config.get("LOGO_OPACITY", _DEFAULT_LOGO_OPACITY)))
+
+    _check_poppler_bins()
 
 
 # Initialise configuration on import
