@@ -219,6 +219,9 @@ month. When this mode is used the matching rows are removed from the master
 dataset and any old debug files for those sources are deleted before the new
 records are saved.
 
+The page also offers a **PDF pages** field.  Leave it blank to parse the whole
+document or enter a range such as ``11-27`` to process only those pages.
+
 From the interface you can upload Excel/PDF price lists and search the
 resulting master dataset. When you save the merged data it writes both
 `Master_data_base/master_dataset.xlsx` and `Master_data_base/master.db`
