@@ -5,7 +5,7 @@ import shutil
 import sqlite3
 import sys
 from pathlib import Path
-from typing import Callable, Optional
+from typing import Callable, Optional, Iterable
 
 import base64
 import pandas as pd
@@ -245,6 +245,7 @@ def extract_from_pdf_file(
     file_name: str | None = None,
     status_log: Optional[Callable[[str, str], None]] = None,
     progress_callback: Optional[Callable[[float], None]] = None,
+    page_range: Iterable[int] | range | None = None,
     method: str = "LLM (Vision)",
 ) -> pd.DataFrame:
     """Wrapper around :func:`smart_price.core.extract_pdf.extract_from_pdf`.
@@ -259,6 +260,8 @@ def extract_from_pdf_file(
         Optional callable used for status updates.
     progress_callback:
         Optional progress callback passed through to PDF extraction.
+    page_range:
+        Iterable of page numbers to process. ``None`` processes all pages.
     method:
         Extraction method. When ``"AgenticDE"`` the ``agentic_doc`` pipeline is
         used. Defaults to ``"LLM (Vision)"``.
@@ -274,6 +277,7 @@ def extract_from_pdf_file(
         filename=file_name,
         log=status_log,
         progress_callback=progress_callback,
+        page_range=page_range,
     )
 
 
