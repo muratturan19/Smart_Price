@@ -631,3 +631,24 @@ def test_llm_workers_env(monkeypatch):
     mod.parse("dummy.pdf")
 
     assert captured.get("max_workers") == 1
+
+
+def test_page_numbers_from_range(monkeypatch):
+    def fake_convert(_path, **_kwargs):
+        return [FakeImage(), FakeImage(), FakeImage(), FakeImage()]
+
+    pdf2image_stub = types.SimpleNamespace(convert_from_path=fake_convert)
+    monkeypatch.setitem(sys.modules, "pdf2image", pdf2image_stub)
+
+    _setup_openai(monkeypatch)
+
+    import importlib
+    import smart_price.config as conf
+    import smart_price.core.ocr_llm_fallback as mod
+    importlib.reload(conf)
+    importlib.reload(mod)
+
+    df = mod.parse("dummy.pdf", page_range=range(2, 6))
+    summary = getattr(df, "page_summary", None)
+
+    assert summary and [s.get("page_number") for s in summary] == [2, 3, 4, 5]
