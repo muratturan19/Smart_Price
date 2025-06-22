@@ -715,6 +715,52 @@ def test_extract_from_pdf_bytesio(monkeypatch):
     assert called_parse.get('path') and called_parse['path'].endswith('.pdf')
 
 
+def test_extract_from_pdf_invalid_page_number(monkeypatch):
+    if not HAS_PANDAS:
+        pytest.skip("pandas not installed")
+
+    class FakePage:
+        page_number = 1
+
+        def extract_text(self):
+            return ""
+
+        def extract_tables(self):
+            return []
+
+    class FakePDF:
+        def __enter__(self):
+            return self
+
+        def __exit__(self, exc_type, exc, tb):
+            pass
+
+        @property
+        def pages(self):
+            return [FakePage()]
+
+    def fake_open(_path):
+        return FakePDF()
+
+    import sys
+
+    pdfplumber_mod = sys.modules.get("pdfplumber")
+    monkeypatch.setattr(pdfplumber_mod, "open", fake_open, raising=False)
+
+    import pandas as pd
+    import smart_price.core.extract_pdf as pdf_mod
+
+    def fake_parse(path, page_range=None, **_kw):
+        return pd.DataFrame({"Açıklama": ["X"], "Fiyat": [5.0], "Sayfa": [""]})
+
+    monkeypatch.setattr(pdf_mod.ocr_llm_fallback, "parse", fake_parse)
+
+    result = extract_from_pdf("dummy.pdf")
+
+    assert list(result["Sayfa"]) == [1]
+    assert result.iloc[0]["Image_Path"].endswith(f"page_image_page_01{PAGE_IMAGE_EXT}")
+
+
 def test_merge_files_casts_to_string(monkeypatch):
     if not HAS_PANDAS:
         pytest.skip("pandas not installed")
