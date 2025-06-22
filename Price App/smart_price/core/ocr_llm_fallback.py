@@ -236,6 +236,8 @@ def parse(
         timeout=_get_openai_timeout(),
     )
     model_name = os.getenv("OPENAI_MODEL", "gpt-4o")
+    total_input_tokens = 0
+    total_output_tokens = 0
 
     def _get_prompt(page: int) -> str:
         fallback = RAW_HEADER_HINT + "\n" + DEFAULT_PROMPT
@@ -276,6 +278,20 @@ def parse(
             )
             if inspect.iscoroutine(resp):
                 resp = asyncio.run(resp)
+            usage = getattr(resp, "usage", None)
+            if usage:
+                in_tok = getattr(usage, "prompt_tokens", 0)
+                out_tok = getattr(usage, "completion_tokens", 0)
+                nonlocal total_input_tokens, total_output_tokens
+                total_input_tokens += in_tok
+                total_output_tokens += out_tok
+                logger.info(
+                    "LLM token usage page %d - input=%d output=%d total=%d",
+                    page_num,
+                    in_tok,
+                    out_tok,
+                    in_tok + out_tok,
+                )
             content = resp.choices[0].message.content or "[]"
             items = safe_json_parse(gpt_clean_text(content))
             if isinstance(items, dict) and "products" in items:
@@ -361,6 +377,17 @@ def parse(
     df = pd.DataFrame(rows)
     if hasattr(df, "__dict__"):
         object.__setattr__(df, "page_summary", page_summary)
+        object.__setattr__(df, "token_counts", {
+            "input": total_input_tokens,
+            "output": total_output_tokens,
+        })
+
+    logger.info(
+        "LLM total tokens input=%d output=%d total=%d",
+        total_input_tokens,
+        total_output_tokens,
+        total_input_tokens + total_output_tokens,
+    )
 
     set_output_subdir(None)
     logger.info("==> END parse %s", pdf_path)
