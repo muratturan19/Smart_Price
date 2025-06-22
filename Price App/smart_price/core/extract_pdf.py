@@ -300,11 +300,26 @@ def extract_from_pdf(
     if result.empty:
         cleanup()
         duration = time.time() - total_start
-        notify(f"Finished {src} via LLM with 0 rows in {duration:.2f}s")
+        pages = len(page_summary)
         debug_dir = Path(os.getenv("SMART_PRICE_DEBUG_DIR", "LLM_Output_db")) / output_stem
         text_dir = Path(os.getenv("SMART_PRICE_TEXT_DIR", "LLM_Text_db")) / output_stem
         debug_dir.mkdir(parents=True, exist_ok=True)
         text_dir.mkdir(parents=True, exist_ok=True)
+        snippet = ""
+        try:
+            from PIL import Image  # type: ignore
+            import pytesseract  # type: ignore
+
+            img_file = next(debug_dir.glob(f"page_image_page_*{PAGE_IMAGE_EXT}"), None)
+            if img_file:
+                text = pytesseract.image_to_string(Image.open(img_file))
+                snippet = text.strip().replace("\n", " ")[:80]
+        except Exception as exc:  # pragma: no cover - optional OCR failures
+            logger.error("OCR snippet failed: %s", exc)
+
+        notify(
+            f"Finished {src} via LLM with 0 rows after {pages} pages in {duration:.2f}s; OCR excerpt: {snippet!r}"
+        )
         set_output_subdir(None)
         notify("Debug klasörü GitHub'a yükleniyor...")
         logger.info("==> BEGIN upload_debug")
