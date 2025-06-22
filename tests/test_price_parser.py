@@ -830,9 +830,38 @@ def test_merge_files_pdf_called(monkeypatch):
     result = streamlit_app.merge_files([FakeUpload("f.pdf")])
 
     assert received.get("file_name") == "f.pdf"
+    assert received.get("pages") is None
     assert not result.empty
     assert result.iloc[0]["Ana_Baslik"] == "M"
     assert result.iloc[0]["Alt_Baslik"] == "S"
+
+
+def test_merge_files_pdf_with_pages(monkeypatch):
+    if not HAS_PANDAS:
+        pytest.skip("pandas not installed")
+    import pandas as pd
+
+    df = pd.DataFrame({"Malzeme_Kodu": ["Z"], "Açıklama": ["B"], "Fiyat": [9]})
+
+    received = {}
+
+    def fake_pdf(*_args, **kwargs):
+        received.update(kwargs)
+        return df.copy()
+
+    monkeypatch.setattr(streamlit_app, "extract_from_pdf_file", fake_pdf)
+
+    class FakeUpload:
+        def __init__(self, name):
+            self.name = name
+
+        def read(self):
+            return b"data"
+
+    result = streamlit_app.merge_files([FakeUpload("f.pdf")], pages="11-27")
+
+    assert received.get("pages") == "11-27"
+    assert not result.empty
 
 
 def test_merge_files_dedup_by_code_and_price(monkeypatch):

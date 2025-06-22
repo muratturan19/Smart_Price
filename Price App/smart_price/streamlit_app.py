@@ -305,6 +305,7 @@ def merge_files(
     update_progress: Optional[Callable[[float], None]] = None,
     update_dataframe: Optional[Callable[[pd.DataFrame], None]] = None,
     method: str = "LLM (Vision)",
+    pages: str | None = None,
 ):
     """Extract and merge uploaded files with optional progress callbacks.
 
@@ -312,6 +313,8 @@ def merge_files(
     ----------
     update_dataframe:
         Optional callable receiving the merged DataFrame after each file.
+    pages:
+        Page selection string such as ``"1-5"``. ``None`` processes all pages.
     """
     logger.info("==> BEGIN merge_files count=%s", len(uploaded_files))
     extracted = []
@@ -363,6 +366,7 @@ def merge_files(
                     file_name=up_file.name,
                     status_log=update_status,
                     progress_callback=page_prog,
+                    pages=pages,
                     method=method,
                 )
         except Exception as exc:
@@ -673,6 +677,17 @@ def upload_page():
         ["LLM (Vision)", "AgenticDE"],
         key="pdf_method",
     )
+    page_mode = st.selectbox(
+        "PDF sayfaları",
+        ["Tüm sayfalar", "Sayfa aralığı"],
+        key="pdf_page_mode",
+    )
+    pages = None
+    if page_mode == "Sayfa aralığı":
+        pages = st.text_input(
+            "Sayfa aralığı (örn. 11-27)",
+            key="pdf_page_range",
+        ).strip() or None
     files = st.file_uploader(
         "Excel veya PDF dosyalarını seçin",
         type=["xlsx", "xls", "pdf"],
@@ -714,6 +729,7 @@ def upload_page():
                     update_status=show_status,
                     update_progress=lambda v: progress_bar.progress(v),
                     update_dataframe=lambda d: df_placeholder.dataframe(d, use_container_width=True),
+                    pages=pages,
                     method=method,
                 )
             except Exception as exc:
