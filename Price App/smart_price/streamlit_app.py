@@ -245,6 +245,7 @@ def extract_from_pdf_file(
     file_name: str | None = None,
     status_log: Optional[Callable[[str, str], None]] = None,
     progress_callback: Optional[Callable[[float], None]] = None,
+    pages: str | None = None,
     page_range: Iterable[int] | range | None = None,
     method: str = "LLM (Vision)",
 ) -> pd.DataFrame:
@@ -260,6 +261,8 @@ def extract_from_pdf_file(
         Optional callable used for status updates.
     progress_callback:
         Optional progress callback passed through to PDF extraction.
+    pages:
+        Page selection string such as ``"1-4"`` or ``"all"``.
     page_range:
         Iterable of page numbers to process. ``None`` processes all pages.
     method:
@@ -272,6 +275,20 @@ def extract_from_pdf_file(
             filename=file_name,
             log=status_log,
         )
+    if pages and page_range is None:
+        page_str = pages.strip().lower()
+        if page_str != "all":
+            try:
+                if "-" in page_str:
+                    start_s, end_s = page_str.split("-", 1)
+                    start = int(start_s)
+                    end = int(end_s)
+                else:
+                    start = int(page_str)
+                    end = start
+                page_range = range(start, end + 1)
+            except ValueError:
+                page_range = None
     return extract_from_pdf(
         file,
         filename=file_name,

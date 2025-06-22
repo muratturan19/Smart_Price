@@ -79,7 +79,7 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--pages",
-        help="Page numbers or ranges, e.g. '1-3,5'",
+        help="Pages to parse, e.g. '1-4' or 'all'",
     )
     return parser.parse_args()
 
@@ -99,7 +99,10 @@ def main() -> None:
         return
     _configure_poppler()
     pages_arg = getattr(args, "pages", None)
-    page_range = _parse_page_range(pages_arg) if pages_arg else None
+    if pages_arg and pages_arg.strip().lower() != "all":
+        page_range = _parse_page_range(pages_arg)
+    else:
+        page_range = None
     os.makedirs(os.path.dirname(args.output), exist_ok=True)
     os.makedirs(os.path.dirname(args.db), exist_ok=True)
     os.makedirs(os.path.dirname(args.log), exist_ok=True)
