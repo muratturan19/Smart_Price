@@ -5,7 +5,7 @@ import shutil
 import sqlite3
 import sys
 from pathlib import Path
-from typing import Callable, Optional, Iterable
+from typing import Callable, Optional
 
 import base64
 import pandas as pd
@@ -245,8 +245,6 @@ def extract_from_pdf_file(
     file_name: str | None = None,
     status_log: Optional[Callable[[str, str], None]] = None,
     progress_callback: Optional[Callable[[float], None]] = None,
-    pages: str | None = None,
-    page_range: Iterable[int] | range | None = None,
     method: str = "LLM (Vision)",
 ) -> pd.DataFrame:
     """Wrapper around :func:`smart_price.core.extract_pdf.extract_from_pdf`.
@@ -261,10 +259,6 @@ def extract_from_pdf_file(
         Optional callable used for status updates.
     progress_callback:
         Optional progress callback passed through to PDF extraction.
-    pages:
-        Page selection string such as ``"1-4"`` or ``"all"``.
-    page_range:
-        Iterable of page numbers to process. ``None`` processes all pages.
     method:
         Extraction method. When ``"AgenticDE"`` the ``agentic_doc`` pipeline is
         used. Defaults to ``"LLM (Vision)"``.
@@ -275,26 +269,11 @@ def extract_from_pdf_file(
             filename=file_name,
             log=status_log,
         )
-    if pages and page_range is None:
-        page_str = pages.strip().lower()
-        if page_str != "all":
-            try:
-                if "-" in page_str:
-                    start_s, end_s = page_str.split("-", 1)
-                    start = int(start_s)
-                    end = int(end_s)
-                else:
-                    start = int(page_str)
-                    end = start
-                page_range = range(start, end + 1)
-            except ValueError:
-                page_range = None
     return extract_from_pdf(
         file,
         filename=file_name,
         log=status_log,
         progress_callback=progress_callback,
-        page_range=page_range,
     )
 
 
@@ -305,7 +284,6 @@ def merge_files(
     update_progress: Optional[Callable[[float], None]] = None,
     update_dataframe: Optional[Callable[[pd.DataFrame], None]] = None,
     method: str = "LLM (Vision)",
-    pages: str | None = None,
 ):
     """Extract and merge uploaded files with optional progress callbacks.
 
@@ -313,8 +291,6 @@ def merge_files(
     ----------
     update_dataframe:
         Optional callable receiving the merged DataFrame after each file.
-    pages:
-        Page selection string such as ``"1-5"``. ``None`` processes all pages.
     """
     logger.info("==> BEGIN merge_files count=%s", len(uploaded_files))
     extracted = []
@@ -366,7 +342,6 @@ def merge_files(
                     file_name=up_file.name,
                     status_log=update_status,
                     progress_callback=page_prog,
-                    pages=pages,
                     method=method,
                 )
         except Exception as exc:
@@ -677,39 +652,6 @@ def upload_page():
         ["LLM (Vision)", "AgenticDE"],
         key="pdf_method",
     )
-    col_mode, col_start, col_end = st.columns([2, 1, 1])
-    with col_mode:
-        page_mode = st.selectbox(
-            "PDF sayfaları",
-            ["Tüm sayfalar", "Sayfa aralığı"],
-            key="pdf_page_mode",
-        )
-    pages = None
-    start_page = end_page = None
-    if page_mode == "Sayfa aralığı":
-        with col_start:
-            start_page = st.number_input(
-                "Başlangıç",
-                min_value=1,
-                step=1,
-                format="%d",
-                key="pdf_page_start",
-            )
-        with col_end:
-            end_page = st.number_input(
-                "Bitiş",
-                min_value=1,
-                step=1,
-                format="%d",
-                key="pdf_page_end",
-            )
-        pages = f"{int(start_page)}-{int(end_page)}"
-
-    st.markdown(
-        "Belirli sayfaları analiz etmek için aralık girin. "
-        "Örn: 2–5, sadece bu sayfalar işlenir"
-    )
-
     files = st.file_uploader(
         "Excel veya PDF dosyalarını seçin",
         type=["xlsx", "xls", "pdf"],
@@ -751,7 +693,6 @@ def upload_page():
                     update_status=show_status,
                     update_progress=lambda v: progress_bar.progress(v),
                     update_dataframe=lambda d: df_placeholder.dataframe(d, use_container_width=True),
-                    pages=pages,
                     method=method,
                 )
             except Exception as exc:

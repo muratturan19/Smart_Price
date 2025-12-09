@@ -17,6 +17,21 @@ ROOT = Path(__file__).resolve().parents[2]
 left_logo_url = ROOT / "logo" / "dp_Seffaf_logo.PNG"
 right_logo_url = ROOT / "logo" / "sadece_dp_seffaf.PNG"
 
+THEMES = {
+    "Açık": {
+        "primary": "#002060",
+        "background": "#FFFFFF",
+        "muted": "#F0F2F6",
+        "text": "#262730",
+    },
+    "Koyu": {
+        "primary": "#4F8FF7",
+        "background": "#0E1117",
+        "muted": "#1E1E26",
+        "text": "#E5E7EB",
+    },
+}
+
 
 def resource_path(relative: str) -> str:
     """Return absolute path to resource, works for PyInstaller bundles."""
@@ -27,6 +42,50 @@ def resource_path(relative: str) -> str:
 PAGE_IMAGE_EXT = ".jpg"
 
 logger = logging.getLogger("sales_app")
+
+
+def apply_theme(name: str) -> None:
+    """Inject CSS overrides for the selected theme."""
+
+    palette = THEMES.get(name, THEMES["Açık"])
+    css = f"""
+    <style>
+        :root {{
+            --sp-bg: {palette['background']};
+            --sp-surface: {palette['muted']};
+            --sp-text: {palette['text']};
+            --sp-primary: {palette['primary']};
+        }}
+
+        body, .stApp {{
+            background-color: var(--sp-bg);
+            color: var(--sp-text);
+        }}
+
+        div[data-testid="stSidebar"] {{
+            background: var(--sp-surface);
+        }}
+
+        .stButton > button {{
+            background: var(--sp-primary);
+            color: #fff;
+            border: none;
+        }}
+        .stButton > button:hover {{
+            filter: brightness(1.08);
+        }}
+
+        .stTextInput input, .stSelectbox select, .stTextInput textarea {{
+            background: var(--sp-bg);
+            color: var(--sp-text);
+        }}
+
+        .stDataFrame, .stDataFrame div {{
+            color: var(--sp-text);
+        }}
+    </style>
+    """
+    st.markdown(css, unsafe_allow_html=True)
 
 
 def _load_dataset(url: str) -> pd.DataFrame:
@@ -195,6 +254,18 @@ def search_page(df: pd.DataFrame) -> None:
 
 def main() -> None:
     st.set_page_config(layout="wide")
+
+    if "theme" not in st.session_state:
+        st.session_state["theme"] = "Açık"
+
+    st.sidebar.subheader("Tema ayarı")
+    theme_col1, theme_col2 = st.sidebar.columns(2)
+    if theme_col1.button("Açık", use_container_width=True):
+        st.session_state["theme"] = "Açık"
+    if theme_col2.button("Koyu", use_container_width=True):
+        st.session_state["theme"] = "Koyu"
+
+    apply_theme(st.session_state["theme"])
 
     sidebar_logo_b64 = img_to_base64(left_logo_url)
     st.sidebar.markdown(
